@@ -1,0 +1,38 @@
+version: "3.9"
+
+volumes:
+  dbdata:
+  code:
+
+services: 
+  webserver:
+    build: webserver
+    ports: 
+      - 80:80
+    volumes:
+      - code:/var/www/html
+      - ./webserver/php-ini-overrides.ini:/usr/local/etc/php/conf.d/php-ini-overrides.ini
+  codeserver:
+    image: ghcr.io/linuxserver/openssh-server
+    environment:
+      - PASSWORD_ACCESS=true
+      - USER_PASSWORD=ssh
+      - USER_NAME=ssh
+      - PUID=1000
+      - PGID=33
+    ports:
+      - 22:2222
+    volumes:
+      - code:/var/www/html
+
+  database:
+    image: mariadb:10.3.31
+    container_name: rplayer_mariadb
+    ports:
+      - 3306:3306
+    environment:
+      - MYSQL_USER=blbec
+      - MYSQL_PASSWORD=entlaabstudio
+      - MYSQL_ROOT_PASSWORD=entlaabstudio2
+    volumes:
+      - dbdata:/var/lib/mysql

@@ -1,0 +1,373 @@
+:root {
+    --bg:               rgba(255,255,255,1);
+    --bgrplayer:        rgba(255,255,255,.9);
+    --trackbg:          rgba(0,0,0,.1);
+    --text:             rgba(255,255,255,1);
+    --activeTrack:      rgba(0,0,0,1);
+    --currentTime:      #1678c2;
+    --wordsBackground:  rgba(255,255,255,.9);
+    --wordsBoxShadow:   rgba(0,0,0,.3);
+    --rPlayerBorder:    rgba(0,0,0,.1);
+    --rPlayerBoxShadow: rgba(100,100,100,.4);
+    --item2:            rgba(0,0,0,.3);
+}
+
+body {
+    display: block;
+}
+
+button {
+    white-space: nowrap;
+}
+
+a.rplayerActiveTrack {
+    color: var(--activeTrack);
+    background-color: var(--trackbg);
+}
+
+/** User */
+
+@font-face {
+    font-family: digicounter;
+    src: url('fonts/digital-dream.regular.ttf');
+}
+
+.ui.segment {
+    padding: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+    /* background: var(--bg) !important; */
+}
+
+a.rplayerOneTrack {
+    display: inline-block;
+    padding: .2em 1em .2em 1em;
+    /* margin: .2em; */
+    width: 100%;
+    border-radius: .5em;
+    animation-duration: 1.5s;
+    animation-play-state: running;
+}
+
+#rplayer {
+    /* min-width: 90vw; */
+    padding: 1em;
+    margin-top: 1em;
+    opacity: 0;
+    /* margin: 1em !important; */
+    border: .3em solid var(--rPlayerBorder);
+    background-color: var(--bgrplayer);
+    border-radius: 2em;
+    box-shadow: 0 0 4em var(--rPlayerBoxShadow);
+    transform: perspective(50em) scale(0.9) rotateX(0deg) rotateY(-1deg) rotateZ(-1deg) translateX(-1em);
+}
+
+#rplayer h1,
+#rplayer h2 {
+    display: inline-block;
+    margin: 0;
+    font-size: 2em;
+}
+
+#rajs {
+    text-align: right;
+    padding-right: 2em;
+}
+
+.item1 { grid-area: g1; }
+
+.item1 input[type='range'] {
+    margin-bottom: 1em;
+}
+
+.item1 #context {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.item1 .addCurTime {
+    white-space: nowrap;
+	padding-right: 1em;
+}
+
+.item2 {
+    grid-area: g2;
+    
+    align-items: safe center;
+    border: 1px solid var(--item2);
+    border-radius: 1em;
+    padding: .5em;
+    margin: 0 0 1em 0;
+}
+.item3 { grid-area: g3; }
+
+.item3 div:first-child {
+    text-align: right;
+}
+
+.item4 { grid-area: g4; }
+.item5 { grid-area: g5; margin: 1em 0 1em 0; }
+
+.item5 #rplayerVisualCanvas {
+    opacity: .2;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.item5 .trackInfo {
+    position: relative;
+}
+
+.item6 {
+    grid-area: g6;
+    margin: 0 0 2em 0;
+    white-space: nowrap;
+}
+
+.item6 > div ~ div {
+    padding-top: .2em;
+}
+
+.item7 { grid-area: g7; }
+.item8 { grid-area: g8; }
+
+.item8 .rplayerBufferShowLoading {
+    font-weight: bold;
+    opacity: 0;
+    color: var(--currentTime);
+    font-size: 1em;
+    padding-left: .5em;
+}
+
+.item9 {
+    grid-area: g9;
+    margin-bottom: 1em;
+}
+
+.item9 > div:first-child {
+    display: inline-block;
+    border-bottom: 1px solid var(--currentTime);
+}
+
+.item9 > div:first-child > div:first-child {
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.item9 > div:first-child > div:first-child ~ div {
+    display: inline-block;
+    margin-right: .5em;
+}
+
+.item9 h2 {
+    color: var(--currentTime);
+}
+
+.item9 h1 ~ div,
+.item9 h2 ~ div {
+    opacity: .4;
+    font-style: italic;
+}
+
+.item9 > div:first-child span {
+    font-style: italic;
+    font-size: 1em;
+    opacity: .4;
+}
+
+.itemA {
+    grid-area: gA;
+    text-align:  right;
+    padding: 0 0 1em 0;
+}
+.itemB {
+    grid-area: gB;
+    margin: 0 0 2em 0;
+    white-space: nowrap;
+}
+
+.itemB .input {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.itemB .input input[type='text'] {
+    text-align: right;
+}
+
+.itemB .stopTimerSecs {
+    display: inline-block;
+}
+
+
+
+#rplayer {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas:
+    'gA'
+    'g9'
+    'g1'
+    'g5'
+    'g2'
+    'g6'
+    'gB'
+    'g8'
+    'g7'
+    'g3'
+    'g4';
+    grid-template-columns: auto;
+    max-width: 60em;
+    padding: 1em;
+} 
+
+@media
+    screen and (min-width: 40em) { 
+    /* Držení na šířku */
+    #rplayer {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-areas:
+        'g9 g9 g9 gA'
+        'g1 g1 g2 g2'
+        'g5 g5 g2 g2'
+        'g6 gB g2 g2'
+        'g8 g8 g7 g7'
+        'g3 g3 g3 g3'
+        'g4 g4 g4 g4';
+        grid-template-columns: 13.3em 10em auto auto;
+        width: 95vw;
+        max-width: 60em;
+        padding: 1em;
+    }    
+    .rplayerVolFader {
+        padding-right: 1em;
+    }
+    .trackInfo {    
+        margin-right: .35em;
+    }
+    .itemB .input {
+        width: calc(100% - 3em);
+    }
+}
+
+.trackInfo {
+    display: flex;
+    height: 100%;
+    justify-content: center; align-items: safe center;
+    text-align: center;
+    font-size: 2em;
+    min-height: 2em;
+}
+
+input,
+a,
+label {
+    cursor: pointer !important;
+}
+
+.rplayerFx {
+    opacity: 0;
+    background-color: var(--bg);
+}
+
+.volumeInfo {
+    display: inline-block;
+}
+
+.FullscreenDimmer {
+    position: absolute;
+    left: auto;
+    top: auto;
+    width: 100vw !important;
+    height: 100vh !important;
+}
+
+.rplayerOneTrack .name {
+    font-weight: bold;
+    float: left;
+}
+
+.rplayerOneTrack .duration {
+    font-style: italic;
+    font-size: .8em;
+    float: right;
+}
+
+.rplayerTrackList {
+    transform: translateY(.25em);
+}
+
+.background {
+    opacity: 0;
+}
+
+.rplayerBufferCondition,
+.rPlayerAlbumDuration {
+    font-weight: bold;
+}
+
+.rplayerCurTime {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--currentTime);
+}
+
+.rplayerCurTime ~ span {
+    opacity: .5;
+}
+
+.addCurTime {
+    padding: .5em;
+    border-radius: 4px;
+}
+
+/* Words */
+
+.words {
+    display: flex;
+    text-align: center;
+    justify-content: center; align-items: safe center;
+    justify-self: center;
+    align-self: center;
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    border: .1em solid var(--currentTime);
+    border-radius: .5em;
+    background-color: var(--wordsBackground);
+    padding: 1em;
+    font-size: 1.5em;
+    font-weight: bold;
+    box-shadow: .3em .3em 1em var(--wordsBoxShadow);
+    z-index: 100;
+    cursor: pointer;
+}
+
+.rplayerFx {
+    background-image: url('../../media/images/dreamer_album.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.rplayerUic {
+    min-height: 100vh !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: safe center !important;
+    border: none !important;
+}
+
+.rplayerUic .ui.segment {
+    background: transparent;
+    margin: 1em;
+}
+
+.fullScreen.icon,
+.rplayerMinimize.icon{
+    color: var(--currentTime);
+    cursor: pointer;
+}

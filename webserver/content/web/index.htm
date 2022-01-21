@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>YATSU - Dreamer (2021) :: RPlayer</title>
+
+	<link rel="icon" href="data:,">
+	
+	<link rel="stylesheet" href="src/css/rplayer.css?v=0518">
+	<link rel="stylesheet" href="src/css/rplayer.hooksVisual.slider.css?v=0518">
+	<link rel="stylesheet" href="vendor/semantic/ui/dist/semantic.css?v=0518">
+	
+	<script src="src/js/jquery.js?v=0518"></script>
+	<script src="src/js/jquery.transit.min.js?v=0518"></script>
+	<script src="src/js/current-device.js?v=0518"></script>
+	<script src="vendor/desandro/imagesloaded/imagesloaded.pkgd.min.js?v=0518"></script>
+	<script src="vendor/semantic/ui/dist/semantic.min.js?v=0518"></script>
+	<script src="vendor/robinherbots/jquery.inputmask/dist/jquery.inputmask.min.js?v=0518"></script>
+	<script src="src/js/jquery.fullscreen.min.js?v=0518"></script>
+	<script src="src/js/rplayer.js?v=0518" type="module"></script>
+
+</head>
+<body>
+	
+	<div class="ui active inverted dimmer FullscreenDimmer">
+		<div class="ui loader"></div>
+	</div>
+	<div class="rplayerFx">
+		<div class="ui container rplayerUic">
+			<div class="ui segment">
+				<div id="rplayer">
+					
+					<div class="words"></div>
+					
+					<div class="itemA">
+						<a href="https://facebook.com/yatsuband" target="_blank">
+							<i class="facebook icon"></i>
+						</a>
+						<a href="https://www.instagram.com/yatsuband/" target="_blank">
+							<i class="instagram icon"></i>
+						</a>
+						<i class="fullScreen expand arrows alternate icon"></i>
+						<i class="rplayerMinimize minus circle icon"></i>
+					</div>
+					
+					<div class="item9">
+						<div>
+							<div>
+								<h1>YATSU</h1>
+								<div><i class="eye icon"></i>Author</div>
+							</div>
+							<div>
+								<h2>Dreamer</h2>
+								<div><i class="book icon"></i>Album</div>
+							</div>
+							<span><i class="clock icon"></i>2021</span>
+						</div>
+					</div>
+					
+					<div class="item1">
+						<i class="volume up icon"></i>
+						<div class="volumeInfo" translate="no"></div>
+						<input type="range" min="0" max="1000000" value="1000000" class="rplayerVolFader slider">
+						<div id="context">
+							<button class="mini ui icon primary button rplayerTransport" data-command="rplayerStartPause">
+								<i class="play icon"></i> / <i class="pause icon"></i>
+							</button>
+							<button class="mini ui icon primary button rplayerTransport" data-command="rplayerWords" id="rplayerWords">
+								<i class="align center icon"></i>
+							</button>
+							<button class="mini ui icon button rplayerTransport" data-command="rplayerStop">
+								<i class="stop icon"></i></i>
+							</button>
+							<button class="mini ui icon button rplayerTransport" data-command="rplayerRW">
+								<i class="fast backward icon"></i></i>
+							</button>
+							<button class="mini ui icon button rplayerTransport" data-command="rplayerFW">
+								<i class="fast forward icon"></i></i>
+							</button>
+							<span class="addCurTime">
+								<span class="rplayerCurTime"></span><span> / <span class="rplayerLenTime"></span></span>
+							</span>
+						</div>
+					</div>
+
+					
+					<div class="item5">
+						<div class="trackInfo">
+							<span class="rplayerCurTrackName"></span>
+							<canvas id="rplayerVisualCanvas"></canvas>
+						</div>
+					</div>
+
+					<div class="item6">
+						<div class="ui toggle checkbox">
+							<input
+								type="checkbox"
+								class="rplayerStopAfterTrack"
+								id="rplayerStopAfterTrackID"
+							><label for="rplayerStopAfterTrackID">Stop after track [S]</label><br>
+						</div><br>
+						<div class="ui toggle checkbox">
+							<input type="checkbox" class="rplayerLoopAll" id="rplayerLoopAllID"><label for="rplayerLoopAllID">Loop all [L]</label>
+						</div>
+					</div>
+					<div class="itemB">
+						<div>
+							<i class="hourglass half icon"></i></i>
+							Stop timer<br>
+							<div class="ui input">
+								<input type="text" placeholder="Minutes...">
+							</div> :
+							<div class="stopTimerSecs">00</div>
+						</div>
+					</div>
+
+					<div class="item2">
+						<div class="rplayerTrackList"></div>
+					</div>
+
+					
+					<div class="item7">
+						Album duration: <span class="rPlayerAlbumDuration"></span>
+					</div>
+
+					<div class="item8">
+						Album buffer: <span class="rplayerBufferCondition"></span>%
+						<span class="rplayerBufferShowLoading"> loading...</span>
+					</div>
+
+					<div class="rPlayerFooter item3">
+						<div>
+							<i class="arrow left icon"></i><i class="arrow right icon"></i>
+						</div>
+						<input type="range" min="0" max="0" value="0" class="rplayerSeeker slider" data-content="N / A">
+					</div>
+
+				</div>
+				<div id="rajs">
+					<a href="https://rajs.info" target="_blank">rPlayer v<span class="rPlayerVersion"></span> by Robert Rajs (c) <span class="rPlayerVersionDate"></a>
+					<a href="https://www.facebook.com/robert.rajs.9/" target="_blank">
+						<i class="facebook icon"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script>
+		$(document).ready(function(){
+			$(".itemB input").inputmask({"mask" : "99999999"}); //specifying options
+			$(".itemB input").inputmask({"placeholder" : ""});  //static mask
+		});
+	</script>
+</body>
+</html>
