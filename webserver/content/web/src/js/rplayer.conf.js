@@ -13,7 +13,7 @@ export default class RPlayerConf {
 
         this.conf = {
             app: {
-                version: "0.5.18", // <some platform updates>.<visible or control updates>.<unvisible updates>
+                version: "0.6.18", // <some platform updates>.<visible or control updates>.<unvisible updates>
                 date:    "2022",
                 preferences: {
                     transport: {
@@ -37,7 +37,8 @@ export default class RPlayerConf {
                         bufferCondition:  ".rplayerBufferCondition",
                         transport:        ".rplayerTransport",
                         playlistOneTrack: ".rplayerOneTrack",
-                        playlistBox:      ".rplayerTrackList"
+                        playlistBox:      ".rplayerTrackList",
+                        showInfoWindow:   ".rplayerShowInfo"
                     },
                     controls: {
                         volumeFader:      ".rplayerVolFader",
@@ -46,7 +47,8 @@ export default class RPlayerConf {
                         stopAfterTrack:   ".rplayerStopAfterTrack",
                         fullScreen:       ".fullScreen",
                         wordsButton:      "#rplayerWords",
-                        minimize:         ".rplayerMinimize"
+                        minimize:         ".rplayerMinimize",
+                        trackInfoButton:  ".trackInfoButton"
                     }
                 },
                 modules: {
@@ -56,7 +58,7 @@ export default class RPlayerConf {
                 },
                 windows: {
                     showInfo: {
-                        htmlSelector: "#rplayerShowInfo",
+                        htmlSelector: ".rplayerShowInfo",
                         htmlTag:      "div",
                         css: {
                             init: {
@@ -103,7 +105,7 @@ export default class RPlayerConf {
                                 1: {
                                     id: "Story",
                                     html: 
-                                    "Lorem ipsum dolor sit amet consectetuer id tempus Sed hendrerit velit. Natoque sapien In adipiscing tincidunt ante scelerisque quis congue vitae aliquet. Pede consectetuer Maecenas felis est morbi nascetur tortor urna vitae vitae. Suscipit nibh sodales magnis orci leo Morbi metus pede Sed gravida. Tempor nulla semper semper Vestibulum wisi pede at sollicitudin semper gravida. Aenean adipiscing Proin Donec et Aenean tincidunt hendrerit Phasellus nibh quis. Pretium Sed habitasse montes feugiat vitae id semper ac Ut amet. Sit eros et ipsum orci Curabitur tristique eu massa eget neque. Vestibulum Curabitur Curabitur nec et elit Curabitur Curabitur Nulla Curabitur lorem. Vivamus nisl non ante justo elit semper id tortor tincidunt sed. Ipsum porttitor suscipit id orci consectetuer magna ac et consequat lobortis. Ornare ullamcorper mauris sit aliquet semper nisl montes Aenean Vestibulum pellentesque. Enim dictum netus sociis Curabitur diam Sed felis massa quis elit. Faucibus nisl pellentesque Pellentesque nulla odio nec vestibulum leo augue porttitor. Maecenas risus Sed sit quis et Maecenas leo morbi pulvinar Vestibulum. A habitant cursus rutrum vitae tristique habitasse et Donec feugiat semper. Feugiat nec quis enim eu semper at aliquet Curabitur velit non. Ut ut sem et Pellentesque quis nulla lobortis ante mollis.",
+                                    "Lorem ipsum dolor sit amet",
                                 },
                                 2: {
                                     id: "Instruments",
@@ -133,7 +135,7 @@ export default class RPlayerConf {
                                 1: {
                                     id: "Story",
                                     html: 
-                                    "Lorem ipsum dolor sit amet consectetuer id tempus Sed hendrerit velit. Natoque sapien In adipiscing tincidunt ante scelerisque quis congue vitae aliquet. Pede consectetuer Maecenas felis est morbi nascetur tortor urna vitae vitae. Suscipit nibh sodales magnis orci leo Morbi metus pede Sed gravida. Tempor nulla semper semper Vestibulum wisi pede at sollicitudin semper gravida. Aenean adipiscing Proin Donec et Aenean tincidunt hendrerit Phasellus nibh quis. Pretium Sed habitasse montes feugiat vitae id semper ac Ut amet. Sit eros et ipsum orci Curabitur tristique eu massa eget neque. Vestibulum Curabitur Curabitur nec et elit Curabitur Curabitur Nulla Curabitur lorem. Vivamus nisl non ante justo elit semper id tortor tincidunt sed. Ipsum porttitor suscipit id orci consectetuer magna ac et consequat lobortis. Ornare ullamcorper mauris sit aliquet semper nisl montes Aenean Vestibulum pellentesque. Enim dictum netus sociis Curabitur diam Sed felis massa quis elit. Faucibus nisl pellentesque Pellentesque nulla odio nec vestibulum leo augue porttitor. Maecenas risus Sed sit quis et Maecenas leo morbi pulvinar Vestibulum. A habitant cursus rutrum vitae tristique habitasse et Donec feugiat semper. Feugiat nec quis enim eu semper at aliquet Curabitur velit non. Ut ut sem et Pellentesque quis nulla lobortis ante mollis.",
+                                    "Lorem ipsum dolor sit amet consectetuer .",
                                 },
                                 2: {
                                     id: "Instruments",

@@ -30,6 +30,7 @@ export default class RPlayer {
         this.seekerObject = $(rplayerCfg.conf.app.htmlSelectors.mainWindow).find(rplayerCfg.conf.app.htmlSelectors.controls.seeker);
 
         this.wasInit = false;
+        this.trackInfoSelected = false;
         this.seekerStartPosition = 0;
         this.seekerEndPosition;
         this.curTrackId;
@@ -60,6 +61,41 @@ export default class RPlayer {
         this.writeVersionDate();
         this.words();
         this.keyboard();
+    }
+
+    windows() {
+        console.log(this.curTrackId,this.trackInfoSelected);
+        var htmlSelector = this.rplayerCfg.conf.app.windows.showInfo.htmlSelector;
+        var songInfoHtml = this
+                        .rplayerCfg
+                        .conf
+                        .album
+                        .tracks[this.trackInfoSelected]
+                        .info
+                        .anyHtml
+                        ;
+        console.log(songInfoHtml);
+
+        var htmlOut = "<div class='infoWindow'><i class='window angle left icon'></i><i class='window close outline icon' onclick='$(this).parent().parent().css({display: \"none\"})'></i><i class='window angle right icon'></i>";
+        var lat = 0;
+        
+        this.obj2array(songInfoHtml).forEach(element => {
+            if (lat > 0) {
+                htmlOut += "<hr>";
+            }
+            // console.log(element[1].id);
+            htmlOut += "<h3>" + element[1].id + "</h3><br>";
+            htmlOut += "<p>" + element[1].html + "</p><br>";
+            lat++;
+        });
+
+        htmlOut += "</div>";
+
+        console.log(htmlOut);
+        $(htmlSelector).html(htmlOut);
+        $(htmlSelector).css({
+            display: "block"
+        });
     }
 
     keyboard() {
@@ -410,7 +446,7 @@ export default class RPlayer {
                             (
                                 this.obj2array(this.rplayerCfg.conf.album.tracks)[key][1].info
                             ) ? 
-                            "<i class='info icon'></i>" : 
+                            "<i class='info icon' data-trackid='" + key + "'></i>" : 
                             ""
                         ) +
                         "</span>"
@@ -655,12 +691,23 @@ export default class RPlayer {
     }
 
     buttons() {
+        var htmlSelectors =  this
+                            .rplayerCfg
+                            .conf
+                            .app
+                            .htmlSelectors
+                            ;
         var that = this;
 
-        $(that.rplayerCfg.conf.app.htmlSelectors.info.transport).on("click",function() {
+        $(htmlSelectors.info.transport).on("click",function() {
             console.log("[RPlayer]",$(this).attr("data-command"));
             that.transportLastAction = $(this).attr("data-command");
             that.transport();
+        });
+
+        $(htmlSelectors.controls.trackInfoButton).on("click",function() {
+            that.trackInfoSelected = parseInt($(this).find("i.icon.info").attr("data-trackid"));
+            that.windows();
         });
 
         this.seekerObject.on("touchstart touchmove mouseover",function() {
@@ -672,7 +719,7 @@ export default class RPlayer {
         });
 
         $(".trackInfoButton").on("click",function() {
-            console.log("ahoj");
+            // console.log("ahoj");
             return false;
         });
 

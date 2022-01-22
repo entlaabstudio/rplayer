@@ -10,6 +10,8 @@
     --rPlayerBorder:    rgba(0,0,0,.1);
     --rPlayerBoxShadow: rgba(100,100,100,.4);
     --item2:            rgba(0,0,0,.3);
+    --wordsZIndex:       100;
+    --infoWindowZIndex:  1000;
 }
 
 body {
@@ -325,9 +327,10 @@ label {
     border-radius: 4px;
 }
 
-/* Words */
+/* Words, Windows */
 
-.words {
+.words,
+.rplayerShowInfo {
     display: flex;
     text-align: center;
     justify-content: center; align-items: safe center;
@@ -336,6 +339,9 @@ label {
     position: absolute;
     width: fit-content;
     height: fit-content;
+    max-width: 80%;
+    max-height: 80%;
+    overflow: auto;
     border: .1em solid var(--currentTime);
     border-radius: .5em;
     background-color: var(--wordsBackground);
@@ -343,8 +349,17 @@ label {
     font-size: 1.5em;
     font-weight: bold;
     box-shadow: .3em .3em 1em var(--wordsBoxShadow);
-    z-index: 100;
+    z-index: var(--wordsZIndex);
+    /* cursor: pointer; */
+}
+
+.infoWindow .close.icon {
     cursor: pointer;
+}
+
+.rplayerShowInfo {
+    display: none;
+    font-size: 1em;
 }
 
 .rplayerFx {
