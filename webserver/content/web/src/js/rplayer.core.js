@@ -12,11 +12,12 @@ export default class RPlayer {
         rplayerCfg
     ) {
         console.log("[RPlayer]","Core loaded.");
-        this.seekingNow = false;
-        this.seekerInit = true;
+        this.seekingNow            = false;
+        this.seekerInit            = true;
         this.rewindToThisTrackTime = 2;
-        this.rplayerCfg = rplayerCfg;
-        this.wordsView = true;
+        this.rplayerCfg            = rplayerCfg;
+        this.wordsView             = true;
+        this.tracklistLoaded       = false;
         
         this.rplayerObject = $(rplayerCfg.conf.app.htmlSelectors.mainWindow);
         
@@ -156,7 +157,7 @@ export default class RPlayer {
                 break;
                 case " ":
 
-                    $(that.rplayerCfg.conf.app.htmlSelectors.mainWindow + " .rplayerTransport[data-command=\"rplayerStartPause\"]").click();
+                    $(that.rplayerCfg.conf.app.htmlSelectors.mainWindow + " " + that.rplayerCfg.conf.app.htmlSelectors.info.transport + "[data-command=\"rplayerStartPause\"]").click();
 
                 break;
                 case "ArrowDown":
@@ -408,6 +409,8 @@ export default class RPlayer {
             }
             i++;
         });
+
+        this.tracklistLoaded = true;
         
         // console.log(this.splits, this.tnames);
 
@@ -707,7 +710,7 @@ export default class RPlayer {
 
         $(htmlSelectors.controls.trackInfoButton).on("click",function() {
             that.trackInfoSelected = parseInt($(this).find("i.icon.info").attr("data-trackid"));
-            that.windows();
+            // that.windows(); // Build-in dev window
         });
 
         this.seekerObject.on("touchstart touchmove mouseover",function() {

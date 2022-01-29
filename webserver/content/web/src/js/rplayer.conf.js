@@ -13,7 +13,7 @@ export default class RPlayerConf {
 
         this.conf = {
             app: {
-                version: "0.6.18", // <some platform updates>.<visible or control updates>.<unvisible updates>
+                version: "0.7.19", // <some platform updates>.<visible or control updates>.<unvisible updates>
                 date:    "2022",
                 preferences: {
                     transport: {
@@ -54,6 +54,9 @@ export default class RPlayerConf {
                 modules: {
                     RPlayerVisual: {
                         scriptFile: "./rplayer.visual.js"
+                    },
+                    RPlayerInfo: {
+                        scriptFile: "./rplayer.info.js"
                     }
                 },
                 windows: {
