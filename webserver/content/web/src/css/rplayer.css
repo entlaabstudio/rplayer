@@ -1,21 +1,22 @@
 :root {
-    --bg:               rgba(255,255,255,1);
-    --bgrplayer:        rgba(255,255,255,.9);
-    --trackbg:          rgba(0,0,0,.1);
-    --text:             rgba(255,255,255,1);
-    --activeTrack:      rgba(0,0,0,1);
-    --currentTime:      #1678c2;
-    --wordsBackground:  rgba(255,255,255,.9);
-    --wordsBoxShadow:   rgba(0,0,0,.3);
-    --rPlayerBorder:    rgba(0,0,0,.1);
-    --rPlayerBoxShadow: rgba(100,100,100,.4);
-    --item2:            rgba(0,0,0,.3);
-    --wordsZIndex:       100;
-    --infoWindowZIndex:  1000;
-
-    --infoTransport:    rgba(0,0,0,.3);
-    --infoBg:           rgba(0,0,0,.9);
-    --infoTextColor:    rgba(255,255,255,1);
+    --bg:                  rgba(255,255,255,1);
+    --bgrplayer:           rgba(255,255,255,.9);
+    --trackbg:             rgba(0,0,0,.1);
+    --text:                rgba(255,255,255,1);
+    --activeTrack:         rgba(0,0,0,1);
+    --currentTime:         #1678c2;
+    --wordsBackground:     rgba(255,255,255,.9);
+    --wordsBoxShadow:      rgba(0,0,0,.3);
+    --rPlayerBorder:       rgba(0,0,0,.1);
+    --rPlayerBoxShadow:    rgba(100,100,100,.4);
+    --item2:               rgba(0,0,0,.3);
+    --wordsZIndex:          100;
+    --infoWindowZIndex:     1000;
+   
+    --infoTransport:       rgba(0,0,0,.3);
+    --infoBg:              rgba(0,0,0,.9);
+    --infoTextColor:       rgba(255,255,255,1);
+    --infoMiddleLineColor: rgba(255,255,255,.3);
 }
 
 body {
@@ -400,7 +401,7 @@ label {
 #rplayerInfoActive,
 #rplayerInfoTemp {
     position: absolute;
-    /* overflow: auto; */
+    overflow: auto;
     top: 0;
     left: 0;
     width: 100%;
@@ -416,6 +417,16 @@ label {
 #rplayerInfoTemp div:first-child ~ div {
     height: 100%;
     overflow: auto;
+}
+
+#rplayerInfo .rplayerInfoTemp div:first-child {
+    border-right: .1em solid var(--infoMiddleLineColor);
+}
+
+@media only screen and (max-width: 767px) {
+    #rplayerInfo .rplayerInfoTemp div:first-child {
+        border-right: .1em solid var(--infoMiddleLineColor);
+    }
 }
 
 @media only screen and (max-width: 767px) {
