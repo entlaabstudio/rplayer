@@ -491,10 +491,36 @@ label {
     margin-top: 1em;
 }
 
-#rplayerInfo .transport {
+#rplayerInfo .transport,
+#rplayerInfo .transportFake {
     top: 1em;
-    right: 2em;
+    right: 1em;
     background-color: var(--infoTransport);
     border-radius: 0.2em;
     box-shadow: var(--rPlayerBoxShadow);
+}
+
+#rplayerInfo .transportFake {
+    opacity: 0;
+}
+
+#rplayerInfo h1 {
+    display: inline-block;
+}
+
+#rplayerInfo th {
+    font-weight: normal;
+    color: var(--currentTime);
+}
+
+#rplayerInfo h3 {
+    border-bottom: .1em solid var(--currentTime);
+}
+
+#rplayerInfo p {
+    color: rgba(255,255,255,.8);
+}
+
+#rplayerInfo p a {
+    color: rgba(255,255,255,1);
 }

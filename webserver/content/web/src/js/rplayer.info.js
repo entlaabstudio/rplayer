@@ -44,7 +44,22 @@
     
     
     
-    
+    transport() {
+        var transportPosLeft = $("#rplayerInfo .transportFake").position().left;
+        console.log($("#rplayerInfo h1:first-child").position().left + $("#rplayerInfo h1:first-child").width()," :: " + transportPosLeft);
+
+        if (
+            ($("#rplayerInfo h1:first-child").position().left + $("#rplayerInfo h1:first-child").width()) > parseInt(transportPosLeft)
+        ) {
+            $("#rplayerInfo .transport").css({
+                writingMode: "vertical-lr"
+            });
+        } else {
+            $("#rplayerInfo .transport").css({
+                writingMode: "unset"
+            });
+        }
+    }
     
     htmlCreate() {
         var that = this;
@@ -83,25 +98,25 @@
         "<table class=\"rplayerAlbumInfo\">" +
             "<tbody>" +
                 "<tr>" +
-                    "<td>" +
+                    "<th>" +
                         "Album name:" +
-                    "</td>" +
+                    "</th>" +
                     "<td>" +
                         "<strong>" + cfg.album.info.name + "</strong>" +
                     "</td>" +
                 "</tr>" +
                 "<tr>" +
-                    "<td>" +
+                    "<th>" +
                         "Album year:" +
-                    "</td>" +
+                    "</th>" +
                     "<td>" +
                         "<strong>" + cfg.album.info.year + "</strong>" +
                     "</td>" +
                 "</tr>" +
                 "<tr>" +
-                    "<td>" +
+                    "<th>" +
                         "Album composer:" +
-                    "</td>" +
+                    "</th>" +
                     "<td>" +
                         "<strong>" + cfg.album.info.composer + "</strong>" +
                     "</td>" +
@@ -137,9 +152,11 @@
                 .rplayerObj.rplayerCfg.conf.album
                 .tracks[this.rplayerObj.trackInfoSelected]
                 .words;
+            html = "<p>";
             this.rplayerObj.obj2array(songInfoHtml).forEach(element => {
                 html += element[1] + "<br>";
             });
+            html += "</p>";
         } catch (error) {
             html  = "...";
         }
@@ -250,10 +267,17 @@
                         display: "none"
                     });
                 });
+                $("body").css({
+                    overflow: "auto"
+                });
             } else {
+                $("body").css({
+                    overflow: "hidden"
+                });
                 that.selector.css({
                     display: "block"
                 });
+                $(document).scrollTop(0);
                 that.selector.stop().animate({
                     opacity: "1"
                 },250);
@@ -262,13 +286,8 @@
 
         $("#rplayerInfo .transport .icon[data-command='rplayerInfoFW']").on("click", function() {
             var cfg = that.rplayerObj.rplayerCfg.conf;
-            
-            // console.log(
-            //     that.rplayerObj.trackInfoSelected,
-            //     cfg.album.tracks,
-            //     that.rplayerObj.obj2array(cfg.album.tracks).length
-            // );
 
+            $("#rplayerInfoTemp").scrollTop(0);
             if (that.rplayerObj.trackInfoSelected < (that.rplayerObj.obj2array(cfg.album.tracks).length - 1)) {
                 that.rplayerObj.trackInfoSelected += 1;
             } else {
@@ -279,6 +298,7 @@
         $("#rplayerInfo .transport .icon[data-command='rplayerInfoRW']").on("click", function() {
             var cfg = that.rplayerObj.rplayerCfg.conf;
 
+            $("#rplayerInfoTemp").scrollTop(0);
             if (that.rplayerObj.trackInfoSelected > 0) {
                 that.rplayerObj.trackInfoSelected -= 1;
             } else {
@@ -297,17 +317,18 @@
         this.ticker = setInterval(function() {
             that.transportInteractiveIcons();
             that.setInfoForSelectedTrack();
+            that.transport();
         },97);
     }
 
     setInfoForSelectedTrack() {
         if (!$("#rplayerInfo .transport .lock").hasClass("open")) {
             this.rplayerObj.trackInfoSelected = this.rplayerObj.curTrackId;
-            $("#rplayerInfo .transport .arrow").css({
+            $("#rplayerInfo .transport .arrow, #rplayerInfo .transportFake .arrow").css({
                 display: "none"
             })
         } else {
-            $("#rplayerInfo .transport .arrow").css({
+            $("#rplayerInfo .transport .arrow, #rplayerInfo .transportFake .arrow").css({
                 display: "flex"
             })
         }
