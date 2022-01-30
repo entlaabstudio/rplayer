@@ -4,6 +4,8 @@
  *
  * @author Robert Rajs
  * @link https://rajs.info/
+ * 
+ * Don´t use apostrophe in HTML. You just put \".
  */
 
 export default class RPlayerConf {
@@ -13,6 +15,7 @@ export default class RPlayerConf {
 
         this.conf = {
             app: {
+                name: "RPlayer",
                 version: "0.7.19", // <some platform updates>.<visible or control updates>.<unvisible updates>
                 date:    "2022",
                 preferences: {
@@ -38,7 +41,10 @@ export default class RPlayerConf {
                         transport:        ".rplayerTransport",
                         playlistOneTrack: ".rplayerOneTrack",
                         playlistBox:      ".rplayerTrackList",
-                        showInfoWindow:   ".rplayerShowInfo"
+                        showInfoWindow:   ".rplayerShowInfo",
+                        albumComposer:    ".rplayerAuthor",
+                        albumName:        ".rplayerAlbumName",
+                        albumYear:        ".rplayerAlbumYear"
                     },
                     controls: {
                         volumeFader:      ".rplayerVolFader",
@@ -87,6 +93,9 @@ export default class RPlayerConf {
                 mediaSrc: "media/YATSU-2021-Mirrors.m4a?v=202106262139",
                 info: {
                     image: "media/images/dreamer_album.jpg",
+                    name: "Dreamer",
+                    year: "2021",
+                    composer: "YATSU band",
                     anyHtml: 
                     "<h1>" +
                         "Hello World!" +
@@ -103,7 +112,7 @@ export default class RPlayerConf {
                             anyHtml: {
                                 0: {
                                     id: "Social information",
-                                    html: "<a href='https://facebook.com/yatsuband'>https://facebook.com/yatsuband</a>",
+                                    html: "<a href=\"https://facebook.com/yatsuband\">https://facebook.com/yatsuband</a>",
                                 },
                                 1: {
                                     id: "Story",
@@ -133,7 +142,7 @@ export default class RPlayerConf {
                             anyHtml: {
                                 0: {
                                     id: "Social information",
-                                    html: "<a href='https://facebook.com/yatsuband'>https://facebook.com/yatsuband</a>",
+                                    html: "<a href=\"https://facebook.com/yatsuband\">https://facebook.com/yatsuband</a>",
                                 },
                                 1: {
                                     id: "Story",
@@ -163,7 +172,7 @@ export default class RPlayerConf {
                             anyHtml: {
                                 0: {
                                     id: "Social information",
-                                    html: "<a href='https://facebook.com/yatsuband'>https://facebook.com/yatsuband</a>",
+                                    html: "<a href=\"https://facebook.com/yatsuband\">https://facebook.com/yatsuband</a>",
                                 },
                                 1: {
                                     id: "Story",
@@ -237,7 +246,7 @@ export default class RPlayerConf {
                             anyHtml: {
                                 0: {
                                     id: "Social information",
-                                    html: "<a href='https://facebook.com/yatsuband'>https://facebook.com/yatsuband</a>",
+                                    html: "<a href=\"https://facebook.com/yatsuband\">https://facebook.com/yatsuband</a>",
                                 },
                                 1: {
                                     id: "Story",
@@ -267,7 +276,7 @@ export default class RPlayerConf {
                             anyHtml: {
                                 0: {
                                     id: "Social information",
-                                    html: "<a href='https://facebook.com/yatsuband'>https://facebook.com/yatsuband</a>",
+                                    html: "<a href=\"https://facebook.com/yatsuband\">https://facebook.com/yatsuband</a>",
                                 },
                                 1: {
                                     id: "Story",
@@ -297,7 +306,7 @@ export default class RPlayerConf {
                             anyHtml: {
                                 0: {
                                     id: "Social information",
-                                    html: "<a href='https://facebook.com/yatsuband'>https://facebook.com/yatsuband</a>",
+                                    html: "<a href=\"https://facebook.com/yatsuband\">https://facebook.com/yatsuband</a>",
                                 },
                                 1: {
                                     id: "Story",
@@ -327,7 +336,7 @@ export default class RPlayerConf {
                             anyHtml: {
                                 0: {
                                     id: "Social information",
-                                    html: "<a href='https://facebook.com/yatsuband'>https://facebook.com/yatsuband</a>",
+                                    html: "<a href=\"https://facebook.com/yatsuband\">https://facebook.com/yatsuband</a>",
                                 },
                                 1: {
                                     id: "Story",
@@ -357,7 +366,7 @@ export default class RPlayerConf {
                             anyHtml: {
                                 0: {
                                     id: "Social information",
-                                    html: "<a href='https://facebook.com/yatsuband'>https://facebook.com/yatsuband</a>",
+                                    html: "<a href=\"https://facebook.com/yatsuband\">https://facebook.com/yatsuband</a>",
                                 },
                                 1: {
                                     id: "Story",
@@ -387,7 +396,7 @@ export default class RPlayerConf {
                             anyHtml: {
                                 0: {
                                     id: "Social information",
-                                    html: "<a href='https://facebook.com/yatsuband'>https://facebook.com/yatsuband</a>",
+                                    html: "<a href=\"https://facebook.com/yatsuband\">https://facebook.com/yatsuband</a>",
                                 },
                                 1: {
                                     id: "Story",

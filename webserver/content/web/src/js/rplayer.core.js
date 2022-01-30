@@ -40,7 +40,7 @@ export default class RPlayer {
 
         this.audioObject.addEventListener("loadedmetadata", function() {
             that.init();
-            console.log("[RPlayer]","data loaded");
+            console.log("[RPlayer]","Data loaded.");
         });
     }
     
@@ -52,6 +52,8 @@ export default class RPlayer {
 
         this.tracklist();
         this.buttons();
+        this.putAlbumInfo();
+        this.putWebTitle();
         this.showTime();
         this.volumeFader();
         this.seeker();
@@ -64,6 +66,24 @@ export default class RPlayer {
         this.keyboard();
     }
 
+    putWebTitle() {
+        var cfg = this.rplayerCfg.conf;
+        $("title").html(
+            cfg.album.info.composer + " - " +
+            cfg.album.info.name + " (" +
+            cfg.album.info.year + " :: " +
+            cfg.app.name + " " +
+            cfg.app.version
+        );
+    }
+    
+    putAlbumInfo() {
+        var cfg = this.rplayerCfg.conf;
+        $(cfg.app.htmlSelectors.info.albumComposer).html(cfg.album.info.composer);
+        $(cfg.app.htmlSelectors.info.albumName).html(cfg.album.info.name);
+        $(cfg.app.htmlSelectors.info.albumYear).html(cfg.album.info.year);
+    }
+    
     windows() {
         console.log(this.curTrackId,this.trackInfoSelected);
         var htmlSelector = this.rplayerCfg.conf.app.windows.showInfo.htmlSelector;
@@ -496,7 +516,7 @@ export default class RPlayer {
             
             this.audioObject.currentTime = this.seekerObject.val();
 
-            console.log("[RPlayer]","seekerInit");
+            console.log("[RPlayer]","Seeker init success.");
             this.seekerInit = false;
         } else {            
             var condition = false;

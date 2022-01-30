@@ -204,6 +204,10 @@ a.rplayerOneTrack {
     display: inline-block;
 }
 
+.rplayerAlbumYear {
+    opacity: 1 !important;
+}
+
 
 
 #rplayer {
@@ -399,8 +403,11 @@ label {
     height: 100%;
     padding: 0;
     margin: 0;
+    text-align: justify;
 }
 
+#rplayerInfoActive div:first-child,
+#rplayerInfoActive div:first-child ~ div,
 #rplayerInfoTemp div:first-child,
 #rplayerInfoTemp div:first-child ~ div {
     height: 100%;
@@ -408,6 +415,8 @@ label {
 }
 
 @media only screen and (max-width: 767px) {
+    #rplayerInfoActive div:first-child,
+    #rplayerInfoActive div:first-child ~ div,
     #rplayerInfoTemp div:first-child,
     #rplayerInfoTemp div:first-child ~ div {
         height: auto;
@@ -455,4 +464,13 @@ label {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#rplayerInfo .mediaImage {
+    width: 100%;
+}
+
+#rplayerInfo .rplayerAlbumInfo {
+    font-size: 1.2em;
+    margin-top: 1em;
 }
