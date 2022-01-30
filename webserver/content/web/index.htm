@@ -31,19 +31,20 @@
 
 	<div id="rplayerInfo">
 		<div id="rplayerInfoTemp" class="ui two column stackable grid">
-			<div class="six wide column" style="background-color: navy;"></div>
-			<div class="ten wide column" style="background-color: saddlebrown;"></div>
+			<div class="six wide column"></div>
+			<div class="ten wide column"></div>
 		</div>
 		<div id="rplayerInfoActive" class="ui two column stackable grid">
-			<div class="six wide column" style="background-color: blue;"></div>
-			<div class="ten wide column" style="background-color: orange;"></div>
+			<!-- TODO: Transitional -->
+			<div class="six wide column" style="display: none; background-color: blue;"></div>
+			<div class="ten wide column" style="display: none; background-color: orange;"></div>
 		</div>
 		<div class="transport icons">
 			<i class="play icon" data-command="rplayerStartPause"></i>
 			<i class="fast backward icon" data-command="rplayerRW"></i>
 			<i class="fast forward icon" data-command="rplayerFW"></i>
-			<i class="arrow left icon"></i>
-			<i class="arrow right icon"></i>
+			<i class="arrow left icon" data-command="rplayerInfoRW"></i>
+			<i class="arrow right icon" data-command="rplayerInfoFW"></i>
 			<i class="stop icon" data-command="rplayerStop"></i>
 			<i class="lock open icon" data-command="rplayerSnapInfoToTrack"></i>
 			<i class="window close icon" data-command="rplayerInfoClose"></i>

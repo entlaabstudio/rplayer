@@ -38,7 +38,7 @@
 
         this.ticker();
 
-        // console.log("Objekt RPlayeru",this.rplayerObj);
+        console.log("Objekt RPlayeru",this.rplayerObj);
     }
 
     
@@ -72,7 +72,7 @@
             if (html_2 != that.tempPanel2.html()) {
                 that.tempPanel2.html(html_2);
             }
-        },1357);
+        },123);
     }
 
     htmlAlbumInfo() {
@@ -260,6 +260,32 @@
             }
         });
 
+        $("#rplayerInfo .transport .icon[data-command='rplayerInfoFW']").on("click", function() {
+            var cfg = that.rplayerObj.rplayerCfg.conf;
+            
+            // console.log(
+            //     that.rplayerObj.trackInfoSelected,
+            //     cfg.album.tracks,
+            //     that.rplayerObj.obj2array(cfg.album.tracks).length
+            // );
+
+            if (that.rplayerObj.trackInfoSelected < (that.rplayerObj.obj2array(cfg.album.tracks).length - 1)) {
+                that.rplayerObj.trackInfoSelected += 1;
+            } else {
+                that.rplayerObj.trackInfoSelected = 0;
+            }
+        });
+
+        $("#rplayerInfo .transport .icon[data-command='rplayerInfoRW']").on("click", function() {
+            var cfg = that.rplayerObj.rplayerCfg.conf;
+
+            if (that.rplayerObj.trackInfoSelected > 0) {
+                that.rplayerObj.trackInfoSelected -= 1;
+            } else {
+                that.rplayerObj.trackInfoSelected = (that.rplayerObj.obj2array(cfg.album.tracks).length - 1);
+            }
+        });
+
         // $(that.rplayerObj.rplayerCfg.conf.app.htmlSelectors.controls.trackInfoButton).on("click", function() {
         $(".trackInfoButton").on("click", function() {
             $("#rplayerInfo .transport .icon[data-command='rplayerInfoClose']").click();
@@ -270,7 +296,21 @@
         var that = this;
         this.ticker = setInterval(function() {
             that.transportInteractiveIcons();
+            that.setInfoForSelectedTrack();
         },97);
+    }
+
+    setInfoForSelectedTrack() {
+        if (!$("#rplayerInfo .transport .lock").hasClass("open")) {
+            this.rplayerObj.trackInfoSelected = this.rplayerObj.curTrackId;
+            $("#rplayerInfo .transport .arrow").css({
+                display: "none"
+            })
+        } else {
+            $("#rplayerInfo .transport .arrow").css({
+                display: "flex"
+            })
+        }
     }
 
     transportInteractiveIcons() {
