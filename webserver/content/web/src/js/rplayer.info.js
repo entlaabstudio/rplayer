@@ -16,7 +16,7 @@
         this.tempPanel1   = $("#rplayerInfoTemp div:first-child");
         this.tempPanel2   = $("#rplayerInfoTemp div:first-child ~ div");
 
-        this.snapToTrack  = true;
+        this.snapToTrack  = false;
 
         this.init();
 
@@ -70,12 +70,22 @@
             if (
                 ($("#rplayerInfo h1:first-child").position().left + $("#rplayerInfo h1:first-child").width()) > parseInt(transportPosLeft)
             ) {
+                
                 $("#rplayerInfo .transport").css({
                     writingMode: "vertical-lr"
                 });
+                
+                $("#rplayerInfo .mediaImage").css({
+                    width: "calc(" + ($("#rplayerInfo .transport.icons").position().left - $("#rplayerInfo .mediaImage").position().left + "px - .5em)")
+                });
+
+                
             } else {
                 $("#rplayerInfo .transport").css({
                     writingMode: "unset"
+                });
+                $("#rplayerInfo .mediaImage").css({
+                    width: "100%"
                 });
             }            
         } catch (error) {
@@ -287,6 +297,7 @@
 
         $("#rplayerInfo .transport .icon[data-command='rplayerInfoClose']").on("click", function() {
             if (that.selector.css("opacity") == "1") {
+                that.snapToTrack  = false;
                 that.selector.stop().animate({
                     opacity: "0"
                 },750,function() {
@@ -333,6 +344,7 @@
 
         // $(that.rplayerObj.rplayerCfg.conf.app.htmlSelectors.controls.trackInfoButton).on("click", function() {
         $(".trackInfoButton").on("click", function() {
+            console.log(that.rplayerObj.rplayerCfg.conf,that.rplayerObj);
             $("#rplayerInfo .transport .icon[data-command='rplayerInfoClose']").click();
         });
     }
