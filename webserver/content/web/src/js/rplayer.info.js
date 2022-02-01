@@ -16,7 +16,7 @@
         this.tempPanel1   = $("#rplayerInfoTemp div:first-child");
         this.tempPanel2   = $("#rplayerInfoTemp div:first-child ~ div");
 
-        this.snapToTrack  = false;
+        this.snapToTrack  = true;
 
         this.init();
 
@@ -39,26 +39,51 @@
         this.ticker();
 
         console.log("Objekt RPlayeru",this.rplayerObj);
+    }   
+    
+    checkH1() {
+        var minOpacity = "0.5"
+        if (
+            $("#rplayerInfo h1:first-child").css("opacity") == minOpacity ||
+            $("#rplayerInfo h1:first-child").css("opacity") == "1" 
+        ) {
+            if (
+                $("#rplayerInfo #rplayerInfoTemp").scrollTop() != 0 ||
+                $("#rplayerInfo #rplayerInfoTemp div:first-child").scrollTop() != 0
+            ) {
+                $("#rplayerInfo h1:first-child").stop().animate({
+                    opacity: minOpacity
+                },2000);
+            } else {
+                $("#rplayerInfo h1:first-child").stop().css({
+                    opacity: "1"
+                });
+            }
+        }
+        
     }
 
-    
-    
-    
     transport() {
         var transportPosLeft = $("#rplayerInfo .transportFake").position().left;
-        console.log($("#rplayerInfo h1:first-child").position().left + $("#rplayerInfo h1:first-child").width()," :: " + transportPosLeft);
-
-        if (
-            ($("#rplayerInfo h1:first-child").position().left + $("#rplayerInfo h1:first-child").width()) > parseInt(transportPosLeft)
-        ) {
-            $("#rplayerInfo .transport").css({
-                writingMode: "vertical-lr"
-            });
-        } else {
-            $("#rplayerInfo .transport").css({
-                writingMode: "unset"
-            });
+        
+        try {
+            console.log($("#rplayerInfo h1:first-child").position().left + $("#rplayerInfo h1:first-child").width()," :: " + transportPosLeft);
+    
+            if (
+                ($("#rplayerInfo h1:first-child").position().left + $("#rplayerInfo h1:first-child").width()) > parseInt(transportPosLeft)
+            ) {
+                $("#rplayerInfo .transport").css({
+                    writingMode: "vertical-lr"
+                });
+            } else {
+                $("#rplayerInfo .transport").css({
+                    writingMode: "unset"
+                });
+            }            
+        } catch (error) {
+            
         }
+
     }
     
     htmlCreate() {
@@ -66,6 +91,8 @@
         var html_1;
         var html_2;
         var htmlWords;
+        var html_1_last = false;
+        var html_2_last = false;
         setInterval(function() {
             html_1  = that.htmlHeader();
             html_1 += that.htmlMediaImage();
@@ -80,12 +107,14 @@
             }
 
             // HTML out
-            if (html_1 != that.tempPanel1.html()) {
+            if (html_1 != html_1_last) {
                 that.tempPanel1.html(html_1);
+                html_1_last = html_1;
             }
 
-            if (html_2 != that.tempPanel2.html()) {
+            if (html_2 != html_2_last) {
                 that.tempPanel2.html(html_2);
+                html_2_last = html_2;
             }
         },123);
     }
@@ -287,7 +316,6 @@
         $("#rplayerInfo .transport .icon[data-command='rplayerInfoFW']").on("click", function() {
             var cfg = that.rplayerObj.rplayerCfg.conf;
 
-            $("#rplayerInfoTemp").scrollTop(0);
             if (that.rplayerObj.trackInfoSelected < (that.rplayerObj.obj2array(cfg.album.tracks).length - 1)) {
                 that.rplayerObj.trackInfoSelected += 1;
             } else {
@@ -298,7 +326,6 @@
         $("#rplayerInfo .transport .icon[data-command='rplayerInfoRW']").on("click", function() {
             var cfg = that.rplayerObj.rplayerCfg.conf;
 
-            $("#rplayerInfoTemp").scrollTop(0);
             if (that.rplayerObj.trackInfoSelected > 0) {
                 that.rplayerObj.trackInfoSelected -= 1;
             } else {
@@ -318,6 +345,7 @@
             that.transportInteractiveIcons();
             that.setInfoForSelectedTrack();
             that.transport();
+            that.checkH1();
         },97);
     }
 

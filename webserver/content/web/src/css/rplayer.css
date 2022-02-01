@@ -455,6 +455,7 @@ label {
     width: 100vw;
     height: 100vh;
     z-index: var(--wordsZIndex);
+    text-shadow: .1em .1em .1em black;
 }
 
 #rplayerInfo .icons {
@@ -483,6 +484,7 @@ label {
 }
 
 #rplayerInfo .mediaImage {
+    padding-top: 3.5em;
     width: 100%;
 }
 
@@ -507,6 +509,16 @@ label {
 #rplayerInfo h1 {
     display: inline-block;
 }
+
+#rplayerInfo h1:first-child {
+    position: fixed;
+}
+
+/* #rplayerInfo h3 {
+    position: sticky;
+    top: 0;
+    background-color: #000;
+} */
 
 #rplayerInfo th {
     font-weight: normal;
