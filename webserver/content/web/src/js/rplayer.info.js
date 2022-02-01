@@ -38,7 +38,7 @@
 
         this.ticker();
 
-        console.log("Objekt RPlayeru",this.rplayerObj);
+        // console.log("Objekt RPlayeru",this.rplayerObj);
     }   
     
     checkH1() {
@@ -67,8 +67,6 @@
         var transportPosLeft = $("#rplayerInfo .transportFake").position().left;
         
         try {
-            console.log($("#rplayerInfo h1:first-child").position().left + $("#rplayerInfo h1:first-child").width()," :: " + transportPosLeft);
-    
             if (
                 ($("#rplayerInfo h1:first-child").position().left + $("#rplayerInfo h1:first-child").width()) > parseInt(transportPosLeft)
             ) {
