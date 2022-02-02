@@ -390,8 +390,8 @@ label {
     margin: 1em;
 }
 
-.fullScreen.icon,
-.rplayerMinimize.icon{
+#rplayer .fullScreen.icon,
+#rplayer .rplayerMinimize.icon{
     color: var(--currentTime);
     cursor: pointer;
 }
