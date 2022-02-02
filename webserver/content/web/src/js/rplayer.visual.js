@@ -143,6 +143,12 @@
     dimmerFullscreen() {
         if ($(".rplayerTrackList").html().length > 0) {
             clearInterval(this.ticker["checkFirstLoading"]);
+            
+            // scroll top
+            $('html, body').animate({
+                scrollTop: top
+            },500);
+
             $(".FullscreenDimmer").stop().animate({
                 opacity: 0
             },this.fadeoutTime,function() {

@@ -277,10 +277,12 @@
         });
 
         $("#rplayerInfo .transport .icon[data-command='rplayerRW']").on("click", function() {
+            that.lastImageWidth = $("#rplayerInfo .mediaImage").width();
             $(that.rplayerObj.rplayerCfg.conf.app.htmlSelectors.mainWindow + " " + that.rplayerObj.rplayerCfg.conf.app.htmlSelectors.info.transport + "[data-command=\"rplayerRW\"]").click();
         });
 
         $("#rplayerInfo .transport .icon[data-command='rplayerFW']").on("click", function() {
+            that.lastImageWidth = $("#rplayerInfo .mediaImage").width();
             $(that.rplayerObj.rplayerCfg.conf.app.htmlSelectors.mainWindow + " " + that.rplayerObj.rplayerCfg.conf.app.htmlSelectors.info.transport + "[data-command=\"rplayerFW\"]").click();
         });
 
