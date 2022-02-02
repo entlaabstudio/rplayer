@@ -18,6 +18,7 @@
 
         this.snapToTrack  = false;
 
+        this.lastImageWidth = 0;
         this.init();
 
         console.log("[RPlayer]","Info module loaded.")
@@ -173,7 +174,7 @@
             html += this.rplayerObj.rplayerCfg.conf
                     .album.tracks[this.rplayerObj.trackInfoSelected]
                     .info.image;
-            html += "\" class=\"mediaImage\">";
+            html += "\" style=\"width: " + this.lastImageWidth + "px\" class=\"mediaImage\">";
         } catch (error) {
             html = "";
         }
@@ -323,6 +324,7 @@
         });
 
         $("#rplayerInfo .transport .icon[data-command='rplayerInfoFW']").on("click", function() {
+            that.lastImageWidth = $("#rplayerInfo .mediaImage").width();
             var cfg = that.rplayerObj.rplayerCfg.conf;
 
             if (that.rplayerObj.trackInfoSelected < (that.rplayerObj.obj2array(cfg.album.tracks).length - 1)) {
@@ -333,6 +335,7 @@
         });
 
         $("#rplayerInfo .transport .icon[data-command='rplayerInfoRW']").on("click", function() {
+            that.lastImageWidth = $("#rplayerInfo .mediaImage").width();
             var cfg = that.rplayerObj.rplayerCfg.conf;
 
             if (that.rplayerObj.trackInfoSelected > 0) {
