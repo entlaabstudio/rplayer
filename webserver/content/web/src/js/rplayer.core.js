@@ -223,6 +223,7 @@ export default class RPlayer {
             words.forEach(element => {
 
                 if (element[0] < time) {
+                    currentWord["time"]   = element[0];
                     currentWord["offset"] = time - element[0];
                     currentWord["text"]   = element[1];
                 }

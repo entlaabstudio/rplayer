@@ -536,3 +536,8 @@ label {
 #rplayerInfo p a {
     color: rgba(255,255,255,1);
 }
+
+#rplayerInfo .highlightedWord {
+    font-weight: bold;
+    color: white;
+}

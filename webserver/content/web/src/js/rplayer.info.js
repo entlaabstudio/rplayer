@@ -18,7 +18,8 @@
 
         this.snapToTrack  = false;
 
-        this.lastImageWidth = 0;
+        this.lastImageWidth  = 0;
+        this.lastWordTimekey = 0;
         this.init();
 
         console.log("[RPlayer]","Info module loaded.")
@@ -192,7 +193,7 @@
                 .words;
             html = "<p>";
             this.rplayerObj.obj2array(songInfoHtml).forEach(element => {
-                html += element[1] + "<br>";
+                html += "<span class='rplayerInfoWord' data-timekey='" + element[0] + "'>" + element[1] + "</span><br>";
             });
             html += "</p>";
         } catch (error) {
@@ -361,7 +362,18 @@
             that.setInfoForSelectedTrack();
             that.transport();
             that.checkH1();
+            that.wordsHighlight();
         },97);
+    }
+
+    wordsHighlight() {
+        var currentWordTimekey = this.rplayerObj.getCurrentWord()["time"];
+        if (this.lastWordTimekey != currentWordTimekey) {
+            $("#rplayerInfo .rplayerInfoWord").removeClass("highlightedWord");
+            $("#rplayerInfo .rplayerInfoWord[data-timekey='" + currentWordTimekey + "']").addClass("highlightedWord");
+            console.log("[RPlayerInfoModule]",currentWordTimekey,this.rplayerObj.getCurrentWord()["text"]);
+            this.lastWordTimekey = currentWordTimekey;
+        }
     }
 
     setInfoForSelectedTrack() {
