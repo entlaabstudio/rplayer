@@ -1,9 +1,3 @@
-:root {
-  --color1: #3071a9;
-  --color2: #367ebd;
-  --color3: #fff;
-}
-
 input[type=range] {
   width: 100%;
   margin: 1em 0 0 0;

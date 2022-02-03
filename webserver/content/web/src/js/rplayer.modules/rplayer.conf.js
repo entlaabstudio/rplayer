@@ -16,7 +16,7 @@ export default class RPlayerConf {
         this.conf = {
             app: {
                 name: "RPlayer",
-                version: "0.11.24", // <some platform updates>.<visible or control updates>.<unvisible updates>
+                version: "0.11.25", // <some platform updates>.<visible or control updates>.<unvisible updates>
                 date:    "2022",
                 preferences: {
                     transport: {

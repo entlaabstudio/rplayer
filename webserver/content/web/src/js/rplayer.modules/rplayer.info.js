@@ -39,8 +39,6 @@
         },359);
 
         this.ticker();
-
-        // console.log("Objekt RPlayeru",this.rplayerObj);
     }   
     
     checkH1() {
@@ -266,11 +264,6 @@
         return html;
     }
 
-
-
-
-
-    
     buttons() {
         var that = this;
         $("#rplayerInfo .transport .icon[data-command='rplayerStartPause']").on("click", function() {
@@ -348,9 +341,7 @@
             }
         });
 
-        // $(that.rplayerObj.rplayerCfg.conf.app.htmlSelectors.controls.trackInfoButton).on("click", function() {
         $(".trackInfoButton").on("click", function() {
-            console.log(that.rplayerObj.rplayerCfg.conf,that.rplayerObj);
             $("#rplayerInfo .transport .icon[data-command='rplayerInfoClose']").click();
         });
     }
@@ -371,7 +362,9 @@
         if (this.lastWordTimekey != currentWordTimekey) {
             $("#rplayerInfo .rplayerInfoWord").removeClass("highlightedWord");
             $("#rplayerInfo .rplayerInfoWord[data-timekey='" + currentWordTimekey + "']").addClass("highlightedWord");
-            console.log("[RPlayerInfoModule]",currentWordTimekey,this.rplayerObj.getCurrentWord()["text"]);
+            if (this.rplayerObj.getCurrentWord()["text"] !== undefined) {
+                console.log("[RPlayerInfoModule]",currentWordTimekey,this.rplayerObj.getCurrentWord()["text"]);
+            }
             this.lastWordTimekey = currentWordTimekey;
         }
     }

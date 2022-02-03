@@ -1,0 +1,149 @@
+#rplayerInfoActive,
+#rplayerInfoTemp {
+    position: absolute;
+    overflow: auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: justify;
+}
+
+#rplayerInfoActive div:first-child,
+#rplayerInfoActive div:first-child ~ div,
+#rplayerInfoTemp div:first-child,
+#rplayerInfoTemp div:first-child ~ div {
+    height: 100%;
+    overflow: auto;
+}
+
+#rplayerInfo .rplayerInfoTemp div:first-child {
+    border-right: .1em solid var(--infoMiddleLineColor);
+}
+
+@media only screen and (max-width: 767px) {
+    #rplayerInfo .rplayerInfoTemp div:first-child {
+        border-right: .1em solid var(--infoMiddleLineColor);
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #rplayerInfoActive div:first-child,
+    #rplayerInfoActive div:first-child ~ div,
+    #rplayerInfoTemp div:first-child,
+    #rplayerInfoTemp div:first-child ~ div {
+        height: auto;
+    }
+    #rplayerInfo {
+        position: absolute !important;
+    }
+}
+
+#rplayerInfoActive {
+    transform: scale(.1);
+}
+
+#rplayerInfo {
+    /* border: 1em solid red; */
+    opacity: 0;
+    display: none;
+    color: var(--infoTextColor);
+    background-color: var(--infoBg);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: var(--wordsZIndex);
+    text-shadow: .1em .1em .1em black;
+}
+
+#rplayerInfo *::selection {
+    background-color: rgba(255,255,255,.1);
+    color: white;
+}
+
+#rplayerInfo .icons {
+    position: fixed;
+    display: flex;
+    color: #fff;
+    top: 0;
+    right: 0;
+}
+
+#rplayerInfo .icons i {
+    /* border: 1px solid red; */
+    opacity: .5;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+#rplayerInfo .icon {
+    padding: 1em !important;
+    text-align: center;
+    width: 1.5em !important;
+    height: 1.5em !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#rplayerInfo .mediaImage {
+    padding-top: 3.5em;
+    width: 100%;
+}
+
+#rplayerInfo .rplayerAlbumInfo {
+    font-size: 1.2em;
+    margin-top: 1em;
+}
+
+#rplayerInfo .transport,
+#rplayerInfo .transportFake {
+    user-select: none;
+    top: 1em;
+    right: 1em;
+    background-color: var(--infoTransport);
+    border-radius: 0.2em;
+    box-shadow: var(--rPlayerBoxShadow);
+}
+
+#rplayerInfo .transportFake {
+    opacity: 0;
+}
+
+#rplayerInfo h1 {
+    display: inline-block;
+}
+
+#rplayerInfo h1:first-child {
+    position: fixed;
+}
+
+/* #rplayerInfo h3 {
+    position: sticky;
+    top: 0;
+    background-color: #000;
+} */
+
+#rplayerInfo th {
+    font-weight: normal;
+    color: var(--currentTime);
+}
+
+#rplayerInfo h3 {
+    border-bottom: .1em solid var(--currentTime);
+}
+
+#rplayerInfo p {
+    color: rgba(255,255,255,.8);
+}
+
+#rplayerInfo p a {
+    color: rgba(255,255,255,1);
+}
+
+#rplayerInfo .highlightedWord {
+    font-weight: bold;
+    color: white;
+}

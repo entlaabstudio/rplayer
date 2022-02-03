@@ -1,0 +1,27 @@
+:root {
+    /* Visual */
+    --bg:                  rgba(255,255,255,1);
+    --bgrplayer:           rgba(255,255,255,.9);
+    --trackbg:             rgba(0,0,0,.1);
+    --text:                rgba(255,255,255,1);
+    --activeTrack:         rgba(0,0,0,1);
+    --currentTime:         rgba(65,131,196,1);
+    --wordsBackground:     rgba(255,255,255,.9);
+    --wordsBoxShadow:      rgba(0,0,0,.3);
+    --rPlayerBorder:       rgba(0,0,0,.1);
+    --rPlayerBoxShadow:    rgba(100,100,100,.4);
+    --item2:               rgba(0,0,0,.3);
+    --wordsZIndex:          100;
+    --infoWindowZIndex:     1000;
+
+    /* Visual slider */
+    --color1: #3071a9;
+    --color2: #367ebd;
+    --color3: #fff;
+   
+    /* Info window */
+    --infoTransport:       rgba(0,0,0,.3);
+    --infoBg:              rgba(0,0,0,.9);
+    --infoTextColor:       rgba(255,255,255,1);
+    --infoMiddleLineColor: rgba(255,255,255,.3);
+}
