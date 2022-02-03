@@ -285,7 +285,7 @@
         var shakingBrutality = .1;
 
         this.motion3dTicker = setInterval(function() {
-            console.log("ahoj");
+            // console.log("ahoj");
 
             $("#rplayer").css({
                 transform: "perspective(5em) rotateX(" + (Math.sin(i / 222) * -4 * shakingBrutality) + "deg) rotateY(" + (Math.sin(i / 126) * -4 * shakingBrutality) + "deg) rotateZ(" + (Math.sin(i / 635) * -16 * shakingBrutality) + "deg)"
