@@ -743,7 +743,6 @@ export default class RPlayer {
         });
 
         $(".trackInfoButton").on("click",function() {
-            // console.log("ahoj");
             return false;
         });
 
