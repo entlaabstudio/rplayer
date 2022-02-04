@@ -16,7 +16,7 @@ export default class RPlayerConf {
         this.conf = {
             app: {
                 name: "RPlayer",
-                version: "0.11.25", // <some platform updates>.<visible or control updates>.<unvisible updates>
+                version: "0.12.25", // <some platform updates>.<visible or control updates>.<unvisible updates>
                 date:    "2022",
                 preferences: {
                     transport: {
@@ -106,7 +106,7 @@ export default class RPlayerConf {
                         timeStart: 0,
                         mediaName: "Mirrors",
                         info: {
-                            image: "media/images/dreamer_album.jpg",
+                            image: "media/images/mirrors.jpg",
                             composer: "Michal Diviš",
                             year: 2021,
                             anyHtml: {
@@ -166,7 +166,7 @@ export default class RPlayerConf {
                         timeStart: 538.5,
                         mediaName: "Ornaments",
                         info: {
-                            image: "media/images/dreamer_album.jpg",
+                            image: "media/images/ornaments_w_vocals.jpg",
                             composer: "Michal Diviš",
                             year: 2021,
                             anyHtml: {
@@ -240,7 +240,7 @@ export default class RPlayerConf {
                         timeStart: 786.6,
                         mediaName: "Labyrinth",
                         info: {
-                            image: "media/images/dreamer_album.jpg",
+                            image: "media/images/labyrinth.jpg",
                             composer: "Michal Diviš",
                             year: 2021,
                             anyHtml: {
