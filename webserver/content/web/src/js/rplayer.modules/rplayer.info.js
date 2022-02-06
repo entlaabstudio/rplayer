@@ -20,6 +20,7 @@
 
         this.lastImageWidth  = 0;
         this.lastWordTimekey = 0;
+        this.switchingNow    = false;
         this.init();
 
         console.log("[RPlayer]","Info module loaded.")
@@ -116,13 +117,56 @@
 
             // HTML out
             if (html_1 != html_1_last) {
-                that.tempPanel1.html(html_1);
-                html_1_last = html_1;
+                if (!that.switchingNow) {
+                    that.switchingNow = true;
+
+                    $("#rplayerInfo #rplayerInfoTemp div:first-child").animate({
+                        opacity: "0"
+                    },250,function() {
+                        
+                        that.tempPanel1.html(html_1);
+                        html_1_last = html_1;
+
+                        $("#rplayerInfo #rplayerInfoTemp div:first-child").animate({
+                            opacity: "1"
+                        },250,function() {
+                            that.switchingNow = false;
+                        });
+
+                    });
+                }
             }
 
             if (html_2 != html_2_last) {
-                that.tempPanel2.html(html_2);
-                html_2_last = html_2;
+                if (!that.switchingNow) {
+                    that.switchingNow = true;
+
+                    $("#rplayerInfo #rplayerInfoTemp div:first-child ~ div").animate({
+                        opacity: "0"
+                    },250,function() {
+                        
+                        that.tempPanel2.html(html_2);
+                        html_2_last = html_2;
+
+                        $("#rplayerInfo #rplayerInfoTemp div:first-child ~ div").animate({
+                            opacity: "1"
+                        },250,function() {
+                            that.switchingNow = false;
+                        });
+
+                    });
+                    
+                    
+                    
+                    
+                    
+                    // that.switchingNow = true;
+
+                    // that.tempPanel2.html(html_2);
+                    // html_2_last = html_2;
+
+                    // that.switchingNow = false;
+                }
             }
         },123);
     }
