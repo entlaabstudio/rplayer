@@ -428,13 +428,13 @@ export default class RPlayerConf {
                     1: {
                         timeStart: 270,
                         mediaName: "YATSU",
-                        src: "media/images/yatsu-logo.jpg"
+                        src: "media/images/ornaments.jpg"
                     }
                 }
             }
         };
         
-        // console.log("[RPlayer] Config: ",this.conf);
+        console.log("[RPlayer] Config: ",this.conf);
 
     }
 

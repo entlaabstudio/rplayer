@@ -50,6 +50,7 @@ export default class RPlayer {
             $(rplayerCfg.conf.app.htmlSelectors.controls.volumeFader).attr("disabled",true);
         }
 
+        this.preloadAllImages();
         this.tracklist();
         this.buttons();
         this.putAlbumInfo();
@@ -64,6 +65,36 @@ export default class RPlayer {
         this.writeVersionDate();
         this.words();
         this.keyboard();
+    }
+
+    preloadAllImages() {
+        var cfg = this.rplayerCfg.conf;
+        var key = 0;
+        var image = new Array;
+
+        // tracks
+        this.obj2array(cfg.album.tracks).forEach(element => {
+
+            image[key] = new Image();
+            image[key].src = element[1].info.image;
+
+            key++;
+        });
+
+        // album
+        image[key] = new Image();
+        image[key].src = cfg.album.info.image;
+
+        key++;
+
+        // slideshow
+        this.obj2array(cfg.slideShow.pictures).forEach(element => {
+
+            image[key] = new Image();
+            image[key].src = element[1].src;
+
+            key++;
+        });
     }
 
     putWebTitle() {
