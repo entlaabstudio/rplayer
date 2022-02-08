@@ -24,4 +24,8 @@
     --infoBg:              rgba(0,0,0,.9);
     --infoTextColor:       rgba(255,255,255,1);
     --infoMiddleLineColor: rgba(255,255,255,.3);
+
+    /* Slideshow */
+    --rSlideshowBg:        rgba(0,0,0,.7);
+    --rSlideshowZIndex:     2000
 }
