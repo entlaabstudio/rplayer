@@ -16,11 +16,13 @@ var RPObj = new RPlayer(RPCfg);
 
 // optional modules
 
-import RPlayerVisual from "./rplayer.modules/rplayer.visual.js?v=01326";
-import RPlayerInfo   from "./rplayer.modules/rplayer.info.js?v=01326";
+import RPlayerVisual    from "./rplayer.modules/rplayer.visual.js?v=01326";
+import RPlayerInfo      from "./rplayer.modules/rplayer.info.js?v=01326";
+import RPlayerSlideshow from "./rplayer.modules/rplayer.slideshow.js?v=01326";
 
 new RPlayerVisual(RPObj);
 new RPlayerInfo(RPObj);
+new RPlayerSlideshow(RPObj);
 
 console.log("------------------------------------");
 console.log("This is RPlayer");
