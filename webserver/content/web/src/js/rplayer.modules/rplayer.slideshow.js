@@ -14,7 +14,10 @@
         this.rplayerObj     = rplayerObj;
         this.rplayerCfg     = rplayerObj.rplayerCfg.conf;
         this.minimizeButton = $(this.rplayerCfg.app.htmlSelectors.mainWindow + " " + this.rplayerCfg.app.htmlSelectors.controls.minimize);
+        this.wordsButton    = $(this.rplayerCfg.app.htmlSelectors.mainWindow + " " + this.rplayerCfg.app.htmlSelectors.controls.wordsButton);
         this.playerWindow   = $(this.rplayerCfg.app.htmlSelectors.mainWindow);
+
+        this.lastWord       = false;
 
         this.init();
 
@@ -35,9 +38,37 @@
     }
 
     ticker() {
+        var that = this;
         setInterval(function() {
-            // ...
-        },164);
+            if ($("#rplayerSlideshow").css("display") != "none") {
+                that.getLyrics();
+            }
+        },85);
+    }
+
+    getLyrics() {
+        var currentWord;
+        
+        if (this.wordsButton.hasClass("primary")) {
+            if (this.rplayerObj.getCurrentWord()) {
+                currentWord = this.rplayerObj.removeHtml(this.rplayerObj.getCurrentWord()["text"]);
+            }
+            
+            if (
+                currentWord === undefined ||
+                this.rplayerObj.getCurrentWord()["offset"] > this.rplayerCfg.app.preferences.words.titleMaxTime
+            ) {
+                currentWord = false;
+            }
+        } else {
+            currentWord = false;
+        }
+        
+        if (this.lastWord != currentWord) {
+            $("#rplayerSlideshow div").html(currentWord);
+        }
+        
+        this.lastWord = currentWord;
     }
 
     buttons() {
