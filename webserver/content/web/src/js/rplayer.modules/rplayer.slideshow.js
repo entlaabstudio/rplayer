@@ -32,11 +32,24 @@
         // Loader
         var int = setInterval(function() {
             if (that.rplayerObj.tracklistLoaded) {
+                that.makeImages();
                 that.ticker();
                 that.buttons();
                 clearInterval(int);
             }
         },372);
+    }
+
+    makeImages() {
+        try {
+            var images = this.rplayerObj.obj2array(this.rplayerCfg.slideShow.pictures);
+            images.forEach(element => {
+                $("#rplayerSlideshow").append("<img src='" + element[1].src + "' data-time='" + element[1].timeStart + "'>");
+            });
+            $("#rplayerSlideshow").append("<div></div>");
+        } catch (error) {
+            return false;
+        }
     }
 
     ticker() {
@@ -50,45 +63,17 @@
     }
 
     imageChanger() {
-        var that = this;
-
-        if (this.lastImage != this.getCurrentImage()["src"]) {
-            if (this.slideImgActive == "first") {
-                this.slideImgActive = "second";
-                
-                $("#rplayerSlideshow img.first").transit({
-                    scale: ".5",
-                    opacity: "0"
-                },250,function() {
-                    $("#rplayerSlideshow img.first").removeAttr("src");
-                });
-                
-                $("#rplayerSlideshow img.second").attr("src",that.getCurrentImage()["src"]);
-
-                $("#rplayerSlideshow img.second").transit({
-                    scale: "1",
-                    opacity: "1"
-                },250);
-
-            } else {
-                this.slideImgActive = "first";
-
-                $("#rplayerSlideshow img.second").transit({
-                    scale: ".5",
-                    opacity: "0"
-                },250,function() {
-                    $("#rplayerSlideshow img.second").removeAttr("src");
-                });
-                
-                $("#rplayerSlideshow img.first").attr("src",that.getCurrentImage()["src"]);
-
-                $("#rplayerSlideshow img.first").transit({
-                    scale: "1",
-                    opacity: "1"
-                },250);
-
-            }
-            this.lastImage = this.getCurrentImage()["src"];
+        if (this.lastImage !== this.getCurrentImage()["time"]) {
+            console.log(this.getCurrentImage()["time"]);
+            $("#rplayerSlideshow img:not([data-time='" + this.getCurrentImage()["time"] + "'])").stop().transit({
+                transform: "perspective(50em) scale(0.5) rotateX(0deg) rotateY(-10deg) rotateZ(-10deg) translateX(-10em)",
+                opacity: "0"
+            },1000);
+            $("#rplayerSlideshow img[data-time='" + this.getCurrentImage()["time"] + "']").stop().transit({
+                transform: "perspective(50em) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0em)",
+                opacity: "1"
+            },1000);
+            this.lastImage = this.getCurrentImage()["time"];
         }
     }
 
@@ -98,7 +83,7 @@
             var time = Math.round(this.rplayerObj.audioObject.currentTime * 1000);
             var currentImage = new Array;
             images.forEach(element => {
-                if (element[1].timeStart < time) {
+                if (element[1].timeStart <= time) {
                     currentImage["time"]   = element[1].timeStart;
                     currentImage["offset"] = time - element[1].timeStart;
                     currentImage["src"]   = element[1].src;
