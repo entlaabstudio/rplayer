@@ -55,22 +55,38 @@
         if (this.lastImage != this.getCurrentImage()["src"]) {
             if (this.slideImgActive == "first") {
                 this.slideImgActive = "second";
-                $("#rplayerSlideshow img.first").animate({
+                
+                $("#rplayerSlideshow img.first").transit({
+                    scale: ".5",
                     opacity: "0"
-                },1000);
+                },250,function() {
+                    $("#rplayerSlideshow img.first").removeAttr("src");
+                });
+                
                 $("#rplayerSlideshow img.second").attr("src",that.getCurrentImage()["src"]);
-                $("#rplayerSlideshow img.second").animate({
+
+                $("#rplayerSlideshow img.second").transit({
+                    scale: "1",
                     opacity: "1"
-                },1000);
+                },250);
+
             } else {
                 this.slideImgActive = "first";
-                $("#rplayerSlideshow img.second").animate({
+
+                $("#rplayerSlideshow img.second").transit({
+                    scale: ".5",
                     opacity: "0"
-                },1000);
+                },250,function() {
+                    $("#rplayerSlideshow img.second").removeAttr("src");
+                });
+                
                 $("#rplayerSlideshow img.first").attr("src",that.getCurrentImage()["src"]);
-                $("#rplayerSlideshow img.first").animate({
+
+                $("#rplayerSlideshow img.first").transit({
+                    scale: "1",
                     opacity: "1"
-                },1000);
+                },250);
+
             }
             this.lastImage = this.getCurrentImage()["src"];
         }

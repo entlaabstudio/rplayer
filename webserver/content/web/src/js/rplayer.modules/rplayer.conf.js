@@ -422,13 +422,23 @@ export default class RPlayerConf {
                 pictures: {
                     0: {
                         timeStart: 0,
-                        mediaName: "Dreamer album",
-                        src: "media/images/dreamer_album.jpg"
+                        mediaName: "Mirrors",
+                        src: "media/images/mirrors.jpg"
                     },
                     1: {
-                        timeStart: 300000,
-                        mediaName: "YATSU",
-                        src: "media/images/ornaments.jpg"
+                        timeStart: 270000,
+                        mediaName: "Dreamer",
+                        src: "media/images/dreamer_album.jpg"
+                    },
+                    2: {
+                        timeStart: 538500,
+                        mediaName: "Ornaments",
+                        src: "media/images/ornaments_w_vocals.jpg"
+                    },
+                    3: {
+                        timeStart: 786600,
+                        mediaName: "Labyrinth",
+                        src: "media/images/labyrinth.jpg"
                     }
                 }
             }
