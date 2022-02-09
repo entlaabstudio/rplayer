@@ -426,7 +426,7 @@ export default class RPlayerConf {
                         src: "media/images/dreamer_album.jpg"
                     },
                     1: {
-                        timeStart: 270,
+                        timeStart: 300000,
                         mediaName: "YATSU",
                         src: "media/images/ornaments.jpg"
                     }

@@ -18,6 +18,8 @@
         this.playerWindow   = $(this.rplayerCfg.app.htmlSelectors.mainWindow);
 
         this.lastWord       = false;
+        this.lastImage      = false;
+        this.slideImgActive = "second";
 
         this.init();
 
@@ -42,8 +44,59 @@
         setInterval(function() {
             if ($("#rplayerSlideshow").css("display") != "none") {
                 that.getLyrics();
+                that.imageChanger();
             }
         },85);
+    }
+
+    imageChanger() {
+        var that = this;
+
+        if (this.lastImage != this.getCurrentImage()["src"]) {
+            if (this.slideImgActive == "first") {
+                this.slideImgActive = "second";
+                $("#rplayerSlideshow img.first").animate({
+                    opacity: "0"
+                },1000);
+                $("#rplayerSlideshow img.second").attr("src",that.getCurrentImage()["src"]);
+                $("#rplayerSlideshow img.second").animate({
+                    opacity: "1"
+                },1000);
+            } else {
+                this.slideImgActive = "first";
+                $("#rplayerSlideshow img.second").animate({
+                    opacity: "0"
+                },1000);
+                $("#rplayerSlideshow img.first").attr("src",that.getCurrentImage()["src"]);
+                $("#rplayerSlideshow img.first").animate({
+                    opacity: "1"
+                },1000);
+            }
+            this.lastImage = this.getCurrentImage()["src"];
+        }
+    }
+
+    getCurrentImage() {
+        try {
+            var images = this.rplayerObj.obj2array(this.rplayerCfg.slideShow.pictures);
+            var time = Math.round(this.rplayerObj.audioObject.currentTime * 1000);
+            var currentImage = new Array;
+            images.forEach(element => {
+                if (element[1].timeStart < time) {
+                    currentImage["time"]   = element[1].timeStart;
+                    currentImage["offset"] = time - element[1].timeStart;
+                    currentImage["src"]   = element[1].src;
+                    currentImage["mediaName"]   = element[1].mediaName;
+                }
+            });
+            if (currentImage["offset"] !== undefined) {
+                return currentImage;
+            } else {
+                return false;
+            }
+        } catch (error) {
+            return false;
+        }
     }
 
     getLyrics() {
