@@ -28,12 +28,12 @@
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-    color: rgba(255, 255, 255, 0.7);
+    color: rgb(255, 255, 255);
     text-shadow:
-        -.05em -.05em .1em rgba(0,0,0,.5),
-        .05em -.05em .1em rgba(0,0,0,.5),
-        -.05em .05em .1em rgba(0,0,0,.5),
-        .05em .05em .1em rgba(0,0,0,.5);
+        -1px -1px 2px rgb(0,0,0),
+        1px -1px 2px rgb(0,0,0),
+        -1px 1px 2px rgb(0,0,0),
+        1px 1px 2px rgb(0,0,0);
     padding: 1em;
     line-height: 1em;
 }
