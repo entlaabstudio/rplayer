@@ -47,7 +47,7 @@ export default class RPlayer {
     init() {
         this.wasInit = true;
         if (device.os == "ios") {
-            $(rplayerCfg.conf.app.htmlSelectors.controls.volumeFader).attr("disabled",true);
+            $(this.rplayerCfg.conf.app.htmlSelectors.controls.volumeFader).attr("disabled",true);
         }
 
         this.preloadAllImages();
