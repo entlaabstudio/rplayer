@@ -24,7 +24,7 @@ export default class RPlayer {
         this.audioSrc = rplayerCfg.conf.album.mediaSrc;
 
         this.audioObject = new Audio(this.audioSrc);
-        this.audioObject.preload = "metadata";
+        this.audioObject.preload = "auto";
         this.showcurtimeobject = $(rplayerCfg.conf.app.htmlSelectors.mainWindow).find(rplayerCfg.conf.app.htmlSelectors.info.currentTime);
         this.showlentimeobject = $(rplayerCfg.conf.app.htmlSelectors.mainWindow).find(rplayerCfg.conf.app.htmlSelectors.info.lengthTime);
         this.volumefaderobject = $(rplayerCfg.conf.app.htmlSelectors.mainWindow).find(rplayerCfg.conf.app.htmlSelectors.controls.volumeFader);
