@@ -50,6 +50,7 @@ export default class RPlayer {
             $(this.rplayerCfg.conf.app.htmlSelectors.controls.volumeFader).attr("disabled",true);
         }
 
+        this.noScreenSleep();
         this.preloadAllImages();
         this.tracklist();
         this.buttons();
@@ -65,6 +66,16 @@ export default class RPlayer {
         this.writeVersionDate();
         this.words();
         this.keyboard();
+    }
+
+    noScreenSleep() {
+        try {
+            navigator.wakeLock.request('screen');
+            console.log("[RPlayer]","The screen will not fall asleep now.");
+        } catch (err) {
+            // the wake lock request fails - usually system related, such being low on battery
+            console.log("[RPlayer] noScreenSleep()",`${err.name}, ${err.message}`);
+        }          
     }
 
     preloadAllImages() {
