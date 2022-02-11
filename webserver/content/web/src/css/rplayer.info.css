@@ -135,8 +135,14 @@
     border-bottom: .1em solid var(--currentTime);
 }
 
-#rplayerInfo p {
+#rplayerInfo p:not(strong),
+#rplayerInfo li:not(strong),
+#rplayerInfo td:not(strong) {
     color: rgba(255,255,255,.8);
+}
+
+#rplayerInfo strong {
+    color: rgb(255,255,255);
 }
 
 #rplayerInfo p a {

@@ -107,13 +107,14 @@
             html_1 += that.htmlMediaImage();
             html_1 += that.htmlAlbumInfo();
 
-            html_2     = that.htmlStory();
+            html_2     = ""
             htmlWords  = that.htmlWords();
 
             if (htmlWords != "...") {
                 html_2 += "<h3>Lyrics</h3>"
                 html_2 += htmlWords;
             }
+            html_2     += that.htmlStory();
 
             // HTML out
             if (html_1 != html_1_last) {
@@ -275,11 +276,11 @@
                 .anyHtml;
             this.rplayerObj.obj2array(songInfoHtml).forEach(element => {
                 html += "<h3>" + element[1].id + "</h3>";
-                html += "<p>" + element[1].html + "</p>";
+                html += element[1].html;
             });
         } catch (error) {
             html  = "<p>";
-            html += "..." + error.message;
+            html += "...";
             html += "</p>";
         }
         
@@ -334,6 +335,10 @@
             } else {
                 that.snapToTrack = true;
             }
+        });
+
+        $("#rplayerInfo .transport .icon[data-command='rplayerStartSlides']").on("click", function() {
+            $(that.rplayerObj.rplayerCfg.conf.app.htmlSelectors.mainWindow + " " + that.rplayerObj.rplayerCfg.conf.app.htmlSelectors.controls.minimize).click();
         });
 
         $("#rplayerInfo .transport .icon[data-command='rplayerInfoClose']").on("click", function() {
