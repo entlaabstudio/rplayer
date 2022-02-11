@@ -8,17 +8,17 @@
 
 // mandatory modules
 
-import RPlayerConf from "./rplayer.modules/rplayer.conf.js?v=01729";
-import RPlayer     from "./rplayer.modules/rplayer.core.js?v=01729";
+import RPlayerConf from "./rplayer.modules/rplayer.conf.js?v=01730";
+import RPlayer     from "./rplayer.modules/rplayer.core.js?v=01730";
 
 var RPCfg = new RPlayerConf();
 var RPObj = new RPlayer(RPCfg);
 
 // optional modules
 
-import RPlayerVisual    from "./rplayer.modules/rplayer.visual.js?v=01729";
-import RPlayerInfo      from "./rplayer.modules/rplayer.info.js?v=01729";
-import RPlayerSlideshow from "./rplayer.modules/rplayer.slideshow.js?v=01729";
+import RPlayerVisual    from "./rplayer.modules/rplayer.visual.js?v=01730";
+import RPlayerInfo      from "./rplayer.modules/rplayer.info.js?v=01730";
+import RPlayerSlideshow from "./rplayer.modules/rplayer.slideshow.js?v=01730";
 
 new RPlayerVisual(RPObj);
 new RPlayerInfo(RPObj);
