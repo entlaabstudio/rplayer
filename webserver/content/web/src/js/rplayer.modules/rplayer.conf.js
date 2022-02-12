@@ -113,7 +113,7 @@ export default class RPlayerConf {
                             anyHtml: {
                                 0: {
                                     id: "Song tempo",
-                                    html: "110bpm",
+                                    html: "110BPM",
                                 },
                                 1: {
                                     id: "Drums",
@@ -255,7 +255,7 @@ export default class RPlayerConf {
                             anyHtml: {
                                 0: {
                                     id: "Song tempo",
-                                    html: "110bpm",
+                                    html: "120BPM",
                                 },
                                 1: {
                                     id: "Drums",
@@ -403,7 +403,7 @@ export default class RPlayerConf {
                                 },
                                 1: {
                                     id: "Song tempo",
-                                    html: "110bpm",
+                                    html: "120BPM",
                                 },
                                 2: {
                                     id: "Drums",
@@ -589,7 +589,7 @@ export default class RPlayerConf {
                             anyHtml: {
                                 0: {
                                     id: "Song tempo",
-                                    html: "110bpm",
+                                    html: "175BPM",
                                 },
                                 1: {
                                     id: "Drums",
@@ -737,7 +737,7 @@ export default class RPlayerConf {
                                 // },
                                 1: {
                                     id: "Song tempo",
-                                    html: "110bpm",
+                                    html: "175BPM",
                                 },
                                 2: {
                                     id: "Drums",
@@ -922,7 +922,7 @@ export default class RPlayerConf {
                             anyHtml: {
                                 0: {
                                     id: "Song tempo",
-                                    html: "110bpm",
+                                    html: "135BPM",
                                 },
                                 1: {
                                     id: "Drums",
@@ -1064,7 +1064,7 @@ export default class RPlayerConf {
                             anyHtml: {
                                 0: {
                                     id: "Song tempo",
-                                    html: "110bpm",
+                                    html: "135BPM",
                                 },
                                 1: {
                                     id: "Drums",
@@ -1206,7 +1206,7 @@ export default class RPlayerConf {
                             anyHtml: {
                                 0: {
                                     id: "Song tempo",
-                                    html: "110bpm",
+                                    html: "140BPM",
                                 },
                                 1: {
                                     id: "Drums",
@@ -1348,7 +1348,7 @@ export default class RPlayerConf {
                             anyHtml: {
                                 0: {
                                     id: "Song tempo",
-                                    html: "110bpm",
+                                    html: "210BPM",
                                 },
                                 1: {
                                     id: "Drums",
