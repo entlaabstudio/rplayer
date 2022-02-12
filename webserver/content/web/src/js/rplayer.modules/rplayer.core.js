@@ -283,13 +283,18 @@ export default class RPlayer {
     words() {
         var that     = this;
         var lastWord = false; // fix for online translation
+        var lastTime = false;
         this.wordsInterval = setInterval(function () {
             
             if (that.wordsView) {
                 
-                if (that.rplayerCfg.conf.app.preferences.words.timeToConsole) {
+                if (
+                    that.rplayerCfg.conf.app.preferences.words.timeToConsole &&
+                    Math.round(that.audioObject.currentTime * 1000) != lastTime
+                ) {
+                    lastTime = Math.round(that.audioObject.currentTime * 1000);
                     console.clear();
-                    console.log("[RPlayer] Current time",Math.round(that.audioObject.currentTime * 1000) - that.seekerStartPosition * 1000);
+                    console.log("[RPlayer] Current time",Math.round(that.audioObject.currentTime * 1000) - that.seekerStartPosition * 1000," :: ",Math.round(that.audioObject.currentTime * 1000));
                 }
                 
                 if (

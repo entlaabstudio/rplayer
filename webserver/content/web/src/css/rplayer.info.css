@@ -141,6 +141,14 @@
     color: rgba(255,255,255,.8);
 }
 
+#rplayerInfo td {
+    vertical-align: top;
+}
+
+#rplayerInfo tr td:first-child {
+    padding-right: .5em;
+}
+
 #rplayerInfo strong {
     color: rgb(255,255,255);
 }

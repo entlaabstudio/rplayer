@@ -725,7 +725,7 @@ export default class RPlayerConf {
                         timeStart: 959.5,
                         mediaName: "Spectre",
                         info: {
-                            image: "media/images/dreamer_album.jpg",
+                            image: "media/images/djinn.png",
                             composer: "Michal Diviš",
                             year: 2021,
                             anyHtml: {
@@ -916,7 +916,7 @@ export default class RPlayerConf {
                         timeStart: 1215.5,
                         mediaName: "Bloom",
                         info: {
-                            image: "media/images/djinn.png",
+                            image: "media/images/ornaments_w_vocals.jpg",
                             composer: "Michal Diviš",
                             year: 2021,
                             anyHtml: {
@@ -1058,7 +1058,7 @@ export default class RPlayerConf {
                         timeStart: 1435.4,
                         mediaName: "Ruin",
                         info: {
-                            image: "media/images/dreamer_album.jpg",
+                            image: "media/images/mirrors.jpg",
                             composer: "Michal Diviš",
                             year: 2021,
                             anyHtml: {
@@ -1342,7 +1342,7 @@ export default class RPlayerConf {
                         timeStart: 1870,
                         mediaName: "Collapse",
                         info: {
-                            image: "media/images/dreamer_album.jpg",
+                            image: "media/images/mirrors.jpg",
                             composer: "Michal Diviš",
                             year: 2021,
                             anyHtml: {
@@ -1484,26 +1484,120 @@ export default class RPlayerConf {
             },
             slideShow: {
                 pictures: {
+                    // Mirrors
                     0: {
                         timeStart: 0,
                         mediaName: "Mirrors",
                         src: "media/images/mirrors.jpg"
                     },
+                    // Dreamer
                     1: {
                         timeStart: 270000,
                         mediaName: "Dreamer",
                         src: "media/images/dreamer_album.jpg"
                     },
+                    // Ornaments
                     2: {
                         timeStart: 538500,
                         mediaName: "Ornaments",
                         src: "media/images/ornaments_w_vocals.jpg"
                     },
+                    // Labyrinth
                     3: {
                         timeStart: 786600,
                         mediaName: "Labyrinth",
                         src: "media/images/labyrinth.jpg"
-                    }
+                    },
+                    // Spectre
+                    4: {
+                        timeStart: 959500,
+                        mediaName: "DJinn",
+                        src: "media/images/djinn.png"
+                    },
+                    5: {
+                        timeStart: 964400,
+                        mediaName: "Mirrors",
+                        src: "media/images/mirrors.jpg"
+                    },
+                    9: {
+                        timeStart: 992650,
+                        mediaName: "DJinn",
+                        src: "media/images/djinn.png"
+                    },
+                    10: {
+                        timeStart: 1025276,
+                        mediaName: "Ornaments",
+                        src: "media/images/ornaments.jpg"
+                    },
+                    11: {
+                        timeStart: 1035846,
+                        mediaName: "Mirrors",
+                        src: "media/images/mirrors.jpg"
+                    },
+                    12: {
+                        timeStart: 1047635,
+                        mediaName: "Labyrinth",
+                        src: "media/images/labyrinth.jpg"
+                    },
+                    13: {
+                        timeStart: 1060993,
+                        mediaName: "DJinn",
+                        src: "media/images/djinn.png"
+                    },
+                    14: {
+                        timeStart: 1104890,
+                        mediaName: "Dreamer",
+                        src: "media/images/dreamer_album.jpg"
+                    },
+                    15: {
+                        timeStart: 1129367,
+                        mediaName: "Ornaments",
+                        src: "media/images/ornaments_w_vocals.jpg"
+                    },
+                    16: {
+                        timeStart: 1140658,
+                        mediaName: "DJinn",
+                        src: "media/images/djinn.png"
+                    },
+                    17: {
+                        timeStart: 1162594,
+                        mediaName: "Ornaments",
+                        src: "media/images/ornaments.jpg"
+                    },
+                    18: {
+                        timeStart: 1179314,
+                        mediaName: "Mirrors",
+                        src: "media/images/mirrors.jpg"
+                    },
+                    19: {
+                        timeStart: 1201160,
+                        mediaName: "Labyrinth",
+                        src: "media/images/labyrinth.jpg"
+                    },
+                    // Bloom
+                    20: {
+                        timeStart: 1215000,
+                        mediaName: "Ornaments",
+                        src: "media/images/ornaments_w_vocals.jpg"
+                    },
+                    // Ruin
+                    21: {
+                        timeStart: 1435400,
+                        mediaName: "Mirrors",
+                        src: "media/images/mirrors.jpg"
+                    },
+                    // World Eater
+                    22: {
+                        timeStart: 1543500,
+                        mediaName: "Dreamer",
+                        src: "media/images/dreamer_album.jpg"
+                    },
+                    // Collapse
+                    23: {
+                        timeStart: 1870000,
+                        mediaName: "Mirrors",
+                        src: "media/images/mirrors.jpg"
+                    },
                 }
             }
         };
