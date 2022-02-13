@@ -103,70 +103,61 @@
         var html_1_last = false;
         var html_2_last = false;
         setInterval(function() {
-            html_1  = that.htmlHeader();
-            html_1 += that.htmlMediaImage();
-            html_1 += that.htmlAlbumInfo();
-
-            html_2     = ""
-            htmlWords  = that.htmlWords();
-
-            if (htmlWords != "...") {
-                html_2 += "<h3>Lyrics</h3>"
-                html_2 += htmlWords;
-            }
-            html_2     += that.htmlStory();
-
-            // HTML out
-            if (html_1 != html_1_last) {
-                if (!that.switchingNow) {
-                    that.switchingNow = true;
-
-                    $("#rplayerInfo #rplayerInfoTemp div:first-child").animate({
-                        opacity: "0"
-                    },250,function() {
-                        
-                        that.tempPanel1.html(html_1);
-                        html_1_last = html_1;
-
-                        $("#rplayerInfo #rplayerInfoTemp div:first-child").animate({
-                            opacity: "1"
-                        },250,function() {
-                            that.switchingNow = false;
-                        });
-
-                    });
+            if ($("#rplayerInfo").css("opacity") != "0") {
+                html_1  = that.htmlHeader();
+                html_1 += that.htmlMediaImage();
+                html_1 += that.htmlAlbumInfo();
+    
+                html_2     = ""
+                htmlWords  = that.htmlWords();
+    
+                if (htmlWords != "...") {
+                    html_2 += "<h3>Lyrics</h3>"
+                    html_2 += htmlWords;
                 }
-            }
-
-            if (html_2 != html_2_last) {
-                if (!that.switchingNow) {
-                    that.switchingNow = true;
-
-                    $("#rplayerInfo #rplayerInfoTemp div:first-child ~ div").animate({
-                        opacity: "0"
-                    },250,function() {
-                        
-                        that.tempPanel2.html(html_2);
-                        html_2_last = html_2;
-
-                        $("#rplayerInfo #rplayerInfoTemp div:first-child ~ div").animate({
-                            opacity: "1"
+                html_2     += that.htmlStory();
+    
+                // HTML out
+                if (html_1 != html_1_last) {
+                    if (!that.switchingNow) {
+                        that.switchingNow = true;
+    
+                        $("#rplayerInfo #rplayerInfoTemp div:first-child").animate({
+                            opacity: "0"
                         },250,function() {
-                            that.switchingNow = false;
+                            
+                            that.tempPanel1.html(html_1);
+                            html_1_last = html_1;
+    
+                            $("#rplayerInfo #rplayerInfoTemp div:first-child").animate({
+                                opacity: "1"
+                            },250,function() {
+                                that.switchingNow = false;
+                            });
+    
                         });
-
-                    });
-                    
-                    
-                    
-                    
-                    
-                    // that.switchingNow = true;
-
-                    // that.tempPanel2.html(html_2);
-                    // html_2_last = html_2;
-
-                    // that.switchingNow = false;
+                    }
+                }
+    
+                if (html_2 != html_2_last) {
+                    if (!that.switchingNow) {
+                        that.switchingNow = true;
+    
+                        $("#rplayerInfo #rplayerInfoTemp div:first-child ~ div").animate({
+                            opacity: "0"
+                        },250,function() {
+                            
+                            that.tempPanel2.html(html_2);
+                            html_2_last = html_2;
+    
+                            $("#rplayerInfo #rplayerInfoTemp div:first-child ~ div").animate({
+                                opacity: "1"
+                            },250,function() {
+                                that.switchingNow = false;
+                            });
+    
+                        });
+                    }
                 }
             }
         },123);
@@ -203,9 +194,28 @@
                         "<strong>" + cfg.album.info.composer + "</strong>" +
                     "</td>" +
                 "</tr>" +
+                "<tr>" +
+                    "<th>" +
+                        "Track composer:" +
+                    "</th>" +
+                    "<td>" +
+                        "<strong>" + cfg.album.tracks[this.rplayerObj.trackInfoSelected].info.composer + "</strong>" +
+                    "</td>" +
+                "</tr>" +
+                (
+                    (cfg.album.tracks[this.rplayerObj.trackInfoSelected].info.year != cfg.album.info.year) ? 
+                    "<tr>" + 
+                        "<th>" +
+                            "Track year:" +
+                        "</th>" +
+                        "<td>" +
+                            "<strong>" + cfg.album.tracks[this.rplayerObj.trackInfoSelected].info.year + "</strong>" +
+                        "</td>" +
+                    "</tr>" : ""
+                ) +
             "</tbody>" +
         "</table>" +
-        cfg.album.info.anyHtml
+        cfg.album.info.anyHtml;
 
         return html;
     }
