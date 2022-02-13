@@ -320,15 +320,15 @@ label {
 .words,
 .rplayerShowInfo {
     display: flex;
-    text-align: center;
+    text-align: justify;
     justify-content: center; align-items: safe center;
     justify-self: center;
     align-self: center;
     position: absolute;
     width: fit-content;
     height: fit-content;
-    max-width: 80%;
-    max-height: 80%;
+    max-width: 90%;
+    /* max-height: 80%; */
     overflow: auto;
     border: .1em solid var(--currentTime);
     border-radius: .5em;
@@ -343,6 +343,7 @@ label {
 
 .infoWindow .close.icon {
     cursor: pointer;
+    margin: 0;
 }
 
 .rplayerShowInfo {
@@ -357,6 +358,7 @@ label {
 }
 
 .rplayerUic {
+    padding: 1em 0 1em 0;
     min-height: 100vh !important;
     display: flex !important;
     justify-content: center !important;
@@ -370,7 +372,13 @@ label {
 }
 
 #rplayer .fullScreen.icon,
-#rplayer .rplayerMinimize.icon{
+#rplayer .rplayerMinimize.icon,
+#rplayer .helpButton.icon,
+#rplayer .close.icon {
     color: var(--currentTime);
     cursor: pointer;
+}
+
+#rplayer {
+    user-select: none;
 }

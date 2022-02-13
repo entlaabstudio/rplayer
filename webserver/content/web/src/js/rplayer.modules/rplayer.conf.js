@@ -54,7 +54,8 @@ export default class RPlayerConf {
                         fullScreen:       ".fullScreen",
                         wordsButton:      "#rplayerWords",
                         minimize:         ".rplayerMinimize",
-                        trackInfoButton:  ".trackInfoButton"
+                        trackInfoButton:  ".trackInfoButton",
+                        helpButton:       ".helpButton"
                     }
                 },
                 modules: {

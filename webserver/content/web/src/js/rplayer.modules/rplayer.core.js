@@ -18,6 +18,7 @@ export default class RPlayer {
         this.rplayerCfg            = rplayerCfg;
         this.wordsView             = true;
         this.tracklistLoaded       = false;
+        this.license               = false;
         
         this.rplayerObject = $(rplayerCfg.conf.app.htmlSelectors.mainWindow);
         
@@ -50,6 +51,7 @@ export default class RPlayer {
             $(this.rplayerCfg.conf.app.htmlSelectors.controls.volumeFader).attr("disabled",true);
         }
 
+        this.getLicense();
         this.noScreenSleep();
         this.preloadAllImages();
         this.tracklist();
@@ -66,6 +68,19 @@ export default class RPlayer {
         this.writeVersionDate();
         this.words();
         this.keyboard();
+    }
+
+    nl2br(str, is_xhtml) {   
+        var breakTag = (is_xhtml || typeof is_xhtml === 'undefined') ? '<br />' : '<br>';    
+        return (str + '').replace(/([^>\r\n]?)(\r\n|\n\r|\r|\n)/g, '$1'+ breakTag +'$2');
+    }
+    
+    getLicense() {
+        var that = this;
+        $.get('./LICENSE', function(data) {
+            console.log("[RPlayer]",data);
+            that.license = that.nl2br(data,false);
+        });
     }
 
     noScreenSleep() {
@@ -126,35 +141,114 @@ export default class RPlayer {
         $(cfg.app.htmlSelectors.info.albumYear).html(cfg.album.info.year);
     }
     
-    windows() {
+    help() {
         console.log(this.curTrackId,this.trackInfoSelected);
         var htmlSelector = this.rplayerCfg.conf.app.windows.showInfo.htmlSelector;
-        var songInfoHtml = this
-                        .rplayerCfg
-                        .conf
-                        .album
-                        .tracks[this.trackInfoSelected]
-                        .info
-                        .anyHtml
-                        ;
-        console.log(songInfoHtml);
+        // var songInfoHtml = "ahoj";
+        // console.log(songInfoHtml);
 
-        var htmlOut = "<div class='infoWindow'><i class='window angle left icon'></i><i class='window close outline icon' onclick='$(this).parent().parent().css({display: \"none\"})'></i><i class='window angle right icon'></i>";
+        var htmlOut = "<div class='infoWindow'><div style='text-align: right'><i class='window close icon' onclick='$(this).parent().parent().parent().css({display: \"none\"})'></i></div>";
         var lat = 0;
-        
-        this.obj2array(songInfoHtml).forEach(element => {
-            if (lat > 0) {
-                htmlOut += "<hr>";
-            }
-            // console.log(element[1].id);
-            htmlOut += "<h3>" + element[1].id + "</h3><br>";
-            htmlOut += "<p>" + element[1].html + "</p><br>";
-            lat++;
-        });
+                
+        htmlOut  += "<img src='./src/imgs/help.svg' style='width: 100%; padding-top: .5em;'>" + 
+                    "<div style='height: 50vh; overflow: auto; text-align: justify;'>" +
+                        "<br>" +
+                        "<span style='font-weight: bold; font-size: 1.2em'>This is RPlayer...</span>" +
+                        "<table style='border-collapse: collapse; font-family: courier; margin-top: .5em; width: 100%;'>" +
+                            "<tr style='border-bottom: 1px solid rgba(0,0,0,.1)'>" +
+                                "<td>" +
+                                    "[SPACE]" +
+                                "</td>" +
+                                "<td>" +
+                                    "Play / Pause" +
+                                "</td>" +
+                                "<td rowspan='4' style='border-left: 1px solid rgba(0,0,0,.1); text-align: center;'>" +
+                                    "<img style='width: 6em;' src='data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8IS0tIENyZWF0b3I6IENvcmVsRFJBVyAyMDE4ICg2NCBiaXTFrykgLS0+DQo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjIxMG1tIiBoZWlnaHQ9IjIxMG1tIiB2ZXJzaW9uPSIxLjEiIHN0eWxlPSJzaGFwZS1yZW5kZXJpbmc6Z2VvbWV0cmljUHJlY2lzaW9uOyB0ZXh0LXJlbmRlcmluZzpnZW9tZXRyaWNQcmVjaXNpb247IGltYWdlLXJlbmRlcmluZzpvcHRpbWl6ZVF1YWxpdHk7IGZpbGwtcnVsZTpldmVub2RkOyBjbGlwLXJ1bGU6ZXZlbm9kZCINCnZpZXdCb3g9IjAgMCAyMTAwMCAyMTAwMCINCiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+DQogPGRlZnM+DQogIDxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQogICA8IVtDREFUQVsNCiAgICAuc3RyMSB7c3Ryb2tlOiMyQjJBMjk7c3Ryb2tlLXdpZHRoOjIwO3N0cm9rZS1taXRlcmxpbWl0OjIyLjkyNTZ9DQogICAgLnN0cjAge3N0cm9rZTpibGFjaztzdHJva2Utd2lkdGg6MjA7c3Ryb2tlLW1pdGVybGltaXQ6MjIuOTI1Nn0NCiAgICAuZmlsMSB7ZmlsbDpibGFja30NCiAgICAuZmlsMiB7ZmlsbDojNDE4M0M0fQ0KICAgIC5maWwwIHtmaWxsOndoaXRlfQ0KICAgXV0+DQogIDwvc3R5bGU+DQogPC9kZWZzPg0KIDxnIGlkPSJWcnN0dmFfeDAwMjBfMSI+DQogIDxtZXRhZGF0YSBpZD0iQ29yZWxDb3JwSURfMENvcmVsLUxheWVyIi8+DQogIDxnIGlkPSJMb2dvX3gwMDIwX1JQbGF5ZXIiPg0KICAgPHJlY3QgY2xhc3M9ImZpbDAiIHdpZHRoPSIyMTAwMCIgaGVpZ2h0PSIyMTAwMCIgcng9IjI5NzMuOTYiIHJ5PSIyOTczLjk2Ii8+DQogICA8ZyBpZD0iTG9nb194MDAyMF9SUGxheWVyX3gwMDIwXzEiPg0KICAgIDxwYXRoIGNsYXNzPSJmaWwxIiBkPSJNNjQ1MC40OCAxMjEwMy43bDY3MC44MyAtMzg3LjMgNzg4MS4yOCAtNDU1MC4yNmMxNDkuNDYsLTg2LjI5IDIzNSwtMjM0LjQ1IDIzNSwtNDA3LjAzIDAsLTE3Mi41OCAtODUuNTQsLTMyMC43NCAtMjM1LC00MDcuMDNsLTg1NTIuMTEgLTQ5MzcuNTZjLTE0OS40NiwtODYuMjkgLTMyMC41NCwtODYuMjkgLTQ3MCwwIC0xNDkuNDUsODYuMjkgLTIzNSwyMzQuNDUgLTIzNSw0MDcuMDNsMCA5ODc1LjExYzAsMTcyLjU4IDg1LjU0LDMyMC43NSAyMzUsNDA3LjA0IDE0OS40Niw4Ni4yOCAzMjAuNTQsODYuMjkgNDcwLDB6bTY3MC44MyAtMjU3Ny4xOWwwIC01NTM0LjggMCAtODE0LjA2IDcwNC44MSA0MDYuOTIgMjM5Ni44MyAxMzgzLjgxIDMxMDEuNjMgMTc5MC43MyAtMzEwMS42MyAxNzkwLjczIC0yMzk2LjgzIDEzODMuODEgLTcwNC44MSA0MDYuOTIgMCAtODE0LjA2eiIvPg0KICAgIDxwYXRoIGNsYXNzPSJmaWwxIiBkPSJNNjIxNS40OCAxMjc4NS43N2w0MzUuODMgMGMyNTguODcsMCA0NzAsMjExLjEzIDQ3MCw0NzBsMCA2MDE0LjIxYzAsMjU4Ljg3IC0yMTEuMTMsNDcwIC00NzAsNDcwbC00MzUuODMgMGMtMjU4Ljg3LDAgLTQ3MCwtMjExLjEzIC00NzAsLTQ3MGwwIC02MDE0LjIxYzAsLTI1OC44NyAyMTEuMTMsLTQ3MCA0NzAsLTQ3MHoiLz4NCiAgICA8cGF0aCBjbGFzcz0iZmlsMSBzdHIwIiBkPSJNOTg3Mi45NyAxOTI2OS45OGwwIC02MDE0LjIxYzAsLTI1OC44NyAyMTEuMTMsLTQ3MCA0NzAsLTQ3MGw0MzUuODMgMGMyNTguODcsMCA0NzAsMjExLjEzIDQ3MCw0NzBsMCA2MDE0LjIxYzAsMjU4Ljg3IC0yMTEuMTMsNDcwIC00NzAsNDcwbC00MzUuODMgMGMtMjU4Ljg3LDAgLTQ3MCwtMjExLjEzIC00NzAsLTQ3MHoiLz4NCiAgICA8cG9seWdvbiBjbGFzcz0iZmlsMiBzdHIxIiBwb2ludHM9IjcxMjEuMzEsMzk5MS43MSA3MTIxLjMxLDk1MjYuNTEgNzEyMS4zMSwxMDM0MC41NyA3ODI2LjEyLDk5MzMuNjUgMTAyMjIuOTUsODU0OS44NCAxMzMyNC41OCw2NzU5LjExIDEwMjIyLjk1LDQ5NjguMzggNzgyNi4xMiwzNTg0LjU3IDcxMjEuMzEsMzE3Ny42NSAiLz4NCiAgIDwvZz4NCiAgPC9nPg0KIDwvZz4NCjwvc3ZnPg0K'>" +
+                                "</td>" +
+                            "</tr>" +
+                            "<tr style='border-bottom: 1px solid rgba(0,0,0,.1)'>" +
+                                "<td>" +
+                                    "[UP]" +
+                                "</td>" +
+                                "<td>" +
+                                    "Previous track / start current track" +
+                                "</td>" +
+                            "</tr>" +
+                            "<tr style='border-bottom: 1px solid rgba(0,0,0,.1)'>" +
+                                "<td>" +
+                                    "[DOWN]" +
+                                "</td>" +
+                                "<td>" +
+                                    "Next track" +
+                                "</td>" +
+                            "</tr>" +
+                            "<tr style='border-bottom: 1px solid rgba(0,0,0,.1)'>" +
+                                "<td>" +
+                                    "[LEFT]" +
+                                "</td>" +
+                                "<td>" +
+                                    "Rewind" +
+                                "</td>" +
+                            "</tr>" +
+                            "<tr style='border-bottom: 1px solid rgba(0,0,0,.1)'>" +
+                                "<td>" +
+                                    "[RIGHT]" +
+                                "</td>" +
+                                "<td>" +
+                                    "Forward" +
+                                "</td>" +
+                            "</tr>" +
+                            "<tr style='border-bottom: 1px solid rgba(0,0,0,.1)'>" +
+                                "<td>" +
+                                    "[CTRL]" +
+                                "</td>" +
+                                "<td>" +
+                                    "Slideshow mode" +
+                                "</td>" +
+                            "</tr>" +
+                            "<tr style='border-bottom: 1px solid rgba(0,0,0,.1)'>" +
+                                "<td>" +
+                                    "[ENTER]" +
+                                "</td>" +
+                                "<td>" +
+                                    "Fullscreen mode" +
+                                "</td>" +
+                            "</tr>" +
+                            "<tr style='border-bottom: 1px solid rgba(0,0,0,.1)'>" +
+                                "<td>" +
+                                    "[S]" +
+                                "</td>" +
+                                "<td>" +
+                                    "Stop after track" +
+                                "</td>" +
+                            "</tr>" +
+                            "<tr style='border-bottom: 1px solid rgba(0,0,0,.1)'>" +
+                                "<td>" +
+                                    "[L]" +
+                                "</td>" +
+                                "<td>" +
+                                    "Loop all" +
+                                "</td>" +
+                            "</tr>" +
+                            "<tr style='border-bottom: 1px solid rgba(0,0,0,.1)'>" +
+                                "<td>" +
+                                    "[T]" +
+                                "</td>" +
+                                "<td>" +
+                                    "Show / hide lyrics" +
+                                "</td>" +
+                            "</tr>" +
+                        "</table>" +
+                        "<br>" +
+                        "<div style='padding-top: .5em;'>" +
+                            this.license;
+                        "</div>" +
+                    "</div>";
+                    console.log($.get('./LICENSE'));
 
         htmlOut += "</div>";
 
-        console.log(htmlOut);
+        // console.log(htmlOut);
         $(htmlSelector).html(htmlOut);
         $(htmlSelector).css({
             display: "block"
@@ -778,7 +872,10 @@ export default class RPlayer {
 
         $(htmlSelectors.controls.trackInfoButton).on("click",function() {
             that.trackInfoSelected = parseInt($(this).find("i.icon.info").attr("data-trackid"));
-            // that.windows(); // Build-in dev window
+        });
+
+        $(htmlSelectors.controls.helpButton).on("click",function() {
+            that.help(); // Build-in dev window
         });
 
         this.seekerObject.on("touchstart touchmove mouseover",function() {
