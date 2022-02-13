@@ -1,5 +1,6 @@
 body {
     display: block;
+    caret-color: transparent;
 }
 
 button {
@@ -182,6 +183,7 @@ a.rplayerOneTrack {
 
 .itemB .input input[type='text'] {
     text-align: right;
+    caret-color: var(--caretCoror);
 }
 
 .itemB .stopTimerSecs {

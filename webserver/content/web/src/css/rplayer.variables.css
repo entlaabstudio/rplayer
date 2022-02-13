@@ -6,6 +6,7 @@
     --text:                rgba(255,255,255,1);
     --activeTrack:         rgba(0,0,0,1);
     --currentTime:         rgba(65,131,196,1);
+    --caretCoror:          rgba(65,131,196,.5);
     --wordsBackground:     rgba(255,255,255,.9);
     --wordsBoxShadow:      rgba(0,0,0,.3);
     --rPlayerBorder:       rgba(0,0,0,.1);
