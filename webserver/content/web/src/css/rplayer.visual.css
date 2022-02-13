@@ -376,11 +376,27 @@ label {
 #rplayer .fullScreen.icon,
 #rplayer .rplayerMinimize.icon,
 #rplayer .helpButton.icon,
-#rplayer .close.icon {
+#rplayer .close.icon,
+#rplayer .qrcode.icon {
     color: var(--currentTime);
     cursor: pointer;
 }
 
 #rplayer {
     user-select: none;
+}
+
+#rplayerQrCode {
+    display: none;
+    opacity: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: none;
+    padding: 4em;
+    position: fixed;
+    background-color: var(--rSlideshowBg);
+    width: 100vw;
+    height: 100vh;
+    z-index: var(--rSlideshowZIndex);
 }

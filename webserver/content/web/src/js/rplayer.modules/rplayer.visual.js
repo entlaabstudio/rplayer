@@ -7,13 +7,16 @@
  */
 
  export default class RPlayerVisual {
-    constructor(rplayerObj) {
+    constructor(rplayerObj,QrCod) {
         // this.rplayerSelector = rplayerSelector;
         this.rplayerObj = rplayerObj;
-        // console.log("Objekt RPlayeru",this.rplayerObj);
+
         // design config
         this.fadeoutTime = 789;
         this.fadeinTime  = 1789;
+
+        // QR
+        this.QrCod = QrCod;
 
         this.init();
         console.log("[RPlayer]","Visual module loaded.")
@@ -38,11 +41,41 @@
         this.seekersInfo();
         this.windowMinimize();
         this.fullscreen();
+        this.showQrCode();
+        this.buttons();
     }
 
-    /**
-	 * Fullscreen
-	 */
+    buttons() {
+        $("#rplayer .icon.qrcode").on("click",function() {
+            if ($("#rplayerQrCode").css("opacity") != "1") {
+                $("#rplayerQrCode").css("display","flex");
+                $("#rplayerQrCode").stop().animate({
+                    opacity: "1"
+                },1000);
+            }
+        });
+        $("#rplayerQrCode").on("click",function() {
+            $("#rplayerQrCode").stop().animate({
+                opacity: "0"
+            },1000,function() {
+                $("#rplayerQrCode").css("display","none");
+            });
+        });
+    }
+
+    showQrCode() {
+        var link;
+        if (window.location.href.includes("index.htm")) {
+            link = window.location.href;
+        } else {
+            link = window.location.href + "index.htm";
+        }
+        console.log(link);
+        this.QrCod.addData(link);
+        this.QrCod.make();
+        $("#rplayerQrCode").html(this.QrCod.createSvgTag({}));
+    }
+
 	fullscreen() {
         $(".fullScreen").on("click",function() {
             if ($.fullscreen.isFullScreen()) {

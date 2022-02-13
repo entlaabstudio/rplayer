@@ -11,6 +11,7 @@ export default class RPlayer {
     constructor(
         rplayerCfg
     ) {
+        
         console.log("[RPlayer]","Core loaded.");
         this.seekingNow            = false;
         this.seekerInit            = true;
@@ -78,7 +79,7 @@ export default class RPlayer {
     getLicense() {
         var that = this;
         $.get('./LICENSE', function(data) {
-            console.log("[RPlayer]",data);
+            // console.log("[RPlayer]",data);
             that.license = that.nl2br(data,false);
         });
     }
