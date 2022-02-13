@@ -398,11 +398,13 @@
     ticker() {
         var that = this;
         this.ticker = setInterval(function() {
-            that.transportInteractiveIcons();
-            that.setInfoForSelectedTrack();
-            that.transport();
-            that.checkH1();
-            that.wordsHighlight();
+            if ($("#rplayerInfo").css("opacity") != "0") {
+                that.transportInteractiveIcons();
+                that.setInfoForSelectedTrack();
+                that.transport();
+                that.checkH1();
+                that.wordsHighlight();
+            }
         },97);
     }
 
