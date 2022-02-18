@@ -16,7 +16,7 @@ export default class RPlayerConf {
         this.conf = {
             app: {
                 name: "RPlayer",
-                version: "0.18.32", // <some platform updates>.<visible or control updates>.<unvisible updates>
+                version: "0.18.33", // <some platform updates>.<visible or control updates>.<unvisible updates>
                 date:    "2022",
                 preferences: {
                     transport: {
@@ -25,8 +25,24 @@ export default class RPlayerConf {
                     words: {
                         timeToConsole: false,
                         titleMaxTime:  7000 // [ms]
-                    }
+                    },
+                    design: {
+                        backgroundImage: "url('./media/images/dreamer_album.jpg')"
+                    },
                 },
+                // htmlToHeader:
+                // "<style tyle=\"text/css\">" +
+                //     ":root {" +
+                //         "--currentTime: rgba(255,131,196,1);" +
+                //         "--color1: rgba(255,131,196,1);" +
+                //     "}" +
+                //     "a {" +
+                //         "color: rgba(255,131,196,1);" +
+                //     "}" +
+                //     ".primary {" +
+                //         "background-color: rgba(255,131,196,1) !important;" +
+                //     "}" +
+                // "</style>",
                 htmlSelectors: {
                     mainWindow: "#rplayer",           // recommended ID
                     info: {

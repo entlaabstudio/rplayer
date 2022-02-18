@@ -52,6 +52,7 @@ export default class RPlayer {
             $(this.rplayerCfg.conf.app.htmlSelectors.controls.volumeFader).attr("disabled",true);
         }
 
+        this.htmlToHeader();
         this.getLicense();
         this.noScreenSleep();
         this.preloadAllImages();
@@ -69,6 +70,11 @@ export default class RPlayer {
         this.writeVersionDate();
         this.words();
         this.keyboard();
+    }
+
+    htmlToHeader() {
+        // console.log(this.rplayerCfg.conf.app.htmlToHeader)
+        $("head").append(this.rplayerCfg.conf.app.htmlToHeader);
     }
 
     nl2br(str, is_xhtml) {   
@@ -143,7 +149,7 @@ export default class RPlayer {
     }
     
     help() {
-        console.log(this.curTrackId,this.trackInfoSelected);
+        // console.log(this.curTrackId,this.trackInfoSelected);
         var htmlSelector = this.rplayerCfg.conf.app.windows.showInfo.htmlSelector;
         // var songInfoHtml = "ahoj";
         // console.log(songInfoHtml);
@@ -245,7 +251,7 @@ export default class RPlayer {
                             this.license;
                         "</div>" +
                     "</div>";
-                    console.log($.get('./LICENSE'));
+                    // console.log($.get('./LICENSE'));
 
         htmlOut += "</div>";
 
@@ -515,15 +521,10 @@ export default class RPlayer {
                 if ("mediaSession" in navigator) {
                     navigator.mediaSession.metadata = new MediaMetadata({
                         title: that.tnames[that.curTrackId],
-                        artist: 'YATSU',
-                        album: 'Dreamer',
+                        artist: that.rplayerCfg.conf.album.info.composer,
+                        album: that.rplayerCfg.conf.album.info.name,
                         artwork: [
-                        { src: 'media/YATSU96.jpg',  sizes: '96x96',   type: 'image/jpg' },
-                        { src: 'media/YATSU128.jpg', sizes: '128x128', type: 'image/jpg' },
-                        { src: 'media/YATSU192.jpg', sizes: '192x192', type: 'image/jpg' },
-                        { src: 'media/YATSU256.jpg', sizes: '256x256', type: 'image/jpg' },
-                        { src: 'media/YATSU384.jpg', sizes: '384x384', type: 'image/jpg' },
-                        { src: 'media/YATSU512.jpg', sizes: '512x512', type: 'image/jpg' },
+                            {src: that.rplayerCfg.conf.album.tracks[that.curTrackId].info.image}
                         ]
                     });
                 }

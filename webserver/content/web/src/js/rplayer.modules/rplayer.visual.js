@@ -43,6 +43,13 @@
         this.fullscreen();
         this.showQrCode();
         this.buttons();
+        this.setBackground();
+    }
+
+    setBackground() {
+        $(".rplayerFx").css({
+            backgroundImage: this.rplayerObj.rplayerCfg.conf.app.preferences.design.backgroundImage
+        });
     }
 
     buttons() {

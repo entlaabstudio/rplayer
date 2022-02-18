@@ -328,7 +328,7 @@ label {
     align-self: center;
     position: absolute;
     width: fit-content;
-    height: fit-content;
+    /* height: fit-content; */
     max-width: 90%;
     /* max-height: 80%; */
     overflow: auto;
@@ -336,6 +336,7 @@ label {
     border-radius: .5em;
     background-color: var(--wordsBackground);
     padding: 1em;
+    /* padding-bottom: 0 !important; */
     font-size: 1.5em;
     font-weight: bold;
     box-shadow: .3em .3em 1em var(--wordsBoxShadow);
@@ -354,7 +355,7 @@ label {
 }
 
 .rplayerFx {
-    background-image: url('../../media/images/dreamer_album.jpg');
+    /* background-image: url('../../media/images/dreamer_album.jpg'); */
     background-size: cover;
     background-position: center center;
 }
@@ -398,5 +399,21 @@ label {
     background-color: var(--rSlideshowBg);
     width: 100vw;
     height: 100vh;
+    max-height: 100%;
+    writing-mode: vertical-lr;
     z-index: var(--rSlideshowZIndex);
+}
+
+@media (orientation: landscape) {
+    #rplayerQrCode svg {
+        max-height: calc(100vh - 8em);
+        height: 100%;
+    }
+}
+
+@media (orientation: portrait) {
+    #rplayerQrCode svg {
+        max-height: calc(100vw - 8em);
+        height: 100%;
+    }
 }

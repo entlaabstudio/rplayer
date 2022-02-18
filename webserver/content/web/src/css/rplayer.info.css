@@ -53,7 +53,8 @@
     background-color: var(--infoBg);
     position: fixed !important;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
+    max-height: 100vh;
     z-index: var(--wordsZIndex);
     text-shadow: .1em .1em .1em black;
 }
