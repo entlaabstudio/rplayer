@@ -40,6 +40,10 @@ export default class RPlayer {
                 
         var that = this;
 
+        this.audioObject.addEventListener("error", function() {
+            window.top.postMessage("[BOOT-RELOAD]", '*');
+        });
+        
         this.audioObject.addEventListener("loadedmetadata", function() {
             that.init();
             console.log("[RPlayer]","Data loaded.");

@@ -1,199 +1,208 @@
 <!DOCTYPE html>
 <html lang="en" manifest="media.appcache">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		
-		<title></title>
+    <head>
+        <!-- BOOT -->
+        <script>
+            
+            window.addEventListener('error', function(e) {
+                window.top.postMessage("[BOOT-RELOAD]", '*');
+            }, true);
+            
+        </script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title></title>
 
-		<link rel="icon" href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8IS0tIENyZWF0b3I6IENvcmVsRFJBVyAyMDE4ICg2NCBiaXTFrykgLS0+DQo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjIxMG1tIiBoZWlnaHQ9IjIxMG1tIiB2ZXJzaW9uPSIxLjEiIHN0eWxlPSJzaGFwZS1yZW5kZXJpbmc6Z2VvbWV0cmljUHJlY2lzaW9uOyB0ZXh0LXJlbmRlcmluZzpnZW9tZXRyaWNQcmVjaXNpb247IGltYWdlLXJlbmRlcmluZzpvcHRpbWl6ZVF1YWxpdHk7IGZpbGwtcnVsZTpldmVub2RkOyBjbGlwLXJ1bGU6ZXZlbm9kZCINCnZpZXdCb3g9IjAgMCAyMTAwMCAyMTAwMCINCiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+DQogPGRlZnM+DQogIDxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQogICA8IVtDREFUQVsNCiAgICAuc3RyMSB7c3Ryb2tlOiMyQjJBMjk7c3Ryb2tlLXdpZHRoOjIwO3N0cm9rZS1taXRlcmxpbWl0OjIyLjkyNTZ9DQogICAgLnN0cjAge3N0cm9rZTpibGFjaztzdHJva2Utd2lkdGg6MjA7c3Ryb2tlLW1pdGVybGltaXQ6MjIuOTI1Nn0NCiAgICAuZmlsMSB7ZmlsbDpibGFja30NCiAgICAuZmlsMiB7ZmlsbDojNDE4M0M0fQ0KICAgIC5maWwwIHtmaWxsOndoaXRlfQ0KICAgXV0+DQogIDwvc3R5bGU+DQogPC9kZWZzPg0KIDxnIGlkPSJWcnN0dmFfeDAwMjBfMSI+DQogIDxtZXRhZGF0YSBpZD0iQ29yZWxDb3JwSURfMENvcmVsLUxheWVyIi8+DQogIDxnIGlkPSJMb2dvX3gwMDIwX1JQbGF5ZXIiPg0KICAgPHJlY3QgY2xhc3M9ImZpbDAiIHdpZHRoPSIyMTAwMCIgaGVpZ2h0PSIyMTAwMCIgcng9IjI5NzMuOTYiIHJ5PSIyOTczLjk2Ii8+DQogICA8ZyBpZD0iTG9nb194MDAyMF9SUGxheWVyX3gwMDIwXzEiPg0KICAgIDxwYXRoIGNsYXNzPSJmaWwxIiBkPSJNNjQ1MC40OCAxMjEwMy43bDY3MC44MyAtMzg3LjMgNzg4MS4yOCAtNDU1MC4yNmMxNDkuNDYsLTg2LjI5IDIzNSwtMjM0LjQ1IDIzNSwtNDA3LjAzIDAsLTE3Mi41OCAtODUuNTQsLTMyMC43NCAtMjM1LC00MDcuMDNsLTg1NTIuMTEgLTQ5MzcuNTZjLTE0OS40NiwtODYuMjkgLTMyMC41NCwtODYuMjkgLTQ3MCwwIC0xNDkuNDUsODYuMjkgLTIzNSwyMzQuNDUgLTIzNSw0MDcuMDNsMCA5ODc1LjExYzAsMTcyLjU4IDg1LjU0LDMyMC43NSAyMzUsNDA3LjA0IDE0OS40Niw4Ni4yOCAzMjAuNTQsODYuMjkgNDcwLDB6bTY3MC44MyAtMjU3Ny4xOWwwIC01NTM0LjggMCAtODE0LjA2IDcwNC44MSA0MDYuOTIgMjM5Ni44MyAxMzgzLjgxIDMxMDEuNjMgMTc5MC43MyAtMzEwMS42MyAxNzkwLjczIC0yMzk2LjgzIDEzODMuODEgLTcwNC44MSA0MDYuOTIgMCAtODE0LjA2eiIvPg0KICAgIDxwYXRoIGNsYXNzPSJmaWwxIiBkPSJNNjIxNS40OCAxMjc4NS43N2w0MzUuODMgMGMyNTguODcsMCA0NzAsMjExLjEzIDQ3MCw0NzBsMCA2MDE0LjIxYzAsMjU4Ljg3IC0yMTEuMTMsNDcwIC00NzAsNDcwbC00MzUuODMgMGMtMjU4Ljg3LDAgLTQ3MCwtMjExLjEzIC00NzAsLTQ3MGwwIC02MDE0LjIxYzAsLTI1OC44NyAyMTEuMTMsLTQ3MCA0NzAsLTQ3MHoiLz4NCiAgICA8cGF0aCBjbGFzcz0iZmlsMSBzdHIwIiBkPSJNOTg3Mi45NyAxOTI2OS45OGwwIC02MDE0LjIxYzAsLTI1OC44NyAyMTEuMTMsLTQ3MCA0NzAsLTQ3MGw0MzUuODMgMGMyNTguODcsMCA0NzAsMjExLjEzIDQ3MCw0NzBsMCA2MDE0LjIxYzAsMjU4Ljg3IC0yMTEuMTMsNDcwIC00NzAsNDcwbC00MzUuODMgMGMtMjU4Ljg3LDAgLTQ3MCwtMjExLjEzIC00NzAsLTQ3MHoiLz4NCiAgICA8cG9seWdvbiBjbGFzcz0iZmlsMiBzdHIxIiBwb2ludHM9IjcxMjEuMzEsMzk5MS43MSA3MTIxLjMxLDk1MjYuNTEgNzEyMS4zMSwxMDM0MC41NyA3ODI2LjEyLDk5MzMuNjUgMTAyMjIuOTUsODU0OS44NCAxMzMyNC41OCw2NzU5LjExIDEwMjIyLjk1LDQ5NjguMzggNzgyNi4xMiwzNTg0LjU3IDcxMjEuMzEsMzE3Ny42NSAiLz4NCiAgIDwvZz4NCiAgPC9nPg0KIDwvZz4NCjwvc3ZnPg0K">
-		
-		<link rel="stylesheet" href="src/css/rplayer.css?v=01833-YATSU-2202120128">
-		<link rel="stylesheet" href="vendor/semantic/ui/dist/semantic.css?v=01833-YATSU-2202120128">
-		
-		<script src="src/js/foreign/jquery.js?v=01833-YATSU-2202120128"></script>
-		<script src="src/js/foreign/jquery.transit.min.js?v=01833-YATSU-2202120128"></script>
-		<script src="src/js/foreign/current-device.js?v=01833-YATSU-2202120128"></script>
-		<script src="vendor/desandro/imagesloaded/imagesloaded.pkgd.min.js?v=01833-YATSU-2202120128"></script>
-		<script src="vendor/semantic/ui/dist/semantic.min.js?v=01833-YATSU-2202120128"></script>
-		<script src="vendor/robinherbots/jquery.inputmask/dist/jquery.inputmask.min.js?v=01833-YATSU-2202120128"></script>
-		<script src="src/js/foreign/jquery.fullscreen.min.js?v=01833-YATSU-2202120128"></script>
-		<script src="src/js/rplayer.js?v=01833-YATSU-2202120128" type="module"></script>
+        <link rel="icon" href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8IS0tIENyZWF0b3I6IENvcmVsRFJBVyAyMDE4ICg2NCBiaXTFrykgLS0+DQo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjIxMG1tIiBoZWlnaHQ9IjIxMG1tIiB2ZXJzaW9uPSIxLjEiIHN0eWxlPSJzaGFwZS1yZW5kZXJpbmc6Z2VvbWV0cmljUHJlY2lzaW9uOyB0ZXh0LXJlbmRlcmluZzpnZW9tZXRyaWNQcmVjaXNpb247IGltYWdlLXJlbmRlcmluZzpvcHRpbWl6ZVF1YWxpdHk7IGZpbGwtcnVsZTpldmVub2RkOyBjbGlwLXJ1bGU6ZXZlbm9kZCINCnZpZXdCb3g9IjAgMCAyMTAwMCAyMTAwMCINCiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+DQogPGRlZnM+DQogIDxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQogICA8IVtDREFUQVsNCiAgICAuc3RyMSB7c3Ryb2tlOiMyQjJBMjk7c3Ryb2tlLXdpZHRoOjIwO3N0cm9rZS1taXRlcmxpbWl0OjIyLjkyNTZ9DQogICAgLnN0cjAge3N0cm9rZTpibGFjaztzdHJva2Utd2lkdGg6MjA7c3Ryb2tlLW1pdGVybGltaXQ6MjIuOTI1Nn0NCiAgICAuZmlsMSB7ZmlsbDpibGFja30NCiAgICAuZmlsMiB7ZmlsbDojNDE4M0M0fQ0KICAgIC5maWwwIHtmaWxsOndoaXRlfQ0KICAgXV0+DQogIDwvc3R5bGU+DQogPC9kZWZzPg0KIDxnIGlkPSJWcnN0dmFfeDAwMjBfMSI+DQogIDxtZXRhZGF0YSBpZD0iQ29yZWxDb3JwSURfMENvcmVsLUxheWVyIi8+DQogIDxnIGlkPSJMb2dvX3gwMDIwX1JQbGF5ZXIiPg0KICAgPHJlY3QgY2xhc3M9ImZpbDAiIHdpZHRoPSIyMTAwMCIgaGVpZ2h0PSIyMTAwMCIgcng9IjI5NzMuOTYiIHJ5PSIyOTczLjk2Ii8+DQogICA8ZyBpZD0iTG9nb194MDAyMF9SUGxheWVyX3gwMDIwXzEiPg0KICAgIDxwYXRoIGNsYXNzPSJmaWwxIiBkPSJNNjQ1MC40OCAxMjEwMy43bDY3MC44MyAtMzg3LjMgNzg4MS4yOCAtNDU1MC4yNmMxNDkuNDYsLTg2LjI5IDIzNSwtMjM0LjQ1IDIzNSwtNDA3LjAzIDAsLTE3Mi41OCAtODUuNTQsLTMyMC43NCAtMjM1LC00MDcuMDNsLTg1NTIuMTEgLTQ5MzcuNTZjLTE0OS40NiwtODYuMjkgLTMyMC41NCwtODYuMjkgLTQ3MCwwIC0xNDkuNDUsODYuMjkgLTIzNSwyMzQuNDUgLTIzNSw0MDcuMDNsMCA5ODc1LjExYzAsMTcyLjU4IDg1LjU0LDMyMC43NSAyMzUsNDA3LjA0IDE0OS40Niw4Ni4yOCAzMjAuNTQsODYuMjkgNDcwLDB6bTY3MC44MyAtMjU3Ny4xOWwwIC01NTM0LjggMCAtODE0LjA2IDcwNC44MSA0MDYuOTIgMjM5Ni44MyAxMzgzLjgxIDMxMDEuNjMgMTc5MC43MyAtMzEwMS42MyAxNzkwLjczIC0yMzk2LjgzIDEzODMuODEgLTcwNC44MSA0MDYuOTIgMCAtODE0LjA2eiIvPg0KICAgIDxwYXRoIGNsYXNzPSJmaWwxIiBkPSJNNjIxNS40OCAxMjc4NS43N2w0MzUuODMgMGMyNTguODcsMCA0NzAsMjExLjEzIDQ3MCw0NzBsMCA2MDE0LjIxYzAsMjU4Ljg3IC0yMTEuMTMsNDcwIC00NzAsNDcwbC00MzUuODMgMGMtMjU4Ljg3LDAgLTQ3MCwtMjExLjEzIC00NzAsLTQ3MGwwIC02MDE0LjIxYzAsLTI1OC44NyAyMTEuMTMsLTQ3MCA0NzAsLTQ3MHoiLz4NCiAgICA8cGF0aCBjbGFzcz0iZmlsMSBzdHIwIiBkPSJNOTg3Mi45NyAxOTI2OS45OGwwIC02MDE0LjIxYzAsLTI1OC44NyAyMTEuMTMsLTQ3MCA0NzAsLTQ3MGw0MzUuODMgMGMyNTguODcsMCA0NzAsMjExLjEzIDQ3MCw0NzBsMCA2MDE0LjIxYzAsMjU4Ljg3IC0yMTEuMTMsNDcwIC00NzAsNDcwbC00MzUuODMgMGMtMjU4Ljg3LDAgLTQ3MCwtMjExLjEzIC00NzAsLTQ3MHoiLz4NCiAgICA8cG9seWdvbiBjbGFzcz0iZmlsMiBzdHIxIiBwb2ludHM9IjcxMjEuMzEsMzk5MS43MSA3MTIxLjMxLDk1MjYuNTEgNzEyMS4zMSwxMDM0MC41NyA3ODI2LjEyLDk5MzMuNjUgMTAyMjIuOTUsODU0OS44NCAxMzMyNC41OCw2NzU5LjExIDEwMjIyLjk1LDQ5NjguMzggNzgyNi4xMiwzNTg0LjU3IDcxMjEuMzEsMzE3Ny42NSAiLz4NCiAgIDwvZz4NCiAgPC9nPg0KIDwvZz4NCjwvc3ZnPg0K">
+        
+        <link rel="stylesheet" href="src/css/rplayer.css?v=01833-YATSU-2202120128">
+        <link rel="stylesheet" href="vendor/semantic/ui/dist/semantic.css?v=01833-YATSU-2202120128">
+        
+        <script src="src/js/foreign/jquery.js?v=01833-YATSU-2202120128"></script>
+        <script src="src/js/foreign/jquery.transit.min.js?v=01833-YATSU-2202120128"></script>
+        <script src="src/js/foreign/current-device.js?v=01833-YATSU-2202120128"></script>
+        <script src="vendor/desandro/imagesloaded/imagesloaded.pkgd.min.js?v=01833-YATSU-2202120128"></script>
+        <script src="vendor/semantic/ui/dist/semantic.min.js?v=01833-YATSU-2202120128"></script>
+        <script src="vendor/robinherbots/jquery.inputmask/dist/jquery.inputmask.min.js?v=01833-YATSU-2202120128"></script>
+        <script src="src/js/foreign/jquery.fullscreen.min.js?v=01833-YATSU-2202120128"></script>
+        <script src="src/js/rplayer.js?v=01833-YATSU-2202120128" type="module"></script>
 
-	</head>
-	<body>
+    </head>
+    <body>
 
-		<!-- Dimmer -->
-		<div class="ui active inverted dimmer FullscreenDimmer">
-			<div class="ui loader"></div>
-		</div>
+        <!-- Dimmer -->
+        <div class="ui active inverted dimmer FullscreenDimmer">
+            <div class="ui loader"></div>
+        </div>
 
-		<!-- Module: rplayer.slideshow.js -->
-		<div id="rplayerQrCode"></div>
-		<div id="rplayerSlideshow"></div>
+        <!-- Module: rplayer.slideshow.js -->
+        <div id="rplayerQrCode"></div>
+        <div id="rplayerSlideshow"></div>
 
-		<!-- Module: rplayer.info.js -->
-		<div id="rplayerInfo">
-			<div id="rplayerInfoTemp" class="ui two column stackable grid">
-				<div class="six wide column"></div>
-				<div class="ten wide column"></div>
-			</div>
-			<div id="rplayerInfoActive" class="ui two column stackable grid"></div>
-			<div class="transportFake icons">
-				<i class="play icon"></i>
-				<i class="fast backward icon"></i>
-				<i class="fast forward icon"></i>
-				<i class="stop icon"></i>
-				<i class="arrow left icon"></i>
-				<i class="arrow right icon"></i>
-				<i class="lock open icon"></i>
-				<i class="fullScreen expand arrows icon"></i>
-				<i class="film icon"></i>
-				<i class="window close icon"></i>
-			</div>
-			<div class="transport icons">
-				<i class="play icon" data-command="rplayerStartPause"></i>
-				<i class="fast backward icon" data-command="rplayerRW"></i>
-				<i class="fast forward icon" data-command="rplayerFW"></i>
-				<i class="stop icon" data-command="rplayerStop"></i>
-				<i class="arrow left icon" data-command="rplayerInfoRW"></i>
-				<i class="arrow right icon" data-command="rplayerInfoFW"></i>
-				<i class="lock open icon" data-command="rplayerSnapInfoToTrack"></i>
-				<i class="fullScreen expand arrows icon"></i>
-				<i class="film icon" data-command="rplayerStartSlides"></i>
-				<i class="window close icon" data-command="rplayerInfoClose"></i>
-			</div>
-		</div>
+        <!-- Module: rplayer.info.js -->
+        <div id="rplayerInfo">
+            <div id="rplayerInfoTemp" class="ui two column stackable grid">
+                <div class="six wide column"></div>
+                <div class="ten wide column"></div>
+            </div>
+            <div id="rplayerInfoActive" class="ui two column stackable grid"></div>
+            <div class="transportFake icons">
+                <i class="play icon"></i>
+                <i class="fast backward icon"></i>
+                <i class="fast forward icon"></i>
+                <i class="stop icon"></i>
+                <i class="arrow left icon"></i>
+                <i class="arrow right icon"></i>
+                <i class="lock open icon"></i>
+                <i class="fullScreen expand arrows icon"></i>
+                <i class="film icon"></i>
+                <i class="window close icon"></i>
+            </div>
+            <div class="transport icons">
+                <i class="play icon" data-command="rplayerStartPause"></i>
+                <i class="fast backward icon" data-command="rplayerRW"></i>
+                <i class="fast forward icon" data-command="rplayerFW"></i>
+                <i class="stop icon" data-command="rplayerStop"></i>
+                <i class="arrow left icon" data-command="rplayerInfoRW"></i>
+                <i class="arrow right icon" data-command="rplayerInfoFW"></i>
+                <i class="lock open icon" data-command="rplayerSnapInfoToTrack"></i>
+                <i class="fullScreen expand arrows icon"></i>
+                <i class="film icon" data-command="rplayerStartSlides"></i>
+                <i class="window close icon" data-command="rplayerInfoClose"></i>
+            </div>
+        </div>
 
-		<!-- Module: rplayer.core.js -->
-		<div class="rplayerFx">
-			<div class="ui container rplayerUic">
-				<div class="ui segment">
-					<div id="rplayer">
-						
-						<div class="rplayerShowInfo">ahoj</div>
-						<div class="words"></div>
-						
-						<div class="itemA">
-							<a href="https://facebook.com/yatsuband" target="_blank">
-								<i class="facebook icon"></i>
-							</a>
-							<a href="https://www.instagram.com/yatsuband/" target="_blank">
-								<i class="instagram icon"></i>
-							</a>
-							<i class="fullScreen expand arrows alternate icon"></i>
-							<i class="qrButton qrcode icon"></i>
-							<i class="helpButton question circle icon"></i>
-							<i class="rplayerMinimize minus circle icon"></i>
-						</div>
-						
-						<div class="item9">
-							<div>
-								<div>
-									<h1 class="rplayerAuthor"></h1>
-									<div><i class="eye icon"></i>Author</div>
-								</div>
-								<div>
-									<h2 class="rplayerAlbumName"></h2>
-									<div><i class="book icon"></i>Album</div>
-								</div>
-								<span><i class="clock icon"></i> <span class="rplayerAlbumYear"></span></span>
-							</div>
-						</div>
-						
-						<div class="item1">
-							<i class="volume up icon"></i>
-							<div class="volumeInfo" translate="no"></div>
-							<input type="range" min="0" max="1000000" value="1000000" class="rplayerVolFader slider">
-							<div id="context">
-								<button class="mini ui icon primary button rplayerTransport" data-command="rplayerStartPause">
-									<i class="play icon"></i> / <i class="pause icon"></i>
-								</button>
-								<button class="mini ui icon primary button rplayerTransport" data-command="rplayerWords" id="rplayerWords">
-									<i class="align center icon"></i>
-								</button>
-								<button class="mini ui icon button rplayerTransport" data-command="rplayerStop">
-									<i class="stop icon"></i></i>
-								</button>
-								<button class="mini ui icon button rplayerTransport" data-command="rplayerRW">
-									<i class="fast backward icon"></i></i>
-								</button>
-								<button class="mini ui icon button rplayerTransport" data-command="rplayerFW">
-									<i class="fast forward icon"></i></i>
-								</button>
-								<span class="addCurTime">
-									<span class="rplayerCurTime"></span><span> / <span class="rplayerLenTime"></span></span>
-								</span>
-							</div>
-						</div>
+        <!-- Module: rplayer.core.js -->
+        <div class="rplayerFx">
+            <div class="ui container rplayerUic">
+                <div class="ui segment">
+                    <div id="rplayer">
+                        
+                        <div class="rplayerShowInfo"></div>
+                        <div class="words"></div>
+                        
+                        <div class="itemA">
+                            <a href="https://facebook.com/yatsuband" target="_blank">
+                                <i class="facebook icon"></i>
+                            </a>
+                            <a href="https://www.instagram.com/yatsuband/" target="_blank">
+                                <i class="instagram icon"></i>
+                            </a>
+                            <i class="fullScreen expand arrows alternate icon"></i>
+                            <i class="qrButton qrcode icon"></i>
+                            <i class="helpButton question circle icon"></i>
+                            <i class="rplayerMinimize minus circle icon"></i>
+                        </div>
+                        
+                        <div class="item9">
+                            <div>
+                                <div>
+                                    <h1 class="rplayerAuthor"></h1>
+                                    <div><i class="eye icon"></i>Author</div>
+                                </div>
+                                <div>
+                                    <h2 class="rplayerAlbumName"></h2>
+                                    <div><i class="book icon"></i>Album</div>
+                                </div>
+                                <span><i class="clock icon"></i> <span class="rplayerAlbumYear"></span></span>
+                            </div>
+                        </div>
+                        
+                        <div class="item1">
+                            <i class="volume up icon"></i>
+                            <div class="volumeInfo" translate="no"></div>
+                            <input type="range" min="0" max="1000000" value="1000000" class="rplayerVolFader slider">
+                            <div id="context">
+                                <button class="mini ui icon primary button rplayerTransport" data-command="rplayerStartPause">
+                                    <i class="play icon"></i> / <i class="pause icon"></i>
+                                </button>
+                                <button class="mini ui icon primary button rplayerTransport" data-command="rplayerWords" id="rplayerWords">
+                                    <i class="align center icon"></i>
+                                </button>
+                                <button class="mini ui icon button rplayerTransport" data-command="rplayerStop">
+                                    <i class="stop icon"></i></i>
+                                </button>
+                                <button class="mini ui icon button rplayerTransport" data-command="rplayerRW">
+                                    <i class="fast backward icon"></i></i>
+                                </button>
+                                <button class="mini ui icon button rplayerTransport" data-command="rplayerFW">
+                                    <i class="fast forward icon"></i></i>
+                                </button>
+                                <span class="addCurTime">
+                                    <span class="rplayerCurTime"></span><span> / <span class="rplayerLenTime"></span></span>
+                                </span>
+                            </div>
+                        </div>
 
-						<div class="item5">
-							<div class="trackInfo">
-								<span class="rplayerCurTrackName"></span>
-								<canvas id="rplayerVisualCanvas"></canvas>
-							</div>
-						</div>
+                        <div class="item5">
+                            <div class="trackInfo">
+                                <span class="rplayerCurTrackName"></span>
+                                <canvas id="rplayerVisualCanvas"></canvas>
+                            </div>
+                        </div>
 
-						<div class="item6">
-							<div class="ui toggle checkbox">
-								<input
-									type="checkbox"
-									class="rplayerStopAfterTrack"
-									id="rplayerStopAfterTrackID"
-								><label for="rplayerStopAfterTrackID">Stop after track [S]</label><br>
-							</div><br>
-							<div class="ui toggle checkbox">
-								<input type="checkbox" class="rplayerLoopAll" id="rplayerLoopAllID"><label for="rplayerLoopAllID">Loop all [L]</label>
-							</div>
-						</div>
-						<div class="itemB">
-							<div>
-								<i class="hourglass half icon"></i></i>
-								Stop timer<br>
-								<div class="ui input">
-									<input type="text" placeholder="Minutes...">
-								</div> :
-								<div class="stopTimerSecs">00</div>
-							</div>
-						</div>
+                        <div class="item6">
+                            <div class="ui toggle checkbox">
+                                <input
+                                    type="checkbox"
+                                    class="rplayerStopAfterTrack"
+                                    id="rplayerStopAfterTrackID"
+                                ><label for="rplayerStopAfterTrackID">Stop after track [S]</label><br>
+                            </div><br>
+                            <div class="ui toggle checkbox">
+                                <input type="checkbox" class="rplayerLoopAll" id="rplayerLoopAllID"><label for="rplayerLoopAllID">Loop all [L]</label>
+                            </div>
+                        </div>
+                        <div class="itemB">
+                            <div>
+                                <i class="hourglass half icon"></i></i>
+                                Stop timer<br>
+                                <div class="ui input">
+                                    <input type="text" placeholder="Minutes...">
+                                </div> :
+                                <div class="stopTimerSecs">00</div>
+                            </div>
+                        </div>
 
-						<div class="item2">
-							<div class="rplayerTrackList"></div>
-						</div>
-						
-						<div class="item7">
-							Album duration: <span class="rPlayerAlbumDuration"></span>
-						</div>
+                        <div class="item2">
+                            <div class="rplayerTrackList"></div>
+                        </div>
+                        
+                        <div class="item7">
+                            Album duration: <span class="rPlayerAlbumDuration"></span>
+                        </div>
 
-						<div class="item8">
-							Album buffer: <span class="rplayerBufferCondition"></span>%
-							<span class="rplayerBufferShowLoading"> loading...</span>
-						</div>
+                        <div class="item8">
+                            Album buffer: <span class="rplayerBufferCondition"></span>%
+                            <span class="rplayerBufferShowLoading"> loading...</span>
+                        </div>
 
-						<div class="rPlayerFooter item3">
-							<div>
-								<i class="arrow left icon"></i><i class="arrow right icon"></i>
-							</div>
-							<input type="range" min="0" max="0" value="0" class="rplayerSeeker slider" data-content="N / A">
-						</div>
+                        <div class="rPlayerFooter item3">
+                            <div>
+                                <i class="arrow left icon"></i><i class="arrow right icon"></i>
+                            </div>
+                            <input type="range" min="0" max="0" value="0" class="rplayerSeeker slider" data-content="N / A">
+                        </div>
 
-					</div>
-					<div id="rajs">
-						<a href="https://rajs.info" target="_blank">RPlayer v<span class="rPlayerVersion"></span> by Robert Rajs (c) <span class="rPlayerVersionDate"></a>
-						<a href="https://www.facebook.com/robert.rajs.9/" target="_blank">
-							<i class="facebook icon"></i>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		<!-- InputMask -->
-		<script>
-			$(document).ready(function(){
-				$(".itemB input").inputmask({"mask" : "99999999"}); //specifying options
-				$(".itemB input").inputmask({"placeholder" : ""});  //static mask
-			});
-		</script>
-	</body>
+                    </div>
+                    <div id="rajs">
+                        <a href="https://rajs.info" target="_blank">RPlayer v<span class="rPlayerVersion"></span> by Robert Rajs (c) <span class="rPlayerVersionDate"></a>
+                        <a href="https://www.facebook.com/robert.rajs.9/" target="_blank">
+                            <i class="facebook icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- InputMask -->
+        <script>
+            $(document).ready(function(){
+                $(".itemB input").inputmask({"mask" : "99999999"}); //specifying options
+                $(".itemB input").inputmask({"placeholder" : ""});  //static mask
+            });
+        </script>
+
+    </body>
 </html>
