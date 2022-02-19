@@ -38,12 +38,21 @@
         this.ticker["stopTimer"] = setInterval(function() {
             that.tickStopTimer()
         },1000);
+        this.correctAdressBar();
         this.seekersInfo();
         this.windowMinimize();
         this.fullscreen();
         this.showQrCode();
         this.buttons();
         this.setBackground();
+    }
+
+    correctAdressBar() {
+        var url = new URL(window.location.href.replace('rplayer.htm','index.htm'));
+        if (window.self == window.top) {
+            window.history.pushState({}, '', url);
+        }
+        // console.log(window.location);
     }
 
     setBackground() {

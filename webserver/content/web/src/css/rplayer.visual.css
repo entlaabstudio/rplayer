@@ -165,6 +165,10 @@ a.rplayerOneTrack {
     opacity: .4;
 }
 
+.item9 .nowrap {
+    white-space: nowrap;
+}
+
 .itemA {
     grid-area: gA;
     text-align:  right;
