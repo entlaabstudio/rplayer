@@ -77,7 +77,8 @@
         } else {
             link = window.location.href + "index.htm";
         }
-        console.log(link);
+        link = link.replace('rplayer.htm','');
+        // console.log(link);
         this.QrCod.addData(link);
         this.QrCod.make();
         $("#rplayerQrCode").html(this.QrCod.createSvgTag({}));
