@@ -28,12 +28,46 @@
         <script type="text/ecmascript">
             class Boot {
                 constructor() {
+                    this.maxTime = 40; // seconds
+
+                    this.loading();
                     this.tryAgain();
                     this.blinkingDots();
                 }
 
+                loading() {
+                    var that = this;
+                    
+                    window.addEventListener('error', function(e) {
+                        console.log("[BOOT-RELOAD]");
+                    }, true);
+                    
+                    document.getElementsByTagName("iframe")[0].contentWindow.onload = function() {
+                        var request;
+                        if (window.XMLHttpRequest)
+                            request = new XMLHttpRequest();
+                        else
+                            request = new ActiveXObject("Microsoft.XMLHTTP");
+                            request.open('GET', document.getElementsByTagName("iframe")[0].src, false);
+                            request.send();
+                        if (request.status !== 200) {
+                            console.log("[BOOT-RELOAD]");
+                            window.location.reload();
+                        } else {
+                            if (that.maxTime >= 0) {
+                                console.log("[RPlayer]","BOOT success.");
+                                window.location = document.getElementsByTagName("iframe")[0].contentWindow.location;
+                            } else {
+                                console.log("[BOOT-RELOAD]");
+                                window.location.reload();
+                            }
+                        }
+                    };
+                }
+
                 blinkingDots() {
                     var show = true;
+                    var that = this;
 
                     setInterval(function() {
                         if (show) {
@@ -43,6 +77,8 @@
                             document.getElementById('booting').style.display="none";
                             show = true;
                         }
+
+                        that.maxTime -= 0.25;
                     },250);
                 }
 
@@ -56,30 +92,6 @@
                 }
             }
             BootClass = new Boot();
-        </script>
-        
-        <!-- BOOT -->
-        <script>
-            window.addEventListener('error', function(e) {
-                console.log("[BOOT-RELOAD]");
-            }, true);
-            
-            document.getElementsByTagName("iframe")[0].contentWindow.onload = function() {
-                var request;
-                if (window.XMLHttpRequest)
-                    request = new XMLHttpRequest();
-                else
-                    request = new ActiveXObject("Microsoft.XMLHTTP");
-                    request.open('GET', document.getElementsByTagName("iframe")[0].src, false);
-                    request.send();
-                if (request.status !== 200) {
-                    console.log("[BOOT-RELOAD]");
-                    window.location.reload();
-                } else {
-                    console.log("[RPlayer]","BOOT success.");
-                    window.location = document.getElementsByTagName("iframe")[0].contentWindow.location;
-                }
-            };
         </script>
     </body>
 </html>

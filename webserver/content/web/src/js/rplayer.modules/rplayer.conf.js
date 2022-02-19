@@ -16,7 +16,7 @@ export default class RPlayerConf {
         this.conf = {
             app: {
                 name: "RPlayer",
-                version: "0.20.35", // <some platform updates>.<visible or control updates>.<unvisible updates>
+                version: "1.20.36", // <some platform updates>.<visible or control updates>.<unvisible updates>
                 date:    "2022",
                 preferences: {
                     transport: {
@@ -117,7 +117,12 @@ export default class RPlayerConf {
                     "<p style='margin-top: 1em;'>" +
                         "Thank you for purchasing <a href=\"https://yatsuband.bandcamp.com/album/dreamer-producer-pack\" target=\"_blank\"><i class=\"bandcamp icon\" style=\"display: inline-block; padding: 0 !important\"></i>the \"Dreamer\" Producer Pack</a>, you are an awesome human being! " +
                         "Here's some useful information about the album and what gear was used to make it." +
-                    "</p>"
+                    "</p>",
+                    genres: {
+                        0: "Metal",
+                        1: "Progressive rock",
+                        2: "Djent",
+                    },
                 },
                 tracks: {
                     0: {
@@ -127,6 +132,11 @@ export default class RPlayerConf {
                             image: "media/images/mirrors.jpg",
                             composer: "Michal Diviš",
                             year: 2021,
+                            genres: {
+                                0: "Metal",
+                                1: "Progressive rock",
+                                2: "Djent",
+                            },
                             anyHtml: {
                                 0: {
                                     id: "Song tempo",
@@ -269,6 +279,11 @@ export default class RPlayerConf {
                             image: "media/images/dreamer_album.jpg",
                             composer: "Michal Diviš",
                             year: 2021,
+                            genres: {
+                                0: "Metal",
+                                1: "Progressive rock",
+                                2: "Djent",
+                            },
                             anyHtml: {
                                 0: {
                                     id: "Song tempo",
@@ -411,6 +426,11 @@ export default class RPlayerConf {
                             image: "media/images/ornaments_w_vocals.jpg",
                             composer: "Michal Diviš",
                             year: 2021,
+                            genres: {
+                                0: "Metal",
+                                1: "Progressive rock",
+                                2: "Djent",
+                            },
                             anyHtml: {
                                 0: {
                                     id: "Vocals",
@@ -603,6 +623,11 @@ export default class RPlayerConf {
                             image: "media/images/labyrinth.jpg",
                             composer: "Michal Diviš",
                             year: 2021,
+                            genres: {
+                                0: "Metal",
+                                1: "Progressive rock",
+                                2: "Djent",
+                            },
                             anyHtml: {
                                 0: {
                                     id: "Song tempo",
@@ -745,6 +770,11 @@ export default class RPlayerConf {
                             image: "media/images/djinn.png",
                             composer: "Michal Diviš",
                             year: 2021,
+                            genres: {
+                                0: "Metal",
+                                1: "Progressive rock",
+                                2: "Djent",
+                            },
                             anyHtml: {
                                 0: {
                                     id: "Vocal",
@@ -936,6 +966,11 @@ export default class RPlayerConf {
                             image: "media/images/ornaments_w_vocals.jpg",
                             composer: "Michal Diviš",
                             year: 2021,
+                            genres: {
+                                0: "Metal",
+                                1: "Progressive rock",
+                                2: "Djent",
+                            },
                             anyHtml: {
                                 0: {
                                     id: "Song tempo",
@@ -1078,6 +1113,11 @@ export default class RPlayerConf {
                             image: "media/images/mirrors.jpg",
                             composer: "Michal Diviš",
                             year: 2021,
+                            genres: {
+                                0: "Metal",
+                                1: "Progressive rock",
+                                2: "Djent",
+                            },
                             anyHtml: {
                                 0: {
                                     id: "Song tempo",
@@ -1220,6 +1260,11 @@ export default class RPlayerConf {
                             image: "media/images/dreamer_album.jpg",
                             composer: "Michal Diviš",
                             year: 2021,
+                            genres: {
+                                0: "Metal",
+                                1: "Progressive rock",
+                                2: "Djent",
+                            },
                             anyHtml: {
                                 0: {
                                     id: "Song tempo",
@@ -1362,6 +1407,11 @@ export default class RPlayerConf {
                             image: "media/images/mirrors.jpg",
                             composer: "Michal Diviš",
                             year: 2021,
+                            genres: {
+                                0: "Metal",
+                                1: "Progressive rock",
+                                2: "Djent",
+                            },
                             anyHtml: {
                                 0: {
                                     id: "Song tempo",
