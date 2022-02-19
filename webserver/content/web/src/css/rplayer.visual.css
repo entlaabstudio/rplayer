@@ -14,11 +14,6 @@ a.rplayerActiveTrack {
 
 /** User */
 
-@font-face {
-    font-family: digicounter;
-    src: url('fonts/digital-dream.regular.ttf');
-}
-
 .ui.segment {
     padding: 0 !important;
     border: none !important;
@@ -77,6 +72,7 @@ a.rplayerOneTrack {
 .item1 .addCurTime {
     white-space: nowrap;
 	padding-right: 1em;
+    padding-bottom: 0.2em;
 }
 
 .item2 {
@@ -326,7 +322,7 @@ label {
 .words,
 .rplayerShowInfo {
     display: flex;
-    text-align: justify;
+    text-align: center;
     justify-content: center; align-items: safe center;
     justify-self: center;
     align-self: center;
