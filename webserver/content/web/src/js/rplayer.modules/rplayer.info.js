@@ -422,12 +422,12 @@
         var currentWordTimekey = this.rplayerObj.getCurrentWord()["time"];
         if (this.lastWordTimekey != currentWordTimekey) {
             $("#rplayerInfo .rplayerInfoWord").removeClass("highlightedWord");
-            $("#rplayerInfo .rplayerInfoWord[data-timekey='" + currentWordTimekey + "']").addClass("highlightedWord");
             if (this.rplayerObj.getCurrentWord()["text"] !== undefined) {
                 console.log("[RPlayerInfoModule]",currentWordTimekey,this.rplayerObj.getCurrentWord()["text"]);
             }
             this.lastWordTimekey = currentWordTimekey;
         }
+        $("#rplayerInfo .rplayerInfoWord[data-timekey='" + currentWordTimekey + "']").addClass("highlightedWord");
     }
 
     setInfoForSelectedTrack() {
