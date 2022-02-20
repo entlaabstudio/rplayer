@@ -13,7 +13,7 @@ import RPlayer     from "./rplayer.modules/rplayer.core.js?v=12036-YATSU-2202120
 import QrCode      from './foreign/qrcode-generator-es6/qrcode.js?v=12036-YATSU-2202120128';
 
 var RPCfg = new RPlayerConf();
-var RPObj = new RPlayer(RPCfg);
+var RPObj = new RPlayer(RPCfg,QrCode);
 var QrCod = new QrCode(0,'H');
 
 // optional modules

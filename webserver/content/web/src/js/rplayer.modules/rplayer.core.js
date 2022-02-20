@@ -9,7 +9,8 @@
 export default class RPlayer {
     
     constructor(
-        rplayerCfg
+        rplayerCfg,
+        QrCode
     ) {
         
         console.log("[RPlayer]","Core loaded.");
@@ -20,6 +21,7 @@ export default class RPlayer {
         this.wordsView             = true;
         this.tracklistLoaded       = false;
         this.license               = false;
+        this.QrCode                = QrCode;
         
         this.rplayerObject = $(rplayerCfg.conf.app.htmlSelectors.mainWindow);
         
@@ -251,19 +253,46 @@ export default class RPlayer {
                             "</tr>" +
                         "</table>" +
                         "<br>" +
+                        
+                        this.rplayerCfg.conf.app.donations.html +
+                        this.donations() +
+
+                        // "<br><br>" +
                         "<div style='padding-top: .5em;'>" +
                             this.license;
                         "</div>" +
                     "</div>";
-                    // console.log($.get('./LICENSE'));
 
         htmlOut += "</div>";
 
-        // console.log(htmlOut);
         $(htmlSelector).html(htmlOut);
         $(htmlSelector).css({
             display: "block"
         });
+    }
+
+    donations() {
+        var html = "";
+        var lat  = false;
+        
+        this.obj2array(this.rplayerCfg.conf.app.donations.wallets).forEach(element => {
+            html += "<div style='text-align: center; border-bottom: 1px solid rgba(0,0,0,.1); margin-bottom: 1em; padding-bottom: 1em;'>"
+
+            var QrCod = new this.QrCode(0,'H');
+            QrCod.addData(element[1].adress);
+            QrCod.make();
+
+            html += "<strong>" + element[1].ccurrency + "</strong><br>";
+            html += "<img src='" + element[1].image + "' style='width: 5em;'></strong><br>";
+            html += "<div style='display: inline-block; width: 10em; height: 10em;'>" + QrCod.createSvgTag({}) + "</div><br>";
+            html += "<input type='text' onClick='this.select();' value='" + element[1].adress + "' readonly='readonly' style='text-align: center; border: none; width: 100%; font-family: courier; font-size: .9em'>";
+            
+            html += "</div>";
+            
+            lat = true;
+        });
+
+        return html;
     }
 
     keyboard() {
