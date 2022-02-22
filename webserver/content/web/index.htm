@@ -24,15 +24,25 @@
     </head>
     <body>
         RPlayer is being prepared.<br>Please be patient<span id="booting">...</span>
-        <iframe src="./rplayer.htm" frameborder="0"></iframe>
         <script type="text/ecmascript">
             class Boot {
                 constructor() {
-                    this.maxTime = 40; // seconds
+                    this.maxTime = 120; // seconds
 
+                    this.createIframe();
                     this.loading();
                     this.tryAgain();
                     this.blinkingDots();
+                }
+
+                createIframe() {
+                    console.log(document.getElementsByTagName("body")[0]);
+
+                    var iframe = document.createElement("iframe");
+                    iframe.src = "./rplayer.htm";
+                    iframe.frameborder = "0";
+
+                    document.getElementsByTagName("body")[0].appendChild(iframe);
                 }
 
                 loading() {
@@ -91,7 +101,9 @@
                     }, false);
                 }
             }
-            BootClass = new Boot();
+            setTimeout(function() {
+                BootClass = new Boot();
+            },3000);
         </script>
     </body>
 </html>

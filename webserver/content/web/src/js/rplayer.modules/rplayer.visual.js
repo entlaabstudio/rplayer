@@ -82,7 +82,6 @@
         var link;
         
         link = window.location.href;
-        // link = "http://rajs.info/"
 
         if (link.includes("localhost")) {
             link = link.substring(
@@ -103,7 +102,6 @@
             link = link + "index.htm";
         }
         link = link.replace('rplayer.htm','');
-        // console.log(link);
         this.QrCod.addData(link);
         this.QrCod.make();
         $("#rplayerQrCode").html(this.QrCod.createSvgTag({}));
