@@ -7,8 +7,7 @@
  */
 
  export default class RPlayerVisual {
-    constructor(rplayerObj,QrCod) {
-        // this.rplayerSelector = rplayerSelector;
+    constructor(rplayerObj,QrCode) {
         this.rplayerObj = rplayerObj;
 
         // design config
@@ -16,7 +15,7 @@
         this.fadeinTime  = 1789;
 
         // QR
-        this.QrCod = QrCod;
+        this.QrCod = new QrCode(0,'H');
 
         this.init();
         console.log("[RPlayer]","Visual module loaded.")
@@ -81,10 +80,27 @@
 
     showQrCode() {
         var link;
-        if (window.location.href.includes("index.htm")) {
-            link = window.location.href;
+        
+        link = window.location.href;
+        // link = "http://rajs.info/"
+
+        if (link.includes("localhost")) {
+            link = link.substring(
+                link.indexOf("//") + 2,
+                link.lastIndexOf("/")
+            );
+            link = this.rplayerObj.rplayerCfg.conf.app.web3Protocol +
+            link.substring(
+                0,
+                link.indexOf(".")
+            ) +
+            "/"
+        }
+        
+        if (link.includes("index.htm")) {
+            link = link;
         } else {
-            link = window.location.href + "index.htm";
+            link = link + "index.htm";
         }
         link = link.replace('rplayer.htm','');
         // console.log(link);
