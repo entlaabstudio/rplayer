@@ -22,7 +22,7 @@ import RPlayerInfo      from "./rplayer.modules/rplayer.info.js?v=12238-YATSU-22
 import RPlayerSlideshow from "./rplayer.modules/rplayer.slideshow.js?v=12238-YATSU-2202120128";
 
 new RPlayerVisual(RPObj,QrCode);
-new RPlayerInfo(RPObj);
+new RPlayerInfo(RPObj,QrCode);
 new RPlayerSlideshow(RPObj);
 
 console.log("------------------------------------");

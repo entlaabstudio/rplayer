@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" manifest="media.appcache">
+<html manifest="media.appcache">
     <head>
         <!-- BOOT -->
         <script>
@@ -99,13 +99,13 @@
                             <div>
                                 <div>
                                     <h1 class="rplayerAuthor"></h1>
-                                    <div class="nowrap"><i class="eye icon"></i>Author</div>
+                                    <div class="nowrap"><i class="eye icon"></i><span class="rplayerLocalText" data-phrase="author"></span></div>
                                 </div>
                                 <div>
                                     <h2 class="rplayerAlbumName"></h2>
-                                    <div class="nowrap"><i class="book icon"></i>Album</div>
+                                    <div class="nowrap"><i class="book icon"></i><span class="rplayerLocalText" data-phrase="album"></span></div>
                                 </div>
-                                <span class="nowrap"><i class="clock icon"></i> <span class="rplayerAlbumYear"></span></span>
+                                <span class="nowrap"><i class="clock icon rplayerAlbumYearIcon"></i> <span class="rplayerAlbumYear"></span></span>
                             </div>
                         </div>
                         
@@ -148,18 +148,18 @@
                                     type="checkbox"
                                     class="rplayerStopAfterTrack"
                                     id="rplayerStopAfterTrackID"
-                                ><label for="rplayerStopAfterTrackID">Stop after track [S]</label><br>
+                                ><label for="rplayerStopAfterTrackID" class="rplayerLocalText" data-phrase="stopAfterTrack"></label><br>
                             </div><br>
                             <div class="ui toggle checkbox">
-                                <input type="checkbox" class="rplayerLoopAll" id="rplayerLoopAllID"><label for="rplayerLoopAllID">Loop all [L]</label>
+                                <input type="checkbox" class="rplayerLoopAll" id="rplayerLoopAllID"><label for="rplayerLoopAllID" class="rplayerLocalText" data-phrase="loopAll"></label>
                             </div>
                         </div>
                         <div class="itemB">
                             <div>
                                 <i class="hourglass half icon"></i></i>
-                                Stop timer<br>
+                                <span class="rplayerLocalText" data-phrase="stopTimer"></span><br>
                                 <div class="ui input">
-                                    <input type="text" placeholder="Minutes...">
+                                    <input type="text" placeholder="minutes">
                                 </div> :
                                 <div class="stopTimerSecs">00</div>
                             </div>
@@ -170,12 +170,12 @@
                         </div>
                         
                         <div class="item7">
-                            Album duration: <span class="rPlayerAlbumDuration"></span>
+                            <span class="rplayerLocalText" data-phrase="albumDuration"></span>: <span class="rPlayerAlbumDuration"></span>
                         </div>
 
                         <div class="item8">
-                            Album buffer: <span class="rplayerBufferCondition"></span>%
-                            <span class="rplayerBufferShowLoading"> loading...</span>
+                            <span class="rplayerLocalText" data-phrase="albumBuffer"></span>: <span class="rplayerBufferCondition"></span>%
+                            &nbsp;<span class="rplayerBufferShowLoading rplayerLocalText" data-phrase="loading"></span>
                         </div>
 
                         <div class="rPlayerFooter item3">
@@ -187,7 +187,7 @@
 
                     </div>
                     <div id="rajs">
-                        <a href="https://rajs.info" target="_blank">RPlayer v<span class="rPlayerVersion"></span> by Robert Rajs (c) <span class="rPlayerVersionDate"></a>
+                        <a href="https://rajs.info" target="_blank">RPlayer v<span class="rPlayerVersion"></span>&nbsp;<span class="rplayerLocalText" data-phrase="byRobertRajs">by Robert Rajs</span>&nbsp;(c)&nbsp;<span class="rPlayerVersionDate"></a>
                         <a href="https://www.facebook.com/robert.rajs.9/" target="_blank">
                             <i class="facebook icon"></i>
                         </a>
@@ -203,6 +203,12 @@
                 $(".itemB input").inputmask({"placeholder" : ""});  //static mask
             });
         </script>
-
+        <!-- PAUSE ALL -->
+        <script>
+            function pauseAll() {
+                var sounds = document.getElementsByTagName('audio');
+                for(i=0; i<sounds.length; i++) sounds[i].pause();
+            }
+        </script>
     </body>
 </html>

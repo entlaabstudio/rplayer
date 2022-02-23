@@ -7,8 +7,9 @@
  */
 
  export default class RPlayerInfo {
-    constructor(rplayerObj) {
+    constructor(rplayerObj,QrCode) {
         this.rplayerObj = rplayerObj;
+        this.QrCode = QrCode;
 
         this.selector     = $("#rplayerInfo");
         this.activePanel1 = $("#rplayerInfoActive div:first-child");
@@ -41,6 +42,30 @@
 
         this.ticker();
     }   
+    
+    donations() {
+        var html = "<div class='ui centered grid'><div class='doubling three column row'>";
+        var lat  = false;
+        
+        this.rplayerObj.obj2array(this.rplayerObj.rplayerCfg.conf.album.donations.wallets).forEach(element => {
+            html += "<div class=\"column rplayerInfoCard\">"
+
+            var QrCod = new this.QrCode(0,'H');
+            QrCod.addData(element[1].adress);
+            QrCod.make();
+
+            html += "<strong>" + element[1].ccurrency + "</strong><br>";
+            html += "<img src=\"" + element[1].image + "\"></strong><br>";
+            html += "<div class=\"rplayerInfoCrQr\">" + QrCod.createSvgTag({}) + "</div><br>";
+            html += "<input type='text' class=\"rplayerInfoCrAdresses\" onClick='this.select();' value='" + element[1].adress + "' readonly='readonly'>";
+            
+            html += "</div>";
+            
+            lat = true;
+        });
+        html += "</div></div>";
+        return html;
+    }
     
     checkH1() {
         var minOpacity = "0.5"
@@ -112,10 +137,12 @@
                 htmlWords  = that.htmlWords();
     
                 if (htmlWords != "...") {
-                    html_2 += "<h3>Lyrics</h3>"
+                    html_2 += "<h3 class=\"rplayerLocalText\" data-phrase=\"infoLyrics\">Lyrics</h3>"
                     html_2 += htmlWords;
                 }
                 html_2     += that.htmlStory();
+                html_2     += "<h3 class=\"rplayerLocalText\" data-phrase=\"infoReward\">Reward for artist</h3>"
+                html_2     += that.donations();
     
                 // HTML out
                 if (html_1 != html_1_last) {
@@ -172,7 +199,7 @@
             "<tbody>" +
                 "<tr>" +
                     "<th>" +
-                        "Album name:" +
+                        "<span class='rplayerLocalText' data-phrase='infoAlbumName'>Album name</span>:" +
                     "</th>" +
                     "<td>" +
                         "<strong>" + cfg.album.info.name + "</strong>" +
@@ -180,7 +207,7 @@
                 "</tr>" +
                 "<tr>" +
                     "<th>" +
-                        "Album year:" +
+                        "<span class='rplayerLocalText' data-phrase='infoAlbumYear'>Album year</span>:" +
                     "</th>" +
                     "<td>" +
                         "<strong>" + cfg.album.info.year + "</strong>" +
@@ -188,25 +215,28 @@
                 "</tr>" +
                 "<tr>" +
                     "<th>" +
-                        "Album composer:" +
+                        "<span class='rplayerLocalText' data-phrase='infoAlbumComposer'>Album composer</span>:" +
                     "</th>" +
                     "<td>" +
                         "<strong>" + cfg.album.info.composer + "</strong>" +
                     "</td>" +
                 "</tr>" +
-                "<tr>" +
-                    "<th>" +
-                        "Track composer:" +
-                    "</th>" +
-                    "<td>" +
-                        "<strong>" + cfg.album.tracks[this.rplayerObj.trackInfoSelected].info.composer + "</strong>" +
-                    "</td>" +
-                "</tr>" +
+                (
+                    (cfg.album.tracks[this.rplayerObj.trackInfoSelected].info.composer != cfg.album.info.composer) ? 
+                    "<tr>" + 
+                        "<th>" +
+                            "<span class='rplayerLocalText' data-phrase='infoTrackComposer'>Track composer</span>:" +
+                        "</th>" +
+                        "<td>" +
+                            "<strong>" + cfg.album.tracks[this.rplayerObj.trackInfoSelected].info.composer + "</strong>" +
+                        "</td>" +
+                    "</tr>" : ""
+                ) +
                 (
                     (cfg.album.tracks[this.rplayerObj.trackInfoSelected].info.year != cfg.album.info.year) ? 
                     "<tr>" + 
                         "<th>" +
-                            "Track year:" +
+                            "<span class='rplayerLocalText' data-phrase='infoTrackYear'>Track year</span>:" +
                         "</th>" +
                         "<td>" +
                             "<strong>" + cfg.album.tracks[this.rplayerObj.trackInfoSelected].info.year + "</strong>" +

@@ -151,14 +151,13 @@ a.rplayerOneTrack {
 
 .item9 h1 ~ div,
 .item9 h2 ~ div {
-    opacity: .4;
+    opacity: .7;
     font-style: italic;
 }
 
 .item9 > div:first-child span {
     font-style: italic;
     font-size: 1em;
-    opacity: .4;
 }
 
 .item9 .nowrap {
@@ -190,8 +189,9 @@ a.rplayerOneTrack {
     display: inline-block;
 }
 
-.rplayerAlbumYear {
-    opacity: 1 !important;
+.rplayerAlbumYear,
+.rplayerAlbumYearIcon {
+    opacity: .7 !important;
 }
 
 
@@ -416,4 +416,33 @@ label {
         max-height: calc(100vw - 8em);
         height: 100%;
     }
+}
+
+.rplayerCrAdresses {
+    text-align: center;
+    border: none;
+    width: 100%;
+    font-family: courier;
+    font-size: .9em;
+    background-color: transparent;
+    color: #000;
+}
+
+.rplayerCard {
+    padding-top: 1em;
+    text-align: center !important;
+    z-index: 10000 !important;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+}
+
+.rplayerCrQr {
+    display: inline-block;
+    width: 10em;
+    height: 10em;
+}
+
+.rplayerCard > img {
+    width: 5em;
 }

@@ -158,3 +158,32 @@
     font-weight: bold;
     color: white;
 }
+
+.rplayerInfoCrAdresses {
+    text-align: center;
+    border: none;
+    width: 100%;
+    font-family: courier;
+    font-size: .9em;
+    background-color: transparent;
+    color: white;
+}
+
+.rplayerInfoCard {
+    padding-top: 1em;
+    text-align: center !important;
+    z-index: 10000 !important;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+}
+
+.rplayerInfoCrQr {
+    display: inline-block;
+    width: 10em;
+    height: 10em;
+}
+
+.rplayerInfoCard > img {
+    width: 5em;
+}
