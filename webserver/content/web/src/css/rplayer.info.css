@@ -170,12 +170,9 @@
 }
 
 .rplayerInfoCard {
+    box-sizing: border-box;
     padding-top: 1em;
     text-align: center !important;
-    z-index: 10000 !important;
-    border-bottom: 1px solid rgba(0,0,0,.1);
-    margin-bottom: 1em;
-    padding-bottom: 1em;
 }
 
 .rplayerInfoCrQr {
@@ -186,4 +183,10 @@
 
 .rplayerInfoCard > img {
     width: 5em;
+}
+
+.rplayerInfoDonations {
+    position: relative;
+    background-color: black;
+    z-index: 10000 !important;
 }

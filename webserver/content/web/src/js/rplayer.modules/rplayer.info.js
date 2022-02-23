@@ -42,9 +42,9 @@
 
         this.ticker();
     }   
-    
+
     donations() {
-        var html = "<div class='ui centered grid'><div class='doubling three column row'>";
+        var html = "<div class='ui centered grid rplayerInfoDonations'><div class='doubling three column row'>";
         var lat  = false;
         
         this.rplayerObj.obj2array(this.rplayerObj.rplayerCfg.conf.album.donations.wallets).forEach(element => {
@@ -113,7 +113,8 @@
                 $("#rplayerInfo .mediaImage").css({
                     width: "100%"
                 });
-            }            
+            }
+
         } catch (error) {
             
         }
@@ -141,7 +142,7 @@
                     html_2 += htmlWords;
                 }
                 html_2     += that.htmlStory();
-                html_2     += "<h3 class=\"rplayerLocalText\" data-phrase=\"infoReward\">Reward for artist</h3>"
+                html_2     += "<h3 class=\"rplayerLocalText\" data-phrase=\"infoReward\">Reward for artist</h3><br>"
                 html_2     += that.donations();
     
                 // HTML out
@@ -149,14 +150,14 @@
                     if (!that.switchingNow) {
                         that.switchingNow = true;
     
-                        $("#rplayerInfo #rplayerInfoTemp div:first-child").animate({
+                        $("#rplayerInfo #rplayerInfoTemp > div:first-child").animate({
                             opacity: "0"
                         },250,function() {
                             
                             that.tempPanel1.html(html_1);
                             html_1_last = html_1;
     
-                            $("#rplayerInfo #rplayerInfoTemp div:first-child").animate({
+                            $("#rplayerInfo #rplayerInfoTemp > div:first-child").animate({
                                 opacity: "1"
                             },250,function() {
                                 that.switchingNow = false;
@@ -170,14 +171,14 @@
                     if (!that.switchingNow) {
                         that.switchingNow = true;
     
-                        $("#rplayerInfo #rplayerInfoTemp div:first-child ~ div").animate({
+                        $("#rplayerInfo #rplayerInfoTemp > div:first-child ~ div").animate({
                             opacity: "0"
                         },250,function() {
                             
                             that.tempPanel2.html(html_2);
                             html_2_last = html_2;
     
-                            $("#rplayerInfo #rplayerInfoTemp div:first-child ~ div").animate({
+                            $("#rplayerInfo #rplayerInfoTemp > div:first-child ~ div").animate({
                                 opacity: "1"
                             },250,function() {
                                 that.switchingNow = false;
