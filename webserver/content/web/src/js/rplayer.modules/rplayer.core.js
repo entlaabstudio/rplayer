@@ -53,6 +53,9 @@ export default class RPlayer {
         }
 
         for (const [key, value] of Object.entries(rplayerCfg.conf.album.tracks)) {
+            this.additionalSrcsChecked[prepareFilesKey] = value["info"].image;
+            prepareFilesKey += 1;
+            
             if (value["downloads"] !== undefined) {
 
                 this.additionalSrcsChecked[prepareFilesKey] = value["downloads"].mp3;
