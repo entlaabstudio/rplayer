@@ -194,18 +194,18 @@ export default class RPlayerConf {
             },
             album: {
                 mediaSrc: "media/sounds/YATSU-2021-Mirrors-202202110022.m4a",
-                srcsForCheck: {
-                    0: "media/videos/Spectre-1080p_60fps_H264-128kbit_AAC.mp4",
-                    1: "media/sounds/mp3/1.mp3",
-                    2: "media/sounds/mp3/2.mp3",
-                    3: "media/sounds/mp3/3.mp3",
-                    4: "media/sounds/mp3/4.mp3",
-                    5: "media/sounds/mp3/5.mp3",
-                    6: "media/sounds/mp3/6.mp3",
-                    7: "media/sounds/mp3/7.mp3",
-                    8: "media/sounds/mp3/8.mp3",
-                    9: "media/sounds/mp3/9.mp3",
-                },
+                // srcsForCheck: {
+                //     0: "media/videos/Spectre-1080p_60fps_H264-128kbit_AAC.mp4",
+                //     1: "media/sounds/mp3/1.mp3",
+                //     2: "media/sounds/mp3/2.mp3",
+                //     3: "media/sounds/mp3/3.mp3",
+                //     4: "media/sounds/mp3/4.mp3",
+                //     5: "media/sounds/mp3/5.mp3",
+                //     6: "media/sounds/mp3/6.mp3",
+                //     7: "media/sounds/mp3/7.mp3",
+                //     8: "media/sounds/mp3/8.mp3",
+                //     9: "media/sounds/mp3/9.mp3",
+                // },
                 info: {
                     image: "media/images/dreamer_album.jpg",
                     name: "Dreamer",
@@ -256,6 +256,9 @@ export default class RPlayerConf {
                     0: {
                         timeStart: 0,
                         mediaName: "Mirrors",
+                        downloads: {
+                            mp3: "media/sounds/mp3/1.mp3",
+                        },
                         info: {
                             image: "media/images/mirrors.jpg",
                             composer: "Michal Diviš",
@@ -403,6 +406,9 @@ export default class RPlayerConf {
                     1: {
                         timeStart: 270,
                         mediaName: "Dreamer",
+                        downloads: {
+                            mp3: "media/sounds/mp3/2.mp3",
+                        },
                         info: {
                             image: "media/images/dreamer_album.jpg",
                             composer: "Michal Diviš",
@@ -550,6 +556,9 @@ export default class RPlayerConf {
                     2: {
                         timeStart: 538.5,
                         mediaName: "Ornaments",
+                        downloads: {
+                            mp3: "media/sounds/mp3/3.mp3",
+                        },
                         info: {
                             image: "media/images/ornaments_w_vocals.jpg",
                             composer: "Michal Diviš",
@@ -747,6 +756,9 @@ export default class RPlayerConf {
                     3: {
                         timeStart: 786.6,
                         mediaName: "Labyrinth",
+                        downloads: {
+                            mp3: "media/sounds/mp3/4.mp3",
+                        },
                         info: {
                             image: "media/images/labyrinth.jpg",
                             composer: "Michal Diviš",
@@ -894,6 +906,15 @@ export default class RPlayerConf {
                     4: {
                         timeStart: 959.5,
                         mediaName: "Spectre",
+                        downloads: {
+                            mp3: "media/sounds/mp3/5.mp3",
+                            others: {
+                                0: {
+                                    name: "Spectre - lyrics video",
+                                    path: "media/videos/Spectre-1080p_60fps_H264-128kbit_AAC.mp4",
+                                }
+                            }
+                        },
                         info: {
                             image: "media/images/djinn.png",
                             composer: "Michal Diviš",
@@ -1097,6 +1118,9 @@ export default class RPlayerConf {
                     5: {
                         timeStart: 1215.5,
                         mediaName: "Bloom",
+                        downloads: {
+                            mp3: "media/sounds/mp3/6.mp3",
+                        },
                         info: {
                             image: "media/images/ornaments_w_vocals.jpg",
                             composer: "Michal Diviš",
@@ -1244,6 +1268,9 @@ export default class RPlayerConf {
                     6: {
                         timeStart: 1435.4,
                         mediaName: "Ruin",
+                        downloads: {
+                            mp3: "media/sounds/mp3/7.mp3",
+                        },
                         info: {
                             image: "media/images/kraken.jpg",
                             composer: "Michal Diviš",
@@ -1391,6 +1418,9 @@ export default class RPlayerConf {
                     7: {
                         timeStart: 1543.5,
                         mediaName: "World Eater",
+                        downloads: {
+                            mp3: "media/sounds/mp3/8.mp3",
+                        },
                         info: {
                             image: "media/images/dreamer_album.jpg",
                             composer: "Michal Diviš",
@@ -1538,6 +1568,9 @@ export default class RPlayerConf {
                     8: {
                         timeStart: 1870,
                         mediaName: "Collapse",
+                        downloads: {
+                            mp3: "media/sounds/mp3/9.mp3",
+                        },
                         info: {
                             image: "media/images/mirrors.jpg",
                             composer: "Michal Diviš",

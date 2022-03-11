@@ -42,19 +42,46 @@ export default class RPlayer {
         this.curTrackId;
         this.translated = [];
 
-        for (const [key, value] of Object.entries(rplayerCfg.conf.album.srcsForCheck)) {
-            this.additionalSrcsChecked[key] = [];
-            this.additionalSrcsChecked[key]["fileLocation"] = value;
-            this.additionalSrcsChecked[key]["loaded"]       = false;
+        // +++ Prepare media for check
+        var prepareFilesKey = 0;
+        
+        if (rplayerCfg.conf.album.srcsForCheck !== undefined) {
+            for (const [key, value] of Object.entries(rplayerCfg.conf.album.srcsForCheck)) {
+                this.additionalSrcsChecked[prepareFilesKey] = value;
+                prepareFilesKey += 1;
+            }
         }
+
+        for (const [key, value] of Object.entries(rplayerCfg.conf.album.tracks)) {
+            if (value["downloads"] !== undefined) {
+
+                this.additionalSrcsChecked[prepareFilesKey] = value["downloads"].mp3;
+                prepareFilesKey += 1;
+    
+                if (value["downloads"]["others"] !== undefined) {
+                    for (const [key2, value2] of Object.entries(value["downloads"]["others"])) {
+                        this.additionalSrcsChecked[prepareFilesKey] = value2.path;
+                        prepareFilesKey += 1;
+                    }
+                }
+            }
+        }
+
+        var uniquePathsAddSrcs = [];
+        $.each(this.additionalSrcsChecked, function(i, el){
+            if($.inArray(el, uniquePathsAddSrcs) === -1) uniquePathsAddSrcs.push(el);
+        });
+
+        this.additionalSrcsChecked = uniquePathsAddSrcs;
+        this.checkAdditionalSrcs();
+        // --- Prepare media for check
                 
         var that = this;
 
         this.audioObject.addEventListener("error", function() {
             window.top.postMessage("[BOOT-RELOAD]", '*');
         });
-        
-        this.checkAdditionalSrcs();
+
         this.audioObject.addEventListener("loadedmetadata", function() {
             that.init();
 
@@ -66,7 +93,7 @@ export default class RPlayer {
         this.additionalSrcsChecked.forEach(element => {
             $.ajax({
                 type: 'HEAD',
-                url: element["fileLocation"],
+                url: element,
                 error: function(jqXHR, textStatus, errorThrown){
                     console.log(["RPlayer"], textStatus);
                     log(jqXHR);
