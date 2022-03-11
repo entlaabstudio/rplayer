@@ -27,19 +27,26 @@ export default class RPlayer {
         
         this.audioSrc = rplayerCfg.conf.album.mediaSrc;
 
-        this.audioObject = new Audio(this.audioSrc);
-        this.audioObject.preload = "auto";
-        this.showcurtimeobject = $(rplayerCfg.conf.app.htmlSelectors.mainWindow).find(rplayerCfg.conf.app.htmlSelectors.info.currentTime);
-        this.showlentimeobject = $(rplayerCfg.conf.app.htmlSelectors.mainWindow).find(rplayerCfg.conf.app.htmlSelectors.info.lengthTime);
-        this.volumefaderobject = $(rplayerCfg.conf.app.htmlSelectors.mainWindow).find(rplayerCfg.conf.app.htmlSelectors.controls.volumeFader);
-        this.seekerObject = $(rplayerCfg.conf.app.htmlSelectors.mainWindow).find(rplayerCfg.conf.app.htmlSelectors.controls.seeker);
+        this.audioObject           = new Audio(this.audioSrc);
+        this.audioObject.preload   = "auto";
+        this.showcurtimeobject     = $(rplayerCfg.conf.app.htmlSelectors.mainWindow).find(rplayerCfg.conf.app.htmlSelectors.info.currentTime);
+        this.showlentimeobject     = $(rplayerCfg.conf.app.htmlSelectors.mainWindow).find(rplayerCfg.conf.app.htmlSelectors.info.lengthTime);
+        this.volumefaderobject     = $(rplayerCfg.conf.app.htmlSelectors.mainWindow).find(rplayerCfg.conf.app.htmlSelectors.controls.volumeFader);
+        this.seekerObject          = $(rplayerCfg.conf.app.htmlSelectors.mainWindow).find(rplayerCfg.conf.app.htmlSelectors.controls.seeker);
 
-        this.wasInit = false;
-        this.trackInfoSelected = false;
+        this.wasInit               = false;
+        this.trackInfoSelected     = false;
+        this.additionalSrcsChecked = [];
         this.seekerStartPosition = 0;
         this.seekerEndPosition;
         this.curTrackId;
         this.translated = [];
+
+        for (const [key, value] of Object.entries(rplayerCfg.conf.album.srcsForCheck)) {
+            this.additionalSrcsChecked[key] = [];
+            this.additionalSrcsChecked[key]["fileLocation"] = value;
+            this.additionalSrcsChecked[key]["loaded"]       = false;
+        }
                 
         var that = this;
 
@@ -47,12 +54,32 @@ export default class RPlayer {
             window.top.postMessage("[BOOT-RELOAD]", '*');
         });
         
+        this.checkAdditionalSrcs();
         this.audioObject.addEventListener("loadedmetadata", function() {
             that.init();
+
             console.log("[RPlayer]","Data loaded.");
         });
     }
     
+    checkAdditionalSrcs() {
+        var that = this;
+        var checkedAll = true;
+
+        this.additionalSrcsChecked.forEach(element => {
+            $.ajax({
+                type: 'HEAD',
+                url: element["fileLocation"],
+                error: function(jqXHR, textStatus, errorThrown){
+                    console.log(["RPlayer"], textStatus);
+                    log(jqXHR);
+                    log(errorThrown);
+                }
+            });
+        });
+
+    }
+
     init() {
         this.wasInit = true;
         if (device.os == "ios") {
