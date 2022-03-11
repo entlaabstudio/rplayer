@@ -37,6 +37,9 @@
         this.ticker["stopTimer"] = setInterval(function() {
             that.tickStopTimer()
         },1000);
+        this.ticker["transportInteractiveIcons"] = setInterval(function() {
+            that.transportInteractiveIcons();
+        },159);
         this.correctAdressBar();
         this.seekersInfo();
         this.windowMinimize();
@@ -44,6 +47,16 @@
         this.showQrCode();
         this.buttons();
         this.setBackground();
+    }
+
+    transportInteractiveIcons() {
+        if (this.rplayerObj.audioObject.paused) {
+            $(this.mainWindowSel + " button[data-command='rplayerStartPause'] i").removeClass("pause");
+            $(this.mainWindowSel + " button[data-command='rplayerStartPause'] i").addClass("play");
+        } else {
+            $(this.mainWindowSel + " button[data-command='rplayerStartPause'] i").removeClass("play");
+            $(this.mainWindowSel + " button[data-command='rplayerStartPause'] i").addClass("pause");
+        }
     }
 
     correctAdressBar() {
