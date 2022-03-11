@@ -194,18 +194,9 @@ export default class RPlayerConf {
             },
             album: {
                 mediaSrc: "media/sounds/YATSU-2021-Mirrors-202202110022.m4a",
-                // srcsForCheck: {
-                //     0: "media/videos/Spectre-1080p_60fps_H264-128kbit_AAC.mp4",
-                //     1: "media/sounds/mp3/1.mp3",
-                //     2: "media/sounds/mp3/2.mp3",
-                //     3: "media/sounds/mp3/3.mp3",
-                //     4: "media/sounds/mp3/4.mp3",
-                //     5: "media/sounds/mp3/5.mp3",
-                //     6: "media/sounds/mp3/6.mp3",
-                //     7: "media/sounds/mp3/7.mp3",
-                //     8: "media/sounds/mp3/8.mp3",
-                //     9: "media/sounds/mp3/9.mp3",
-                // },
+                srcsForCheck: {
+                    0: "media/images/dreamer_album.jpg",
+                },
                 info: {
                     image: "media/images/dreamer_album.jpg",
                     name: "Dreamer",
