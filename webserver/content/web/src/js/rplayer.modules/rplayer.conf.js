@@ -934,7 +934,7 @@ export default class RPlayerConf {
                                 1: {
                                     id: "Lyrics video <span style=\"font-weight: normal;\">[will stop playback in RPlayer]</span>",
                                     html:
-                                    "<video style=\"width: 100%;\" controls onplay=\"$(\'.rplayerTransport[data-command=rplayerStop]\').click();\">" +
+                                    "<video style=\"width: 100%; z-index: 10000; position: relative;\" controls onplay=\"$(\'.rplayerTransport[data-command=rplayerStop]\').click();\">" +
                                         "<source src=\"./media/videos/Spectre-1080p_60fps_H264-128kbit_AAC.mp4\">" +
                                     "</video>"
                                 },
