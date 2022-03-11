@@ -63,9 +63,6 @@ export default class RPlayer {
     }
     
     checkAdditionalSrcs() {
-        var that = this;
-        var checkedAll = true;
-
         this.additionalSrcsChecked.forEach(element => {
             $.ajax({
                 type: 'HEAD',
