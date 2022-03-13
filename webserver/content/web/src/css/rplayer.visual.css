@@ -378,6 +378,7 @@ label {
 #rplayer .rplayerMinimize.icon,
 #rplayer .helpButton.icon,
 #rplayer .close.icon,
+#rplayer .download.icon,
 #rplayer .qrcode.icon {
     color: var(--currentTime);
     cursor: pointer;

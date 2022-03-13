@@ -8,22 +8,24 @@
 
 // mandatory modules
 
-import RPlayerConf from "./rplayer.modules/rplayer.conf.js?v=12440-YATSU-2202120128";
-import RPlayer     from "./rplayer.modules/rplayer.core.js?v=12440-YATSU-2202120128";
-import QrCode      from './foreign/qrcode-generator-es6/qrcode.js?v=12440-YATSU-2202120128';
+import RPlayerConf from "./rplayer.modules/rplayer.conf.js";
+import RPlayer     from "./rplayer.modules/rplayer.core.js";
+import QrCode      from './foreign/qrcode-generator-es6/qrcode.js';
 
 var RPCfg = new RPlayerConf();
 var RPObj = new RPlayer(RPCfg,QrCode);
 
 // optional modules
 
-import RPlayerVisual    from "./rplayer.modules/rplayer.visual.js?v=12440-YATSU-2202120128";
-import RPlayerInfo      from "./rplayer.modules/rplayer.info.js?v=12440-YATSU-2202120128";
-import RPlayerSlideshow from "./rplayer.modules/rplayer.slideshow.js?v=12440-YATSU-2202120128";
+import RPlayerVisual    from "./rplayer.modules/rplayer.visual.js";
+import RPlayerInfo      from "./rplayer.modules/rplayer.info.js";
+import RPlayerSlideshow from "./rplayer.modules/rplayer.slideshow.js";
+import RPlayerDownloads from "./rplayer.modules/rplayer.downloads.js";
 
 new RPlayerVisual(RPObj,QrCode);
 new RPlayerInfo(RPObj,QrCode);
 new RPlayerSlideshow(RPObj);
+new RPlayerDownloads(RPObj);
 
 console.log("------------------------------------");
 console.log("This is RPlayer");

@@ -1,0 +1,61 @@
+#rplayerDownloads {
+    opacity: 0;
+    display: none;
+    color: var(--downloadsTextColor);
+    background-color: var(--downloadsBg);
+    position: fixed !important;
+    width: 100%;
+    height: 100%;
+    z-index: var(--wordsZIndex);
+    text-shadow: .1em .1em .1em black;
+}
+
+#rplayerDownloads div:first-child {
+    display: flex;
+    padding: 1em;
+    justify-content: safe center;
+    align-items: safe center;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    margin: auto;
+}
+
+#rplayerDownloads div:first-child div:first-child {
+    display: block;
+    height: auto;
+}
+
+#rplayerDownloads .segment {
+    background-color: transparent;
+    text-align: center;
+}
+
+#rplayerDownloads .toggle.checkbox {
+    width: 100%;
+    margin-bottom: .3em;
+}
+
+#rplayerDownloads .toggle.checkbox:last-child {
+    margin-bottom: 0;
+}
+
+#rplayerDownloads .segment label {
+    color: #fff !important;
+}
+
+#rplayerDownloads fieldset {
+    border-radius: 2em;
+    border-color: rgba(255,255,255,.5);
+    padding: .5em 1em 1em 1em;
+    margin-bottom: 1em;
+    text-align: left;
+}
+
+#rplayerDownloads h2 {
+    font-weight: normal;
+    width: 100%;
+    padding-bottom: .5em;
+    text-align: center;
+    border-bottom: 1px solid var(--currentTime);
+}

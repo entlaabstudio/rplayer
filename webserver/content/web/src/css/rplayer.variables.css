@@ -28,5 +28,9 @@
 
     /* Slideshow */
     --rSlideshowBg:        rgba(0,0,0,.9);
-    --rSlideshowZIndex:     2000
+    --rSlideshowZIndex:     2000;
+
+    /* Download manager*/
+    --downloadsBg:         rgba(0,0,0,.9);
+    --downloadsTextColor:  rgba(255,255,255,1);
 }
