@@ -22,13 +22,17 @@
 }
 
 #rplayerDownloads div:first-child div:first-child {
-    display: block;
+    display: flex;
+    align-items: center;
+    flex-flow: wrap;
     height: auto;
+    padding-bottom: 3em;
 }
 
 #rplayerDownloads .segment {
     background-color: transparent;
     text-align: center;
+    width: 100%;
 }
 
 #rplayerDownloads .toggle.checkbox {
@@ -42,14 +46,18 @@
 
 #rplayerDownloads .segment label {
     color: #fff !important;
+    white-space: nowrap;
 }
 
 #rplayerDownloads fieldset {
     border-radius: 2em;
-    border-color: rgba(255,255,255,.5);
+    width: min-content;
+    border-color: var(--currentTime);
     padding: .5em 1em 1em 1em;
-    margin-bottom: 1em;
+    margin: 1em;
     text-align: left;
+    background-color: var(--downloadsBg);
+    box-shadow: var(--downloadsBoxShadow);
 }
 
 #rplayerDownloads h2 {

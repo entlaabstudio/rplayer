@@ -33,4 +33,5 @@
     /* Download manager*/
     --downloadsBg:         rgba(0,0,0,.9);
     --downloadsTextColor:  rgba(255,255,255,1);
+    --downloadsBoxShadow:   0 0 3em var(--downloadsBg);
 }
