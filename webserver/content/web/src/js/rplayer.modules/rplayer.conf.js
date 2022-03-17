@@ -14,6 +14,7 @@ export default class RPlayerConf {
         console.log("[RPlayer]","Config loaded.");
 
         this.conf = {
+            configVersion: 1,
             app: {
                 name: "RPlayer",
                 version: "1.26.42", // <some platform updates>.<visible or control updates>.<unvisible updates>
