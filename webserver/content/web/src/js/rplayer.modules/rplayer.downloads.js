@@ -6,7 +6,7 @@
  * @link https://rajs.info/
  */
 
- export default class RPlayer {
+export default class RPlayer {
     
     constructor(
         rplayerObj
@@ -44,7 +44,6 @@
             return false;
         });
         $("#rplayerDownloads form:first-child").on("change",function() {
-            console.log("změna");
             for (const [key, value] of Object.entries(that.download.mp3)) {
                 if ($("#" + value.checkboxId).is(":checked")) {
                     value.download = true;
@@ -52,7 +51,6 @@
                     value.download = false;
                 }
             }
-            console.log(that.download.mp3);
         });
     }
 
@@ -77,7 +75,6 @@
                 };
             }
         }
-        console.log(this.download);
     }
 
     numberGetDigits(number) {
@@ -159,12 +156,24 @@
             }
         }
 
-        console.log(numOfUnwanteds);
         return numOfUnwanteds;
     }
 
     zipData() {
-        console.log("ahoj");
+        var zip = new JSZip();
+        
+        console.log("[RPlayer]","Adding data to ZIP archive.");
+        var baseFolderName = this.rplayerCfg.album.info.composer + " - " + this.rplayerCfg.album.info.year + " - " + this.rplayerCfg.album.info.name;
+        
+        for (const [key, value] of Object.entries(this.download.mp3)) {
+            if (value.data) {
+                zip.folder(baseFolderName).file(value.fileName,value.data);
+            }
+        }
+
+        zip.generateAsync({type:"blob"}).then(function (blob) {
+            saveAs(blob, baseFolderName + ".zip");
+        });
     }
 
     getMp3FileData(value) {

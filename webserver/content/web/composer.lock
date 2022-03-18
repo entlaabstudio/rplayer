@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "34ce799ea5d0b7f92bd0d3b5ad6a2c8c",
+    "content-hash": "a0ac29fa15d3cb0e6f799353abf392d3",
     "packages": [
         {
             "name": "desandro/imagesloaded",
@@ -117,6 +117,53 @@
                 "ui"
             ],
             "time": "2018-10-13T22:51:35+00:00"
+        },
+        {
+            "name": "stuk/jszip",
+            "version": "v3.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kamihouse/jszip.git",
+                "reference": "9a0f7c2fdb11ac3089e0a73dcf59f32fe1dae439"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kamihouse/jszip/zipball/9a0f7c2fdb11ac3089e0a73dcf59f32fe1dae439",
+                "reference": "9a0f7c2fdb11ac3089e0a73dcf59f32fe1dae439",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thiago Pereira Rosa",
+                    "email": "thiagor@engineer.com",
+                    "homepage": "http://coderi.com.br",
+                    "role": "Contributor"
+                },
+                {
+                    "name": "Stuart Knightley",
+                    "email": "stuart@Stuartk.com",
+                    "homepage": "http://stuartk.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Create, read and edit .zip files with Javascript",
+            "homepage": "https://github.com/Stuk/jszip",
+            "keywords": [
+                "create",
+                "edit",
+                "jszip",
+                "pdf"
+            ],
+            "support": {
+                "issues": "https://github.com/Stuk/jszip/issues",
+                "source": "https://github.com/kamihouse/jszip/tree/v3.0.1"
+            },
+            "time": "2016-05-04T13:00:35+00:00"
         }
     ],
     "packages-dev": [],
@@ -126,5 +173,6 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "2.2.0"
 }
