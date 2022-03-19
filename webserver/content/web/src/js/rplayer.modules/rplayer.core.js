@@ -111,6 +111,7 @@ export default class RPlayer {
                 setTimeout(function() {
                     that.checkAdditionalSrc(source);
                 },3000);
+                window.top.postMessage("[BOOT-RELOAD]", '*');
             },
             success: function() {
                 console.log("[RPlayer]","I got the header for the file \"" + source + "\".");
