@@ -93,18 +93,29 @@ export default class RPlayer {
     }
     
     checkAdditionalSrcs() {
+        var that = this;
+        
         this.additionalSrcsChecked.forEach(element => {
-            $.ajax({
-                type: 'HEAD',
-                url: element,
-                error: function(jqXHR, textStatus, errorThrown){
-                    console.log(["RPlayer"], textStatus);
-                    log(jqXHR);
-                    log(errorThrown);
-                }
-            });
+            that.checkAdditionalSrc(element);
         });
+    }
 
+    checkAdditionalSrc(source) {
+        var source;
+        var that = this;
+        $.ajax({
+            type: 'HEAD',
+            url: source,
+            error: function(jqXHR, textStatus, errorThrown){
+                console.log("[RPlayer]","An attempt to load the header for the \"" + source + "\" file failed. I'm trying again. Do not panic. In the end, it will work. This is Web3.");
+                setTimeout(function() {
+                    that.checkAdditionalSrc(source);
+                },3000);
+            },
+            success: function() {
+                console.log("[RPlayer]","I got the header for the file \"" + source + "\".");
+            }
+        });
     }
 
     init() {
