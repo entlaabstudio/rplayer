@@ -9,6 +9,34 @@
         <style type="text/css">
             body {
                 font-family: 'Courier New', Courier, monospace;
+                margin: 0;
+                background-color: #123;
+                color: #fff;
+            }
+
+            body > div:first-child {
+                display: flex;
+                width: 100vw;
+                height: 100vh;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                font-size: .8em;
+            }
+
+            body > div:first-child > img {
+                width: 5em;
+                margin: 2em 2em 0 2em;
+                transform: rotate(10deg);
+            }
+
+            body > div:first-child > div {
+                display: block;
+                padding: 1em;
+                margin: 2em;
+                border-radius: 1em;
+                background-color: #000;
+                transform: rotate(-10deg);
             }
             
             iframe {
@@ -23,33 +51,10 @@
             }
         </style>
     </head>
-    <body style="
-        margin: 0;
-        background-color: #123;
-        color: #fff;
-    ">
-        <div style="
-            display: flex;
-            width: 100vw;
-            height: 100vh;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            font-size: .8em;
-        ">
-            <img style="
-                width: 5em;
-                margin: 2em 2em 0 2em;
-                transform: rotate(10deg);
-            " src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8IS0tIENyZWF0b3I6IENvcmVsRFJBVyAyMDE4ICg2NCBiaXTFrykgLS0+DQo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjIxMG1tIiBoZWlnaHQ9IjIxMG1tIiB2ZXJzaW9uPSIxLjEiIHN0eWxlPSJzaGFwZS1yZW5kZXJpbmc6Z2VvbWV0cmljUHJlY2lzaW9uOyB0ZXh0LXJlbmRlcmluZzpnZW9tZXRyaWNQcmVjaXNpb247IGltYWdlLXJlbmRlcmluZzpvcHRpbWl6ZVF1YWxpdHk7IGZpbGwtcnVsZTpldmVub2RkOyBjbGlwLXJ1bGU6ZXZlbm9kZCINCnZpZXdCb3g9IjAgMCAyMTAwMCAyMTAwMCINCiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+DQogPGRlZnM+DQogIDxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQogICA8IVtDREFUQVsNCiAgICAuc3RyMSB7c3Ryb2tlOiMyQjJBMjk7c3Ryb2tlLXdpZHRoOjIwO3N0cm9rZS1taXRlcmxpbWl0OjIyLjkyNTZ9DQogICAgLnN0cjAge3N0cm9rZTpibGFjaztzdHJva2Utd2lkdGg6MjA7c3Ryb2tlLW1pdGVybGltaXQ6MjIuOTI1Nn0NCiAgICAuZmlsMSB7ZmlsbDpibGFja30NCiAgICAuZmlsMiB7ZmlsbDojNDE4M0M0fQ0KICAgIC5maWwwIHtmaWxsOndoaXRlfQ0KICAgXV0+DQogIDwvc3R5bGU+DQogPC9kZWZzPg0KIDxnIGlkPSJWcnN0dmFfeDAwMjBfMSI+DQogIDxtZXRhZGF0YSBpZD0iQ29yZWxDb3JwSURfMENvcmVsLUxheWVyIi8+DQogIDxnIGlkPSJMb2dvX3gwMDIwX1JQbGF5ZXIiPg0KICAgPHJlY3QgY2xhc3M9ImZpbDAiIHdpZHRoPSIyMTAwMCIgaGVpZ2h0PSIyMTAwMCIgcng9IjI5NzMuOTYiIHJ5PSIyOTczLjk2Ii8+DQogICA8ZyBpZD0iTG9nb194MDAyMF9SUGxheWVyX3gwMDIwXzEiPg0KICAgIDxwYXRoIGNsYXNzPSJmaWwxIiBkPSJNNjQ1MC40OCAxMjEwMy43bDY3MC44MyAtMzg3LjMgNzg4MS4yOCAtNDU1MC4yNmMxNDkuNDYsLTg2LjI5IDIzNSwtMjM0LjQ1IDIzNSwtNDA3LjAzIDAsLTE3Mi41OCAtODUuNTQsLTMyMC43NCAtMjM1LC00MDcuMDNsLTg1NTIuMTEgLTQ5MzcuNTZjLTE0OS40NiwtODYuMjkgLTMyMC41NCwtODYuMjkgLTQ3MCwwIC0xNDkuNDUsODYuMjkgLTIzNSwyMzQuNDUgLTIzNSw0MDcuMDNsMCA5ODc1LjExYzAsMTcyLjU4IDg1LjU0LDMyMC43NSAyMzUsNDA3LjA0IDE0OS40Niw4Ni4yOCAzMjAuNTQsODYuMjkgNDcwLDB6bTY3MC44MyAtMjU3Ny4xOWwwIC01NTM0LjggMCAtODE0LjA2IDcwNC44MSA0MDYuOTIgMjM5Ni44MyAxMzgzLjgxIDMxMDEuNjMgMTc5MC43MyAtMzEwMS42MyAxNzkwLjczIC0yMzk2LjgzIDEzODMuODEgLTcwNC44MSA0MDYuOTIgMCAtODE0LjA2eiIvPg0KICAgIDxwYXRoIGNsYXNzPSJmaWwxIiBkPSJNNjIxNS40OCAxMjc4NS43N2w0MzUuODMgMGMyNTguODcsMCA0NzAsMjExLjEzIDQ3MCw0NzBsMCA2MDE0LjIxYzAsMjU4Ljg3IC0yMTEuMTMsNDcwIC00NzAsNDcwbC00MzUuODMgMGMtMjU4Ljg3LDAgLTQ3MCwtMjExLjEzIC00NzAsLTQ3MGwwIC02MDE0LjIxYzAsLTI1OC44NyAyMTEuMTMsLTQ3MCA0NzAsLTQ3MHoiLz4NCiAgICA8cGF0aCBjbGFzcz0iZmlsMSBzdHIwIiBkPSJNOTg3Mi45NyAxOTI2OS45OGwwIC02MDE0LjIxYzAsLTI1OC44NyAyMTEuMTMsLTQ3MCA0NzAsLTQ3MGw0MzUuODMgMGMyNTguODcsMCA0NzAsMjExLjEzIDQ3MCw0NzBsMCA2MDE0LjIxYzAsMjU4Ljg3IC0yMTEuMTMsNDcwIC00NzAsNDcwbC00MzUuODMgMGMtMjU4Ljg3LDAgLTQ3MCwtMjExLjEzIC00NzAsLTQ3MHoiLz4NCiAgICA8cG9seWdvbiBjbGFzcz0iZmlsMiBzdHIxIiBwb2ludHM9IjcxMjEuMzEsMzk5MS43MSA3MTIxLjMxLDk1MjYuNTEgNzEyMS4zMSwxMDM0MC41NyA3ODI2LjEyLDk5MzMuNjUgMTAyMjIuOTUsODU0OS44NCAxMzMyNC41OCw2NzU5LjExIDEwMjIyLjk1LDQ5NjguMzggNzgyNi4xMiwzNTg0LjU3IDcxMjEuMzEsMzE3Ny42NSAiLz4NCiAgIDwvZz4NCiAgPC9nPg0KIDwvZz4NCjwvc3ZnPg0K" alt="RPlayer">
-            <div style="
-                display: block;
-                padding: 1em;
-                margin: 2em;
-                border-radius: 1em;
-                background-color: #000;
-                transform: rotate(-10deg);
-            ">
+    <body>
+        <div>
+            <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8IS0tIENyZWF0b3I6IENvcmVsRFJBVyAyMDE4ICg2NCBiaXTFrykgLS0+DQo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjIxMG1tIiBoZWlnaHQ9IjIxMG1tIiB2ZXJzaW9uPSIxLjEiIHN0eWxlPSJzaGFwZS1yZW5kZXJpbmc6Z2VvbWV0cmljUHJlY2lzaW9uOyB0ZXh0LXJlbmRlcmluZzpnZW9tZXRyaWNQcmVjaXNpb247IGltYWdlLXJlbmRlcmluZzpvcHRpbWl6ZVF1YWxpdHk7IGZpbGwtcnVsZTpldmVub2RkOyBjbGlwLXJ1bGU6ZXZlbm9kZCINCnZpZXdCb3g9IjAgMCAyMTAwMCAyMTAwMCINCiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+DQogPGRlZnM+DQogIDxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQogICA8IVtDREFUQVsNCiAgICAuc3RyMSB7c3Ryb2tlOiMyQjJBMjk7c3Ryb2tlLXdpZHRoOjIwO3N0cm9rZS1taXRlcmxpbWl0OjIyLjkyNTZ9DQogICAgLnN0cjAge3N0cm9rZTpibGFjaztzdHJva2Utd2lkdGg6MjA7c3Ryb2tlLW1pdGVybGltaXQ6MjIuOTI1Nn0NCiAgICAuZmlsMSB7ZmlsbDpibGFja30NCiAgICAuZmlsMiB7ZmlsbDojNDE4M0M0fQ0KICAgIC5maWwwIHtmaWxsOndoaXRlfQ0KICAgXV0+DQogIDwvc3R5bGU+DQogPC9kZWZzPg0KIDxnIGlkPSJWcnN0dmFfeDAwMjBfMSI+DQogIDxtZXRhZGF0YSBpZD0iQ29yZWxDb3JwSURfMENvcmVsLUxheWVyIi8+DQogIDxnIGlkPSJMb2dvX3gwMDIwX1JQbGF5ZXIiPg0KICAgPHJlY3QgY2xhc3M9ImZpbDAiIHdpZHRoPSIyMTAwMCIgaGVpZ2h0PSIyMTAwMCIgcng9IjI5NzMuOTYiIHJ5PSIyOTczLjk2Ii8+DQogICA8ZyBpZD0iTG9nb194MDAyMF9SUGxheWVyX3gwMDIwXzEiPg0KICAgIDxwYXRoIGNsYXNzPSJmaWwxIiBkPSJNNjQ1MC40OCAxMjEwMy43bDY3MC44MyAtMzg3LjMgNzg4MS4yOCAtNDU1MC4yNmMxNDkuNDYsLTg2LjI5IDIzNSwtMjM0LjQ1IDIzNSwtNDA3LjAzIDAsLTE3Mi41OCAtODUuNTQsLTMyMC43NCAtMjM1LC00MDcuMDNsLTg1NTIuMTEgLTQ5MzcuNTZjLTE0OS40NiwtODYuMjkgLTMyMC41NCwtODYuMjkgLTQ3MCwwIC0xNDkuNDUsODYuMjkgLTIzNSwyMzQuNDUgLTIzNSw0MDcuMDNsMCA5ODc1LjExYzAsMTcyLjU4IDg1LjU0LDMyMC43NSAyMzUsNDA3LjA0IDE0OS40Niw4Ni4yOCAzMjAuNTQsODYuMjkgNDcwLDB6bTY3MC44MyAtMjU3Ny4xOWwwIC01NTM0LjggMCAtODE0LjA2IDcwNC44MSA0MDYuOTIgMjM5Ni44MyAxMzgzLjgxIDMxMDEuNjMgMTc5MC43MyAtMzEwMS42MyAxNzkwLjczIC0yMzk2LjgzIDEzODMuODEgLTcwNC44MSA0MDYuOTIgMCAtODE0LjA2eiIvPg0KICAgIDxwYXRoIGNsYXNzPSJmaWwxIiBkPSJNNjIxNS40OCAxMjc4NS43N2w0MzUuODMgMGMyNTguODcsMCA0NzAsMjExLjEzIDQ3MCw0NzBsMCA2MDE0LjIxYzAsMjU4Ljg3IC0yMTEuMTMsNDcwIC00NzAsNDcwbC00MzUuODMgMGMtMjU4Ljg3LDAgLTQ3MCwtMjExLjEzIC00NzAsLTQ3MGwwIC02MDE0LjIxYzAsLTI1OC44NyAyMTEuMTMsLTQ3MCA0NzAsLTQ3MHoiLz4NCiAgICA8cGF0aCBjbGFzcz0iZmlsMSBzdHIwIiBkPSJNOTg3Mi45NyAxOTI2OS45OGwwIC02MDE0LjIxYzAsLTI1OC44NyAyMTEuMTMsLTQ3MCA0NzAsLTQ3MGw0MzUuODMgMGMyNTguODcsMCA0NzAsMjExLjEzIDQ3MCw0NzBsMCA2MDE0LjIxYzAsMjU4Ljg3IC0yMTEuMTMsNDcwIC00NzAsNDcwbC00MzUuODMgMGMtMjU4Ljg3LDAgLTQ3MCwtMjExLjEzIC00NzAsLTQ3MHoiLz4NCiAgICA8cG9seWdvbiBjbGFzcz0iZmlsMiBzdHIxIiBwb2ludHM9IjcxMjEuMzEsMzk5MS43MSA3MTIxLjMxLDk1MjYuNTEgNzEyMS4zMSwxMDM0MC41NyA3ODI2LjEyLDk5MzMuNjUgMTAyMjIuOTUsODU0OS44NCAxMzMyNC41OCw2NzU5LjExIDEwMjIyLjk1LDQ5NjguMzggNzgyNi4xMiwzNTg0LjU3IDcxMjEuMzEsMzE3Ny42NSAiLz4NCiAgIDwvZz4NCiAgPC9nPg0KIDwvZz4NCjwvc3ZnPg0K" alt="RPlayer">
+            <div>
                 Hi friend! I searching Web3 for <strong>what is yours</strong> now.<br>
                 You can pin me to local.<br>
                 Please be patient... <span id="booting">&hearts;&hearts;&hearts;</span>
