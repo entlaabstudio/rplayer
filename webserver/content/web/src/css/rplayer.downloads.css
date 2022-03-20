@@ -67,3 +67,10 @@
     text-align: center;
     border-bottom: 1px solid var(--currentTime);
 }
+
+#rplayerDownloads .infoText {
+    display: inline-block;
+    color: var(--currentTime);
+    margin-bottom: 2em;
+    max-width: 35em;
+}

@@ -115,6 +115,7 @@ export default class RPlayer {
     }
 
     downloadAction() {
+        $("#rplayerDownloads .button.rplayerDownloadSubmit").addClass("loading disabled");
         this.getMp3Files();
         this.checkDataAndContinue();
     }
@@ -173,6 +174,7 @@ export default class RPlayer {
 
         zip.generateAsync({type:"blob"}).then(function (blob) {
             saveAs(blob, baseFolderName + ".zip");
+            $("#rplayerDownloads .button.rplayerDownloadSubmit").removeClass("loading disabled");
         });
     }
 
@@ -181,6 +183,7 @@ export default class RPlayer {
         var that = this;
 
         if (!value.data && value.download == true) {
+            console.log("[RPlayer]","Getting the data of the \"" + value.fileName + "\" file.");
             setTimeout(function() {
                 $.ajax({
                     type: "GET",
@@ -190,7 +193,7 @@ export default class RPlayer {
                     },
                     error: function(jqXHR, textStatus, errorThrown){
                         that.getMp3FileData(value);
-                        console.log("[RPlayer]","I'm trying to get the data for the file \"" + value.fileName + "\" again. Do not panic. In the end, it will work. This is Web3.");
+                        console.log("[RPlayer]","I'm trying to get the data for the file \"" + value.fileName + "\" again.");
                     },
                     success: function(data) {
                         value.data = new Uint8Array;

@@ -108,7 +108,7 @@ export default class RPlayer {
             type: 'HEAD',
             url: source,
             error: function(jqXHR, textStatus, errorThrown){
-                console.log("[RPlayer]","An attempt to load the header for the \"" + source + "\" file failed. I'm trying again. Do not panic. In the end, it will work. This is Web3.");
+                console.log("[RPlayer]","An attempt to load the header for the \"" + source + "\" file failed. I'm trying again.");
                 setTimeout(function() {
                     that.checkAdditionalSrc(source);
                 },10000);
