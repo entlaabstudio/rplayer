@@ -103,6 +103,7 @@ export default class RPlayer {
     checkAdditionalSrc(source) {
         var source;
         var that = this;
+        console.log("[RPlayer]","Getting the header of the \"" + source + "\" file.");
         $.ajax({
             type: 'HEAD',
             url: source,
@@ -110,7 +111,7 @@ export default class RPlayer {
                 console.log("[RPlayer]","An attempt to load the header for the \"" + source + "\" file failed. I'm trying again. Do not panic. In the end, it will work. This is Web3.");
                 setTimeout(function() {
                     that.checkAdditionalSrc(source);
-                },3000);
+                },10000);
                 window.top.postMessage("[BOOT-RELOAD]", '*');
             },
             success: function() {
