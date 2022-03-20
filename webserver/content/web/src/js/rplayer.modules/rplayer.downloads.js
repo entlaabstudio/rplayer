@@ -6,6 +6,7 @@
  * @link https://rajs.info/
  */
 
+import ID3Writer from './../foreign/browser-id3-writer-master/src/ID3Writer.js';
 export default class RPlayer {
     
     constructor(
@@ -60,18 +61,39 @@ export default class RPlayer {
         for (const [key, value] of Object.entries(this.rplayerCfg.album.tracks)) {
             if (value.downloads.mp3) {
                 var fileName = this.numberZeroFill((parseInt(key) + 1), numOfDigits) + " - " + value.mediaName + ".mp3";
+                var trackNumber = parseInt(key) + 1;
                 var checkboxId = "rplayerCheckboxDownloadMp3_" + key;
                 $("#rplayerDownloads .rplayerDownloadsTracks").append(
                     "<div class=\"ui toggle checkbox\">" +
                         "<input type=\"checkbox\" checked=\"checked\" id=\"" + checkboxId + "\"><label for=\"" + checkboxId + "\">" + fileName + "</label>" +
                     "</div>"
                 );
+                var genres = [];
+                var i = 0;
+                for (const [key, value2] of Object.entries(value.info.genres)) {
+                    genres[i] = value2;
+                    i++;
+                }
                 this.download.mp3[key] = {
                     mediaName: value.mediaName,
+                    trackNumber: trackNumber + "/" + Object.keys(this.rplayerCfg.album.tracks).length,
+                    composer: [value.info.composer],
+                    genres: genres,
+                    label: value.info.label,
+                    copyright: value.info.copyright,
+                    lang: value.info.lang,
                     fileName: fileName,
                     download: true,
                     srcFile: value.downloads.mp3,
                     checkboxId: checkboxId,
+                    comment: {
+                        text: 
+                        'RPlayer address where this file was generated:\n' +
+                        this.rplayerObj.getURLAddress(),
+                        description:
+                        'RPlayer address where this file was generated:\n' +
+                        this.rplayerObj.getURLAddress(),
+                    },
                 };
             }
         }
@@ -168,7 +190,7 @@ export default class RPlayer {
         
         for (const [key, value] of Object.entries(this.download.mp3)) {
             if (value.data) {
-                zip.folder(baseFolderName).file(value.fileName,value.data);
+                zip.folder(baseFolderName).file(value.fileName,this.putID3(value));
             }
         }
 
@@ -176,6 +198,30 @@ export default class RPlayer {
             saveAs(blob, baseFolderName + ".zip");
             $("#rplayerDownloads .button.rplayerDownloadSubmit").removeClass("loading disabled");
         });
+    }
+
+    putID3(song) {
+        console.log(song);
+        var song;
+        const writer = new ID3Writer(song.data);
+        writer.setFrame('TIT2', song.mediaName)
+            .setFrame('TPE1', [this.rplayerCfg.album.info.composer])
+            .setFrame('TALB', this.rplayerCfg.album.info.name)
+            .setFrame('TPE2', song.composer)
+            .setFrame('TRCK', song.trackNumber)
+            .setFrame('TCON', song.genres)
+            .setFrame('TPUB', song.label)
+            .setFrame('TCOP', song.copyright)
+            .setFrame('TLAN', song.lang)
+            .setFrame('COMM', song.comment)
+            .setFrame('TYER', this.rplayerCfg.album.info.year)
+            // .setFrame('APIC', {
+            //     type: 3,
+            //     data: coverBuffer,
+            //     description: 'Super picture'
+            // });
+        writer.addTag();
+        return writer.arrayBuffer;
     }
 
     getMp3FileData(value) {
@@ -189,14 +235,14 @@ export default class RPlayer {
                     type: "GET",
                     url: value.srcFile,
                     xhrFields:{
-                        responseType: 'blob'
+                        responseType: 'arraybuffer'
                     },
                     error: function(jqXHR, textStatus, errorThrown){
                         that.getMp3FileData(value);
                         console.log("[RPlayer]","I'm trying to get the data for the file \"" + value.fileName + "\" again.");
                     },
                     success: function(data) {
-                        value.data = new Uint8Array;
+                        // value.data = new Uint8Array;
                         value.data = data;
                         console.log("[RPlayer]","I got the data for the file \"" + value.fileName + "\".");
                     }

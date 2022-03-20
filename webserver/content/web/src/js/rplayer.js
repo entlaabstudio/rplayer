@@ -20,6 +20,11 @@ var RPObj = new RPlayer(RPCfg,QrCode);
 import RPlayerVisual    from "./rplayer.modules/rplayer.visual.js";
 import RPlayerInfo      from "./rplayer.modules/rplayer.info.js";
 import RPlayerSlideshow from "./rplayer.modules/rplayer.slideshow.js";
+
+// import ID3Writer        from './foreign/browser-id3-writer-master/src/ID3Writer.js';
+
+// var ID3w = new ID3Writer;
+
 import RPlayerDownloads from "./rplayer.modules/rplayer.downloads.js";
 
 new RPlayerVisual(RPObj,QrCode);

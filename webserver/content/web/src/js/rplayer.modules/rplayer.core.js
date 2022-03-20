@@ -23,7 +23,7 @@ export default class RPlayer {
         this.license               = false;
         this.QrCode                = QrCode;
         
-        this.rplayerObject = $(rplayerCfg.conf.app.htmlSelectors.mainWindow);
+        this.ct = $(rplayerCfg.conf.app.htmlSelectors.mainWindow);
         
         this.audioSrc = rplayerCfg.conf.album.mediaSrc;
 
@@ -393,29 +393,31 @@ export default class RPlayer {
         return html;
     }
     
-    // donations() {
-    //     var html = "";
-    //     var lat  = false;
+    getURLAddress() {
+        var link;
         
-    //     this.obj2array(this.rplayerCfg.conf.app.donations.wallets).forEach(element => {
-    //         html += "<div style='text-align: center; border-bottom: 1px solid rgba(0,0,0,.1); margin-bottom: 1em; padding-bottom: 1em;'>"
+        link = window.location.href;
 
-    //         var QrCod = new this.QrCode(0,'H');
-    //         QrCod.addData(element[1].adress);
-    //         QrCod.make();
-
-    //         html += "<strong>" + element[1].ccurrency + "</strong><br>";
-    //         html += "<img src='" + element[1].image + "' style='width: 5em;'></strong><br>";
-    //         html += "<div style='display: inline-block; width: 10em; height: 10em;'>" + QrCod.createSvgTag({}) + "</div><br>";
-    //         html += "<input type='text' onClick='this.select();' value='" + element[1].adress + "' readonly='readonly' style='text-align: center; border: none; width: 100%; font-family: courier; font-size: .9em'>";
-            
-    //         html += "</div>";
-            
-    //         lat = true;
-    //     });
-
-    //     return html;
-    // }
+        if (link.includes("localhost")) {
+            link = link.substring(
+                link.indexOf("//") + 2,
+                link.lastIndexOf("/")
+            );
+            link = this.rplayerCfg.conf.app.web3Protocol +
+            link.substring(
+                0,
+                link.indexOf(".")
+            ) +
+            "/"
+        }
+        
+        if (link.includes("index.htm")) {
+            link = link;
+        } else {
+            link = link + "index.htm";
+        }
+        return link = link.replace('rplayer.htm','');
+    }
 
     keyboard() {
         var that = this;

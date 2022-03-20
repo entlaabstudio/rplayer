@@ -207,6 +207,9 @@ export default class RPlayerConf {
                         1: "Progressive rock",
                         2: "Djent",
                     },
+                    label: "N / A",
+                    copyright: "N / A",
+                    lang: "en",
                     composer: "YATSU band",
                     anyHtml: 
                     "<p style='margin-top: 1em;'>" +
@@ -254,12 +257,15 @@ export default class RPlayerConf {
                         info: {
                             image: "media/images/mirrors.jpg",
                             composer: "Michal Diviš",
+                            lang: "en",
                             year: 2021,
                             genres: {
                                 0: "Metal",
                                 1: "Progressive rock",
                                 2: "Djent",
                             },
+                            label: "N / A",
+                            copyright: "(c) 2021 Michal Diviš",
                             anyHtml: {
                                 0: {
                                     id: "Song tempo",
@@ -404,12 +410,15 @@ export default class RPlayerConf {
                         info: {
                             image: "media/images/dreamer_album.jpg",
                             composer: "Michal Diviš",
+                            lang: "en",
                             year: 2021,
                             genres: {
                                 0: "Metal",
                                 1: "Progressive rock",
                                 2: "Djent",
                             },
+                            label: "N / A",
+                            copyright: "(c) 2021 Michal Diviš",
                             anyHtml: {
                                 0: {
                                     id: "Song tempo",
@@ -554,12 +563,15 @@ export default class RPlayerConf {
                         info: {
                             image: "media/images/ornaments_w_vocals.jpg",
                             composer: "Michal Diviš",
+                            lang: "en",
                             year: 2021,
                             genres: {
                                 0: "Metal",
                                 1: "Progressive rock",
                                 2: "Djent",
                             },
+                            label: "N / A",
+                            copyright: "(c) 2021 Michal Diviš",
                             anyHtml: {
                                 0: {
                                     id: "Vocals",
@@ -754,12 +766,15 @@ export default class RPlayerConf {
                         info: {
                             image: "media/images/labyrinth.jpg",
                             composer: "Michal Diviš",
+                            lang: "en",
                             year: 2021,
                             genres: {
                                 0: "Metal",
                                 1: "Progressive rock",
                                 2: "Djent",
                             },
+                            label: "N / A",
+                            copyright: "(c) 2021 Michal Diviš",
                             anyHtml: {
                                 0: {
                                     id: "Song tempo",
@@ -910,12 +925,15 @@ export default class RPlayerConf {
                         info: {
                             image: "media/images/djinn.png",
                             composer: "Michal Diviš",
+                            lang: "en",
                             year: 2021,
                             genres: {
                                 0: "Metal",
                                 1: "Progressive rock",
                                 2: "Djent",
                             },
+                            label: "N / A",
+                            copyright: "(c) 2021 Michal Diviš",
                             anyHtml: {
                                 0: {
                                     id: "Vocal",
@@ -1116,12 +1134,15 @@ export default class RPlayerConf {
                         info: {
                             image: "media/images/ornaments_w_vocals.jpg",
                             composer: "Michal Diviš",
+                            lang: "en",
                             year: 2021,
                             genres: {
                                 0: "Metal",
                                 1: "Progressive rock",
                                 2: "Djent",
                             },
+                            label: "N / A",
+                            copyright: "(c) 2021 Michal Diviš",
                             anyHtml: {
                                 0: {
                                     id: "Song tempo",
@@ -1266,12 +1287,15 @@ export default class RPlayerConf {
                         info: {
                             image: "media/images/kraken.jpg",
                             composer: "Michal Diviš",
+                            lang: "en",
                             year: 2021,
                             genres: {
                                 0: "Metal",
                                 1: "Progressive rock",
                                 2: "Djent",
                             },
+                            label: "N / A",
+                            copyright: "(c) 2021 Michal Diviš",
                             anyHtml: {
                                 0: {
                                     id: "Song tempo",
@@ -1416,12 +1440,15 @@ export default class RPlayerConf {
                         info: {
                             image: "media/images/dreamer_album.jpg",
                             composer: "Michal Diviš",
+                            lang: "en",
                             year: 2021,
                             genres: {
                                 0: "Metal",
                                 1: "Progressive rock",
                                 2: "Djent",
                             },
+                            label: "N / A",
+                            copyright: "(c) 2021 Michal Diviš",
                             anyHtml: {
                                 0: {
                                     id: "Song tempo",
@@ -1566,12 +1593,15 @@ export default class RPlayerConf {
                         info: {
                             image: "media/images/mirrors.jpg",
                             composer: "Michal Diviš",
+                            lang: "en",
                             year: 2021,
                             genres: {
                                 0: "Metal",
                                 1: "Progressive rock",
                                 2: "Djent",
                             },
+                            label: "N / A",
+                            copyright: "(c) 2021 Michal Diviš",
                             anyHtml: {
                                 0: {
                                     id: "Song tempo",
