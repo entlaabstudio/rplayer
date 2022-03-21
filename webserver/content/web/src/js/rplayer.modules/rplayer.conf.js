@@ -266,6 +266,7 @@ export default class RPlayerConf {
                             },
                             label: "",
                             bpm: "110",
+                            isrc: "",
                             copyright: "(c) 2021 Michal Diviš",
                             anyHtml: {
                                 0: {
@@ -420,6 +421,7 @@ export default class RPlayerConf {
                             },
                             label: "",
                             bpm: "120",
+                            isrc: "",
                             copyright: "(c) 2021 Michal Diviš",
                             anyHtml: {
                                 0: {
@@ -574,6 +576,7 @@ export default class RPlayerConf {
                             },
                             label: "",
                             bpm: "120",
+                            isrc: "",
                             copyright: "(c) 2021 Michal Diviš",
                             anyHtml: {
                                 0: {
@@ -778,6 +781,7 @@ export default class RPlayerConf {
                             },
                             label: "",
                             bpm: "175",
+                            isrc: "",
                             copyright: "(c) 2021 Michal Diviš",
                             anyHtml: {
                                 0: {
@@ -938,6 +942,7 @@ export default class RPlayerConf {
                             },
                             label: "",
                             bpm: "175",
+                            isrc: "",
                             copyright: "(c) 2021 Michal Diviš",
                             anyHtml: {
                                 0: {
@@ -1148,6 +1153,7 @@ export default class RPlayerConf {
                             },
                             label: "",
                             bpm: "135",
+                            isrc: "",
                             copyright: "(c) 2021 Michal Diviš",
                             anyHtml: {
                                 0: {
@@ -1302,6 +1308,7 @@ export default class RPlayerConf {
                             },
                             label: "",
                             bpm: "135",
+                            isrc: "",
                             copyright: "(c) 2021 Michal Diviš",
                             anyHtml: {
                                 0: {
@@ -1456,6 +1463,7 @@ export default class RPlayerConf {
                             },
                             label: "",
                             bpm: "140",
+                            isrc: "",
                             copyright: "(c) 2021 Michal Diviš",
                             anyHtml: {
                                 0: {
@@ -1610,6 +1618,7 @@ export default class RPlayerConf {
                             },
                             label: "",
                             bpm: "210",
+                            isrc: "",
                             copyright: "(c) 2021 Michal Diviš",
                             anyHtml: {
                                 0: {

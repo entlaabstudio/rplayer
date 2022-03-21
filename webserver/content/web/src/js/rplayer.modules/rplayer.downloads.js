@@ -92,12 +92,27 @@ export default class RPlayer {
                     checkboxId: checkboxId,
                     comment: {
                         description: '',
-                        text: commentText,
+                        text: commentText + ((value.words !== undefined) ? this.getLyrics(value.words) : ""),
                     },
                     bpm: value.info.bpm,
                 };
             }
         }
+    }
+
+    getLyrics(words) {
+        var words;
+        var string = "\n\n";
+
+        string += "Lyrics:\n";
+        string += "-------\n";
+
+        console.log("slova",words);
+        for (const [key, value] of Object.entries(words)) {
+            string += value.replace("<br>","\n") + "\n";
+        }
+
+        return string;
     }
 
     numberGetDigits(number) {
