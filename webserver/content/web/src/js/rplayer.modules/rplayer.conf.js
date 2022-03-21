@@ -257,14 +257,15 @@ export default class RPlayerConf {
                         info: {
                             image: "media/images/mirrors.jpg",
                             composer: "Michal Diviš",
-                            lang: "en",
+                            lang: "eng", // ISO 639-2
                             year: 2021,
                             genres: {
                                 0: "Metal",
                                 1: "Progressive rock",
                                 2: "Djent",
                             },
-                            label: "N / A",
+                            label: "",
+                            bpm: "110",
                             copyright: "(c) 2021 Michal Diviš",
                             anyHtml: {
                                 0: {
@@ -410,14 +411,15 @@ export default class RPlayerConf {
                         info: {
                             image: "media/images/dreamer_album.jpg",
                             composer: "Michal Diviš",
-                            lang: "en",
+                            lang: "eng", // ISO 639-2
                             year: 2021,
                             genres: {
                                 0: "Metal",
                                 1: "Progressive rock",
                                 2: "Djent",
                             },
-                            label: "N / A",
+                            label: "",
+                            bpm: "120",
                             copyright: "(c) 2021 Michal Diviš",
                             anyHtml: {
                                 0: {
@@ -563,14 +565,15 @@ export default class RPlayerConf {
                         info: {
                             image: "media/images/ornaments_w_vocals.jpg",
                             composer: "Michal Diviš",
-                            lang: "en",
+                            lang: "eng", // ISO 639-2
                             year: 2021,
                             genres: {
                                 0: "Metal",
                                 1: "Progressive rock",
                                 2: "Djent",
                             },
-                            label: "N / A",
+                            label: "",
+                            bpm: "120",
                             copyright: "(c) 2021 Michal Diviš",
                             anyHtml: {
                                 0: {
@@ -766,14 +769,15 @@ export default class RPlayerConf {
                         info: {
                             image: "media/images/labyrinth.jpg",
                             composer: "Michal Diviš",
-                            lang: "en",
+                            lang: "eng", // ISO 639-2
                             year: 2021,
                             genres: {
                                 0: "Metal",
                                 1: "Progressive rock",
                                 2: "Djent",
                             },
-                            label: "N / A",
+                            label: "",
+                            bpm: "175",
                             copyright: "(c) 2021 Michal Diviš",
                             anyHtml: {
                                 0: {
@@ -925,14 +929,15 @@ export default class RPlayerConf {
                         info: {
                             image: "media/images/djinn.png",
                             composer: "Michal Diviš",
-                            lang: "en",
+                            lang: "eng", // ISO 639-2
                             year: 2021,
                             genres: {
                                 0: "Metal",
                                 1: "Progressive rock",
                                 2: "Djent",
                             },
-                            label: "N / A",
+                            label: "",
+                            bpm: "175",
                             copyright: "(c) 2021 Michal Diviš",
                             anyHtml: {
                                 0: {
@@ -1134,14 +1139,15 @@ export default class RPlayerConf {
                         info: {
                             image: "media/images/ornaments_w_vocals.jpg",
                             composer: "Michal Diviš",
-                            lang: "en",
+                            lang: "eng", // ISO 639-2
                             year: 2021,
                             genres: {
                                 0: "Metal",
                                 1: "Progressive rock",
                                 2: "Djent",
                             },
-                            label: "N / A",
+                            label: "",
+                            bpm: "135",
                             copyright: "(c) 2021 Michal Diviš",
                             anyHtml: {
                                 0: {
@@ -1287,14 +1293,15 @@ export default class RPlayerConf {
                         info: {
                             image: "media/images/kraken.jpg",
                             composer: "Michal Diviš",
-                            lang: "en",
+                            lang: "eng", // ISO 639-2
                             year: 2021,
                             genres: {
                                 0: "Metal",
                                 1: "Progressive rock",
                                 2: "Djent",
                             },
-                            label: "N / A",
+                            label: "",
+                            bpm: "135",
                             copyright: "(c) 2021 Michal Diviš",
                             anyHtml: {
                                 0: {
@@ -1440,14 +1447,15 @@ export default class RPlayerConf {
                         info: {
                             image: "media/images/dreamer_album.jpg",
                             composer: "Michal Diviš",
-                            lang: "en",
+                            lang: "eng", // ISO 639-2
                             year: 2021,
                             genres: {
                                 0: "Metal",
                                 1: "Progressive rock",
                                 2: "Djent",
                             },
-                            label: "N / A",
+                            label: "",
+                            bpm: "140",
                             copyright: "(c) 2021 Michal Diviš",
                             anyHtml: {
                                 0: {
@@ -1593,14 +1601,15 @@ export default class RPlayerConf {
                         info: {
                             image: "media/images/mirrors.jpg",
                             composer: "Michal Diviš",
-                            lang: "en",
+                            lang: "eng", // ISO 639-2
                             year: 2021,
                             genres: {
                                 0: "Metal",
                                 1: "Progressive rock",
                                 2: "Djent",
                             },
-                            label: "N / A",
+                            label: "",
+                            bpm: "210",
                             copyright: "(c) 2021 Michal Diviš",
                             anyHtml: {
                                 0: {

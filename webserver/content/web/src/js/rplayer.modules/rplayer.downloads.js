@@ -69,6 +69,9 @@ export default class RPlayer {
                     "</div>"
                 );
                 var genres = [];
+                var commentText = 
+                    'RPlayer address where this file was generated: \n' +
+                    this.rplayerObj.getURLAddress();
                 var i = 0;
                 for (const [key, value2] of Object.entries(value.info.genres)) {
                     genres[i] = value2;
@@ -87,13 +90,10 @@ export default class RPlayer {
                     srcFile: value.downloads.mp3,
                     checkboxId: checkboxId,
                     comment: {
-                        text: 
-                        'RPlayer address where this file was generated:\n' +
-                        this.rplayerObj.getURLAddress(),
-                        description:
-                        'RPlayer address where this file was generated:\n' +
-                        this.rplayerObj.getURLAddress(),
+                        description: '',
+                        text: commentText,
                     },
+                    bpm: value.info.bpm,
                 };
             }
         }
@@ -204,16 +204,18 @@ export default class RPlayer {
         console.log(song);
         var song;
         const writer = new ID3Writer(song.data);
-        writer.setFrame('TIT2', song.mediaName)
+        writer
+            .setFrame('TRCK', song.trackNumber)
+            .setFrame('COMM', song.comment)
+            .setFrame('TIT2', song.mediaName)
             .setFrame('TPE1', [this.rplayerCfg.album.info.composer])
             .setFrame('TALB', this.rplayerCfg.album.info.name)
-            .setFrame('TPE2', song.composer)
-            .setFrame('TRCK', song.trackNumber)
+            .setFrame('TPE2', this.rplayerCfg.album.info.composer)
             .setFrame('TCON', song.genres)
             .setFrame('TPUB', song.label)
             .setFrame('TCOP', song.copyright)
             .setFrame('TLAN', song.lang)
-            .setFrame('COMM', song.comment)
+            .setFrame('TBPM', song.bpm)
             .setFrame('TYER', this.rplayerCfg.album.info.year)
             // .setFrame('APIC', {
             //     type: 3,
