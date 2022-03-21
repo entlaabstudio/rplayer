@@ -214,6 +214,10 @@ export default class RPlayer {
 
     downloadAction() {
         $("#rplayerDownloads .button.rplayerDownloadSubmit").addClass("loading disabled");
+        $("#rplayerDownloads input").attr('disabled', 'disabled');
+        $(this.rplayerCfg.app.htmlSelectors.mainWindow + " .downloadsButton").css({
+            opacity: "0.3"
+        });
         this.getMp3Files();
         this.getMp3ImagesFiles();
         this.getMp3IconsFiles();
@@ -340,9 +344,14 @@ export default class RPlayer {
             }
         }
 
+        var that = this;
         zip.generateAsync({type:"blob"}).then(function (blob) {
             saveAs(blob, baseFolderName + ".zip");
             $("#rplayerDownloads .button.rplayerDownloadSubmit").removeClass("loading disabled");
+            $("#rplayerDownloads input").removeAttr('disabled');    
+            $(that.rplayerCfg.app.htmlSelectors.mainWindow + " .downloadsButton").css({
+                opacity: "1"
+            });
         });
     }
 
