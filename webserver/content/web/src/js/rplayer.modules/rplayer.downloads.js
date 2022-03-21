@@ -33,9 +33,21 @@ export default class RPlayer {
                 that.buttons();
                 that.checkForm();
                 that.tracks();
+                that.bundleOptions();
                 clearInterval(int);
             }
         },362);
+    }
+
+    bundleOptions() {
+        $("#rplayerDownloads .rplayerDownloadsBundleOptions").append(
+            "<div class=\"ui toggle checkbox\">" +
+                "<input type=\"checkbox\" checked=\"checked\" id=\"rplayerCheckboxDownloadBundleOptions_ImagesToMp3\"><label for=\"rplayerCheckboxDownloadBundleOptions_ImagesToMp3\">Include images to mp3 files</label>" +
+            "</div>" +
+            "<div class=\"ui toggle checkbox\">" +
+                "<input type=\"checkbox\" checked=\"checked\" id=\"rplayerCheckboxDownloadBundleOptions_IconsToMp3\"><label for=\"rplayerCheckboxDownloadBundleOptions_IconsToMp3\">Include icons to mp3 files</label>" +
+            "</div>"
+        );
     }
 
     checkForm() {
@@ -89,6 +101,7 @@ export default class RPlayer {
                     download: true,
                     srcFile: value.downloads.mp3,
                     srcImgFile: value.info.image,
+                    srcIconFile: value.info.icon,
                     checkboxId: checkboxId,
                     comment: {
                         description: '',
@@ -203,6 +216,7 @@ export default class RPlayer {
         $("#rplayerDownloads .button.rplayerDownloadSubmit").addClass("loading disabled");
         this.getMp3Files();
         this.getMp3ImagesFiles();
+        this.getMp3IconsFiles();
         this.checkDataAndContinue();
     }
 
@@ -220,7 +234,11 @@ export default class RPlayer {
             var countOfDownloadedFiles = 0;
     
             for (const [key, value] of Object.entries(that.download.mp3)) {
-                if (value.data !== undefined && value.imgData !== undefined) {
+                if (
+                    value.data !== undefined &&
+                    value.imgData !== undefined &&
+                    value.iconData !== undefined
+                ) {
                     countOfDownloadedFiles += 1;
                 }
             }
@@ -233,17 +251,44 @@ export default class RPlayer {
         },3000);
     }
 
-    
-    
-    
-    
-    
     getMp3ImagesFiles() {
         for (const [key, value] of Object.entries(this.download.mp3)) {
             this.getMp3ImgFileData(value);
         }
     }
 
+    getMp3IconsFiles() {
+        for (const [key, value] of Object.entries(this.download.mp3)) {
+            this.getMp3IconFileData(value);
+        }
+    }
+
+    getMp3IconFileData(value) {
+        var value;
+        var that = this;
+
+        if (!value.iconData && value.download == true) {
+            console.log("[RPlayer]","Getting the icon data for the \"" + value.fileName + "\" file.");
+            setTimeout(function() {
+                $.ajax({
+                    type: "GET",
+                    url: value.srcIconFile,
+                    xhrFields:{
+                        responseType: 'arraybuffer'
+                    },
+                    error: function(jqXHR, textStatus, errorThrown){
+                        that.getMp3ImgFileData(value);
+                        console.log("[RPlayer]","I'm trying to get the icon data for the \"" + value.fileName + "\" file again.");
+                    },
+                    success: function(data) {
+                        value.iconData = data;
+                        console.log("[RPlayer]","I got the icon data for the \"" + value.fileName + "\" file.");
+                    }
+                });
+            },3000);
+        }
+    }
+    
     getMp3ImgFileData(value) {
         var value;
         var that = this;
@@ -262,7 +307,6 @@ export default class RPlayer {
                         console.log("[RPlayer]","I'm trying to get the image data for the \"" + value.fileName + "\" file again.");
                     },
                     success: function(data) {
-                        // value.data = new Uint8Array;
                         value.imgData = data;
                         console.log("[RPlayer]","I got the image data for the \"" + value.fileName + "\" file.");
                     }
@@ -271,11 +315,6 @@ export default class RPlayer {
         }
     }
 
-    
-    
-    
-    
-    
     numberOfUnwantedFiles() {
         var numOfUnwanteds = 0;
         
@@ -323,12 +362,24 @@ export default class RPlayer {
             .setFrame('TLAN', song.lang)
             .setFrame('TBPM', song.bpm)
             .setFrame('TSRC', song.isrc)
-            .setFrame('TYER', this.rplayerCfg.album.info.year)
-            .setFrame('APIC', {
+            .setFrame('TYER', this.rplayerCfg.album.info.year);
+
+        if ($("#rplayerCheckboxDownloadBundleOptions_ImagesToMp3").is(":checked")) {
+            writer.setFrame('APIC', {
                 type: 3,
                 data: song.imgData,
-                description: 'Super picture'
+                description: ''
             });
+        }
+
+        if ($("#rplayerCheckboxDownloadBundleOptions_IconsToMp3").is(":checked")) {
+            writer.setFrame('APIC', {
+                type: 1,
+                data: song.iconData,
+                description: ''
+            });
+        }
+
         writer.addTag();
         return writer.arrayBuffer;
     }

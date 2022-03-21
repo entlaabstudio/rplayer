@@ -256,6 +256,7 @@ export default class RPlayerConf {
                         },
                         info: {
                             image: "media/images/mirrors.jpg",
+                            icon: "media/icons/mirrors.png",
                             composer: "Michal Diviš",
                             lang: "eng", // ISO 639-2
                             year: 2021,
@@ -411,6 +412,7 @@ export default class RPlayerConf {
                         },
                         info: {
                             image: "media/images/dreamer_album.jpg",
+                            icon: "media/icons/dreamer_album.png",
                             composer: "Michal Diviš",
                             lang: "eng", // ISO 639-2
                             year: 2021,
@@ -566,6 +568,7 @@ export default class RPlayerConf {
                         },
                         info: {
                             image: "media/images/ornaments_w_vocals.jpg",
+                            icon: "media/icons/ornaments_w_vocals.png",
                             composer: "Michal Diviš",
                             lang: "eng", // ISO 639-2
                             year: 2021,
@@ -771,6 +774,7 @@ export default class RPlayerConf {
                         },
                         info: {
                             image: "media/images/labyrinth.jpg",
+                            icon: "media/icons/labyrinth.png",
                             composer: "Michal Diviš",
                             lang: "eng", // ISO 639-2
                             year: 2021,
@@ -932,6 +936,7 @@ export default class RPlayerConf {
                         },
                         info: {
                             image: "media/images/djinn.png",
+                            icon: "media/icons/djinn.png",
                             composer: "Michal Diviš",
                             lang: "eng", // ISO 639-2
                             year: 2021,
@@ -1143,6 +1148,7 @@ export default class RPlayerConf {
                         },
                         info: {
                             image: "media/images/ornaments_w_vocals.jpg",
+                            icon: "media/icons/ornaments_w_vocals.png",
                             composer: "Michal Diviš",
                             lang: "eng", // ISO 639-2
                             year: 2021,
@@ -1298,6 +1304,7 @@ export default class RPlayerConf {
                         },
                         info: {
                             image: "media/images/kraken.jpg",
+                            icon: "media/icons/kraken.png",
                             composer: "Michal Diviš",
                             lang: "eng", // ISO 639-2
                             year: 2021,
@@ -1453,6 +1460,7 @@ export default class RPlayerConf {
                         },
                         info: {
                             image: "media/images/dreamer_album.jpg",
+                            icon: "media/icons/dreamer_album.png",
                             composer: "Michal Diviš",
                             lang: "eng", // ISO 639-2
                             year: 2021,
@@ -1608,6 +1616,7 @@ export default class RPlayerConf {
                         },
                         info: {
                             image: "media/images/mirrors.jpg",
+                            icon: "media/icons/mirrors.png",
                             composer: "Michal Diviš",
                             lang: "eng", // ISO 639-2
                             year: 2021,
