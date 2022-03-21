@@ -88,6 +88,7 @@ export default class RPlayer {
                     fileName: fileName,
                     download: true,
                     srcFile: value.downloads.mp3,
+                    srcImgFile: value.info.image,
                     checkboxId: checkboxId,
                     comment: {
                         description: '',
@@ -139,6 +140,7 @@ export default class RPlayer {
     downloadAction() {
         $("#rplayerDownloads .button.rplayerDownloadSubmit").addClass("loading disabled");
         this.getMp3Files();
+        this.getMp3ImagesFiles();
         this.checkDataAndContinue();
     }
 
@@ -156,7 +158,7 @@ export default class RPlayer {
             var countOfDownloadedFiles = 0;
     
             for (const [key, value] of Object.entries(that.download.mp3)) {
-                if (value.data !== undefined) {
+                if (value.data !== undefined && value.imgData !== undefined) {
                     countOfDownloadedFiles += 1;
                 }
             }
@@ -169,6 +171,49 @@ export default class RPlayer {
         },3000);
     }
 
+    
+    
+    
+    
+    
+    getMp3ImagesFiles() {
+        for (const [key, value] of Object.entries(this.download.mp3)) {
+            this.getMp3ImgFileData(value);
+        }
+    }
+
+    getMp3ImgFileData(value) {
+        var value;
+        var that = this;
+
+        if (!value.imgData && value.download == true) {
+            console.log("[RPlayer]","Getting the image data for the \"" + value.fileName + "\" file.");
+            setTimeout(function() {
+                $.ajax({
+                    type: "GET",
+                    url: value.srcImgFile,
+                    xhrFields:{
+                        responseType: 'arraybuffer'
+                    },
+                    error: function(jqXHR, textStatus, errorThrown){
+                        that.getMp3ImgFileData(value);
+                        console.log("[RPlayer]","I'm trying to get the image data for the \"" + value.fileName + "\" file again.");
+                    },
+                    success: function(data) {
+                        // value.data = new Uint8Array;
+                        value.imgData = data;
+                        console.log("[RPlayer]","I got the image data for the \"" + value.fileName + "\" file.");
+                    }
+                });
+            },3000);
+        }
+    }
+
+    
+    
+    
+    
+    
     numberOfUnwantedFiles() {
         var numOfUnwanteds = 0;
         
@@ -217,11 +262,11 @@ export default class RPlayer {
             .setFrame('TLAN', song.lang)
             .setFrame('TBPM', song.bpm)
             .setFrame('TYER', this.rplayerCfg.album.info.year)
-            // .setFrame('APIC', {
-            //     type: 3,
-            //     data: coverBuffer,
-            //     description: 'Super picture'
-            // });
+            .setFrame('APIC', {
+                type: 3,
+                data: song.imgData,
+                description: 'Super picture'
+            });
         writer.addTag();
         return writer.arrayBuffer;
     }
