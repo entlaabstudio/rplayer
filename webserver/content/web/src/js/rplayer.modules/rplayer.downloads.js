@@ -94,6 +94,7 @@ export default class RPlayer {
                         description: '',
                         text: commentText + ((value.words !== undefined) ? this.getLyrics(value.words) : ""),
                     },
+                    isrc: value.info.isrc,
                     bpm: value.info.bpm,
                 };
             }
@@ -107,7 +108,6 @@ export default class RPlayer {
         string += "Lyrics:\n";
         string += "-------\n";
 
-        console.log("slova",words);
         for (const [key, value] of Object.entries(words)) {
             string += value.replace("<br>","\n") + "\n";
         }
@@ -276,6 +276,7 @@ export default class RPlayer {
             .setFrame('TCOP', song.copyright)
             .setFrame('TLAN', song.lang)
             .setFrame('TBPM', song.bpm)
+            .setFrame('TSRC', song.isrc)
             .setFrame('TYER', this.rplayerCfg.album.info.year)
             .setFrame('APIC', {
                 type: 3,
