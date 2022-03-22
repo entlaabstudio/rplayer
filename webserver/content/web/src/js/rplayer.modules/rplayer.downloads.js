@@ -252,7 +252,7 @@ export default class RPlayer {
             } else {
                 that.zipData();
             }
-        },3000);
+        },6000);
     }
 
     getMp3ImagesFiles() {
@@ -281,7 +281,7 @@ export default class RPlayer {
                         responseType: 'arraybuffer'
                     },
                     error: function(jqXHR, textStatus, errorThrown){
-                        that.getMp3ImgFileData(value);
+                        that.getMp3IconFileData(value);
                         console.log("[RPlayer]","I'm trying to get the icon data for the \"" + value.fileName + "\" file again.");
                     },
                     success: function(data) {
@@ -289,7 +289,7 @@ export default class RPlayer {
                         console.log("[RPlayer]","I got the icon data for the \"" + value.fileName + "\" file.");
                     }
                 });
-            },3000);
+            },6000);
         }
     }
     
@@ -315,7 +315,7 @@ export default class RPlayer {
                         console.log("[RPlayer]","I got the image data for the \"" + value.fileName + "\" file.");
                     }
                 });
-            },3000);
+            },6000);
         }
     }
 
@@ -416,7 +416,7 @@ export default class RPlayer {
                         console.log("[RPlayer]","I got the data for the file \"" + value.fileName + "\".");
                     }
                 });
-            },3000);
+            },6000);
         }
     }
 }
