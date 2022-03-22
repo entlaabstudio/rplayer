@@ -8,6 +8,7 @@
     height: 100%;
     z-index: var(--wordsZIndex);
     text-shadow: .1em .1em .1em black;
+    user-select: none;
 }
 
 #rplayerDownloads div:first-child {

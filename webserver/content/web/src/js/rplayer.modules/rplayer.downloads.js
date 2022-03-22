@@ -18,6 +18,7 @@ export default class RPlayer {
         this.download      = {};
         this.download.mp3  = [];
         this.downloadIndex = 0;
+        this.lyrics        = [];
         
         this.init();
 
@@ -46,6 +47,9 @@ export default class RPlayer {
             "</div>" +
             "<div class=\"ui toggle checkbox\">" +
                 "<input type=\"checkbox\" checked=\"checked\" id=\"rplayerCheckboxDownloadBundleOptions_IconsToMp3\"><label for=\"rplayerCheckboxDownloadBundleOptions_IconsToMp3\">Include icons to mp3 files</label>" +
+            "</div>" +
+            "<div class=\"ui toggle checkbox\">" +
+                "<input type=\"checkbox\" checked=\"checked\" id=\"rplayerCheckboxDownloadBundleOptions_LyricsFile\"><label for=\"rplayerCheckboxDownloadBundleOptions_LyricsFile\">Lyrics for songs to separate files</label>" +
             "</div>"
         );
     }
@@ -108,7 +112,7 @@ export default class RPlayer {
                         text: 
                             commentText +
                             ((this.rplayerCfg.album.donations !== undefined) ? this.getArtistDonations() : "") +
-                            ((value.words !== undefined) ? this.getLyrics(value.words) : "") +
+                            ((value.words !== undefined) ? this.getLyrics(value) : "") +
                             ((this.rplayerCfg.app.donations !== undefined) ? this.getRPlayerDonations() : ""),
                     },
                     isrc: value.info.isrc,
@@ -156,21 +160,71 @@ export default class RPlayer {
         return string;
     }
 
-    getLyrics(words) {
-        var words;
+    getHtmlFooter() {
+        var html =
+        "\n<br>" +
+        "\n<br>" +
+        "\n<div style='border-bottom: 1px solid rgba(0,0,0,.3)'></div>" +
+        "\n<br>" +
+        "\n<table cellpadding='0' cellspacing='0' style='font-size: 0.8em;'>" +
+            "\n<tr>" +
+                "\n<th style='text-align: left'>" +
+                    "\nAlbum: " +
+                "\n</th>" +
+                "\n<td style='text-align: left'>" +
+                    "\n<a href='" + this.rplayerObj.getURLAddress() + "'>\n" +
+                        this.rplayerCfg.album.info.name +
+                    "\n</a>" +
+                "\n</td>" +
+            "\n</tr>" +
+            "\n<tr>" +
+                "\n<th style='text-align: left'>" +
+                    "\nAuthor: " +
+                "\n</th>" +
+                "\n<td style='text-align: left'>\n" +
+                    this.rplayerCfg.album.info.composer +
+                "\n</td>" +
+            "\n</tr>" +
+            "\n<tr>" +
+                "\n<th style='text-align: left'>" +
+                    "\nYear: " +
+                "\n</th>" +
+                "\n<td style='text-align: left'>\n" +
+                    this.rplayerCfg.album.info.year +
+                "\n</td>" +
+            "\n</tr>" +
+        "\n</table>";
+
+        return html;
+    }
+    
+    getLyrics(value) {
+        var words  = value.words;
         var lat    = false;
         var string = "\n\n";
+        var html   = "<body style='font-family: courier'>";
 
         string += "Lyrics:\n";
         string += "-------\n";
 
-        for (const [key, value] of Object.entries(words)) {
+        html   += "<h1>" + value.mediaName + "</h1>";
+
+        for (const [key, value2] of Object.entries(words)) {
             if (lat) {
                 string += "\n";
+                html   += "\n<br>";
             }
-            string += value.replace("<br>","\n");
+            string += value2.replace("<br>","\n");
+            html   += value2;
             lat = true;
         }
+        html += this.getHtmlFooter() + "</body>";
+
+        var i    = this.lyrics.length;
+
+        this.lyrics[i] = {};
+        this.lyrics[i].fileName = value.mediaName + ".htm";
+        this.lyrics[i].html     = html;
 
         return string;
     }
@@ -236,7 +290,7 @@ export default class RPlayer {
         setTimeout(function() {
             var countOfFiles           = that.download.mp3.length - that.numberOfUnwantedFiles();
             var countOfDownloadedFiles = 0;
-    
+
             for (const [key, value] of Object.entries(that.download.mp3)) {
                 if (
                     value.data !== undefined &&
@@ -306,7 +360,7 @@ export default class RPlayer {
                     xhrFields:{
                         responseType: 'arraybuffer'
                     },
-                    error: function(jqXHR, textStatus, errorThrown){
+                    error: function(jqXHR, textStatus, errorThrown) {
                         that.getMp3ImgFileData(value);
                         console.log("[RPlayer]","I'm trying to get the image data for the \"" + value.fileName + "\" file again.");
                     },
@@ -341,6 +395,12 @@ export default class RPlayer {
         for (const [key, value] of Object.entries(this.download.mp3)) {
             if (value.data) {
                 zip.folder(baseFolderName).file(value.fileName,this.putID3(value));
+            }
+        }
+
+        for (const [key, value] of Object.entries(this.lyrics)) {
+            if ($("#rplayerDownloads #rplayerCheckboxDownloadBundleOptions_LyricsFile").is(":checked")) {
+                zip.folder(baseFolderName).folder("lyrics").file(value.fileName,value.html);
             }
         }
 
