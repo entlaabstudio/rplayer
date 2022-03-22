@@ -19,6 +19,7 @@ export default class RPlayer {
         this.download.mp3  = [];
         this.downloadIndex = 0;
         this.lyrics        = [];
+        this.story         = [];
         
         this.init();
 
@@ -50,6 +51,9 @@ export default class RPlayer {
             "</div>" +
             "<div class=\"ui toggle checkbox\">" +
                 "<input type=\"checkbox\" checked=\"checked\" id=\"rplayerCheckboxDownloadBundleOptions_LyricsFile\"><label for=\"rplayerCheckboxDownloadBundleOptions_LyricsFile\">Lyrics for songs to separate files</label>" +
+            "</div>" +
+            "<div class=\"ui toggle checkbox\">" +
+                "<input type=\"checkbox\" checked=\"checked\" id=\"rplayerCheckboxDownloadBundleOptions_InfoFile\"><label for=\"rplayerCheckboxDownloadBundleOptions_InfoFile\">Songs informations files</label>" +
             "</div>"
         );
     }
@@ -107,6 +111,7 @@ export default class RPlayer {
                     srcImgFile: value.info.image,
                     srcIconFile: value.info.icon,
                     checkboxId: checkboxId,
+                    storyHtml: this.getTrackStory(value),
                     comment: {
                         description: '',
                         text: 
@@ -120,6 +125,30 @@ export default class RPlayer {
                 };
             }
         }
+    }
+
+    getTrackStory(song) {
+        var storyRet = {};
+
+        storyRet.story    = "";
+
+        storyRet.story += 
+        "<body style='font-family: courier'>\n" +
+        "\n<h1>" + song.mediaName + "</h1>";
+
+        for (const [key, value] of Object.entries(song.info.anyHtml)) {
+            if (value.noDownloadRender === undefined) {
+                storyRet.story += "\n<h2>" + value.id + "</h2>";
+                storyRet.story += "\n" + value.html;
+            }
+        }
+        storyRet.story += this.getHtmlFooter() + "\n</body>";
+
+        var i = this.story.length;
+        
+        this.story[i] = {};
+        this.story[i].fileName = song.mediaName + ".htm";
+        this.story[i].html     = storyRet.story;
     }
 
     getArtistDonations() {
@@ -392,15 +421,24 @@ export default class RPlayer {
         console.log("[RPlayer]","Adding data to ZIP archive.");
         var baseFolderName = this.rplayerCfg.album.info.composer + " - " + this.rplayerCfg.album.info.year + " - " + this.rplayerCfg.album.info.name;
         
+        // ZIP mp3
         for (const [key, value] of Object.entries(this.download.mp3)) {
             if (value.data) {
                 zip.folder(baseFolderName).file(value.fileName,this.putID3(value));
             }
         }
 
+        // ZIP Lyrics
         for (const [key, value] of Object.entries(this.lyrics)) {
             if ($("#rplayerDownloads #rplayerCheckboxDownloadBundleOptions_LyricsFile").is(":checked")) {
                 zip.folder(baseFolderName).folder("lyrics").file(value.fileName,value.html);
+            }
+        }
+
+        // ZIP Info
+        for (const [key, value] of Object.entries(this.story)) {
+            if ($("#rplayerDownloads #rplayerCheckboxDownloadBundleOptions_InfoFile").is(":checked")) {
+                zip.folder(baseFolderName).folder("info").file(value.fileName,value.html);
             }
         }
 
