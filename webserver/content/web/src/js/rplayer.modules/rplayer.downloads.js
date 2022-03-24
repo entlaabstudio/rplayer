@@ -484,14 +484,14 @@ export default class RPlayer {
     getOtherFiles() {
         for (const [key, value] of Object.entries(this.download.others)) {
             for (const [key2, value2] of Object.entries(value.files)) {
-                this.getOtherFileData(value2);
+                this.getFileData(value2);
             }
         }
     }
     
     getMp3Files() {
         for (const [key, value] of Object.entries(this.download.mp3)) {
-            this.getMp3FileData(value);
+            this.getFileData(value);
         }
     }
 
@@ -552,6 +552,32 @@ export default class RPlayer {
     getMp3IconsFiles() {
         for (const [key, value] of Object.entries(this.download.mp3)) {
             this.getMp3IconFileData(value);
+        }
+    }
+
+    getFileData(value) {
+        var value;
+        var that = this;
+
+        if (!value.data && value.download == true) {
+            console.log("[RPlayer]","Getting the data of the \"" + value.fileName + "\" file.");
+            setTimeout(function() {
+                $.ajax({
+                    type: "GET",
+                    url: value.srcFile,
+                    xhrFields:{
+                        responseType: 'arraybuffer'
+                    },
+                    error: function(jqXHR, textStatus, errorThrown){
+                        that.getFileData(value);
+                        console.log("[RPlayer]","I'm trying to get the data for the file \"" + value.fileName + "\" again.");
+                    },
+                    success: function(data) {
+                        value.data = data;
+                        console.log("[RPlayer]","I got the data for the file \"" + value.fileName + "\".");
+                    }
+                });
+            },6000);
         }
     }
 
@@ -866,58 +892,5 @@ export default class RPlayer {
 
         writer.addTag();
         return writer.arrayBuffer;
-    }
-
-    getMp3FileData(value) {
-        var value;
-        var that = this;
-
-        if (!value.data && value.download == true) {
-            console.log("[RPlayer]","Getting the data of the \"" + value.fileName + "\" file.");
-            setTimeout(function() {
-                $.ajax({
-                    type: "GET",
-                    url: value.srcFile,
-                    xhrFields:{
-                        responseType: 'arraybuffer'
-                    },
-                    error: function(jqXHR, textStatus, errorThrown){
-                        that.getMp3FileData(value);
-                        console.log("[RPlayer]","I'm trying to get the data for the file \"" + value.fileName + "\" again.");
-                    },
-                    success: function(data) {
-                        value.data = data;
-                        console.log("[RPlayer]","I got the data for the file \"" + value.fileName + "\".");
-                    }
-                });
-            },6000);
-        }
-    }
-
-    getOtherFileData(value) {
-        var value;
-        var that = this;
-
-        if (!value.data && value.download == true) {
-            console.log("[RPlayer]","Getting the data of the \"" + value.fileName + "\" file.");
-            setTimeout(function() {
-                $.ajax({
-                    type: "GET",
-                    url: value.srcFile,
-                    xhrFields:{
-                        responseType: 'arraybuffer'
-                    },
-                    error: function(jqXHR, textStatus, errorThrown){
-                        that.getOtherFileData(value);
-                        console.log("[RPlayer]","I'm trying to get the data for the file \"" + value.fileName + "\" again.");
-                    },
-                    success: function(data) {
-                        value.data = new Uint8Array;
-                        value.data = data;
-                        console.log("[RPlayer]","I got the data for the file \"" + value.fileName + "\".");
-                    }
-                });
-            },6000);
-        }
     }
 }
