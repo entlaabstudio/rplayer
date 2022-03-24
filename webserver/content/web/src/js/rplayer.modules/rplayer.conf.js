@@ -931,8 +931,9 @@ export default class RPlayerConf {
                             mp3: "media/sounds/mp3/5.mp3",
                             others: {
                                 0: {
-                                    name: "Spectre - lyrics video",
+                                    name: "Spectre - Lyrics video.mp4",
                                     path: "media/videos/Spectre-1080p_60fps_H264-128kbit_AAC.mp4",
+                                    folder: "videos",
                                 }
                             }
                         },

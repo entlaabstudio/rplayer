@@ -38,11 +38,69 @@ export default class RPlayer {
                 that.checkForm();
                 that.tracks();
                 that.bundleOptions();
+                that.otherFiles();
                 clearInterval(int);
             }
         },362);
     }
 
+    otherFiles() {
+        this.download.others = [];
+        var i;
+        var i2;
+        for (const [key, value] of Object.entries(this.rplayerCfg.album.tracks)) {
+            if (value,value.downloads.others !== undefined) {
+                i = this.download.others.length;
+                this.download.others[i] = {};
+                this.download.others[i].mediaName = value.mediaName;
+                this.download.others[i].files = [];
+                for (const [key2, value2] of Object.entries(value.downloads.others)) {
+                    i2 = this.download.others[i].files.length;
+                    this.download.others[i].files[i2] = {};
+                    this.download.others[i].files[i2].fileName = value2.name;
+                    this.download.others[i].files[i2].path = value2.path;
+                    this.download.others[i].files[i2].folder = value2.folder;
+                    this.download.others[i].files[i2].download = true;
+                    this.download.others[i].files[i2].checkboxId = "rplayerCheckboxDownloadOtherFile_" + key + "_" + key2;
+                }
+            }
+        }
+        this.renderFieldsetForOthers();
+    }
+
+    renderFieldsetForOthers() {
+        try {
+            if (this.download.others.length !== undefined) {
+                $("#rplayerDownloads .fieldsetBox:first").after(
+                    this.getFieldsetsForOthers()
+                );
+            }   
+        } catch (error) {
+            
+        }
+    }
+
+    getFieldsetsForOthers() {
+        var html = "";
+        for (const [key, value] of Object.entries(this.download.others)) {
+            html += 
+            "<div class=\"fieldsetBox\">" +
+                "<fieldset class=\"rplayerDownloadsOthers\">" +
+                    "<legend>Downloads for track " + value.mediaName + "</legend>";
+            for (const [key2, value2] of Object.entries(value.files)) {
+                html +=
+                "<div class=\"ui toggle checkbox\">" +
+                    "<input type=\"checkbox\" checked=\"checked\" id=\"" + value2.checkboxId + "\"><label for=\"" + value2.checkboxId + "\">" + value2.fileName + "</label>" +
+                "</div>";
+            }
+            html +=
+                "</fieldset>" +
+            "</div>"
+        }
+
+        return html;
+    }
+    
     bundleOptions() {
         $("#rplayerDownloads .rplayerDownloadsBundleOptions").append(
             "<div class=\"ui toggle checkbox\">" +
@@ -73,7 +131,7 @@ export default class RPlayer {
         $("#rplayerDownloads form:first-child").on("change",function(e) {
             var elementId = e.originalEvent.path[0].id;
 
-            // set downloads
+            // set mp3 downloads
             for (const [key, value] of Object.entries(that.download.mp3)) {
                 if ($("#" + value.checkboxId).is(":checked")) {
                     value.download = true;
@@ -81,6 +139,18 @@ export default class RPlayer {
                     value.download = false;
                 }
             }
+
+            // set other downloads
+            for (const [key, value] of Object.entries(that.download.others)) {
+                for (const [key2, value2] of Object.entries(value.files)) {
+                    if ($("#" + value2.checkboxId).is(":checked")) {
+                        value2.download = true;
+                    } else {
+                        value2.download = false;
+                    }
+                }
+            }
+            console.log(that.download.others);
 
             // responsibilities
             if (elementId == "rplayerCheckboxDownloadBundleOptions_AlbumInfoFile") {
