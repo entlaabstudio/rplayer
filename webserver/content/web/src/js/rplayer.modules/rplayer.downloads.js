@@ -207,7 +207,7 @@ export default class RPlayer {
                             "\n</td>" +
                         "\n</tr>" +
                     "\n</table>" +
-                "\n<div class=\"footer\">" +
+                "\n</div>" +
             "\n</body>" +
         "\n</html>";
 
