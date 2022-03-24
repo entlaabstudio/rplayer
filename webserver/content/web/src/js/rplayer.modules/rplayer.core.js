@@ -346,10 +346,19 @@ export default class RPlayer {
                                     "<span class='rplayerLocalText' data-phrase='helpLyrics'>Show / hide lyrics</span>" +
                                 "</td>" +
                             "</tr>" +
+                            "<tr style='border-bottom: 1px solid rgba(0,0,0,.1)'>" +
+                                "<td>" +
+                                    "<span class='rplayerLocalText' data-phrase='helpKeyBluetooth'><i class='ui icon bluetooth'></i></span>" +
+                                "</td>" +
+                                "<td>" +
+                                    "<span class='rplayerLocalText' data-phrase='helpBluetooth'>All standard bluetooth commands</span>" +
+                                "</td>" +
+                            "</tr>" +
                         "</table>" +
                         "<br>" +
                         
                         this.rplayerCfg.conf.app.donations.html +
+                        "<p>" + this.rplayerCfg.conf.app.donations.securityPhrase + "</p>" +
                         this.donations() +
 
                         "<div>" +

@@ -66,6 +66,7 @@ export default class RPlayerConf {
                         "helpStopAfterTrack" : "Stop after track",
                         "helpLoopAll"        : "Loop all",
                         "helpLyrics"         : "Show / hide lyrics",
+                        "helpBluetooth"      : "All standard bluetooth commands",
                         "byRobertRajs"       : "by Robert Rajs",
                         // modules.info
                         "infoAlbumName"      : "Album name",
@@ -78,7 +79,8 @@ export default class RPlayerConf {
                     },
                 },
                 donations: {
-                    html: "<p>Do you want to help me create a decentralized ecosystem around this freedom media player without intermediaries? RPlayer specializes in listening to music albums and its main priority is longevity and the content itself, which is unchangeable after release, similar to an analog medium. Please contribute to this project. Thank you for listening to good music, my friend. If you are using an IPFS node, please pin it to local. <span style=\"white-space: nowrap;\"><i class=\"smile outline icon\"></i><i class=\"thumbs up icon\"></i></span></p><br>",
+                    html: "<p>Do you want to help me create a decentralized ecosystem around this freedom media player without intermediaries? RPlayer specializes in listening to music albums and its main priority is longevity and the content itself, which is unchangeable after release, similar to an analog medium. Please contribute to this project. Thank you for listening to good music, my friend. If you are using an IPFS node, please pin it to local. <span style=\"white-space: nowrap;\"><i class=\"smile outline icon\"></i><i class=\"thumbs up icon\"></i></span></p>",
+                    securityPhrase: "Never send rewards if you have obtained a link to the RPlayer from unverified sources. The correct Web3 URL is a guarantee of the correct addresses for sending rewards.",
                     wallets: {
                         0: {
                             ccurrency: "Bitcoin",

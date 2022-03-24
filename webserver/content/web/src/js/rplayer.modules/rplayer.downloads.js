@@ -161,15 +161,21 @@ export default class RPlayer {
                         "\nwidth: 10em;" +
                         "\nheight: 10em;" +
                     "\n}" +
+                    "\na.blockLink {" +
+                        "\ndisplay: block;" +
+                    "\n}" +
                 "\n</style>" +
             "\n</head>" +
             "\n<body style=\"font-family: courier\">\n" +
                 // Content
                 htmlIn +
                 "\n<h2>Generate by RPlayer v" + this.rplayerCfg.app.version + " (" + this.rplayerCfg.app.date + ")</h2>" +
-                "\n<div class=\"qr\">" +
-                    QrCod.createSvgTag({}) +
-                "\n</div>" +
+                "\n<a class=\"blockLink\" href=\"" + this.rplayerObj.getURLAddress() + "\">" +
+                    "\nReward options for author of the music or author of the RPlayer are available under this link. " + this.rplayerCfg.app.donations.securityPhrase + "<br><br>" +
+                    "\n<div class=\"qr\">" +
+                        QrCod.createSvgTag({}) +
+                    "\n</div>" +
+                "\n</a>" +
             "\n</body>" +
         "\n</html>" +
         // Footer
