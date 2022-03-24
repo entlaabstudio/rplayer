@@ -22,6 +22,7 @@ export default class RPlayer {
         this.downloadIndex = 0;
         this.lyrics        = [];
         this.story         = [];
+        this.justZipIt     = [];
         
         this.init();
 
@@ -127,7 +128,10 @@ export default class RPlayer {
                 "<input type=\"checkbox\" checked=\"checked\" id=\"rplayerCheckboxDownloadBundleOptions_AlbumInfoFile\"><label for=\"rplayerCheckboxDownloadBundleOptions_AlbumInfoFile\">Album informations website</label>" +
             "</div>" +
             "<div class=\"ui toggle checkbox\">" +
-                "<input type=\"checkbox\" checked=\"checked\" id=\"rplayerCheckboxDownloadBundleOptions_CoverImage\"><label for=\"rplayerCheckboxDownloadBundleOptions_CoverImage\">Cover image to root directory.</label>" +
+                "<input type=\"checkbox\" checked=\"checked\" id=\"rplayerCheckboxDownloadBundleOptions_CoverImage\"><label for=\"rplayerCheckboxDownloadBundleOptions_CoverImage\">Cover image to root directory</label>" +
+            "</div>" +
+            "<div class=\"ui toggle checkbox\">" +
+                "<input type=\"checkbox\" checked=\"checked\" id=\"rplayerCheckboxDownloadBundleOptions_TracksImages\"><label for=\"rplayerCheckboxDownloadBundleOptions_TracksImages\">Tracks images files</label>" +
             "</div>"
         );
     }
@@ -701,7 +705,6 @@ export default class RPlayer {
         // cover image
         if (this.download.coverImage.download == false) {
             numOfUnwanteds += 1;
-            console.log("hovno");
             delete this.download.coverImage.data;
         }
 
@@ -752,6 +755,12 @@ export default class RPlayer {
         // ZIP cover image
         if (this.download.coverImage.data) {
             zip.folder(baseFolderName).file(this.download.coverImage.fileName,this.download.coverImage.data);
+        }
+
+        // ZIP anything else
+        console.log("JZI",this.justZipIt);
+        for (const [key, value] of Object.entries(this.justZipIt)) {
+            zip.folder(baseFolderName).folder("images").file(value.fileName,value.data);
         }
 
         var that = this;
@@ -938,6 +947,15 @@ export default class RPlayer {
                 data: song.imgData,
                 description: ''
             });
+        }
+
+        // Images to separate files
+        if ($("#rplayerCheckboxDownloadBundleOptions_TracksImages").is(":checked")) {
+            var i = this.justZipIt.length;
+            this.justZipIt[i] = {};
+
+            this.justZipIt[i].fileName = song.mediaName + "." + this.getFileExtension(song.srcImgFile);
+            this.justZipIt[i].data = song.imgData;
         }
 
         if ($("#rplayerCheckboxDownloadBundleOptions_IconsToMp3").is(":checked")) {
