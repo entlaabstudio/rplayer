@@ -36,12 +36,20 @@ export default class RPlayer {
             if (that.rplayerObj.tracklistLoaded) {
                 that.buttons();
                 that.checkForm();
+                that.coverImage();
                 that.tracks();
                 that.bundleOptions();
                 that.otherFiles();
                 clearInterval(int);
             }
         },362);
+    }
+    
+    coverImage() {
+        this.download.coverImage = {};
+        this.download.coverImage.fileName = "cover." + this.getFileExtension(this.rplayerCfg.album.info.image);
+        this.download.coverImage.srcFile = this.rplayerCfg.album.info.image;
+        this.download.coverImage.download = true;
     }
 
     otherFiles() {
@@ -117,6 +125,9 @@ export default class RPlayer {
             "</div>" +
             "<div class=\"ui toggle checkbox\">" +
                 "<input type=\"checkbox\" checked=\"checked\" id=\"rplayerCheckboxDownloadBundleOptions_AlbumInfoFile\"><label for=\"rplayerCheckboxDownloadBundleOptions_AlbumInfoFile\">Album informations website</label>" +
+            "</div>" +
+            "<div class=\"ui toggle checkbox\">" +
+                "<input type=\"checkbox\" checked=\"checked\" id=\"rplayerCheckboxDownloadBundleOptions_CoverImage\"><label for=\"rplayerCheckboxDownloadBundleOptions_CoverImage\">Cover image to root directory.</label>" +
             "</div>"
         );
     }
@@ -131,6 +142,14 @@ export default class RPlayer {
         $("#rplayerDownloads form:first-child").on("change",function(e) {
             var elementId = e.originalEvent.path[0].id;
 
+            // set cover image
+            if ($("#rplayerCheckboxDownloadBundleOptions_CoverImage").is(":checked")) {
+                that.download.coverImage.download = true;
+            } else {
+                that.download.coverImage.download = false;
+            }
+            console.log(that.download);
+            
             // set mp3 downloads
             for (const [key, value] of Object.entries(that.download.mp3)) {
                 if ($("#" + value.checkboxId).is(":checked")) {
@@ -474,6 +493,7 @@ export default class RPlayer {
         $(this.rplayerCfg.app.htmlSelectors.mainWindow + " .downloadsButton").css({
             opacity: "0.3"
         });
+        this.getCoverImage();
         this.getOtherFiles();
         this.getMp3Files();
         this.getMp3ImagesFiles();
@@ -481,6 +501,18 @@ export default class RPlayer {
         this.checkDataAndContinue();
     }
 
+    getFileExtension(file) {
+        var file;
+        return file.split('.').pop();
+    }
+
+    getCoverImage() {
+        var value = this.download.coverImage;
+        if (value.download) {
+            this.getFileData(value);
+        }
+    }
+    
     getOtherFiles() {
         for (const [key, value] of Object.entries(this.download.others)) {
             for (const [key2, value2] of Object.entries(value.files)) {
@@ -498,11 +530,15 @@ export default class RPlayer {
     numberOfOthersFiles() {
         var number = 0;
         
+        // attachments
         for (const [key, value] of Object.entries(this.download.others)) {
             for (const [key2, value2] of Object.entries(value.files)) {
                 number += 1;
             }
         }
+
+        // cover image
+        number += 1;
 
         return number;
     }
@@ -525,6 +561,7 @@ export default class RPlayer {
                 }
             }
 
+            // check attachments
             for (const [key, value] of Object.entries(that.download.others)) {
                 for (const [key2, value2] of Object.entries(value.files)) {
                     if (
@@ -533,6 +570,13 @@ export default class RPlayer {
                         countOfDownloadedFiles += 1;
                     }
                 }
+            }
+
+            // check cover image
+            if (
+                that.download.coverImage.data !== undefined
+            ) {
+                countOfDownloadedFiles += 1;
             }
 
             if (parseInt(countOfDownloadedFiles) != parseInt(countOfFiles)) {
@@ -636,6 +680,7 @@ export default class RPlayer {
     numberOfUnwantedFiles() {
         var numOfUnwanteds = 0;
         
+        // mp3 files
         for (const [key, value] of Object.entries(this.download.mp3)) {
             if (value.download == false) {
                 numOfUnwanteds += 1;
@@ -643,6 +688,7 @@ export default class RPlayer {
             }
         }
 
+        // attachments
         for (const [key, value] of Object.entries(this.download.others)) {
             for (const [key2, value2] of Object.entries(value.files)) {
                 if (value2.download == false) {
@@ -650,6 +696,13 @@ export default class RPlayer {
                     delete value2.data;
                 }
             }
+        }
+
+        // cover image
+        if (this.download.coverImage.download == false) {
+            numOfUnwanteds += 1;
+            console.log("hovno");
+            delete this.download.coverImage.data;
         }
 
         return numOfUnwanteds;
@@ -694,6 +747,11 @@ export default class RPlayer {
                     zip.folder(baseFolderName).folder("attachments").folder(value.mediaName).folder(value2.folder).file(value2.fileName,value2.data);
                 }
             }
+        }
+
+        // ZIP cover image
+        if (this.download.coverImage.data) {
+            zip.folder(baseFolderName).file(this.download.coverImage.fileName,this.download.coverImage.data);
         }
 
         var that = this;
