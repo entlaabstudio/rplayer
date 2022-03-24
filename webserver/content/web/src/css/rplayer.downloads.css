@@ -11,7 +11,7 @@
     user-select: none;
 }
 
-#rplayerDownloads div:first-child {
+#rplayerDownloads div:first-child:not(.fieldsetBox) {
     display: flex;
     padding: 1em;
     justify-content: safe center;
@@ -22,7 +22,7 @@
     margin: auto;
 }
 
-#rplayerDownloads div:first-child div:first-child {
+#rplayerDownloads div:first-child:not(.fieldsetBox) div:first-child:not(.fieldsetBox) {
     display: flex;
     align-items: center;
     flex-flow: wrap;
@@ -59,6 +59,15 @@
     text-align: left;
     background-color: var(--downloadsBg);
     box-shadow: var(--downloadsBoxShadow);
+}
+
+#rplayerDownloads .fieldsetBox {
+    position: relative;
+    max-width: 100%;
+    overflow: auto;
+    width: fit-content;
+    padding: 0;
+    margin: 0;
 }
 
 #rplayerDownloads h2 {
