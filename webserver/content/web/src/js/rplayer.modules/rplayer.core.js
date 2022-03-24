@@ -63,7 +63,7 @@ export default class RPlayer {
     
                 if (value["downloads"]["others"] !== undefined) {
                     for (const [key2, value2] of Object.entries(value["downloads"]["others"])) {
-                        this.additionalSrcsChecked[prepareFilesKey] = value2.path;
+                        this.additionalSrcsChecked[prepareFilesKey] = value2.srcFile;
                         prepareFilesKey += 1;
                     }
                 }

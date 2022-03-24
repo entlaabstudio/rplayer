@@ -17,7 +17,7 @@ export default class RPlayerConf {
             configVersion: 1,
             app: {
                 name: "RPlayer",
-                version: "1.28.45", // <some platform updates>.<visible or control updates>.<unvisible updates>
+                version: "1.29.46", // <some platform updates>.<visible or control updates>.<unvisible updates>
                 date: "2022",
                 web3Protocol: "ipfs://",
                 preferences: {
@@ -932,10 +932,10 @@ export default class RPlayerConf {
                             others: {
                                 0: {
                                     name: "Spectre - Lyrics video.mp4",
-                                    path: "media/videos/Spectre-1080p_60fps_H264-128kbit_AAC.mp4",
-                                    folder: "videos",
+                                    srcFile: "media/videos/Spectre-1080p_60fps_H264-128kbit_AAC.mp4",
+                                    folder: "",
                                 }
-                            }
+                            },
                         },
                         info: {
                             image: "media/images/djinn.png",

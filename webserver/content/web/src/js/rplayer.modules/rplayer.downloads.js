@@ -58,7 +58,7 @@ export default class RPlayer {
                     i2 = this.download.others[i].files.length;
                     this.download.others[i].files[i2] = {};
                     this.download.others[i].files[i2].fileName = value2.name;
-                    this.download.others[i].files[i2].path = value2.path;
+                    this.download.others[i].files[i2].srcFile = value2.srcFile;
                     this.download.others[i].files[i2].folder = value2.folder;
                     this.download.others[i].files[i2].download = true;
                     this.download.others[i].files[i2].checkboxId = "rplayerCheckboxDownloadOtherFile_" + key + "_" + key2;
@@ -86,7 +86,7 @@ export default class RPlayer {
             html += 
             "<div class=\"fieldsetBox\">" +
                 "<fieldset class=\"rplayerDownloadsOthers\">" +
-                    "<legend>Downloads for track " + value.mediaName + "</legend>";
+                    "<legend>Attachments for " + value.mediaName + " track</legend>";
             for (const [key2, value2] of Object.entries(value.files)) {
                 html +=
                 "<div class=\"ui toggle checkbox\">" +
@@ -150,7 +150,6 @@ export default class RPlayer {
                     }
                 }
             }
-            console.log(that.download.others);
 
             // responsibilities
             if (elementId == "rplayerCheckboxDownloadBundleOptions_AlbumInfoFile") {
@@ -475,25 +474,47 @@ export default class RPlayer {
         $(this.rplayerCfg.app.htmlSelectors.mainWindow + " .downloadsButton").css({
             opacity: "0.3"
         });
+        this.getOtherFiles();
         this.getMp3Files();
         this.getMp3ImagesFiles();
         this.getMp3IconsFiles();
         this.checkDataAndContinue();
     }
 
+    getOtherFiles() {
+        for (const [key, value] of Object.entries(this.download.others)) {
+            for (const [key2, value2] of Object.entries(value.files)) {
+                this.getOtherFileData(value2);
+            }
+        }
+    }
+    
     getMp3Files() {
         for (const [key, value] of Object.entries(this.download.mp3)) {
             this.getMp3FileData(value);
         }
     }
 
+    numberOfOthersFiles() {
+        var number = 0;
+        
+        for (const [key, value] of Object.entries(this.download.others)) {
+            for (const [key2, value2] of Object.entries(value.files)) {
+                number += 1;
+            }
+        }
+
+        return number;
+    }
+    
     checkDataAndContinue() {
         var that = this;
 
         setTimeout(function() {
-            var countOfFiles           = that.download.mp3.length - that.numberOfUnwantedFiles();
+            var countOfFiles           = that.download.mp3.length + that.numberOfOthersFiles() - that.numberOfUnwantedFiles();
             var countOfDownloadedFiles = 0;
 
+            // check mp3 files and included media
             for (const [key, value] of Object.entries(that.download.mp3)) {
                 if (
                     value.data !== undefined &&
@@ -501,6 +522,16 @@ export default class RPlayer {
                     value.iconData !== undefined
                 ) {
                     countOfDownloadedFiles += 1;
+                }
+            }
+
+            for (const [key, value] of Object.entries(that.download.others)) {
+                for (const [key2, value2] of Object.entries(value.files)) {
+                    if (
+                        value2.data !== undefined
+                    ) {
+                        countOfDownloadedFiles += 1;
+                    }
                 }
             }
 
@@ -586,6 +617,15 @@ export default class RPlayer {
             }
         }
 
+        for (const [key, value] of Object.entries(this.download.others)) {
+            for (const [key2, value2] of Object.entries(value.files)) {
+                if (value2.download == false) {
+                    numOfUnwanteds += 1;
+                    delete value2.data;
+                }
+            }
+        }
+
         return numOfUnwanteds;
     }
 
@@ -619,6 +659,15 @@ export default class RPlayer {
         // ZIP album info
         if ($("#rplayerDownloads #rplayerCheckboxDownloadBundleOptions_AlbumInfoFile").is(":checked")) {
             zip.folder(baseFolderName).folder("info").file("index.htm",this.getAlbumInfoHtml());
+        }
+
+        // ZIP other files
+        for (const [key, value] of Object.entries(this.download.others)) {
+            for (const [key2, value2] of Object.entries(value.files)) {
+                if (value2.data) {
+                    zip.folder(baseFolderName).folder("attachments").folder(value.mediaName).folder(value2.folder).file(value2.fileName,value2.data);
+                }
+            }
         }
 
         var that = this;
@@ -837,7 +886,33 @@ export default class RPlayer {
                         console.log("[RPlayer]","I'm trying to get the data for the file \"" + value.fileName + "\" again.");
                     },
                     success: function(data) {
-                        // value.data = new Uint8Array;
+                        value.data = data;
+                        console.log("[RPlayer]","I got the data for the file \"" + value.fileName + "\".");
+                    }
+                });
+            },6000);
+        }
+    }
+
+    getOtherFileData(value) {
+        var value;
+        var that = this;
+
+        if (!value.data && value.download == true) {
+            console.log("[RPlayer]","Getting the data of the \"" + value.fileName + "\" file.");
+            setTimeout(function() {
+                $.ajax({
+                    type: "GET",
+                    url: value.srcFile,
+                    xhrFields:{
+                        responseType: 'arraybuffer'
+                    },
+                    error: function(jqXHR, textStatus, errorThrown){
+                        that.getOtherFileData(value);
+                        console.log("[RPlayer]","I'm trying to get the data for the file \"" + value.fileName + "\" again.");
+                    },
+                    success: function(data) {
+                        value.data = new Uint8Array;
                         value.data = data;
                         console.log("[RPlayer]","I got the data for the file \"" + value.fileName + "\".");
                     }
