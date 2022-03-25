@@ -1787,7 +1787,7 @@ export default class RPlayerConf {
                     // Ornaments
                     2: {
                         timeStart: 538500,
-                        mediaName: "Ornaments",
+                        mediaName: "Ornaments_w_vocals",
                         src: "media/images/ornaments_w_vocals.jpg"
                     },
                     // Labyrinth
@@ -1839,7 +1839,7 @@ export default class RPlayerConf {
                     },
                     15: {
                         timeStart: 1129367,
-                        mediaName: "Ornaments",
+                        mediaName: "Ornaments_w_vocals",
                         src: "media/images/ornaments_w_vocals.jpg"
                     },
                     16: {
@@ -1865,7 +1865,7 @@ export default class RPlayerConf {
                     // Bloom
                     20: {
                         timeStart: 1215000,
-                        mediaName: "Ornaments",
+                        mediaName: "Ornaments_w_vocals",
                         src: "media/images/ornaments_w_vocals.jpg"
                     },
                     // Ruin

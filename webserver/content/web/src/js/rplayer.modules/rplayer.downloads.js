@@ -38,12 +38,38 @@ export default class RPlayer {
                 that.buttons();
                 that.checkForm();
                 that.coverImage();
+                that.slideshowImages();
                 that.tracks();
                 that.bundleOptions();
                 that.otherFiles();
                 clearInterval(int);
             }
         },362);
+    }
+    
+    slideshowImages() {
+        this.download.slideshowImages = [];
+        var i;
+        var noEntry;
+
+        for (const [key, value] of Object.entries(this.rplayerCfg.slideShow.pictures)) {
+            noEntry = true;
+            i = this.download.slideshowImages.length;
+
+            for (const [key2, value2] of Object.entries(this.download.slideshowImages)) {
+                if (value2.srcFile == value.src) {
+                    noEntry = false;
+                }
+            }
+
+            if (noEntry) {
+                this.download.slideshowImages[i] = {};
+                
+                this.download.slideshowImages[i].fileName = value.mediaName + "." + this.getFileExtension(value.src);
+                this.download.slideshowImages[i].srcFile = value.src;
+                this.download.slideshowImages[i].download = true;
+            }
+        }
     }
     
     coverImage() {
@@ -132,6 +158,9 @@ export default class RPlayer {
             "</div>" +
             "<div class=\"ui toggle checkbox\">" +
                 "<input type=\"checkbox\" checked=\"checked\" id=\"rplayerCheckboxDownloadBundleOptions_TracksImages\"><label for=\"rplayerCheckboxDownloadBundleOptions_TracksImages\">Tracks images files</label>" +
+            "</div>" +
+            "<div class=\"ui toggle checkbox\">" +
+                "<input type=\"checkbox\" checked=\"checked\" id=\"rplayerCheckboxDownloadBundleOptions_SlideshowImages\"><label for=\"rplayerCheckboxDownloadBundleOptions_SlideshowImages\">Slideshow images files</label>" +
             "</div>"
         );
     }
@@ -146,13 +175,21 @@ export default class RPlayer {
         $("#rplayerDownloads form:first-child").on("change",function(e) {
             var elementId = e.originalEvent.path[0].id;
 
+            // set slideshow images
+            for (const [key, value] of Object.entries(that.download.slideshowImages)) {
+                if ($("#rplayerCheckboxDownloadBundleOptions_SlideshowImages").is(":checked")) {
+                    value.download = true;
+                } else {
+                    value.download = false;
+                }
+            }
+            
             // set cover image
             if ($("#rplayerCheckboxDownloadBundleOptions_CoverImage").is(":checked")) {
                 that.download.coverImage.download = true;
             } else {
                 that.download.coverImage.download = false;
             }
-            console.log(that.download);
             
             // set mp3 downloads
             for (const [key, value] of Object.entries(that.download.mp3)) {
@@ -497,12 +534,19 @@ export default class RPlayer {
         $(this.rplayerCfg.app.htmlSelectors.mainWindow + " .downloadsButton").css({
             opacity: "0.3"
         });
+        this.getslideshowImages();
         this.getCoverImage();
         this.getOtherFiles();
         this.getMp3Files();
         this.getMp3ImagesFiles();
         this.getMp3IconsFiles();
         this.checkDataAndContinue();
+    }
+
+    getslideshowImages() {
+        for (const [key, value] of Object.entries(this.download.slideshowImages)) {
+            this.getFileData(value);
+        }
     }
 
     getFileExtension(file) {
@@ -544,6 +588,11 @@ export default class RPlayer {
         // cover image
         number += 1;
 
+        // slideshow images
+        if ($("#rplayerCheckboxDownloadBundleOptions_SlideshowImages").is(":checked")) {
+            number += this.download.slideshowImages.length;
+        }
+
         return number;
     }
     
@@ -581,6 +630,15 @@ export default class RPlayer {
                 that.download.coverImage.data !== undefined
             ) {
                 countOfDownloadedFiles += 1;
+            }
+
+            // check slideshow images
+            for (const [key, value] of Object.entries(that.download.slideshowImages)) {
+                if (
+                    value.data !== undefined
+                ) {
+                    countOfDownloadedFiles += 1;
+                }
             }
 
             if (parseInt(countOfDownloadedFiles) != parseInt(countOfFiles)) {
@@ -757,10 +815,20 @@ export default class RPlayer {
             zip.folder(baseFolderName).file(this.download.coverImage.fileName,this.download.coverImage.data);
         }
 
+        // ZIP slideshow images
+        for (const [key, value] of Object.entries(this.download.slideshowImages)) {
+            if (value.data) {
+                zip.folder(baseFolderName).folder("images").folder("slideshow").file(value.fileName,value.data);
+                delete value.data;
+            }
+        }
+
         // ZIP anything else
-        console.log("JZI",this.justZipIt);
         for (const [key, value] of Object.entries(this.justZipIt)) {
-            zip.folder(baseFolderName).folder("images").file(value.fileName,value.data);
+            if (value.data) {
+                zip.folder(baseFolderName).folder(value.folder).file(value.fileName,value.data);
+                delete value.data;
+            }
         }
 
         var that = this;
@@ -955,6 +1023,7 @@ export default class RPlayer {
             this.justZipIt[i] = {};
 
             this.justZipIt[i].fileName = song.mediaName + "." + this.getFileExtension(song.srcImgFile);
+            this.justZipIt[i].folder = "images";
             this.justZipIt[i].data = song.imgData;
         }
 
