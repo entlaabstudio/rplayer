@@ -121,7 +121,7 @@ export default class RPlayer {
             html += 
             "<div class=\"fieldsetBox\">" +
                 "<fieldset class=\"rplayerDownloadsOthers\">" +
-                    "<legend>Attachments for " + value.mediaName + " track</legend>";
+                    "<legend><span class=\"rplayerLocalText\" data-phrase=\"downloadsAttachmentsFor\">Attachments for</span> " + value.mediaName + "</legend>";
             for (const [key2, value2] of Object.entries(value.files)) {
                 html +=
                 "<div class=\"ui toggle checkbox\">" +
@@ -139,28 +139,28 @@ export default class RPlayer {
     bundleOptions() {
         $("#rplayerDownloads .rplayerDownloadsBundleOptions").append(
             "<div class=\"ui toggle checkbox\">" +
-                "<input type=\"checkbox\" checked=\"checked\" id=\"rplayerCheckboxDownloadBundleOptions_ImagesToMp3\"><label for=\"rplayerCheckboxDownloadBundleOptions_ImagesToMp3\">Include images to mp3 files</label>" +
+                "<input type=\"checkbox\" checked=\"checked\" id=\"rplayerCheckboxDownloadBundleOptions_ImagesToMp3\"><label class=\"rplayerLocalText\" data-phrase=\"downloadsImagesToMp3\" for=\"rplayerCheckboxDownloadBundleOptions_ImagesToMp3\">Include images to mp3 files</label>" +
             "</div>" +
             "<div class=\"ui toggle checkbox\">" +
-                "<input type=\"checkbox\" checked=\"checked\" id=\"rplayerCheckboxDownloadBundleOptions_IconsToMp3\"><label for=\"rplayerCheckboxDownloadBundleOptions_IconsToMp3\">Include icons to mp3 files</label>" +
+                "<input type=\"checkbox\" checked=\"checked\" id=\"rplayerCheckboxDownloadBundleOptions_IconsToMp3\"><label class=\"rplayerLocalText\" data-phrase=\"downloadsIconsToMp3\" for=\"rplayerCheckboxDownloadBundleOptions_IconsToMp3\">Include icons to mp3 files</label>" +
             "</div>" +
             "<div class=\"ui toggle checkbox\">" +
-                "<input type=\"checkbox\" checked=\"checked\" id=\"rplayerCheckboxDownloadBundleOptions_LyricsFile\"><label for=\"rplayerCheckboxDownloadBundleOptions_LyricsFile\">Songs lyrics files</label>" +
+                "<input type=\"checkbox\" checked=\"checked\" id=\"rplayerCheckboxDownloadBundleOptions_LyricsFile\"><label class=\"rplayerLocalText\" data-phrase=\"downloadsLyricsFiles\" for=\"rplayerCheckboxDownloadBundleOptions_LyricsFile\">Songs lyrics files</label>" +
             "</div>" +
             "<div class=\"ui toggle checkbox\">" +
-                "<input type=\"checkbox\" checked=\"checked\" id=\"rplayerCheckboxDownloadBundleOptions_InfoFile\"><label for=\"rplayerCheckboxDownloadBundleOptions_InfoFile\">Songs informations files</label>" +
+                "<input type=\"checkbox\" checked=\"checked\" id=\"rplayerCheckboxDownloadBundleOptions_InfoFile\"><label class=\"rplayerLocalText\" data-phrase=\"downloadsInfoFiles\" for=\"rplayerCheckboxDownloadBundleOptions_InfoFile\">Songs informations files</label>" +
             "</div>" +
             "<div class=\"ui toggle checkbox\">" +
-                "<input type=\"checkbox\" checked=\"checked\" id=\"rplayerCheckboxDownloadBundleOptions_AlbumInfoFile\"><label for=\"rplayerCheckboxDownloadBundleOptions_AlbumInfoFile\">Album informations website</label>" +
+                "<input type=\"checkbox\" checked=\"checked\" id=\"rplayerCheckboxDownloadBundleOptions_AlbumInfoFile\"><label class=\"rplayerLocalText\" data-phrase=\"downloadsInfoWebsite\" for=\"rplayerCheckboxDownloadBundleOptions_AlbumInfoFile\">Album informations website</label>" +
             "</div>" +
             "<div class=\"ui toggle checkbox\">" +
-                "<input type=\"checkbox\" checked=\"checked\" id=\"rplayerCheckboxDownloadBundleOptions_CoverImage\"><label for=\"rplayerCheckboxDownloadBundleOptions_CoverImage\">Cover image to root directory</label>" +
+                "<input type=\"checkbox\" checked=\"checked\" id=\"rplayerCheckboxDownloadBundleOptions_CoverImage\"><label class=\"rplayerLocalText\" data-phrase=\"downloadsCoverImage\" for=\"rplayerCheckboxDownloadBundleOptions_CoverImage\">Cover image to root directory</label>" +
             "</div>" +
             "<div class=\"ui toggle checkbox\">" +
-                "<input type=\"checkbox\" checked=\"checked\" id=\"rplayerCheckboxDownloadBundleOptions_TracksImages\"><label for=\"rplayerCheckboxDownloadBundleOptions_TracksImages\">Tracks images files</label>" +
+                "<input type=\"checkbox\" checked=\"checked\" id=\"rplayerCheckboxDownloadBundleOptions_TracksImages\"><label class=\"rplayerLocalText\" data-phrase=\"downloadsTracksImages\" for=\"rplayerCheckboxDownloadBundleOptions_TracksImages\">Tracks images files</label>" +
             "</div>" +
             "<div class=\"ui toggle checkbox\">" +
-                "<input type=\"checkbox\" checked=\"checked\" id=\"rplayerCheckboxDownloadBundleOptions_SlideshowImages\"><label for=\"rplayerCheckboxDownloadBundleOptions_SlideshowImages\">Slideshow images files</label>" +
+                "<input type=\"checkbox\" checked=\"checked\" id=\"rplayerCheckboxDownloadBundleOptions_SlideshowImages\"><label class=\"rplayerLocalText\" data-phrase=\"downloadsSlshowImages\" for=\"rplayerCheckboxDownloadBundleOptions_SlideshowImages\">Slideshow images files</label>" +
             "</div>"
         );
     }
@@ -303,9 +303,9 @@ export default class RPlayer {
                 "\n<div class=\"middleBlock\">\n" +
                     // Content
                     htmlIn +
-                    "\n<h2>Generate by RPlayer v" + this.rplayerCfg.app.version + " (" + this.rplayerCfg.app.date + ")</h2>" +
+                    "\n<h2>" + this.rplayerCfg.app.localization.phrases["downloadsGeneratedByRplayer"] + " v" + this.rplayerCfg.app.version + " (" + this.rplayerCfg.app.date + ")</h2>" +
                     "\n<a class=\"blockLink\" href=\"" + this.rplayerObj.getURLAddress() + "\">" +
-                        "\nReward options for author of the music or author of the RPlayer are available under this link. " + this.rplayerCfg.app.donations.securityPhrase + "<br><br>" +
+                        "\n" + this.rplayerCfg.app.localization.phrases["downloadsRewardInfo"] + " " + this.rplayerCfg.app.donations.securityPhrase + "<br><br>" +
                         "\n<div class=\"qr\">" +
                             QrCod.createSvgTag({}) +
                         "\n</div>" +
@@ -317,7 +317,7 @@ export default class RPlayer {
                     "\n<table cellpadding='0' cellspacing='0'>" +
                         "\n<tr>" +
                             "\n<th>" +
-                                "\nAlbum:&nbsp;" +
+                                "\n" + this.rplayerCfg.app.localization.phrases["downloadsAlbum"] + ":&nbsp;" +
                             "\n</th>" +
                             "\n<td>" +
                                 "\n<a href='" + this.rplayerObj.getURLAddress() + "'>\n" +
@@ -327,7 +327,7 @@ export default class RPlayer {
                         "\n</tr>" +
                         "\n<tr>" +
                             "\n<th>" +
-                                "\nAuthor:&nbsp;" +
+                                "\n" + this.rplayerCfg.app.localization.phrases["downloadsAuthor"] + ":&nbsp;" +
                             "\n</th>" +
                             "\n<td>\n" +
                                 this.rplayerCfg.album.info.composer +
@@ -335,7 +335,7 @@ export default class RPlayer {
                         "\n</tr>" +
                         "\n<tr>" +
                             "\n<th>" +
-                                "\nYear:&nbsp;" +
+                                "\n" + this.rplayerCfg.app.localization.phrases["downloadsYear"] + ":&nbsp;" +
                             "\n</th>" +
                             "\n<td>\n" +
                                 this.rplayerCfg.album.info.year +
@@ -364,7 +364,7 @@ export default class RPlayer {
                 );
                 var genres = [];
                 var commentText = 
-                    'This file was generated by RPlayer v' + this.rplayerCfg.app.version + ' (' + this.rplayerCfg.app.date + ') at the URL:\n' +
+                    this.rplayerCfg.app.localization.phrases["downloadsGeneratedByRplayer"] + ' v' + this.rplayerCfg.app.version + ' (' + this.rplayerCfg.app.date + ') ' + this.rplayerCfg.app.localization.phrases["downloadsAtTheUrl"] + ':\n' +
                     this.rplayerObj.getURLAddress();
                 var i = 0;
                 for (const [key, value2] of Object.entries(value.info.genres)) {
@@ -420,15 +420,15 @@ export default class RPlayer {
         
         this.story[i] = {};
         this.story[i].fileName = song.mediaName + ".htm";
-        this.story[i].html     = this.getHtmlBody(song.mediaName + " track detail",storyRet.story);
+        this.story[i].html     = this.getHtmlBody(song.mediaName + " " + this.rplayerCfg.app.localization.phrases["downloadsTrackDetail"],storyRet.story);
     }
 
     getArtistDonations() {
         var lat    = false;
         var string = "\n\n";
 
-        string += "Donations for artist:\n";
-        string += "---------------------\n";
+        string += this.rplayerCfg.app.localization.phrases["downloadsDonatArtID3"] + ":\n";
+        string += this.rplayerCfg.app.localization.phrases["downloadsDonatArtID3U"] + "\n";
 
         for (const [key, value] of Object.entries(this.rplayerCfg.album.donations.wallets)) {
             if (lat) {
@@ -446,8 +446,8 @@ export default class RPlayer {
         var lat    = false;
         var string = "\n\n";
 
-        string += "Donations for RPlayer:\n";
-        string += "----------------------\n";
+        string += this.rplayerCfg.app.localization.phrases["downloadsDonatRPID3"] + ":\n";
+        string += this.rplayerCfg.app.localization.phrases["downloadsDonatRPID3U"] + "\n";
 
         for (const [key, value] of Object.entries(this.rplayerCfg.app.donations.wallets)) {
             if (lat) {
@@ -467,8 +467,8 @@ export default class RPlayer {
         var string = "\n\n";
         var html   = "";
 
-        string += "Lyrics:\n";
-        string += "-------\n";
+        string += this.rplayerCfg.app.localization.phrases["downloadsLyricsID3"] + ":\n";
+        string += this.rplayerCfg.app.localization.phrases["downloadsLyricsID3U"] + "\n";
 
         html   += "\n<h1>" + value.mediaName + "</h1>";
 
@@ -846,12 +846,12 @@ export default class RPlayer {
         var html = "";
         
         html +=
-        "\n<h1>Album information</h1>" +
+        "\n<h1>" + this.rplayerCfg.app.localization.phrases["downloadsAlbumInfoHead"] + "</h1>" +
         "\n<br>" +
         "\n<table cellpadding='0' cellspacing='0'>" +
             "\n<tr>" +
                 "\n<th style='text-align: left'>" +
-                    "\nAlbum:&nbsp;" +
+                    "\n" + this.rplayerCfg.app.localization.phrases["downloadsAlbum"] + ":&nbsp;" +
                 "\n</th>" +
                 "\n<td style='text-align: left'>" +
                     "\n<a href='" + this.rplayerObj.getURLAddress() + "'>\n" +
@@ -861,7 +861,7 @@ export default class RPlayer {
             "\n</tr>" +
             "\n<tr>" +
                 "\n<th style='text-align: left'>" +
-                    "\nAuthor:&nbsp;" +
+                    "\n" + this.rplayerCfg.app.localization.phrases["downloadsAuthor"] + ":&nbsp;" +
                 "\n</th>" +
                 "\n<td style='text-align: left'>\n" +
                     this.rplayerCfg.album.info.composer +
@@ -869,7 +869,7 @@ export default class RPlayer {
             "\n</tr>" +
             "\n<tr>" +
                 "\n<th style='text-align: left'>" +
-                    "\nYear:&nbsp;" +
+                    "\n" + this.rplayerCfg.app.localization.phrases["downloadsYear"] + ":&nbsp;" +
                 "\n</th>" +
                 "\n<td style='text-align: left'>\n" +
                     this.rplayerCfg.album.info.year +
@@ -877,7 +877,7 @@ export default class RPlayer {
             "\n</tr>" +
             "\n<tr>" +
                 "\n<th>" +
-                    "\nDuration:&nbsp;" +
+                    "\n" + this.rplayerCfg.app.localization.phrases["downloadsDuration"] + ":&nbsp;" +
                 "\n</th>" +
                 "\n<td>\n" +
                     this.rplayerObj.secondsToTime(this.rplayerObj.audioObject.duration) +
@@ -887,7 +887,7 @@ export default class RPlayer {
                 (this.rplayerCfg.album.info.label) ?
                 "\n<tr>" +
                     "\n<th style='text-align: left'>" +
-                        "\nLabel:&nbsp;" +
+                        "\n" + this.rplayerCfg.app.localization.phrases["downloadsLabel"] + ":&nbsp;" +
                     "\n</th>" +
                     "\n<td style='text-align: left'>\n" +
                         this.rplayerCfg.album.info.label +
@@ -900,7 +900,7 @@ export default class RPlayer {
                 (this.rplayerCfg.album.info.copyright) ?
                 "\n<tr>" +
                     "\n<th style='text-align: left'>" +
-                        "\nCopyright:&nbsp;" +
+                        "\n" + this.rplayerCfg.app.localization.phrases["downloadsCopyright"] + ":&nbsp;" +
                     "\n</th>" +
                     "\n<td style='text-align: left'>\n" +
                         this.rplayerCfg.album.info.copyright +
@@ -911,10 +911,10 @@ export default class RPlayer {
             ) +
         "\n</table>\n" +
         this.rplayerCfg.album.info.anyHtml +
-        "\n<h2>Tracklist</h2>\n" +
+        "\n<h2>" + this.rplayerCfg.app.localization.phrases["downloadsTracklist"] + "</h2>\n" +
         this.getTracklist();
 
-        return this.getHtmlBody("Album information",html);
+        return this.getHtmlBody(this.rplayerCfg.app.localization.phrases["downloadsAlbumInfoHead"],html);
     }
 
     getTracklist() {
@@ -963,14 +963,14 @@ export default class RPlayer {
                         (
                             this.rplayerObj.obj2array(this.rplayerCfg.album.tracks)[key][1].info
                         ) ? 
-                        "&nbsp;[<a href='tracks/" + this.tnames[key] + ".htm'>information</a>]" : 
+                        "&nbsp;[<a href='tracks/" + this.tnames[key] + ".htm'>" + this.rplayerCfg.app.localization.phrases["downloadsInformation"] + "</a>]" : 
                         ""
                     ) +
                     (
                         (
                             this.rplayerObj.obj2array(this.rplayerCfg.album.tracks)[key][1].words
                         ) ? 
-                        "&nbsp;[<a href='lyrics/" + this.tnames[key] + ".htm'>lyrics</a>]" : 
+                        "&nbsp;[<a href='lyrics/" + this.tnames[key] + ".htm'>" + this.rplayerCfg.app.localization.phrases["downloadsLyrics"] + "</a>]" : 
                         ""
                     ) +
                     "</td>"
@@ -981,7 +981,7 @@ export default class RPlayer {
                 (
                     this.rplayerObj.obj2array(this.rplayerCfg.album.tracks)[key][1].info.isrc
                 )
-                ? "\n<td>&nbsp;ISRC code: " + this.rplayerObj.obj2array(this.rplayerCfg.album.tracks)[key][1].info.isrc + "</td>"
+                ? "\n<td>&nbsp;" + this.rplayerCfg.app.localization.phrases["downloadsIsrcCode"] + ": " + this.rplayerObj.obj2array(this.rplayerCfg.album.tracks)[key][1].info.isrc + "</td>"
                 : ""
             ) +
             "</tr>";
