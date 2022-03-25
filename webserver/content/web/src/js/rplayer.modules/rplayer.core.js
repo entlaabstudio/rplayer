@@ -44,6 +44,9 @@ export default class RPlayer {
 
         // +++ Prepare media for check
         var prepareFilesKey = 0;
+
+        this.additionalSrcsChecked[prepareFilesKey] = this.rplayerCfg.conf.album.info.image;
+        prepareFilesKey += 1;
         
         if (rplayerCfg.conf.album.srcsForCheck !== undefined) {
             for (const [key, value] of Object.entries(rplayerCfg.conf.album.srcsForCheck)) {
