@@ -1,7 +1,6 @@
 {
     "require": {
         "semantic/ui": "^2.4",
-        "desandro/imagesloaded": "^4.1",
         "robinherbots/jquery.inputmask": "^5.0",
         "stuk/jszip": "^3.0"
     }
