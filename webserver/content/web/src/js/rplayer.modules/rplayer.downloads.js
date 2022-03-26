@@ -299,7 +299,7 @@ export default class RPlayer {
                         "\nmax-width: 60em;" +
                         "\nmargin: auto;" +
                     "\n}" +
-                    "\ntable th, table td {" +
+                    "\n.nowrap * {" +
                         "\nwhite-space: nowrap;" +
                     "\n}" +
                 "\n</style>" +
@@ -941,7 +941,7 @@ export default class RPlayer {
         var that = this;
 
         html += "\n<div style=\"width: 100%; overflow: auto;\">"
-        html += "\n<table cellspacing='0' cellpadding='0'>";
+        html += "\n<table class='nowrap' cellspacing='0' cellpadding='0'>";
         for (var key in this.tnames) {
             if (key == 0) {
                 tDuration = that.rplayerObj.secondsToTime(that.splits[parseInt(key) + 1]);
