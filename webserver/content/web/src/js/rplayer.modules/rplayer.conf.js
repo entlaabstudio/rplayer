@@ -17,7 +17,7 @@ export default class RPlayerConf {
             configVersion: 1,
             app: {
                 name: "RPlayer",
-                version: "1.29.46", // <some platform updates>.<visible or control updates>.<unvisible updates>
+                version: "1.30.47", // <some platform updates>.<visible or control updates>.<unvisible updates>
                 date: "2022",
                 web3Protocol: "ipfs://",
                 preferences: {

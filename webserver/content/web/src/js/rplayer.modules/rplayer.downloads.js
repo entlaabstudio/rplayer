@@ -237,9 +237,11 @@ export default class RPlayer {
         var htmlIn;
         var html = 
         "<!DOCTYPE html>" +
-        "\n<html>" +
+        "\n<html lang=\"" + this.rplayerCfg.app.localization.lang + "\">" +
             "\n<head>" +
-                "\n<meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\">" +
+                "\n<meta charset=\"UTF-8\">" +
+                "\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">" +
+                "\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">" +
                 "\n<meta name=\"generator\" content=\"RPlayer v" + this.rplayerCfg.app.version + " (" + this.rplayerCfg.app.date + "), " + this.rplayerObj.getURLAddress() + "\">" +
                 "\n<title>" + this.rplayerCfg.album.info.composer + " :: " + this.rplayerCfg.album.info.name + " (" + this.rplayerCfg.album.info.year + ")" + ((title) ? " :: " + title : "") + "</title>" +
                 "\n<link rel=\"icon\" href=\"data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8IS0tIENyZWF0b3I6IENvcmVsRFJBVyAyMDE4ICg2NCBiaXTFrykgLS0+DQo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjIxMG1tIiBoZWlnaHQ9IjIxMG1tIiB2ZXJzaW9uPSIxLjEiIHN0eWxlPSJzaGFwZS1yZW5kZXJpbmc6Z2VvbWV0cmljUHJlY2lzaW9uOyB0ZXh0LXJlbmRlcmluZzpnZW9tZXRyaWNQcmVjaXNpb247IGltYWdlLXJlbmRlcmluZzpvcHRpbWl6ZVF1YWxpdHk7IGZpbGwtcnVsZTpldmVub2RkOyBjbGlwLXJ1bGU6ZXZlbm9kZCINCnZpZXdCb3g9IjAgMCAyMTAwMCAyMTAwMCINCiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+DQogPGRlZnM+DQogIDxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQogICA8IVtDREFUQVsNCiAgICAuc3RyMSB7c3Ryb2tlOiMyQjJBMjk7c3Ryb2tlLXdpZHRoOjIwO3N0cm9rZS1taXRlcmxpbWl0OjIyLjkyNTZ9DQogICAgLnN0cjAge3N0cm9rZTpibGFjaztzdHJva2Utd2lkdGg6MjA7c3Ryb2tlLW1pdGVybGltaXQ6MjIuOTI1Nn0NCiAgICAuZmlsMSB7ZmlsbDpibGFja30NCiAgICAuZmlsMiB7ZmlsbDojNDE4M0M0fQ0KICAgIC5maWwwIHtmaWxsOndoaXRlfQ0KICAgXV0+DQogIDwvc3R5bGU+DQogPC9kZWZzPg0KIDxnIGlkPSJWcnN0dmFfeDAwMjBfMSI+DQogIDxtZXRhZGF0YSBpZD0iQ29yZWxDb3JwSURfMENvcmVsLUxheWVyIi8+DQogIDxnIGlkPSJMb2dvX3gwMDIwX1JQbGF5ZXIiPg0KICAgPHJlY3QgY2xhc3M9ImZpbDAiIHdpZHRoPSIyMTAwMCIgaGVpZ2h0PSIyMTAwMCIgcng9IjI5NzMuOTYiIHJ5PSIyOTczLjk2Ii8+DQogICA8ZyBpZD0iTG9nb194MDAyMF9SUGxheWVyX3gwMDIwXzEiPg0KICAgIDxwYXRoIGNsYXNzPSJmaWwxIiBkPSJNNjQ1MC40OCAxMjEwMy43bDY3MC44MyAtMzg3LjMgNzg4MS4yOCAtNDU1MC4yNmMxNDkuNDYsLTg2LjI5IDIzNSwtMjM0LjQ1IDIzNSwtNDA3LjAzIDAsLTE3Mi41OCAtODUuNTQsLTMyMC43NCAtMjM1LC00MDcuMDNsLTg1NTIuMTEgLTQ5MzcuNTZjLTE0OS40NiwtODYuMjkgLTMyMC41NCwtODYuMjkgLTQ3MCwwIC0xNDkuNDUsODYuMjkgLTIzNSwyMzQuNDUgLTIzNSw0MDcuMDNsMCA5ODc1LjExYzAsMTcyLjU4IDg1LjU0LDMyMC43NSAyMzUsNDA3LjA0IDE0OS40Niw4Ni4yOCAzMjAuNTQsODYuMjkgNDcwLDB6bTY3MC44MyAtMjU3Ny4xOWwwIC01NTM0LjggMCAtODE0LjA2IDcwNC44MSA0MDYuOTIgMjM5Ni44MyAxMzgzLjgxIDMxMDEuNjMgMTc5MC43MyAtMzEwMS42MyAxNzkwLjczIC0yMzk2LjgzIDEzODMuODEgLTcwNC44MSA0MDYuOTIgMCAtODE0LjA2eiIvPg0KICAgIDxwYXRoIGNsYXNzPSJmaWwxIiBkPSJNNjIxNS40OCAxMjc4NS43N2w0MzUuODMgMGMyNTguODcsMCA0NzAsMjExLjEzIDQ3MCw0NzBsMCA2MDE0LjIxYzAsMjU4Ljg3IC0yMTEuMTMsNDcwIC00NzAsNDcwbC00MzUuODMgMGMtMjU4Ljg3LDAgLTQ3MCwtMjExLjEzIC00NzAsLTQ3MGwwIC02MDE0LjIxYzAsLTI1OC44NyAyMTEuMTMsLTQ3MCA0NzAsLTQ3MHoiLz4NCiAgICA8cGF0aCBjbGFzcz0iZmlsMSBzdHIwIiBkPSJNOTg3Mi45NyAxOTI2OS45OGwwIC02MDE0LjIxYzAsLTI1OC44NyAyMTEuMTMsLTQ3MCA0NzAsLTQ3MGw0MzUuODMgMGMyNTguODcsMCA0NzAsMjExLjEzIDQ3MCw0NzBsMCA2MDE0LjIxYzAsMjU4Ljg3IC0yMTEuMTMsNDcwIC00NzAsNDcwbC00MzUuODMgMGMtMjU4Ljg3LDAgLTQ3MCwtMjExLjEzIC00NzAsLTQ3MHoiLz4NCiAgICA8cG9seWdvbiBjbGFzcz0iZmlsMiBzdHIxIiBwb2ludHM9IjcxMjEuMzEsMzk5MS43MSA3MTIxLjMxLDk1MjYuNTEgNzEyMS4zMSwxMDM0MC41NyA3ODI2LjEyLDk5MzMuNjUgMTAyMjIuOTUsODU0OS44NCAxMzMyNC41OCw2NzU5LjExIDEwMjIyLjk1LDQ5NjguMzggNzgyNi4xMiwzNTg0LjU3IDcxMjEuMzEsMzE3Ny42NSAiLz4NCiAgIDwvZz4NCiAgPC9nPg0KIDwvZz4NCjwvc3ZnPg0K\">" +
@@ -296,6 +298,9 @@ export default class RPlayer {
                     "\ndiv.middleBlock {" +
                         "\nmax-width: 60em;" +
                         "\nmargin: auto;" +
+                    "\n}" +
+                    "\ntable th, table td {" +
+                        "\nwhite-space: nowrap;" +
                     "\n}" +
                 "\n</style>" +
             "\n</head>" +
@@ -935,7 +940,8 @@ export default class RPlayer {
         var tDuration;
         var that = this;
 
-        html += "<table cellspacing='0' cellpadding='0'>";
+        html += "\n<div style=\"width: 100%; overflow: auto;\">"
+        html += "\n<table cellspacing='0' cellpadding='0'>";
         for (var key in this.tnames) {
             if (key == 0) {
                 tDuration = that.rplayerObj.secondsToTime(that.splits[parseInt(key) + 1]);
@@ -946,19 +952,19 @@ export default class RPlayer {
             }
 
             html +=
-            "<tr>" +
-            "<th style='text-align: left;'>" +
+            "\n<tr>" +
+            "\n<th style='text-align: left;'>" +
             this.tnames[key] +
-            "&nbsp;</th><td>(" +
+            "\n&nbsp;\n</th>\n<td>(" +
             tDuration +
-            ")</td>" +
+            ")\n</td>" +
             // info, lyrics
             (
                 (
                     this.rplayerObj.obj2array(this.rplayerCfg.album.tracks)[key][1].words ||
                     this.rplayerObj.obj2array(this.rplayerCfg.album.tracks)[key][1].info
                 ) ?
-                    "<td>" +
+                    "\n<td>" +
                     (
                         (
                             this.rplayerObj.obj2array(this.rplayerCfg.album.tracks)[key][1].info
@@ -973,8 +979,8 @@ export default class RPlayer {
                         "&nbsp;[<a href='lyrics/" + this.tnames[key] + ".htm'>" + this.rplayerCfg.app.localization.phrases["downloadsLyrics"] + "</a>]" : 
                         ""
                     ) +
-                    "</td>"
-                : "<td></td>"
+                    "\n</td>"
+                : "\n<td>\n</td>"
             ) +
             // ISRC codes
             (
@@ -984,9 +990,10 @@ export default class RPlayer {
                 ? "\n<td>&nbsp;" + this.rplayerCfg.app.localization.phrases["downloadsIsrcCode"] + ": " + this.rplayerObj.obj2array(this.rplayerCfg.album.tracks)[key][1].info.isrc + "</td>"
                 : ""
             ) +
-            "</tr>";
+            "\n</tr>";
         }
-        html += '</table>';
+        html += '\n</table>';
+        html += "\n</div>";
 
         return html;
     }

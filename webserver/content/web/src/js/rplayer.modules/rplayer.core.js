@@ -364,11 +364,10 @@ export default class RPlayer {
                             "</tr>" +
                         "</table>" +
                         "<br>" +
-                        
                         this.rplayerCfg.conf.app.donations.html +
                         "<p>" + this.rplayerCfg.conf.app.donations.securityPhrase + "</p>" +
                         this.donations() +
-
+                        "<br>" +
                         "<div>" +
                             this.license;
                         "</div>" +

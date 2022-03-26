@@ -358,6 +358,7 @@ label {
     /* background-image: url('../../media/images/dreamer_album.jpg'); */
     background-size: cover;
     background-position: center center;
+    background-attachment: fixed;
 }
 
 .rplayerUic {
@@ -443,7 +444,6 @@ label {
     max-width: 10em;
     width: 100%;
     max-height: 10em;
-    height: 100%;
 }
 
 .rplayerCard > img {
