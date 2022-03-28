@@ -270,14 +270,6 @@ label {
     display: inline-block;
 }
 
-.FullscreenDimmer {
-    position: absolute;
-    left: auto;
-    top: auto;
-    width: 100vw !important;
-    height: 100vh !important;
-}
-
 .rplayerOneTrack .name {
     font-weight: bold;
     float: left;

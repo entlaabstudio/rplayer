@@ -17,7 +17,7 @@ export default class RPlayerConf {
             configVersion: 1,
             app: {
                 name: "RPlayer",
-                version: "1.31.48", // <some platform updates>.<visible or control updates>.<unvisible updates>
+                version: "1.32.48", // <some platform updates>.<visible or control updates>.<unvisible updates>
                 date: "2022",
                 web3Protocol: "ipfs://",
                 preferences: {
@@ -249,7 +249,7 @@ export default class RPlayerConf {
                     label: "",
                     copyright: "",
                     lang: "en",
-                    composer: "YATSU band",
+                    composer: "YATSU",
                     anyHtml: 
                     "<p style='margin-top: 1em;'>" +
                         "Thank you for purchasing <a href=\"https://yatsuband.bandcamp.com/album/dreamer-producer-pack\" target=\"_blank\"><i class=\"bandcamp icon\" style=\"display: inline-block; padding: 0 !important\"></i>the \"Dreamer\" Producer Pack</a>, you are an awesome human being! " +
