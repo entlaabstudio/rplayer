@@ -2,11 +2,12 @@
  * @file Slideshow module for RPlayer web application
  * @copyright Robert Rajs 2022
  * @author Robert Rajs
- * @see {@link https://rajs.info}
- * @see {@link https://zesilovac.cz}
- * @see {@link https://technotramp.com}
- * @see {@link https://bandzone.cz/rajs}
- * @see {@link https://cs-cz.facebook.com/robert.rajs.9}
+ * @see {@link https://rajs.info|Home}
+ * @see {@link https://zesilovac.cz|Zesilovač}
+ * @see {@link https://bandzone.cz/rajs|Bandzone}
+ * @see {@link https://technotramp.com|Technotramp}
+ * @see {@link https://github.com/entlaabstudio/rplayer|GitHub}
+ * @see {@link https://cs-cz.facebook.com/robert.rajs.9|Facebook}
  * @license
  * Copyright (c) 2022 Robert Rajs
  * 
