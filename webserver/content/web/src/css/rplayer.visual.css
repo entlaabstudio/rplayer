@@ -102,6 +102,7 @@ a.rplayerOneTrack {
 
 .item5 .trackInfo {
     position: relative;
+    line-height: 1em;
 }
 
 .item6 {
@@ -168,6 +169,7 @@ a.rplayerOneTrack {
     grid-area: gA;
     text-align:  right;
     padding: 0 0 1em 0;
+    white-space: nowrap;
 }
 .itemB {
     grid-area: gB;
@@ -398,11 +400,12 @@ label {
     padding: 4em;
     position: fixed;
     background-color: var(--rSlideshowBg);
-    width: 100vw;
-    height: 100vh;
-    max-height: 100%;
     writing-mode: vertical-lr;
     z-index: var(--rSlideshowZIndex);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 @media (orientation: landscape) {

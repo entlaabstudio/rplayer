@@ -142,6 +142,14 @@
                 });
             }
 
+            $("#rplayerInfo .mediaImage").css({
+                paddingTop: "calc(" + ($("#rplayerInfo .mediaHeader").height() + "px + 1em)")
+            });
+
+            $("#rplayerInfo .mediaHeader").css({
+                maxWidth: ($("#rplayerInfo .mediaHeader").parent().width() + "px")
+            });
+
         } catch (error) {
             
         }
@@ -320,7 +328,7 @@
         var cfg = this.rplayerObj.rplayerCfg.conf;
         
         try {
-            html  = "<h1>";
+            html  = "<h1 class=\"mediaHeader\">";
             html += cfg
                     .album.tracks[this.rplayerObj.trackInfoSelected]
                     .mediaName;

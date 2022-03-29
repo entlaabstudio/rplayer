@@ -52,9 +52,10 @@
     color: var(--infoTextColor);
     background-color: var(--infoBg);
     position: fixed !important;
-    width: 100vw;
-    height: 100%;
-    max-height: 100vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     z-index: var(--wordsZIndex);
     text-shadow: .1em .1em .1em black;
 }
@@ -92,11 +93,13 @@
 #rplayerInfo .mediaImage {
     padding-top: 3.5em;
     width: 100%;
+    max-width: 100%;
 }
 
 #rplayerInfo .rplayerAlbumInfo {
     font-size: 1.2em;
     margin-top: 1em;
+    text-align: left;
 }
 
 #rplayerInfo .transport,
@@ -119,6 +122,7 @@
 
 #rplayerInfo h1:first-child {
     position: fixed;
+    text-align: left;
 }
 
 /* #rplayerInfo h3 {
@@ -130,6 +134,7 @@
 #rplayerInfo th {
     font-weight: normal;
     color: var(--currentTime);
+    white-space: nowrap;
 }
 
 #rplayerInfo h3 {
