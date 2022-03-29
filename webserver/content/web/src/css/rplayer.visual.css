@@ -318,7 +318,7 @@ label {
     justify-content: center; align-items: safe center;
     justify-self: center;
     align-self: center;
-    position: absolute;
+    position: fixed;
     width: fit-content;
     /* height: fit-content; */
     max-width: 90%;
