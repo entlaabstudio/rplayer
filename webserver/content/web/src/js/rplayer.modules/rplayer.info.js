@@ -46,6 +46,7 @@
         this.lastImageWidth  = 0;
         this.lastWordTimekey = 0;
         this.switchingNow    = false;
+        this.donationsHtml   = false;
         this.init();
 
         console.log("[RPlayer]","Info module loaded.")
@@ -68,27 +69,29 @@
     }   
 
     donations() {
-        var html = "<div class='ui centered grid rplayerInfoDonations'><div class='doubling three column row'>";
-        var lat  = false;
-        
-        this.rplayerObj.obj2array(this.rplayerObj.rplayerCfg.conf.album.donations.wallets).forEach(element => {
-            html += "<div class=\"column rplayerInfoCard\">"
-
-            var QrCod = new this.QrCode(0,'H');
-            QrCod.addData(element[1].adress);
-            QrCod.make();
-
-            html += "<strong>" + element[1].ccurrency + "</strong><br>";
-            html += "<img src=\"" + element[1].image + "\"></strong><br>";
-            html += "<div class=\"rplayerInfoCrQr\">" + QrCod.createSvgTag({}) + "</div><br>";
-            html += "<input type='text' class=\"rplayerInfoCrAdresses\" onClick='this.select();' value='" + element[1].adress + "' readonly='readonly'>";
+        if (this.donationsHtml == false) {
+            this.donationsHtml = "<div class='ui centered grid rplayerInfoDonations'><div class='doubling three column row'>";
+            var lat  = false;
             
-            html += "</div>";
-            
-            lat = true;
-        });
-        html += "</div></div>";
-        return html;
+            this.rplayerObj.obj2array(this.rplayerObj.rplayerCfg.conf.album.donations.wallets).forEach(element => {
+                this.donationsHtml += "<div class=\"column rplayerInfoCard\">"
+    
+                var QrCod = new this.QrCode(0,'H');
+                QrCod.addData(element[1].adress);
+                QrCod.make();
+    
+                this.donationsHtml += "<strong>" + element[1].ccurrency + "</strong><br>";
+                this.donationsHtml += "<img src=\"" + element[1].image + "\"></strong><br>";
+                this.donationsHtml += "<div class=\"rplayerInfoCrQr\">" + QrCod.createSvgTag({}) + "</div><br>";
+                this.donationsHtml += "<input type='text' class=\"rplayerInfoCrAdresses\" onClick='this.select();' value='" + element[1].adress + "' readonly='readonly'>";
+                
+                this.donationsHtml += "</div>";
+                
+                lat = true;
+            });
+            this.donationsHtml += "</div></div>";
+        }
+        return this.donationsHtml;
     }
     
     checkH1() {
@@ -467,11 +470,15 @@
             if ($("#rplayerInfo").css("opacity") != "0") {
                 that.transportInteractiveIcons();
                 that.setInfoForSelectedTrack();
-                that.transport();
-                that.checkH1();
                 that.wordsHighlight();
             }
         },97);
+        this.tickerSlow = setInterval(function() {
+            if ($("#rplayerInfo").css("opacity") != "0") {
+                that.transport();
+                that.checkH1();
+            }
+        },468);
     }
 
     wordsHighlight() {
