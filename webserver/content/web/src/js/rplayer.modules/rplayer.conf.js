@@ -128,6 +128,8 @@ export default class RPlayerConf {
                         "downloadsDonatRPID3U"        : "----------------------",
                         "downloadsDonatArtID3"        : "Donations for artist",
                         "downloadsDonatArtID3U"       : "---------------------",
+                        "downloadsArtUrlsID3"         : "URLs",
+                        "downloadsArtUrlsID3U"        : "----",
                         "downloadsTrackDetail"        : "track detail",
                         "downloadsImagesToMp3"        : "Include images to mp3 files",
                         "downloadsIconsToMp3"         : "Include icons to mp3 files",
@@ -137,6 +139,7 @@ export default class RPlayerConf {
                         "downloadsCoverImage"         : "Cover image to root directory",
                         "downloadsTracksImages"       : "Tracks images files",
                         "downloadsSlshowImages"       : "Slideshow images files",
+                        "downloadsArtUrls"            : "URLs",
                     },
                 },
                 donations: {

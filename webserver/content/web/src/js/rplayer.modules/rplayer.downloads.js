@@ -421,6 +421,7 @@ export default class RPlayer {
                             commentText +
                             ((this.rplayerCfg.album.donations !== undefined) ? this.getArtistDonations() : "") +
                             ((value.words !== undefined) ? this.getLyrics(value) : "") +
+                            ((this.rplayerCfg.album.info.miniIcons !== undefined) ? this.getArtistUrls() : "") +
                             ((this.rplayerCfg.app.donations !== undefined) ? this.getRPlayerDonations() : ""),
                     },
                     isrc: value.info.isrc,
@@ -452,6 +453,24 @@ export default class RPlayer {
         this.story[i].html     = this.getHtmlBody(song.mediaName + " " + this.rplayerCfg.app.localization.phrases["downloadsTrackDetail"],storyRet.story);
     }
 
+    getArtistUrls() {
+        var lat    = false;
+        var string = "\n\n";
+
+        string += this.rplayerCfg.app.localization.phrases["downloadsArtUrlsID3"] + ":\n";
+        string += this.rplayerCfg.app.localization.phrases["downloadsArtUrlsID3U"] + "\n";
+
+        for (const [key, value] of Object.entries(this.rplayerCfg.album.info.miniIcons)) {
+            if (lat) {
+                string += "\n";
+            }
+            string += value.name + ": " + value.url;
+            lat = true;
+        }
+
+        return string;
+    }
+    
     getArtistDonations() {
         var lat    = false;
         var string = "\n\n";
@@ -941,9 +960,25 @@ export default class RPlayer {
         "\n</table>\n" +
         this.rplayerCfg.album.info.anyHtml +
         "\n<h2>" + this.rplayerCfg.app.localization.phrases["downloadsTracklist"] + "</h2>\n" +
-        this.getTracklist();
+        this.getTracklist() +
+        "\n<h2>" + this.rplayerCfg.app.localization.phrases["downloadsArtUrls"] + "</h2>\n" +
+        this.getUrls();
 
         return this.getHtmlBody(this.rplayerCfg.app.localization.phrases["downloadsAlbumInfoHead"],html);
+    }
+
+    getUrls() {
+        var html = "<ul>";
+
+        for (const [key, value] of Object.entries(this.rplayerCfg.album.info.miniIcons)) {
+            html +=
+            "<li>" +
+                "[<a href=\"" + value.url + "\" target=\"" + value.target + "\">" + value.name + "</a>]" +
+            "</li>";
+        }
+        html += "</ul>";
+
+        return html;
     }
 
     getTracklist() {
