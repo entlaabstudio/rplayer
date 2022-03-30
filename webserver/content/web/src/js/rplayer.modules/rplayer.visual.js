@@ -78,7 +78,7 @@
         for (const [key, value] of Object.entries(this.rplayerObj.rplayerCfg.conf.album.info.miniIcons)) {
             if (value.onFront) {
                 $(this.rplayerObj.rplayerCfg.conf.app.htmlSelectors.mainWindow + " .itemA").prepend(
-                    "<a href=\"" + value.url + "\" target=\"" + value.target + "\">" +
+                    "<a href=\"" + value.url + "\" target=\"" + value.target + "\" style=\"margin: 0em 0 0 0.25rem\">" +
                         value.icon +
                     "</a>"
                 );
