@@ -274,6 +274,22 @@ export default class RPlayerConf {
                     copyright: "",
                     lang: "en",
                     composer: "YATSU",
+                    miniIcons: {
+                        0: {
+                            url: "https://facebook.com/yatsuband",
+                            icon: "<i class=\"facebook icon\"></i>",
+                            target: "_blank",
+                            name: "Facebook",
+                            onFront: true,
+                        },
+                        1: {
+                            url: "https://www.instagram.com/yatsuband/",
+                            icon: "<i class=\"instagram icon\"></i>",
+                            target: "_blank",
+                            name: "Instagram",
+                            onFront: true,
+                        },
+                    },
                     anyHtml: 
                     "<p style='margin-top: 1em;'>" +
                         "Thank you for purchasing <a href=\"https://yatsuband.bandcamp.com/album/dreamer-producer-pack\" target=\"_blank\"><i class=\"bandcamp icon\" style=\"display: inline-block; padding: 0 !important\"></i>the \"Dreamer\" Producer Pack</a>, you are an awesome human being! " +
