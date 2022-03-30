@@ -75,7 +75,6 @@
     }
 
     putMiniIconsFront() {
-        console.log("ahoj");
         for (const [key, value] of Object.entries(this.rplayerObj.rplayerCfg.conf.album.info.miniIcons)) {
             if (value.onFront) {
                 $(this.rplayerObj.rplayerCfg.conf.app.htmlSelectors.mainWindow + " .itemA").prepend(

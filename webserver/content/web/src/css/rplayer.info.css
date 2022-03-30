@@ -195,3 +195,17 @@
     background-color: black;
     z-index: 10000 !important;
 }
+
+.rplayerInfoMiniIcon {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.rplayerInfoMiniIcon i {
+    font-size: 2em !important;
+}
+
+.rplayerInfoMiniIcons {
+    text-align: center;
+}

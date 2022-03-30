@@ -168,6 +168,7 @@
                 html_1  = that.htmlHeader();
                 html_1 += that.htmlMediaImage();
                 html_1 += that.htmlAlbumInfo();
+                html_1 += that.htmlMiniIcons();
     
                 html_2     = ""
                 htmlWords  = that.htmlWords();
@@ -227,6 +228,22 @@
         },123);
     }
 
+    htmlMiniIcons() {
+        var html = "";
+        var cfg = this.rplayerObj.rplayerCfg.conf;
+
+        html += "<div class=\"rplayerInfoMiniIcons\">"
+        for (const [key, value] of Object.entries(cfg.album.info.miniIcons)) {
+            html +=
+            "<a href=\"" + value.url + "\" target=\"" + value.target + "\" class=\"rplayerInfoMiniIcon\">" +
+                value.icon +
+            "</a>"
+        }
+        html += "</div>"
+
+        return html;
+    }
+    
     htmlAlbumInfo() {
         var html;
         var cfg = this.rplayerObj.rplayerCfg.conf;
