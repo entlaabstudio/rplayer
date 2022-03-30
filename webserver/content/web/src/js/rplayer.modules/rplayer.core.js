@@ -61,10 +61,13 @@ export default class RPlayer {
         this.wasInit               = false;
         this.trackInfoSelected     = false;
         this.additionalSrcsChecked = [];
-        this.seekerStartPosition = 0;
+        this.seekerStartPosition   = 0;
+        this.currentTimeOnError    = false;
         this.seekerEndPosition;
         this.curTrackId;
         this.translated = [];
+
+        this.playAfterCriticalStreamError = false;
 
         // +++ Prepare media for check
         var prepareFilesKey = 0;
@@ -118,7 +121,17 @@ export default class RPlayer {
         });
 
         this.audioObject.addEventListener("loadedmetadata", function() {
-            that.init();
+            if (!that.wasInit) {
+                that.init();
+            } else {
+                if (that.currentTimeOnError) {
+                    that.audioObject.currentTime = that.currentTimeOnError;
+                    that.currentTimeOnError = false;
+                    if (that.playAfterCriticalStreamError == true) {
+                        that.audioObject.play();
+                    }
+                }
+            }
 
             console.log("[RPlayer]","Data loaded.");
         });
@@ -158,6 +171,7 @@ export default class RPlayer {
             $(this.rplayerCfg.conf.app.htmlSelectors.controls.volumeFader).attr("disabled",true);
         }
 
+        this.refreshAudioOnError();
         this.putLocalization();
         this.htmlToHeader();
         this.getLicense();
@@ -177,6 +191,23 @@ export default class RPlayer {
         this.writeVersionDate();
         this.words();
         this.keyboard();
+    }
+
+    refreshAudioOnError() {
+        var that = this;
+
+        function onerrorFunction() {
+            setTimeout(function() {
+                if (!that.currentTimeOnError) {
+                    that.currentTimeOnError = that.audioObject.currentTime;
+                }
+
+                that.audioObject.src = that.audioSrc;
+                that.audioObject.currentTime = that.currentTimeOnError;
+            },1000);
+        }
+
+        this.audioObject.onerror = onerrorFunction;
     }
 
     putLocalization() {
@@ -1103,8 +1134,10 @@ export default class RPlayer {
             if(this.audioObject.paused) {
                 this.stopAllVideos();
                 this.audioObject.play();
+                this.playAfterCriticalStreamError = true;
             } else {
                 this.audioObject.pause();
+                this.playAfterCriticalStreamError = false;
             }
         }
 
@@ -1121,10 +1154,10 @@ export default class RPlayer {
         if (this.transportLastAction == "rplayerStop") {
             this.audioObject.pause();
             this.audioObject.currentTime = this.seekerStartPosition + 0.001;
+            this.playAfterCriticalStreamError = false;
         }
 
         if (this.transportLastAction == "stepFW") {
-            // console.log(this.rplayerCfg.conf);
             this.audioObject.currentTime += this.rplayerCfg.conf.app.preferences.transport.stepTime;
         }
 

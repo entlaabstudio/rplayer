@@ -79,7 +79,9 @@ a.rplayerOneTrack {
     grid-area: g2;
     
     align-items: safe center;
-    border: 1px solid var(--item2);
+    height: 21.5em;
+    overflow: auto;
+    /* border: 1px solid var(--item2); */
     border-radius: 1em;
     padding: .5em;
     margin: 0 0 1em 0;
