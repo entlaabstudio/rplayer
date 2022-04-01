@@ -122,6 +122,7 @@ export default class RPlayer {
 
         this.audioObject.addEventListener("loadedmetadata", function() {
             if (!that.wasInit) {
+                that.refreshPlayerOnInitTimeout();
                 that.init();
             } else {
                 if (that.currentTimeOnError) {
@@ -191,6 +192,17 @@ export default class RPlayer {
         this.writeVersionDate();
         this.words();
         this.keyboard();
+    }
+
+    refreshPlayerOnInitTimeout() {
+        var that = this;
+        
+        // Switch to boot loader.
+        setTimeout(function() {
+            if (!that.wasInit) {
+                window.location.reload();
+            }
+        },15000);
     }
 
     refreshAudioOnError() {
@@ -263,7 +275,7 @@ export default class RPlayer {
             console.log("[RPlayer]","The screen will not fall asleep now.");
         } catch (err) {
             // the wake lock request fails - usually system related, such being low on battery
-            console.log("[RPlayer] noScreenSleep()",`${err.name}, ${err.message}`);
+            // console.log("[RPlayer] noScreenSleep()",`${err.name}, ${err.message}`);
         }          
     }
 
