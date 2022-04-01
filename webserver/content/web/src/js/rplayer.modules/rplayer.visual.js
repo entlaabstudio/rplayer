@@ -72,6 +72,14 @@
         this.buttons();
         this.setBackground();
         this.putMiniIconsFront();
+        this.putFavicon();
+    }
+
+    putFavicon() {
+        var favicon = this.rplayerObj.rplayerCfg.conf.app.preferences.design.favicon;
+        if (favicon !== undefined) {
+            $("link[rel='icon']").attr("href",this.rplayerObj.rplayerCfg.conf.app.preferences.design.favicon);
+        }
     }
 
     putMiniIconsFront() {
