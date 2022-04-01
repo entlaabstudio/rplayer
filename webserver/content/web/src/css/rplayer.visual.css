@@ -8,7 +8,7 @@ button {
 }
 
 a.rplayerActiveTrack {
-    color: var(--activeTrack);
+    /* color: var(--activeTrack) !important; */
     background-color: var(--trackbg);
 }
 
@@ -79,9 +79,10 @@ a.rplayerOneTrack {
     grid-area: g2;
     
     align-items: safe center;
-    height: 21.5em;
+    height: 22.7em;
     overflow: auto;
-    /* border: 1px solid var(--item2); */
+    /* border: 2px solid var(--item2); */
+    background-color: rgba(174,174,174,.1);
     border-radius: 1em;
     padding: .5em;
     margin: 0 0 1em 0;
@@ -275,6 +276,8 @@ label {
 }
 
 .rplayerOneTrack .name {
+    position: relative;
+    top: 0.1em;
     font-weight: bold;
     float: left;
 }
@@ -452,4 +455,13 @@ label {
 
 .rplayerCard > img {
     width: 5em;
+}
+
+.trackInfoButton {
+    display: inline-block;
+    border-radius: .5em;
+    background-color: var(--rplayerInfoButton);
+    border: 1px solid var(--currentTime);
+    box-shadow: 1px 1px;
+    margin: 0 .5em 0 .5em;
 }
