@@ -72,6 +72,9 @@ export default class RPlayer {
         // +++ Prepare media for check
         var prepareFilesKey = 0;
 
+        this.additionalSrcsChecked[prepareFilesKey] = this.rplayerCfg.conf.app.preferences.design.favicon;
+        prepareFilesKey += 1;
+        
         this.additionalSrcsChecked[prepareFilesKey] = this.rplayerCfg.conf.album.info.image;
         prepareFilesKey += 1;
         
