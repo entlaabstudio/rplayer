@@ -71,8 +71,6 @@ a.rplayerOneTrack {
 
 .item1 .addCurTime {
     white-space: nowrap;
-	padding-right: 1em;
-    padding-bottom: 0.2em;
 }
 
 .item2 {
@@ -218,7 +216,7 @@ a.rplayerOneTrack {
     'g4';
     grid-template-columns: auto;
     max-width: 60em;
-    padding: 1em;
+    padding: 1em 1em 1.2em 1em;
 } 
 
 @media
@@ -239,7 +237,10 @@ a.rplayerOneTrack {
         width: 95vw;
         max-width: 60em;
         padding: 1em;
-    }    
+    }
+    .item1 .addCurTime {
+        padding: .5em 1em .25em .5em;
+    }
     .rplayerVolFader {
         padding-right: 1em;
     }
@@ -312,7 +313,7 @@ label {
 }
 
 .addCurTime {
-    padding: .5em;
+    padding: .5em 0 .25em .5em;
     border-radius: 4px;
 }
 
