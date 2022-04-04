@@ -463,7 +463,7 @@ export default class RPlayer {
         var html = "<div class='ui centered grid' style=\"margin: 0; padding: 0;\"><div class='doubling three column row'>";
         var lat  = false;
         
-        this.obj2array(this.rplayerCfg.conf.album.donations.wallets).forEach(element => {
+        this.obj2array(this.rplayerCfg.conf.app.donations.wallets).forEach(element => {
             html += "<div class=\"column rplayerCard\">"
 
             var QrCod = new this.QrCode(0,'H');
