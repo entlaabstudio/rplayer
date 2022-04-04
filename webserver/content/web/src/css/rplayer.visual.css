@@ -54,6 +54,7 @@ a.rplayerOneTrack {
 #rajs {
     text-align: right;
     padding-right: 2em;
+    font-size: .7em;
 }
 
 .item1 { grid-area: g1; }
