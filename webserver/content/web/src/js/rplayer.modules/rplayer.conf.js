@@ -44,6 +44,7 @@ export default class RPlayerConf {
                 version: "1.35.53", // <some platform updates>.<visible or control updates>.<unvisible updates>
                 date: "2022",
                 web3Protocol: "ipfs://",
+                rplayerIndex: "rplayer.htm",
                 preferences: {
                     transport: {
                         stepTime: .5 // [s]
@@ -199,6 +200,7 @@ export default class RPlayerConf {
                 // "</style>",
                 htmlSelectors: {
                     mainWindow: "#rplayer",           // recommended ID
+                    dimmer:     ".FullscreenDimmer",
                     info: {
                         currentTime:      ".rplayerCurTime",
                         lengthTime:       ".rplayerLenTime",

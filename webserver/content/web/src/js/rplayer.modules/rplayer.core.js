@@ -198,11 +198,12 @@ export default class RPlayer {
         var that = this;
         
         // Switch to boot loader.
-        setTimeout(function() {
-            if (!that.wasInit) {
-                window.location.reload();
+        setInterval(function() {
+            if ($(that.rplayerCfg.conf.app.htmlSelectors.dimmer).css("display") !== "none") {
+                console.log("[RPlayer]","Refresh...");
+                window.location.href = "./" + that.rplayerCfg.conf.app.rplayerIndex;
             }
-        },15000);
+        },40000);
     }
 
     refreshAudioOnError() {
