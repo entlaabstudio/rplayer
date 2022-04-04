@@ -55,6 +55,7 @@ a.rplayerOneTrack {
     text-align: right;
     padding-right: 2em;
     font-size: .7em;
+    white-space: nowrap;
 }
 
 .item1 { grid-area: g1; }
