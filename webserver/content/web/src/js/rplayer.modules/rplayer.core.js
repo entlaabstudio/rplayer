@@ -38,6 +38,9 @@ export default class RPlayer {
     ) {
         
         console.log("[RPlayer]","Core loaded.");
+
+        this.refreshPlayerOnInitTimeout();
+
         this.seekingNow            = false;
         this.seekerInit            = true;
         this.rewindToThisTrackTime = 2;
@@ -125,7 +128,6 @@ export default class RPlayer {
 
         this.audioObject.addEventListener("loadedmetadata", function() {
             if (!that.wasInit) {
-                that.refreshPlayerOnInitTimeout();
                 that.init();
             } else {
                 if (that.currentTimeOnError) {
@@ -199,8 +201,6 @@ export default class RPlayer {
 
     refreshPlayerOnInitTimeout() {
         var that = this;
-        
-        // Switch to boot loader.
         setInterval(function() {
             if ($(that.rplayerCfg.conf.app.htmlSelectors.dimmer).css("display") !== "none") {
                 console.log("[RPlayer]","Refresh...");
