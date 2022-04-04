@@ -202,11 +202,14 @@ export default class RPlayer {
     refreshPlayerOnInitTimeout() {
         var that = this;
         setInterval(function() {
-            if ($(that.rplayerCfg.conf.app.htmlSelectors.dimmer).css("display") !== "none") {
+            if (
+                $(that.rplayerCfg.conf.app.htmlSelectors.dimmer).css("display") !== "none" &&
+                window.location == window.parent.location
+            ) {
                 console.log("[RPlayer]","Refresh...");
                 window.location.href = "./" + that.rplayerCfg.conf.app.rplayerIndex;
             }
-        },40000);
+        },30000);
     }
 
     refreshAudioOnError() {
