@@ -181,6 +181,9 @@
                 html_2     += "<h3 class=\"rplayerLocalText\" data-phrase=\"infoReward\">Reward for artist</h3>"
                 html_2     += "<p style='font-weight: bold;'>" + that.rplayerObj.rplayerCfg.conf.app.donations.securityPhrase + "</p><br>"
                 html_2     += that.donations();
+
+                html_1 = that.rplayerObj.templateReplacer(html_1);
+                html_2 = that.rplayerObj.templateReplacer(html_2);
     
                 // HTML out
                 if (html_1 != html_1_last) {

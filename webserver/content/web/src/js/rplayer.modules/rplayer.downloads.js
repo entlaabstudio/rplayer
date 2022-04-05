@@ -375,7 +375,7 @@ export default class RPlayer {
             "\n</body>" +
         "\n</html>";
 
-        return html;
+        return this.rplayerObj.templateReplacer(html);
     }
 
     tracks() {
@@ -418,10 +418,10 @@ export default class RPlayer {
                     comment: {
                         description: '',
                         text: 
-                            commentText +
-                            ((this.rplayerCfg.album.donations !== undefined) ? this.getArtistDonations() : "") +
-                            ((value.words !== undefined) ? this.getLyrics(value) : "") +
-                            ((this.rplayerCfg.album.info.miniIcons !== undefined) ? this.getArtistUrls() : "") +
+                            this.rplayerObj.templateReplacer(commentText) + "\n" +
+                            ((value.words !== undefined) ? this.rplayerObj.templateReplacer(this.getLyrics(value)) + "\n" : "") +
+                            ((this.rplayerCfg.album.info.miniIcons !== undefined) ? this.getArtistUrls() + "\n" : "") +
+                            ((this.rplayerCfg.album.donations !== undefined) ? this.getArtistDonations() + "\n" : "") +
                             ((this.rplayerCfg.app.donations !== undefined) ? this.getRPlayerDonations() : ""),
                     },
                     isrc: value.info.isrc,
@@ -1060,20 +1060,34 @@ export default class RPlayer {
     putID3(song) {
         var song;
         const writer = new ID3Writer(song.data);
+        
+        var COMM = song.comment;
+        var TIT2 = song.mediaName
+        var TPE1 = [this.rplayerCfg.album.info.composer]
+        var TALB = this.rplayerCfg.album.info.name
+        var TPE2 = this.rplayerCfg.album.info.composer
+        var TCON = song.genres
+        var TPUB = song.label
+        var TCOP = song.copyright
+        var TLAN = song.lang
+        var TBPM = song.bpm
+        var TSRC = song.isrc
+        var TYER = this.rplayerCfg.album.info.year
+
         writer
             .setFrame('TRCK', song.trackNumber)
-            .setFrame('COMM', song.comment)
-            .setFrame('TIT2', song.mediaName)
-            .setFrame('TPE1', [this.rplayerCfg.album.info.composer])
-            .setFrame('TALB', this.rplayerCfg.album.info.name)
-            .setFrame('TPE2', this.rplayerCfg.album.info.composer)
-            .setFrame('TCON', song.genres)
-            .setFrame('TPUB', song.label)
-            .setFrame('TCOP', song.copyright)
-            .setFrame('TLAN', song.lang)
-            .setFrame('TBPM', song.bpm)
-            .setFrame('TSRC', song.isrc)
-            .setFrame('TYER', this.rplayerCfg.album.info.year);
+            .setFrame('COMM', COMM)
+            .setFrame('TIT2', TIT2)
+            .setFrame('TPE1', TPE1)
+            .setFrame('TALB', TALB)
+            .setFrame('TPE2', TPE2)
+            .setFrame('TCON', TCON)
+            .setFrame('TPUB', TPUB)
+            .setFrame('TCOP', TCOP)
+            .setFrame('TLAN', TLAN)
+            .setFrame('TBPM', TBPM)
+            .setFrame('TSRC', TSRC)
+            .setFrame('TYER', TYER)
 
         if ($("#rplayerCheckboxDownloadBundleOptions_ImagesToMp3").is(":checked")) {
             writer.setFrame('APIC', {

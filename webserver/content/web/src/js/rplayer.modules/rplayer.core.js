@@ -483,7 +483,7 @@ export default class RPlayer {
         return html;
     }
     
-    getURLAddress() {
+    getURLAddress(onlyBase = false) {
         var link;
         
         link = window.location.href;
@@ -506,7 +506,20 @@ export default class RPlayer {
         } else {
             link = link + "index.htm";
         }
-        return link = link.replace('rplayer.htm','');
+
+        if (onlyBase) {
+            return link = link.replace('index.htm','');
+        } else {
+            return link = link.replace(this.rplayerCfg.conf.app.rplayerIndex,'');
+        }
+    }
+
+    templateReplacer(string) {
+        var string;
+
+        string = string.replaceAll("{base_url}",this.getURLAddress(true));
+
+        return string;
     }
 
     keyboard() {

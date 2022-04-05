@@ -30,6 +30,7 @@
  * SOFTWARE.
  * @description
  * Don´t use apostrophe in HTML. You just put \".
+ * {base_url} prints the base URL almost anywhere.
  */
 
 export default class RPlayerConf {
@@ -41,7 +42,7 @@ export default class RPlayerConf {
             configVersion: 1,
             app: {
                 name: "RPlayer",
-                version: "1.38.57", // <some platform updates>.<visible or control updates>.<unvisible updates>
+                version: "1.38.58", // <some platform updates>.<visible or control updates>.<unvisible updates>
                 date: "2022",
                 web3Protocol: "ipfs://",
                 rplayerIndex: "rplayer.htm",
