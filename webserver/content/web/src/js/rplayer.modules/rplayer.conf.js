@@ -1022,8 +1022,8 @@ export default class RPlayerConf {
                             },
                         },
                         info: {
-                            image: "media/images/djinn.png",
-                            icon: "media/icons/djinn.png",
+                            image: "media/images/spectre.jpg",
+                            icon: "media/icons/spectre.png",
                             composer: "Michal Diviš",
                             lang: "eng", // ISO 639-2
                             year: 2021,
@@ -1235,8 +1235,8 @@ export default class RPlayerConf {
                             mp3: "media/sounds/mp3/6.mp3",
                         },
                         info: {
-                            image: "media/images/ornaments_w_vocals.jpg",
-                            icon: "media/icons/ornaments_w_vocals.png",
+                            image: "media/images/dreamer_album.jpg",
+                            icon: "media/icons/dreamer_album.png",
                             composer: "Michal Diviš",
                             lang: "eng", // ISO 639-2
                             year: 2021,
@@ -1391,8 +1391,8 @@ export default class RPlayerConf {
                             mp3: "media/sounds/mp3/7.mp3",
                         },
                         info: {
-                            image: "media/images/kraken.jpg",
-                            icon: "media/icons/kraken.png",
+                            image: "media/images/dreamer_album.jpg",
+                            icon: "media/icons/dreamer_album.png",
                             composer: "Michal Diviš",
                             lang: "eng", // ISO 639-2
                             year: 2021,
@@ -1703,8 +1703,8 @@ export default class RPlayerConf {
                             mp3: "media/sounds/mp3/9.mp3",
                         },
                         info: {
-                            image: "media/images/mirrors.jpg",
-                            icon: "media/icons/mirrors.png",
+                            image: "media/images/dreamer_album.jpg",
+                            icon: "media/icons/dreamer_album.png",
                             composer: "Michal Diviš",
                             lang: "eng", // ISO 639-2
                             year: 2021,
@@ -1883,8 +1883,8 @@ export default class RPlayerConf {
                     // Spectre
                     4: {
                         timeStart: 959500,
-                        mediaName: "DJinn",
-                        src: "media/images/djinn.png"
+                        mediaName: "Spectre",
+                        src: "media/images/spectre.jpg"
                     },
                     5: {
                         timeStart: 964400,
@@ -1918,8 +1918,8 @@ export default class RPlayerConf {
                     },
                     14: {
                         timeStart: 1104890,
-                        mediaName: "Dreamer",
-                        src: "media/images/dreamer_album.jpg"
+                        mediaName: "Spectre",
+                        src: "media/images/spectre.jpg"
                     },
                     15: {
                         timeStart: 1129367,
@@ -1943,20 +1943,20 @@ export default class RPlayerConf {
                     },
                     19: {
                         timeStart: 1201160,
-                        mediaName: "Labyrinth",
-                        src: "media/images/labyrinth.jpg"
+                        mediaName: "Spectre",
+                        src: "media/images/spectre.jpg"
                     },
                     // Bloom
                     20: {
                         timeStart: 1215000,
-                        mediaName: "Ornaments_w_vocals",
-                        src: "media/images/ornaments_w_vocals.jpg"
+                        mediaName: "Dreamer",
+                        src: "media/images/dreamer_album.jpg"
                     },
                     // Ruin
                     21: {
                         timeStart: 1435400,
-                        mediaName: "Kraken",
-                        src: "media/images/kraken.jpg"
+                        mediaName: "Dreamer",
+                        src: "media/images/dreamer_album.jpg"
                     },
                     // World Eater
                     22: {
@@ -1967,8 +1967,8 @@ export default class RPlayerConf {
                     // Collapse
                     23: {
                         timeStart: 1870000,
-                        mediaName: "Mirrors",
-                        src: "media/images/mirrors.jpg"
+                        mediaName: "Dreamer",
+                        src: "media/images/dreamer_album.jpg"
                     },
                 }
             }

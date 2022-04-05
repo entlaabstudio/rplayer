@@ -88,7 +88,6 @@
 
     imageChanger() {
         if (this.lastImage !== this.getCurrentImage()["time"]) {
-            console.log(this.getCurrentImage()["time"]);
             $("#rplayerSlideshow img:not([data-time='" + this.getCurrentImage()["time"] + "'])").stop().transit({
                 transform: "perspective(50em) scale(0.5) rotateX(0deg) rotateY(-10deg) rotateZ(-10deg) translateX(-10em)",
                 opacity: "0"
