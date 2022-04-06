@@ -105,7 +105,7 @@
     }
 
     correctAdressBar() {
-        var url = new URL(this.rplayerObj.getURLAddress());
+        var url = new URL(window.location.href.replace('rplayer.htm','index.htm'));
         if (window.self == window.top) {
             window.history.pushState({}, '', url);
         }
