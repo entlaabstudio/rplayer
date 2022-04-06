@@ -11,7 +11,7 @@
 </p>
 
 <p>
-  The main goals of this player are:
+  The main goal of this project is to free the distribution of music from large corporations, increase its quality and:
 </p>
 
 <ul>
