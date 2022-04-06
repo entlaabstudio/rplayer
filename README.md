@@ -6,7 +6,8 @@
 </p>
 
 <p>
-  I would especially like to thank the artist YATSU, who provided his inspiring audiovisual material for this player.
+  I would especially like to thank the <a href="https://yatsuband.bandcamp.com/" target="_blank">artist YATSU</a>
+  (<a href="https://github.com/michaldivis">or Github link</a>), who provided his inspiring audiovisual material for this player.
   During the development of RPlayer, I listened to the album Dreamer perhaps 100 times and I still enjoy it.
 </p>
 
