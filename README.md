@@ -1,4 +1,4 @@
-# RPlayer by Robert Rajs (MIT)
+<h1>RPlayer by Robert Rajs (MIT)</h1>
 
 <p>
   A player that supports full decentralization. Ready for use on Web3 networks such as IPFS.
