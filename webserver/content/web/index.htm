@@ -97,6 +97,8 @@
             class Boot {
                 constructor() {
                     this.maxTime = 30; // seconds
+                    
+                    this.waitingForReload = false;
 
                     this.noScreenSleep();
                     this.createIframe();
@@ -129,6 +131,7 @@
                     
                     window.addEventListener('error', function(e) {
                         console.log("[BOOT-RELOAD]");
+                        that.reloadRplayer();
                     }, true);
                     
                     document.getElementsByTagName("iframe")[0].contentWindow.onload = function() {
@@ -141,14 +144,20 @@
                             request.send();
                         if (request.status !== 200) {
                             console.log("[BOOT-RELOAD]");
-                            window.location.reload();
+                            if (!that.waitingForReload) {
+                                that.reloadRplayer();
+                            }
                         } else {
                             if (that.maxTime >= 0) {
                                 console.log("[RPlayer]","BOOT success.");
-                                window.location = document.getElementsByTagName("iframe")[0].contentWindow.location;
+                                if (!that.waitingForReload) {
+                                    window.location = document.getElementsByTagName("iframe")[0].contentWindow.location;
+                                }
                             } else {
                                 console.log("[BOOT-RELOAD]");
-                                window.location.reload();
+                                if (!that.waitingForReload) {
+                                    that.reloadRplayer();
+                                }
                             }
                         }
                     };
@@ -172,17 +181,30 @@
                 }
 
                 tryAgain() {
+                    var that = this;
+
                     window.addEventListener('message', function(event){
                         console.log(event.data);
                         if (event.data == "[BOOT-RELOAD]") {
-                            window.location.reload();
+                            if (!that.waitingForReload) {
+                                that.reloadRplayer();
+                            }
                         }
                     }, false);
                 }
+
+                reloadRplayer() {
+                    this.waitingForReload = true;
+                    setTimeout(function() {
+                        console.log("[RPlayer]","Booting...");
+                        document.getElementsByTagName("iframe")[0].contentWindow.location.reload();
+                        this.waitingForReload = false;
+                        this.loading();
+                    },6000);
+                }
             }
-            setTimeout(function() {
-                BootClass = new Boot();
-            },3000);
+            
+            BootClass = new Boot();
         </script>
     </body>
 </html>
