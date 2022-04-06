@@ -79,7 +79,7 @@ a.rplayerOneTrack {
     grid-area: g2;
     
     align-items: safe center;
-    height: 22.8em;
+    height: 21.5em;
     overflow: auto;
     /* border: 2px solid var(--item2); */
     background-color: rgba(174,174,174,.1);

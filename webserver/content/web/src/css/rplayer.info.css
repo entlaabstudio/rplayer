@@ -42,7 +42,7 @@
 }
 
 #rplayerInfoActive {
-    transform: scale(.1);
+    display: none;
 }
 
 #rplayerInfo {
