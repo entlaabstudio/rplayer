@@ -880,9 +880,13 @@ export default class RPlayer {
                     : ""
                 ) +
                 tDuration +
-                "</span></a><br>"
+                "</span></a>"
             );
         }
+
+        $(that.rplayerCfg.conf.app.htmlSelectors.info.playlistBox).append(
+            "<div></div>"
+        );
 
         $(that.rplayerCfg.conf.app.htmlSelectors.info.playlistOneTrack).on("click",function() {
             var curTrackId = $(this).attr("id");

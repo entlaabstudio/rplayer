@@ -79,7 +79,6 @@ a.rplayerOneTrack {
     grid-area: g2;
     
     align-items: safe center;
-    height: 21.5em;
     overflow: auto;
     /* border: 2px solid var(--item2); */
     background-color: rgba(174,174,174,.1);
@@ -219,7 +218,11 @@ a.rplayerOneTrack {
     grid-template-columns: auto;
     max-width: 60em;
     padding: 1em 1em 1.2em 1em;
-} 
+}
+
+.rplayerTrackList {
+    max-height: 20em;
+}
 
 @media
     screen and (min-width: 40em) { 
@@ -240,6 +243,7 @@ a.rplayerOneTrack {
         max-width: 60em;
         padding: 1em;
     }
+
     .item1 .addCurTime {
         padding: .5em 1em .25em .5em;
     }
@@ -292,7 +296,7 @@ label {
 }
 
 .rplayerTrackList {
-    transform: translateY(.25em);
+    /* transform: translateY(.25em); */
 }
 
 .background {
