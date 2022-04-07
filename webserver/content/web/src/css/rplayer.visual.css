@@ -79,7 +79,7 @@ a.rplayerOneTrack {
     grid-area: g2;
     
     align-items: safe center;
-    max-height: 21.1em;
+    max-height: 21.15em;
     overflow: auto;
     background-color: rgba(174,174,174,.1);
     border-radius: 1em;
@@ -88,7 +88,7 @@ a.rplayerOneTrack {
 }
 
 .item2 .rplayerTrackList {
-    margin-bottom: -.4em;
+    margin-bottom: -.35em;
 }
 
 .item3 { grid-area: g3; }
