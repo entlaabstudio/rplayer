@@ -79,13 +79,18 @@ a.rplayerOneTrack {
     grid-area: g2;
     
     align-items: safe center;
+    max-height: 21em;
     overflow: auto;
-    /* border: 2px solid var(--item2); */
     background-color: rgba(174,174,174,.1);
     border-radius: 1em;
     padding: .5em;
     margin: 0 0 1em 0;
 }
+
+.item2 .rplayerTrackList {
+    margin-bottom: -.5em;
+}
+
 .item3 { grid-area: g3; }
 
 .item3 div:first-child {
@@ -220,10 +225,6 @@ a.rplayerOneTrack {
     padding: 1em 1em 1.2em 1em;
 }
 
-.rplayerTrackList {
-    max-height: 20em;
-}
-
 @media
     screen and (min-width: 40em) { 
     /* Držení na šířku */
@@ -293,10 +294,6 @@ label {
     font-style: italic;
     font-size: .8em;
     float: right;
-}
-
-.rplayerTrackList {
-    /* transform: translateY(.25em); */
 }
 
 .background {

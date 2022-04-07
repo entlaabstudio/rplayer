@@ -68,7 +68,8 @@ export default class RPlayer {
         this.currentTimeOnError    = false;
         this.seekerEndPosition;
         this.curTrackId;
-        this.translated = [];
+        this.translated            = [];
+        this.lastActiveTrack       = false;
 
         this.playAfterCriticalStreamError = false;
 
@@ -800,6 +801,11 @@ export default class RPlayer {
                 }
             }
             
+            if (that.lastActiveTrack != that.curTrackId) {
+                that.tracklistScroll();
+                that.lastActiveTrack = that.curTrackId;
+            }
+            
         },100);
     }
     
@@ -890,7 +896,6 @@ export default class RPlayer {
 
         $(that.rplayerCfg.conf.app.htmlSelectors.info.playlistOneTrack).on("click",function() {
             var curTrackId = $(this).attr("id");
-            // console.log("[RPlayer]",this);
 
             that.transportLastAction = "rplayerStartPause";
             that.transport();
@@ -912,6 +917,21 @@ export default class RPlayer {
         });
 
         $(that.rplayerCfg.conf.app.htmlSelectors.info.albumDuration).html(this.secondsToTime(this.audioObject.duration));
+    }
+
+    tracklistScroll() {
+        var track          = $(this.rplayerCfg.conf.app.htmlSelectors.mainWindow + " .rplayerActiveTrack");
+        var trackMiddlePos = 
+            track.offset().top - 
+            $(this.rplayerCfg.conf.app.htmlSelectors.info.playlistBox).parent().offset().top + 
+            $(this.rplayerCfg.conf.app.htmlSelectors.info.playlistBox).parent().scrollTop() +
+            Math.round(track.outerHeight() / 2)
+        ;
+        var tracklistHalfHeight = Math.round($(this.rplayerCfg.conf.app.htmlSelectors.info.playlistBox).parent().outerHeight() / 2);
+
+        $(this.rplayerCfg.conf.app.htmlSelectors.info.playlistBox).parent().stop().animate({
+            scrollTop: trackMiddlePos - tracklistHalfHeight
+        },250);
     }
 
     seeker() {
@@ -1064,23 +1084,6 @@ export default class RPlayer {
 
             for (let index = 0; index < Math.round(that.audioObject.buffered.length); index++) {
                 bufferedPerc += (that.audioObject.buffered.end(index) - that.audioObject.buffered.start(index)) / bufferOnePerc;
-                
-                
-                
-                
-                
-                // console.log(
-                //     that.audioObject.buffered.start(index),
-                //     that.audioObject.buffered.end(index),
-                //     that.audioObject.buffered.end(index) - that.audioObject.buffered.start(index),
-                //     that.audioObject.currentTime
-                // );
-                
-                
-                
-                
-                
-                            
             }
             bufferedPerc = Math.round(bufferedPerc);
             if (bufferedPerc != bufferLast) {
