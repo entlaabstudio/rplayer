@@ -43,7 +43,7 @@ export default class RPlayerConf {
             configVersion: 1,
             app: {
                 name: "RPlayer",
-                version: "1.41.59", // <some platform updates>.<visible or control updates>.<unvisible updates>
+                version: "1.42.59", // <some platform updates>.<visible or control updates>.<unvisible updates>
                 date: "2022",
                 web3Protocol: "ipfs://",
                 rplayerIndex: "rplayer.htm",
@@ -232,35 +232,9 @@ export default class RPlayerConf {
                         helpButton:       ".helpButton"
                     }
                 },
-                modules: {
-                    RPlayerVisual: {
-                        scriptFile: "./rplayer.visual.js"
-                    },
-                    RPlayerInfo: {
-                        scriptFile: "./rplayer.info.js"
-                    }
-                },
                 windows: {
                     showInfo: {
                         htmlSelector: ".rplayerShowInfo",
-                        htmlTag:      "div",
-                        css: {
-                            init: {
-                                position: "absolute",
-                                top: "0",
-                                left: "0",
-                                width: "10em",
-                                height: "10em",
-                                border: ".1em solid green",
-                                backgroundColor: "rgba(255,255,255,1)"
-                            },
-                            show: {
-                                opacity: 1
-                            },
-                            hide: {
-                                opacity: 0
-                            }
-                        }
                     }
                 }
             },

@@ -322,9 +322,10 @@ export default class RPlayer {
         $("title").html(
             cfg.album.info.composer + " - " +
             cfg.album.info.name + " (" +
-            cfg.album.info.year + " :: " +
-            cfg.app.name + " " +
-            cfg.app.version + ")"
+            cfg.album.info.year + ") :: " +
+            cfg.app.name + " v" +
+            cfg.app.version + " (" +
+            cfg.app.date + ")"
         );
     }
     
