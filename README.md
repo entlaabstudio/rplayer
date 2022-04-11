@@ -1,10 +1,11 @@
 # RPlayer by Robert Rajs (MIT)
 
-  A player that supports full decentralization. Ready for use on Web3 networks such as IPFS. It arose from the desire for a player that will respect the listening to music albums, not just individual songs, to which buffering is subject.
+A player that supports full decentralization. Ready for use on Web3 networks such as IPFS. It arose from the desire for a player that will respect the listening to music albums, not just individual songs, to which buffering is subject.
 
-  I would especially like to thank the [artist YATSU](https://yatsuband.bandcamp.com/) ([or Github link](https://github.com/michaldivis)), who provided his inspiring audiovisual material for this player. During the development of RPlayer, I listened to the album Dreamer perhaps 100 times and I still enjoy it.
+I would especially like to thank the [artist YATSU](https://yatsuband.bandcamp.com/) ([or Github link](https://github.com/michaldivis)), who provided his inspiring audiovisual material for this player. During the development of RPlayer, I listened to the album Dreamer perhaps 100 times and I still enjoy it.
   
-  The main goal of this project is to free the distribution of music from large corporations, increase its quality and:
+The main goal of this project is to free the distribution of music from large corporations, increase its quality and:
+  
 * ensure undisturbed and continuous listening to a music album, as on a CD (or in higher sound quality)
 * provide plenty of information and available materials, as on the CD cover
 * offering graphic materials of a music album without disturbing elements
@@ -28,3 +29,7 @@
 ## Tips:
 
 * by using the {base_url} tag anywhere in the texts, you get the full address of RPlayer, which is unknown on Web3 in advance
+
+## Known issues:
+
+**Booting does not work on a full Opera browser node**. I think the problem is on the browser side, because it does not have an overview of the sizes of loaded files, statuses (everything is automatically 200) and the amount of data already loaded. IPFS implementation in this browser does not appear to be complete. Sorry for troubles. I do not recommend a full Opera node.
