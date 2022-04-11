@@ -89,6 +89,13 @@ export default class RPlayer {
             }
         }
 
+        if (rplayerCfg.conf.album.downloads !== undefined) {
+            for (const [key, value] of Object.entries(rplayerCfg.conf.album.downloads)) {
+                this.additionalSrcsChecked[prepareFilesKey] = value.srcFile;
+                prepareFilesKey += 1;
+            }
+        }
+
         for (const [key, value] of Object.entries(rplayerCfg.conf.album.tracks)) {
             this.additionalSrcsChecked[prepareFilesKey] = value["info"].image;
             prepareFilesKey += 1;

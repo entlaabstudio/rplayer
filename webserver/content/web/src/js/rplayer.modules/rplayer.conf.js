@@ -43,7 +43,7 @@ export default class RPlayerConf {
             configVersion: 1,
             app: {
                 name: "RPlayer",
-                version: "1.42.59", // <some platform updates>.<visible or control updates>.<unvisible updates>
+                version: "1.42.60", // <some platform updates>.<visible or control updates>.<unvisible updates>
                 date: "2022",
                 web3Protocol: "ipfs://",
                 rplayerIndex: "rplayer.htm",
@@ -112,6 +112,7 @@ export default class RPlayerConf {
                         "downloadsButtonDownload"     : "Download",
                         "downloadsButtonClose"        : "Close",
                         "downloadsAttachmentsFor"     : "Attachments for",
+                        "downloadsAttachmentsUnsorted": "Unsorted attachments",
                         "downloadsAlbumInfoHead"      : "Album information",
                         "downloadsAlbum"              : "Album",
                         "downloadsAuthor"             : "Author",
@@ -243,6 +244,18 @@ export default class RPlayerConf {
                 srcsForCheck: {
                     0: "media/images/dreamer_album.jpg",
                 },
+                // downloads: {
+                //     0: {
+                //         name: "Hrníčky s pletením.mkv",
+                //         srcFile: "media/downloads/1.mkv",
+                //         folder: "_various",
+                //     },
+                //     1: {
+                //         name: "Kritické myšlení.mkv",
+                //         srcFile: "media/downloads/2.mkv",
+                //         folder: "_various",
+                //     },
+                // },
                 info: {
                     image: "media/images/dreamer_album.jpg",
                     name: "Dreamer",

@@ -1,5 +1,6 @@
 /**
  * @file Downloads module for RPlayer web application
+ * @version 1
  * @copyright Robert Rajs 2022
  * @author Robert Rajs
  * @see {@link https://rajs.info|Home}
@@ -66,6 +67,7 @@ export default class RPlayer {
                 that.tracks();
                 that.bundleOptions();
                 that.otherFiles();
+                that.unsortedFiles();
                 clearInterval(int);
             }
         },362);
@@ -103,24 +105,79 @@ export default class RPlayer {
         this.download.coverImage.download = true;
     }
 
+    unsortedFiles() {
+        this.download.unsorted = [];
+        
+        if (this.rplayerCfg.album.downloads !== undefined) {
+            var i;
+            var i2;
+            for (const [key, value] of Object.entries(this.rplayerCfg.album.downloads)) {
+                if (value !== undefined) {
+                    i = this.download.unsorted.length;
+                    this.download.unsorted[i] = {};
+    
+                    this.download.unsorted[i].fileName = value.name;
+                    this.download.unsorted[i].srcFile = value.srcFile;
+                    this.download.unsorted[i].folder = value.folder;
+                    this.download.unsorted[i].download = true;
+                    this.download.unsorted[i].checkboxId = "rplayerCheckboxDownloadUnsortedFile_" + key;
+                }
+            }
+            this.renderFieldsetForUnsorted();
+        }
+    }
+
+    renderFieldsetForUnsorted() {
+        try {
+            if (this.download.unsorted.length !== undefined) {
+                $("#rplayerDownloads .fieldsetBox:first").after(
+                    this.getFieldsetsForUnsorted()
+                );
+            }   
+        } catch (error) {
+            
+        }
+    }
+
+    getFieldsetsForUnsorted() {
+        var html = "";
+        html += 
+        "<div class=\"fieldsetBox\">" +
+            "<fieldset class=\"rplayerDownloadsUnsorted\">" +
+                "<legend><span class=\"rplayerLocalText\" data-phrase=\"downloadsAttachmentsUnsorted\">Unsorted attachments</span></legend>";
+        for (const [key2, value2] of Object.entries(this.download.unsorted)) {
+            html +=
+            "<div class=\"ui toggle checkbox\">" +
+                "<input type=\"checkbox\" checked=\"checked\" id=\"" + value2.checkboxId + "\"><label for=\"" + value2.checkboxId + "\">" + value2.fileName + "</label>" +
+            "</div>";
+        }
+        html +=
+            "</fieldset>" +
+        "</div>";
+
+        return html;
+    }
+
     otherFiles() {
         this.download.others = [];
         var i;
         var i2;
         for (const [key, value] of Object.entries(this.rplayerCfg.album.tracks)) {
-            if (value,value.downloads.others !== undefined) {
-                i = this.download.others.length;
-                this.download.others[i] = {};
-                this.download.others[i].mediaName = value.mediaName;
-                this.download.others[i].files = [];
-                for (const [key2, value2] of Object.entries(value.downloads.others)) {
-                    i2 = this.download.others[i].files.length;
-                    this.download.others[i].files[i2] = {};
-                    this.download.others[i].files[i2].fileName = value2.name;
-                    this.download.others[i].files[i2].srcFile = value2.srcFile;
-                    this.download.others[i].files[i2].folder = value2.folder;
-                    this.download.others[i].files[i2].download = true;
-                    this.download.others[i].files[i2].checkboxId = "rplayerCheckboxDownloadOtherFile_" + key + "_" + key2;
+            if (value.downloads !== undefined) {
+                if (value.downloads.others !== undefined) {
+                    i = this.download.others.length;
+                    this.download.others[i] = {};
+                    this.download.others[i].mediaName = value.mediaName;
+                    this.download.others[i].files = [];
+                    for (const [key2, value2] of Object.entries(value.downloads.others)) {
+                        i2 = this.download.others[i].files.length;
+                        this.download.others[i].files[i2] = {};
+                        this.download.others[i].files[i2].fileName = value2.name;
+                        this.download.others[i].files[i2].srcFile = value2.srcFile;
+                        this.download.others[i].files[i2].folder = value2.folder;
+                        this.download.others[i].files[i2].download = true;
+                        this.download.others[i].files[i2].checkboxId = "rplayerCheckboxDownloadOtherFile_" + key + "_" + key2;
+                    }
                 }
             }
         }
@@ -232,6 +289,15 @@ export default class RPlayer {
                     } else {
                         value2.download = false;
                     }
+                }
+            }
+
+            // set unsorted downloads
+            for (const [key, value] of Object.entries(that.download.unsorted)) {
+                if ($("#" + value.checkboxId).is(":checked")) {
+                    value.download = true;
+                } else {
+                    value.download = false;
                 }
             }
 
@@ -382,51 +448,61 @@ export default class RPlayer {
         var numOfDigits = this.numberGetDigits(Object.keys(this.rplayerCfg.album.tracks).length);
 
         for (const [key, value] of Object.entries(this.rplayerCfg.album.tracks)) {
-            if (value.downloads.mp3) {
-                var fileName = this.numberZeroFill((parseInt(key) + 1), numOfDigits) + " - " + value.mediaName + ".mp3";
-                var trackNumber = parseInt(key) + 1;
-                var checkboxId = "rplayerCheckboxDownloadMp3_" + key;
-                $("#rplayerDownloads .rplayerDownloadsTracks").append(
-                    "<div class=\"ui toggle checkbox\">" +
-                        "<input type=\"checkbox\" checked=\"checked\" id=\"" + checkboxId + "\"><label for=\"" + checkboxId + "\">" + fileName + "</label>" +
-                    "</div>"
-                );
-                var genres = [];
-                var commentText = 
-                    this.rplayerCfg.app.localization.phrases["downloadsGeneratedByRplayer"] + ' v' + this.rplayerCfg.app.version + ' (' + this.rplayerCfg.app.date + ') ' + this.rplayerCfg.app.localization.phrases["downloadsAtTheUrl"] + ':\n' +
-                    this.rplayerObj.getURLAddress();
-                var i = 0;
-                for (const [key, value2] of Object.entries(value.info.genres)) {
-                    genres[i] = value2;
-                    i++;
+            var fileName = this.numberZeroFill((parseInt(key) + 1), numOfDigits) + " - " + value.mediaName + ".mp3";
+            var trackNumber = parseInt(key) + 1;
+            var checkboxId = "rplayerCheckboxDownloadMp3_" + key;
+            var genres = [];
+            var commentText = 
+                this.rplayerCfg.app.localization.phrases["downloadsGeneratedByRplayer"] + ' v' + this.rplayerCfg.app.version + ' (' + this.rplayerCfg.app.date + ') ' + this.rplayerCfg.app.localization.phrases["downloadsAtTheUrl"] + ':\n' +
+                this.rplayerObj.getURLAddress();
+            var i = 0;
+            for (const [key, value2] of Object.entries(value.info.genres)) {
+                genres[i] = value2;
+                i++;
+            }
+            this.download.mp3[key] = {
+                mediaName: value.mediaName,
+                trackNumber: trackNumber + "/" + Object.keys(this.rplayerCfg.album.tracks).length,
+                composer: [value.info.composer],
+                genres: genres,
+                label: value.info.label,
+                copyright: value.info.copyright,
+                lang: value.info.lang,
+                fileName: fileName,
+                download: true,
+                srcImgFile: value.info.image,
+                srcIconFile: value.info.icon,
+                checkboxId: checkboxId,
+                storyHtml: this.getTrackStory(value),
+                comment: {
+                    description: '',
+                    text: 
+                        this.rplayerObj.templateReplacer(commentText) + "\n" +
+                        ((value.words !== undefined) ? this.rplayerObj.templateReplacer(this.getLyrics(value)) + "\n" : "") +
+                        ((this.rplayerCfg.album.info.miniIcons !== undefined) ? this.getArtistUrls() + "\n" : "") +
+                        ((this.rplayerCfg.album.donations !== undefined) ? this.getArtistDonations() + "\n" : "") +
+                        ((this.rplayerCfg.app.donations !== undefined) ? this.getRPlayerDonations() : ""),
+                },
+                isrc: value.info.isrc,
+                bpm: value.info.bpm,
+            };
+            if (value.downloads !== undefined) {
+                if (value.downloads.mp3 !== undefined) {        
+                    $("#rplayerDownloads .rplayerDownloadsTracks").append(
+                        "<div class=\"ui toggle checkbox\">" +
+                            "<input type=\"checkbox\" checked=\"checked\" id=\"" + checkboxId + "\"><label for=\"" + checkboxId + "\">" + fileName + "</label>" +
+                        "</div>"
+                    );
+                    this.download.mp3[key].srcFile = value.downloads.mp3;
+                } else {
+                    this.download.mp3[key].download = false;
+                    this.srcImgFile                 = value.info.image;
+                    this.mediaName                  = value.mediaName;
                 }
-                this.download.mp3[key] = {
-                    mediaName: value.mediaName,
-                    trackNumber: trackNumber + "/" + Object.keys(this.rplayerCfg.album.tracks).length,
-                    composer: [value.info.composer],
-                    genres: genres,
-                    label: value.info.label,
-                    copyright: value.info.copyright,
-                    lang: value.info.lang,
-                    fileName: fileName,
-                    download: true,
-                    srcFile: value.downloads.mp3,
-                    srcImgFile: value.info.image,
-                    srcIconFile: value.info.icon,
-                    checkboxId: checkboxId,
-                    storyHtml: this.getTrackStory(value),
-                    comment: {
-                        description: '',
-                        text: 
-                            this.rplayerObj.templateReplacer(commentText) + "\n" +
-                            ((value.words !== undefined) ? this.rplayerObj.templateReplacer(this.getLyrics(value)) + "\n" : "") +
-                            ((this.rplayerCfg.album.info.miniIcons !== undefined) ? this.getArtistUrls() + "\n" : "") +
-                            ((this.rplayerCfg.album.donations !== undefined) ? this.getArtistDonations() + "\n" : "") +
-                            ((this.rplayerCfg.app.donations !== undefined) ? this.getRPlayerDonations() : ""),
-                    },
-                    isrc: value.info.isrc,
-                    bpm: value.info.bpm,
-                };
+            } else {
+                this.download.mp3[key].download = false;
+                this.srcImgFile                 = value.info.image;
+                this.mediaName                  = value.mediaName;
             }
         }
     }
@@ -585,6 +661,7 @@ export default class RPlayer {
         this.getslideshowImages();
         this.getCoverImage();
         this.getOtherFiles();
+        this.getUnsortedFiles();
         this.getMp3Files();
         this.getMp3ImagesFiles();
         this.getMp3IconsFiles();
@@ -616,6 +693,12 @@ export default class RPlayer {
             }
         }
     }
+
+    getUnsortedFiles() {
+        for (const [key, value] of Object.entries(this.download.unsorted)) {
+            this.getFileData(value);
+        }
+    }
     
     getMp3Files() {
         for (const [key, value] of Object.entries(this.download.mp3)) {
@@ -632,6 +715,9 @@ export default class RPlayer {
                 number += 1;
             }
         }
+        for (const [key2, value2] of Object.entries(this.download.unsorted)) {
+            number += 1;
+        }
 
         // cover image
         number += 1;
@@ -646,9 +732,8 @@ export default class RPlayer {
     
     checkDataAndContinue() {
         var that = this;
-
         setTimeout(function() {
-            var countOfFiles           = that.download.mp3.length + that.numberOfOthersFiles() - that.numberOfUnwantedFiles();
+            var countOfFiles           = Object.keys(that.download.mp3).length + that.numberOfOthersFiles() - that.numberOfUnwantedFiles();
             var countOfDownloadedFiles = 0;
 
             // check mp3 files and included media
@@ -670,6 +755,13 @@ export default class RPlayer {
                     ) {
                         countOfDownloadedFiles += 1;
                     }
+                }
+            }
+            for (const [key2, value2] of Object.entries(that.download.unsorted)) {
+                if (
+                    value2.data !== undefined
+                ) {
+                    countOfDownloadedFiles += 1;
                 }
             }
 
@@ -765,7 +857,8 @@ export default class RPlayer {
         var value;
         var that = this;
 
-        if (!value.imgData && value.download == true) {
+        // if (!value.imgData && value.download == true) {
+        if (!value.imgData) {
             console.log("[RPlayer]","Getting the image data for the \"" + value.fileName + "\" file.");
             setTimeout(function() {
                 $.ajax({
@@ -807,6 +900,12 @@ export default class RPlayer {
                 }
             }
         }
+        for (const [key2, value2] of Object.entries(this.download.unsorted)) {
+            if (value2.download == false) {
+                numOfUnwanteds += 1;
+                delete value2.data;
+            }
+        }
 
         // cover image
         if (this.download.coverImage.download == false) {
@@ -827,7 +926,15 @@ export default class RPlayer {
         for (const [key, value] of Object.entries(this.download.mp3)) {
             if (value.data) {
                 zip.folder(baseFolderName).file(value.fileName,this.putID3(value));
+            } else {
+                if (value.imgData) {
+                    if ($("#rplayerCheckboxDownloadBundleOptions_TracksImages").is(":checked")) {
+                        var imageName = value.mediaName + "." + this.getFileExtension(value.srcImgFile);
+                        zip.folder(baseFolderName + "/images").file(imageName,value.imgData);
+                    }
+                }
             }
+
         }
 
         // ZIP Lyrics
@@ -855,6 +962,13 @@ export default class RPlayer {
                 if (value2.data) {
                     zip.folder(baseFolderName).folder("attachments").folder(value.mediaName).folder(value2.folder).file(value2.fileName,value2.data);
                 }
+            }
+        }
+
+        // ZIP unsorted files
+        for (const [key2, value2] of Object.entries(this.download.unsorted)) {
+            if (value2.data) {
+                zip.folder(baseFolderName).folder("attachments").folder(value2.folder).file(value2.fileName,value2.data);
             }
         }
 
