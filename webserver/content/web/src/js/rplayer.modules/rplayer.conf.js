@@ -43,7 +43,7 @@ export default class RPlayerConf {
             configVersion: 1,
             app: {
                 name: "RPlayer",
-                version: "1.42.60", // <some platform updates>.<visible or control updates>.<unvisible updates>
+                version: "1.42.61", // <some platform updates>.<visible or control updates>.<unvisible updates>
                 date: "2022",
                 web3Protocol: "ipfs://",
                 rplayerIndex: "rplayer.htm",
@@ -1964,7 +1964,43 @@ export default class RPlayerConf {
                         src: "media/images/dreamer_album.jpg"
                     },
                 }
-            }
+            },
+            cssTimeModyfier: {
+                selectors: {
+                    "nolan": "img[src^=\"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUG\"]", // Nolan Mateer
+                    "jurta": "img[src^=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAY\"]", // Jurta
+                },
+                css: {
+                    0: {
+                        entrance: {
+                            display: "none",
+                        },
+                        outgoing: {
+                            display: "inline",
+                        },
+                    },
+                },
+                commandsInTime: {
+                    0: {
+                        selectorsKey: "nolan",
+                        cssKey: 0,
+                        length: 3000,
+                        animationTime: {
+                            entrance: 500,
+                            outgoing: 500
+                        },
+                    },
+                    4000: {
+                        selectorsKey: "jurta",
+                        cssKey: 0,
+                        length: 3000,
+                        animationTime: {
+                            entrance: 500,
+                            outgoing: 500
+                        },
+                    },
+                },
+            },
         };
         
         console.log("[RPlayer] Config: ",this.conf);
