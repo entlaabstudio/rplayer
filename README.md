@@ -33,3 +33,5 @@ The main goal of this project is to free the distribution of music from large co
 ## Known issues:
 
 **Booting does not work on a full IPFS node of Opera**. I think the problem is on the browser side, because it does not have an overview of the sizes of loaded files, statuses (everything is automatically 200) and the amount of data already loaded. In addition, it constantly reads data that should have been cached. So even in my opinion, the cache does not work as it should. The implementation of IPFS in this browser does not seem to be complete, and I hope it is only a matter of time before it fixes itself. Sorry for troubles. I do not recommend a full Opera node.
+
+**Firefox and Safari** do not support all Bluetooth commands and do not support preventing the operating system from going to sleep. It's probably only a matter of time before it settles down.
