@@ -1971,34 +1971,42 @@ export default class RPlayerConf {
                     "jurta": "img[src^=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAY\"]", // Jurta
                 },
                 css: {
-                    0: {
+                    "opacity": {
                         entrance: {
-                            display: "none",
+                            opacity: "0",
                         },
                         outgoing: {
-                            display: "inline",
+                            opacity: "1",
                         },
+                    },
+                },
+                default: {
+                    cssKey: "opacity",
+                    length: 3000,
+                    animationTime: {
+                        entrance: 500,
+                        outgoing: 500
                     },
                 },
                 commandsInTime: {
                     0: {
                         selectorsKey: "nolan",
-                        cssKey: 0,
+                        cssKey: "opacity",
                         length: 3000,
-                        animationTime: {
-                            entrance: 500,
-                            outgoing: 500
-                        },
                     },
                     4000: {
                         selectorsKey: "jurta",
-                        cssKey: 0,
-                        length: 3000,
-                        animationTime: {
-                            entrance: 500,
-                            outgoing: 500
-                        },
+                        // cssKey: 0,
+                        // length: 3000,
+                        // animationTime: {
+                        //     entrance: 500,
+                        //     outgoing: 500
+                        // },
                     },
+                    6000: {selectorsKey: "nolan"},
+                    8000: {selectorsKey: "jurta"},
+                    16000: {selectorsKey: "nolan"},
+                    18000: {selectorsKey: "jurta"},
                 },
             },
         };
