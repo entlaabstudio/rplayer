@@ -54,6 +54,7 @@
 
         this.mainWindowSel = that.rplayerObj.rplayerCfg.conf.app.htmlSelectors.mainWindow;
         this.lastCssModyfiers = [];
+        this.wasClick = false;
 
         // this.motion3d();
 
@@ -80,18 +81,37 @@
     cssTimeModyfier() {
         var cfg = this.rplayerObj.rplayerCfg.conf.cssTimeModyfier;
         var that = this;
-        setInterval(function() {
-            for(const [key, value] of Object.entries(that.cssTimeModifyerGetCurrent())) {
-                if (that.lastCssModyfiers[key] === undefined) {
-                    that.lastCssModyfiers[key] = false;
+
+        $("body *").on("click", function() {
+            setTimeout(function () {
+                that.wasClick = true;
+            },(that.fadeinTime + that.fadeoutTime) * 2);
+        });
+        if (cfg !== undefined) {
+            setInterval(function() {
+                var i = 1;
+                var length = Object.entries(that.cssTimeModifyerGetCurrent()).length;
+                for(const [key, value] of Object.entries(that.cssTimeModifyerGetCurrent())) {
+                    if (that.lastCssModyfiers[key] === undefined) {
+                        that.lastCssModyfiers[key] = false;
+                    }
+                    if ($(value.selector).length > 0) {
+                        if (
+                            JSON.stringify(that.lastCssModyfiers[key]) != JSON.stringify(value.css) ||
+                            that.wasClick == true
+                        ) {
+                            console.log("[RPlayer]","CSS modifying via selector \"" + value.selector + "\".",value.css);
+                            $(value.selector).stop().transit(value.css);
+                            that.lastCssModyfiers[key] = value.css;
+                            if (i == length) {
+                                that.wasClick = false;
+                            }
+                        }
+                    }
+                    i++;
                 }
-                if (JSON.stringify(that.lastCssModyfiers[key]) != JSON.stringify(value.css)) {
-                    console.log("[RPlayer]","CSS modifying via selector \"" + value.selector + "\".",value.css);
-                    $(value.selector).stop().transit(value.css);
-                    that.lastCssModyfiers[key] = value.css;
-                }
-            }
-        },169);
+            },169);
+        }
     }
 
     cssTimeModifyerGetCurrent() {
