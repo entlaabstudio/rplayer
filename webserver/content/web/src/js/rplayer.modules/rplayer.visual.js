@@ -53,6 +53,7 @@
         this.timerSecs = 0;
 
         this.mainWindowSel = that.rplayerObj.rplayerCfg.conf.app.htmlSelectors.mainWindow;
+        this.lastCssModyfiers = [];
 
         // this.motion3d();
 
@@ -79,10 +80,19 @@
     cssTimeModyfier() {
         var cfg = this.rplayerObj.rplayerCfg.conf.cssTimeModyfier;
         var that = this;
-        console.log(["MOD"],cfg);
         setInterval(function() {
-            console.log(that.cssTimeModifyerGetCurrent());
-        },4000);
+            for(const [key, value] of Object.entries(that.cssTimeModifyerGetCurrent())) {
+                if (that.lastCssModyfiers[key] === undefined) {
+                    that.lastCssModyfiers[key] = false;
+                }
+                console.log(JSON.stringify(that.lastCssModyfiers[key]),JSON.stringify(value.css));
+                if (JSON.stringify(that.lastCssModyfiers[key]) != JSON.stringify(value.css)) {
+                    console.log("jedu");
+                    $(value.selector).stop().transit(value.css);
+                    that.lastCssModyfiers[key] = value.css;
+                }
+            }
+        },169);
     }
 
     cssTimeModifyerGetCurrent() {

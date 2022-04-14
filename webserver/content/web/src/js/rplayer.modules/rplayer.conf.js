@@ -1971,17 +1971,17 @@ export default class RPlayerConf {
                     "jurta": "img[src^=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAY\"]", // Jurta
                 },
                 css: {
-                    "opacity": {
+                    "fx1": {
                         entrance: {
-                            opacity: "0",
+                            scale: "1.3",
                         },
                         outgoing: {
-                            opacity: "1",
+                            scale: "1",
                         },
                     },
                 },
                 default: {
-                    cssKey: "opacity",
+                    cssKey: "fx1",
                     length: 3000,
                     animationTime: {
                         entrance: 500,
@@ -1989,24 +1989,45 @@ export default class RPlayerConf {
                     },
                 },
                 commandsInTime: {
-                    0: {
+                    556973: {
                         selectorsKey: "nolan",
-                        cssKey: "opacity",
-                        length: 3000,
+                        cssKey: "fx1",
+                        length: 17238,
                     },
-                    4000: {
+                    573965: {
                         selectorsKey: "jurta",
-                        // cssKey: 0,
-                        // length: 3000,
+                        // cssKey: "opacity",
+                        length: 14899,
                         // animationTime: {
                         //     entrance: 500,
                         //     outgoing: 500
                         // },
                     },
-                    6000: {selectorsKey: "nolan"},
-                    8000: {selectorsKey: "jurta"},
-                    16000: {selectorsKey: "nolan"},
-                    18000: {selectorsKey: "jurta"},
+                    591910: {
+                        selectorsKey: "jurta",
+                        // cssKey: "opacity",
+                        length: 32473, 
+                        // animationTime: {
+                        //     entrance: 500,
+                        //     outgoing: 500
+                        // },
+                    },
+                    626856: {
+                        selectorsKey: "nolan",
+                        length: 16039,
+                    },
+                    655596: {
+                        selectorsKey: "jurta",
+                        length: 63872,
+                    },
+                    721927: {
+                        selectorsKey: "jurta",
+                        length: 32718,
+                    },
+                    755034: {
+                        selectorsKey: "nolan",
+                        length: 22386,
+                    },
                 },
             },
         };
