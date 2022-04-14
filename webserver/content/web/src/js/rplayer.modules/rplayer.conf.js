@@ -201,6 +201,19 @@ export default class RPlayerConf {
                 //         "background-color: rgba(255,131,196,1) !important;" +
                 //     "}" +
                 // "</style>",
+                // htmlToBody:
+                // "<style tyle=\"text/css\">" +
+                //     ":root {" +
+                //         "--currentTime: rgba(255,131,196,1);" +
+                //         "--color1: rgba(255,131,196,1);" +
+                //     "}" +
+                //     "a {" +
+                //         "color: rgba(255,131,196,1);" +
+                //     "}" +
+                //     ".primary {" +
+                //         "background-color: rgba(255,131,196,1) !important;" +
+                //     "}" +
+                // "</style>",
                 htmlSelectors: {
                     mainWindow: "#rplayer",           // recommended ID
                     dimmer:     ".FullscreenDimmer",

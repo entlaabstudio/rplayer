@@ -269,6 +269,7 @@ export default class RPlayer {
     
     htmlToHeader() {
         $("head").append(this.rplayerCfg.conf.app.htmlToHeader);
+        $("body").append(this.rplayerCfg.conf.app.htmlToBody);
     }
 
     nl2br(str, is_xhtml) {   
