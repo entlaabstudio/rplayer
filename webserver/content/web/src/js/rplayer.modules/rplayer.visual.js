@@ -58,8 +58,7 @@
         // this.motion3d();
 
         this.ticker["checkFirstLoading"] = setInterval(function() {
-            that.dimmerFullscreen()
-            that.cssTimeModyfier();
+            that.dimmerFullscreen();
         },this.fadeoutTime * 1.2);
         this.ticker["stopTimer"] = setInterval(function() {
             that.tickStopTimer()
@@ -75,6 +74,7 @@
         this.buttons();
         this.setBackground();
         this.putMiniIconsFront();
+        this.cssTimeModyfier();
     }
 
     cssTimeModyfier() {
@@ -85,9 +85,8 @@
                 if (that.lastCssModyfiers[key] === undefined) {
                     that.lastCssModyfiers[key] = false;
                 }
-                console.log(JSON.stringify(that.lastCssModyfiers[key]),JSON.stringify(value.css));
                 if (JSON.stringify(that.lastCssModyfiers[key]) != JSON.stringify(value.css)) {
-                    console.log("jedu");
+                    console.log("[RPlayer]","CSS modifying via selector \"" + value.selector + "\".",value.css);
                     $(value.selector).stop().transit(value.css);
                     that.lastCssModyfiers[key] = value.css;
                 }
