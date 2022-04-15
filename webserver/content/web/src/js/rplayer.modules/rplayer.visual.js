@@ -47,16 +47,19 @@
 
     init() {
         var that = this;
+        this.putFavicon(); // maybe better place, who knows...
         
         this.ticker = new Array;
         this.timerSecs = 0;
 
         this.mainWindowSel = that.rplayerObj.rplayerCfg.conf.app.htmlSelectors.mainWindow;
+        this.lastCssModyfiers = [];
+        this.wasClick = false;
 
         // this.motion3d();
 
         this.ticker["checkFirstLoading"] = setInterval(function() {
-            that.dimmerFullscreen()
+            that.dimmerFullscreen();
         },this.fadeoutTime * 1.2);
         this.ticker["stopTimer"] = setInterval(function() {
             that.tickStopTimer()
@@ -72,9 +75,91 @@
         this.buttons();
         this.setBackground();
         this.putMiniIconsFront();
-        this.putFavicon();
+        this.cssTimeModyfier();
     }
 
+    cssTimeModyfier() {
+        var cfg = this.rplayerObj.rplayerCfg.conf.cssTimeModyfier;
+        var that = this;
+
+        $("body *").on("click", function() {
+            setTimeout(function () {
+                that.wasClick = true;
+            },(that.fadeinTime + that.fadeoutTime) * 2);
+        });
+        if (cfg !== undefined) {
+            setInterval(function() {
+                var i = 1;
+                var length = Object.entries(that.cssTimeModifyerGetCurrent()).length;
+                for(const [key, value] of Object.entries(that.cssTimeModifyerGetCurrent())) {
+                    if (that.lastCssModyfiers[key] === undefined) {
+                        that.lastCssModyfiers[key] = false;
+                    }
+                    if ($(value.selector).length > 0) {
+                        if (
+                            JSON.stringify(that.lastCssModyfiers[key]) != JSON.stringify(value.css) ||
+                            that.wasClick == true
+                        ) {
+                            console.log("[RPlayer]","CSS modifying via selector \"" + value.selector + "\".",value.css);
+                            $(value.selector).stop().transit(value.css);
+                            that.lastCssModyfiers[key] = value.css;
+                            if (i == length) {
+                                that.wasClick = false;
+                            }
+                        }
+                    }
+                    i++;
+                }
+            },169);
+        }
+    }
+
+    cssTimeModifyerGetCurrent() {
+        var cfg = this.rplayerObj.rplayerCfg.conf.cssTimeModyfier;
+        var that = this;
+        var time;
+        
+        time = that.rplayerObj.audioObject.currentTime * 1000;
+        var csss = [];
+        for (const [key, value] of Object.entries(cfg.selectors)) {
+            
+            var namedKey = key;
+
+            for (const [key2, value2] of Object.entries(cfg.commandsInTime)) {
+                if (
+                    key2 <= time &&
+                    value2.selectorsKey == namedKey
+                ) {
+                    csss[namedKey] = value2;
+                    csss[namedKey].time = key2;
+                }
+            }
+            for (const [key2, value2] of Object.entries(cfg.default)) {
+                if (csss[namedKey] !== undefined) {
+                    if (csss[namedKey][key2] === undefined) {
+                        csss[namedKey][key2] = value2;
+                    }
+                }
+            }
+            if (csss[namedKey] !== undefined) {
+                csss[namedKey].leaveTime = parseInt(csss[namedKey].time) + parseInt(csss[namedKey].length);
+                var animationTime = csss[namedKey].animationTime;
+                if (time < csss[namedKey].leaveTime) {
+                    csss[namedKey].css = cfg.css[csss[namedKey].cssKey].entrance;
+                    csss[namedKey].animateTime = animationTime["entrance"];
+                    csss[namedKey].phase = "entrance";
+                } else {
+                    csss[namedKey].css = cfg.css[csss[namedKey].cssKey].outgoing;
+                    csss[namedKey].animateTime = animationTime["outgoing"];
+                    csss[namedKey].phase = "outgoing";
+                }
+                csss[namedKey].selector = value;
+                delete csss[namedKey].animationTime;
+            }
+        }
+        return csss;
+    };
+    
     putFavicon() {
         var favicon = this.rplayerObj.rplayerCfg.conf.app.preferences.design.favicon;
         if (favicon !== undefined) {
