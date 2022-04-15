@@ -30,7 +30,7 @@
  * SOFTWARE.
  */
 
- export default class RPlayerInfo {
+export default class RPlayerInfo {
     constructor(rplayerObj,QrCode) {
         this.rplayerObj = rplayerObj;
         this.QrCode = QrCode;
@@ -153,7 +153,20 @@
         } catch (error) {
             
         }
-
+        
+        if ($("#rplayerInfoTemp").scrollTop() > 0) {
+            if ($("#rplayerInfo .transport").css("opacity") == "1") {
+                $("#rplayerInfo .transport").stop().transit({
+                    opacity: ".4"
+                },500);
+            }
+        } else {
+            if ($("#rplayerInfo .transport").css("opacity") != "1") {
+                $("#rplayerInfo .transport").stop().transit({
+                    opacity: "1"
+                },500);
+            }
+        }
     }
     
     htmlCreate() {
