@@ -63,24 +63,52 @@
         </style>
     </head>
     <body>
-        <div class="ui form three columns stackable grid layout">
-            <!-- <div class="row"> -->
-                <div class="seven wide column leftSide">
-                    <textarea placeholder="rplayer.conf.js >> object cssTimeModyfier" class="form-control sourceCode" wrap="hard" name="source"></textarea>
+        <form class="ui form three columns stackable grid layout" id="mainForm">
+            <div class="seven wide column leftSide">
+                <textarea placeholder="rplayer.conf.js >> object cssTimeModyfier" class="form-control sourceCode" wrap="hard" name="source"></textarea>
+            </div>
+            <div class="two wide column middleSide">
+                <div>
+                    <input type="text" name="cssFx" class="form-control cssFx" placeholder="CSS key">
                 </div>
-                <div class="two wide column middleSide">
-                    <div style="background-color: red;">
-                        ahoj demente
-                    </div>
-                </div>
-                <div class="seven wide column rightSide">
-                    <textarea placeholder='{"TimeMs": <int>,"LengthMs": <int>}, ...' class="form-control addCode" wrap="hard" name="add"></textarea>
-                </div>
-
-            <!-- </div> -->
-        </div>
+            </div>
+            <div class="seven wide column rightSide">
+                <textarea placeholder='[{"TimeMs": <int>,"LengthMs": <int>}, ...]' class="form-control addCode" wrap="hard" name="add"></textarea>
+            </div>
+        </form>
     </body>
     <script type="text/ecmascript">
+        /**
+         * @file AddCssTimeModyfier utility for RPlayer web application
+         * @copyright Robert Rajs 2022
+         * @author Robert Rajs
+         * @see {@link https://rajs.info|Home}
+         * @see {@link https://zesilovac.cz|Zesilovač}
+         * @see {@link https://bandzone.cz/rajs|Bandzone}
+         * @see {@link https://technotramp.com|Technotramp}
+         * @see {@link https://github.com/entlaabstudio/rplayer|GitHub}
+         * @see {@link https://cs-cz.facebook.com/robert.rajs.9|Facebook}
+         * @license
+         * Copyright (c) 2022 Robert Rajs
+         * 
+         * Permission is hereby granted, free of charge, to any person obtaining a copy
+         * of this software and associated documentation files (the "Software"), to deal
+         * in the Software without restriction, including without limitation the rights
+         * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+         * copies of the Software, and to permit persons to whom the Software is
+         * furnished to do so, subject to the following conditions:
+         * 
+         * The above copyright notice and this permission notice shall be included in all
+         * copies or substantial portions of the Software.
+         * 
+         * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+         * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+         * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+         * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+         * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+         * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+         * SOFTWARE.
+         */
         class AddCssTimeModyfier {
             constructor() {
                 var that = this;
@@ -92,25 +120,49 @@
             }
             init() {
                 this.sourceCorrect = false;
+                this.addsCorrect   = false;
+                this.cssFxCorrect  = false;
+                
+                this.cssTMObj      = false;
+                this.jsonObj       = false;
 
-                this.checkSource();
+                this.checkForm();
                 this.textareaColor();
+                $("#mainForm").change();
             }
-            checkSource() {
+            checkForm() {
                 var that = this;
-                setInterval(function() {
+                $("#mainForm").on("keyup change paste",function() {
                     var obj;
+                    console.clear();
                     try {
                         eval("obj = {" + $(".leftSide .sourceCode").val() + "}");
                         if (Object.keys(obj).length > 0) {
+                            that.cssTMObj = obj;
                             that.sourceCorrect = true
                             if (!that.checkMandatories(obj)) {
                                 that.sourceCorrect = false;
                             } else {
-                                console.info("[RPlayer:cssTimeModyfier]","Cool! Everything looks great!");
+                                var cfxi = that.checkFxInput();
+                                if (cfxi != true) {
+                                    console.error("[RPlayer:cssKey]",cfxi);
+                                    that.cssFxCorrect = false;
+                                } else {
+                                    that.cssFxCorrect = true;
+                                    var aci = that.checkAddCode();
+                                        if (aci != true) {
+                                        console.error("[RPlayer:addCode]",aci);
+                                        that.addsCorrect = false;
+                                    } else {
+                                        var aci = that.checkAddCode();
+                                        that.addsCorrect = true;
+                                        console.info("[RPlayer:AddCssTimeModyfier]","Great! Everything looks good. ;-)");
+                                    }
+                                }
                             }
                         } else {
                             that.sourceCorrect = false
+                            that.cssTMObj      = false;
                             console.error("[RPlayer:cssTimeModyfier]","Nothing here.")
                         }
                     } catch (error) {
@@ -118,7 +170,36 @@
                         console.error("[RPlayer:cssTimeModyfier]","Syntax error.")
                     }
                     that.textareaColor()
-                },200);
+                });
+            }
+            checkAddCode() {
+                if ($(".addCode").val() == "") {
+                    return "JSON for additing must be set.";
+                } else {
+                    try {
+                        this.jsonObj = JSON.parse($(".addCode").val());
+                        return true;
+                    } catch (error) {
+                        return "Syntax error.";
+                    }
+                }
+            }
+            checkFxInput() {
+                if ($(".cssFx").val() == "") {
+                    return "CSS key must be set.";
+                } else {
+                    var fxEntries = 0;
+                    for (const [key, value] of Object.entries(this.cssTMObj.cssTimeModyfier.css)) {
+                        if (key == $(".cssFx").val()) {
+                            fxEntries += 1;
+                        }
+                    }
+                    if (fxEntries < 1) {
+                        return "No fx entry in cssTimeModyfier object.";
+                    } else {
+                        return true;
+                    }
+                }
             }
             checkMandatories(obj) {
                 var obj;
@@ -154,12 +235,33 @@
             textareaColor() {
                 var that = this;
                 setInterval(function() {
+                    // source
                     if (that.sourceCorrect) {
                         $(".leftSide .sourceCode").css({
                             backgroundColor: "lightgreen"
                         });
                     } else {
                         $(".leftSide .sourceCode").css({
+                            backgroundColor: "pink"
+                        });
+                    }
+                    // CSS fx
+                    if (that.cssFxCorrect) {
+                        $(".middleSide .cssFx").css({
+                            backgroundColor: "lightgreen"
+                        });
+                    } else {
+                        $(".middleSide .cssFx").css({
+                            backgroundColor: "pink"
+                        });
+                    }
+                    // addCode
+                    if (that.addsCorrect) {
+                        $(".rightSide .addCode").css({
+                            backgroundColor: "lightgreen"
+                        });
+                    } else {
+                        $(".rightSide .addCode").css({
                             backgroundColor: "pink"
                         });
                     }
