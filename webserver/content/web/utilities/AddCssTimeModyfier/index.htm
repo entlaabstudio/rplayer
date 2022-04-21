@@ -26,6 +26,16 @@
         <script src="../../vendor/robinherbots/jquery.inputmask/dist/jquery.inputmask.min.js"></script>
         <script src="../../src/js/foreign/jquery.fullscreen.min.js"></script>
         <style>
+            :root {
+                --errorBgColor: rgba(255,230,230,1);
+                --textColor: rgba(255,255,255,1);
+                --bodyBgColor: rgba(255,255,255,1);
+            }
+            
+            /* body * {
+                color: white !important;
+            } */
+            
             body {
                 position: fixed;
                 display: flex;
@@ -35,6 +45,7 @@
                 right: 0;
                 bottom: 0;
                 left: 0;
+                color: var(--textColor) !important;
             }
 
             .leftSide,
@@ -43,7 +54,6 @@
                 display: flex !important;
                 justify-content: center;
                 align-items: center;
-                background-color: #123;
             }
 
             .layout {
@@ -59,26 +69,35 @@
                 height: 100% !important;
                 max-height: none !important;
                 resize: none !important;
+                font-family: 'Courier New', Courier, monospace;
             }
 
-            input[type='text'] {
+            .middleSide .errors {
+                margin: .25em 0 .25em 0 !important;
+                resize: vertical;
+                max-height: 100% !important;
+            }
+
+            input[type='text'],
+            .middleSide .errors {
                 margin: .25em 0 .25em 0 !important;
             }
         </style>
     </head>
     <body>
         <form class="ui form three columns stackable grid layout" id="mainForm">
-            <div class="seven wide column leftSide">
-                <textarea placeholder="rplayer.conf.js >> object cssTimeModyfier" class="form-control sourceCode" wrap="hard" name="source"></textarea>
+            <div class="six wide column leftSide">
+                <textarea placeholder="rplayer.conf.js >> object cssTimeModyfier" class="form-control confSource" wrap="hard" name="source"></textarea>
             </div>
-            <div class="two wide column middleSide">
+            <div class="four wide column middleSide">
                 <div>
                     <input type="text" name="cssFx" class="form-control cssFx" placeholder="CSS key">
                     <input type="text" name="cssSelector" class="form-control cssSelector" placeholder="CSS selector">
                     <input type="text" name="offset" class="form-control offset" placeholder="Data offset [ms]">
+                    <textarea class="form-control errors" readonly wrap="hard"></textarea>
                 </div>
             </div>
-            <div class="seven wide column rightSide">
+            <div class="six wide column rightSide">
                 <textarea placeholder='[{"TimeMs": <int>,"LengthMs": <int>}, ...]' class="form-control addCode" wrap="hard" name="add"></textarea>
             </div>
         </form>
@@ -124,156 +143,206 @@
                     }
                 );
             }
-            init() {
-                this.sourceCorrect = false;
-                this.addsCorrect   = false;
-                this.cssFxCorrect  = false;
-                
-                this.cssTMObj      = false;
-                this.jsonObj       = false;
 
+            init() {
                 this.checkForm();
-                this.textareaColor();
-                $("#mainForm").change();
             }
+
             checkForm() {
                 var that = this;
                 $("#mainForm").on("keyup change paste",function() {
-                    var obj;
-                    console.clear();
-                    try {
-                        eval("obj = {" + $(".leftSide .sourceCode").val() + "}");
-                        if (Object.keys(obj).length > 0) {
-                            that.cssTMObj = obj;
-                            that.sourceCorrect = true
-                            if (!that.checkMandatories(obj)) {
-                                that.sourceCorrect = false;
-                            } else {
-                                var cfxi = that.checkFxInput();
-                                if (cfxi != true) {
-                                    console.error("[RPlayer:cssKey]",cfxi);
-                                    that.cssFxCorrect = false;
-                                } else {
-                                    that.cssFxCorrect = true;
-                                    var aci = that.checkAddCode();
-                                        if (aci != true) {
-                                        console.error("[RPlayer:addCode]",aci);
-                                        that.addsCorrect = false;
-                                    } else {
-                                        var aci = that.checkAddCode();
-                                        that.addsCorrect = true;
-                                        console.info("[RPlayer:AddCssTimeModyfier]","Great! Everything looks good. ;-)");
-                                    }
-                                }
-                            }
-                        } else {
-                            that.sourceCorrect = false
-                            that.cssTMObj      = false;
-                            console.error("[RPlayer:cssTimeModyfier]","Nothing here.")
-                        }
-                    } catch (error) {
-                        that.sourceCorrect = false;
-                        console.error("[RPlayer:cssTimeModyfier]","Syntax error.")
-                    }
-                    that.textareaColor()
+                    that.errors = {};
+                    that.checkConfSource();
+                    that.printErrors();
                 });
             }
-            checkAddCode() {
-                if ($(".addCode").val() == "") {
-                    return "JSON for additing must be set.";
-                } else {
-                    try {
-                        this.jsonObj = JSON.parse($(".addCode").val());
-                        return true;
-                    } catch (error) {
-                        return "Syntax error.";
-                    }
-                }
-            }
-            checkFxInput() {
-                if ($(".cssFx").val() == "") {
-                    return "CSS key must be set.";
-                } else {
-                    var fxEntries = 0;
-                    for (const [key, value] of Object.entries(this.cssTMObj.cssTimeModyfier.css)) {
-                        if (key == $(".cssFx").val()) {
-                            fxEntries += 1;
-                        }
-                    }
-                    if (fxEntries < 1) {
-                        return "No fx entry in cssTimeModyfier object.";
-                    } else {
-                        return true;
-                    }
-                }
-            }
-            checkMandatories(obj) {
-                var obj;
-                var ret = true;
 
-                if (obj.cssTimeModyfier === undefined) {
-                    ret = false;
-                    console.error("[RPlayer:cssTimeModyfier]","Node cssTimeModyfier not found.");
-                } else {
-                    if (obj.cssTimeModyfier.selectors === undefined) {
-                        ret = false;
-                        console.error("[RPlayer:cssTimeModyfier]","Node cssTimeModyfier.selectors not found.");
-                    } else {
-                        if (obj.cssTimeModyfier.css === undefined) {
-                            ret = false;
-                            console.error("[RPlayer:cssTimeModyfier]","Node cssTimeModyfier.css not found.");
-                        } else {
-                            if (obj.cssTimeModyfier.default === undefined) {
-                                ret = false;
-                                console.error("[RPlayer:cssTimeModyfier]","Node cssTimeModyfier.default not found.");
-                            } else {
-                                if (obj.cssTimeModyfier.commandsInTime === undefined) {
-                                    ret = false;
-                                    console.error("[RPlayer:cssTimeModyfier]","Node cssTimeModyfier.commandsInTime not found.");
-                                }
+            checkConfSource() {
+                var obj;
+                this.errors.confSource = [];
+                try {
+                    eval("obj = {" + $(".leftSide .confSource").val() + "}");
+                    this.obj = obj;    
+                } catch (error) {
+                    this.errors.confSource[Object.keys(this.errors.confSource).length] = {
+                        cssSelector: "",
+                        message: "Syntax error.",
+                        realError: error
+                    };
+                }
+            }
+
+            printErrors() {
+                var that = this;
+                if (this.printing === undefined) {
+                    that.printing = true;
+                    setInterval(function() {
+                        var allErrors = "";
+                        var lat = false;
+                        for (const [key, value] of Object.entries(that.errors)) {
+                            for (const [key2, value2] of Object.entries(value)) {
+                                allErrors += ((lat) ? "\n" : "") + key + ": " + value2.message;
+                                lat = true;
                             }
                         }
-                    }
+                        $(".errors").val(allErrors);
+                    },100);
                 }
-
-                return ret;
-            }
-            textareaColor() {
-                var that = this;
-                setInterval(function() {
-                    // source
-                    if (that.sourceCorrect) {
-                        $(".leftSide .sourceCode").css({
-                            borderColor: "lightgreen"
-                        });
-                    } else {
-                        $(".leftSide .sourceCode").css({
-                            borderColor: "red"
-                        });
-                    }
-                    // CSS fx
-                    if (that.cssFxCorrect) {
-                        $(".middleSide .cssFx").css({
-                            borderColor: "lightgreen"
-                        });
-                    } else {
-                        $(".middleSide .cssFx").css({
-                            borderColor: "red"
-                        });
-                    }
-                    // addCode
-                    if (that.addsCorrect) {
-                        $(".rightSide .addCode").css({
-                            borderColor: "lightgreen"
-                        });
-                    } else {
-                        $(".rightSide .addCode").css({
-                            borderColor: "red"
-                        });
-                    }
-                },200);
             }
         }
+
         new AddCssTimeModyfier();
+        //     init() {
+        //         this.sourceCorrect = false;
+        //         this.addsCorrect   = false;
+        //         this.cssFxCorrect  = false;
+                
+        //         this.cssTMObj      = false;
+        //         this.jsonObj       = false;
+
+        //         this.checkForm();
+        //         this.textareaColor();
+        //         $("#mainForm").change();
+        //     }
+        //     checkForm() {
+        //         var that = this;
+        //         $("#mainForm").on("keyup change paste",function() {
+        //             var obj;
+        //             console.clear();
+        //             try {
+        //                 eval("obj = {" + $(".leftSide .sourceCode").val() + "}");
+        //                 if (Object.keys(obj).length > 0) {
+        //                     that.cssTMObj = obj;
+        //                     that.sourceCorrect = true
+        //                     if (!that.checkMandatories(obj)) {
+        //                         that.sourceCorrect = false;
+        //                     } else {
+        //                         that.sourceCorrect = true;
+        //                         var cfxi = that.checkFxInput();
+        //                         if (cfxi != true) {
+        //                             console.error("[RPlayer:cssKey]",cfxi);
+        //                             that.cssFxCorrect = false;
+        //                         } else {
+        //                             that.cssFxCorrect = true;
+        //                             var aci = that.checkAddCode();
+        //                                 if (aci != true) {
+        //                                 console.error("[RPlayer:addCode]",aci);
+        //                                 that.addsCorrect = false;
+        //                             } else {
+        //                                 var aci = that.checkAddCode();
+        //                                 that.addsCorrect = true;
+        //                                 console.info("[RPlayer:AddCssTimeModyfier]","Great! Everything looks good.");
+        //                             }
+        //                         }
+        //                     }
+        //                 } else {
+        //                     that.sourceCorrect = false
+        //                     that.cssTMObj      = false;
+        //                     console.error("[RPlayer:cssTimeModyfier]","Nothing here.")
+        //                 }
+        //             } catch (error) {
+        //                 that.sourceCorrect = false;
+        //                 console.error("[RPlayer:cssTimeModyfier]","Syntax error.")
+        //             }
+        //             that.textareaColor()
+        //         });
+        //     }
+        //     checkAddCode() {
+        //         if ($(".addCode").val() == "") {
+        //             return "JSON for additing must be set.";
+        //         } else {
+        //             try {
+        //                 this.jsonObj = JSON.parse($(".addCode").val());
+        //                 return true;
+        //             } catch (error) {
+        //                 return "Syntax error.";
+        //             }
+        //         }
+        //     }
+        //     checkFxInput() {
+        //         if ($(".cssFx").val() == "") {
+        //             return "CSS key must be set.";
+        //         } else {
+        //             var fxEntries = 0;
+        //             for (const [key, value] of Object.entries(this.cssTMObj.cssTimeModyfier.css)) {
+        //                 if (key == $(".cssFx").val()) {
+        //                     fxEntries += 1;
+        //                 }
+        //             }
+        //             if (fxEntries < 1) {
+        //                 return "No fx entry in cssTimeModyfier object.";
+        //             } else {
+        //                 return true;
+        //             }
+        //         }
+        //     }
+        //     checkMandatories(obj) {
+        //         var obj;
+        //         var ret = true;
+
+        //         if (obj.cssTimeModyfier === undefined) {
+        //             ret = false;
+        //             console.error("[RPlayer:cssTimeModyfier]","Node cssTimeModyfier not found.");
+        //         } else {
+        //             if (obj.cssTimeModyfier.selectors === undefined) {
+        //                 ret = false;
+        //                 console.error("[RPlayer:cssTimeModyfier]","Node cssTimeModyfier.selectors not found.");
+        //             } else {
+        //                 if (obj.cssTimeModyfier.css === undefined) {
+        //                     ret = false;
+        //                     console.error("[RPlayer:cssTimeModyfier]","Node cssTimeModyfier.css not found.");
+        //                 } else {
+        //                     if (obj.cssTimeModyfier.default === undefined) {
+        //                         ret = false;
+        //                         console.error("[RPlayer:cssTimeModyfier]","Node cssTimeModyfier.default not found.");
+        //                     } else {
+        //                         if (obj.cssTimeModyfier.commandsInTime === undefined) {
+        //                             ret = false;
+        //                             console.error("[RPlayer:cssTimeModyfier]","Node cssTimeModyfier.commandsInTime not found.");
+        //                         }
+        //                     }
+        //                 }
+        //             }
+        //         }
+
+        //         return ret;
+        //     }
+        //     textareaColor() {
+        //         var that = this;
+        //         setInterval(function() {
+        //             // source
+        //             if (that.sourceCorrect) {
+        //                 $(".leftSide .sourceCode").css({
+        //                     backgroundColor: "lightgreen"
+        //                 });
+        //             } else {
+        //                 $(".leftSide .sourceCode").css({
+        //                     backgroundColor: "var(--errorBgColor)"
+        //                 });
+        //             }
+        //             // CSS fx
+        //             if (that.cssFxCorrect) {
+        //                 $(".middleSide .cssFx").css({
+        //                     backgroundColor: "lightgreen"
+        //                 });
+        //             } else {
+        //                 $(".middleSide .cssFx").css({
+        //                     backgroundColor: "var(--errorBgColor)"
+        //                 });
+        //             }
+        //             // addCode
+        //             if (that.addsCorrect) {
+        //                 $(".rightSide .addCode").css({
+        //                     backgroundColor: "lightgreen"
+        //                 });
+        //             } else {
+        //                 $(".rightSide .addCode").css({
+        //                     backgroundColor: "var(--errorBgColor)"
+        //                 });
+        //             }
+        //         },200);
+        //     }
+        // }
+        // new AddCssTimeModyfier();
     </script>
 </html>
