@@ -60,6 +60,10 @@
                 max-height: none !important;
                 resize: none !important;
             }
+
+            input[type='text'] {
+                margin: .25em 0 .25em 0 !important;
+            }
         </style>
     </head>
     <body>
@@ -70,6 +74,8 @@
             <div class="two wide column middleSide">
                 <div>
                     <input type="text" name="cssFx" class="form-control cssFx" placeholder="CSS key">
+                    <input type="text" name="cssSelector" class="form-control cssSelector" placeholder="CSS selector">
+                    <input type="text" name="offset" class="form-control offset" placeholder="Data offset [ms]">
                 </div>
             </div>
             <div class="seven wide column rightSide">
@@ -238,31 +244,31 @@
                     // source
                     if (that.sourceCorrect) {
                         $(".leftSide .sourceCode").css({
-                            backgroundColor: "lightgreen"
+                            borderColor: "lightgreen"
                         });
                     } else {
                         $(".leftSide .sourceCode").css({
-                            backgroundColor: "pink"
+                            borderColor: "red"
                         });
                     }
                     // CSS fx
                     if (that.cssFxCorrect) {
                         $(".middleSide .cssFx").css({
-                            backgroundColor: "lightgreen"
+                            borderColor: "lightgreen"
                         });
                     } else {
                         $(".middleSide .cssFx").css({
-                            backgroundColor: "pink"
+                            borderColor: "red"
                         });
                     }
                     // addCode
                     if (that.addsCorrect) {
                         $(".rightSide .addCode").css({
-                            backgroundColor: "lightgreen"
+                            borderColor: "lightgreen"
                         });
                     } else {
                         $(".rightSide .addCode").css({
-                            backgroundColor: "pink"
+                            borderColor: "red"
                         });
                     }
                 },200);
