@@ -79,8 +79,13 @@
             }
 
             input[type='text'],
-            .middleSide .errors {
+            .middleSide .errors,
+            .middleSide .processBtn {
                 margin: .25em 0 .25em 0 !important;
+            }
+
+            .middleSide .processBtn {
+                width: 100%;
             }
         </style>
     </head>
@@ -91,6 +96,7 @@
             </div>
             <div class="four wide column middleSide">
                 <div>
+                    <div class="positive ui button processBtn disabled">Process JSON</div>
                     <input type="text" name="cssFx" class="form-control cssFx" placeholder="CSS key">
                     <input type="text" name="cssSelector" class="form-control cssSelector" placeholder="CSS selector">
                     <input type="text" name="offset" class="form-control offset" placeholder="Data offset [ms]">
@@ -172,17 +178,73 @@
                     that.checkCssSelectorInput();
                     that.checkAddCode();
                     that.printErrors();
-                    that.okInfo();
+                    that.okState();
+                    that.inputMask();
+                    that.processAction();
                 });
             }
 
-            okInfo() {
+            processAction() {
+                var that = this;
+                if (this.processActionInit === undefined) {
+                    that.processActionInit = true;
+                    
+                    function getRealTimeMs(time) {
+                        var existsTime = 0;
+                        var time;
+                        for (const [key,value] of Object.entries(that.obj.cssTimeModyfier.commandsInTime)) {
+                            if (parseInt(key) <= time) {
+                                existsTime = parseInt(key);
+                            }
+                        }
+                        if (existsTime == time) {
+                            time += 1;
+                            getRealTimeMs(time);
+                        } else {
+                            console.log(existsTime,time)
+                            return time;
+                        }
+                    }
+
+                    $(document).on("click",".processBtn",function() {
+                        if (Object.keys(that.errors).length == 0) {
+                            console.log(that.jsonObj);
+                            if ($(".offset").val() == "") {
+                                $(".offset").val("0");
+                            }
+                            var offset = parseInt($(".offset").val());
+                            var cssSelector = $(".cssSelector").val();
+                            var cssFx = $(".cssFx").val();
+                            var jsonTimeMs;
+                            for (const [key,value] of Object.entries(that.jsonObj)) {
+                                jsonTimeMs = value.TimeMs + offset;
+                                console.log(offset, cssSelector, cssFx, value.TimeMs, jsonTimeMs, getRealTimeMs(jsonTimeMs));
+                            }
+                        }
+                        return false;
+                    });
+                }
+            }
+
+            inputMask() {
+                $(".offset").inputmask({"mask" : "99999999"}); //specifying options
+                $(".offset").inputmask({"placeholder" : ""});  //static mask
+            }
+
+            okState() {
                 var that = this;
                 if (this.okInfoTicker === undefined) {
                     this.okInfoTicker = true;
                     setInterval(function() {
                         if (Object.keys(that.errors).length == 0) {
                             $(".errors").val("Great! Everything looks good.");
+                            if ($(".processBtn").hasClass("disabled")) {
+                                $(".processBtn").removeClass("disabled");
+                            }
+                        } else {
+                            if (!$(".processBtn").hasClass("disabled")) {
+                                $(".processBtn").addClass("disabled");
+                            }
                         }
                     },100);
                 }
