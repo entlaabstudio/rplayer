@@ -145,6 +145,21 @@
             }
 
             init() {
+                this.css = {
+                    entrance: {
+                        backgroundColor: "pink"
+                    },
+                    outgoing: {
+                        backgroundColor: "white"
+                    },
+                    possibleSelectors: [
+                        ".confSource",
+                        ".addCode",
+                        ".cssFx",
+                        ".cssSelector",
+                        ".offset"
+                    ]
+                }
                 this.checkForm();
             }
 
@@ -159,17 +174,23 @@
 
             checkConfSource() {
                 var obj;
-                this.errors.confSource = [];
                 try {
                     eval("obj = {" + $(".leftSide .confSource").val() + "}");
-                    this.obj = obj;    
+                    this.obj = obj;
                 } catch (error) {
-                    this.errors.confSource[Object.keys(this.errors.confSource).length] = {
-                        cssSelector: "",
-                        message: "Syntax error.",
-                        realError: error
-                    };
+                    this.pushError("confSource", "Syntax error.", ".confSource");
                 }
+            }
+
+            pushError(where, message, cssSelector) {
+                var where, message, cssSelector;
+                if (this.errors[where] === undefined) {
+                    this.errors[where] = [];
+                }
+                this.errors[where][Object.keys(this.errors[where]).length] = {
+                    cssSelector: cssSelector,
+                    message: message
+                };
             }
 
             printErrors() {
@@ -178,11 +199,26 @@
                     that.printing = true;
                     setInterval(function() {
                         var allErrors = "";
-                        var lat = false;
+                        var lat2 = false;
+                        var errSelectors = [];
                         for (const [key, value] of Object.entries(that.errors)) {
+                            if (lat2) {
+                                allErrors += "\n-----\n";
+                            }
+                            var lat = false;
                             for (const [key2, value2] of Object.entries(value)) {
-                                allErrors += ((lat) ? "\n" : "") + key + ": " + value2.message;
+                                allErrors += ((lat) ? "\n[" : "[") + key + "]\n>> " + value2.message;
+                                $(value2.cssSelector).css(that.css.entrance);
+                                if (!errSelectors.includes(value2.cssSelector)) {
+                                    errSelectors[Object.keys(errSelectors).length] = value2.cssSelector;
+                                }
                                 lat = true;
+                            }
+                            lat2 = true;
+                        }
+                        for (const [key, value] of Object.entries(that.css.possibleSelectors)) {
+                            if (!errSelectors.includes(value)) {
+                                $(value).css(that.css.outgoing);
                             }
                         }
                         $(".errors").val(allErrors);
