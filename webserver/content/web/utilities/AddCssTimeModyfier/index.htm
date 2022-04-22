@@ -69,7 +69,7 @@
                 height: 100% !important;
                 max-height: none !important;
                 resize: none !important;
-                font-family: 'Courier New', Courier, monospace;
+                /* font-family: 'Courier New', Courier, monospace; */
             }
 
             .middleSide .errors {
@@ -87,18 +87,18 @@
     <body>
         <form class="ui form three columns stackable grid layout" id="mainForm">
             <div class="six wide column leftSide">
-                <textarea placeholder="rplayer.conf.js >> object cssTimeModyfier" class="form-control confSource" wrap="hard" name="source"></textarea>
+                <textarea placeholder="rplayer.conf.js >> object cssTimeModyfier" class="form-control confSource" wrap="soft" name="source"></textarea>
             </div>
             <div class="four wide column middleSide">
                 <div>
                     <input type="text" name="cssFx" class="form-control cssFx" placeholder="CSS key">
                     <input type="text" name="cssSelector" class="form-control cssSelector" placeholder="CSS selector">
                     <input type="text" name="offset" class="form-control offset" placeholder="Data offset [ms]">
-                    <textarea class="form-control errors" readonly wrap="hard"></textarea>
+                    <textarea class="form-control errors" readonly wrap="soft"></textarea>
                 </div>
             </div>
             <div class="six wide column rightSide">
-                <textarea placeholder='[{"TimeMs": <int>,"LengthMs": <int>}, ...]' class="form-control addCode" wrap="hard" name="add"></textarea>
+                <textarea placeholder='[{"TimeMs": <int>,"LengthMs": <int>}, ...]' class="form-control addCode" wrap="soft" name="add"></textarea>
             </div>
         </form>
     </body>
@@ -168,15 +168,112 @@
                 $("#mainForm").on("keyup change paste",function() {
                     that.errors = {};
                     that.checkConfSource();
+                    that.checkFxInput();
+                    that.checkCssSelectorInput();
+                    that.checkAddCode();
                     that.printErrors();
+                    that.okInfo();
                 });
+            }
+
+            okInfo() {
+                var that = this;
+                if (this.okInfoTicker === undefined) {
+                    this.okInfoTicker = true;
+                    setInterval(function() {
+                        if (Object.keys(that.errors).length == 0) {
+                            $(".errors").val("Great! Everything looks good.");
+                        }
+                    },100);
+                }
+            }
+
+            checkCssSelectorInput() {
+                if ($(".cssSelector").val() == "") {
+                    this.pushError("cssSelectorInput", "CSS key must be set.", ".cssSelector");
+                } else {
+                    try {
+                        var selectorEntries = 0;
+                        for (const [key, value] of Object.entries(this.obj.cssTimeModyfier.selectors)) {
+                            if (key == $(".cssSelector").val()) {
+                                selectorEntries += 1;
+                            }
+                        }
+                        if (selectorEntries < 1) {
+                            this.pushError("cssSelectorInput", "No CSS selectors entry node in cssTimeModyfier object.", ".cssSelector");
+                        }   
+                    } catch (error) {
+                        
+                    }
+                }
+            }
+
+            checkAddCode() {
+                if ($(".addCode").val() == "") {
+                    this.pushError("addCode", "JSON for additing must be set.", ".addCode");
+                } else {
+                    try {
+                        this.jsonObj = JSON.parse($(".addCode").val());
+                    } catch (error) {
+                        this.pushError("addCode", "Syntax error.", ".addCode");
+                    }
+                }
+            }
+
+            checkFxInput() {
+                if ($(".cssFx").val() == "") {
+                    this.pushError("cssFxInput", "CSS key must be set.", ".cssFx");
+                } else {
+                    try {
+                        var fxEntries = 0;
+                        for (const [key, value] of Object.entries(this.obj.cssTimeModyfier.css)) {
+                            if (key == $(".cssFx").val()) {
+                                fxEntries += 1;
+                            }
+                        }
+                        if (fxEntries < 1) {
+                            this.pushError("cssFxInput", "No fx entry node in cssTimeModyfier object.", ".cssFx");
+                        }   
+                    } catch (error) {
+                        
+                    }
+                }
             }
 
             checkConfSource() {
                 var obj;
                 try {
+                    
                     eval("obj = {" + $(".leftSide .confSource").val() + "}");
                     this.obj = obj;
+                    
+                    if (Object.keys(this.obj).length < 1) {
+                        this.pushError("confSource", "Nothing here.", ".confSource");
+                    }
+
+                    if (this.obj.cssTimeModyfier === undefined) {
+                        this.pushError("confSource", "Node cssTimeModyfier not found.", ".confSource");
+                    } else {
+                        
+                        if (this.obj.cssTimeModyfier.selectors === undefined) {
+                            this.pushError("confSource", "Node cssTimeModyfier.selectors not found.", ".confSource");
+                        }
+
+                        if (this.obj.cssTimeModyfier.css === undefined) {
+                            this.pushError("confSource", "Node cssTimeModyfier.css not found.", ".confSource");
+                        }
+
+                        if (this.obj.cssTimeModyfier.default === undefined) {
+                            this.pushError("confSource", "Node cssTimeModyfier.default not found.", ".confSource");
+                        }
+
+                        if (this.obj.cssTimeModyfier.commandsInTime === undefined) {
+                            this.pushError("confSource", "Node cssTimeModyfier.commandsInTime not found.", ".confSource");
+                        }
+                        
+                    }
+
+
                 } catch (error) {
                     this.pushError("confSource", "Syntax error.", ".confSource");
                 }
@@ -228,157 +325,5 @@
         }
 
         new AddCssTimeModyfier();
-        //     init() {
-        //         this.sourceCorrect = false;
-        //         this.addsCorrect   = false;
-        //         this.cssFxCorrect  = false;
-                
-        //         this.cssTMObj      = false;
-        //         this.jsonObj       = false;
-
-        //         this.checkForm();
-        //         this.textareaColor();
-        //         $("#mainForm").change();
-        //     }
-        //     checkForm() {
-        //         var that = this;
-        //         $("#mainForm").on("keyup change paste",function() {
-        //             var obj;
-        //             console.clear();
-        //             try {
-        //                 eval("obj = {" + $(".leftSide .sourceCode").val() + "}");
-        //                 if (Object.keys(obj).length > 0) {
-        //                     that.cssTMObj = obj;
-        //                     that.sourceCorrect = true
-        //                     if (!that.checkMandatories(obj)) {
-        //                         that.sourceCorrect = false;
-        //                     } else {
-        //                         that.sourceCorrect = true;
-        //                         var cfxi = that.checkFxInput();
-        //                         if (cfxi != true) {
-        //                             console.error("[RPlayer:cssKey]",cfxi);
-        //                             that.cssFxCorrect = false;
-        //                         } else {
-        //                             that.cssFxCorrect = true;
-        //                             var aci = that.checkAddCode();
-        //                                 if (aci != true) {
-        //                                 console.error("[RPlayer:addCode]",aci);
-        //                                 that.addsCorrect = false;
-        //                             } else {
-        //                                 var aci = that.checkAddCode();
-        //                                 that.addsCorrect = true;
-        //                                 console.info("[RPlayer:AddCssTimeModyfier]","Great! Everything looks good.");
-        //                             }
-        //                         }
-        //                     }
-        //                 } else {
-        //                     that.sourceCorrect = false
-        //                     that.cssTMObj      = false;
-        //                     console.error("[RPlayer:cssTimeModyfier]","Nothing here.")
-        //                 }
-        //             } catch (error) {
-        //                 that.sourceCorrect = false;
-        //                 console.error("[RPlayer:cssTimeModyfier]","Syntax error.")
-        //             }
-        //             that.textareaColor()
-        //         });
-        //     }
-        //     checkAddCode() {
-        //         if ($(".addCode").val() == "") {
-        //             return "JSON for additing must be set.";
-        //         } else {
-        //             try {
-        //                 this.jsonObj = JSON.parse($(".addCode").val());
-        //                 return true;
-        //             } catch (error) {
-        //                 return "Syntax error.";
-        //             }
-        //         }
-        //     }
-        //     checkFxInput() {
-        //         if ($(".cssFx").val() == "") {
-        //             return "CSS key must be set.";
-        //         } else {
-        //             var fxEntries = 0;
-        //             for (const [key, value] of Object.entries(this.cssTMObj.cssTimeModyfier.css)) {
-        //                 if (key == $(".cssFx").val()) {
-        //                     fxEntries += 1;
-        //                 }
-        //             }
-        //             if (fxEntries < 1) {
-        //                 return "No fx entry in cssTimeModyfier object.";
-        //             } else {
-        //                 return true;
-        //             }
-        //         }
-        //     }
-        //     checkMandatories(obj) {
-        //         var obj;
-        //         var ret = true;
-
-        //         if (obj.cssTimeModyfier === undefined) {
-        //             ret = false;
-        //             console.error("[RPlayer:cssTimeModyfier]","Node cssTimeModyfier not found.");
-        //         } else {
-        //             if (obj.cssTimeModyfier.selectors === undefined) {
-        //                 ret = false;
-        //                 console.error("[RPlayer:cssTimeModyfier]","Node cssTimeModyfier.selectors not found.");
-        //             } else {
-        //                 if (obj.cssTimeModyfier.css === undefined) {
-        //                     ret = false;
-        //                     console.error("[RPlayer:cssTimeModyfier]","Node cssTimeModyfier.css not found.");
-        //                 } else {
-        //                     if (obj.cssTimeModyfier.default === undefined) {
-        //                         ret = false;
-        //                         console.error("[RPlayer:cssTimeModyfier]","Node cssTimeModyfier.default not found.");
-        //                     } else {
-        //                         if (obj.cssTimeModyfier.commandsInTime === undefined) {
-        //                             ret = false;
-        //                             console.error("[RPlayer:cssTimeModyfier]","Node cssTimeModyfier.commandsInTime not found.");
-        //                         }
-        //                     }
-        //                 }
-        //             }
-        //         }
-
-        //         return ret;
-        //     }
-        //     textareaColor() {
-        //         var that = this;
-        //         setInterval(function() {
-        //             // source
-        //             if (that.sourceCorrect) {
-        //                 $(".leftSide .sourceCode").css({
-        //                     backgroundColor: "lightgreen"
-        //                 });
-        //             } else {
-        //                 $(".leftSide .sourceCode").css({
-        //                     backgroundColor: "var(--errorBgColor)"
-        //                 });
-        //             }
-        //             // CSS fx
-        //             if (that.cssFxCorrect) {
-        //                 $(".middleSide .cssFx").css({
-        //                     backgroundColor: "lightgreen"
-        //                 });
-        //             } else {
-        //                 $(".middleSide .cssFx").css({
-        //                     backgroundColor: "var(--errorBgColor)"
-        //                 });
-        //             }
-        //             // addCode
-        //             if (that.addsCorrect) {
-        //                 $(".rightSide .addCode").css({
-        //                     backgroundColor: "lightgreen"
-        //                 });
-        //             } else {
-        //                 $(".rightSide .addCode").css({
-        //                     backgroundColor: "var(--errorBgColor)"
-        //                 });
-        //             }
-        //         },200);
-        //     }
-        // }
-        // new AddCssTimeModyfier();
     </script>
 </html>
