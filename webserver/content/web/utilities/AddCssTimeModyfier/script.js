@@ -104,7 +104,6 @@ class AddCssTimeModyfier {
                         $(".offset").val("0");
                     }
                     var offset = parseInt($(".offset").val());
-                    var cssSelector = $(".cssSelector").val();
                     var cssFx = $(".cssFx").val();
                     var jsonTimeMs;
                     for (const [key,value] of Object.entries(that.jsonObj)) {
@@ -113,6 +112,7 @@ class AddCssTimeModyfier {
                         that.pushJsonRecord({
                             nodeKey: getRealTimeMs(jsonTimeMs),
                             cssKey: cssFx,
+                            length: value.LengthMs,
                         });
                     }
 
@@ -128,7 +128,14 @@ class AddCssTimeModyfier {
         this.obj.cssTimeModyfier.commandsInTime[recordObj.nodeKey] = {
             selectorsKey: $(".cssSelector").val(),
             cssKey: recordObj.cssKey,
+            length: recordObj.length,
         };
+        for (const [key, value] of Object.entries(this.obj.cssTimeModyfier.commandsInTime[recordObj.nodeKey])) {
+            if (value == "default") {
+                console.log("ahoj");
+                delete this.obj.cssTimeModyfier.commandsInTime[recordObj.nodeKey][key];
+            }
+        }
     }
 
     inputMask() {
@@ -181,6 +188,25 @@ class AddCssTimeModyfier {
         } else {
             try {
                 this.jsonObj = JSON.parse($(".addCode").val());
+                console.log(this.jsonObj);
+                for (const [key, value] of Object.entries(this.jsonObj)) {
+                    var timeMsExists = false;
+                    var lengthMsExists = false;
+                    for (const [key2, value2] of Object.entries(value)) {
+                        if (key2 == "TimeMs") {
+                            timeMsExists = true;
+                        }
+                        if (key2 == "LengthMs") {
+                            lengthMsExists = true;
+                        }
+                    }
+                    if (!timeMsExists) {
+                        this.pushError("addCode", "[Node " + key + "] Key \"TimeMs\" is missing.", ".addCode");
+                    }
+                    if (!lengthMsExists) {
+                        this.pushError("addCode", "[Node " + key + "] Key \"LengthMs\" is missing.", ".addCode");
+                    }
+                }
             } catch (error) {
                 this.pushError("addCode", "Syntax error.", ".addCode");
             }
@@ -188,21 +214,23 @@ class AddCssTimeModyfier {
     }
 
     checkFxInput() {
-        if ($(".cssFx").val() == "") {
-            this.pushError("cssFxInput", "CSS key must be set.", ".cssFx");
-        } else {
-            try {
-                var fxEntries = 0;
-                for (const [key, value] of Object.entries(this.obj.cssTimeModyfier.css)) {
-                    if (key == $(".cssFx").val()) {
-                        fxEntries += 1;
+        if ($(".cssFx").val() != "default") {
+            if ($(".cssFx").val() == "") {
+                this.pushError("cssFxInput", "CSS key must be set.", ".cssFx");
+            } else {
+                try {
+                    var fxEntries = 0;
+                    for (const [key, value] of Object.entries(this.obj.cssTimeModyfier.css)) {
+                        if (key == $(".cssFx").val()) {
+                            fxEntries += 1;
+                        }
                     }
+                    if (fxEntries < 1) {
+                        this.pushError("cssFxInput", "No fx entry node in cssTimeModyfier object.", ".cssFx");
+                    }   
+                } catch (error) {
+                    
                 }
-                if (fxEntries < 1) {
-                    this.pushError("cssFxInput", "No fx entry node in cssTimeModyfier object.", ".cssFx");
-                }   
-            } catch (error) {
-                
             }
         }
     }
@@ -265,13 +293,20 @@ class AddCssTimeModyfier {
                 var allErrors = "";
                 var lat2 = false;
                 var errSelectors = [];
+                var lastInput = false;
                 for (const [key, value] of Object.entries(that.errors)) {
                     if (lat2) {
                         allErrors += "\n-----\n";
                     }
                     var lat = false;
                     for (const [key2, value2] of Object.entries(value)) {
-                        allErrors += ((lat) ? "\n[" : "[") + key + "]\n>> " + value2.message;
+                        allErrors += ((lat) ? "\n" : "");
+                        if (lastInput != key) {
+                            allErrors += "[" + key + "]\n";
+                        }
+                        allErrors += "  ERROR: ";
+                        allErrors += value2.message;
+                        lastInput = key;
                         $(value2.cssSelector).css(that.css.entrance);
                         if (!errSelectors.includes(value2.cssSelector)) {
                             errSelectors[Object.keys(errSelectors).length] = value2.cssSelector;

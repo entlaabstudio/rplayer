@@ -36,10 +36,21 @@
             <div class="four wide column middleSide">
                 <div>
                     <div class="positive ui button processBtn disabled">Process JSON</div>
-                    <input type="text" name="cssFx" class="form-control cssFx" placeholder="CSS key">
-                    <input type="text" name="cssSelector" class="form-control cssSelector" placeholder="CSS selector">
-                    <input type="text" name="offset" class="form-control offset" placeholder="Data offset [ms]">
-                    <textarea class="form-control errors" readonly wrap="soft"></textarea>
+                    <div class="field">
+                        <label>Parameters <span class="smallDesc">(can be "default")</span></label>
+                        <input type="text" name="cssFx" class="form-control cssFx" placeholder="CSS key">
+                        <input type="text" name="cssSelector" class="form-control cssSelector" placeholder="CSS selector">
+                        <input type="text" name="offset" class="form-control offset" placeholder="Data offset [ms]">
+                    </div>
+                    <div class="field">
+                        <label>Animations times [ms] <span class="smallDesc">(can be "default")</span></label>
+                        <input type="text" name="animationTimeEntrance" class="form-control animationTimeEntrance" placeholder="Entrance">
+                        <input type="text" name="animationTimeOutgoing" class="form-control animationTimeOutgoing" placeholder="Outgoing">
+                    </div>
+                    <div class="field">
+                        <label>Errors</label>
+                        <textarea class="form-control errors" readonly wrap="soft"></textarea>
+                    </div>
                 </div>
             </div>
             <div class="six wide column rightSide">
