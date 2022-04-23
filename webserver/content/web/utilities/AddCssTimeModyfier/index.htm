@@ -190,20 +190,28 @@
                     that.processActionInit = true;
                     
                     function getRealTimeMs(time) {
-                        var existsTime = 0;
-                        var time;
-                        for (const [key,value] of Object.entries(that.obj.cssTimeModyfier.commandsInTime)) {
-                            if (parseInt(key) <= time) {
-                                existsTime = parseInt(key);
+                        
+                        // let time;
+
+                        function recursion() {
+                            var existsTime = 0;
+                            for (const [key,value] of Object.entries(that.obj.cssTimeModyfier.commandsInTime)) {
+                                if (parseInt(key) <= time) {
+                                    existsTime = parseInt(key);
+                                }
+                            }
+                            if (existsTime == time) {
+                                time += 1;
+                                recursion(time);
+                            } else {
+                                console.log(existsTime,time)
+                                return time;
                             }
                         }
-                        if (existsTime == time) {
-                            time += 1;
-                            getRealTimeMs(time);
-                        } else {
-                            console.log(existsTime,time)
-                            return time;
-                        }
+
+                        recursion();
+                        return time;
+
                     }
 
                     $(document).on("click",".processBtn",function() {
