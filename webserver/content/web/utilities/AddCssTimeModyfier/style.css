@@ -1,0 +1,61 @@
+:root {
+    --errorBgColor: rgba(255,230,230,1);
+    --textColor: rgba(255,255,255,1);
+    --bodyBgColor: rgba(255,255,255,1);
+}
+
+/* body * {
+    color: white !important;
+} */
+
+body {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: var(--textColor) !important;
+}
+
+.leftSide,
+.rightSide,
+.middleSide {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.layout {
+    position: fixed;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.leftSide textarea,
+.rightSide textarea {
+    width: 100% !important;
+    min-width: none !important;
+    height: 100% !important;
+    max-height: none !important;
+    resize: none !important;
+    /* font-family: 'Courier New', Courier, monospace; */
+}
+
+.middleSide .errors {
+    margin: .25em 0 .25em 0 !important;
+    resize: vertical;
+    max-height: 100% !important;
+}
+
+input[type='text'],
+.middleSide .errors,
+.middleSide .processBtn {
+    margin: .25em 0 .25em 0 !important;
+}
+
+.middleSide .processBtn {
+    width: 100%;
+}
