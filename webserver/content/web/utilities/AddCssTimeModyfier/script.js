@@ -109,12 +109,26 @@ class AddCssTimeModyfier {
                     var jsonTimeMs;
                     for (const [key,value] of Object.entries(that.jsonObj)) {
                         jsonTimeMs = value.TimeMs + offset;
-                        console.log(offset, cssSelector, cssFx, value.TimeMs, jsonTimeMs, getRealTimeMs(jsonTimeMs));
+
+                        that.pushJsonRecord({
+                            nodeKey: getRealTimeMs(jsonTimeMs),
+                            cssKey: cssFx,
+                        });
                     }
+
+                    console.log(that.obj);
                 }
                 return false;
             });
         }
+    }
+
+    pushJsonRecord(recordObj) {
+        var recordObj;
+        this.obj.cssTimeModyfier.commandsInTime[recordObj.nodeKey] = {
+            selectorsKey: $(".cssSelector").val(),
+            cssKey: recordObj.cssKey,
+        };
     }
 
     inputMask() {
