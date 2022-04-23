@@ -79,8 +79,6 @@ class AddCssTimeModyfier {
             that.processActionInit = true;
             
             function getRealTimeMs(time) {
-                
-                // let time;
 
                 function recursion() {
                     var existsTime = 0;
@@ -92,8 +90,6 @@ class AddCssTimeModyfier {
                     if (existsTime == time) {
                         time += 1;
                         recursion(time);
-                    } else {
-                        return time;
                     }
                 }
 
