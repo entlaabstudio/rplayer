@@ -123,7 +123,7 @@ class AddCssTimeModyfier {
                         });
                     }
 
-                    console.log(that.obj);
+                    $(".confSource").val("\"cssTimeModyfier\": " + JSON.stringify(that.obj.cssTimeModyfier, null, 4));
                 }
                 return false;
             });
