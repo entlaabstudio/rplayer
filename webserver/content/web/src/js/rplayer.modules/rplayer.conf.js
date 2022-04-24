@@ -41,7 +41,7 @@ export default class RPlayerConf {
 
         this.conf = {
             configVersion: 1,
-            description: "Yatsu v1",
+            description: "Yatsu v1 MIDI experimental v1",
             app: {
                 name: "RPlayer",
                 version: "1.42.62", // <some platform updates>.<visible or control updates>.<unvisible updates>
@@ -389,9 +389,9 @@ export default class RPlayerConf {
                                     "<ul><li>GGD P4 toms</li></ul>" +
                                     "<strong>And here's the MIDI mapping:</strong><br>" +
                                     "<table style=\"font-family: courier; border-collapse: collapse; margin-top: .5em;\">" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">C0</td><td>Kick</td></tr>" +
+                                        "<tr><td class=\"midiKick\" style=\"padding: 0 1em 0 1.5em;\">C0</td><td>Kick</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">C#0</td><td>Snare Ghost Note</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">D0</td><td>Snare Main Hit</td></tr>" +
+                                        "<tr><td class=\"midiSnare\" style=\"padding: 0 1em 0 1.5em;\">D0</td><td>Snare Main Hit</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">A0</td><td>Rack Tom 1</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">A#0</td><td>Rack Tom 2</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">B0</td><td>Floor Tom 1</td></tr>" +
@@ -545,9 +545,9 @@ export default class RPlayerConf {
                                     "<ul><li>GGD P4 toms</li></ul>" +
                                     "<strong>And here's the MIDI mapping:</strong><br>" +
                                     "<table style=\"font-family: courier; border-collapse: collapse; margin-top: .5em;\">" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">C0</td><td>Kick</td></tr>" +
+                                        "<tr><td class=\"midiKick\" style=\"padding: 0 1em 0 1.5em;\">C0</td><td>Kick</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">C#0</td><td>Snare Ghost Note</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">D0</td><td>Snare Main Hit</td></tr>" +
+                                        "<tr><td class=\"midiSnare\" style=\"padding: 0 1em 0 1.5em;\">D0</td><td>Snare Main Hit</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">A0</td><td>Rack Tom 1</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">A#0</td><td>Rack Tom 2</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">B0</td><td>Floor Tom 1</td></tr>" +
@@ -711,9 +711,9 @@ export default class RPlayerConf {
                                     "<ul><li>GGD P4 toms</li></ul>" +
                                     "<strong>And here's the MIDI mapping:</strong><br>" +
                                     "<table style=\"font-family: courier; border-collapse: collapse; margin-top: .5em;\">" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">C0</td><td>Kick</td></tr>" +
+                                        "<tr><td class=\"midiKick\" style=\"padding: 0 1em 0 1.5em;\">C0</td><td>Kick</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">C#0</td><td>Snare Ghost Note</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">D0</td><td>Snare Main Hit</td></tr>" +
+                                        "<tr><td class=\"midiSnare\" style=\"padding: 0 1em 0 1.5em;\">D0</td><td>Snare Main Hit</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">A0</td><td>Rack Tom 1</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">A#0</td><td>Rack Tom 2</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">B0</td><td>Floor Tom 1</td></tr>" +
@@ -911,9 +911,9 @@ export default class RPlayerConf {
                                     "<ul><li>GGD P4 toms</li></ul>" +
                                     "<strong>And here's the MIDI mapping:</strong><br>" +
                                     "<table style=\"font-family: courier; border-collapse: collapse; margin-top: .5em;\">" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">C0</td><td>Kick</td></tr>" +
+                                        "<tr><td class=\"midiKick\" style=\"padding: 0 1em 0 1.5em;\">C0</td><td>Kick</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">C#0</td><td>Snare Ghost Note</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">D0</td><td>Snare Main Hit</td></tr>" +
+                                        "<tr><td class=\"midiSnare\" style=\"padding: 0 1em 0 1.5em;\">D0</td><td>Snare Main Hit</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">A0</td><td>Rack Tom 1</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">A#0</td><td>Rack Tom 2</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">B0</td><td>Floor Tom 1</td></tr>" +
@@ -1089,9 +1089,9 @@ export default class RPlayerConf {
                                     "<ul><li>GGD P4 toms</li></ul>" +
                                     "<strong>And here's the MIDI mapping:</strong><br>" +
                                     "<table style=\"font-family: courier; border-collapse: collapse; margin-top: .5em;\">" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">C0</td><td>Kick</td></tr>" +
+                                        "<tr><td class=\"midiKick\" style=\"padding: 0 1em 0 1.5em;\">C0</td><td>Kick</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">C#0</td><td>Snare Ghost Note</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">D0</td><td>Snare Main Hit</td></tr>" +
+                                        "<tr><td class=\"midiSnare\" style=\"padding: 0 1em 0 1.5em;\">D0</td><td>Snare Main Hit</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">A0</td><td>Rack Tom 1</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">A#0</td><td>Rack Tom 2</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">B0</td><td>Floor Tom 1</td></tr>" +
@@ -1288,9 +1288,9 @@ export default class RPlayerConf {
                                     "<ul><li>GGD P4 toms</li></ul>" +
                                     "<strong>And here's the MIDI mapping:</strong><br>" +
                                     "<table style=\"font-family: courier; border-collapse: collapse; margin-top: .5em;\">" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">C0</td><td>Kick</td></tr>" +
+                                        "<tr><td class=\"midiKick\" style=\"padding: 0 1em 0 1.5em;\">C0</td><td>Kick</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">C#0</td><td>Snare Ghost Note</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">D0</td><td>Snare Main Hit</td></tr>" +
+                                        "<tr><td class=\"midiSnare\" style=\"padding: 0 1em 0 1.5em;\">D0</td><td>Snare Main Hit</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">A0</td><td>Rack Tom 1</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">A#0</td><td>Rack Tom 2</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">B0</td><td>Floor Tom 1</td></tr>" +
@@ -1444,9 +1444,9 @@ export default class RPlayerConf {
                                     "<ul><li>GGD P4 toms</li></ul>" +
                                     "<strong>And here's the MIDI mapping:</strong><br>" +
                                     "<table style=\"font-family: courier; border-collapse: collapse; margin-top: .5em;\">" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">C0</td><td>Kick</td></tr>" +
+                                        "<tr><td class=\"midiKick\" style=\"padding: 0 1em 0 1.5em;\">C0</td><td>Kick</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">C#0</td><td>Snare Ghost Note</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">D0</td><td>Snare Main Hit</td></tr>" +
+                                        "<tr><td class=\"midiSnare\" style=\"padding: 0 1em 0 1.5em;\">D0</td><td>Snare Main Hit</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">A0</td><td>Rack Tom 1</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">A#0</td><td>Rack Tom 2</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">B0</td><td>Floor Tom 1</td></tr>" +
@@ -1600,9 +1600,9 @@ export default class RPlayerConf {
                                     "<ul><li>GGD P4 toms</li></ul>" +
                                     "<strong>And here's the MIDI mapping:</strong><br>" +
                                     "<table style=\"font-family: courier; border-collapse: collapse; margin-top: .5em;\">" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">C0</td><td>Kick</td></tr>" +
+                                        "<tr><td class=\"midiKick\" style=\"padding: 0 1em 0 1.5em;\">C0</td><td>Kick</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">C#0</td><td>Snare Ghost Note</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">D0</td><td>Snare Main Hit</td></tr>" +
+                                        "<tr><td class=\"midiSnare\" style=\"padding: 0 1em 0 1.5em;\">D0</td><td>Snare Main Hit</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">A0</td><td>Rack Tom 1</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">A#0</td><td>Rack Tom 2</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">B0</td><td>Floor Tom 1</td></tr>" +
@@ -1756,9 +1756,9 @@ export default class RPlayerConf {
                                     "<ul><li>GGD P4 toms</li></ul>" +
                                     "<strong>And here's the MIDI mapping:</strong><br>" +
                                     "<table style=\"font-family: courier; border-collapse: collapse; margin-top: .5em;\">" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">C0</td><td>Kick</td></tr>" +
+                                        "<tr><td class=\"midiKick\" style=\"padding: 0 1em 0 1.5em;\">C0</td><td>Kick</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">C#0</td><td>Snare Ghost Note</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">D0</td><td>Snare Main Hit</td></tr>" +
+                                        "<tr><td class=\"midiSnare\" style=\"padding: 0 1em 0 1.5em;\">D0</td><td>Snare Main Hit</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">A0</td><td>Rack Tom 1</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">A#0</td><td>Rack Tom 2</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">B0</td><td>Floor Tom 1</td></tr>" +
@@ -1989,92 +1989,12887 @@ export default class RPlayerConf {
                     },
                 }
             },
-            cssTimeModyfier: {
-                selectors: {
-                    "nolan" : "img[src^=\"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUG\"]", // Nolan Mateer
-                    "jurta" : "img[src^=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAY\"]", // Jurta
-                    "marcel": "img[src^=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJgAAACYCAY\"]", // Marcel briani
+            "cssTimeModyfier": {
+                "selectors": {
+                    "nolan": "img[src^=\"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUG\"]",
+                    "jurta": "img[src^=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAY\"]",
+                    "marcel": "img[src^=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJgAAACYCAY\"]",
+                    "midiSnare": ".midiSnare",
+                    "midiKick": ".midiKick"
                 },
-                css: {
+                "css": {
                     "fx1": {
-                        entrance: {
-                            borderColor: "var(--currentTime)",
+                        "entrance": {
+                            "borderColor": "var(--currentTime)"
                         },
-                        outgoing: {
-                            borderColor: "transparent",
+                        "outgoing": {
+                            "borderColor": "transparent"
+                        }
+                    },
+                    "midiSnare": {
+                        "entrance": {
+                            "color": "var(--currentTime)"
                         },
+                        "outgoing": {
+                            "color": "rgba(255,255,255,.8)"
+                        }
                     },
+                    "midiKick": {
+                        "entrance": {
+                            "color": "var(--currentTime)"
+                        },
+                        "outgoing": {
+                            "color": "rgba(255,255,255,.8)"
+                        }
+                    }
                 },
-                default: {
-                    cssKey: "fx1",
-                    length: 3000,
-                    animationTime: {
-                        entrance: 500,
-                        outgoing: 500
-                    },
+                "default": {
+                    "cssKey": "fx1",
+                    "length": 3000,
+                    "animationTime": {
+                        "entrance": 500,
+                        "outgoing": 500
+                    }
                 },
-                commandsInTime: {
-
-                    // init
-                    0: {
-                        selectorsKey: "nolan",
-                        cssKey: "fx1",
-                        length: 0,
+                "commandsInTime": {
+                    "0": {
+                        "selectorsKey": "nolan",
+                        "cssKey": "fx1",
+                        "length": 0
                     },
-                    1: {
-                        selectorsKey: "jurta",
-                        cssKey: "fx1",
-                        length: 0,
+                    "1": {
+                        "selectorsKey": "jurta",
+                        "cssKey": "fx1",
+                        "length": 0
                     },
-                    2: {
-                        selectorsKey: "marcel",
-                        cssKey: "fx1",
-                        length: 0,
+                    "2": {
+                        "selectorsKey": "marcel",
+                        "cssKey": "fx1",
+                        "length": 0
                     },
-
-                    // real commands
-                    556973: {
-                        selectorsKey: "nolan",
-                        length: 17238,
+                    "3": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 0
                     },
-                    573965: {
-                        selectorsKey: "jurta",
-                        length: 14899,
+                    "4": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 0
                     },
-                    591910: {
-                        selectorsKey: "jurta",
-                        length: 32473, 
+                    "556973": {
+                        "selectorsKey": "nolan",
+                        "length": 17238
                     },
-                    626856: {
-                        selectorsKey: "nolan",
-                        length: 16039,
+                    "573965": {
+                        "selectorsKey": "jurta",
+                        "length": 14899
                     },
-                    655596: {
-                        selectorsKey: "jurta",
-                        length: 63872,
+                    "591910": {
+                        "selectorsKey": "jurta",
+                        "length": 32473
                     },
-                    721927: {
-                        selectorsKey: "jurta",
-                        length: 32718,
+                    "626856": {
+                        "selectorsKey": "nolan",
+                        "length": 16039
                     },
-                    755034: {
-                        selectorsKey: "nolan",
-                        length: 22386,
+                    "655596": {
+                        "selectorsKey": "jurta",
+                        "length": 63872
                     },
-                    993039: {
-                        selectorsKey: "marcel",
-                        length: 33991,
+                    "721927": {
+                        "selectorsKey": "jurta",
+                        "length": 32718
                     },
-                    1036907: {
-                        selectorsKey: "marcel",
-                        length: 138490,
+                    "755034": {
+                        "selectorsKey": "nolan",
+                        "length": 22386
                     },
-                    1179447: {
-                        selectorsKey: "marcel",
-                        length: 34322,
+                    "993039": {
+                        "selectorsKey": "marcel",
+                        "length": 33991
                     },
-                },
-            },
+                    "1036907": {
+                        "selectorsKey": "marcel",
+                        "length": 138490
+                    },
+                    "1179447": {
+                        "selectorsKey": "marcel",
+                        "length": 34322
+                    },
+                    "1545214": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1545535": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1545642": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1545857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1546071": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1546392": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1546499": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1546714": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1546928": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1547142": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1547464": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1547571": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1547785": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1547999": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1548321": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1548428": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1548642": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1548749": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1548856": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1548963": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1549070": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1549285": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1549499": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1549714": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1550035": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1550142": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1550357": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1550678": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1550785": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1550999": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1551214": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1551321": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1551428": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1551642": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1551857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1552071": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1552392": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1552499": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1552714": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1552928": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1553249": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1553357": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1553571": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1553785": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1553999": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1554321": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1554428": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1554642": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1554857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1555178": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1555285": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1555499": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1555607": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1555714": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1555821": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1555928": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1556142": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1556357": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1556571": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1556892": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1556999": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1557214": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1557535": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1557642": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1557857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1558071": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1558392": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1558499": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1558714": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1558928": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1559249": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1559357": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1559571": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1559785": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1560107": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1560214": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1560428": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1560642": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1560857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1561178": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1561285": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1561499": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1561714": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1562035": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1562142": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1562357": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1562464": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1562571": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1562678": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1562785": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1562999": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1563214": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1563428": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1563749": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1563857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1564071": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1564392": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1564499": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1564714": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1564928": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1565035": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1565142": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1565357": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1565571": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1565785": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1566107": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1566214": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1566428": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1566642": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1566964": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1567071": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1567285": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1567499": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1567714": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1568035": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1568142": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1568357": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1568571": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1568892": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1568999": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1569214": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1569321": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1569428": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1569535": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1569642": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1569857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1570071": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1570285": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1570607": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1570714": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1570928": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1571249": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1571357": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1571571": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1571785": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1571892": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1571999": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1572214": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1572428": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1572642": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1572749": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1573285": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1573392": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1573505": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1573928": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1574142": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1574571": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1574785": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1574999": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1575215": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1575246": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1575642": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1575857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1576071": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1576499": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1576928": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1576959": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1577357": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1577571": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1577999": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1578214": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1578428": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1578642": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1578674": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1579071": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1579285": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1579499": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1579928": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1580357": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1580388": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1580785": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1580999": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1581428": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1581432": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1581642": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1581649": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1581857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1582071": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1582928": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1583357": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1583785": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1583791": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1584214": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1584428": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1584857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1584860": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1585071": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1585077": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1585285": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1585499": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1585714": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1585928": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1586142": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1586357": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1586571": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1586785": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1586999": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1587214": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1587219": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1587428": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1587642": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1587857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1588071": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1588285": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1588499": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1588714": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1588928": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1588929": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1589142": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1589357": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1589571": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1589785": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1589999": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1590214": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1590428": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1590642": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1590648": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1590857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1591071": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1591285": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1591499": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1591714": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1591928": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1592142": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1592357": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1592358": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1592571": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1592785": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1592999": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1593000": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1593214": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1593321": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1593428": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1593535": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1593642": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1593749": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1593857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1593964": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1594071": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1594076": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1594178": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1594179": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1594285": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1594392": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1594499": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1594607": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1594714": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1594821": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1594928": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1595035": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1595142": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1595146": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1595249": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1595357": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1595363": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1595464": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1595571": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1595678": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1595785": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1595786": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1595892": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1595893": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1595999": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1596107": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1596214": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1596321": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1596428": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1596535": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1596642": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1596750": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1596857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1596965": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1597072": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1597179": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1597286": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1597393": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1597500": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1597504": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1597607": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1597715": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1597822": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1597929": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1597932": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1598036": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1598143": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1598146": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1598250": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1598357": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1598465": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1598572": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1598579": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1598679": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1598786": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1598791": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1598893": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1599000": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1599107": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1599215": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1599322": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1599429": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1599536": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1599643": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1599750": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1599857": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1599965": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1600072": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1600142": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1600215": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1600286": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1600500": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1600572": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1600643": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1600715": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1600929": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1601357": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1601429": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1601500": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1601572": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1601786": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1601857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1601929": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1602000": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1602643": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1602715": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1602786": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1602857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1603072": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1603286": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1603929": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1604143": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1604357": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1604572": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1605000": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1605215": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1605643": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1605715": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1605786": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1605857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1606072": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1606143": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1606215": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1606286": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1606929": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1607000": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1607072": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1607143": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1607357": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1607429": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1607500": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1607572": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1607786": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1608215": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1608286": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1608357": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1608429": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1608642": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1608715": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1608786": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1608857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1609500": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1609572": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1609643": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1609715": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1609929": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1610143": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1610786": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1611000": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1611215": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1611429": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1611643": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1611857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1612072": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1612286": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1612500": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1612607": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1612715": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1612822": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1612929": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1613036": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1613143": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1613250": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1613357": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1613465": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1613572": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1613679": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1613786": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1613857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1613929": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1614000": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1614215": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1614286": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1614357": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1614429": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1614643": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1615071": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1615143": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1615215": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1615286": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1615499": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1615572": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1615643": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1615715": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1616357": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1616429": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1616500": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1616572": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1616786": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1617000": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1617644": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1617857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1618072": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1618286": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1618715": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1618929": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1619357": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1619429": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1619500": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1619572": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1619786": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1619857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1619929": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1620000": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1620643": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1620715": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1620786": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1620857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1621072": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1621143": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1621215": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1621286": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1621500": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1621929": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1622000": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1622072": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1622143": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1622357": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1622429": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1622500": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1622572": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1622786": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1622857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1622929": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1623000": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1623215": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1623286": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1623357": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1623429": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1623643": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1623715": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1623786": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1623857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1624500": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1624715": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1624929": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1625143": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1625357": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1625572": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1625786": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1626000": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1626215": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1626322": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1626429": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1626536": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1626643": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1626715": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1626786": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1626857": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1626929": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1627000": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1627500": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1627822": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1628143": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1628250": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1628357": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1628679": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1629000": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1629429": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1629643": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1629857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1630072": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1630286": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1630500": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1630715": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1630929": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1631250": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1631572": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1631679": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1631786": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1632107": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1632429": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1632857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1633072": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1633286": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1633500": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1633715": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1633929": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1634143": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1634357": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1634572": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1634679": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1634893": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1635000": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1635072": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1635143": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1635215": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1635536": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1635857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1636286": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1636500": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1636715": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1636929": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1637036": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1637143": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1637250": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1637357": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1637465": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1637572": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1637679": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1637786": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1638107": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1638429": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1638536": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1638643": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1638965": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1639286": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1639715": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1639929": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1640143": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1640357": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1641000": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1641215": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1641536": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1641857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1641965": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1642072": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1642393": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1642715": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1643143": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1643357": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1643572": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1643786": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1644000": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1644215": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1644429": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1644643": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1644965": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1645286": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1645393": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1645500": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1645822": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1646143": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1646572": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1646786": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1647000": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1647215": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1647429": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1647643": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1647857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1648072": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1648286": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1648393": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1648607": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1648715": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1648786": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1648857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1648929": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1649250": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1649572": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1650000": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1650215": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1650429": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1650643": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1650750": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1650857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1650965": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1651072": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1651179": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1651286": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1651393": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1651500": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1651715": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1651822": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1651929": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1652036": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1652143": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1652786": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1653286": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1653357": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1653429": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1654286": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1654393": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1654500": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1654607": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1654929": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1655250": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1655357": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1655572": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1655786": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1656107": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1656215": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1656429": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1656643": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1656857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1657179": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1657286": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1657500": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1657715": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1658036": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1658143": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1658357": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1658465": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1658572": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1658679": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1658786": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1659000": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1659214": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1659429": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1659750": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1659857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1660072": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1660393": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1660500": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1660715": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1660929": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1661036": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1661143": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1661357": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1661572": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1661786": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1662107": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1662215": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1662429": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1662643": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1662965": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1663072": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1663286": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1663500": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1663715": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1664036": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1664143": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1664357": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1664572": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1664893": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1665000": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1665215": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1665322": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1665429": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1665536": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1665643": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1665857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1666071": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1666286": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1666607": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1666715": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1666929": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1667250": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1667357": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1667572": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1667786": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1668215": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1668429": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1668643": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1669286": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1669393": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1669500": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1669822": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1669929": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1670143": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1670357": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1670572": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1670893": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1671000": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1671215": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1671429": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1671750": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1671857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1672072": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1672179": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1672286": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1672393": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1672500": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1672715": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1672928": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1673143": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1673465": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1673572": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1673786": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1674107": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1674215": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1674429": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1674643": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1674750": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1674857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1675072": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1675286": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1675500": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1675822": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1675929": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1676143": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1676357": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1676679": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1676786": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1677000": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1677215": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1677429": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1677750": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1677857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1678072": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1678286": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1678607": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1678715": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1678929": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1679036": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1679143": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1679250": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1679357": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1679572": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1679785": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1680000": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1680322": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1680429": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1680643": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1680965": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1681072": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1681500": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1682143": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1682357": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1682358": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1682786": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1683000": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1683429": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1683643": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1683857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1684072": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1684102": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1684500": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1684715": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1684929": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1685357": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1685785": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1685815": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1686215": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1686429": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1686857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1686859": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1687072": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1687076": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1687286": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1687499": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1687715": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1687928": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1688142": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1688357": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1688572": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1688786": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1689000": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1689215": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1689218": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1689429": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1689643": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1689857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1690072": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1690286": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1690500": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1690715": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1690928": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1690929": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1691143": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1691357": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1691572": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1691786": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1692000": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1692215": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1692429": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1692643": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1692647": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1692857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1693072": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1693286": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1693500": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1693715": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1693929": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1694143": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1694356": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1694464": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1694572": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1694679": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1694785": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1694892": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1694999": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1695106": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1695215": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1695286": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1695357": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1695429": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1695643": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1695715": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1695786": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1695857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1696072": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1696500": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1696572": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1696643": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1696715": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1696929": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1697000": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1697072": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1697143": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1697786": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1697857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1697929": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1698000": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1698215": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1698429": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1699072": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1699286": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1699500": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1699715": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1700143": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1700357": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1700786": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1700857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1700929": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1701000": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1701215": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1701286": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1701357": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1701429": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1702072": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1702143": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1702215": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1702286": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1702500": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1702572": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1702643": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1702715": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1702929": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1703357": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1703429": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1703500": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1703572": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1703786": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1703857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1703929": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1704000": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1704643": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1704715": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1704786": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1704857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1705072": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1705286": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1705929": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1706143": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1706357": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1706572": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1706786": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1707000": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1707215": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1707429": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1707643": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1707750": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1707857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1707965": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1708072": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1708179": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1708286": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1708393": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1708500": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1708607": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1708715": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1708822": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1708929": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1709000": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1709072": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1709143": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1709357": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1709429": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1709500": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1709572": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1709786": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1710215": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1710286": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1710357": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1710429": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1710643": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1710715": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1710786": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1710857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1711072": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1711179": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1711286": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1711393": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1711500": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1711572": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1711643": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1711715": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1711929": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1712143": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1712786": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1713000": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1713215": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1713429": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1713857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1714072": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1714500": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1714572": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1714643": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1714715": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1714929": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1715143": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1715786": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1715857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1715929": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1716000": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1716215": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1716286": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1716357": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1716429": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1716643": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1717072": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1717143": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1717215": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1717286": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1717500": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1717572": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1717643": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1717715": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1717929": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1718000": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1718072": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1718143": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1718357": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1718429": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1718500": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1718572": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1718786": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1718857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1718929": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1719000": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1719643": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1719857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1720072": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1720286": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1720500": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1720715": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1720929": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1721143": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1721357": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1721465": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1721572": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1721679": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1721786": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1721857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1721929": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1722000": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1722072": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1722143": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1722643": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1722964": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1723286": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1723393": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1723500": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1723822": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1724143": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1724572": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1724786": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1725000": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1725214": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1725429": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1725643": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1725857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1726072": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1726393": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1726714": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1726822": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1726929": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1727250": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1727572": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1728000": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1728214": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1728429": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1728643": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1728857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1729072": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1729286": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1729500": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1729714": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1729822": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1730036": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1730143": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1730214": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1730286": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1730357": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1730679": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1731000": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1731429": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1731643": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1731857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1732072": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1732179": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1732286": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1732393": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1732500": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1732607": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1732714": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1732822": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1732929": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1733250": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1733572": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1733679": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1733786": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1734107": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1734429": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1734857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1735072": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1735286": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1735500": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1736357": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1736679": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1737000": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1737107": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1737214": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1737536": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1737857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1738286": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1738500": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1738714": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1738929": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1739143": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1739357": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1739572": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1739786": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1740107": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1740429": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1740536": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1740643": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1740964": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1741286": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1741714": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1741929": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1742143": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1742357": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1742572": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1742786": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1743000": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1743214": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1743429": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1743536": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1743750": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1743857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1743929": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1744000": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1744072": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1744393": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1744714": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1745143": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1745357": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1745572": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1745786": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1745893": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1746000": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1746107": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1746214": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1746322": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1746429": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1746536": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1746643": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1746964": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1747286": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1747393": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1747500": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1747822": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1748143": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1748572": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1748786": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1749000": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1749214": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1749322": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1749429": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1749536": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1749643": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1749750": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1750072": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1770429": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1770643": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1771072": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1771500": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1771929": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1772357": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1772786": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1773214": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1773643": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1773857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1774072": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1774500": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1774929": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1775357": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1775786": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1776214": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1776643": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1777072": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1777500": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1777929": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1778357": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1778786": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1779214": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1779643": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1780072": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1780500": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1780929": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1781357": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1781786": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1782214": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1782643": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1783072": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1783500": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1783929": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1784143": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1784357": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1784786": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1785214": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1785643": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1786072": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1786500": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1786929": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1787357": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1787572": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1787786": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1788214": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1788643": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1789072": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1789500": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1789929": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1790357": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1790786": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1791000": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1791214": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1791643": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1792072": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1792500": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1792929": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1793357": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1793786": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1794214": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1794429": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1794643": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1795072": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1795500": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1795929": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1796357": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1796786": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1797214": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1797643": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1797857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1798072": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1798500": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1798929": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1799357": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1799786": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1800214": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1800643": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1801072": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1801500": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1801929": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1802357": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1802786": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1803214": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1803643": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1804072": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1804179": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1804286": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1804393": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1804500": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1804607": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1804714": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1804822": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1804929": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1806857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1807072": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1807286": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1807500": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1808786": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1808893": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1809000": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1809107": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1809214": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1809322": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1809429": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1809500": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1809572": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1810072": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1810393": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1810500": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1810714": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1810929": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1811250": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1811357": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1811572": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1811786": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1812000": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1812322": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1812429": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1812643": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1812857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1813179": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1813286": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1813500": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1813607": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1813714": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1813822": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1813929": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1814143": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1814357": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1814572": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1815000": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1815214": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1815536": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1815643": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1815857": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1816072": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1816179": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1816286": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1816500": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1816714": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1816929": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1817143": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1817250": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1817357": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1817572": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1817786": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1818107": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1818214": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1818429": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1818643": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1818857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1819179": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1819286": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1819500": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1819714": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1820036": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1820143": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1820250": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1820357": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1820464": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1820572": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1820679": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1820786": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1821000": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1821214": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1821429": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1821750": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1821857": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1822072": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1822286": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1822393": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1822607": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1822928": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1823249": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1823356": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1823572": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1823786": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1824106": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1824214": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1824428": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1824642": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1824857": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1825178": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1825286": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1825500": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1825714": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1826035": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1826143": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1826356": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1826464": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1826571": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1826678": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1826785": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1826999": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1827214": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1827429": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1827856": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1828071": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1828392": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1828499": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1828714": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1828822": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1828928": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1828929": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1829035": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1829142": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1829356": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1829571": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1829785": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1830000": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1830106": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1830213": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1830428": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1830642": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1830963": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1831071": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1831286": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1831499": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1831713": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1832035": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1832142": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1832356": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1832572": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1833143": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1949101": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1949138": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1952700": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1953150": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1953300": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1953600": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1953900": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1954350": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1954500": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1954800": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1955100": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1955400": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1955850": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1956000": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1956300": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1956600": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1957050": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1957200": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1957500": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1957650": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1957801": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1957950": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1958100": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1958400": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1958700": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1959000": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1959450": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1959600": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1959900": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1960500": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1960800": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1961100": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1961550": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1961700": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1962000": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1962300": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1962600": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1963050": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1963200": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1963500": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1963800": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1964250": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1964400": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1964700": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1964850": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1965000": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1965150": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1965300": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1965600": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1965900": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1966050": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1966200": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1966228": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1967100": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1967550": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1967700": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1968000": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1968300": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1968750": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1968900": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1969200": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1969500": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1969800": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1970250": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1970400": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1970700": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1971000": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1971450": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1971600": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1971900": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1972050": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1972201": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1972350": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1972500": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1972800": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1973100": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1973250": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1973325": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1973400": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1973850": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1974000": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1974150": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1974300": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1974750": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1974900": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1975200": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1975500": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1975950": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1976100": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1976400": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1976700": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1977000": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1977450": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1977600": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1977900": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1978200": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1978650": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1978800": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1979100": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1979250": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1979401": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1979550": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1979700": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1980000": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1980300": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1980450": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1980525": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1980600": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiSnare",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1980750": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1980900": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    },
+                    "1981200": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiKick",
+                        "length": 300,
+                        "animationTime": {
+                            "entrance": 1,
+                            "outgoing": 500
+                        }
+                    }
+                }
+            }
         };
         
         console.log("[RPlayer] Config: ",this.conf);
