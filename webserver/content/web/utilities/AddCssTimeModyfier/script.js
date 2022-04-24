@@ -201,22 +201,31 @@ class AddCssTimeModyfier {
         } else {
             try {
                 this.jsonObj = JSON.parse($(".addCode").val());
-                for (const [key, value] of Object.entries(this.jsonObj)) {
-                    var timeMsExists = false;
-                    var lengthMsExists = false;
-                    for (const [key2, value2] of Object.entries(value)) {
-                        if (key2 == "TimeMs") {
-                            timeMsExists = true;
+                if (Object.keys(this.jsonObj).length == 0) {
+                    this.pushError("addCode", "JSON for additing must be set.", ".addCode");
+                } else {
+                    for (const [key, value] of Object.entries(this.jsonObj)) {
+                        var timeMsExists = false;
+                        var lengthMsExists = false;
+                        for (const [key2, value2] of Object.entries(value)) {
+                            if (key2 == "TimeMs") {
+                                timeMsExists = true;
+                            }
+                            if (key2 == "LengthMs") {
+                                lengthMsExists = true;
+                            }
+                            if (typeof(value2) != "number") {
+                                if (key2 == "LengthMs" || key2 == "TimeMs") {
+                                    this.pushError("addCode", "[Node " + key + "][\"" + key2 + "\"] must be a number.", ".addCode");
+                                }
+                            }
                         }
-                        if (key2 == "LengthMs") {
-                            lengthMsExists = true;
+                        if (!timeMsExists) {
+                            this.pushError("addCode", "[Node " + key + "] Key \"TimeMs\" is missing.", ".addCode");
                         }
-                    }
-                    if (!timeMsExists) {
-                        this.pushError("addCode", "[Node " + key + "] Key \"TimeMs\" is missing.", ".addCode");
-                    }
-                    if (!lengthMsExists) {
-                        this.pushError("addCode", "[Node " + key + "] Key \"LengthMs\" is missing.", ".addCode");
+                        if (!lengthMsExists) {
+                            this.pushError("addCode", "[Node " + key + "] Key \"LengthMs\" is missing.", ".addCode");
+                        }
                     }
                 }
             } catch (error) {
