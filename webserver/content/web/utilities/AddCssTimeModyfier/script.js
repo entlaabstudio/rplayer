@@ -52,7 +52,9 @@ class AddCssTimeModyfier {
                 ".addCode",
                 ".cssFx",
                 ".cssSelector",
-                ".offset"
+                ".offset",
+                ".animationTimeEntrance",
+                ".animationTimeOutgoing"
             ]
         }
         this.checkForm();
@@ -64,6 +66,7 @@ class AddCssTimeModyfier {
             that.errors = {};
             that.checkConfSource();
             that.checkFxInput();
+            that.checkAnimationTimesInputs();
             that.checkCssSelectorInput();
             that.checkAddCode();
             that.printErrors();
@@ -113,6 +116,10 @@ class AddCssTimeModyfier {
                             nodeKey: getRealTimeMs(jsonTimeMs),
                             cssKey: cssFx,
                             length: value.LengthMs,
+                            animationTime: {
+                                entrance: parseInt($(".animationTimeEntrance").val()),
+                                outgoing: parseInt($(".animationTimeOutgoing").val()),
+                            }
                         });
                     }
 
@@ -129,18 +136,24 @@ class AddCssTimeModyfier {
             selectorsKey: $(".cssSelector").val(),
             cssKey: recordObj.cssKey,
             length: recordObj.length,
+            animationTime: {
+                entrance: recordObj.animationTime.entrance,
+                outgoing: recordObj.animationTime.outgoing,
+            }
         };
         for (const [key, value] of Object.entries(this.obj.cssTimeModyfier.commandsInTime[recordObj.nodeKey])) {
             if (value == "default") {
-                console.log("ahoj");
                 delete this.obj.cssTimeModyfier.commandsInTime[recordObj.nodeKey][key];
             }
+        }
+        if (this.obj.cssTimeModyfier.commandsInTime[recordObj.nodeKey].animationTime.entrance == 0) {
+            delete this.obj.cssTimeModyfier.commandsInTime[recordObj.nodeKey].animationTime;
         }
     }
 
     inputMask() {
-        $(".offset").inputmask({"mask" : "99999999"}); //specifying options
-        $(".offset").inputmask({"placeholder" : ""});  //static mask
+        $(".offset, .animationTimeEntrance, .animationTimeOutgoing").inputmask({"mask" : "99999999"}); //specifying options
+        $(".offset, .animationTimeEntrance, .animationTimeOutgoing").inputmask({"placeholder" : ""});  //static mask
     }
 
     okState() {
@@ -188,7 +201,6 @@ class AddCssTimeModyfier {
         } else {
             try {
                 this.jsonObj = JSON.parse($(".addCode").val());
-                console.log(this.jsonObj);
                 for (const [key, value] of Object.entries(this.jsonObj)) {
                     var timeMsExists = false;
                     var lengthMsExists = false;
@@ -232,6 +244,20 @@ class AddCssTimeModyfier {
                     
                 }
             }
+        }
+    }
+
+    checkAnimationTimesInputs() {
+        if (
+            $(".animationTimeEntrance").val() == "0"
+        ) {
+            $(".animationTimeOutgoing").val("0");
+        }
+        if ($(".animationTimeEntrance").val() == "") {
+            this.pushError("animationTimeEntranceInput", "Animation entrance time must be set.", ".animationTimeEntrance");
+        }
+        if ($(".animationTimeOutgoing").val() == "") {
+            this.pushError("animationTimeOutgoingInput", "Animation outgoing time must be set.", ".animationTimeOutgoing");
         }
     }
 
