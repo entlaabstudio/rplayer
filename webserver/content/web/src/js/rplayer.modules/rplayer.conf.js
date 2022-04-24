@@ -41,6 +41,7 @@ export default class RPlayerConf {
 
         this.conf = {
             configVersion: 1,
+            description: "Yatsu v1",
             app: {
                 name: "RPlayer",
                 version: "1.42.62", // <some platform updates>.<visible or control updates>.<unvisible updates>
