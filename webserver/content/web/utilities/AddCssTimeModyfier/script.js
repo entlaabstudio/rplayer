@@ -282,14 +282,76 @@ class AddCssTimeModyfier {
 
                 if (this.obj.cssTimeModyfier.css === undefined) {
                     this.pushError("confSource", "Node cssTimeModyfier.css not found.", ".confSource");
+                } else {
+                    if (Object.keys(this.obj.cssTimeModyfier.css) < 1) {
+                        this.pushError("confSource", "Node cssTimeModyfier.css can not be empty.", ".confSource");
+                    } else {
+                        for (const [key, value] of Object.entries(this.obj.cssTimeModyfier.css)) {
+                            if (value.entrance === undefined) {
+                                this.pushError("confSource", "The cssTimeModyfier.css[\"" + key + "\"] node must contain \"entrance\" object.", ".confSource");
+                            } else {
+                                if (Object.keys(value.entrance) < 1) {
+                                    this.pushError("confSource", "The cssTimeModyfier.css[\"" + key + "\"].entrance node must be set.", ".confSource");
+                                }
+                            }
+                            if (value.outgoing === undefined) {
+                                this.pushError("confSource", "The cssTimeModyfier.css[\"" + key + "\"] node must contain \"outgoing\" object.", ".confSource");
+                            } else {
+                                if (Object.keys(value.outgoing) < 1) {
+                                    this.pushError("confSource", "The cssTimeModyfier.css[\"" + key + "\"].outgoing node must be set.", ".confSource");
+                                }
+                            }
+                        }
+                    }
                 }
 
                 if (this.obj.cssTimeModyfier.default === undefined) {
                     this.pushError("confSource", "Node cssTimeModyfier.default not found.", ".confSource");
+                } else {
+                    if (this.obj.cssTimeModyfier.default.cssKey === undefined) {
+                        this.pushError("confSource", "Node cssTimeModyfier.default.cssKey must be set.", ".confSource");
+                    }
+                    if (this.obj.cssTimeModyfier.default.length === undefined) {
+                        this.pushError("confSource", "Node cssTimeModyfier.default.length must be set.", ".confSource");
+                    }
+                    if (this.obj.cssTimeModyfier.default.animationTime === undefined) {
+                        this.pushError("confSource", "Node cssTimeModyfier.default.animationTime must be set.", ".confSource");
+                    } else {
+                        if (this.obj.cssTimeModyfier.default.animationTime.entrance === undefined) {
+                            this.pushError("confSource", "Node cssTimeModyfier.default.animationTime.entrance must be set.", ".confSource");
+                        }
+                        if (this.obj.cssTimeModyfier.default.animationTime.outgoing === undefined) {
+                            this.pushError("confSource", "Node cssTimeModyfier.default.animationTime.outgoing must be set.", ".confSource");
+                        }
+                    }
                 }
 
                 if (this.obj.cssTimeModyfier.commandsInTime === undefined) {
                     this.pushError("confSource", "Node cssTimeModyfier.commandsInTime not found.", ".confSource");
+                } else {
+                    for (const [key, value] of Object.entries(this.obj.cssTimeModyfier.commandsInTime)) {
+                        if (value.selectorsKey === undefined) {
+                            this.pushError("confSource", "Node cssTimeModyfier.commandsInTime[\"" + key + "\"].selectorsKey not found.", ".confSource");
+                        } else {
+                            if (value.selectorsKey == "") {
+                                this.pushError("confSource", "Node cssTimeModyfier.commandsInTime[\"" + key + "\"].selectorsKey can not be empty.", ".confSource");
+                            } else {
+                                try {
+                                    var fxEntries = 0;
+                                    for (const [key2, value2] of Object.entries(this.obj.cssTimeModyfier.selectors)) {
+                                        if (key2 == value.selectorsKey) {
+                                            fxEntries += 1;
+                                        }
+                                    }
+                                    if (fxEntries < 1) {
+                                        this.pushError("confSource", "Value from cssTimeModyfier.commandsInTime[" + key + "].selectorsKey is not valid.", ".confSource");
+                                    }   
+                                } catch (error) {
+                                    
+                                }
+                            }
+                        }
+                    }
                 }
                 
             }
