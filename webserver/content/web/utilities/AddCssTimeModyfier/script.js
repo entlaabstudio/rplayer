@@ -58,6 +58,7 @@ class AddCssTimeModyfier {
             ]
         }
         this.checkForm();
+        this.correctAdressBar();
     }
 
     checkForm() {
@@ -74,6 +75,13 @@ class AddCssTimeModyfier {
             that.inputMask();
             that.processAction();
         });
+    }
+
+    correctAdressBar() {
+        var url = new URL(window.location.href.replace('AddCssTimeModyfier/index.htm','AddCssTimeModyfier.htm'));
+        if (window.self == window.top) {
+            window.history.pushState({}, '', url);
+        }
     }
 
     processAction() {
