@@ -100,8 +100,8 @@
                             JSON.stringify(that.lastCssModyfiers[key]) != JSON.stringify(value.css) ||
                             that.wasClick == true
                         ) {
-                            console.log("[RPlayer]","CSS modifying via selector \"" + value.selector + "\".",value.css);
-                            $(value.selector).stop().transit(value.css);
+                            console.log("[RPlayer]","CSS modifying via selector \"" + value.selector + "\".",value);
+                            $(value.selector).stop().transit(value.css, value.animateTime);
                             that.lastCssModyfiers[key] = value.css;
                             if (i == length) {
                                 that.wasClick = false;
@@ -154,7 +154,6 @@
                     csss[namedKey].phase = "outgoing";
                 }
                 csss[namedKey].selector = value;
-                delete csss[namedKey].animationTime;
             }
         }
         return csss;
