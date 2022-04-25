@@ -21,6 +21,10 @@ body {
     color: var(--textColor) !important;
 }
 
+form {
+    overflow: auto;
+}
+
 label {
     padding-top: .5em;
 }
