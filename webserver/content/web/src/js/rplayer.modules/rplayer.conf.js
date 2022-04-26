@@ -2097,7 +2097,7 @@ export default class RPlayerConf {
                         "selectorsKey": "marcel",
                         "length": 34322
                     },
-                    "1545214": {
+                    "1545045": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2106,7 +2106,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1545535": {
+                    "1545366": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2115,7 +2115,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1545642": {
+                    "1545473": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2124,7 +2124,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1545857": {
+                    "1545688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2133,7 +2133,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1546071": {
+                    "1545902": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -2142,7 +2142,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1546392": {
+                    "1546223": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2151,7 +2151,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1546499": {
+                    "1546330": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2160,7 +2160,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1546714": {
+                    "1546545": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2169,7 +2169,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1546928": {
+                    "1546759": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2178,7 +2178,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1547142": {
+                    "1546973": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2187,7 +2187,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1547464": {
+                    "1547295": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2196,7 +2196,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1547571": {
+                    "1547402": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2205,7 +2205,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1547785": {
+                    "1547616": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -2214,7 +2214,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1547999": {
+                    "1547830": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2223,7 +2223,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1548321": {
+                    "1548152": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2232,7 +2232,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1548428": {
+                    "1548259": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2241,7 +2241,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1548642": {
+                    "1548473": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2250,7 +2250,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1548749": {
+                    "1548580": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2259,7 +2259,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1548856": {
+                    "1548687": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2268,7 +2268,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1548963": {
+                    "1548794": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2277,7 +2277,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1549070": {
+                    "1548901": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2286,7 +2286,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1549285": {
+                    "1549116": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2295,7 +2295,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1549499": {
+                    "1549330": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -2304,7 +2304,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1549714": {
+                    "1549545": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2313,7 +2313,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1550035": {
+                    "1549866": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2322,7 +2322,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1550142": {
+                    "1549973": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2331,7 +2331,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1550357": {
+                    "1550188": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2340,7 +2340,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1550678": {
+                    "1550509": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2349,7 +2349,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1550785": {
+                    "1550616": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2358,7 +2358,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1550999": {
+                    "1550830": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2367,7 +2367,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1551214": {
+                    "1551045": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -2376,7 +2376,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1551321": {
+                    "1551152": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2385,7 +2385,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1551428": {
+                    "1551259": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2394,7 +2394,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1551642": {
+                    "1551473": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2403,7 +2403,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1551857": {
+                    "1551688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2412,7 +2412,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1552071": {
+                    "1551902": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2421,7 +2421,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1552392": {
+                    "1552223": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2430,7 +2430,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1552499": {
+                    "1552330": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2439,7 +2439,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1552714": {
+                    "1552545": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2448,7 +2448,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1552928": {
+                    "1552759": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -2457,7 +2457,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1553249": {
+                    "1553080": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2466,7 +2466,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1553357": {
+                    "1553188": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2475,7 +2475,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1553571": {
+                    "1553402": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2484,7 +2484,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1553785": {
+                    "1553616": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2493,7 +2493,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1553999": {
+                    "1553830": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2502,7 +2502,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1554321": {
+                    "1554152": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2511,7 +2511,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1554428": {
+                    "1554259": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2520,7 +2520,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1554642": {
+                    "1554473": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -2529,7 +2529,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1554857": {
+                    "1554688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2538,7 +2538,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1555178": {
+                    "1555009": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2547,7 +2547,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1555285": {
+                    "1555116": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2556,7 +2556,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1555499": {
+                    "1555330": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2565,7 +2565,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1555607": {
+                    "1555438": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2574,7 +2574,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1555714": {
+                    "1555545": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2583,7 +2583,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1555821": {
+                    "1555652": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2592,7 +2592,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1555928": {
+                    "1555759": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2601,7 +2601,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1556142": {
+                    "1555973": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2610,7 +2610,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1556357": {
+                    "1556188": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -2619,7 +2619,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1556571": {
+                    "1556402": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2628,7 +2628,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1556892": {
+                    "1556723": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2637,7 +2637,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1556999": {
+                    "1556830": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2646,7 +2646,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1557214": {
+                    "1557045": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2655,7 +2655,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1557535": {
+                    "1557366": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2664,7 +2664,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1557642": {
+                    "1557473": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2673,7 +2673,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1557857": {
+                    "1557688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2682,7 +2682,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1558071": {
+                    "1557902": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -2691,7 +2691,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1558392": {
+                    "1558223": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2700,7 +2700,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1558499": {
+                    "1558330": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -2709,7 +2709,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1558714": {
+                    "1558545": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2718,7 +2718,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1558928": {
+                    "1558759": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2727,7 +2727,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1559249": {
+                    "1559080": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2736,7 +2736,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1559357": {
+                    "1559188": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2745,7 +2745,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1559571": {
+                    "1559402": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2754,7 +2754,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1559785": {
+                    "1559616": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -2763,7 +2763,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1560107": {
+                    "1559938": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2772,7 +2772,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1560214": {
+                    "1560045": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2781,7 +2781,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1560428": {
+                    "1560259": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2790,7 +2790,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1560642": {
+                    "1560473": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2799,7 +2799,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1560857": {
+                    "1560688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2808,7 +2808,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1561178": {
+                    "1561009": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2817,7 +2817,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1561285": {
+                    "1561116": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2826,7 +2826,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1561499": {
+                    "1561330": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -2835,7 +2835,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1561714": {
+                    "1561545": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2844,7 +2844,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1562035": {
+                    "1561866": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2853,7 +2853,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1562142": {
+                    "1561973": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2862,7 +2862,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1562357": {
+                    "1562188": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2871,7 +2871,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1562464": {
+                    "1562295": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2880,7 +2880,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1562571": {
+                    "1562402": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2889,7 +2889,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1562678": {
+                    "1562509": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2898,7 +2898,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1562785": {
+                    "1562616": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2907,7 +2907,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1562999": {
+                    "1562830": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2916,7 +2916,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1563214": {
+                    "1563045": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -2925,7 +2925,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1563428": {
+                    "1563259": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2934,7 +2934,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1563749": {
+                    "1563580": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2943,7 +2943,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1563857": {
+                    "1563688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2952,7 +2952,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1564071": {
+                    "1563902": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2961,7 +2961,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1564392": {
+                    "1564223": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2970,7 +2970,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1564499": {
+                    "1564330": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2979,7 +2979,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1564714": {
+                    "1564545": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -2988,7 +2988,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1564928": {
+                    "1564759": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -2997,7 +2997,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1565035": {
+                    "1564866": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3006,7 +3006,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1565142": {
+                    "1564973": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3015,7 +3015,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1565357": {
+                    "1565188": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3024,7 +3024,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1565571": {
+                    "1565402": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3033,7 +3033,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1565785": {
+                    "1565616": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3042,7 +3042,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1566107": {
+                    "1565938": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3051,7 +3051,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1566214": {
+                    "1566045": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3060,7 +3060,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1566428": {
+                    "1566259": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3069,7 +3069,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1566642": {
+                    "1566473": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -3078,7 +3078,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1566964": {
+                    "1566795": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3087,7 +3087,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1567071": {
+                    "1566902": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3096,7 +3096,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1567285": {
+                    "1567116": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3105,7 +3105,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1567499": {
+                    "1567330": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3114,7 +3114,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1567714": {
+                    "1567545": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3123,7 +3123,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1568035": {
+                    "1567866": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3132,7 +3132,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1568142": {
+                    "1567973": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3141,7 +3141,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1568357": {
+                    "1568188": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -3150,7 +3150,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1568571": {
+                    "1568402": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3159,7 +3159,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1568892": {
+                    "1568723": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3168,7 +3168,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1568999": {
+                    "1568830": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3177,7 +3177,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1569214": {
+                    "1569045": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3186,7 +3186,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1569321": {
+                    "1569152": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3195,7 +3195,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1569428": {
+                    "1569259": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3204,7 +3204,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1569535": {
+                    "1569366": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3213,7 +3213,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1569642": {
+                    "1569473": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3222,7 +3222,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1569857": {
+                    "1569688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3231,7 +3231,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1570071": {
+                    "1569902": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -3240,7 +3240,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1570285": {
+                    "1570116": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3249,7 +3249,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1570607": {
+                    "1570438": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3258,7 +3258,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1570714": {
+                    "1570545": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3267,7 +3267,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1570928": {
+                    "1570759": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3276,7 +3276,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1571249": {
+                    "1571080": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3285,7 +3285,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1571357": {
+                    "1571188": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3294,7 +3294,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1571571": {
+                    "1571402": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3303,7 +3303,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1571785": {
+                    "1571616": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -3312,7 +3312,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1571892": {
+                    "1571723": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3321,7 +3321,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1571999": {
+                    "1571830": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3330,7 +3330,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1572214": {
+                    "1572045": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3339,7 +3339,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1572428": {
+                    "1572259": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3348,7 +3348,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1572642": {
+                    "1572473": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -3357,7 +3357,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1572749": {
+                    "1572580": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -3366,7 +3366,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1573285": {
+                    "1573116": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3375,7 +3375,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1573392": {
+                    "1573223": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3384,7 +3384,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1573505": {
+                    "1573336": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -3393,7 +3393,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1573928": {
+                    "1573759": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3402,7 +3402,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1574142": {
+                    "1573973": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3411,7 +3411,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1574571": {
+                    "1574402": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3420,7 +3420,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1574785": {
+                    "1574616": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3429,7 +3429,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1574999": {
+                    "1574830": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3438,7 +3438,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1575215": {
+                    "1575046": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -3447,7 +3447,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1575246": {
+                    "1575077": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -3456,7 +3456,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1575642": {
+                    "1575473": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3465,7 +3465,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1575857": {
+                    "1575688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3474,7 +3474,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1576071": {
+                    "1575902": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3483,7 +3483,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1576499": {
+                    "1576330": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3492,7 +3492,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1576928": {
+                    "1576759": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -3501,7 +3501,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1576959": {
+                    "1576790": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -3510,7 +3510,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1577357": {
+                    "1577188": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3519,7 +3519,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1577571": {
+                    "1577402": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3528,7 +3528,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1577999": {
+                    "1577830": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3537,7 +3537,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1578214": {
+                    "1578045": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3546,7 +3546,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1578428": {
+                    "1578259": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3555,7 +3555,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1578642": {
+                    "1578473": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -3564,7 +3564,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1578674": {
+                    "1578505": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -3573,7 +3573,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1579071": {
+                    "1578902": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3582,7 +3582,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1579285": {
+                    "1579116": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3591,7 +3591,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1579499": {
+                    "1579330": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3600,7 +3600,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1579928": {
+                    "1579759": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3609,7 +3609,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1580357": {
+                    "1580188": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -3618,7 +3618,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1580388": {
+                    "1580219": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -3627,7 +3627,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1580785": {
+                    "1580616": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3636,7 +3636,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1580999": {
+                    "1580830": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3645,7 +3645,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1581428": {
+                    "1581259": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3654,7 +3654,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1581432": {
+                    "1581263": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -3663,7 +3663,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1581642": {
+                    "1581473": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3672,7 +3672,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1581649": {
+                    "1581480": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -3681,7 +3681,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1581857": {
+                    "1581688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3690,7 +3690,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1582071": {
+                    "1581902": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -3699,7 +3699,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1582928": {
+                    "1582759": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3708,7 +3708,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1583357": {
+                    "1583188": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3717,7 +3717,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1583785": {
+                    "1583616": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3726,7 +3726,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1583791": {
+                    "1583622": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -3735,7 +3735,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1584214": {
+                    "1584045": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3744,7 +3744,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1584428": {
+                    "1584259": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3753,7 +3753,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1584857": {
+                    "1584688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3762,7 +3762,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1584860": {
+                    "1584691": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -3771,7 +3771,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1585071": {
+                    "1584902": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3780,7 +3780,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1585077": {
+                    "1584908": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -3789,7 +3789,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1585285": {
+                    "1585116": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3798,7 +3798,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1585499": {
+                    "1585330": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -3807,7 +3807,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1585714": {
+                    "1585545": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3816,7 +3816,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1585928": {
+                    "1585759": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -3825,7 +3825,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1586142": {
+                    "1585973": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -3834,7 +3834,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1586357": {
+                    "1586188": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3843,7 +3843,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1586571": {
+                    "1586402": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3852,7 +3852,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1586785": {
+                    "1586616": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3861,7 +3861,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1586999": {
+                    "1586830": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3870,7 +3870,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1587214": {
+                    "1587045": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3879,7 +3879,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1587219": {
+                    "1587050": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -3888,7 +3888,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1587428": {
+                    "1587259": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3897,7 +3897,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1587642": {
+                    "1587473": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3906,7 +3906,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1587857": {
+                    "1587688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3915,7 +3915,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1588071": {
+                    "1587902": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3924,7 +3924,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1588285": {
+                    "1588116": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3933,7 +3933,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1588499": {
+                    "1588330": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3942,7 +3942,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1588714": {
+                    "1588545": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3951,7 +3951,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1588928": {
+                    "1588759": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -3960,7 +3960,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1588929": {
+                    "1588760": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3969,7 +3969,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1589142": {
+                    "1588973": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3978,7 +3978,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1589357": {
+                    "1589188": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3987,7 +3987,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1589571": {
+                    "1589402": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -3996,7 +3996,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1589785": {
+                    "1589616": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4005,7 +4005,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1589999": {
+                    "1589830": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4014,7 +4014,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1590214": {
+                    "1590045": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4023,7 +4023,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1590428": {
+                    "1590259": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4032,7 +4032,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1590642": {
+                    "1590473": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4041,7 +4041,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1590648": {
+                    "1590479": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -4050,7 +4050,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1590857": {
+                    "1590688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4059,7 +4059,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1591071": {
+                    "1590902": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4068,7 +4068,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1591285": {
+                    "1591116": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4077,7 +4077,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1591499": {
+                    "1591330": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4086,7 +4086,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1591714": {
+                    "1591545": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4095,7 +4095,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1591928": {
+                    "1591759": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4104,7 +4104,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1592142": {
+                    "1591973": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4113,7 +4113,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1592357": {
+                    "1592188": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -4122,7 +4122,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1592358": {
+                    "1592189": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4131,7 +4131,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1592571": {
+                    "1592402": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4140,7 +4140,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1592785": {
+                    "1592616": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4149,7 +4149,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1592999": {
+                    "1592830": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4158,7 +4158,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1593000": {
+                    "1592831": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4167,7 +4167,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1593214": {
+                    "1593045": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4176,7 +4176,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1593321": {
+                    "1593152": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4185,7 +4185,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1593428": {
+                    "1593259": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4194,7 +4194,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1593535": {
+                    "1593366": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4203,7 +4203,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1593642": {
+                    "1593473": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4212,7 +4212,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1593749": {
+                    "1593580": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4221,7 +4221,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1593857": {
+                    "1593688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4230,7 +4230,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1593964": {
+                    "1593795": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4239,7 +4239,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1594071": {
+                    "1593902": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4248,7 +4248,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1594076": {
+                    "1593907": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -4257,7 +4257,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1594178": {
+                    "1594009": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -4266,7 +4266,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1594179": {
+                    "1594010": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4275,7 +4275,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1594285": {
+                    "1594116": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4284,7 +4284,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1594392": {
+                    "1594223": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4293,7 +4293,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1594499": {
+                    "1594330": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4302,7 +4302,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1594607": {
+                    "1594438": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4311,7 +4311,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1594714": {
+                    "1594545": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4320,7 +4320,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1594821": {
+                    "1594652": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4329,7 +4329,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1594928": {
+                    "1594759": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4338,7 +4338,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1595035": {
+                    "1594866": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4347,7 +4347,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1595142": {
+                    "1594973": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4356,7 +4356,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1595146": {
+                    "1594977": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -4365,7 +4365,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1595249": {
+                    "1595080": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4374,7 +4374,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1595357": {
+                    "1595188": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4383,7 +4383,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1595363": {
+                    "1595194": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -4392,7 +4392,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1595464": {
+                    "1595295": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4401,7 +4401,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1595571": {
+                    "1595402": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4410,7 +4410,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1595678": {
+                    "1595509": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4419,7 +4419,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1595785": {
+                    "1595616": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -4428,7 +4428,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1595786": {
+                    "1595617": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4437,7 +4437,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1595892": {
+                    "1595723": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -4446,7 +4446,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1595893": {
+                    "1595724": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4455,7 +4455,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1595999": {
+                    "1595830": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4464,7 +4464,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1596107": {
+                    "1595938": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4473,7 +4473,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1596214": {
+                    "1596045": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4482,7 +4482,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1596321": {
+                    "1596152": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4491,7 +4491,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1596428": {
+                    "1596259": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4500,7 +4500,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1596535": {
+                    "1596366": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4509,7 +4509,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1596642": {
+                    "1596473": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4518,7 +4518,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1596750": {
+                    "1596581": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4527,7 +4527,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1596857": {
+                    "1596688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4536,7 +4536,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1596965": {
+                    "1596796": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4545,7 +4545,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1597072": {
+                    "1596903": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4554,7 +4554,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1597179": {
+                    "1597010": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4563,7 +4563,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1597286": {
+                    "1597117": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4572,7 +4572,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1597393": {
+                    "1597224": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4581,7 +4581,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1597500": {
+                    "1597331": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4590,7 +4590,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1597504": {
+                    "1597335": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -4599,7 +4599,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1597607": {
+                    "1597438": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4608,7 +4608,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1597715": {
+                    "1597546": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4617,7 +4617,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1597822": {
+                    "1597653": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4626,7 +4626,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1597929": {
+                    "1597760": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4635,7 +4635,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1597932": {
+                    "1597763": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -4644,7 +4644,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1598036": {
+                    "1597867": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4653,7 +4653,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1598143": {
+                    "1597974": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4662,7 +4662,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1598146": {
+                    "1597977": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -4671,7 +4671,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1598250": {
+                    "1598081": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4680,7 +4680,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1598357": {
+                    "1598188": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4689,7 +4689,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1598465": {
+                    "1598296": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4698,7 +4698,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1598572": {
+                    "1598403": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4707,7 +4707,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1598579": {
+                    "1598410": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -4716,7 +4716,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1598679": {
+                    "1598510": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4725,7 +4725,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1598786": {
+                    "1598617": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4734,7 +4734,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1598791": {
+                    "1598622": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -4743,7 +4743,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1598893": {
+                    "1598724": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4752,7 +4752,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1599000": {
+                    "1598831": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4761,7 +4761,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1599107": {
+                    "1598938": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4770,7 +4770,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1599215": {
+                    "1599046": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -4779,7 +4779,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1599322": {
+                    "1599153": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -4788,7 +4788,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1599429": {
+                    "1599260": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4797,7 +4797,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1599536": {
+                    "1599367": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4806,7 +4806,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1599643": {
+                    "1599474": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -4815,7 +4815,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1599750": {
+                    "1599581": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -4824,7 +4824,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1599857": {
+                    "1599688": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -4833,7 +4833,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1599965": {
+                    "1599796": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -4842,7 +4842,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1600072": {
+                    "1599903": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4851,7 +4851,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1600142": {
+                    "1599973": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4860,7 +4860,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1600215": {
+                    "1600046": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4869,7 +4869,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1600286": {
+                    "1600117": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4878,7 +4878,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1600500": {
+                    "1600331": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4887,7 +4887,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1600572": {
+                    "1600403": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4896,7 +4896,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1600643": {
+                    "1600474": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4905,7 +4905,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1600715": {
+                    "1600546": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4914,7 +4914,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1600929": {
+                    "1600760": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -4923,7 +4923,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1601357": {
+                    "1601188": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4932,7 +4932,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1601429": {
+                    "1601260": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4941,7 +4941,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1601500": {
+                    "1601331": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4950,7 +4950,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1601572": {
+                    "1601403": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4959,7 +4959,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1601786": {
+                    "1601617": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4968,7 +4968,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1601857": {
+                    "1601688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4977,7 +4977,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1601929": {
+                    "1601760": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4986,7 +4986,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1602000": {
+                    "1601831": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -4995,7 +4995,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1602643": {
+                    "1602474": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -5004,7 +5004,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1602715": {
+                    "1602546": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5013,7 +5013,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1602786": {
+                    "1602617": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5022,7 +5022,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1602857": {
+                    "1602688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5031,7 +5031,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1603072": {
+                    "1602903": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5040,7 +5040,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1603286": {
+                    "1603117": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5049,7 +5049,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1603929": {
+                    "1603760": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5058,7 +5058,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1604143": {
+                    "1603974": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5067,7 +5067,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1604357": {
+                    "1604188": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -5076,7 +5076,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1604572": {
+                    "1604403": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5085,7 +5085,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1605000": {
+                    "1604831": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5094,7 +5094,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1605215": {
+                    "1605046": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5103,7 +5103,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1605643": {
+                    "1605474": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5112,7 +5112,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1605715": {
+                    "1605546": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5121,7 +5121,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1605786": {
+                    "1605617": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5130,7 +5130,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1605857": {
+                    "1605688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5139,7 +5139,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1606072": {
+                    "1605903": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -5148,7 +5148,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1606143": {
+                    "1605974": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5157,7 +5157,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1606215": {
+                    "1606046": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5166,7 +5166,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1606286": {
+                    "1606117": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5175,7 +5175,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1606929": {
+                    "1606760": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5184,7 +5184,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1607000": {
+                    "1606831": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5193,7 +5193,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1607072": {
+                    "1606903": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5202,7 +5202,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1607143": {
+                    "1606974": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5211,7 +5211,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1607357": {
+                    "1607188": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5220,7 +5220,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1607429": {
+                    "1607260": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5229,7 +5229,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1607500": {
+                    "1607331": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5238,7 +5238,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1607572": {
+                    "1607403": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5247,7 +5247,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1607786": {
+                    "1607617": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -5256,7 +5256,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1608215": {
+                    "1608046": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5265,7 +5265,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1608286": {
+                    "1608117": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5274,7 +5274,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1608357": {
+                    "1608188": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5283,7 +5283,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1608429": {
+                    "1608260": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5292,7 +5292,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1608642": {
+                    "1608473": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5301,7 +5301,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1608715": {
+                    "1608546": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5310,7 +5310,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1608786": {
+                    "1608617": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5319,7 +5319,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1608857": {
+                    "1608688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5328,7 +5328,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1609500": {
+                    "1609331": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -5337,7 +5337,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1609572": {
+                    "1609403": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5346,7 +5346,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1609643": {
+                    "1609474": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5355,7 +5355,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1609715": {
+                    "1609546": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5364,7 +5364,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1609929": {
+                    "1609760": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5373,7 +5373,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1610143": {
+                    "1609974": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5382,7 +5382,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1610786": {
+                    "1610617": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5391,7 +5391,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1611000": {
+                    "1610831": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5400,7 +5400,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1611215": {
+                    "1611046": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -5409,7 +5409,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1611429": {
+                    "1611260": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5418,7 +5418,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1611643": {
+                    "1611474": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5427,7 +5427,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1611857": {
+                    "1611688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5436,7 +5436,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1612072": {
+                    "1611903": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5445,7 +5445,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1612286": {
+                    "1612117": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5454,7 +5454,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1612500": {
+                    "1612331": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5463,7 +5463,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1612607": {
+                    "1612438": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5472,7 +5472,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1612715": {
+                    "1612546": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5481,7 +5481,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1612822": {
+                    "1612653": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5490,7 +5490,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1612929": {
+                    "1612760": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -5499,7 +5499,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1613036": {
+                    "1612867": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5508,7 +5508,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1613143": {
+                    "1612974": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5517,7 +5517,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1613250": {
+                    "1613081": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5526,7 +5526,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1613357": {
+                    "1613188": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5535,7 +5535,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1613465": {
+                    "1613296": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5544,7 +5544,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1613572": {
+                    "1613403": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5553,7 +5553,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1613679": {
+                    "1613510": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5562,7 +5562,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1613786": {
+                    "1613617": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5571,7 +5571,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1613857": {
+                    "1613688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5580,7 +5580,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1613929": {
+                    "1613760": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5589,7 +5589,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1614000": {
+                    "1613831": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5598,7 +5598,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1614215": {
+                    "1614046": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5607,7 +5607,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1614286": {
+                    "1614117": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5616,7 +5616,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1614357": {
+                    "1614188": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5625,7 +5625,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1614429": {
+                    "1614260": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5634,7 +5634,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1614643": {
+                    "1614474": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -5643,7 +5643,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1615071": {
+                    "1614902": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5652,7 +5652,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1615143": {
+                    "1614974": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5661,7 +5661,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1615215": {
+                    "1615046": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5670,7 +5670,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1615286": {
+                    "1615117": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5679,7 +5679,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1615499": {
+                    "1615330": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5688,7 +5688,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1615572": {
+                    "1615403": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5697,7 +5697,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1615643": {
+                    "1615474": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5706,7 +5706,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1615715": {
+                    "1615546": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5715,7 +5715,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1616357": {
+                    "1616188": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -5724,7 +5724,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1616429": {
+                    "1616260": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5733,7 +5733,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1616500": {
+                    "1616331": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5742,7 +5742,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1616572": {
+                    "1616403": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5751,7 +5751,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1616786": {
+                    "1616617": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5760,7 +5760,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1617000": {
+                    "1616831": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5769,7 +5769,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1617644": {
+                    "1617475": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5778,7 +5778,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1617857": {
+                    "1617688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5787,7 +5787,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1618072": {
+                    "1617903": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -5796,7 +5796,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1618286": {
+                    "1618117": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5805,7 +5805,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1618715": {
+                    "1618546": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5814,7 +5814,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1618929": {
+                    "1618760": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5823,7 +5823,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1619357": {
+                    "1619188": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5832,7 +5832,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1619429": {
+                    "1619260": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5841,7 +5841,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1619500": {
+                    "1619331": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5850,7 +5850,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1619572": {
+                    "1619403": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5859,7 +5859,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1619786": {
+                    "1619617": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -5868,7 +5868,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1619857": {
+                    "1619688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5877,7 +5877,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1619929": {
+                    "1619760": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5886,7 +5886,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1620000": {
+                    "1619831": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5895,7 +5895,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1620643": {
+                    "1620474": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5904,7 +5904,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1620715": {
+                    "1620546": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5913,7 +5913,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1620786": {
+                    "1620617": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5922,7 +5922,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1620857": {
+                    "1620688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5931,7 +5931,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1621072": {
+                    "1620903": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5940,7 +5940,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1621143": {
+                    "1620974": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5949,7 +5949,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1621215": {
+                    "1621046": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5958,7 +5958,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1621286": {
+                    "1621117": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5967,7 +5967,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1621500": {
+                    "1621331": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -5976,7 +5976,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1621929": {
+                    "1621760": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5985,7 +5985,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1622000": {
+                    "1621831": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -5994,7 +5994,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1622072": {
+                    "1621903": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6003,7 +6003,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1622143": {
+                    "1621974": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6012,7 +6012,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1622357": {
+                    "1622188": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6021,7 +6021,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1622429": {
+                    "1622260": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6030,7 +6030,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1622500": {
+                    "1622331": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6039,7 +6039,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1622572": {
+                    "1622403": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6048,7 +6048,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1622786": {
+                    "1622617": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6057,7 +6057,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1622857": {
+                    "1622688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6066,7 +6066,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1622929": {
+                    "1622760": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6075,7 +6075,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1623000": {
+                    "1622831": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6084,7 +6084,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1623215": {
+                    "1623046": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -6093,7 +6093,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1623286": {
+                    "1623117": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6102,7 +6102,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1623357": {
+                    "1623188": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6111,7 +6111,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1623429": {
+                    "1623260": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6120,7 +6120,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1623643": {
+                    "1623474": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6129,7 +6129,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1623715": {
+                    "1623546": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6138,7 +6138,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1623786": {
+                    "1623617": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6147,7 +6147,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1623857": {
+                    "1623688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6156,7 +6156,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1624500": {
+                    "1624331": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6165,7 +6165,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1624715": {
+                    "1624546": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6174,7 +6174,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1624929": {
+                    "1624760": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -6183,7 +6183,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1625143": {
+                    "1624974": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6192,7 +6192,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1625357": {
+                    "1625188": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6201,7 +6201,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1625572": {
+                    "1625403": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6210,7 +6210,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1625786": {
+                    "1625617": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6219,7 +6219,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1626000": {
+                    "1625831": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6228,7 +6228,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1626215": {
+                    "1626046": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6237,7 +6237,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1626322": {
+                    "1626153": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6246,7 +6246,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1626429": {
+                    "1626260": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6255,7 +6255,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1626536": {
+                    "1626367": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6264,7 +6264,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1626643": {
+                    "1626474": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -6273,7 +6273,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1626715": {
+                    "1626546": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6282,7 +6282,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1626786": {
+                    "1626617": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6291,7 +6291,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1626857": {
+                    "1626688": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -6300,7 +6300,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1626929": {
+                    "1626760": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6309,7 +6309,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1627000": {
+                    "1626831": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6318,7 +6318,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1627500": {
+                    "1627331": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6327,7 +6327,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1627822": {
+                    "1627653": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6336,7 +6336,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1628143": {
+                    "1627974": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6345,7 +6345,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1628250": {
+                    "1628081": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6354,7 +6354,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1628357": {
+                    "1628188": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -6363,7 +6363,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1628679": {
+                    "1628510": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6372,7 +6372,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1629000": {
+                    "1628831": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6381,7 +6381,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1629429": {
+                    "1629260": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6390,7 +6390,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1629643": {
+                    "1629474": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6399,7 +6399,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1629857": {
+                    "1629688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6408,7 +6408,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1630072": {
+                    "1629903": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -6417,7 +6417,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1630286": {
+                    "1630117": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6426,7 +6426,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1630500": {
+                    "1630331": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6435,7 +6435,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1630715": {
+                    "1630546": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6444,7 +6444,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1630929": {
+                    "1630760": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6453,7 +6453,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1631250": {
+                    "1631081": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6462,7 +6462,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1631572": {
+                    "1631403": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6471,7 +6471,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1631679": {
+                    "1631510": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6480,7 +6480,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1631786": {
+                    "1631617": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -6489,7 +6489,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1632107": {
+                    "1631938": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6498,7 +6498,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1632429": {
+                    "1632260": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6507,7 +6507,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1632857": {
+                    "1632688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6516,7 +6516,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1633072": {
+                    "1632903": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6525,7 +6525,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1633286": {
+                    "1633117": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6534,7 +6534,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1633500": {
+                    "1633331": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -6543,7 +6543,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1633715": {
+                    "1633546": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6552,7 +6552,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1633929": {
+                    "1633760": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6561,7 +6561,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1634143": {
+                    "1633974": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6570,7 +6570,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1634357": {
+                    "1634188": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6579,7 +6579,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1634572": {
+                    "1634403": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6588,7 +6588,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1634679": {
+                    "1634510": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6597,7 +6597,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1634893": {
+                    "1634724": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6606,7 +6606,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1635000": {
+                    "1634831": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6615,7 +6615,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1635072": {
+                    "1634903": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6624,7 +6624,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1635143": {
+                    "1634974": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6633,7 +6633,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1635215": {
+                    "1635046": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -6642,7 +6642,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1635536": {
+                    "1635367": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6651,7 +6651,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1635857": {
+                    "1635688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6660,7 +6660,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1636286": {
+                    "1636117": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6669,7 +6669,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1636500": {
+                    "1636331": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6678,7 +6678,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1636715": {
+                    "1636546": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6687,7 +6687,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1636929": {
+                    "1636760": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -6696,7 +6696,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1637036": {
+                    "1636867": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6705,7 +6705,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1637143": {
+                    "1636974": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6714,7 +6714,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1637250": {
+                    "1637081": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6723,7 +6723,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1637357": {
+                    "1637188": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6732,7 +6732,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1637465": {
+                    "1637296": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6741,7 +6741,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1637572": {
+                    "1637403": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6750,7 +6750,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1637679": {
+                    "1637510": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6759,7 +6759,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1637786": {
+                    "1637617": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6768,7 +6768,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1638107": {
+                    "1637938": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6777,7 +6777,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1638429": {
+                    "1638260": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6786,7 +6786,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1638536": {
+                    "1638367": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6795,7 +6795,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1638643": {
+                    "1638474": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -6804,7 +6804,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1638965": {
+                    "1638796": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6813,7 +6813,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1639286": {
+                    "1639117": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6822,7 +6822,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1639715": {
+                    "1639546": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6831,7 +6831,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1639929": {
+                    "1639760": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6840,7 +6840,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1640143": {
+                    "1639974": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6849,7 +6849,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1640357": {
+                    "1640188": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -6858,7 +6858,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1641000": {
+                    "1640831": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6867,7 +6867,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1641215": {
+                    "1641046": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6876,7 +6876,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1641536": {
+                    "1641367": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6885,7 +6885,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1641857": {
+                    "1641688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6894,7 +6894,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1641965": {
+                    "1641796": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6903,7 +6903,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1642072": {
+                    "1641903": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -6912,7 +6912,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1642393": {
+                    "1642224": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6921,7 +6921,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1642715": {
+                    "1642546": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6930,7 +6930,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1643143": {
+                    "1642974": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6939,7 +6939,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1643357": {
+                    "1643188": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6948,7 +6948,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1643572": {
+                    "1643403": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6957,7 +6957,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1643786": {
+                    "1643617": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -6966,7 +6966,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1644000": {
+                    "1643831": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6975,7 +6975,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1644215": {
+                    "1644046": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6984,7 +6984,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1644429": {
+                    "1644260": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -6993,7 +6993,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1644643": {
+                    "1644474": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7002,7 +7002,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1644965": {
+                    "1644796": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7011,7 +7011,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1645286": {
+                    "1645117": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7020,7 +7020,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1645393": {
+                    "1645224": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7029,7 +7029,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1645500": {
+                    "1645331": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -7038,7 +7038,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1645822": {
+                    "1645653": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7047,7 +7047,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1646143": {
+                    "1645974": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7056,7 +7056,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1646572": {
+                    "1646403": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7065,7 +7065,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1646786": {
+                    "1646617": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7074,7 +7074,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1647000": {
+                    "1646831": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7083,7 +7083,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1647215": {
+                    "1647046": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -7092,7 +7092,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1647429": {
+                    "1647260": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7101,7 +7101,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1647643": {
+                    "1647474": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7110,7 +7110,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1647857": {
+                    "1647688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7119,7 +7119,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1648072": {
+                    "1647903": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7128,7 +7128,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1648286": {
+                    "1648117": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7137,7 +7137,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1648393": {
+                    "1648224": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7146,7 +7146,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1648607": {
+                    "1648438": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7155,7 +7155,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1648715": {
+                    "1648546": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7164,7 +7164,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1648786": {
+                    "1648617": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7173,7 +7173,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1648857": {
+                    "1648688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7182,7 +7182,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1648929": {
+                    "1648760": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -7191,7 +7191,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1649250": {
+                    "1649081": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7200,7 +7200,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1649572": {
+                    "1649403": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7209,7 +7209,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1650000": {
+                    "1649831": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7218,7 +7218,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1650215": {
+                    "1650046": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7227,7 +7227,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1650429": {
+                    "1650260": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7236,7 +7236,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1650643": {
+                    "1650474": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -7245,7 +7245,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1650750": {
+                    "1650581": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7254,7 +7254,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1650857": {
+                    "1650688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7263,7 +7263,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1650965": {
+                    "1650796": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7272,7 +7272,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1651072": {
+                    "1650903": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7281,7 +7281,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1651179": {
+                    "1651010": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7290,7 +7290,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1651286": {
+                    "1651117": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7299,7 +7299,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1651393": {
+                    "1651224": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7308,7 +7308,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1651500": {
+                    "1651331": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7317,7 +7317,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1651715": {
+                    "1651546": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -7326,7 +7326,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1651822": {
+                    "1651653": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -7335,7 +7335,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1651929": {
+                    "1651760": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -7344,7 +7344,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1652036": {
+                    "1651867": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -7353,7 +7353,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1652143": {
+                    "1651974": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7362,7 +7362,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1652786": {
+                    "1652617": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7371,7 +7371,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1653286": {
+                    "1653117": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7380,7 +7380,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1653357": {
+                    "1653188": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7389,7 +7389,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1653429": {
+                    "1653260": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -7398,7 +7398,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1654286": {
+                    "1654117": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7407,7 +7407,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1654393": {
+                    "1654224": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7416,7 +7416,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1654500": {
+                    "1654331": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -7425,7 +7425,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1654607": {
+                    "1654438": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -7434,7 +7434,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1654929": {
+                    "1654760": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7443,7 +7443,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1655250": {
+                    "1655081": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7452,7 +7452,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1655357": {
+                    "1655188": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7461,7 +7461,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1655572": {
+                    "1655403": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7470,7 +7470,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1655786": {
+                    "1655617": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -7479,7 +7479,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1656107": {
+                    "1655938": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7488,7 +7488,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1656215": {
+                    "1656046": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7497,7 +7497,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1656429": {
+                    "1656260": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7506,7 +7506,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1656643": {
+                    "1656474": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7515,7 +7515,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1656857": {
+                    "1656688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7524,7 +7524,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1657179": {
+                    "1657010": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7533,7 +7533,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1657286": {
+                    "1657117": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7542,7 +7542,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1657500": {
+                    "1657331": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -7551,7 +7551,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1657715": {
+                    "1657546": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7560,7 +7560,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1658036": {
+                    "1657867": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7569,7 +7569,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1658143": {
+                    "1657974": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7578,7 +7578,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1658357": {
+                    "1658188": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7587,7 +7587,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1658465": {
+                    "1658296": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7596,7 +7596,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1658572": {
+                    "1658403": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7605,7 +7605,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1658679": {
+                    "1658510": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7614,7 +7614,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1658786": {
+                    "1658617": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7623,7 +7623,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1659000": {
+                    "1658831": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7632,7 +7632,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1659214": {
+                    "1659045": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -7641,7 +7641,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1659429": {
+                    "1659260": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7650,7 +7650,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1659750": {
+                    "1659581": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7659,7 +7659,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1659857": {
+                    "1659688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7668,7 +7668,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1660072": {
+                    "1659903": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7677,7 +7677,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1660393": {
+                    "1660224": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7686,7 +7686,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1660500": {
+                    "1660331": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7695,7 +7695,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1660715": {
+                    "1660546": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7704,7 +7704,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1660929": {
+                    "1660760": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -7713,7 +7713,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1661036": {
+                    "1660867": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7722,7 +7722,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1661143": {
+                    "1660974": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7731,7 +7731,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1661357": {
+                    "1661188": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7740,7 +7740,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1661572": {
+                    "1661403": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7749,7 +7749,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1661786": {
+                    "1661617": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7758,7 +7758,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1662107": {
+                    "1661938": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7767,7 +7767,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1662215": {
+                    "1662046": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7776,7 +7776,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1662429": {
+                    "1662260": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7785,7 +7785,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1662643": {
+                    "1662474": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -7794,7 +7794,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1662965": {
+                    "1662796": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7803,7 +7803,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1663072": {
+                    "1662903": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7812,7 +7812,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1663286": {
+                    "1663117": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7821,7 +7821,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1663500": {
+                    "1663331": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7830,7 +7830,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1663715": {
+                    "1663546": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7839,7 +7839,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1664036": {
+                    "1663867": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7848,7 +7848,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1664143": {
+                    "1663974": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7857,7 +7857,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1664357": {
+                    "1664188": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -7866,7 +7866,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1664572": {
+                    "1664403": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7875,7 +7875,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1664893": {
+                    "1664724": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7884,7 +7884,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1665000": {
+                    "1664831": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7893,7 +7893,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1665215": {
+                    "1665046": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7902,7 +7902,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1665322": {
+                    "1665153": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7911,7 +7911,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1665429": {
+                    "1665260": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7920,7 +7920,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1665536": {
+                    "1665367": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7929,7 +7929,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1665643": {
+                    "1665474": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7938,7 +7938,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1665857": {
+                    "1665688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7947,7 +7947,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1666071": {
+                    "1665902": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -7956,7 +7956,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1666286": {
+                    "1666117": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7965,7 +7965,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1666607": {
+                    "1666438": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7974,7 +7974,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1666715": {
+                    "1666546": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7983,7 +7983,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1666929": {
+                    "1666760": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -7992,7 +7992,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1667250": {
+                    "1667081": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8001,7 +8001,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1667357": {
+                    "1667188": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8010,7 +8010,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1667572": {
+                    "1667403": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8019,7 +8019,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1667786": {
+                    "1667617": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -8028,7 +8028,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1668215": {
+                    "1668046": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -8037,7 +8037,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1668429": {
+                    "1668260": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8046,7 +8046,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1668643": {
+                    "1668474": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8055,7 +8055,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1669286": {
+                    "1669117": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8064,7 +8064,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1669393": {
+                    "1669224": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8073,7 +8073,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1669500": {
+                    "1669331": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -8082,7 +8082,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1669822": {
+                    "1669653": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8091,7 +8091,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1669929": {
+                    "1669760": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8100,7 +8100,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1670143": {
+                    "1669974": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8109,7 +8109,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1670357": {
+                    "1670188": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8118,7 +8118,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1670572": {
+                    "1670403": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8127,7 +8127,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1670893": {
+                    "1670724": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8136,7 +8136,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1671000": {
+                    "1670831": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8145,7 +8145,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1671215": {
+                    "1671046": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -8154,7 +8154,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1671429": {
+                    "1671260": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8163,7 +8163,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1671750": {
+                    "1671581": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8172,7 +8172,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1671857": {
+                    "1671688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8181,7 +8181,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1672072": {
+                    "1671903": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8190,7 +8190,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1672179": {
+                    "1672010": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8199,7 +8199,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1672286": {
+                    "1672117": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8208,7 +8208,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1672393": {
+                    "1672224": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8217,7 +8217,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1672500": {
+                    "1672331": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8226,7 +8226,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1672715": {
+                    "1672546": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8235,7 +8235,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1672928": {
+                    "1672759": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -8244,7 +8244,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1673143": {
+                    "1672974": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8253,7 +8253,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1673465": {
+                    "1673296": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8262,7 +8262,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1673572": {
+                    "1673403": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8271,7 +8271,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1673786": {
+                    "1673617": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8280,7 +8280,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1674107": {
+                    "1673938": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8289,7 +8289,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1674215": {
+                    "1674046": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8298,7 +8298,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1674429": {
+                    "1674260": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8307,7 +8307,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1674643": {
+                    "1674474": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -8316,7 +8316,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1674750": {
+                    "1674581": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8325,7 +8325,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1674857": {
+                    "1674688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8334,7 +8334,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1675072": {
+                    "1674903": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8343,7 +8343,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1675286": {
+                    "1675117": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8352,7 +8352,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1675500": {
+                    "1675331": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8361,7 +8361,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1675822": {
+                    "1675653": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8370,7 +8370,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1675929": {
+                    "1675760": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8379,7 +8379,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1676143": {
+                    "1675974": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8388,7 +8388,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1676357": {
+                    "1676188": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -8397,7 +8397,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1676679": {
+                    "1676510": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8406,7 +8406,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1676786": {
+                    "1676617": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8415,7 +8415,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1677000": {
+                    "1676831": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8424,7 +8424,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1677215": {
+                    "1677046": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8433,7 +8433,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1677429": {
+                    "1677260": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8442,7 +8442,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1677750": {
+                    "1677581": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8451,7 +8451,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1677857": {
+                    "1677688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8460,7 +8460,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1678072": {
+                    "1677903": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -8469,7 +8469,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1678286": {
+                    "1678117": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8478,7 +8478,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1678607": {
+                    "1678438": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8487,7 +8487,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1678715": {
+                    "1678546": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8496,7 +8496,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1678929": {
+                    "1678760": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8505,7 +8505,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1679036": {
+                    "1678867": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8514,7 +8514,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1679143": {
+                    "1678974": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8523,7 +8523,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1679250": {
+                    "1679081": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8532,7 +8532,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1679357": {
+                    "1679188": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8541,7 +8541,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1679572": {
+                    "1679403": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8550,7 +8550,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1679785": {
+                    "1679616": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -8559,7 +8559,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1680000": {
+                    "1679831": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8568,7 +8568,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1680322": {
+                    "1680153": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8577,7 +8577,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1680429": {
+                    "1680260": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8586,7 +8586,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1680643": {
+                    "1680474": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8595,7 +8595,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1680965": {
+                    "1680796": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8604,7 +8604,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1681072": {
+                    "1680903": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8613,7 +8613,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1681500": {
+                    "1681331": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8622,7 +8622,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1682143": {
+                    "1681974": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8631,7 +8631,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1682357": {
+                    "1682188": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -8640,7 +8640,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1682358": {
+                    "1682189": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8649,7 +8649,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1682786": {
+                    "1682617": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8658,7 +8658,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1683000": {
+                    "1682831": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8667,7 +8667,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1683429": {
+                    "1683260": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8676,7 +8676,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1683643": {
+                    "1683474": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8685,7 +8685,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1683857": {
+                    "1683688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8694,7 +8694,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1684072": {
+                    "1683903": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -8703,7 +8703,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1684102": {
+                    "1683933": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -8712,7 +8712,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1684500": {
+                    "1684331": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8721,7 +8721,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1684715": {
+                    "1684546": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8730,7 +8730,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1684929": {
+                    "1684760": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8739,7 +8739,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1685357": {
+                    "1685188": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8748,7 +8748,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1685785": {
+                    "1685616": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -8757,7 +8757,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1685815": {
+                    "1685646": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -8766,7 +8766,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1686215": {
+                    "1686046": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8775,7 +8775,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1686429": {
+                    "1686260": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8784,7 +8784,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1686857": {
+                    "1686688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8793,7 +8793,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1686859": {
+                    "1686690": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -8802,7 +8802,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1687072": {
+                    "1686903": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8811,7 +8811,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1687076": {
+                    "1686907": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -8820,7 +8820,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1687286": {
+                    "1687117": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8829,7 +8829,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1687499": {
+                    "1687330": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -8838,7 +8838,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1687715": {
+                    "1687546": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8847,7 +8847,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1687928": {
+                    "1687759": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -8856,7 +8856,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1688142": {
+                    "1687973": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -8865,7 +8865,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1688357": {
+                    "1688188": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8874,7 +8874,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1688572": {
+                    "1688403": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8883,7 +8883,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1688786": {
+                    "1688617": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8892,7 +8892,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1689000": {
+                    "1688831": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8901,7 +8901,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1689215": {
+                    "1689046": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8910,7 +8910,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1689218": {
+                    "1689049": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -8919,7 +8919,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1689429": {
+                    "1689260": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8928,7 +8928,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1689643": {
+                    "1689474": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8937,7 +8937,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1689857": {
+                    "1689688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8946,7 +8946,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1690072": {
+                    "1689903": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8955,7 +8955,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1690286": {
+                    "1690117": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8964,7 +8964,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1690500": {
+                    "1690331": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8973,7 +8973,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1690715": {
+                    "1690546": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -8982,7 +8982,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1690928": {
+                    "1690759": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -8991,7 +8991,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1690929": {
+                    "1690760": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9000,7 +9000,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1691143": {
+                    "1690974": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9009,7 +9009,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1691357": {
+                    "1691188": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9018,7 +9018,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1691572": {
+                    "1691403": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9027,7 +9027,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1691786": {
+                    "1691617": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9036,7 +9036,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1692000": {
+                    "1691831": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9045,7 +9045,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1692215": {
+                    "1692046": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9054,7 +9054,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1692429": {
+                    "1692260": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9063,7 +9063,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1692643": {
+                    "1692474": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9072,7 +9072,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1692647": {
+                    "1692478": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -9081,7 +9081,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1692857": {
+                    "1692688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9090,7 +9090,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1693072": {
+                    "1692903": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9099,7 +9099,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1693286": {
+                    "1693117": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9108,7 +9108,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1693500": {
+                    "1693331": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9117,7 +9117,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1693715": {
+                    "1693546": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9126,7 +9126,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1693929": {
+                    "1693760": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9135,7 +9135,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1694143": {
+                    "1693974": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9144,7 +9144,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1694356": {
+                    "1694187": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -9153,7 +9153,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1694464": {
+                    "1694295": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -9162,7 +9162,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1694572": {
+                    "1694403": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9171,7 +9171,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1694679": {
+                    "1694510": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9180,7 +9180,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1694785": {
+                    "1694616": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -9189,7 +9189,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1694892": {
+                    "1694723": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -9198,7 +9198,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1694999": {
+                    "1694830": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -9207,7 +9207,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1695106": {
+                    "1694937": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -9216,7 +9216,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1695215": {
+                    "1695046": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9225,7 +9225,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1695286": {
+                    "1695117": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9234,7 +9234,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1695357": {
+                    "1695188": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9243,7 +9243,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1695429": {
+                    "1695260": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9252,7 +9252,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1695643": {
+                    "1695474": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9261,7 +9261,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1695715": {
+                    "1695546": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9270,7 +9270,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1695786": {
+                    "1695617": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9279,7 +9279,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1695857": {
+                    "1695688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9288,7 +9288,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1696072": {
+                    "1695903": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -9297,7 +9297,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1696500": {
+                    "1696331": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9306,7 +9306,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1696572": {
+                    "1696403": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9315,7 +9315,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1696643": {
+                    "1696474": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9324,7 +9324,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1696715": {
+                    "1696546": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9333,7 +9333,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1696929": {
+                    "1696760": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9342,7 +9342,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1697000": {
+                    "1696831": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9351,7 +9351,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1697072": {
+                    "1696903": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9360,7 +9360,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1697143": {
+                    "1696974": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9369,7 +9369,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1697786": {
+                    "1697617": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -9378,7 +9378,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1697857": {
+                    "1697688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9387,7 +9387,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1697929": {
+                    "1697760": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9396,7 +9396,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1698000": {
+                    "1697831": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9405,7 +9405,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1698215": {
+                    "1698046": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9414,7 +9414,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1698429": {
+                    "1698260": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9423,7 +9423,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1699072": {
+                    "1698903": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9432,7 +9432,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1699286": {
+                    "1699117": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9441,7 +9441,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1699500": {
+                    "1699331": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -9450,7 +9450,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1699715": {
+                    "1699546": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9459,7 +9459,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1700143": {
+                    "1699974": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9468,7 +9468,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1700357": {
+                    "1700188": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9477,7 +9477,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1700786": {
+                    "1700617": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9486,7 +9486,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1700857": {
+                    "1700688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9495,7 +9495,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1700929": {
+                    "1700760": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9504,7 +9504,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1701000": {
+                    "1700831": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9513,7 +9513,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1701215": {
+                    "1701046": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -9522,7 +9522,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1701286": {
+                    "1701117": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9531,7 +9531,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1701357": {
+                    "1701188": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9540,7 +9540,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1701429": {
+                    "1701260": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9549,7 +9549,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1702072": {
+                    "1701903": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9558,7 +9558,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1702143": {
+                    "1701974": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9567,7 +9567,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1702215": {
+                    "1702046": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9576,7 +9576,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1702286": {
+                    "1702117": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9585,7 +9585,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1702500": {
+                    "1702331": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9594,7 +9594,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1702572": {
+                    "1702403": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9603,7 +9603,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1702643": {
+                    "1702474": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9612,7 +9612,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1702715": {
+                    "1702546": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9621,7 +9621,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1702929": {
+                    "1702760": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -9630,7 +9630,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1703357": {
+                    "1703188": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9639,7 +9639,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1703429": {
+                    "1703260": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9648,7 +9648,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1703500": {
+                    "1703331": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9657,7 +9657,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1703572": {
+                    "1703403": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9666,7 +9666,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1703786": {
+                    "1703617": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9675,7 +9675,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1703857": {
+                    "1703688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9684,7 +9684,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1703929": {
+                    "1703760": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9693,7 +9693,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1704000": {
+                    "1703831": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9702,7 +9702,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1704643": {
+                    "1704474": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -9711,7 +9711,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1704715": {
+                    "1704546": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9720,7 +9720,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1704786": {
+                    "1704617": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9729,7 +9729,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1704857": {
+                    "1704688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9738,7 +9738,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1705072": {
+                    "1704903": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9747,7 +9747,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1705286": {
+                    "1705117": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9756,7 +9756,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1705929": {
+                    "1705760": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9765,7 +9765,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1706143": {
+                    "1705974": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9774,7 +9774,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1706357": {
+                    "1706188": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -9783,7 +9783,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1706572": {
+                    "1706403": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9792,7 +9792,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1706786": {
+                    "1706617": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9801,7 +9801,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1707000": {
+                    "1706831": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9810,7 +9810,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1707215": {
+                    "1707046": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9819,7 +9819,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1707429": {
+                    "1707260": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9828,7 +9828,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1707643": {
+                    "1707474": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9837,7 +9837,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1707750": {
+                    "1707581": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9846,7 +9846,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1707857": {
+                    "1707688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9855,7 +9855,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1707965": {
+                    "1707796": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9864,7 +9864,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1708072": {
+                    "1707903": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -9873,7 +9873,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1708179": {
+                    "1708010": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9882,7 +9882,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1708286": {
+                    "1708117": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9891,7 +9891,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1708393": {
+                    "1708224": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9900,7 +9900,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1708500": {
+                    "1708331": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9909,7 +9909,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1708607": {
+                    "1708438": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9918,7 +9918,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1708715": {
+                    "1708546": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9927,7 +9927,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1708822": {
+                    "1708653": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9936,7 +9936,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1708929": {
+                    "1708760": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9945,7 +9945,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1709000": {
+                    "1708831": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9954,7 +9954,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1709072": {
+                    "1708903": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9963,7 +9963,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1709143": {
+                    "1708974": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9972,7 +9972,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1709357": {
+                    "1709188": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9981,7 +9981,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1709429": {
+                    "1709260": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9990,7 +9990,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1709500": {
+                    "1709331": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -9999,7 +9999,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1709572": {
+                    "1709403": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10008,7 +10008,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1709786": {
+                    "1709617": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -10017,7 +10017,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1710215": {
+                    "1710046": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10026,7 +10026,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1710286": {
+                    "1710117": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10035,7 +10035,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1710357": {
+                    "1710188": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10044,7 +10044,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1710429": {
+                    "1710260": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10053,7 +10053,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1710643": {
+                    "1710474": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10062,7 +10062,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1710715": {
+                    "1710546": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10071,7 +10071,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1710786": {
+                    "1710617": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10080,7 +10080,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1710857": {
+                    "1710688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10089,7 +10089,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1711072": {
+                    "1710903": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10098,7 +10098,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1711179": {
+                    "1711010": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10107,7 +10107,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1711286": {
+                    "1711117": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10116,7 +10116,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1711393": {
+                    "1711224": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10125,7 +10125,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1711500": {
+                    "1711331": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -10134,7 +10134,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1711572": {
+                    "1711403": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10143,7 +10143,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1711643": {
+                    "1711474": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10152,7 +10152,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1711715": {
+                    "1711546": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10161,7 +10161,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1711929": {
+                    "1711760": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10170,7 +10170,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1712143": {
+                    "1711974": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10179,7 +10179,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1712786": {
+                    "1712617": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10188,7 +10188,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1713000": {
+                    "1712831": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10197,7 +10197,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1713215": {
+                    "1713046": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -10206,7 +10206,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1713429": {
+                    "1713260": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10215,7 +10215,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1713857": {
+                    "1713688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10224,7 +10224,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1714072": {
+                    "1713903": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10233,7 +10233,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1714500": {
+                    "1714331": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10242,7 +10242,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1714572": {
+                    "1714403": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10251,7 +10251,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1714643": {
+                    "1714474": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10260,7 +10260,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1714715": {
+                    "1714546": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10269,7 +10269,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1714929": {
+                    "1714760": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -10278,7 +10278,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1715143": {
+                    "1714974": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10287,7 +10287,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1715786": {
+                    "1715617": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10296,7 +10296,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1715857": {
+                    "1715688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10305,7 +10305,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1715929": {
+                    "1715760": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10314,7 +10314,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1716000": {
+                    "1715831": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10323,7 +10323,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1716215": {
+                    "1716046": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10332,7 +10332,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1716286": {
+                    "1716117": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10341,7 +10341,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1716357": {
+                    "1716188": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10350,7 +10350,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1716429": {
+                    "1716260": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10359,7 +10359,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1716643": {
+                    "1716474": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -10368,7 +10368,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1717072": {
+                    "1716903": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10377,7 +10377,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1717143": {
+                    "1716974": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10386,7 +10386,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1717215": {
+                    "1717046": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10395,7 +10395,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1717286": {
+                    "1717117": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10404,7 +10404,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1717500": {
+                    "1717331": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10413,7 +10413,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1717572": {
+                    "1717403": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10422,7 +10422,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1717643": {
+                    "1717474": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10431,7 +10431,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1717715": {
+                    "1717546": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10440,7 +10440,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1717929": {
+                    "1717760": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10449,7 +10449,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1718000": {
+                    "1717831": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10458,7 +10458,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1718072": {
+                    "1717903": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10467,7 +10467,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1718143": {
+                    "1717974": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10476,7 +10476,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1718357": {
+                    "1718188": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -10485,7 +10485,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1718429": {
+                    "1718260": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10494,7 +10494,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1718500": {
+                    "1718331": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10503,7 +10503,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1718572": {
+                    "1718403": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10512,7 +10512,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1718786": {
+                    "1718617": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10521,7 +10521,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1718857": {
+                    "1718688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10530,7 +10530,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1718929": {
+                    "1718760": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10539,7 +10539,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1719000": {
+                    "1718831": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10548,7 +10548,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1719643": {
+                    "1719474": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10557,7 +10557,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1719857": {
+                    "1719688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10566,7 +10566,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1720072": {
+                    "1719903": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -10575,7 +10575,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1720286": {
+                    "1720117": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10584,7 +10584,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1720500": {
+                    "1720331": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10593,7 +10593,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1720715": {
+                    "1720546": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10602,7 +10602,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1720929": {
+                    "1720760": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10611,7 +10611,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1721143": {
+                    "1720974": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10620,7 +10620,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1721357": {
+                    "1721188": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10629,7 +10629,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1721465": {
+                    "1721296": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10638,7 +10638,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1721572": {
+                    "1721403": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10647,7 +10647,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1721679": {
+                    "1721510": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10656,7 +10656,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1721786": {
+                    "1721617": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -10665,7 +10665,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1721857": {
+                    "1721688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10674,7 +10674,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1721929": {
+                    "1721760": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10683,7 +10683,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1722000": {
+                    "1721831": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -10692,7 +10692,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1722072": {
+                    "1721903": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10701,7 +10701,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1722143": {
+                    "1721974": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10710,7 +10710,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1722643": {
+                    "1722474": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10719,7 +10719,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1722964": {
+                    "1722795": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10728,7 +10728,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1723286": {
+                    "1723117": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10737,7 +10737,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1723393": {
+                    "1723224": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10746,7 +10746,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1723500": {
+                    "1723331": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -10755,7 +10755,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1723822": {
+                    "1723653": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10764,7 +10764,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1724143": {
+                    "1723974": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10773,7 +10773,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1724572": {
+                    "1724403": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10782,7 +10782,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1724786": {
+                    "1724617": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10791,7 +10791,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1725000": {
+                    "1724831": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10800,7 +10800,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1725214": {
+                    "1725045": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -10809,7 +10809,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1725429": {
+                    "1725260": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10818,7 +10818,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1725643": {
+                    "1725474": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10827,7 +10827,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1725857": {
+                    "1725688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10836,7 +10836,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1726072": {
+                    "1725903": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10845,7 +10845,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1726393": {
+                    "1726224": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10854,7 +10854,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1726714": {
+                    "1726545": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10863,7 +10863,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1726822": {
+                    "1726653": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10872,7 +10872,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1726929": {
+                    "1726760": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -10881,7 +10881,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1727250": {
+                    "1727081": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10890,7 +10890,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1727572": {
+                    "1727403": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10899,7 +10899,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1728000": {
+                    "1727831": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10908,7 +10908,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1728214": {
+                    "1728045": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10917,7 +10917,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1728429": {
+                    "1728260": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10926,7 +10926,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1728643": {
+                    "1728474": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -10935,7 +10935,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1728857": {
+                    "1728688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10944,7 +10944,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1729072": {
+                    "1728903": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10953,7 +10953,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1729286": {
+                    "1729117": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10962,7 +10962,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1729500": {
+                    "1729331": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10971,7 +10971,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1729714": {
+                    "1729545": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10980,7 +10980,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1729822": {
+                    "1729653": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10989,7 +10989,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1730036": {
+                    "1729867": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -10998,7 +10998,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1730143": {
+                    "1729974": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11007,7 +11007,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1730214": {
+                    "1730045": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11016,7 +11016,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1730286": {
+                    "1730117": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11025,7 +11025,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1730357": {
+                    "1730188": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -11034,7 +11034,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1730679": {
+                    "1730510": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11043,7 +11043,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1731000": {
+                    "1730831": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11052,7 +11052,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1731429": {
+                    "1731260": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11061,7 +11061,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1731643": {
+                    "1731474": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11070,7 +11070,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1731857": {
+                    "1731688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11079,7 +11079,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1732072": {
+                    "1731903": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -11088,7 +11088,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1732179": {
+                    "1732010": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11097,7 +11097,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1732286": {
+                    "1732117": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11106,7 +11106,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1732393": {
+                    "1732224": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11115,7 +11115,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1732500": {
+                    "1732331": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11124,7 +11124,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1732607": {
+                    "1732438": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11133,7 +11133,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1732714": {
+                    "1732545": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11142,7 +11142,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1732822": {
+                    "1732653": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11151,7 +11151,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1732929": {
+                    "1732760": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11160,7 +11160,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1733250": {
+                    "1733081": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11169,7 +11169,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1733572": {
+                    "1733403": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11178,7 +11178,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1733679": {
+                    "1733510": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11187,7 +11187,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1733786": {
+                    "1733617": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -11196,7 +11196,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1734107": {
+                    "1733938": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11205,7 +11205,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1734429": {
+                    "1734260": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11214,7 +11214,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1734857": {
+                    "1734688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11223,7 +11223,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1735072": {
+                    "1734903": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11232,7 +11232,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1735286": {
+                    "1735117": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11241,7 +11241,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1735500": {
+                    "1735331": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -11250,7 +11250,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1736357": {
+                    "1736188": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11259,7 +11259,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1736679": {
+                    "1736510": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11268,7 +11268,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1737000": {
+                    "1736831": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11277,7 +11277,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1737107": {
+                    "1736938": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11286,7 +11286,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1737214": {
+                    "1737045": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -11295,7 +11295,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1737536": {
+                    "1737367": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11304,7 +11304,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1737857": {
+                    "1737688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11313,7 +11313,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1738286": {
+                    "1738117": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11322,7 +11322,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1738500": {
+                    "1738331": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11331,7 +11331,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1738714": {
+                    "1738545": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11340,7 +11340,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1738929": {
+                    "1738760": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -11349,7 +11349,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1739143": {
+                    "1738974": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11358,7 +11358,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1739357": {
+                    "1739188": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11367,7 +11367,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1739572": {
+                    "1739403": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11376,7 +11376,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1739786": {
+                    "1739617": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11385,7 +11385,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1740107": {
+                    "1739938": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11394,7 +11394,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1740429": {
+                    "1740260": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11403,7 +11403,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1740536": {
+                    "1740367": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11412,7 +11412,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1740643": {
+                    "1740474": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -11421,7 +11421,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1740964": {
+                    "1740795": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11430,7 +11430,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1741286": {
+                    "1741117": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11439,7 +11439,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1741714": {
+                    "1741545": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11448,7 +11448,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1741929": {
+                    "1741760": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11457,7 +11457,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1742143": {
+                    "1741974": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11466,7 +11466,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1742357": {
+                    "1742188": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -11475,7 +11475,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1742572": {
+                    "1742403": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11484,7 +11484,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1742786": {
+                    "1742617": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11493,7 +11493,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1743000": {
+                    "1742831": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11502,7 +11502,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1743214": {
+                    "1743045": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11511,7 +11511,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1743429": {
+                    "1743260": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11520,7 +11520,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1743536": {
+                    "1743367": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11529,7 +11529,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1743750": {
+                    "1743581": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11538,7 +11538,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1743857": {
+                    "1743688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11547,7 +11547,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1743929": {
+                    "1743760": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11556,7 +11556,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1744000": {
+                    "1743831": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11565,7 +11565,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1744072": {
+                    "1743903": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -11574,7 +11574,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1744393": {
+                    "1744224": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11583,7 +11583,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1744714": {
+                    "1744545": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11592,7 +11592,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1745143": {
+                    "1744974": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11601,7 +11601,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1745357": {
+                    "1745188": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11610,7 +11610,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1745572": {
+                    "1745403": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11619,7 +11619,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1745786": {
+                    "1745617": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -11628,7 +11628,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1745893": {
+                    "1745724": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11637,7 +11637,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1746000": {
+                    "1745831": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11646,7 +11646,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1746107": {
+                    "1745938": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11655,7 +11655,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1746214": {
+                    "1746045": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11664,7 +11664,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1746322": {
+                    "1746153": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11673,7 +11673,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1746429": {
+                    "1746260": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11682,7 +11682,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1746536": {
+                    "1746367": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11691,7 +11691,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1746643": {
+                    "1746474": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11700,7 +11700,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1746964": {
+                    "1746795": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11709,7 +11709,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1747286": {
+                    "1747117": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11718,7 +11718,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1747393": {
+                    "1747224": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11727,7 +11727,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1747500": {
+                    "1747331": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -11736,7 +11736,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1747822": {
+                    "1747653": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11745,7 +11745,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1748143": {
+                    "1747974": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11754,7 +11754,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1748572": {
+                    "1748403": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11763,7 +11763,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1748786": {
+                    "1748617": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11772,7 +11772,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1749000": {
+                    "1748831": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11781,7 +11781,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1749214": {
+                    "1749045": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -11790,7 +11790,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1749322": {
+                    "1749153": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -11799,7 +11799,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1749429": {
+                    "1749260": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -11808,7 +11808,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1749536": {
+                    "1749367": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -11817,7 +11817,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1749643": {
+                    "1749474": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -11826,7 +11826,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1749750": {
+                    "1749581": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -11835,7 +11835,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1750072": {
+                    "1749903": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11844,7 +11844,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1770429": {
+                    "1770260": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11853,7 +11853,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1770643": {
+                    "1770474": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11862,7 +11862,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1771072": {
+                    "1770903": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11871,7 +11871,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1771500": {
+                    "1771331": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11880,7 +11880,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1771929": {
+                    "1771760": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11889,7 +11889,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1772357": {
+                    "1772188": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11898,7 +11898,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1772786": {
+                    "1772617": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11907,7 +11907,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1773214": {
+                    "1773045": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11916,7 +11916,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1773643": {
+                    "1773474": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11925,7 +11925,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1773857": {
+                    "1773688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11934,7 +11934,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1774072": {
+                    "1773903": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11943,7 +11943,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1774500": {
+                    "1774331": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11952,7 +11952,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1774929": {
+                    "1774760": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11961,7 +11961,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1775357": {
+                    "1775188": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11970,7 +11970,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1775786": {
+                    "1775617": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11979,7 +11979,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1776214": {
+                    "1776045": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11988,7 +11988,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1776643": {
+                    "1776474": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -11997,7 +11997,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1777072": {
+                    "1776903": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12006,7 +12006,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1777500": {
+                    "1777331": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12015,7 +12015,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1777929": {
+                    "1777760": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12024,7 +12024,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1778357": {
+                    "1778188": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12033,7 +12033,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1778786": {
+                    "1778617": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12042,7 +12042,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1779214": {
+                    "1779045": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12051,7 +12051,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1779643": {
+                    "1779474": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12060,7 +12060,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1780072": {
+                    "1779903": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12069,7 +12069,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1780500": {
+                    "1780331": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12078,7 +12078,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1780929": {
+                    "1780760": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12087,7 +12087,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1781357": {
+                    "1781188": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12096,7 +12096,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1781786": {
+                    "1781617": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12105,7 +12105,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1782214": {
+                    "1782045": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12114,7 +12114,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1782643": {
+                    "1782474": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12123,7 +12123,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1783072": {
+                    "1782903": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12132,7 +12132,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1783500": {
+                    "1783331": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12141,7 +12141,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1783929": {
+                    "1783760": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12150,7 +12150,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1784143": {
+                    "1783974": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12159,7 +12159,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1784357": {
+                    "1784188": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -12168,7 +12168,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1784786": {
+                    "1784617": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12177,7 +12177,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1785214": {
+                    "1785045": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12186,7 +12186,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1785643": {
+                    "1785474": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12195,7 +12195,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1786072": {
+                    "1785903": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12204,7 +12204,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1786500": {
+                    "1786331": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12213,7 +12213,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1786929": {
+                    "1786760": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12222,7 +12222,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1787357": {
+                    "1787188": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12231,7 +12231,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1787572": {
+                    "1787403": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12240,7 +12240,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1787786": {
+                    "1787617": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -12249,7 +12249,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1788214": {
+                    "1788045": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12258,7 +12258,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1788643": {
+                    "1788474": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12267,7 +12267,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1789072": {
+                    "1788903": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12276,7 +12276,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1789500": {
+                    "1789331": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12285,7 +12285,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1789929": {
+                    "1789760": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12294,7 +12294,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1790357": {
+                    "1790188": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12303,7 +12303,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1790786": {
+                    "1790617": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12312,7 +12312,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1791000": {
+                    "1790831": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12321,7 +12321,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1791214": {
+                    "1791045": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -12330,7 +12330,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1791643": {
+                    "1791474": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12339,7 +12339,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1792072": {
+                    "1791903": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12348,7 +12348,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1792500": {
+                    "1792331": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12357,7 +12357,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1792929": {
+                    "1792760": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12366,7 +12366,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1793357": {
+                    "1793188": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12375,7 +12375,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1793786": {
+                    "1793617": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12384,7 +12384,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1794214": {
+                    "1794045": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12393,7 +12393,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1794429": {
+                    "1794260": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12402,7 +12402,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1794643": {
+                    "1794474": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -12411,7 +12411,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1795072": {
+                    "1794903": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12420,7 +12420,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1795500": {
+                    "1795331": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12429,7 +12429,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1795929": {
+                    "1795760": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12438,7 +12438,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1796357": {
+                    "1796188": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -12447,7 +12447,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1796786": {
+                    "1796617": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12456,7 +12456,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1797214": {
+                    "1797045": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12465,7 +12465,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1797643": {
+                    "1797474": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -12474,7 +12474,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1797857": {
+                    "1797688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12483,7 +12483,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1798072": {
+                    "1797903": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12492,7 +12492,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1798500": {
+                    "1798331": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12501,7 +12501,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1798929": {
+                    "1798760": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12510,7 +12510,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1799357": {
+                    "1799188": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12519,7 +12519,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1799786": {
+                    "1799617": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -12528,7 +12528,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1800214": {
+                    "1800045": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12537,7 +12537,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1800643": {
+                    "1800474": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12546,7 +12546,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1801072": {
+                    "1800903": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12555,7 +12555,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1801500": {
+                    "1801331": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -12564,7 +12564,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1801929": {
+                    "1801760": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12573,7 +12573,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1802357": {
+                    "1802188": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -12582,7 +12582,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1802786": {
+                    "1802617": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12591,7 +12591,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1803214": {
+                    "1803045": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -12600,7 +12600,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1803643": {
+                    "1803474": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -12609,7 +12609,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1804072": {
+                    "1803903": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -12618,7 +12618,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1804179": {
+                    "1804010": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -12627,7 +12627,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1804286": {
+                    "1804117": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -12636,7 +12636,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1804393": {
+                    "1804224": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -12645,7 +12645,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1804500": {
+                    "1804331": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -12654,7 +12654,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1804607": {
+                    "1804438": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -12663,7 +12663,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1804714": {
+                    "1804545": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -12672,7 +12672,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1804822": {
+                    "1804653": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -12681,7 +12681,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1804929": {
+                    "1804760": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12690,7 +12690,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1806857": {
+                    "1806688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12699,7 +12699,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1807072": {
+                    "1806903": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12708,7 +12708,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1807286": {
+                    "1807117": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12717,7 +12717,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1807500": {
+                    "1807331": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12726,7 +12726,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1808786": {
+                    "1808617": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -12735,7 +12735,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1808893": {
+                    "1808724": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -12744,7 +12744,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1809000": {
+                    "1808831": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -12753,7 +12753,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1809107": {
+                    "1808938": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12762,7 +12762,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1809214": {
+                    "1809045": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12771,7 +12771,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1809322": {
+                    "1809153": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12780,7 +12780,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1809429": {
+                    "1809260": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -12789,7 +12789,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1809500": {
+                    "1809331": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -12798,7 +12798,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1809572": {
+                    "1809403": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -12807,7 +12807,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1810072": {
+                    "1809903": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12816,7 +12816,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1810393": {
+                    "1810224": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12825,7 +12825,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1810500": {
+                    "1810331": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12834,7 +12834,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1810714": {
+                    "1810545": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -12843,7 +12843,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1810929": {
+                    "1810760": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12852,7 +12852,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1811250": {
+                    "1811081": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12861,7 +12861,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1811357": {
+                    "1811188": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12870,7 +12870,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1811572": {
+                    "1811403": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12879,7 +12879,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1811786": {
+                    "1811617": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12888,7 +12888,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1812000": {
+                    "1811831": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -12897,7 +12897,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1812322": {
+                    "1812153": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12906,7 +12906,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1812429": {
+                    "1812260": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12915,7 +12915,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1812643": {
+                    "1812474": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12924,7 +12924,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1812857": {
+                    "1812688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12933,7 +12933,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1813179": {
+                    "1813010": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12942,7 +12942,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1813286": {
+                    "1813117": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -12951,7 +12951,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1813500": {
+                    "1813331": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12960,7 +12960,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1813607": {
+                    "1813438": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12969,7 +12969,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1813714": {
+                    "1813545": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12978,7 +12978,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1813822": {
+                    "1813653": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12987,7 +12987,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1813929": {
+                    "1813760": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -12996,7 +12996,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1814143": {
+                    "1813974": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13005,7 +13005,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1814357": {
+                    "1814188": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13014,7 +13014,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1814572": {
+                    "1814403": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -13023,7 +13023,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1815000": {
+                    "1814831": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13032,7 +13032,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1815214": {
+                    "1815045": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13041,7 +13041,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1815536": {
+                    "1815367": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13050,7 +13050,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1815643": {
+                    "1815474": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13059,7 +13059,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1815857": {
+                    "1815688": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -13068,7 +13068,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1816072": {
+                    "1815903": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13077,7 +13077,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1816179": {
+                    "1816010": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13086,7 +13086,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1816286": {
+                    "1816117": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13095,7 +13095,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1816500": {
+                    "1816331": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13104,7 +13104,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1816714": {
+                    "1816545": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13113,7 +13113,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1816929": {
+                    "1816760": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13122,7 +13122,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1817143": {
+                    "1816974": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -13131,7 +13131,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1817250": {
+                    "1817081": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13140,7 +13140,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1817357": {
+                    "1817188": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13149,7 +13149,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1817572": {
+                    "1817403": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13158,7 +13158,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1817786": {
+                    "1817617": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13167,7 +13167,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1818107": {
+                    "1817938": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13176,7 +13176,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1818214": {
+                    "1818045": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13185,7 +13185,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1818429": {
+                    "1818260": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -13194,7 +13194,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1818643": {
+                    "1818474": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13203,7 +13203,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1818857": {
+                    "1818688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13212,7 +13212,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1819179": {
+                    "1819010": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13221,7 +13221,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1819286": {
+                    "1819117": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13230,7 +13230,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1819500": {
+                    "1819331": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13239,7 +13239,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1819714": {
+                    "1819545": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -13248,7 +13248,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1820036": {
+                    "1819867": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13257,7 +13257,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1820143": {
+                    "1819974": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -13266,7 +13266,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1820250": {
+                    "1820081": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -13275,7 +13275,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1820357": {
+                    "1820188": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13284,7 +13284,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1820464": {
+                    "1820295": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13293,7 +13293,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1820572": {
+                    "1820403": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13302,7 +13302,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1820679": {
+                    "1820510": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13311,7 +13311,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1820786": {
+                    "1820617": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13320,7 +13320,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1821000": {
+                    "1820831": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -13329,7 +13329,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1821214": {
+                    "1821045": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13338,7 +13338,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1821429": {
+                    "1821260": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13347,7 +13347,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1821750": {
+                    "1821581": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13356,7 +13356,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1821857": {
+                    "1821688": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13365,7 +13365,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1822072": {
+                    "1821903": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13374,7 +13374,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1822286": {
+                    "1822117": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -13383,7 +13383,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1822393": {
+                    "1822224": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13392,7 +13392,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1822607": {
+                    "1822438": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13401,7 +13401,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1822928": {
+                    "1822759": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13410,7 +13410,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1823249": {
+                    "1823080": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13419,7 +13419,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1823356": {
+                    "1823187": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13428,7 +13428,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1823572": {
+                    "1823403": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -13437,7 +13437,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1823786": {
+                    "1823617": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13446,7 +13446,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1824106": {
+                    "1823937": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13455,7 +13455,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1824214": {
+                    "1824045": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13464,7 +13464,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1824428": {
+                    "1824259": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13473,7 +13473,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1824642": {
+                    "1824473": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13482,7 +13482,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1824857": {
+                    "1824688": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -13491,7 +13491,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1825178": {
+                    "1825009": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13500,7 +13500,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1825286": {
+                    "1825117": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13509,7 +13509,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1825500": {
+                    "1825331": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13518,7 +13518,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1825714": {
+                    "1825545": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13527,7 +13527,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1826035": {
+                    "1825866": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13536,7 +13536,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1826143": {
+                    "1825974": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -13545,7 +13545,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1826356": {
+                    "1826187": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13554,7 +13554,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1826464": {
+                    "1826295": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13563,7 +13563,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1826571": {
+                    "1826402": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13572,7 +13572,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1826678": {
+                    "1826509": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13581,7 +13581,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1826785": {
+                    "1826616": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13590,7 +13590,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1826999": {
+                    "1826830": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13599,7 +13599,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1827214": {
+                    "1827045": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13608,7 +13608,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1827429": {
+                    "1827260": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -13617,7 +13617,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1827856": {
+                    "1827687": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13626,7 +13626,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1828071": {
+                    "1827902": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13635,7 +13635,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1828392": {
+                    "1828223": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13644,7 +13644,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1828499": {
+                    "1828330": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13653,7 +13653,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1828714": {
+                    "1828545": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -13662,7 +13662,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1828822": {
+                    "1828653": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13671,7 +13671,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1828928": {
+                    "1828759": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13680,7 +13680,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1828929": {
+                    "1828760": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13689,7 +13689,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1829035": {
+                    "1828866": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13698,7 +13698,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1829142": {
+                    "1828973": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13707,7 +13707,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1829356": {
+                    "1829187": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13716,7 +13716,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1829571": {
+                    "1829402": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13725,7 +13725,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1829785": {
+                    "1829616": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13734,7 +13734,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1830000": {
+                    "1829831": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -13743,7 +13743,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1830106": {
+                    "1829937": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13752,7 +13752,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1830213": {
+                    "1830044": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13761,7 +13761,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1830428": {
+                    "1830259": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13770,7 +13770,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1830642": {
+                    "1830473": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13779,7 +13779,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1830963": {
+                    "1830794": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13788,7 +13788,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1831071": {
+                    "1830902": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13797,7 +13797,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1831286": {
+                    "1831117": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -13806,7 +13806,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1831499": {
+                    "1831330": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13815,7 +13815,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1831713": {
+                    "1831544": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13824,7 +13824,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1832035": {
+                    "1831866": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13833,7 +13833,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1832142": {
+                    "1831973": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13842,7 +13842,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1832356": {
+                    "1832187": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13851,7 +13851,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1832572": {
+                    "1832403": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -13860,7 +13860,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1833143": {
+                    "1832974": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13869,7 +13869,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1949101": {
+                    "1948932": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -13878,7 +13878,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1949138": {
+                    "1948969": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -13887,7 +13887,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1952700": {
+                    "1952531": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13896,7 +13896,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1953150": {
+                    "1952981": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13905,7 +13905,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1953300": {
+                    "1953131": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13914,7 +13914,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1953600": {
+                    "1953431": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -13923,7 +13923,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1953900": {
+                    "1953731": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13932,7 +13932,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1954350": {
+                    "1954181": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13941,7 +13941,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1954500": {
+                    "1954331": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13950,7 +13950,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1954800": {
+                    "1954631": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13959,7 +13959,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1955100": {
+                    "1954931": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13968,7 +13968,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1955400": {
+                    "1955231": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -13977,7 +13977,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1955850": {
+                    "1955681": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13986,7 +13986,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1956000": {
+                    "1955831": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -13995,7 +13995,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1956300": {
+                    "1956131": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14004,7 +14004,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1956600": {
+                    "1956431": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14013,7 +14013,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1957050": {
+                    "1956881": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14022,7 +14022,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1957200": {
+                    "1957031": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -14031,7 +14031,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1957500": {
+                    "1957331": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14040,7 +14040,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1957650": {
+                    "1957481": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14049,7 +14049,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1957801": {
+                    "1957632": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14058,7 +14058,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1957950": {
+                    "1957781": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14067,7 +14067,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1958100": {
+                    "1957931": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14076,7 +14076,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1958400": {
+                    "1958231": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14085,7 +14085,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1958700": {
+                    "1958531": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14094,7 +14094,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1959000": {
+                    "1958831": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -14103,7 +14103,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1959450": {
+                    "1959281": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14112,7 +14112,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1959600": {
+                    "1959431": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -14121,7 +14121,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1959900": {
+                    "1959731": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14130,7 +14130,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1960500": {
+                    "1960331": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14139,7 +14139,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1960800": {
+                    "1960631": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -14148,7 +14148,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1961100": {
+                    "1960931": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14157,7 +14157,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1961550": {
+                    "1961381": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14166,7 +14166,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1961700": {
+                    "1961531": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14175,7 +14175,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1962000": {
+                    "1961831": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14184,7 +14184,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1962300": {
+                    "1962131": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14193,7 +14193,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1962600": {
+                    "1962431": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -14202,7 +14202,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1963050": {
+                    "1962881": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14211,7 +14211,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1963200": {
+                    "1963031": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14220,7 +14220,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1963500": {
+                    "1963331": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14229,7 +14229,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1963800": {
+                    "1963631": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14238,7 +14238,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1964250": {
+                    "1964081": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14247,7 +14247,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1964400": {
+                    "1964231": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -14256,7 +14256,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1964700": {
+                    "1964531": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14265,7 +14265,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1964850": {
+                    "1964681": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14274,7 +14274,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1965000": {
+                    "1964831": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14283,7 +14283,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1965150": {
+                    "1964981": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14292,7 +14292,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1965300": {
+                    "1965131": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14301,7 +14301,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1965600": {
+                    "1965431": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14310,7 +14310,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1965900": {
+                    "1965731": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14319,7 +14319,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1966050": {
+                    "1965881": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14328,7 +14328,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1966200": {
+                    "1966031": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -14337,7 +14337,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1966228": {
+                    "1966059": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -14346,7 +14346,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1967100": {
+                    "1966931": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14355,7 +14355,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1967550": {
+                    "1967381": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14364,7 +14364,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1967700": {
+                    "1967531": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14373,7 +14373,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1968000": {
+                    "1967831": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -14382,7 +14382,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1968300": {
+                    "1968131": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14391,7 +14391,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1968750": {
+                    "1968581": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14400,7 +14400,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1968900": {
+                    "1968731": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14409,7 +14409,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1969200": {
+                    "1969031": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14418,7 +14418,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1969500": {
+                    "1969331": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14427,7 +14427,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1969800": {
+                    "1969631": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -14436,7 +14436,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1970250": {
+                    "1970081": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14445,7 +14445,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1970400": {
+                    "1970231": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14454,7 +14454,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1970700": {
+                    "1970531": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14463,7 +14463,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1971000": {
+                    "1970831": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14472,7 +14472,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1971450": {
+                    "1971281": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14481,7 +14481,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1971600": {
+                    "1971431": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -14490,7 +14490,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1971900": {
+                    "1971731": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14499,7 +14499,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1972050": {
+                    "1971881": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14508,7 +14508,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1972201": {
+                    "1972032": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14517,7 +14517,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1972350": {
+                    "1972181": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14526,7 +14526,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1972500": {
+                    "1972331": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14535,7 +14535,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1972800": {
+                    "1972631": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14544,7 +14544,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1973100": {
+                    "1972931": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14553,7 +14553,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1973250": {
+                    "1973081": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14562,7 +14562,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1973325": {
+                    "1973156": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14571,7 +14571,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1973400": {
+                    "1973231": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -14580,7 +14580,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1973850": {
+                    "1973681": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14589,7 +14589,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1974000": {
+                    "1973831": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -14598,7 +14598,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1974150": {
+                    "1973981": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -14607,7 +14607,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1974300": {
+                    "1974131": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14616,7 +14616,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1974750": {
+                    "1974581": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14625,7 +14625,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1974900": {
+                    "1974731": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14634,7 +14634,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1975200": {
+                    "1975031": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -14643,7 +14643,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1975500": {
+                    "1975331": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14652,7 +14652,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1975950": {
+                    "1975781": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14661,7 +14661,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1976100": {
+                    "1975931": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14670,7 +14670,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1976400": {
+                    "1976231": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14679,7 +14679,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1976700": {
+                    "1976531": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14688,7 +14688,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1977000": {
+                    "1976831": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -14697,7 +14697,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1977450": {
+                    "1977281": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14706,7 +14706,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1977600": {
+                    "1977431": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14715,7 +14715,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1977900": {
+                    "1977731": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14724,7 +14724,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1978200": {
+                    "1978031": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14733,7 +14733,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1978650": {
+                    "1978481": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14742,7 +14742,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1978800": {
+                    "1978631": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -14751,7 +14751,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1979100": {
+                    "1978931": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14760,7 +14760,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1979250": {
+                    "1979081": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14769,7 +14769,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1979401": {
+                    "1979232": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14778,7 +14778,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1979550": {
+                    "1979381": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14787,7 +14787,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1979700": {
+                    "1979531": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14796,7 +14796,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1980000": {
+                    "1979831": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14805,7 +14805,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1980300": {
+                    "1980131": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14814,7 +14814,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1980450": {
+                    "1980281": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14823,7 +14823,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1980525": {
+                    "1980356": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14832,7 +14832,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1980600": {
+                    "1980431": {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiSnare",
                         "length": 300,
@@ -14841,7 +14841,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1980750": {
+                    "1980581": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14850,7 +14850,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1980900": {
+                    "1980731": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
@@ -14859,7 +14859,7 @@ export default class RPlayerConf {
                             "outgoing": 500
                         }
                     },
-                    "1981200": {
+                    "1981031": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiKick",
                         "length": 300,
