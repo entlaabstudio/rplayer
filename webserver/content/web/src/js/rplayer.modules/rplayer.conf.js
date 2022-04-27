@@ -2015,7 +2015,7 @@ export default class RPlayerConf {
                         "entrance": {
                             "color": "var(--currentTime)",
                             "scale": 1.1,
-                            "transition": "all 0.3s ease-out"
+                            "transition": "none"
                         },
                         "outgoing": {
                             "color": "rgba(255,255,255,1)",
@@ -2027,7 +2027,7 @@ export default class RPlayerConf {
                         "entrance": {
                             "color": "var(--currentTime)",
                             "scale": 1.1,
-                            "transition": "all 0.3s ease-out"
+                            "transition": "none"
                         },
                         "outgoing": {
                             "color": "rgba(255,255,255,1)",
