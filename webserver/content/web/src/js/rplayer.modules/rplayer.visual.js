@@ -110,7 +110,7 @@
                     }
                     i++;
                 }
-            },1);
+            },14);
         }
     }
 
@@ -185,7 +185,7 @@
                 $(that.mainWindowSel + " button[data-command='rplayerStartPause'] i").removeClass("play");
                 $(that.mainWindowSel + " button[data-command='rplayerStartPause'] i").addClass("pause");
             }
-        },1);
+        },124);
     }
 
     correctAdressBar() {
@@ -422,7 +422,7 @@
                 $(".rplayerSeeker").attr("data-content",seekerInfoOutput);
                 $(".popup").html(seekerInfoOutput);
             }
-        },1);
+        },18);
     }
 
     visualisation() {

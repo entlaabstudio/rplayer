@@ -513,7 +513,7 @@ export default class RPlayerInfo {
                 that.setInfoForSelectedTrack();
                 that.wordsHighlight();
             }
-        },1);
+        },16);
         this.tickerSlow = setInterval(function() {
             if ($("#rplayerInfo").css("opacity") != "0") {
                 that.transport();

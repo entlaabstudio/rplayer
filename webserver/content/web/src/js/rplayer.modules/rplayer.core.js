@@ -264,7 +264,7 @@ export default class RPlayer {
                     }
                 }
             }
-        },1);
+        },50);
     }
     
     htmlToHeader() {
@@ -701,7 +701,7 @@ export default class RPlayer {
             $(that.rplayerCfg.conf.app.htmlSelectors.mainWindow + ' .words').css({
                 opacity: 1 - (that.getCurrentWord()["offset"] / 10000)
             });
-        },1);
+        },15);
     }
 
     writeVersionDate() {
@@ -815,7 +815,7 @@ export default class RPlayer {
                 that.lastActiveTrack = that.curTrackId;
             }
             
-        },1);
+        },100);
     }
     
     obj2array(obj) {
@@ -1118,7 +1118,7 @@ export default class RPlayer {
                 lenTimeLast = that.showlentimeobject.html();
             }
 
-        },1);
+        },1000);
     }
 
     secondsToTime(value) {

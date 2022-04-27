@@ -83,7 +83,7 @@
                 that.getLyrics();
                 that.imageChanger();
             }
-        },1);
+        },17);
     }
 
     imageChanger() {
