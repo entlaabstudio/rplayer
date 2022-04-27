@@ -57,7 +57,7 @@
         var int = setInterval(function() {
             if (that.rplayerObj.tracklistLoaded) {
                 that.makeImages();
-                that.ticker();
+                that.tickerWorker = new Worker(that.ticker());
                 that.buttons();
                 clearInterval(int);
             }
@@ -83,16 +83,16 @@
                 that.getLyrics();
                 that.imageChanger();
             }
-        },85);
+        },1);
     }
 
     imageChanger() {
         if (this.lastImage !== this.getCurrentImage()["time"]) {
-            $("#rplayerSlideshow img:not([data-time='" + this.getCurrentImage()["time"] + "'])").stop().transit({
+            $("#rplayerSlideshow img:not([data-time='" + this.getCurrentImage()["time"] + "'])").css({
                 transform: "perspective(50em) scale(0.5) rotateX(0deg) rotateY(-10deg) rotateZ(-10deg) translateX(-10em)",
                 opacity: "0"
             },1000);
-            $("#rplayerSlideshow img[data-time='" + this.getCurrentImage()["time"] + "']").stop().transit({
+            $("#rplayerSlideshow img[data-time='" + this.getCurrentImage()["time"] + "']").css({
                 transform: "perspective(50em) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0em)",
                 opacity: "1"
             },1000);
@@ -151,7 +151,7 @@
     buttons() {
         var that = this;
         $(this.minimizeButton).on("click",function() {
-            that.show();
+            this.showWorker = new Worker(that.show());
         });
     }
 

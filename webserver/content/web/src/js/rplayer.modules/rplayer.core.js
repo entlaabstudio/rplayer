@@ -186,7 +186,7 @@ export default class RPlayer {
         }
 
         this.refreshAudioOnError();
-        this.putLocalization();
+        this.putLocalizationWorker = new Worker(this.putLocalization());
         this.htmlToHeader();
         this.getLicense();
         this.noScreenSleep();
@@ -195,15 +195,15 @@ export default class RPlayer {
         this.buttons();
         this.putAlbumInfo();
         this.putWebTitle();
-        this.showTime();
+        this.showTimeWorker = new Worker(this.showTime());
         this.volumeFader();
         this.seeker();
-        this.currentTrack();
+        this.currentTrackWorker = new Worker(this.currentTrack());
         this.looper();
         this.lockScreenInfo();
         this.showLoading();
         this.writeVersionDate();
-        this.words();
+        this.wordsWorker = new Worker(this.words());
         this.keyboard();
     }
 
@@ -264,7 +264,7 @@ export default class RPlayer {
                     }
                 }
             }
-        },111);
+        },1);
     }
     
     htmlToHeader() {
@@ -701,7 +701,7 @@ export default class RPlayer {
             $(that.rplayerCfg.conf.app.htmlSelectors.mainWindow + ' .words').css({
                 opacity: 1 - (that.getCurrentWord()["offset"] / 10000)
             });
-        },100);
+        },1);
     }
 
     writeVersionDate() {
@@ -815,7 +815,7 @@ export default class RPlayer {
                 that.lastActiveTrack = that.curTrackId;
             }
             
-        },100);
+        },1);
     }
     
     obj2array(obj) {
@@ -1118,7 +1118,7 @@ export default class RPlayer {
                 lenTimeLast = that.showlentimeobject.html();
             }
 
-        },100);
+        },1);
     }
 
     secondsToTime(value) {

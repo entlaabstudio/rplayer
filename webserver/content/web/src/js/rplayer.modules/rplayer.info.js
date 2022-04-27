@@ -60,12 +60,12 @@ export default class RPlayerInfo {
             if (that.rplayerObj.tracklistLoaded) {
                 console.log("[RPlayer]","Tracklist loaded.");
                 that.buttons();
-                that.htmlCreate();
+                that.htmlCreateWorker = new Worker(that.htmlCreate());
                 clearInterval(int);
             }
         },359);
 
-        this.ticker();
+        this.tickerWorker = new Worker(this.ticker());
     }   
 
     donations() {
@@ -513,7 +513,7 @@ export default class RPlayerInfo {
                 that.setInfoForSelectedTrack();
                 that.wordsHighlight();
             }
-        },97);
+        },1);
         this.tickerSlow = setInterval(function() {
             if ($("#rplayerInfo").css("opacity") != "0") {
                 that.transport();

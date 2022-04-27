@@ -11,6 +11,10 @@
     z-index: var(--rSlideshowZIndex);
 }
 
+#rplayerSlideshow * {
+    transition: all 1s ease;
+}
+
 #rplayerSlideshow img {
     position: absolute;
     opacity: 0;

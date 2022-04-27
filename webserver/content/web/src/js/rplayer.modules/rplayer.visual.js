@@ -64,18 +64,16 @@
         this.ticker["stopTimer"] = setInterval(function() {
             that.tickStopTimer()
         },1000);
-        this.ticker["transportInteractiveIcons"] = setInterval(function() {
-            that.transportInteractiveIcons();
-        },159);
+        this.transportInteractiveIconsWorker = new Worker(this.transportInteractiveIcons());
         this.correctAdressBar();
-        this.seekersInfo();
+        this.seekersInfoWorker = new Worker(this.seekersInfo());
         this.windowMinimize();
         this.fullscreen();
         this.showQrCode();
         this.buttons();
         this.setBackground();
         this.putMiniIconsFront();
-        new Worker(this.cssTimeModyfier());
+        this.cssTimeModyfierWorker = new Worker(this.cssTimeModyfier());
     }
 
     cssTimeModyfier() {
@@ -178,13 +176,16 @@
     }
 
     transportInteractiveIcons() {
-        if (this.rplayerObj.audioObject.paused) {
-            $(this.mainWindowSel + " button[data-command='rplayerStartPause'] i").removeClass("pause");
-            $(this.mainWindowSel + " button[data-command='rplayerStartPause'] i").addClass("play");
-        } else {
-            $(this.mainWindowSel + " button[data-command='rplayerStartPause'] i").removeClass("play");
-            $(this.mainWindowSel + " button[data-command='rplayerStartPause'] i").addClass("pause");
-        }
+        var that = this;
+        setInterval(function() {
+            if (that.rplayerObj.audioObject.paused) {
+                $(that.mainWindowSel + " button[data-command='rplayerStartPause'] i").removeClass("pause");
+                $(that.mainWindowSel + " button[data-command='rplayerStartPause'] i").addClass("play");
+            } else {
+                $(that.mainWindowSel + " button[data-command='rplayerStartPause'] i").removeClass("play");
+                $(that.mainWindowSel + " button[data-command='rplayerStartPause'] i").addClass("pause");
+            }
+        },1);
     }
 
     correctAdressBar() {
@@ -375,7 +376,7 @@
             var visualOn = false;
             $(".rplayerTransport").on("click",function() {
                 if (!visualOn) {
-                    that.visualisation();
+                    that.visualisationWorker = new Worker(that.visualisation());
                     visualOn = true;
                 }
             });
@@ -421,7 +422,7 @@
                 $(".rplayerSeeker").attr("data-content",seekerInfoOutput);
                 $(".popup").html(seekerInfoOutput);
             }
-        },100);
+        },1);
     }
 
     visualisation() {
