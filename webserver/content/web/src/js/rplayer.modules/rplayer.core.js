@@ -1118,7 +1118,7 @@ export default class RPlayer {
                 lenTimeLast = that.showlentimeobject.html();
             }
 
-        },1000);
+        },19);
     }
 
     secondsToTime(value) {
