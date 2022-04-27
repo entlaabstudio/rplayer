@@ -75,7 +75,7 @@
         this.buttons();
         this.setBackground();
         this.putMiniIconsFront();
-        this.cssTimeModyfier();
+        new Worker(this.cssTimeModyfier());
     }
 
     cssTimeModyfier() {
@@ -112,7 +112,7 @@
                     }
                     i++;
                 }
-            },169);
+            },1);
         }
     }
 
