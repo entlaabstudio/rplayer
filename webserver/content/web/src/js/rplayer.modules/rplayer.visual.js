@@ -100,8 +100,10 @@
                             JSON.stringify(that.lastCssModyfiers[key]) != JSON.stringify(value.css) ||
                             that.wasClick == true
                         ) {
-                            console.log("[RPlayer]","CSS modifying via selector \"" + value.selector + "\".",value);
-                            $(value.selector).stop().transit(value.css, value.animateTime);
+                            if (that.rplayerObj.rplayerCfg.conf.app.preferences.cssTimeModyfier.consoleLog) {
+                                console.log("[RPlayer]","CSS modifying via selector \"" + value.selector + "\".",value);
+                            }
+                            $(value.selector).stop().css(value.css);
                             that.lastCssModyfiers[key] = value.css;
                             if (i == length) {
                                 that.wasClick = false;
@@ -143,14 +145,11 @@
             }
             if (csss[namedKey] !== undefined) {
                 csss[namedKey].leaveTime = parseInt(csss[namedKey].time) + parseInt(csss[namedKey].length);
-                var animationTime = csss[namedKey].animationTime;
                 if (time < csss[namedKey].leaveTime) {
                     csss[namedKey].css = cfg.css[csss[namedKey].cssKey].entrance;
-                    csss[namedKey].animateTime = animationTime["entrance"];
                     csss[namedKey].phase = "entrance";
                 } else {
                     csss[namedKey].css = cfg.css[csss[namedKey].cssKey].outgoing;
-                    csss[namedKey].animateTime = animationTime["outgoing"];
                     csss[namedKey].phase = "outgoing";
                 }
                 csss[namedKey].selector = value;
