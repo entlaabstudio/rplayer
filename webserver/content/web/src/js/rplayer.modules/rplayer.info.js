@@ -60,12 +60,12 @@ export default class RPlayerInfo {
             if (that.rplayerObj.tracklistLoaded) {
                 console.log("[RPlayer]","Tracklist loaded.");
                 that.buttons();
-                that.htmlCreateWorker = new Worker(that.htmlCreate());
+                that.htmlCreate();
                 clearInterval(int);
             }
         },359);
 
-        this.tickerWorker = new Worker(this.ticker());
+        this.ticker();
     }   
 
     donations() {

@@ -186,7 +186,7 @@ export default class RPlayer {
         }
 
         this.refreshAudioOnError();
-        this.putLocalizationWorker = new Worker(this.putLocalization());
+        this.putLocalization();
         this.htmlToHeader();
         this.getLicense();
         this.noScreenSleep();
@@ -195,15 +195,15 @@ export default class RPlayer {
         this.buttons();
         this.putAlbumInfo();
         this.putWebTitle();
-        this.showTimeWorker = new Worker(this.showTime());
+        this.showTime();
         this.volumeFader();
         this.seeker();
-        this.currentTrackWorker = new Worker(this.currentTrack());
+        this.currentTrack();
         this.looper();
         this.lockScreenInfo();
         this.showLoading();
         this.writeVersionDate();
-        this.wordsWorker = new Worker(this.words());
+        this.words();
         this.keyboard();
     }
 

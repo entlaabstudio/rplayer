@@ -57,7 +57,7 @@
         var int = setInterval(function() {
             if (that.rplayerObj.tracklistLoaded) {
                 that.makeImages();
-                that.tickerWorker = new Worker(that.ticker());
+                that.ticker();
                 that.buttons();
                 clearInterval(int);
             }
@@ -151,7 +151,7 @@
     buttons() {
         var that = this;
         $(this.minimizeButton).on("click",function() {
-            this.showWorker = new Worker(that.show());
+            that.show();
         });
     }
 

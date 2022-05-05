@@ -46,10 +46,10 @@ import RPlayerInfo      from "./rplayer.modules/rplayer.info.js";
 import RPlayerSlideshow from "./rplayer.modules/rplayer.slideshow.js";
 import RPlayerDownloads from "./rplayer.modules/rplayer.downloads.js";
 
-new Worker(new RPlayerVisual(RPObj,QrCode));
-new Worker(new RPlayerInfo(RPObj,QrCode));
-new Worker(new RPlayerSlideshow(RPObj));
-new Worker(new RPlayerDownloads(RPObj,QrCode));
+new RPlayerVisual(RPObj,QrCode);
+new RPlayerInfo(RPObj,QrCode);
+new RPlayerSlideshow(RPObj);
+new RPlayerDownloads(RPObj,QrCode);
 
 console.log("------------------------------------");
 console.log("This is RPlayer");

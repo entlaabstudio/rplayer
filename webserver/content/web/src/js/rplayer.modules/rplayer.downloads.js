@@ -784,7 +784,7 @@ export default class RPlayer {
             if (parseInt(countOfDownloadedFiles) != parseInt(countOfFiles)) {
                 that.checkDataAndContinue();
             } else {
-                that.zipDataWorker = new Worker(that.zipData());
+                that.zipData();
             }
         },6000);
     }

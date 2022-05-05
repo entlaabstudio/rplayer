@@ -64,16 +64,16 @@
         this.ticker["stopTimer"] = setInterval(function() {
             that.tickStopTimer()
         },1000);
-        this.transportInteractiveIconsWorker = new Worker(this.transportInteractiveIcons());
+        this.transportInteractiveIcons();
         this.correctAdressBar();
-        this.seekersInfoWorker = new Worker(this.seekersInfo());
+        this.seekersInfo();
         this.windowMinimize();
         this.fullscreen();
         this.showQrCode();
         this.buttons();
         this.setBackground();
         this.putMiniIconsFront();
-        this.cssTimeModyfierWorker = new Worker(this.cssTimeModyfier());
+        // this.cssTimeModyfier();
     }
 
     cssTimeModyfier() {
@@ -376,7 +376,7 @@
             var visualOn = false;
             $(".rplayerTransport").on("click",function() {
                 if (!visualOn) {
-                    that.visualisationWorker = new Worker(that.visualisation());
+                    that.visualisation();
                     visualOn = true;
                 }
             });
@@ -501,3 +501,51 @@
         }, 1000 / framerate);
     }
 }
+
+class QuickObject {
+    constructor(input) {
+        this.input = input;
+        console.log("ready");
+    }
+    
+    find(n) {
+        var interval = {
+            low: 0,
+            high: this.length()
+        }
+        var that = this;
+        var ret;
+        var lastRet = false;
+        var steps = 0;
+        function recursion() {
+            steps += 1;
+            var intervalLength = interval.high - interval.low;
+            if (lastRet != ret) {
+                lastRet = ret;
+                var half = Math.floor(intervalLength / 2);
+                console.log("hledám",that.nthKey(interval.low + half),n);
+                ret = that.nthKey(interval.low + half);
+                if (that.nthKey(interval.low + half) > n) {
+                    interval.high = interval.low + half;
+                } else {
+                    interval.low = interval.low + half;
+                }
+                recursion();
+            }
+        }
+        recursion();
+        return {
+            key: ret,
+            value: this.input[ret],
+            steps: steps
+        };
+    }
+    
+    nthKey(n) {
+      return parseInt(Object.keys(this.input).slice(n, n + 1)[0]);
+    }
+    
+    length() {
+      return Object.keys(this.input).length;
+    }
+  }
