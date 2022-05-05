@@ -73,7 +73,7 @@
         this.buttons();
         this.setBackground();
         this.putMiniIconsFront();
-        // this.cssTimeModyfier();
+        this.cssTimeModyfier();
     }
 
     cssTimeModyfier() {
@@ -86,6 +86,7 @@
             },(that.fadeinTime + that.fadeoutTime) * 2);
         });
         if (cfg !== undefined) {
+            this.QoCssTimeModifyers = new QuickObject(this.rplayerObj.rplayerCfg.conf.cssTimeModyfier.commandsInTime);
             setInterval(function() {
                 var i = 1;
                 var length = Object.entries(that.cssTimeModifyerGetCurrent()).length;
@@ -110,7 +111,7 @@
                     }
                     i++;
                 }
-            },14);
+            },1000);
         }
     }
 
@@ -121,6 +122,9 @@
         
         time = that.rplayerObj.audioObject.currentTime * 1000;
         var csss = [];
+
+        console.log(this.QoCssTimeModifyers.find(time));
+
         for (const [key, value] of Object.entries(cfg.selectors)) {
             
             var namedKey = key;
