@@ -80,13 +80,23 @@
         var cfg = this.rplayerObj.rplayerCfg.conf.cssTimeModyfier;
         var that = this;
 
+        this.QoCssTimeModifyers = [];
+        for (const [key, value] of Object.entries(cfg.selectors)) {
+            console.log("ahoj",key,value,this.rplayerObj.rplayerCfg.conf.cssTimeModyfier.commandsInTime);
+            // debugger;
+            this.QoCssTimeModifyers[key] = new QuickObject(this.rplayerObj.rplayerCfg.conf.cssTimeModyfier.commandsInTime,{
+                "key": "selectorsKey",
+                "val": key,
+            });
+            // debugger;
+        }
+
         $("body *").on("click", function() {
             setTimeout(function () {
                 that.wasClick = true;
             },(that.fadeinTime + that.fadeoutTime) * 2);
         });
         if (cfg !== undefined) {
-            this.QoCssTimeModifyers = new QuickObject(this.rplayerObj.rplayerCfg.conf.cssTimeModyfier.commandsInTime);
             setInterval(function() {
                 var i = 1;
                 var length = Object.entries(that.cssTimeModifyerGetCurrent()).length;
@@ -111,7 +121,7 @@
                     }
                     i++;
                 }
-            },1000);
+            },10);
         }
     }
 
@@ -123,21 +133,12 @@
         time = that.rplayerObj.audioObject.currentTime * 1000;
         var csss = [];
 
-        console.log(this.QoCssTimeModifyers.find(time));
-
         for (const [key, value] of Object.entries(cfg.selectors)) {
             
             var namedKey = key;
-
-            for (const [key2, value2] of Object.entries(cfg.commandsInTime)) {
-                if (
-                    key2 <= time &&
-                    value2.selectorsKey == namedKey
-                ) {
-                    csss[namedKey] = value2;
-                    csss[namedKey].time = key2;
-                }
-            }
+            var founded = this.QoCssTimeModifyers[namedKey].find(time);
+            csss[namedKey] = founded.value;
+            csss[namedKey].time = founded.key;
             for (const [key2, value2] of Object.entries(cfg.default)) {
                 if (csss[namedKey] !== undefined) {
                     if (csss[namedKey][key2] === undefined) {
@@ -507,9 +508,23 @@
 }
 
 class QuickObject {
-    constructor(input) {
+    constructor(input, condition = false) {
+        console.log(input,condition);
         this.input = input;
-        console.log("ready");
+        if (!condition) {
+            this.input = input;
+        } else {
+            this.input = {};
+            for (const [key, value] of Object.entries(input)) {
+                if (
+                    value[condition.key] !== undefined &&
+                    value[condition.key] == condition.val
+                ) {
+                    this.input[key] = value;
+                }
+            }
+        }
+        console.log("[RPlayer:QuickObject]",this.input);
     }
     
     find(n) {
@@ -527,7 +542,6 @@ class QuickObject {
             if (lastRet != ret) {
                 lastRet = ret;
                 var half = Math.floor(intervalLength / 2);
-                console.log("hledám",that.nthKey(interval.low + half),n);
                 ret = that.nthKey(interval.low + half);
                 if (that.nthKey(interval.low + half) > n) {
                     interval.high = interval.low + half;
@@ -546,10 +560,10 @@ class QuickObject {
     }
     
     nthKey(n) {
-      return parseInt(Object.keys(this.input).slice(n, n + 1)[0]);
+        return parseInt(Object.keys(this.input).slice(n, n + 1)[0]);
     }
     
     length() {
-      return Object.keys(this.input).length;
+        return Object.keys(this.input).length;
     }
-  }
+}
