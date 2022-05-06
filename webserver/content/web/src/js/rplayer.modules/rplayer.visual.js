@@ -80,17 +80,13 @@ export default class RPlayerVisual {
     cssTimeModyfier() {
         var cfg = this.rplayerObj.rplayerCfg.conf.cssTimeModyfier;
         var that = this;
-        // this.QuickObject = new Worker("./src/js/rplayer.workers/rplayer.quickobject.worker.js",{type: "module"});
 
         this.QoCssTimeModifyers = [];
         for (const [key, value] of Object.entries(cfg.selectors)) {
-            console.log("ahoj",key,value,this.rplayerObj.rplayerCfg.conf.cssTimeModyfier.commandsInTime);
-            // debugger;
             this.QoCssTimeModifyers[key] = new QuickObject(this.rplayerObj.rplayerCfg.conf.cssTimeModyfier.commandsInTime,{
                 "key": "selectorsKey",
                 "val": key,
             });
-            // debugger;
         }
 
         $("body *").on("click", function() {
