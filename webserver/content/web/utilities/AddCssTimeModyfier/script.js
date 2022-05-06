@@ -124,10 +124,10 @@ class AddCssTimeModyfier {
                             nodeKey: getRealTimeMs(jsonTimeMs),
                             cssKey: cssFx,
                             length: value.LengthMs,
-                            animationTime: {
-                                entrance: parseInt($(".animationTimeEntrance").val()),
-                                outgoing: parseInt($(".animationTimeOutgoing").val()),
-                            }
+                            // animationTime: {
+                            //     entrance: parseInt($(".animationTimeEntrance").val()),
+                            //     outgoing: parseInt($(".animationTimeOutgoing").val()),
+                            // }
                         });
                     }
 
@@ -144,19 +144,19 @@ class AddCssTimeModyfier {
             selectorsKey: $(".cssSelector").val(),
             cssKey: recordObj.cssKey,
             length: recordObj.length,
-            animationTime: {
-                entrance: recordObj.animationTime.entrance,
-                outgoing: recordObj.animationTime.outgoing,
-            }
+            // animationTime: {
+            //     entrance: recordObj.animationTime.entrance,
+            //     outgoing: recordObj.animationTime.outgoing,
+            // }
         };
         for (const [key, value] of Object.entries(this.obj.cssTimeModyfier.commandsInTime[recordObj.nodeKey])) {
             if (value == "default") {
                 delete this.obj.cssTimeModyfier.commandsInTime[recordObj.nodeKey][key];
             }
         }
-        if (this.obj.cssTimeModyfier.commandsInTime[recordObj.nodeKey].animationTime.entrance == 0) {
-            delete this.obj.cssTimeModyfier.commandsInTime[recordObj.nodeKey].animationTime;
-        }
+        // if (this.obj.cssTimeModyfier.commandsInTime[recordObj.nodeKey].animationTime.entrance == 0) {
+        //     delete this.obj.cssTimeModyfier.commandsInTime[recordObj.nodeKey].animationTime;
+        // }
     }
 
     inputMask() {
@@ -369,24 +369,24 @@ class AddCssTimeModyfier {
                             this.pushError("confSource", "Node cssTimeModyfier.default.length must be number.", ".confSource");
                         }
                     }
-                    if (this.obj.cssTimeModyfier.default.animationTime === undefined) {
-                        this.pushError("confSource", "Node cssTimeModyfier.default.animationTime must be set.", ".confSource");
-                    } else {
-                        if (this.obj.cssTimeModyfier.default.animationTime.entrance === undefined) {
-                            this.pushError("confSource", "Node cssTimeModyfier.default.animationTime.entrance must be set.", ".confSource");
-                        } else {
-                            if (typeof(this.obj.cssTimeModyfier.default.animationTime.entrance) != "number") {
-                                this.pushError("confSource", "Node cssTimeModyfier.default.animationTime.entrance must be number.", ".confSource");
-                            }
-                        }
-                        if (this.obj.cssTimeModyfier.default.animationTime.outgoing === undefined) {
-                            this.pushError("confSource", "Node cssTimeModyfier.default.animationTime.outgoing must be set.", ".confSource");
-                        } else {
-                            if (typeof(this.obj.cssTimeModyfier.default.animationTime.outgoing) != "number") {
-                                this.pushError("confSource", "Node cssTimeModyfier.default.animationTime.outgoing must be number.", ".confSource");
-                            }
-                        }
-                    }
+                    // if (this.obj.cssTimeModyfier.default.animationTime === undefined) {
+                    //     this.pushError("confSource", "Node cssTimeModyfier.default.animationTime must be set.", ".confSource");
+                    // } else {
+                    //     if (this.obj.cssTimeModyfier.default.animationTime.entrance === undefined) {
+                    //         this.pushError("confSource", "Node cssTimeModyfier.default.animationTime.entrance must be set.", ".confSource");
+                    //     } else {
+                    //         if (typeof(this.obj.cssTimeModyfier.default.animationTime.entrance) != "number") {
+                    //             this.pushError("confSource", "Node cssTimeModyfier.default.animationTime.entrance must be number.", ".confSource");
+                    //         }
+                    //     }
+                    //     if (this.obj.cssTimeModyfier.default.animationTime.outgoing === undefined) {
+                    //         this.pushError("confSource", "Node cssTimeModyfier.default.animationTime.outgoing must be set.", ".confSource");
+                    //     } else {
+                    //         if (typeof(this.obj.cssTimeModyfier.default.animationTime.outgoing) != "number") {
+                    //             this.pushError("confSource", "Node cssTimeModyfier.default.animationTime.outgoing must be number.", ".confSource");
+                    //         }
+                    //     }
+                    // }
                 }
 
                 if (this.obj.cssTimeModyfier.commandsInTime === undefined) {
