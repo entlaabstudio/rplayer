@@ -30,6 +30,7 @@
  * SOFTWARE.
  */
 
+import QuickObject from "./../rplayer.workers/rplayer.quickobject.worker.js";
 export default class RPlayer {
     
     constructor(
@@ -60,16 +61,18 @@ export default class RPlayer {
                 that.ticker();
                 that.buttons();
                 clearInterval(int);
+                that.QuickObj = new QuickObject(that.rplayerCfg.slideShow.pictures);
             }
         },372);
     }
 
     makeImages() {
         try {
-            var images = this.rplayerObj.obj2array(this.rplayerCfg.slideShow.pictures);
-            images.forEach(element => {
-                $("#rplayerSlideshow").append("<img src='" + element[1].src + "' data-time='" + element[1].timeStart + "'>");
-            });
+            var images = this.rplayerCfg.slideShow.pictures;
+            for (const [key, value] of Object.entries(images)) {
+                console.log(key, value);
+                $("#rplayerSlideshow").append("<img src='" + value.src + "' data-time='" + key + "'>");
+            }
             $("#rplayerSlideshow").append("<div></div>");
         } catch (error) {
             return false;
@@ -102,17 +105,15 @@ export default class RPlayer {
 
     getCurrentImage() {
         try {
-            var images = this.rplayerObj.obj2array(this.rplayerCfg.slideShow.pictures);
-            var time = Math.round(this.rplayerObj.audioObject.currentTime * 1000);
+            var time = this.rplayerObj.audioObject.currentTime * 1000;
             var currentImage = new Array;
-            images.forEach(element => {
-                if (element[1].timeStart <= time) {
-                    currentImage["time"]   = element[1].timeStart;
-                    currentImage["offset"] = time - element[1].timeStart;
-                    currentImage["src"]   = element[1].src;
-                    currentImage["mediaName"]   = element[1].mediaName;
-                }
-            });
+            var founded = this.QuickObj.find(time);
+
+            currentImage["time"]        = parseInt(founded.key);
+            currentImage["offset"]      = time - founded.key;
+            currentImage["src"]         = founded.value.src;
+            currentImage["mediaName"]   = founded.value.mediaName;
+            
             if (currentImage["offset"] !== undefined) {
                 return currentImage;
             } else {

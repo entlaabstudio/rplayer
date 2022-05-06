@@ -40,7 +40,7 @@ export default class RPlayerConf {
         console.log("[RPlayer]","Config loaded.");
 
         this.conf = {
-            configVersion: 1,
+            configVersion: 2,
             description: "Yatsu v1 MIDI experimental v1",
             app: {
                 name: "RPlayer",
@@ -1878,115 +1878,94 @@ export default class RPlayerConf {
                 pictures: {
                     // Mirrors
                     0: {
-                        timeStart: 0,
                         mediaName: "Mirrors",
                         src: "media/images/mirrors.jpg"
                     },
                     // Dreamer
-                    1: {
-                        timeStart: 270000,
+                    270000: {
                         mediaName: "Dreamer",
                         src: "media/images/dreamer_album.jpg"
                     },
                     // Ornaments
-                    2: {
-                        timeStart: 538500,
+                    538500: {
                         mediaName: "Ornaments_w_vocals",
                         src: "media/images/ornaments_w_vocals.jpg"
                     },
                     // Labyrinth
-                    3: {
-                        timeStart: 786600,
+                    786600: {
                         mediaName: "Labyrinth",
                         src: "media/images/labyrinth.jpg"
                     },
                     // Spectre
-                    4: {
-                        timeStart: 959500,
+                    959500: {
                         mediaName: "Spectre",
                         src: "media/images/spectre.jpg"
                     },
-                    5: {
-                        timeStart: 964400,
+                    964400: {
                         mediaName: "Mirrors",
                         src: "media/images/mirrors.jpg"
                     },
-                    9: {
-                        timeStart: 992650,
+                    992650: {
                         mediaName: "DJinn",
                         src: "media/images/djinn.png"
                     },
-                    10: {
-                        timeStart: 1025276,
+                    1025276: {
                         mediaName: "Ornaments",
                         src: "media/images/ornaments.jpg"
                     },
-                    11: {
-                        timeStart: 1035846,
+                    1035846: {
                         mediaName: "Kraken",
                         src: "media/images/kraken.jpg"
                     },
-                    12: {
-                        timeStart: 1047635,
+                    1047635: {
                         mediaName: "Labyrinth",
                         src: "media/images/labyrinth.jpg"
                     },
-                    13: {
-                        timeStart: 1060993,
+                    1060993: {
                         mediaName: "DJinn",
                         src: "media/images/djinn.png"
                     },
-                    14: {
-                        timeStart: 1104890,
+                    1104890: {
                         mediaName: "Spectre",
                         src: "media/images/spectre.jpg"
                     },
-                    15: {
-                        timeStart: 1129367,
+                    1129367: {
                         mediaName: "Ornaments_w_vocals",
                         src: "media/images/ornaments_w_vocals.jpg"
                     },
-                    16: {
-                        timeStart: 1140658,
+                    1140658: {
                         mediaName: "DJinn",
                         src: "media/images/djinn.png"
                     },
-                    17: {
-                        timeStart: 1162594,
+                    1162594: {
                         mediaName: "Kraken",
                         src: "media/images/kraken.jpg"
                     },
-                    18: {
-                        timeStart: 1179314,
+                    1179314: {
                         mediaName: "Mirrors",
                         src: "media/images/mirrors.jpg"
                     },
-                    19: {
-                        timeStart: 1201160,
+                    1201160: {
                         mediaName: "Spectre",
                         src: "media/images/spectre.jpg"
                     },
                     // Bloom
-                    20: {
-                        timeStart: 1215000,
+                    1215000: {
                         mediaName: "Dreamer",
                         src: "media/images/dreamer_album.jpg"
                     },
                     // Ruin
-                    21: {
-                        timeStart: 1435400,
+                    1435400: {
                         mediaName: "Dreamer",
                         src: "media/images/dreamer_album.jpg"
                     },
                     // World Eater
-                    22: {
-                        timeStart: 1543500,
+                    1543500: {
                         mediaName: "Dreamer",
                         src: "media/images/dreamer_album.jpg"
                     },
                     // Collapse
-                    23: {
-                        timeStart: 1870000,
+                    1870000: {
                         mediaName: "Dreamer",
                         src: "media/images/dreamer_album.jpg"
                     },
