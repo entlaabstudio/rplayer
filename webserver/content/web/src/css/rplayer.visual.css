@@ -44,6 +44,10 @@ a.rplayerOneTrack {
     transform: perspective(50em) scale(0.9) rotateX(0deg) rotateY(-1deg) rotateZ(-1deg) translateX(-1em);
 }
 
+#rplayer, #rplayer * {
+    transition: all 1s ease;
+}
+
 #rplayer h1,
 #rplayer h2 {
     display: inline-block;

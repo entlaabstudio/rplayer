@@ -314,7 +314,7 @@ export default class RPlayerVisual {
     windowMinimize() {
         var that = this;
         $(".rplayerMinimize").on("click",function() {
-            $(that.mainWindowSel).stop().transit({
+            $(that.mainWindowSel).css({
                 transform: "perspective(50em) scale(0.9) rotateX(0deg) rotateY(-1deg) rotateZ(-1deg) translateX(-1em)",
                 opacity: 0
             },that.fadeoutTime,function() {
@@ -322,7 +322,7 @@ export default class RPlayerVisual {
                     display: "none"
                 });
             });
-            $("#rajs").stop().transit({
+            $("#rajs").css({
                 opacity: "0"
             },that.fadeoutTime,function() {
                 $("#rajs").css({
@@ -338,10 +338,10 @@ export default class RPlayerVisual {
                 $(that.mainWindowSel).css({
                     display: "grid"
                 });
-                $("#rajs").stop().transit({
+                $("#rajs").css({
                     opacity: "1"
                 },that.fadeoutTime);
-                $(that.mainWindowSel).stop().transit({
+                $(that.mainWindowSel).css({
                     opacity: "1",
                     transform: "scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0)"
                 },that.fadeoutTime);
@@ -366,11 +366,11 @@ export default class RPlayerVisual {
                 });
             });
 
-            $(".rplayerFx").stop().animate({
+            $(".rplayerFx").css({
                 opacity: "1"
             },this.fadeinTime);
             
-            $("#rplayer").stop().transit({
+            $("#rplayer").css({
                 opacity: "1",
                 transform: "scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0)"
             },this.fadeinTime);
