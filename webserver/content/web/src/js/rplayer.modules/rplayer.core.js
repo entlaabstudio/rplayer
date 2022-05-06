@@ -468,7 +468,7 @@ export default class RPlayer {
         });
         $(htmlSelector).animate({
             opacity: "1"
-        },1000);
+        },125);
     }
 
     donations() {
