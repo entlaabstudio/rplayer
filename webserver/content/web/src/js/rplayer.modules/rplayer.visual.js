@@ -110,7 +110,7 @@ export default class RPlayerVisual {
                             if (that.rplayerObj.rplayerCfg.conf.app.preferences.cssTimeModyfier.consoleLog) {
                                 console.log("[RPlayer]","CSS modifying via selector \"" + value.selector + "\".",value);
                             }
-                            $(value.selector).stop().css(value.css);
+                            $(value.selector).css(value.css);
                             that.lastCssModyfiers[key] = value.css;
                             if (i == length) {
                                 that.wasClick = false;

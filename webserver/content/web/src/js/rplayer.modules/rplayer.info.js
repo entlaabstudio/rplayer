@@ -108,7 +108,7 @@ export default class RPlayerInfo {
                     opacity: minOpacity
                 },2000);
             } else {
-                $("#rplayerInfo h1:first-child").stop().css({
+                $("#rplayerInfo h1:first-child").css({
                     opacity: "1"
                 });
             }
