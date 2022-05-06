@@ -30,6 +30,7 @@
  * SOFTWARE.
  */
 
+import QuickObject from "./../rplayer.workers/rplayer.quickobject.worker.js";
 export default class RPlayer {
     
     constructor(
@@ -70,6 +71,7 @@ export default class RPlayer {
         this.curTrackId;
         this.translated            = [];
         this.lastActiveTrack       = false;
+        this.QuickObj              = [];
 
         this.playAfterCriticalStreamError = false;
 
@@ -630,17 +632,18 @@ export default class RPlayer {
 
     getCurrentWord() {
         try {
-            var words = this.obj2array(this.rplayerCfg.conf.album.tracks[this.curTrackId].words);
+            if (this.lastCurTrack != this.curTrackId) {
+                this.QuickObj["words"] = new QuickObject(this.rplayerCfg.conf.album.tracks[this.curTrackId].words);
+                this.lastCurTrack = this.curTrackId;
+            }
             var time = Math.round(this.audioObject.currentTime * 1000) - this.seekerStartPosition * 1000;
             var currentWord = new Array;
-            words.forEach(element => {
-
-                if (element[0] < time) {
-                    currentWord["time"]   = element[0];
-                    currentWord["offset"] = time - element[0];
-                    currentWord["text"]   = element[1];
-                }
-            });
+            var founded = this.QuickObj["words"].find(time);
+            if (time >= founded.key) {
+                currentWord["time"]   = founded.key;
+                currentWord["offset"] = time - founded.key;
+                currentWord["text"]   = founded.value;
+            }
             if (currentWord["offset"] !== undefined) {
                 return currentWord;
             } else {
@@ -652,9 +655,11 @@ export default class RPlayer {
     }
     
     words() {
-        var that     = this;
-        var lastWord = false; // fix for online translation
-        var lastTime = false;
+        var that          = this;
+        var lastWord      = false; // fix for online translation
+        var lastTime      = false;
+        this.lastCurTrack = false;
+        
         this.wordsInterval = setInterval(function () {
             
             if (that.wordsView) {
@@ -701,7 +706,7 @@ export default class RPlayer {
             $(that.rplayerCfg.conf.app.htmlSelectors.mainWindow + ' .words').css({
                 opacity: 1 - (that.getCurrentWord()["offset"] / 10000)
             });
-        },15);
+        },10);
     }
 
     writeVersionDate() {
@@ -1118,7 +1123,7 @@ export default class RPlayer {
                 lenTimeLast = that.showlentimeobject.html();
             }
 
-        },19);
+        },20);
     }
 
     secondsToTime(value) {

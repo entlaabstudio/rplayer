@@ -188,7 +188,7 @@ export default class RPlayerVisual {
                 $(that.mainWindowSel + " button[data-command='rplayerStartPause'] i").removeClass("play");
                 $(that.mainWindowSel + " button[data-command='rplayerStartPause'] i").addClass("pause");
             }
-        },124);
+        },200);
     }
 
     correctAdressBar() {
@@ -425,7 +425,7 @@ export default class RPlayerVisual {
                 $(".rplayerSeeker").attr("data-content",seekerInfoOutput);
                 $(".popup").html(seekerInfoOutput);
             }
-        },18);
+        },10);
     }
 
     visualisation() {

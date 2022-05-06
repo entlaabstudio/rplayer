@@ -30,7 +30,7 @@
  * SOFTWARE.
  */
 
- export default class RPlayer {
+export default class RPlayer {
     
     constructor(
         rplayerObj
