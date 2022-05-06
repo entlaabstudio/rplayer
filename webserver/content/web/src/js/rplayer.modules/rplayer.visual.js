@@ -119,7 +119,7 @@ export default class RPlayerVisual {
                     }
                     i++;
                 }
-            },10);
+            },1);
         }
     }
 
@@ -425,7 +425,7 @@ export default class RPlayerVisual {
                 $(".rplayerSeeker").attr("data-content",seekerInfoOutput);
                 $(".popup").html(seekerInfoOutput);
             }
-        },10);
+        },30);
     }
 
     visualisation() {

@@ -86,7 +86,7 @@ export default class RPlayer {
                 that.getLyrics();
                 that.imageChanger();
             }
-        },10);
+        },1);
     }
 
     imageChanger() {

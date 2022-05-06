@@ -706,7 +706,7 @@ export default class RPlayer {
             $(that.rplayerCfg.conf.app.htmlSelectors.mainWindow + ' .words').css({
                 opacity: 1 - (that.getCurrentWord()["offset"] / 10000)
             });
-        },10);
+        },1);
     }
 
     writeVersionDate() {
@@ -1123,7 +1123,7 @@ export default class RPlayer {
                 lenTimeLast = that.showlentimeobject.html();
             }
 
-        },20);
+        },1);
     }
 
     secondsToTime(value) {

@@ -241,7 +241,7 @@ export default class RPlayerInfo {
                     }
                 }
             }
-        },123);
+        },1);
     }
 
     htmlMiniIcons() {
@@ -513,7 +513,7 @@ export default class RPlayerInfo {
                 that.setInfoForSelectedTrack();
                 that.wordsHighlight();
             }
-        },16);
+        },1);
         this.tickerSlow = setInterval(function() {
             if ($("#rplayerInfo").css("opacity") != "0") {
                 that.transport();
