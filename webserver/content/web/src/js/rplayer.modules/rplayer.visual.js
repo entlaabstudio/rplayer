@@ -65,6 +65,7 @@ export default class RPlayerVisual {
         this.ticker["stopTimer"] = setInterval(function() {
             that.tickStopTimer()
         },1000);
+        this.sqlite();
         this.transportInteractiveIcons();
         this.correctAdressBar();
         this.seekersInfo();
@@ -75,7 +76,11 @@ export default class RPlayerVisual {
         this.setBackground();
         this.putMiniIconsFront();
         this.cssTimeModyfier();
-        this.messageOnTimeWorker();
+        // this.messageOnTimeWorker();
+    }
+
+    sqlite() {
+        console.log("ahoj");
     }
 
     messageOnTimeWorker() {

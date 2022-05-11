@@ -187,6 +187,7 @@ export default class RPlayer {
             $(this.rplayerCfg.conf.app.htmlSelectors.controls.volumeFader).attr("disabled",true);
         }
 
+        this.prepareLocalDb();
         this.refreshAudioOnError();
         this.putLocalization();
         this.htmlToHeader();
@@ -207,6 +208,37 @@ export default class RPlayer {
         this.writeVersionDate();
         this.words();
         this.keyboard();
+    }
+
+    prepareLocalDb() {
+        const request = indexedDB.open("library");
+        let db;
+        var that = this;
+        
+        request.onupgradeneeded = function() {
+          // The database did not previously exist, so create object stores and indexes.
+          const db = request.result;
+          const store = db.createObjectStore("rplayerCssTimeModifyer", {keyPath: "time"});
+        //   const valueCssKeyIndex = store.createIndex("byCssKeyValue", "title", {unique: true});
+        //   const valueCssKeyIndex = store.createIndex("byCssKeyValue", "value");
+        };
+        
+        request.onsuccess = function() {
+            console.log("aefjaejfpaoejfpaoejfpaoejfpaovponvpoanevav",that.rplayerCfg);
+            db = request.result;
+
+            const tx = db.transaction("rplayerCssTimeModifyer", "readwrite");
+            const store = tx.objectStore("rplayerCssTimeModifyer");
+
+            for(const [key, value] of Object.entries(that.rplayerCfg.conf.cssTimeModyfier.commandsInTime)) {
+                console.log(key,value);
+                store.put({value: value, time: parseInt(key)});
+            }
+
+            tx.oncomplete = function() {
+            // All requests have succeeded and the transaction has committed.
+            };
+        };
     }
 
     refreshPlayerOnInitTimeout() {
