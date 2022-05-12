@@ -211,28 +211,57 @@ export default class RPlayer {
     }
 
     prepareLocalDb() {
-        const request = indexedDB.open("library");
+        const request = indexedDB.open("RPlayerDB");
         let db;
-        var that = this;
+        var valCssTimeModyfier = this.rplayerCfg.conf.cssTimeModyfier;
         
         request.onupgradeneeded = function() {
-          // The database did not previously exist, so create object stores and indexes.
           const db = request.result;
-          const store = db.createObjectStore("rplayerCssTimeModifyer", {keyPath: "time"});
-        //   const valueCssKeyIndex = store.createIndex("byCssKeyValue", "title", {unique: true});
-        //   const valueCssKeyIndex = store.createIndex("byCssKeyValue", "value");
+          const store = db.createObjectStore("rplayerCssTimeModifyer", {keyPath: "id", autoIncrement: true});
+          store.createIndex("by_selector", "selector");
+          store.createIndex("by_time", "time");
         };
         
         request.onsuccess = function() {
-            console.log("aefjaejfpaoejfpaoejfpaoejfpaovponvpoanevav",that.rplayerCfg);
             db = request.result;
 
             const tx = db.transaction("rplayerCssTimeModifyer", "readwrite");
             const store = tx.objectStore("rplayerCssTimeModifyer");
 
-            for(const [key, value] of Object.entries(that.rplayerCfg.conf.cssTimeModyfier.commandsInTime)) {
-                console.log(key,value);
-                store.put({value: value, time: parseInt(key)});
+            var ctmDefaults = valCssTimeModyfier.default;
+            
+            for(const [key, value] of Object.entries(valCssTimeModyfier.commandsInTime)) {
+                // entrance
+                store.put({
+                    css:
+                    (
+                        (value.cssKey) ?
+                        valCssTimeModyfier.css[value.cssKey].entrance :
+                        valCssTimeModyfier.css[ctmDefaults.cssKey].entrance
+                    ),
+                    selector: valCssTimeModyfier.selectors[value.selectorsKey],
+                    time: parseInt(key),
+                    description: "entrance",
+                });
+
+                // outgoing
+                store.put({
+                    css:
+                    (
+                        (value.cssKey) ?
+                        valCssTimeModyfier.css[value.cssKey].outgoing :
+                        valCssTimeModyfier.css[ctmDefaults.cssKey].outgoing
+                    ),
+                    selector: valCssTimeModyfier.selectors[value.selectorsKey],
+                    time: parseInt(key) + value.length,
+                    time: parseInt(key) + 
+                    (
+                        (value.length) ?
+                        value.length :
+                        ctmDefaults.length
+                    ),
+                    description: "outgoing",
+                });
             }
 
             tx.oncomplete = function() {
