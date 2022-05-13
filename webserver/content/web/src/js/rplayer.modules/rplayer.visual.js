@@ -76,7 +76,6 @@ export default class RPlayerVisual {
         this.setBackground();
         this.putMiniIconsFront();
         this.cssTimeModyfier();
-        this.messageOnTimeWorker();
     }
 
     sqlite() {
@@ -396,8 +395,9 @@ export default class RPlayerVisual {
     }
 
     dimmerFullscreen() {
-        if ($(".rplayerTrackList").html().length > 0) {
+        if ($(".rplayerTrackList").html().length > 0 && this.rplayerObj.wasInit == true) {
             clearInterval(this.ticker["checkFirstLoading"]);
+            this.messageOnTimeWorker();
             
             // scroll top
             $('html, body').animate({

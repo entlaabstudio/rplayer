@@ -183,34 +183,41 @@ export default class RPlayer {
 
     init() {
         this.wasInit = true;
+        var that = this;
         if (device.os == "ios") {
             $(this.rplayerCfg.conf.app.htmlSelectors.controls.volumeFader).attr("disabled",true);
         }
 
-        this.prepareLocalDb();
-        this.refreshAudioOnError();
-        this.putLocalization();
-        this.htmlToHeader();
-        this.getLicense();
-        this.noScreenSleep();
-        this.preloadAllImages();
-        this.tracklist();
-        this.buttons();
-        this.putAlbumInfo();
-        this.putWebTitle();
-        this.showTime();
-        this.volumeFader();
-        this.seeker();
-        this.currentTrack();
-        this.looper();
-        this.lockScreenInfo();
-        this.showLoading();
-        this.writeVersionDate();
-        this.words();
-        this.keyboard();
+        var prepareLocalDbPromise = new Promise(function(resolve) {
+            that.prepareLocalDb()
+            resolve("I love You !!");
+        });
+        prepareLocalDbPromise.then(
+            // this.prepareLocalDb(),
+            this.refreshAudioOnError(),
+            this.putLocalization(),
+            this.htmlToHeader(),
+            this.getLicense(),
+            this.noScreenSleep(),
+            this.preloadAllImages(),
+            this.tracklist(),
+            this.buttons(),
+            this.putAlbumInfo(),
+            this.putWebTitle(),
+            this.showTime(),
+            this.volumeFader(),
+            this.seeker(),
+            this.currentTrack(),
+            this.looper(),
+            this.lockScreenInfo(),
+            this.showLoading(),
+            this.writeVersionDate(),
+            this.words(),
+            this.keyboard(),
+        );
     }
 
-    prepareLocalDb() {
+    async prepareLocalDb() {
         const request = indexedDB.open("RPlayerDB");
         let db;
         var valCssTimeModyfier = this.rplayerCfg.conf.cssTimeModyfier;
