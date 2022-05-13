@@ -76,7 +76,7 @@ export default class RPlayerVisual {
         this.setBackground();
         this.putMiniIconsFront();
         this.cssTimeModyfier();
-        // this.messageOnTimeWorker();
+        this.messageOnTimeWorker();
     }
 
     sqlite() {
