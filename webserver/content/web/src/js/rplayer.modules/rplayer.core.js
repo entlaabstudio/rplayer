@@ -235,6 +235,8 @@ export default class RPlayer {
             const tx = db.transaction("rplayerCssTimeModifyer", "readwrite");
             const store = tx.objectStore("rplayerCssTimeModifyer");
 
+            // store.clear();
+
             var ctmDefaults = valCssTimeModyfier.default;
             
             for(const [key, value] of Object.entries(valCssTimeModyfier.commandsInTime)) {
