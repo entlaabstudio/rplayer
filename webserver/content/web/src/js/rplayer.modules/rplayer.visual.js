@@ -396,9 +396,7 @@ export default class RPlayerVisual {
         })
     }
 
-    prepareMessageData() {
-        console.log(this.cfg.cssTimeModyfier);
-
+    async prepareMessageData() {
         var selectors = [];
         var commands  = [];
         
@@ -407,42 +405,28 @@ export default class RPlayerVisual {
                 selectors[value.selectorsKey] = [];
                 selectors[value.selectorsKey]["cssSelector"] = this.cfg.cssTimeModyfier.selectors[value.selectorsKey];
                 selectors[value.selectorsKey]["commands"] = [];
+            }
 
-                // entrance
-                selectors[value.selectorsKey]["commands"][key] = [];
-                selectors[value.selectorsKey]["commands"][key]["time"] = parseInt(key);
-                if (this.cfg.cssTimeModyfier.css[value.cssKey]) {
-                    selectors[value.selectorsKey]["commands"][key]["css"] = this.cfg.cssTimeModyfier.css[value.cssKey].entrance;
-                } else {
-                    selectors[value.selectorsKey]["commands"][key]["css"] = this.cfg.cssTimeModyfier.css[this.cfg.cssTimeModyfier.default.cssKey].entrance
-                }
-
-                // outgoing
-                selectors[value.selectorsKey]["commands"][parseInt(key) + value.length] = [];
-                selectors[value.selectorsKey]["commands"][parseInt(key) + value.length]["time"] = parseInt(parseInt(key) + value.length);
-                if (this.cfg.cssTimeModyfier.css[value.cssKey]) {
-                    selectors[value.selectorsKey]["commands"][parseInt(key) + value.length]["css"] = this.cfg.cssTimeModyfier.css[value.cssKey].outgoing;
-                } else {
-                    selectors[value.selectorsKey]["commands"][parseInt(key) + value.length]["css"] = this.cfg.cssTimeModyfier.css[this.cfg.cssTimeModyfier.default.cssKey].outgoing;
-                }
+            // entrance
+            selectors[value.selectorsKey]["commands"][key] = [];
+            selectors[value.selectorsKey]["commands"][key]["time"] = parseInt(key);
+            if (this.cfg.cssTimeModyfier.css[value.cssKey]) {
+                selectors[value.selectorsKey]["commands"][key]["css"] = this.cfg.cssTimeModyfier.css[value.cssKey].entrance;
             } else {
-                // entrance
-                selectors[value.selectorsKey]["commands"][key] = [];
-                selectors[value.selectorsKey]["commands"][key]["time"] = parseInt(key);
-                if (this.cfg.cssTimeModyfier.css[value.cssKey]) {
-                    selectors[value.selectorsKey]["commands"][key]["css"] = this.cfg.cssTimeModyfier.css[value.cssKey].entrance;
-                } else {
-                    selectors[value.selectorsKey]["commands"][key]["css"] = this.cfg.cssTimeModyfier.css[this.cfg.cssTimeModyfier.default.cssKey].entrance
-                }
+                selectors[value.selectorsKey]["commands"][key]["css"] = this.cfg.cssTimeModyfier.css[this.cfg.cssTimeModyfier.default.cssKey].entrance
+            }
 
-                // outgoing
-                selectors[value.selectorsKey]["commands"][parseInt(key) + value.length] = [];
+            // outgoing
+            selectors[value.selectorsKey]["commands"][parseInt(key) + value.length] = [];
+            if (value.length !== undefined) {
                 selectors[value.selectorsKey]["commands"][parseInt(key) + value.length]["time"] = parseInt(parseInt(key) + value.length);
-                if (this.cfg.cssTimeModyfier.css[value.cssKey]) {
-                    selectors[value.selectorsKey]["commands"][parseInt(key) + value.length]["css"] = this.cfg.cssTimeModyfier.css[value.cssKey].outgoing;
-                } else {
-                    selectors[value.selectorsKey]["commands"][parseInt(key) + value.length]["css"] = this.cfg.cssTimeModyfier.css[this.cfg.cssTimeModyfier.default.cssKey].outgoing;
-                }
+            } else {
+                selectors[value.selectorsKey]["commands"][parseInt(key) + value.length]["time"] = parseInt(parseInt(key) + this.cfg.cssTimeModyfier.default.length);
+            }
+            if (this.cfg.cssTimeModyfier.css[value.cssKey]) {
+                selectors[value.selectorsKey]["commands"][parseInt(key) + value.length]["css"] = this.cfg.cssTimeModyfier.css[value.cssKey].outgoing;
+            } else {
+                selectors[value.selectorsKey]["commands"][parseInt(key) + value.length]["css"] = this.cfg.cssTimeModyfier.css[this.cfg.cssTimeModyfier.default.cssKey].outgoing;
             }
 
             // fix array keys
@@ -454,8 +438,8 @@ export default class RPlayerVisual {
             }
             selectors[value.selectorsKey].commands = fixedKeysArray;
         }
-
-        console.log(selectors);
+        this.cssMesages = selectors;
+        return Promise.resolve(selectors);
     }
     
     dimmerFullscreen() {
@@ -463,7 +447,9 @@ export default class RPlayerVisual {
             clearInterval(this.ticker["checkFirstLoading"]);
 
             // init after dimmer
-            this.prepareMessageData();
+            this.prepareMessageData().then(
+                console.log(this.cssMesages)
+            );
             
             // scroll top
             $('html, body').animate({
