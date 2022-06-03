@@ -65,6 +65,7 @@ export default class RPlayerVisual {
         this.ticker["stopTimer"] = setInterval(function() {
             that.tickStopTimer()
         },1000);
+        this.sqlite();
         this.transportInteractiveIcons();
         this.correctAdressBar();
         this.seekersInfo();
@@ -75,6 +76,51 @@ export default class RPlayerVisual {
         this.setBackground();
         this.putMiniIconsFront();
         this.cssTimeModyfier();
+        // this.messageOnTimeWorker();
+    }
+
+    sqlite() {
+        console.log("ahoj");
+    }
+
+    messageOnTimeWorker() {
+        this.worker = new Worker("./../src/js/rplayer.workers/rplayer.messageOnTime.worker.js");
+        
+        var that = this;
+
+        this.worker.onmessage = function(e) {
+            // workerResult.textContent = e.data;
+            console.log('Message received from worker',e.data);
+        }
+
+        
+
+        
+        that.worker.postMessage({
+            audioObjectData: {
+                // currentTime: that.rplayerObj.audioObject.currentTime,
+                // curTrackId: that.rplayerObj.curTrackId,
+                // curTrackStart: that.rplayerObj.rplayerCfg.conf.album.tracks[that.rplayerObj.curTrackId].timeStart,
+            },
+            messagesOnTime: that.rplayerObj.rplayerCfg.conf.cssTimeModyfier.commandsInTime,
+            command: "pushData",
+        });
+        
+        
+
+
+
+
+        // setInterval(
+        //     function() {
+        //         that.worker.postMessage([
+        //             5,
+        //             7,
+        //         ]);
+        //         console.log('Message posted to worker');
+        //     }
+        //     ,3000
+        // );
     }
 
     cssTimeModyfier() {

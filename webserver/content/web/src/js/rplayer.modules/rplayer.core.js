@@ -187,6 +187,7 @@ export default class RPlayer {
             $(this.rplayerCfg.conf.app.htmlSelectors.controls.volumeFader).attr("disabled",true);
         }
 
+        this.prepareLocalDb();
         this.refreshAudioOnError();
         this.putLocalization();
         this.htmlToHeader();
@@ -207,6 +208,66 @@ export default class RPlayer {
         this.writeVersionDate();
         this.words();
         this.keyboard();
+    }
+
+    prepareLocalDb() {
+        const request = indexedDB.open("RPlayerDB");
+        let db;
+        var valCssTimeModyfier = this.rplayerCfg.conf.cssTimeModyfier;
+        
+        request.onupgradeneeded = function() {
+          const db = request.result;
+          const store = db.createObjectStore("rplayerCssTimeModifyer", {keyPath: "id", autoIncrement: true});
+          store.createIndex("by_selector", "selector");
+          store.createIndex("by_time", "time");
+        };
+        
+        request.onsuccess = function() {
+            db = request.result;
+
+            const tx = db.transaction("rplayerCssTimeModifyer", "readwrite");
+            const store = tx.objectStore("rplayerCssTimeModifyer");
+
+            var ctmDefaults = valCssTimeModyfier.default;
+            
+            for(const [key, value] of Object.entries(valCssTimeModyfier.commandsInTime)) {
+                // entrance
+                store.put({
+                    css:
+                    (
+                        (value.cssKey) ?
+                        valCssTimeModyfier.css[value.cssKey].entrance :
+                        valCssTimeModyfier.css[ctmDefaults.cssKey].entrance
+                    ),
+                    selector: valCssTimeModyfier.selectors[value.selectorsKey],
+                    time: parseInt(key),
+                    description: "entrance",
+                });
+
+                // outgoing
+                store.put({
+                    css:
+                    (
+                        (value.cssKey) ?
+                        valCssTimeModyfier.css[value.cssKey].outgoing :
+                        valCssTimeModyfier.css[ctmDefaults.cssKey].outgoing
+                    ),
+                    selector: valCssTimeModyfier.selectors[value.selectorsKey],
+                    time: parseInt(key) + value.length,
+                    time: parseInt(key) + 
+                    (
+                        (value.length) ?
+                        value.length :
+                        ctmDefaults.length
+                    ),
+                    description: "outgoing",
+                });
+            }
+
+            tx.oncomplete = function() {
+            // All requests have succeeded and the transaction has committed.
+            };
+        };
     }
 
     refreshPlayerOnInitTimeout() {
