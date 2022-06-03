@@ -403,48 +403,56 @@ export default class RPlayerVisual {
         var commands  = [];
         
         for (const [key, value] of Object.entries(this.cfg.cssTimeModyfier.commandsInTime)) {
-            // console.log(value.selectorsKey);
-            if (selectors.indexOf(value.selectorsKey) == -1)
-            {  
-                // selectors[value.selectorsKey] = this.cfg.cssTimeModyfier.selectors[value.selectorsKey];
+            if (selectors[value.selectorsKey] === undefined) {
                 selectors[value.selectorsKey] = [];
                 selectors[value.selectorsKey]["cssSelector"] = this.cfg.cssTimeModyfier.selectors[value.selectorsKey];
                 selectors[value.selectorsKey]["commands"] = [];
 
-                for (const [key2, value2] of Object.entries(this.cfg.cssTimeModyfier.commandsInTime)) {
-                    if (value2.selectorsKey == value.selectorsKey) {                        
-                        
-                        // entrances
-                        selectors[value.selectorsKey]["commands"][key2] = [];
-                        selectors[value.selectorsKey]["commands"][key2]["time"] = parseInt(key2);
-                        if (this.cfg.cssTimeModyfier.css[value2.cssKey]) {
-                            selectors[value.selectorsKey]["commands"][key2]["css"] = this.cfg.cssTimeModyfier.css[value2.cssKey].entrance;
-                        } else {
-                            selectors[value.selectorsKey]["commands"][key2]["css"] = this.cfg.cssTimeModyfier.css[this.cfg.cssTimeModyfier.default.cssKey].entrance
-                        }
-
-                        // outgoings
-                        selectors[value.selectorsKey]["commands"][parseInt(key2) + value2.length] = [];
-                        selectors[value.selectorsKey]["commands"][parseInt(key2) + value2.length]["time"] = parseInt(parseInt(key2) + value2.length);
-                        if (this.cfg.cssTimeModyfier.css[value2.cssKey]) {
-                            selectors[value.selectorsKey]["commands"][parseInt(key2) + value2.length]["css"] = this.cfg.cssTimeModyfier.css[value2.cssKey].outgoing;
-                        } else {
-                            selectors[value.selectorsKey]["commands"][parseInt(key2) + value2.length]["css"] = this.cfg.cssTimeModyfier.css[this.cfg.cssTimeModyfier.default.cssKey].outgoing;
-                        }
-
-                    }
+                // entrance
+                selectors[value.selectorsKey]["commands"][key] = [];
+                selectors[value.selectorsKey]["commands"][key]["time"] = parseInt(key);
+                if (this.cfg.cssTimeModyfier.css[value.cssKey]) {
+                    selectors[value.selectorsKey]["commands"][key]["css"] = this.cfg.cssTimeModyfier.css[value.cssKey].entrance;
+                } else {
+                    selectors[value.selectorsKey]["commands"][key]["css"] = this.cfg.cssTimeModyfier.css[this.cfg.cssTimeModyfier.default.cssKey].entrance
                 }
-                
-                // fix array keys
-                var fixedKeysArray = [];
-                var i = 0;
-                for (const [key2, value2] of Object.entries(selectors[value.selectorsKey].commands)) {
-                    fixedKeysArray[i] = value2;
-                    i += 1;
-                }
-                selectors[value.selectorsKey].commands = fixedKeysArray;
 
+                // outgoing
+                selectors[value.selectorsKey]["commands"][parseInt(key) + value.length] = [];
+                selectors[value.selectorsKey]["commands"][parseInt(key) + value.length]["time"] = parseInt(parseInt(key) + value.length);
+                if (this.cfg.cssTimeModyfier.css[value.cssKey]) {
+                    selectors[value.selectorsKey]["commands"][parseInt(key) + value.length]["css"] = this.cfg.cssTimeModyfier.css[value.cssKey].outgoing;
+                } else {
+                    selectors[value.selectorsKey]["commands"][parseInt(key) + value.length]["css"] = this.cfg.cssTimeModyfier.css[this.cfg.cssTimeModyfier.default.cssKey].outgoing;
+                }
+            } else {
+                // entrance
+                selectors[value.selectorsKey]["commands"][key] = [];
+                selectors[value.selectorsKey]["commands"][key]["time"] = parseInt(key);
+                if (this.cfg.cssTimeModyfier.css[value.cssKey]) {
+                    selectors[value.selectorsKey]["commands"][key]["css"] = this.cfg.cssTimeModyfier.css[value.cssKey].entrance;
+                } else {
+                    selectors[value.selectorsKey]["commands"][key]["css"] = this.cfg.cssTimeModyfier.css[this.cfg.cssTimeModyfier.default.cssKey].entrance
+                }
+
+                // outgoing
+                selectors[value.selectorsKey]["commands"][parseInt(key) + value.length] = [];
+                selectors[value.selectorsKey]["commands"][parseInt(key) + value.length]["time"] = parseInt(parseInt(key) + value.length);
+                if (this.cfg.cssTimeModyfier.css[value.cssKey]) {
+                    selectors[value.selectorsKey]["commands"][parseInt(key) + value.length]["css"] = this.cfg.cssTimeModyfier.css[value.cssKey].outgoing;
+                } else {
+                    selectors[value.selectorsKey]["commands"][parseInt(key) + value.length]["css"] = this.cfg.cssTimeModyfier.css[this.cfg.cssTimeModyfier.default.cssKey].outgoing;
+                }
             }
+
+            // fix array keys
+            var fixedKeysArray = [];
+            var i = 0;
+            for (const [key2, value2] of Object.entries(selectors[value.selectorsKey].commands)) {
+                fixedKeysArray[i] = value2;
+                i += 1;
+            }
+            selectors[value.selectorsKey].commands = fixedKeysArray;
         }
 
         console.log(selectors);
