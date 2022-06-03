@@ -54,6 +54,7 @@ export default class RPlayerVisual {
         this.timerSecs = 0;
 
         this.mainWindowSel = that.rplayerObj.rplayerCfg.conf.app.htmlSelectors.mainWindow;
+        this.cfg = that.rplayerObj.rplayerCfg.conf;
         this.lastCssModyfiers = [];
         this.wasClick = false;
 
@@ -75,7 +76,7 @@ export default class RPlayerVisual {
         this.buttons();
         this.setBackground();
         this.putMiniIconsFront();
-        this.cssTimeModyfier();
+        // this.cssTimeModyfier();
         // this.messageOnTimeWorker();
     }
 
@@ -395,9 +396,66 @@ export default class RPlayerVisual {
         })
     }
 
+    prepareMessageData() {
+        console.log(this.cfg.cssTimeModyfier);
+
+        var selectors = [];
+        var commands  = [];
+        
+        for (const [key, value] of Object.entries(this.cfg.cssTimeModyfier.commandsInTime)) {
+            // console.log(value.selectorsKey);
+            if (selectors.indexOf(value.selectorsKey) == -1)
+            {  
+                // selectors[value.selectorsKey] = this.cfg.cssTimeModyfier.selectors[value.selectorsKey];
+                selectors[value.selectorsKey] = [];
+                selectors[value.selectorsKey]["cssSelector"] = this.cfg.cssTimeModyfier.selectors[value.selectorsKey];
+                selectors[value.selectorsKey]["commands"] = [];
+
+                for (const [key2, value2] of Object.entries(this.cfg.cssTimeModyfier.commandsInTime)) {
+                    if (value2.selectorsKey == value.selectorsKey) {                        
+                        
+                        // entrances
+                        selectors[value.selectorsKey]["commands"][key2] = [];
+                        selectors[value.selectorsKey]["commands"][key2]["time"] = parseInt(key2);
+                        if (this.cfg.cssTimeModyfier.css[value2.cssKey]) {
+                            selectors[value.selectorsKey]["commands"][key2]["css"] = this.cfg.cssTimeModyfier.css[value2.cssKey].entrance;
+                        } else {
+                            selectors[value.selectorsKey]["commands"][key2]["css"] = this.cfg.cssTimeModyfier.css[this.cfg.cssTimeModyfier.default.cssKey].entrance
+                        }
+
+                        // outgoings
+                        selectors[value.selectorsKey]["commands"][parseInt(key2) + value2.length] = [];
+                        selectors[value.selectorsKey]["commands"][parseInt(key2) + value2.length]["time"] = parseInt(parseInt(key2) + value2.length);
+                        if (this.cfg.cssTimeModyfier.css[value2.cssKey]) {
+                            selectors[value.selectorsKey]["commands"][parseInt(key2) + value2.length]["css"] = this.cfg.cssTimeModyfier.css[value2.cssKey].outgoing;
+                        } else {
+                            selectors[value.selectorsKey]["commands"][parseInt(key2) + value2.length]["css"] = this.cfg.cssTimeModyfier.css[this.cfg.cssTimeModyfier.default.cssKey].outgoing;
+                        }
+
+                    }
+                }
+                
+                // fix array keys
+                var fixedKeysArray = [];
+                var i = 0;
+                for (const [key2, value2] of Object.entries(selectors[value.selectorsKey].commands)) {
+                    fixedKeysArray[i] = value2;
+                    i += 1;
+                }
+                selectors[value.selectorsKey].commands = fixedKeysArray;
+
+            }
+        }
+
+        console.log(selectors);
+    }
+    
     dimmerFullscreen() {
         if ($(".rplayerTrackList").html().length > 0) {
             clearInterval(this.ticker["checkFirstLoading"]);
+
+            // init after dimmer
+            this.prepareMessageData();
             
             // scroll top
             $('html, body').animate({
