@@ -1088,43 +1088,64 @@ export default class RPlayer {
         var lenTimeLast;
         var bufferLast;
 
-        this.showTimeTicker = setInterval(function() {
-            
-            localStorage.setItem("curTime",that.audioObject.currentTime);
-            that.volumeFader();
-            that.seeker()
+        const request = indexedDB.open("RPlayerDB");
+        let db;
 
-            var bufferOnePerc = that.audioObject.duration / 100;
-            var bufferedPerc = 0;
+        request.onupgradeneeded = function() {
+            const db = request.result;
+            const store = db.createObjectStore("audioObject", {keyPath: "var"/*, autoIncrement: true*/});
+            // store.createIndex("by_selector", "selector");
+            // store.createIndex("by_time", "time");
+        };
 
-            for (let index = 0; index < Math.round(that.audioObject.buffered.length); index++) {
-                bufferedPerc += (that.audioObject.buffered.end(index) - that.audioObject.buffered.start(index)) / bufferOnePerc;
-            }
-            bufferedPerc = Math.round(bufferedPerc);
-            if (bufferedPerc != bufferLast) {
-                $(that.rplayerCfg.conf.app.htmlSelectors.info.bufferCondition).html(bufferedPerc);
-                bufferLast = bufferedPerc;
-            }
-            
-            if (that.secondsToTime(that.audioObject.currentTime - that.seekerStartPosition) != curTimeLast) {
-                that.showcurtimeobject.html(
-                    that.secondsToTime(
-                        that.audioObject.currentTime - that.seekerStartPosition
-                    )
-                );
-                curTimeLast = that.showcurtimeobject.html();
-            }
+        request.onsuccess = function() {
+            this.showTimeTicker = setInterval(function() {
+                db = request.result;
 
-            if (that.secondsToTime(that.seekerEndPosition - that.seekerStartPosition) != lenTimeLast) {
-                that.showlentimeobject.html(
-                    that.secondsToTime(
-                        that.seekerEndPosition - that.seekerStartPosition
-                    )
-                );
-                lenTimeLast = that.showlentimeobject.html();
-            }
+                const tx = db.transaction("audioObject", "readwrite");
+                const store = tx.objectStore("audioObject");
 
-        },1);
+                store.put({
+                    var: "curTime",
+                    position: that.audioObject.currentTime
+                });
+
+                that.volumeFader();
+                that.seeker()
+    
+                var bufferOnePerc = that.audioObject.duration / 100;
+                var bufferedPerc = 0;
+    
+                for (let index = 0; index < Math.round(that.audioObject.buffered.length); index++) {
+                    bufferedPerc += (that.audioObject.buffered.end(index) - that.audioObject.buffered.start(index)) / bufferOnePerc;
+                }
+                bufferedPerc = Math.round(bufferedPerc);
+                if (bufferedPerc != bufferLast) {
+                    $(that.rplayerCfg.conf.app.htmlSelectors.info.bufferCondition).html(bufferedPerc);
+                    bufferLast = bufferedPerc;
+                }
+                
+                if (that.secondsToTime(that.audioObject.currentTime - that.seekerStartPosition) != curTimeLast) {
+                    that.showcurtimeobject.html(
+                        that.secondsToTime(
+                            that.audioObject.currentTime - that.seekerStartPosition
+                        )
+                    );
+                    curTimeLast = that.showcurtimeobject.html();
+                }
+    
+                if (that.secondsToTime(that.seekerEndPosition - that.seekerStartPosition) != lenTimeLast) {
+                    that.showlentimeobject.html(
+                        that.secondsToTime(
+                            that.seekerEndPosition - that.seekerStartPosition
+                        )
+                    );
+                    lenTimeLast = that.showlentimeobject.html();
+                }
+    
+            },100);
+        }
+        
     }
 
     secondsToTime(value) {
