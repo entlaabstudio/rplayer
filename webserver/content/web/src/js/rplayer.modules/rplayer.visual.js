@@ -441,6 +441,41 @@ export default class RPlayerVisual {
         this.cssMesages = selectors;
         return Promise.resolve(selectors);
     }
+
+    startMessages() {
+        // console.log(this.cssMesages);
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        this.startMessage(this.cssMesages.jurta);
+    }
+
+    startMessage(messageBranch) {
+        var messageBranch;
+
+        this.worker = new Worker("./../src/js/rplayer.workers/rplayer.messageOnTime.worker.js");
+        
+        var that = this;
+
+        
+        
+        
+        
+        setInterval(function() {
+            that.worker.postMessage({
+                messageBranch
+            });
+        },2000);
+
+
+
+
+
+        this.worker.onmessage = function(e) {
+            // workerResult.textContent = e.data;
+            console.log('Message received from worker',e.data);
+        }
+        console.log(messageBranch);
+    }
     
     dimmerFullscreen() {
         if ($(".rplayerTrackList").html().length > 0) {
@@ -448,7 +483,8 @@ export default class RPlayerVisual {
 
             // init after dimmer
             this.prepareMessageData().then(
-                console.log(this.cssMesages)
+                // console.log(this.cssMesages)
+                this.startMessages()
             );
             
             // scroll top
