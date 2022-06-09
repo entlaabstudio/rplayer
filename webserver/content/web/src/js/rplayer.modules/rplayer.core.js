@@ -1099,12 +1099,12 @@ export default class RPlayer {
         };
 
         request.onsuccess = function() {
-            this.showTimeTicker = setInterval(function() {
-                db = request.result;
+            db = request.result;
 
+            this.showTimeTicker = setInterval(function() {
+                
                 const tx = db.transaction("audioObject", "readwrite");
                 const store = tx.objectStore("audioObject");
-
                 store.put({
                     var: "curTime",
                     position: that.audioObject.currentTime
@@ -1143,7 +1143,7 @@ export default class RPlayer {
                     lenTimeLast = that.showlentimeobject.html();
                 }
     
-            },100);
+            },1);
         }
         
     }
