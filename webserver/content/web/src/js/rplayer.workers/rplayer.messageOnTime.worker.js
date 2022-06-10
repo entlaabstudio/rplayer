@@ -67,12 +67,12 @@ function next() {
         timeNow: lastKeyOffset1.timeOffset,
     };
     lastKeyOffset1 = {
-        keyOffset: lastKeyOffset1.keyOffset + 1,
-        timeOffset: commands[lastKeyOffset1.keyOffset + 1].time
+        keyOffset: ((lastKeyOffset1.keyOffset + 1 > commands.length - 1) ? -1 : lastKeyOffset1.keyOffset + 1),
+        timeOffset: ((lastKeyOffset1.keyOffset + 1 > commands.length - 1) ? null : commands[lastKeyOffset1.keyOffset + 1].time)
     }
     lastKeyOffset2 = {
-        keyOffset: lastKeyOffset2.keyOffset + 1,
-        timeOffset: commands[lastKeyOffset2.keyOffset + 1].time
+        keyOffset: ((lastKeyOffset2.keyOffset + 1 > commands.length - 1) ? -1 : lastKeyOffset2.keyOffset + 1),
+        timeOffset: ((lastKeyOffset2.keyOffset + 1 > commands.length - 1) ? null : commands[lastKeyOffset2.keyOffset + 1].time)
     }
     console.log("NEXT");
 }
@@ -94,7 +94,7 @@ function getKeyNow() {
 }
 
 function getKeyOffset(offset) {
-    var keyFuture = -1;
+    var keyOffset = -1;
     var keyNow = getKeyNow().keyNow;
     if (commands[keyNow + offset] !== undefined) {
         keyOffset = keyNow + offset;
@@ -104,4 +104,3 @@ function getKeyOffset(offset) {
         timeOffset: ((keyOffset > -1) ? commands[keyOffset].time : null)
     };
 }
-
