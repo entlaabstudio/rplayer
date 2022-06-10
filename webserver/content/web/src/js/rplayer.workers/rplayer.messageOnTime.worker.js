@@ -14,6 +14,16 @@ initInterval = setInterval(function() {
         typeof commands !== "undefined" &&
         typeof currentTime !== "undefined"
     ) {
+        lastKeyNow = {
+            keyNow: -1,
+            timeNow: null
+        };
+
+        lastKeyOffset1 =
+        lastKeyOffset2 = {
+            keyOffset: -1,
+            timeOffset: null
+        };
         run();
         clearInterval(initInterval);
     }
@@ -21,15 +31,50 @@ initInterval = setInterval(function() {
 
 function run() {
     setInterval(function() {
+        if (
+            lastKeyOffset1.keyOffset < 0 ||
+            currentTime > lastKeyOffset2.timeOffset ||
+            currentTime < lastKeyNow.timeNow
+        ) {
+            lastKeyNow = getKeyNow();
+            lastKeyOffset1 = getKeyOffset(1);
+            lastKeyOffset2 = getKeyOffset(2);
+            console.log("SKIP");
+        } else {
+            if (
+                currentTime > lastKeyOffset1.timeOffset
+            ) {
+                next();
+            }
+        }
+
         console.log(
             "momentální čas:",
             currentTime,
             "klíč nyní:",
-            getKeyNow(),
+            lastKeyNow,
             "klíč potom:",
-            getKeyFuture()
+            lastKeyOffset1,
+            "klíč ještě potom:",
+            lastKeyOffset2,
         );
     },2000);
+}
+
+function next() {
+    lastKeyNow = {
+        keyNow: lastKeyOffset1.keyOffset,
+        timeNow: lastKeyOffset1.timeOffset,
+    };
+    lastKeyOffset1 = {
+        keyOffset: lastKeyOffset1.keyOffset + 1,
+        timeOffset: commands[lastKeyOffset1.keyOffset + 1].time
+    }
+    lastKeyOffset2 = {
+        keyOffset: lastKeyOffset2.keyOffset + 1,
+        timeOffset: commands[lastKeyOffset2.keyOffset + 1].time
+    }
+    console.log("NEXT");
 }
 
 function getKeyNow() {
@@ -48,15 +93,15 @@ function getKeyNow() {
     };
 }
 
-function getKeyFuture() {
+function getKeyOffset(offset) {
     var keyFuture = -1;
     var keyNow = getKeyNow().keyNow;
-    if (commands[keyNow + 1] !== undefined) {
-        keyFuture = keyNow + 1;
+    if (commands[keyNow + offset] !== undefined) {
+        keyOffset = keyNow + offset;
     }
     return {
-        keyFuture: keyFuture,
-        timeFuture: ((keyFuture > -1) ? commands[keyFuture].time : null)
+        keyOffset: keyOffset,
+        timeOffset: ((keyOffset > -1) ? commands[keyOffset].time : null)
     };
 }
 
