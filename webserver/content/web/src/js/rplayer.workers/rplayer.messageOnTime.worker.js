@@ -21,62 +21,42 @@ initInterval = setInterval(function() {
 
 function run() {
     setInterval(function() {
-        getKeys();
-        console.log("momentální čas:",currentTime,"klíč:");
+        console.log(
+            "momentální čas:",
+            currentTime,
+            "klíč nyní:",
+            getKeyNow(),
+            "klíč potom:",
+            getKeyFuture()
+        );
     },2000);
 }
 
-function getKeys() {
-    var wasSet = false;
-    for (const [key, value] of Object.entries(commands)) {
-        if (value.time <= currentTime) {
-            keyNow = parseInt(key);
-            timeNow = commands[keyNow].time;
-            wasSet = true;
+function getKeyNow() {
+    var keyNow = -1;
+    var arrayLength = commands.length;
+    for (var i = 0; i < arrayLength; i++) {
+        if (commands[i].time <= currentTime) {
+            keyNow = i;
         } else {
             break;
         }
     }
+    return {
+        keyNow: keyNow,
+        timeNow: ((keyNow > -1) ? commands[keyNow].time : null)
+    };
+}
 
-    console.log(wasSet);
-    if (wasSet === false) {
-        delete keyNow;
-        delete keyFuture;
-        delete timeNow;
-        delete timeFuture;
-        console.log("DELETE");
-    } else {
-        if (typeof commands[keyNow + 1] !== "undefined") {
-            keyFuture = keyNow + 1;
-            timeFuture = commands[keyFuture].time;
-        } else {
-            delete keyFuture;
-        }
+function getKeyFuture() {
+    var keyFuture = -1;
+    var keyNow = getKeyNow().keyNow;
+    if (commands[keyNow + 1] !== undefined) {
+        keyFuture = keyNow + 1;
     }
-    
-    console.log("keyNow", keyNow);
-    console.log("keyFuture", keyFuture);
-    console.log("timeNow", timeNow);
-    console.log("timeFuture", timeFuture);
+    return {
+        keyFuture: keyFuture,
+        timeFuture: ((keyFuture > -1) ? commands[keyFuture].time : null)
+    };
 }
 
-
-const request = indexedDB.open("RPlayerDB");
-let db;
-
-request.onupgradeneeded = function() {
-    const db = request.result;
-    const store = db.createObjectStore("audioObject", {keyPath: "var"/*, autoIncrement: true*/});
-};
-
-request.onsuccess = function() {
-    // setInterval(function() {
-    //     db = request.result;
-
-    //     const tx = db.transaction("audioObject", "readwrite");
-    //     const store = tx.objectStore("audioObject");
-
-    //     postMessage("ahoj");
-    //     console.log(store.get("curTime"));
-    // },3000);
-}
