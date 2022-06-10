@@ -459,12 +459,16 @@ export default class RPlayerVisual {
         
         
         
-        
+
+        that.worker.postMessage({
+            branch: messageBranch
+        });
+
         setInterval(function() {
             that.worker.postMessage({
-                messageBranch
+                currentTime: that.rplayerObj.audioObject.currentTime
             });
-        },2000);
+        }, 2000);
 
 
 
