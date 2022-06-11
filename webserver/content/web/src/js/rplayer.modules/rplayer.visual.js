@@ -398,7 +398,6 @@ export default class RPlayerVisual {
 
     async prepareMessageData() {
         var selectors = [];
-        var commands  = [];
         
         for (const [key, value] of Object.entries(this.cfg.cssTimeModyfier.commandsInTime)) {
             if (selectors[value.selectorsKey] === undefined) {
@@ -443,43 +442,30 @@ export default class RPlayerVisual {
     }
 
     startMessages() {
-        // console.log(this.cssMesages);
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        this.startMessage(this.cssMesages.jurta);
+        for (const [key, value] of Object.entries(this.cssMesages)) {
+            this.startMessage(value);
+        }
     }
 
     startMessage(messageBranch) {
         var messageBranch;
-
-        this.worker = new Worker("./../src/js/rplayer.workers/rplayer.messageOnTime.worker.js");
-        
+        var worker = new Worker("./../src/js/rplayer.workers/rplayer.messageOnTime.worker.js");
         var that = this;
 
-        
-        
-        
-
-        that.worker.postMessage({
+        worker.postMessage({
             branch: messageBranch
         });
 
         setInterval(function() {
-            that.worker.postMessage({
+            worker.postMessage({
                 currentTime: that.rplayerObj.audioObject.currentTime
             });
         }, 1);
 
-
-
-
-
-        this.worker.onmessage = function(e) {
+        worker.onmessage = function(e) {
             var message = e.data;
             $(message.cssSelector).css(message.command);
-            console.log('Message received from worker',e.data);
         }
-        console.log(messageBranch);
     }
     
     dimmerFullscreen() {
