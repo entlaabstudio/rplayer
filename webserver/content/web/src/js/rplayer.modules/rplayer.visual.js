@@ -475,7 +475,8 @@ export default class RPlayerVisual {
 
 
         this.worker.onmessage = function(e) {
-            // workerResult.textContent = e.data;
+            var message = e.data;
+            $(message.cssSelector).css(message.command);
             console.log('Message received from worker',e.data);
         }
         console.log(messageBranch);

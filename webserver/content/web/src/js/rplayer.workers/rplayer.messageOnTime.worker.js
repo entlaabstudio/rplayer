@@ -39,16 +39,30 @@ function run() {
             lastKeyNow = getKeyNow();
             lastKeyOffset1 = getKeyOffset(1);
             lastKeyOffset2 = getKeyOffset(2);
-            console.log("SKIP");
+            returnMessage();
         } else {
             if (
                 currentTime > lastKeyOffset1.timeOffset
             ) {
                 next();
-                console.log("NEXT");
+                returnMessage();
             }
         }
     }, 1);
+}
+
+function returnMessage() {
+    if (lastKeyNow.keyNow != -1) {
+        postMessage({
+            cssSelector: cssSelector,
+            command: commands[lastKeyNow.keyNow].css
+        });
+    } else {
+        postMessage({
+            cssSelector: cssSelector,
+            command: commands[0].css
+        });
+    }
 }
 
 function next() {
