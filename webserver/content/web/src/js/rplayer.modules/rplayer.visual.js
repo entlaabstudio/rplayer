@@ -468,7 +468,7 @@ export default class RPlayerVisual {
             that.worker.postMessage({
                 currentTime: that.rplayerObj.audioObject.currentTime
             });
-        }, 2000);
+        }, 1);
 
 
 

@@ -45,20 +45,10 @@ function run() {
                 currentTime > lastKeyOffset1.timeOffset
             ) {
                 next();
+                console.log("NEXT");
             }
         }
-
-        console.log(
-            "momentální čas:",
-            currentTime,
-            "klíč nyní:",
-            lastKeyNow,
-            "klíč potom:",
-            lastKeyOffset1,
-            "klíč ještě potom:",
-            lastKeyOffset2,
-        );
-    },2000);
+    }, 1);
 }
 
 function next() {
@@ -67,14 +57,13 @@ function next() {
         timeNow: lastKeyOffset1.timeOffset,
     };
     lastKeyOffset1 = {
-        keyOffset: ((lastKeyOffset1.keyOffset + 1 > commands.length - 1) ? -1 : lastKeyOffset1.keyOffset + 1),
-        timeOffset: ((lastKeyOffset1.keyOffset + 1 > commands.length - 1) ? null : commands[lastKeyOffset1.keyOffset + 1].time)
+        keyOffset: ((lastKeyOffset1.keyOffset + 1 > commands.length - 1) ? Infinity : lastKeyOffset1.keyOffset + 1),
+        timeOffset: ((lastKeyOffset1.keyOffset + 1 > commands.length - 1) ? Infinity : commands[lastKeyOffset1.keyOffset + 1].time)
     }
     lastKeyOffset2 = {
-        keyOffset: ((lastKeyOffset2.keyOffset + 1 > commands.length - 1) ? -1 : lastKeyOffset2.keyOffset + 1),
-        timeOffset: ((lastKeyOffset2.keyOffset + 1 > commands.length - 1) ? null : commands[lastKeyOffset2.keyOffset + 1].time)
+        keyOffset: ((lastKeyOffset2.keyOffset + 1 > commands.length - 1) ? Infinity : lastKeyOffset2.keyOffset + 1),
+        timeOffset: ((lastKeyOffset2.keyOffset + 1 > commands.length - 1) ? Infinity : commands[lastKeyOffset2.keyOffset + 1].time)
     }
-    console.log("NEXT");
 }
 
 function getKeyNow() {
@@ -94,13 +83,13 @@ function getKeyNow() {
 }
 
 function getKeyOffset(offset) {
-    var keyOffset = -1;
+    var keyOffset = Infinity;
     var keyNow = getKeyNow().keyNow;
     if (commands[keyNow + offset] !== undefined) {
         keyOffset = keyNow + offset;
     }
     return {
         keyOffset: keyOffset,
-        timeOffset: ((keyOffset > -1) ? commands[keyOffset].time : null)
+        timeOffset: ((keyOffset < Infinity) ? commands[keyOffset].time : Infinity)
     };
 }

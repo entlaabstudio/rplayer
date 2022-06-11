@@ -44,7 +44,7 @@ a.rplayerOneTrack {
     transform: perspective(50em) scale(0.9) rotateX(0deg) rotateY(-1deg) rotateZ(-1deg) translateX(-1em);
 }
 
-#rplayer, #rplayer * {
+#rplayer:not(div.words), #rplayer *:not(div.words) {
     transition: all 1s ease;
 }
 
