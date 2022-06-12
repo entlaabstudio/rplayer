@@ -1089,6 +1089,7 @@ export default class RPlayer {
         var bufferLast;
 
         const request = indexedDB.open("RPlayerDB");
+        const request = indexedDB.open("RPlayerDB");
         let db;
 
         request.onupgradeneeded = function() {
