@@ -66,7 +66,6 @@ export default class RPlayerVisual {
         this.ticker["stopTimer"] = setInterval(function() {
             that.tickStopTimer()
         },1000);
-        this.sqlite();
         this.transportInteractiveIcons();
         this.correctAdressBar();
         this.seekersInfo();
@@ -76,135 +75,13 @@ export default class RPlayerVisual {
         this.buttons();
         this.setBackground();
         this.putMiniIconsFront();
-        // this.cssTimeModyfier();
-        // this.messageOnTimeWorker();
     }
 
-    sqlite() {
-        console.log("ahoj");
+    initAfterDimmer() {
+        this.prepareMessageData().then(
+            this.startMessages()
+        );
     }
-
-    messageOnTimeWorker() {
-        this.worker = new Worker("./../src/js/rplayer.workers/rplayer.messageOnTime.worker.js");
-        
-        var that = this;
-
-        this.worker.onmessage = function(e) {
-            // workerResult.textContent = e.data;
-            console.log('Message received from worker',e.data);
-        }
-
-        
-
-        
-        that.worker.postMessage({
-            audioObjectData: {
-                // currentTime: that.rplayerObj.audioObject.currentTime,
-                // curTrackId: that.rplayerObj.curTrackId,
-                // curTrackStart: that.rplayerObj.rplayerCfg.conf.album.tracks[that.rplayerObj.curTrackId].timeStart,
-            },
-            messagesOnTime: that.rplayerObj.rplayerCfg.conf.cssTimeModyfier.commandsInTime,
-            command: "pushData",
-        });
-        
-        
-
-
-
-
-        // setInterval(
-        //     function() {
-        //         that.worker.postMessage([
-        //             5,
-        //             7,
-        //         ]);
-        //         console.log('Message posted to worker');
-        //     }
-        //     ,3000
-        // );
-    }
-
-    cssTimeModyfier() {
-        var cfg = this.rplayerObj.rplayerCfg.conf.cssTimeModyfier;
-        var that = this;
-
-        this.QoCssTimeModifyers = [];
-        for (const [key, value] of Object.entries(cfg.selectors)) {
-            this.QoCssTimeModifyers[key] = new QuickObject(this.rplayerObj.rplayerCfg.conf.cssTimeModyfier.commandsInTime,{
-                "key": "selectorsKey",
-                "val": key,
-            });
-        }
-
-        $("body *").on("click", function() {
-            setTimeout(function () {
-                that.wasClick = true;
-            },(that.fadeinTime + that.fadeoutTime) * 2);
-        });
-        if (cfg !== undefined) {
-            setInterval(function() {
-                var i = 1;
-                var length = Object.entries(that.cssTimeModifyerGetCurrent()).length;
-                for(const [key, value] of Object.entries(that.cssTimeModifyerGetCurrent())) {
-                    if (that.lastCssModyfiers[key] === undefined) {
-                        that.lastCssModyfiers[key] = false;
-                    }
-                    if ($(value.selector).length > 0) {
-                        if (
-                            JSON.stringify(that.lastCssModyfiers[key]) != JSON.stringify(value.css) ||
-                            that.wasClick == true
-                        ) {
-                            if (that.rplayerObj.rplayerCfg.conf.app.preferences.cssTimeModyfier.consoleLog) {
-                                console.log("[RPlayer]","CSS modifying via selector \"" + value.selector + "\".",value);
-                            }
-                            $(value.selector).css(value.css);
-                            that.lastCssModyfiers[key] = value.css;
-                            if (i == length) {
-                                that.wasClick = false;
-                            }
-                        }
-                    }
-                    i++;
-                }
-            },1);
-        }
-    }
-
-    cssTimeModifyerGetCurrent() {
-        var cfg = this.rplayerObj.rplayerCfg.conf.cssTimeModyfier;
-        var that = this;
-        var time;
-        
-        time = that.rplayerObj.audioObject.currentTime * 1000;
-        var csss = [];
-
-        for (const [key, value] of Object.entries(cfg.selectors)) {
-            
-            var namedKey = key;
-            var founded = this.QoCssTimeModifyers[namedKey].find(time);
-            csss[namedKey] = founded.value;
-            csss[namedKey].time = founded.key;
-            for (const [key2, value2] of Object.entries(cfg.default)) {
-                if (csss[namedKey] !== undefined) {
-                    if (csss[namedKey][key2] === undefined) {
-                        csss[namedKey][key2] = value2;
-                    }
-                }
-            }
-            if (csss[namedKey] !== undefined) {
-                csss[namedKey].leaveTime = parseInt(csss[namedKey].time) + parseInt(csss[namedKey].length);
-                if (time < csss[namedKey].leaveTime) {
-                    csss[namedKey].css = cfg.css[csss[namedKey].cssKey].entrance;
-                    csss[namedKey].phase = "entrance";
-                } else {
-                    csss[namedKey].css = cfg.css[csss[namedKey].cssKey].outgoing;
-                    csss[namedKey].phase = "outgoing";
-                }
-                csss[namedKey].selector = value;
-            }
-        }
-        return csss;
-    };
     
     putFavicon() {
         var favicon = this.rplayerObj.rplayerCfg.conf.app.preferences.design.favicon;
@@ -473,10 +350,7 @@ export default class RPlayerVisual {
             clearInterval(this.ticker["checkFirstLoading"]);
 
             // init after dimmer
-            this.prepareMessageData().then(
-                // console.log(this.cssMesages)
-                this.startMessages()
-            );
+            this.initAfterDimmer();
             
             // scroll top
             $('html, body').animate({
