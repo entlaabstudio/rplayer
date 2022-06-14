@@ -1,6 +1,6 @@
 onmessage = function(e) {
     if (e.data.branch !== undefined) {
-        cssSelector = e.data.branch.cssSelector;
+        target = e.data.branch.target;
         commands = e.data.branch.commands;
     }
     if (e.data.currentTime !== undefined) {
@@ -10,7 +10,7 @@ onmessage = function(e) {
 
 initInterval = setInterval(function() {
     if (
-        typeof cssSelector !== "undefined" &&
+        typeof target !== "undefined" &&
         typeof commands !== "undefined" &&
         typeof currentTime !== "undefined"
     ) {
@@ -54,12 +54,12 @@ function run() {
 function returnMessage() {
     if (lastKeyNow.keyNow != -1) {
         postMessage({
-            cssSelector: cssSelector,
+            target: target,
             command: commands[lastKeyNow.keyNow].css
         });
     } else {
         postMessage({
-            cssSelector: cssSelector,
+            target: target,
             command: commands[0].css
         });
     }

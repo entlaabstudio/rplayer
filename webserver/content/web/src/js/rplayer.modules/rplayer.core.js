@@ -208,12 +208,18 @@ export default class RPlayer {
         this.writeVersionDate();
         this.words();
         this.keyboard();
-        this.prepareMessageData().then(
-            this.startMessages()
-        );
+        this.cssTimeModifier();
     }
 
-    startMessage(messageBranch) {
+    cssTimeModifier() {
+        if (this.cfg.cssTimeModifier !== undefined) {
+            this.prepareCssMessageData().then(
+                this.startCssMessages()
+            );
+        }
+    }
+
+    startMessages(messageBranch) {
         var messageBranch;
         var worker = new Worker("./../src/js/rplayer.workers/rplayer.messageOnTime.worker.js");
         var that = this;
@@ -230,33 +236,33 @@ export default class RPlayer {
 
         worker.onmessage = function(e) {
             var message = e.data;
-            $(message.cssSelector).css(message.command);
+            $(message.target).css(message.command);
         }
     }
     
-    startMessages() {
+    startCssMessages() {
         for (const [key, value] of Object.entries(this.cssMesages)) {
-            this.startMessage(value);
+            this.startMessages(value);
         }
     }
     
-    async prepareMessageData() {
+    async prepareCssMessageData() {
         var selectors = [];
         
-        for (const [key, value] of Object.entries(this.cfg.cssTimeModyfier.commandsInTime)) {
+        for (const [key, value] of Object.entries(this.cfg.cssTimeModifier.commandsInTime)) {
             if (selectors[value.selectorsKey] === undefined) {
                 selectors[value.selectorsKey] = [];
-                selectors[value.selectorsKey]["cssSelector"] = this.cfg.cssTimeModyfier.selectors[value.selectorsKey];
+                selectors[value.selectorsKey]["target"] = this.cfg.cssTimeModifier.selectors[value.selectorsKey];
                 selectors[value.selectorsKey]["commands"] = [];
             }
 
             // entrance
             selectors[value.selectorsKey]["commands"][key] = [];
             selectors[value.selectorsKey]["commands"][key]["time"] = parseInt(key);
-            if (this.cfg.cssTimeModyfier.css[value.cssKey]) {
-                selectors[value.selectorsKey]["commands"][key]["css"] = this.cfg.cssTimeModyfier.css[value.cssKey].entrance;
+            if (this.cfg.cssTimeModifier.css[value.cssKey]) {
+                selectors[value.selectorsKey]["commands"][key]["css"] = this.cfg.cssTimeModifier.css[value.cssKey].entrance;
             } else {
-                selectors[value.selectorsKey]["commands"][key]["css"] = this.cfg.cssTimeModyfier.css[this.cfg.cssTimeModyfier.default.cssKey].entrance
+                selectors[value.selectorsKey]["commands"][key]["css"] = this.cfg.cssTimeModifier.css[this.cfg.cssTimeModifier.default.cssKey].entrance
             }
 
             // outgoing
@@ -264,12 +270,12 @@ export default class RPlayer {
             if (value.length !== undefined) {
                 selectors[value.selectorsKey]["commands"][parseInt(key) + value.length]["time"] = parseInt(parseInt(key) + value.length);
             } else {
-                selectors[value.selectorsKey]["commands"][parseInt(key) + value.length]["time"] = parseInt(parseInt(key) + this.cfg.cssTimeModyfier.default.length);
+                selectors[value.selectorsKey]["commands"][parseInt(key) + value.length]["time"] = parseInt(parseInt(key) + this.cfg.cssTimeModifier.default.length);
             }
-            if (this.cfg.cssTimeModyfier.css[value.cssKey]) {
-                selectors[value.selectorsKey]["commands"][parseInt(key) + value.length]["css"] = this.cfg.cssTimeModyfier.css[value.cssKey].outgoing;
+            if (this.cfg.cssTimeModifier.css[value.cssKey]) {
+                selectors[value.selectorsKey]["commands"][parseInt(key) + value.length]["css"] = this.cfg.cssTimeModifier.css[value.cssKey].outgoing;
             } else {
-                selectors[value.selectorsKey]["commands"][parseInt(key) + value.length]["css"] = this.cfg.cssTimeModyfier.css[this.cfg.cssTimeModyfier.default.cssKey].outgoing;
+                selectors[value.selectorsKey]["commands"][parseInt(key) + value.length]["css"] = this.cfg.cssTimeModifier.css[this.cfg.cssTimeModifier.default.cssKey].outgoing;
             }
 
             // fix array keys

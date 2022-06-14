@@ -40,7 +40,7 @@ export default class RPlayerConf {
         console.log("[RPlayer]","Config loaded.");
 
         this.conf = {
-            configVersion: 2,
+            configVersion: 3,
             description: "Yatsu v1 MIDI experimental v1",
             app: {
                 name: "RPlayer",
@@ -60,9 +60,6 @@ export default class RPlayerConf {
                         backgroundImage: "url('./media/images/dreamer_album.jpg')",
                         favicon: "./favicon.ico",
                     },
-                    cssTimeModyfier: {
-                        consoleLog: false
-                    }
                 },
                 localization: {
                     lang: "en",
@@ -1971,7 +1968,7 @@ export default class RPlayerConf {
                     },
                 }
             },
-            "cssTimeModyfier": {
+            "cssTimeModifier": {
                 "selectors": {
                     "nolan": "img[src^=\"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUG\"]",
                     "jurta": "img[src^=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAY\"]",
