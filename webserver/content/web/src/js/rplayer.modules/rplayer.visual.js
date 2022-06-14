@@ -30,16 +30,13 @@
  * SOFTWARE.
  */
 
-import QuickObject from "./../rplayer.workers/rplayer.quickobject.worker.js";
 export default class RPlayerVisual {
     constructor(rplayerObj,QrCode) {
         this.rplayerObj = rplayerObj;
 
-        // design config
         this.fadeoutTime = 789;
         this.fadeinTime  = 1789;
 
-        // QR
         this.QrCod = new QrCode(0,'H');
 
         this.init();
@@ -48,7 +45,7 @@ export default class RPlayerVisual {
 
     init() {
         var that = this;
-        this.putFavicon(); // maybe better place, who knows...
+        this.putFavicon();
         
         this.ticker = new Array;
         this.timerSecs = 0;
@@ -75,12 +72,6 @@ export default class RPlayerVisual {
         this.buttons();
         this.setBackground();
         this.putMiniIconsFront();
-    }
-
-    initAfterDimmer() {
-        this.prepareMessageData().then(
-            this.startMessages()
-        );
     }
     
     putFavicon() {
@@ -120,7 +111,6 @@ export default class RPlayerVisual {
         if (window.self == window.top) {
             window.history.pushState({}, '', url);
         }
-        // console.log(window.location);
     }
 
     setBackground() {
@@ -272,87 +262,11 @@ export default class RPlayerVisual {
             }
         })
     }
-
-    async prepareMessageData() {
-        var selectors = [];
-        
-        for (const [key, value] of Object.entries(this.cfg.cssTimeModyfier.commandsInTime)) {
-            if (selectors[value.selectorsKey] === undefined) {
-                selectors[value.selectorsKey] = [];
-                selectors[value.selectorsKey]["cssSelector"] = this.cfg.cssTimeModyfier.selectors[value.selectorsKey];
-                selectors[value.selectorsKey]["commands"] = [];
-            }
-
-            // entrance
-            selectors[value.selectorsKey]["commands"][key] = [];
-            selectors[value.selectorsKey]["commands"][key]["time"] = parseInt(key);
-            if (this.cfg.cssTimeModyfier.css[value.cssKey]) {
-                selectors[value.selectorsKey]["commands"][key]["css"] = this.cfg.cssTimeModyfier.css[value.cssKey].entrance;
-            } else {
-                selectors[value.selectorsKey]["commands"][key]["css"] = this.cfg.cssTimeModyfier.css[this.cfg.cssTimeModyfier.default.cssKey].entrance
-            }
-
-            // outgoing
-            selectors[value.selectorsKey]["commands"][parseInt(key) + value.length] = [];
-            if (value.length !== undefined) {
-                selectors[value.selectorsKey]["commands"][parseInt(key) + value.length]["time"] = parseInt(parseInt(key) + value.length);
-            } else {
-                selectors[value.selectorsKey]["commands"][parseInt(key) + value.length]["time"] = parseInt(parseInt(key) + this.cfg.cssTimeModyfier.default.length);
-            }
-            if (this.cfg.cssTimeModyfier.css[value.cssKey]) {
-                selectors[value.selectorsKey]["commands"][parseInt(key) + value.length]["css"] = this.cfg.cssTimeModyfier.css[value.cssKey].outgoing;
-            } else {
-                selectors[value.selectorsKey]["commands"][parseInt(key) + value.length]["css"] = this.cfg.cssTimeModyfier.css[this.cfg.cssTimeModyfier.default.cssKey].outgoing;
-            }
-
-            // fix array keys
-            var fixedKeysArray = [];
-            var i = 0;
-            for (const [key2, value2] of Object.entries(selectors[value.selectorsKey].commands)) {
-                fixedKeysArray[i] = value2;
-                i += 1;
-            }
-            selectors[value.selectorsKey].commands = fixedKeysArray;
-        }
-        this.cssMesages = selectors;
-        return Promise.resolve(selectors);
-    }
-
-    startMessages() {
-        for (const [key, value] of Object.entries(this.cssMesages)) {
-            this.startMessage(value);
-        }
-    }
-
-    startMessage(messageBranch) {
-        var messageBranch;
-        var worker = new Worker("./../src/js/rplayer.workers/rplayer.messageOnTime.worker.js");
-        var that = this;
-
-        worker.postMessage({
-            branch: messageBranch
-        });
-
-        setInterval(function() {
-            worker.postMessage({
-                currentTime: that.rplayerObj.audioObject.currentTime
-            });
-        }, 1);
-
-        worker.onmessage = function(e) {
-            var message = e.data;
-            $(message.cssSelector).css(message.command);
-        }
-    }
     
     dimmerFullscreen() {
         if ($(".rplayerTrackList").html().length > 0) {
             clearInterval(this.ticker["checkFirstLoading"]);
 
-            // init after dimmer
-            this.initAfterDimmer();
-            
-            // scroll top
             $('html, body').animate({
                 scrollTop: top
             },500);
@@ -383,13 +297,12 @@ export default class RPlayerVisual {
                 }
             });
         }
-        // console.log($(".rplayerTrackList").html());
     }
 
     seekersInfo() {
-        var lastVolume = false; // fix for online translator ;-)
+        var lastVolume = false;
         this.infoInterval = setInterval(function() {
-            // console.log(volumeTggleData);
+
             var volumeTggleData = Math.round($(".rplayerVolFader").val() / 10) / 1000 + "%";
             var pointPosition = volumeTggleData.indexOf(".");
             
@@ -406,9 +319,7 @@ export default class RPlayerVisual {
                 lastVolume = $(".rplayerVolFader").val();
             }
 
-            // seeker
             var seekerPosition = Math.ceil($(".rplayerSeeker").val() - $(".rplayerSeeker").attr("min"));
-            // console.log(seekerPosition);
 
             var sMin = Math.floor(seekerPosition / 60);
             var sSec = seekerPosition - (sMin * 60);
@@ -420,7 +331,6 @@ export default class RPlayerVisual {
             var seekerInfoOutput = sMin + ":" + sSec;
 
             if ($(".rplayerSeeker").attr("data-content") != seekerInfoOutput) {
-                // console.log([$(".rplayerSeeker").attr("data-content"),seekerInfoOutput]);
                 $(".rplayerSeeker").attr("data-content",seekerInfoOutput);
                 $(".popup").html(seekerInfoOutput);
             }
@@ -445,7 +355,6 @@ export default class RPlayerVisual {
         analyser.fftSize = 256;
 
         var bufferLength = analyser.frequencyBinCount;
-        // console.log(bufferLength);
 
         var dataArray = new Uint8Array(bufferLength);
 
@@ -468,13 +377,11 @@ export default class RPlayerVisual {
 
             for (var i = 0; i < bufferLength; i++) {
                 barHeight = (dataArray[i] * (dataArray[i] / 2)) / 50;
-                // barHeight = dataArray[i];
 
-                var r = 155; // barHeight + (25 * (i/bufferLength));
-                var g = 255; // * (i/bufferLength);
-                var b = /* 5 */ 0;
+                var r = 155;
+                var g = 255;
+                var b = 0;
 
-                //     ctx.fillStyle = "rgb(" + r + "," + g + "," + b + ")";
                 ctx.fillStyle = "#1e70bf";
                 ctx.fillRect(x, HEIGHT - (barHeight), barWidth, barHeight);
 
@@ -493,7 +400,6 @@ export default class RPlayerVisual {
         var shakingBrutality = .1;
 
         this.motion3dTicker = setInterval(function() {
-            // console.log("ahoj");
 
             $("#rplayer").css({
                 transform: "perspective(5em) rotateX(" + (Math.sin(i / 222) * -4 * shakingBrutality) + "deg) rotateY(" + (Math.sin(i / 126) * -4 * shakingBrutality) + "deg) rotateZ(" + (Math.sin(i / 635) * -16 * shakingBrutality) + "deg)"

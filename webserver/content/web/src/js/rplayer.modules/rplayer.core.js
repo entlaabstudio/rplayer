@@ -42,6 +42,7 @@ export default class RPlayer {
 
         this.refreshPlayerOnInitTimeout();
 
+        this.cfg                   = rplayerCfg.conf;
         this.seekingNow            = false;
         this.seekerInit            = true;
         this.rewindToThisTrackTime = 2;
@@ -207,6 +208,81 @@ export default class RPlayer {
         this.writeVersionDate();
         this.words();
         this.keyboard();
+        this.prepareMessageData().then(
+            this.startMessages()
+        );
+    }
+
+    startMessage(messageBranch) {
+        var messageBranch;
+        var worker = new Worker("./../src/js/rplayer.workers/rplayer.messageOnTime.worker.js");
+        var that = this;
+
+        worker.postMessage({
+            branch: messageBranch
+        });
+
+        setInterval(function() {
+            worker.postMessage({
+                currentTime: that.audioObject.currentTime
+            });
+        }, 1);
+
+        worker.onmessage = function(e) {
+            var message = e.data;
+            $(message.cssSelector).css(message.command);
+        }
+    }
+    
+    startMessages() {
+        for (const [key, value] of Object.entries(this.cssMesages)) {
+            this.startMessage(value);
+        }
+    }
+    
+    async prepareMessageData() {
+        var selectors = [];
+        
+        for (const [key, value] of Object.entries(this.cfg.cssTimeModyfier.commandsInTime)) {
+            if (selectors[value.selectorsKey] === undefined) {
+                selectors[value.selectorsKey] = [];
+                selectors[value.selectorsKey]["cssSelector"] = this.cfg.cssTimeModyfier.selectors[value.selectorsKey];
+                selectors[value.selectorsKey]["commands"] = [];
+            }
+
+            // entrance
+            selectors[value.selectorsKey]["commands"][key] = [];
+            selectors[value.selectorsKey]["commands"][key]["time"] = parseInt(key);
+            if (this.cfg.cssTimeModyfier.css[value.cssKey]) {
+                selectors[value.selectorsKey]["commands"][key]["css"] = this.cfg.cssTimeModyfier.css[value.cssKey].entrance;
+            } else {
+                selectors[value.selectorsKey]["commands"][key]["css"] = this.cfg.cssTimeModyfier.css[this.cfg.cssTimeModyfier.default.cssKey].entrance
+            }
+
+            // outgoing
+            selectors[value.selectorsKey]["commands"][parseInt(key) + value.length] = [];
+            if (value.length !== undefined) {
+                selectors[value.selectorsKey]["commands"][parseInt(key) + value.length]["time"] = parseInt(parseInt(key) + value.length);
+            } else {
+                selectors[value.selectorsKey]["commands"][parseInt(key) + value.length]["time"] = parseInt(parseInt(key) + this.cfg.cssTimeModyfier.default.length);
+            }
+            if (this.cfg.cssTimeModyfier.css[value.cssKey]) {
+                selectors[value.selectorsKey]["commands"][parseInt(key) + value.length]["css"] = this.cfg.cssTimeModyfier.css[value.cssKey].outgoing;
+            } else {
+                selectors[value.selectorsKey]["commands"][parseInt(key) + value.length]["css"] = this.cfg.cssTimeModyfier.css[this.cfg.cssTimeModyfier.default.cssKey].outgoing;
+            }
+
+            // fix array keys
+            var fixedKeysArray = [];
+            var i = 0;
+            for (const [key2, value2] of Object.entries(selectors[value.selectorsKey].commands)) {
+                fixedKeysArray[i] = value2;
+                i += 1;
+            }
+            selectors[value.selectorsKey].commands = fixedKeysArray;
+        }
+        this.cssMesages = selectors;
+        return Promise.resolve(selectors);
     }
 
     refreshPlayerOnInitTimeout() {
