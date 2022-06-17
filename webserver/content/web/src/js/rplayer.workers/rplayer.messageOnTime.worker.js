@@ -55,12 +55,12 @@ function returnMessage() {
     if (lastKeyNow.keyNow != -1) {
         postMessage({
             target: target,
-            command: commands[lastKeyNow.keyNow].css
+            command: commands[lastKeyNow.keyNow]
         });
     } else {
         postMessage({
             target: target,
-            command: commands[0].css
+            command: commands[0]
         });
     }
 }

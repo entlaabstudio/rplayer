@@ -206,9 +206,45 @@ export default class RPlayer {
         this.lockScreenInfo();
         this.showLoading();
         this.writeVersionDate();
+        this.lyrics();
         this.words();
         this.keyboard();
         this.cssTimeModifier();
+    }
+
+    lyrics() {
+        this.prepareLyricsMessageData().then(
+            this.startLyricsMessages()
+        );
+    }
+
+    async prepareLyricsMessageData() {
+        var commands = [];
+        var timeStart;
+        var i = 0;
+
+        for(const[key, value] of Object.entries(this.cfg.album.tracks)) {
+            timeStart = value.timeStart * 1000;
+            if (value.words !== undefined) {
+                for(const[key2, value2] of Object.entries(value.words)) {
+                    commands[i] = {
+                        time: parseInt(key2) + timeStart,
+                        message: value2
+                    }
+                    i += 1; 
+                }
+            }
+        }
+
+        var branch = {
+            target: "lyrics", // anything for worker
+            commands: commands
+        };
+        console.log(branch);
+    }
+
+    startLyricsMessages() {
+        console.log("START LYRICS MESSAGES");
     }
 
     cssTimeModifier() {
@@ -236,7 +272,7 @@ export default class RPlayer {
 
         worker.onmessage = function(e) {
             var message = e.data;
-            $(message.target).css(message.command);
+            $(message.target).css(message.command.css);
         }
     }
     
