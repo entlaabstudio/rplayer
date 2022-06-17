@@ -207,14 +207,14 @@ export default class RPlayer {
         this.showLoading();
         this.writeVersionDate();
         this.lyrics();
-        this.words();
         this.keyboard();
         this.cssTimeModifier();
     }
 
     lyrics() {
         this.prepareLyricsMessageData().then(
-            this.startLyricsMessages()
+            this.startLyricsMessages(),
+            this.lyricsPlay()
         );
     }
 
@@ -769,7 +769,7 @@ export default class RPlayer {
         // then dispatches event to window
     }
 
-    getCurrentWord() {
+    getCurrentPhrase() {
         try {
             var offset = (this.audioObject.currentTime * 1000) - this.lyricsActualPhrase.time; 
             if (offset >= 0) {
@@ -786,7 +786,7 @@ export default class RPlayer {
         }
     }
     
-    words() {
+    lyricsPlay() {
         var that          = this;
         var lastWord      = false; // fix for online translation
         var lastTime      = false;
@@ -806,16 +806,16 @@ export default class RPlayer {
                 }
                 
                 if (
-                    that.getCurrentWord()["offset"] !== undefined
-                    && that.getCurrentWord()["offset"] < that.rplayerCfg.conf.app.preferences.words.titleMaxTime
+                    that.getCurrentPhrase()["offset"] !== undefined
+                    && that.getCurrentPhrase()["offset"] < that.rplayerCfg.conf.app.preferences.words.titleMaxTime
                 ) {
                     if ($(that.rplayerCfg.conf.app.htmlSelectors.controls.wordsButton + " .align").parent().hasClass("primary")) {
                         $(that.rplayerCfg.conf.app.htmlSelectors.mainWindow + ' .words').css({
                             display: "block"
                         });
                         
-                        if (lastWord != that.removeHtml(that.getCurrentWord()["text"])) {
-                            lastWord = that.removeHtml(that.getCurrentWord()["text"]);
+                        if (lastWord != that.removeHtml(that.getCurrentPhrase()["text"])) {
+                            lastWord = that.removeHtml(that.getCurrentPhrase()["text"]);
                             $(that.rplayerCfg.conf.app.htmlSelectors.mainWindow + ' .words').html(lastWord);
                         }
                     } else {
@@ -836,7 +836,7 @@ export default class RPlayer {
             }
 
             $(that.rplayerCfg.conf.app.htmlSelectors.mainWindow + ' .words').css({
-                opacity: 1 - (that.getCurrentWord()["offset"] / 10000)
+                opacity: 1 - (that.getCurrentPhrase()["offset"] / 10000)
             });
         },1);
     }

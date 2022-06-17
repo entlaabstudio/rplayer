@@ -515,7 +515,7 @@ export default class RPlayerInfo {
             if ($("#rplayerInfo").css("opacity") != "0") {
                 that.transportInteractiveIcons();
                 that.setInfoForSelectedTrack();
-                that.wordsHighlight();
+                that.lyricsHighlight();
             }
         },1);
         this.tickerSlow = setInterval(function() {
@@ -526,12 +526,12 @@ export default class RPlayerInfo {
         },468);
     }
 
-    wordsHighlight() {
-        var currentWordTimekey = this.rplayerObj.getCurrentWord()["time"];
+    lyricsHighlight() {
+        var currentWordTimekey = this.rplayerObj.getCurrentPhrase()["time"];
         if (this.lastWordTimekey != currentWordTimekey) {
             $("#rplayerInfo .rplayerInfoWord").removeClass("highlightedWord");
-            if (this.rplayerObj.getCurrentWord()["text"] !== undefined) {
-                console.log("[RPlayerInfoModule]",currentWordTimekey,this.rplayerObj.getCurrentWord()["text"]);
+            if (this.rplayerObj.getCurrentPhrase()["text"] !== undefined) {
+                console.log("[RPlayerInfoModule]",currentWordTimekey,this.rplayerObj.getCurrentPhrase()["text"]);
             }
             this.lastWordTimekey = currentWordTimekey;
         }
