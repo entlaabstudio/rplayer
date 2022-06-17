@@ -72,6 +72,7 @@ export default class RPlayer {
         this.translated            = [];
         this.lastActiveTrack       = false;
         this.QuickObj              = [];
+        this.cssModifierActualCss  = [];
 
         this.playAfterCriticalStreamError = false;
 
@@ -207,8 +208,8 @@ export default class RPlayer {
         this.writeVersionDate();
         this.lyrics();
         this.slideShow();
-        this.keyboard();
         this.cssTimeModifier();
+        this.keyboard();
     }
 
     lyrics() {
@@ -311,6 +312,10 @@ export default class RPlayer {
         // css Modifier
         if (data.command.css !== undefined) {
             $(data.target).css(data.command.css);
+            this.cssModifierActualCss[data.target] = {
+                time: data.command.time,
+                css: data.command.css
+            }
         }
 
         // Lyrics
@@ -333,9 +338,19 @@ export default class RPlayer {
     }
     
     startCssMessages() {
+        var that = this;
+        
         for (const [key, value] of Object.entries(this.cssMesages)) {
             this.startMessages(value);
         }
+
+        $("body").on("click", function() {
+            setTimeout(function() {
+                for (const [key, value] of Object.entries(that.cssModifierActualCss)) {
+                    $(key).css(value.css);
+                }
+            }, 500);
+        });
     }
     
     async prepareCssMessageData() {
