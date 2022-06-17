@@ -157,13 +157,15 @@ export default class RPlayerInfo {
         if ($("#rplayerInfoTemp").scrollTop() > 0) {
             if ($("#rplayerInfo .transport").css("opacity") == "1") {
                 $("#rplayerInfo .transport").css({
-                    opacity: ".4"
+                    opacity: ".4",
+                    transition: "all 1s ease"
                 },500);
             }
         } else {
             if ($("#rplayerInfo .transport").css("opacity") != "1") {
                 $("#rplayerInfo .transport").css({
-                    opacity: "1"
+                    opacity: "1",
+                    transition: "all 1s ease"
                 },500);
             }
         }
