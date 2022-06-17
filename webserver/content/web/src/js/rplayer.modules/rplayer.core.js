@@ -71,7 +71,6 @@ export default class RPlayer {
         this.curTrackId;
         this.translated            = [];
         this.lastActiveTrack       = false;
-        this.QuickObj              = [];
         this.cssModifierActualCss  = [];
 
         this.playAfterCriticalStreamError = false;
