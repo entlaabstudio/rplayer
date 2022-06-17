@@ -229,7 +229,7 @@ export default class RPlayer {
                 for(const[key2, value2] of Object.entries(value.words)) {
                     commands[i] = {
                         time: parseInt(key2) + timeStart,
-                        message: value2
+                        lyrics: value2
                     }
                     i += 1; 
                 }
@@ -241,10 +241,13 @@ export default class RPlayer {
             commands: commands
         };
         console.log(branch);
+        this.lyricsMessagesBranch = branch;
+        return Promise.resolve(branch);
     }
 
     startLyricsMessages() {
         console.log("START LYRICS MESSAGES");
+        this.startMessages(this.lyricsMessagesBranch);
     }
 
     cssTimeModifier() {
@@ -257,6 +260,7 @@ export default class RPlayer {
 
     startMessages(messageBranch) {
         var messageBranch;
+        console.log(messageBranch);
         var worker = new Worker("./../src/js/rplayer.workers/rplayer.messageOnTime.worker.js");
         var that = this;
 
@@ -272,7 +276,24 @@ export default class RPlayer {
 
         worker.onmessage = function(e) {
             var message = e.data;
-            $(message.target).css(message.command.css);
+            that.timeMessageExecute(message);
+        }
+    }
+
+    timeMessageExecute(data) {
+        var data;
+        
+        // css Modifier
+        if (data.command.css !== undefined) {
+            $(data.target).css(data.command.css);
+        }
+
+        // Lyrics
+        if (data.command.lyrics !== undefined) {
+            this.lyricsActualPhrase = {
+                time: data.command.time,
+                text: data.command.lyrics
+            }
         }
     }
     
@@ -750,20 +771,13 @@ export default class RPlayer {
 
     getCurrentWord() {
         try {
-            if (this.lastCurTrack != this.curTrackId) {
-                this.QuickObj["words"] = new QuickObject(this.rplayerCfg.conf.album.tracks[this.curTrackId].words);
-                this.lastCurTrack = this.curTrackId;
-            }
-            var time = Math.round(this.audioObject.currentTime * 1000) - this.seekerStartPosition * 1000;
-            var currentWord = new Array;
-            var founded = this.QuickObj["words"].find(time);
-            if (time >= founded.key) {
-                currentWord["time"]   = founded.key;
-                currentWord["offset"] = time - founded.key;
-                currentWord["text"]   = founded.value;
-            }
-            if (currentWord["offset"] !== undefined) {
-                return currentWord;
+            var offset = (this.audioObject.currentTime * 1000) - this.lyricsActualPhrase.time; 
+            if (offset >= 0) {
+                return {
+                    time: this.lyricsActualPhrase.time,
+                    offset: offset,
+                    text: this.lyricsActualPhrase.text
+                }
             } else {
                 return false;
             }

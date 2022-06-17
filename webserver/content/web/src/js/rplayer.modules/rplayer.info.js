@@ -344,9 +344,13 @@ export default class RPlayerInfo {
                 .rplayerObj.rplayerCfg.conf.album
                 .tracks[this.rplayerObj.trackInfoSelected]
                 .words;
+            var startSongTime = this
+                .rplayerObj.rplayerCfg.conf.album
+                .tracks[this.rplayerObj.trackInfoSelected]
+                .timeStart * 1000;
             html = "<p>";
             this.rplayerObj.obj2array(songInfoHtml).forEach(element => {
-                html += "<span class='rplayerInfoWord' data-timekey='" + element[0] + "'>" + element[1] + "</span><br>";
+                html += "<span class='rplayerInfoWord' data-timekey='" + (element[0] + startSongTime) + "'>" + element[1] + "</span><br>";
             });
             html += "</p>";
         } catch (error) {
