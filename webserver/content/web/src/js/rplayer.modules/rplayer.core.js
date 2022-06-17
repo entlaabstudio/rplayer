@@ -30,7 +30,6 @@
  * SOFTWARE.
  */
 
-import QuickObject from "./../rplayer.workers/rplayer.quickobject.worker.js";
 export default class RPlayer {
     
     constructor(

@@ -30,7 +30,6 @@
  * SOFTWARE.
  */
 
-import QuickObject from "./../rplayer.workers/rplayer.quickobject.worker.js";
 export default class RPlayer {
     
     constructor(
@@ -61,7 +60,6 @@ export default class RPlayer {
                 that.ticker();
                 that.buttons();
                 clearInterval(int);
-                that.QuickObj = new QuickObject(that.rplayerCfg.slideShow.pictures);
             }
         },372);
     }
