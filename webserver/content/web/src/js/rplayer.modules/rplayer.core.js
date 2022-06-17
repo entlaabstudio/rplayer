@@ -207,17 +207,48 @@ export default class RPlayer {
         this.showLoading();
         this.writeVersionDate();
         this.lyrics();
+        this.slideShow();
         this.keyboard();
         this.cssTimeModifier();
     }
 
     lyrics() {
         this.prepareLyricsMessageData().then(
-            this.startLyricsMessages(),
+            this.startMessages(this.lyricsMessagesBranch),
             this.lyricsPlay()
         );
     }
 
+    slideShow() {
+        this.prepareSlideshowMessageData().then(
+            this.startMessages(this.slideshowMessagesBranch)
+        );
+    }
+
+    async prepareSlideshowMessageData() {
+        var commands = [];
+        var i = 0;
+
+        if (this.cfg.slideShow !== undefined) {
+            for(const[key, value] of Object.entries(this.cfg.slideShow.pictures)) {
+                commands[i] = {
+                    time: parseInt(key),
+                    src: value.src,
+                    mediaName: value.mediaName
+                }
+                i += 1; 
+            }
+        }
+
+        var branch = {
+            target: "slideShow", // anything for worker
+            commands: commands
+        };
+        console.log(branch);
+        this.slideshowMessagesBranch = branch;
+        return Promise.resolve(branch);
+    }
+    
     async prepareLyricsMessageData() {
         var commands = [];
         var timeStart;
@@ -243,11 +274,6 @@ export default class RPlayer {
         console.log(branch);
         this.lyricsMessagesBranch = branch;
         return Promise.resolve(branch);
-    }
-
-    startLyricsMessages() {
-        console.log("START LYRICS MESSAGES");
-        this.startMessages(this.lyricsMessagesBranch);
     }
 
     cssTimeModifier() {
@@ -294,6 +320,16 @@ export default class RPlayer {
                 time: data.command.time,
                 text: data.command.lyrics
             }
+        }
+
+        // SlideShow
+        if (data.command.mediaName !== undefined) {
+            this.slideshowActualImage = {
+                time: data.command.time,
+                mediaName: data.command.mediaName,
+                src: data.command.src
+            }
+            console.log(data);
         }
     }
     
@@ -767,6 +803,24 @@ export default class RPlayer {
         }, true);
         // the last option dispatches the event to the listener first,
         // then dispatches event to window
+    }
+    
+    getCurrentSlideshowImage() {
+        try {
+            var offset = (this.audioObject.currentTime * 1000) - this.slideshowActualImage.time; 
+            if (offset >= 0) {
+                return {
+                    time: this.slideshowActualImage.time,
+                    offset: offset,
+                    src: this.slideshowActualImage.src,
+                    mediaName: this.slideshowActualImage.mediaName
+                }
+            } else {
+                return false;
+            }
+        } catch (error) {
+            return false;
+        }
     }
 
     getCurrentPhrase() {

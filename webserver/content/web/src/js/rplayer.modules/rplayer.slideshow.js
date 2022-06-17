@@ -90,37 +90,16 @@ export default class RPlayer {
     }
 
     imageChanger() {
-        if (this.lastImage !== this.getCurrentImage()["time"]) {
-            $("#rplayerSlideshow img:not([data-time='" + this.getCurrentImage()["time"] + "'])").css({
+        if (this.lastImage !== this.rplayerObj.getCurrentSlideshowImage()["time"]) {
+            $("#rplayerSlideshow img:not([data-time='" + this.rplayerObj.getCurrentSlideshowImage()["time"] + "'])").css({
                 transform: "perspective(50em) scale(0.5) rotateX(0deg) rotateY(-10deg) rotateZ(-10deg) translateX(-10em)",
                 opacity: "0"
             },1000);
-            $("#rplayerSlideshow img[data-time='" + this.getCurrentImage()["time"] + "']").css({
+            $("#rplayerSlideshow img[data-time='" + this.rplayerObj.getCurrentSlideshowImage()["time"] + "']").css({
                 transform: "perspective(50em) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0em)",
                 opacity: "1"
             },1000);
-            this.lastImage = this.getCurrentImage()["time"];
-        }
-    }
-
-    getCurrentImage() {
-        try {
-            var time = this.rplayerObj.audioObject.currentTime * 1000;
-            var currentImage = new Array;
-            var founded = this.QuickObj.find(time);
-
-            currentImage["time"]        = parseInt(founded.key);
-            currentImage["offset"]      = time - founded.key;
-            currentImage["src"]         = founded.value.src;
-            currentImage["mediaName"]   = founded.value.mediaName;
-            
-            if (currentImage["offset"] !== undefined) {
-                return currentImage;
-            } else {
-                return false;
-            }
-        } catch (error) {
-            return false;
+            this.lastImage = this.rplayerObj.getCurrentSlideshowImage()["time"];
         }
     }
 
@@ -128,13 +107,13 @@ export default class RPlayer {
         var currentWord;
         
         if (this.wordsButton.hasClass("primary")) {
-            if (this.rplayerObj.getCurrentWord()) {
-                currentWord = this.rplayerObj.removeHtml(this.rplayerObj.getCurrentWord()["text"]);
+            if (this.rplayerObj.getCurrentPhrase()) {
+                currentWord = this.rplayerObj.removeHtml(this.rplayerObj.getCurrentPhrase()["text"]);
             }
             
             if (
                 currentWord === undefined ||
-                this.rplayerObj.getCurrentWord()["offset"] > this.rplayerCfg.app.preferences.words.titleMaxTime
+                this.rplayerObj.getCurrentPhrase()["offset"] > this.rplayerCfg.app.preferences.words.titleMaxTime
             ) {
                 currentWord = false;
             }
