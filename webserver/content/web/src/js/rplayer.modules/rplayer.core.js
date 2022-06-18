@@ -283,7 +283,7 @@ export default class RPlayer {
 
     startMessages(messageBranch) {
         var messageBranch;
-        var worker = new Worker("./../src/js/rplayer.workers/rplayer.messageOnTime.worker.js");
+        var worker = new Worker("./src/js/rplayer.workers/rplayer.messageOnTime.worker.js");
         var that = this;
 
         worker.postMessage({
