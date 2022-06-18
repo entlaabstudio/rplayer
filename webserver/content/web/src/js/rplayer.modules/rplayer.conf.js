@@ -392,24 +392,24 @@ export default class RPlayerConf {
                                     "<ul><li>GGD OKW Modern Fusion - the main kick</li><li>GGD Modern & Massive - 26x14 Yamaha kick</li><li>custom one shot kick sample</li></ul>" +
                                     "<div class=\"snareBlendedHeader\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Snare (blended):</div>" +
                                     "<ul><li>Nolly's Secret Sauce snare (a freebie Nolly gave out in 2019)</li><li>GGD P4 - The VK snare</li><li>GGD OKW Metal - the main snare (only the room mics)</li></ul>" +
-                                    "<strong>Toms:</strong><br>" +
+                                    "<div class=\"tom1 tom2 tom3 tom4\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Toms:</div>" +
                                     "<ul><li>GGD P4 toms</li></ul>" +
-                                    "<strong>Cymbals:</strong><br>" +
+                                    "<div class=\"midiCrashL1 midiCrashR midiCrashL2 midiSplashL midiSplashR china ride\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Cymbals:</div>" +
                                     "<ul><li>GGD P4 toms</li></ul>" +
                                     "<strong>And here's the MIDI mapping:</strong><br>" +
                                     "<table style=\"font-family: courier; border-collapse: collapse; margin-top: .5em;\">" +
                                         "<tr><td class=\"midiKick\" style=\"padding: 0 1em 0 1.5em;\">C0</td><td>Kick</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">C#0</td><td>Snare Ghost Note</td></tr>" +
                                         "<tr><td class=\"midiSnare\" style=\"padding: 0 1em 0 1.5em;\">D0</td><td>Snare Main Hit</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">A0</td><td>Rack Tom 1</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">A#0</td><td>Rack Tom 2</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">B0</td><td>Floor Tom 1</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">C1</td><td>Floor Tom 2</td></tr>" +
+                                        "<tr><td class=\"tom1\" style=\"padding: 0 1em 0 1.5em;\">A0</td><td>Rack Tom 1</td></tr>" +
+                                        "<tr><td class=\"tom2\" style=\"padding: 0 1em 0 1.5em;\">A#0</td><td>Rack Tom 2</td></tr>" +
+                                        "<tr><td class=\"tom3\" style=\"padding: 0 1em 0 1.5em;\">B0</td><td>Floor Tom 1</td></tr>" +
+                                        "<tr><td class=\"tom4\" style=\"padding: 0 1em 0 1.5em;\">C1</td><td>Floor Tom 2</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">F1</td><td>Hat Tip Tight</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">F#1</td><td>Hat Edge Tight</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">G1</td><td>Hat Tip Closed</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">G#1</td><td>Hat Edge Closed</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">A1</td><td>Hat Open 1</td></tr>" +
+                                        "<tr><td class=\"midiHihat\" style=\"padding: 0 1em 0 1.5em;\">A1</td><td>Hat Open 1</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">A#1</td><td>Hat Open 2</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">B1</td><td>Hat Open 3</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">C2</td><td>Hat Pedal</td></tr>" +
@@ -420,20 +420,20 @@ export default class RPlayerConf {
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">G2</td><td>Crash R: Choke</td></tr>" +
                                         "<tr><td class=\"midiCrashL2\" style=\"padding: 0 1em 0 1.5em;\">G#2</td><td>Crash L 2</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">A2</td><td>Crash L 2 Choke</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">C#3</td><td>Ride Bell</td></tr>" +
+                                        "<tr><td class=\"ride\" style=\"padding: 0 1em 0 1.5em;\">C#3</td><td>Ride Bell</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">D3</td><td>Ride Bow</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">F3</td><td>China</td></tr>" +
+                                        "<tr><td class=\"china\" style=\"padding: 0 1em 0 1.5em;\">F3</td><td>China</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">F#3</td><td>China: Choke</td></tr>" +
                                         "<tr><td class=\"midiSplashL\" style=\"padding: 0 1em 0 1.5em;\">C#3</td><td>Splash L</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">D4</td><td>Splash L Choke</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">D#4</td><td>Splash R</td></tr>" +
                                         "<tr><td class=\"midiSplashR\" style=\"padding: 0 1em 0 1.5em;\">E4</td><td>Splash R Choke</td></tr>" +
                                         "<tr><td class=\"midiMiniHat\" style=\"padding: 0 1em 0 1.5em;\">F4</td><td>Mini Hat</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">F#4</td><td>Stack</td></tr>" +
+                                        "<tr><td class=\"midiStack\" style=\"padding: 0 1em 0 1.5em;\">F#4</td><td>Stack</td></tr>" +
                                     "</table>",
                                 },
                                 2: {
-                                    id: "Bass",
+                                    id: "<div class=\"bassHeader\" style=\"width: min-content;\">Bass</div>",
                                     html:
                                     "<p>" +
                                     "All the bass is programmed and you can find the bass MIDI files in the /MIDI folder. " +
@@ -442,7 +442,7 @@ export default class RPlayerConf {
                                     "</p>",
                                 },
                                 3: {
-                                    id: "Guitars",
+                                    id: "<div class=\"guitarsHeader\" style=\"width: min-content;\">Guitars</div>",
                                     html:
                                     "<p>All of the guitars track on the album (rhytms, leads, drones, cleans) were recorded in my home studio (fancy way of saying \"a table and an audio interface in my living room\").</p>" +
                                     "<strong>Gear used for guitar tracking:</strong><br>" +
@@ -482,7 +482,7 @@ export default class RPlayerConf {
                                     "</table>"
                                 },
                                 4: {
-                                    id: "Synths",
+                                    id: "<div class=\"synthsHeader\" style=\"width: min-content;\">Synths</div>",
                                     html: 
                                     "<p>" +
                                         "All the extra instruments and synths on the album are programmed. Here's a list of some of the kontakt libraries used:" +
@@ -548,24 +548,24 @@ export default class RPlayerConf {
                                     "<ul><li>GGD OKW Modern Fusion - the main kick</li><li>GGD Modern & Massive - 26x14 Yamaha kick</li><li>custom one shot kick sample</li></ul>" +
                                     "<div class=\"snareBlendedHeader\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Snare (blended):</div>" +
                                     "<ul><li>Nolly's Secret Sauce snare (a freebie Nolly gave out in 2019)</li><li>GGD P4 - The VK snare</li><li>GGD OKW Metal - the main snare (only the room mics)</li></ul>" +
-                                    "<strong>Toms:</strong><br>" +
+                                    "<div class=\"tom1 tom2 tom3 tom4\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Toms:</div>" +
                                     "<ul><li>GGD P4 toms</li></ul>" +
-                                    "<strong>Cymbals:</strong><br>" +
+                                    "<div class=\"midiCrashL1 midiCrashR midiCrashL2 midiSplashL midiSplashR china ride\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Cymbals:</div>" +
                                     "<ul><li>GGD P4 toms</li></ul>" +
                                     "<strong>And here's the MIDI mapping:</strong><br>" +
                                     "<table style=\"font-family: courier; border-collapse: collapse; margin-top: .5em;\">" +
                                         "<tr><td class=\"midiKick\" style=\"padding: 0 1em 0 1.5em;\">C0</td><td>Kick</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">C#0</td><td>Snare Ghost Note</td></tr>" +
                                         "<tr><td class=\"midiSnare\" style=\"padding: 0 1em 0 1.5em;\">D0</td><td>Snare Main Hit</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">A0</td><td>Rack Tom 1</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">A#0</td><td>Rack Tom 2</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">B0</td><td>Floor Tom 1</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">C1</td><td>Floor Tom 2</td></tr>" +
+                                        "<tr><td class=\"tom1\" style=\"padding: 0 1em 0 1.5em;\">A0</td><td>Rack Tom 1</td></tr>" +
+                                        "<tr><td class=\"tom2\" style=\"padding: 0 1em 0 1.5em;\">A#0</td><td>Rack Tom 2</td></tr>" +
+                                        "<tr><td class=\"tom3\" style=\"padding: 0 1em 0 1.5em;\">B0</td><td>Floor Tom 1</td></tr>" +
+                                        "<tr><td class=\"tom4\" style=\"padding: 0 1em 0 1.5em;\">C1</td><td>Floor Tom 2</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">F1</td><td>Hat Tip Tight</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">F#1</td><td>Hat Edge Tight</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">G1</td><td>Hat Tip Closed</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">G#1</td><td>Hat Edge Closed</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">A1</td><td>Hat Open 1</td></tr>" +
+                                        "<tr><td class=\"midiHihat\" style=\"padding: 0 1em 0 1.5em;\">A1</td><td>Hat Open 1</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">A#1</td><td>Hat Open 2</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">B1</td><td>Hat Open 3</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">C2</td><td>Hat Pedal</td></tr>" +
@@ -576,20 +576,20 @@ export default class RPlayerConf {
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">G2</td><td>Crash R: Choke</td></tr>" +
                                         "<tr><td class=\"midiCrashL2\" style=\"padding: 0 1em 0 1.5em;\">G#2</td><td>Crash L 2</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">A2</td><td>Crash L 2 Choke</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">C#3</td><td>Ride Bell</td></tr>" +
+                                        "<tr><td class=\"ride\" style=\"padding: 0 1em 0 1.5em;\">C#3</td><td>Ride Bell</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">D3</td><td>Ride Bow</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">F3</td><td>China</td></tr>" +
+                                        "<tr><td class=\"china\" style=\"padding: 0 1em 0 1.5em;\">F3</td><td>China</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">F#3</td><td>China: Choke</td></tr>" +
                                         "<tr><td class=\"midiSplashL\" style=\"padding: 0 1em 0 1.5em;\">C#3</td><td>Splash L</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">D4</td><td>Splash L Choke</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">D#4</td><td>Splash R</td></tr>" +
                                         "<tr><td class=\"midiSplashR\" style=\"padding: 0 1em 0 1.5em;\">E4</td><td>Splash R Choke</td></tr>" +
                                         "<tr><td class=\"midiMiniHat\" style=\"padding: 0 1em 0 1.5em;\">F4</td><td>Mini Hat</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">F#4</td><td>Stack</td></tr>" +
+                                        "<tr><td class=\"midiStack\" style=\"padding: 0 1em 0 1.5em;\">F#4</td><td>Stack</td></tr>" +
                                     "</table>",
                                 },
                                 2: {
-                                    id: "Bass",
+                                    id: "<div class=\"bassHeader\" style=\"width: min-content;\">Bass</div>",
                                     html:
                                     "<p>" +
                                     "All the bass is programmed and you can find the bass MIDI files in the /MIDI folder. " +
@@ -598,7 +598,7 @@ export default class RPlayerConf {
                                     "</p>",
                                 },
                                 3: {
-                                    id: "Guitars",
+                                    id: "<div class=\"guitarsHeader\" style=\"width: min-content;\">Guitars</div>",
                                     html:
                                     "<p>All of the guitars track on the album (rhytms, leads, drones, cleans) were recorded in my home studio (fancy way of saying \"a table and an audio interface in my living room\").</p>" +
                                     "<strong>Gear used for guitar tracking:</strong><br>" +
@@ -638,7 +638,7 @@ export default class RPlayerConf {
                                     "</table>"
                                 },
                                 4: {
-                                    id: "Synths",
+                                    id: "<div class=\"synthsHeader\" style=\"width: min-content;\">Synths</div>",
                                     html: 
                                     "<p>" +
                                         "All the extra instruments and synths on the album are programmed. Here's a list of some of the kontakt libraries used:" +
@@ -714,24 +714,24 @@ export default class RPlayerConf {
                                     "<ul><li>GGD OKW Modern Fusion - the main kick</li><li>GGD Modern & Massive - 26x14 Yamaha kick</li><li>custom one shot kick sample</li></ul>" +
                                     "<div class=\"snareBlendedHeader\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Snare (blended):</div>" +
                                     "<ul><li>Nolly's Secret Sauce snare (a freebie Nolly gave out in 2019)</li><li>GGD P4 - The VK snare</li><li>GGD OKW Metal - the main snare (only the room mics)</li></ul>" +
-                                    "<strong>Toms:</strong><br>" +
+                                    "<div class=\"tom1 tom2 tom3 tom4\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Toms:</div>" +
                                     "<ul><li>GGD P4 toms</li></ul>" +
-                                    "<strong>Cymbals:</strong><br>" +
+                                    "<div class=\"midiCrashL1 midiCrashR midiCrashL2 midiSplashL midiSplashR china ride\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Cymbals:</div>" +
                                     "<ul><li>GGD P4 toms</li></ul>" +
                                     "<strong>And here's the MIDI mapping:</strong><br>" +
                                     "<table style=\"font-family: courier; border-collapse: collapse; margin-top: .5em;\">" +
                                         "<tr><td class=\"midiKick\" style=\"padding: 0 1em 0 1.5em;\">C0</td><td>Kick</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">C#0</td><td>Snare Ghost Note</td></tr>" +
                                         "<tr><td class=\"midiSnare\" style=\"padding: 0 1em 0 1.5em;\">D0</td><td>Snare Main Hit</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">A0</td><td>Rack Tom 1</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">A#0</td><td>Rack Tom 2</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">B0</td><td>Floor Tom 1</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">C1</td><td>Floor Tom 2</td></tr>" +
+                                        "<tr><td class=\"tom1\" style=\"padding: 0 1em 0 1.5em;\">A0</td><td>Rack Tom 1</td></tr>" +
+                                        "<tr><td class=\"tom2\" style=\"padding: 0 1em 0 1.5em;\">A#0</td><td>Rack Tom 2</td></tr>" +
+                                        "<tr><td class=\"tom3\" style=\"padding: 0 1em 0 1.5em;\">B0</td><td>Floor Tom 1</td></tr>" +
+                                        "<tr><td class=\"tom4\" style=\"padding: 0 1em 0 1.5em;\">C1</td><td>Floor Tom 2</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">F1</td><td>Hat Tip Tight</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">F#1</td><td>Hat Edge Tight</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">G1</td><td>Hat Tip Closed</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">G#1</td><td>Hat Edge Closed</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">A1</td><td>Hat Open 1</td></tr>" +
+                                        "<tr><td class=\"midiHihat\" style=\"padding: 0 1em 0 1.5em;\">A1</td><td>Hat Open 1</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">A#1</td><td>Hat Open 2</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">B1</td><td>Hat Open 3</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">C2</td><td>Hat Pedal</td></tr>" +
@@ -742,20 +742,20 @@ export default class RPlayerConf {
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">G2</td><td>Crash R: Choke</td></tr>" +
                                         "<tr><td class=\"midiCrashL2\" style=\"padding: 0 1em 0 1.5em;\">G#2</td><td>Crash L 2</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">A2</td><td>Crash L 2 Choke</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">C#3</td><td>Ride Bell</td></tr>" +
+                                        "<tr><td class=\"ride\" style=\"padding: 0 1em 0 1.5em;\">C#3</td><td>Ride Bell</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">D3</td><td>Ride Bow</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">F3</td><td>China</td></tr>" +
+                                        "<tr><td class=\"china\" style=\"padding: 0 1em 0 1.5em;\">F3</td><td>China</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">F#3</td><td>China: Choke</td></tr>" +
                                         "<tr><td class=\"midiSplashL\" style=\"padding: 0 1em 0 1.5em;\">C#3</td><td>Splash L</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">D4</td><td>Splash L Choke</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">D#4</td><td>Splash R</td></tr>" +
                                         "<tr><td class=\"midiSplashR\" style=\"padding: 0 1em 0 1.5em;\">E4</td><td>Splash R Choke</td></tr>" +
                                         "<tr><td class=\"midiMiniHat\" style=\"padding: 0 1em 0 1.5em;\">F4</td><td>Mini Hat</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">F#4</td><td>Stack</td></tr>" +
+                                        "<tr><td class=\"midiStack\" style=\"padding: 0 1em 0 1.5em;\">F#4</td><td>Stack</td></tr>" +
                                     "</table>",
                                 },
                                 3: {
-                                    id: "Bass",
+                                    id: "<div class=\"bassHeader\" style=\"width: min-content;\">Bass</div>",
                                     html:
                                     "<p>" +
                                     "All the bass is programmed and you can find the bass MIDI files in the /MIDI folder. " +
@@ -764,7 +764,7 @@ export default class RPlayerConf {
                                     "</p>",
                                 },
                                 4: {
-                                    id: "Guitars",
+                                    id: "<div class=\"guitarsHeader\" style=\"width: min-content;\">Guitars</div>",
                                     html:
                                     "<p>All of the guitars track on the album (rhytms, leads, drones, cleans) were recorded in my home studio (fancy way of saying \"a table and an audio interface in my living room\").</p>" +
                                     "<strong>Gear used for guitar tracking:</strong><br>" +
@@ -804,7 +804,7 @@ export default class RPlayerConf {
                                     "</table>"
                                 },
                                 5: {
-                                    id: "Synths",
+                                    id: "<div class=\"synthsHeader\" style=\"width: min-content;\">Synths</div>",
                                     html: 
                                     "<p>" +
                                         "All the extra instruments and synths on the album are programmed. Here's a list of some of the kontakt libraries used:" +
@@ -914,24 +914,24 @@ export default class RPlayerConf {
                                     "<ul><li>GGD OKW Modern Fusion - the main kick</li><li>GGD Modern & Massive - 26x14 Yamaha kick</li><li>custom one shot kick sample</li></ul>" +
                                     "<div class=\"snareBlendedHeader\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Snare (blended):</div>" +
                                     "<ul><li>Nolly's Secret Sauce snare (a freebie Nolly gave out in 2019)</li><li>GGD P4 - The VK snare</li><li>GGD OKW Metal - the main snare (only the room mics)</li></ul>" +
-                                    "<strong>Toms:</strong><br>" +
+                                    "<div class=\"tom1 tom2 tom3 tom4\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Toms:</div>" +
                                     "<ul><li>GGD P4 toms</li></ul>" +
-                                    "<strong>Cymbals:</strong><br>" +
+                                    "<div class=\"midiCrashL1 midiCrashR midiCrashL2 midiSplashL midiSplashR china ride\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Cymbals:</div>" +
                                     "<ul><li>GGD P4 toms</li></ul>" +
                                     "<strong>And here's the MIDI mapping:</strong><br>" +
                                     "<table style=\"font-family: courier; border-collapse: collapse; margin-top: .5em;\">" +
                                         "<tr><td class=\"midiKick\" style=\"padding: 0 1em 0 1.5em;\">C0</td><td>Kick</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">C#0</td><td>Snare Ghost Note</td></tr>" +
                                         "<tr><td class=\"midiSnare\" style=\"padding: 0 1em 0 1.5em;\">D0</td><td>Snare Main Hit</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">A0</td><td>Rack Tom 1</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">A#0</td><td>Rack Tom 2</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">B0</td><td>Floor Tom 1</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">C1</td><td>Floor Tom 2</td></tr>" +
+                                        "<tr><td class=\"tom1\" style=\"padding: 0 1em 0 1.5em;\">A0</td><td>Rack Tom 1</td></tr>" +
+                                        "<tr><td class=\"tom2\" style=\"padding: 0 1em 0 1.5em;\">A#0</td><td>Rack Tom 2</td></tr>" +
+                                        "<tr><td class=\"tom3\" style=\"padding: 0 1em 0 1.5em;\">B0</td><td>Floor Tom 1</td></tr>" +
+                                        "<tr><td class=\"tom4\" style=\"padding: 0 1em 0 1.5em;\">C1</td><td>Floor Tom 2</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">F1</td><td>Hat Tip Tight</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">F#1</td><td>Hat Edge Tight</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">G1</td><td>Hat Tip Closed</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">G#1</td><td>Hat Edge Closed</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">A1</td><td>Hat Open 1</td></tr>" +
+                                        "<tr><td class=\"midiHihat\" style=\"padding: 0 1em 0 1.5em;\">A1</td><td>Hat Open 1</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">A#1</td><td>Hat Open 2</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">B1</td><td>Hat Open 3</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">C2</td><td>Hat Pedal</td></tr>" +
@@ -942,20 +942,20 @@ export default class RPlayerConf {
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">G2</td><td>Crash R: Choke</td></tr>" +
                                         "<tr><td class=\"midiCrashL2\" style=\"padding: 0 1em 0 1.5em;\">G#2</td><td>Crash L 2</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">A2</td><td>Crash L 2 Choke</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">C#3</td><td>Ride Bell</td></tr>" +
+                                        "<tr><td class=\"ride\" style=\"padding: 0 1em 0 1.5em;\">C#3</td><td>Ride Bell</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">D3</td><td>Ride Bow</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">F3</td><td>China</td></tr>" +
+                                        "<tr><td class=\"china\" style=\"padding: 0 1em 0 1.5em;\">F3</td><td>China</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">F#3</td><td>China: Choke</td></tr>" +
                                         "<tr><td class=\"midiSplashL\" style=\"padding: 0 1em 0 1.5em;\">C#3</td><td>Splash L</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">D4</td><td>Splash L Choke</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">D#4</td><td>Splash R</td></tr>" +
                                         "<tr><td class=\"midiSplashR\" style=\"padding: 0 1em 0 1.5em;\">E4</td><td>Splash R Choke</td></tr>" +
                                         "<tr><td class=\"midiMiniHat\" style=\"padding: 0 1em 0 1.5em;\">F4</td><td>Mini Hat</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">F#4</td><td>Stack</td></tr>" +
+                                        "<tr><td class=\"midiStack\" style=\"padding: 0 1em 0 1.5em;\">F#4</td><td>Stack</td></tr>" +
                                     "</table>",
                                 },
                                 2: {
-                                    id: "Bass",
+                                    id: "<div class=\"bassHeader\" style=\"width: min-content;\">Bass</div>",
                                     html:
                                     "<p>" +
                                     "All the bass is programmed and you can find the bass MIDI files in the /MIDI folder. " +
@@ -964,7 +964,7 @@ export default class RPlayerConf {
                                     "</p>",
                                 },
                                 3: {
-                                    id: "Guitars",
+                                    id: "<div class=\"guitarsHeader\" style=\"width: min-content;\">Guitars</div>",
                                     html:
                                     "<p>All of the guitars track on the album (rhytms, leads, drones, cleans) were recorded in my home studio (fancy way of saying \"a table and an audio interface in my living room\").</p>" +
                                     "<strong>Gear used for guitar tracking:</strong><br>" +
@@ -1004,7 +1004,7 @@ export default class RPlayerConf {
                                     "</table>"
                                 },
                                 4: {
-                                    id: "Synths",
+                                    id: "<div class=\"synthsHeader\" style=\"width: min-content;\">Synths</div>",
                                     html: 
                                     "<p>" +
                                         "All the extra instruments and synths on the album are programmed. Here's a list of some of the kontakt libraries used:" +
@@ -1092,24 +1092,24 @@ export default class RPlayerConf {
                                     "<ul><li>GGD OKW Modern Fusion - the main kick</li><li>GGD Modern & Massive - 26x14 Yamaha kick</li><li>custom one shot kick sample</li></ul>" +
                                     "<div class=\"snareBlendedHeader\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Snare (blended):</div>" +
                                     "<ul><li>Nolly's Secret Sauce snare (a freebie Nolly gave out in 2019)</li><li>GGD P4 - The VK snare</li><li>GGD OKW Metal - the main snare (only the room mics)</li></ul>" +
-                                    "<strong>Toms:</strong><br>" +
+                                    "<div class=\"tom1 tom2 tom3 tom4\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Toms:</div>" +
                                     "<ul><li>GGD P4 toms</li></ul>" +
-                                    "<strong>Cymbals:</strong><br>" +
+                                    "<div class=\"midiCrashL1 midiCrashR midiCrashL2 midiSplashL midiSplashR china ride\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Cymbals:</div>" +
                                     "<ul><li>GGD P4 toms</li></ul>" +
                                     "<strong>And here's the MIDI mapping:</strong><br>" +
                                     "<table style=\"font-family: courier; border-collapse: collapse; margin-top: .5em;\">" +
                                         "<tr><td class=\"midiKick\" style=\"padding: 0 1em 0 1.5em;\">C0</td><td>Kick</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">C#0</td><td>Snare Ghost Note</td></tr>" +
                                         "<tr><td class=\"midiSnare\" style=\"padding: 0 1em 0 1.5em;\">D0</td><td>Snare Main Hit</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">A0</td><td>Rack Tom 1</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">A#0</td><td>Rack Tom 2</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">B0</td><td>Floor Tom 1</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">C1</td><td>Floor Tom 2</td></tr>" +
+                                        "<tr><td class=\"tom1\" style=\"padding: 0 1em 0 1.5em;\">A0</td><td>Rack Tom 1</td></tr>" +
+                                        "<tr><td class=\"tom2\" style=\"padding: 0 1em 0 1.5em;\">A#0</td><td>Rack Tom 2</td></tr>" +
+                                        "<tr><td class=\"tom3\" style=\"padding: 0 1em 0 1.5em;\">B0</td><td>Floor Tom 1</td></tr>" +
+                                        "<tr><td class=\"tom4\" style=\"padding: 0 1em 0 1.5em;\">C1</td><td>Floor Tom 2</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">F1</td><td>Hat Tip Tight</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">F#1</td><td>Hat Edge Tight</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">G1</td><td>Hat Tip Closed</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">G#1</td><td>Hat Edge Closed</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">A1</td><td>Hat Open 1</td></tr>" +
+                                        "<tr><td class=\"midiHihat\" style=\"padding: 0 1em 0 1.5em;\">A1</td><td>Hat Open 1</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">A#1</td><td>Hat Open 2</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">B1</td><td>Hat Open 3</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">C2</td><td>Hat Pedal</td></tr>" +
@@ -1120,20 +1120,20 @@ export default class RPlayerConf {
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">G2</td><td>Crash R: Choke</td></tr>" +
                                         "<tr><td class=\"midiCrashL2\" style=\"padding: 0 1em 0 1.5em;\">G#2</td><td>Crash L 2</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">A2</td><td>Crash L 2 Choke</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">C#3</td><td>Ride Bell</td></tr>" +
+                                        "<tr><td class=\"ride\" style=\"padding: 0 1em 0 1.5em;\">C#3</td><td>Ride Bell</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">D3</td><td>Ride Bow</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">F3</td><td>China</td></tr>" +
+                                        "<tr><td class=\"china\" style=\"padding: 0 1em 0 1.5em;\">F3</td><td>China</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">F#3</td><td>China: Choke</td></tr>" +
                                         "<tr><td class=\"midiSplashL\" style=\"padding: 0 1em 0 1.5em;\">C#3</td><td>Splash L</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">D4</td><td>Splash L Choke</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">D#4</td><td>Splash R</td></tr>" +
                                         "<tr><td class=\"midiSplashR\" style=\"padding: 0 1em 0 1.5em;\">E4</td><td>Splash R Choke</td></tr>" +
                                         "<tr><td class=\"midiMiniHat\" style=\"padding: 0 1em 0 1.5em;\">F4</td><td>Mini Hat</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">F#4</td><td>Stack</td></tr>" +
+                                        "<tr><td class=\"midiStack\" style=\"padding: 0 1em 0 1.5em;\">F#4</td><td>Stack</td></tr>" +
                                     "</table>",
                                 },
                                 4: {
-                                    id: "Bass",
+                                    id: "<div class=\"bassHeader\" style=\"width: min-content;\">Bass</div>",
                                     html:
                                     "<p>" +
                                     "All the bass is programmed and you can find the bass MIDI files in the /MIDI folder. " +
@@ -1142,7 +1142,7 @@ export default class RPlayerConf {
                                     "</p>",
                                 },
                                 5: {
-                                    id: "Guitars",
+                                    id: "<div class=\"guitarsHeader\" style=\"width: min-content;\">Guitars</div>",
                                     html:
                                     "<p>All of the guitars track on the album (rhytms, leads, drones, cleans) were recorded in my home studio (fancy way of saying \"a table and an audio interface in my living room\").</p>" +
                                     "<strong>Gear used for guitar tracking:</strong><br>" +
@@ -1182,7 +1182,7 @@ export default class RPlayerConf {
                                     "</table>"
                                 },
                                 6: {
-                                    id: "Synths",
+                                    id: "<div class=\"synthsHeader\" style=\"width: min-content;\">Synths</div>",
                                     html: 
                                     "<p>" +
                                         "All the extra instruments and synths on the album are programmed. Here's a list of some of the kontakt libraries used:" +
@@ -1291,24 +1291,24 @@ export default class RPlayerConf {
                                     "<ul><li>GGD OKW Modern Fusion - the main kick</li><li>GGD Modern & Massive - 26x14 Yamaha kick</li><li>custom one shot kick sample</li></ul>" +
                                     "<div class=\"snareBlendedHeader\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Snare (blended):</div>" +
                                     "<ul><li>Nolly's Secret Sauce snare (a freebie Nolly gave out in 2019)</li><li>GGD P4 - The VK snare</li><li>GGD OKW Metal - the main snare (only the room mics)</li></ul>" +
-                                    "<strong>Toms:</strong><br>" +
+                                    "<div class=\"tom1 tom2 tom3 tom4\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Toms:</div>" +
                                     "<ul><li>GGD P4 toms</li></ul>" +
-                                    "<strong>Cymbals:</strong><br>" +
+                                    "<div class=\"midiCrashL1 midiCrashR midiCrashL2 midiSplashL midiSplashR china ride\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Cymbals:</div>" +
                                     "<ul><li>GGD P4 toms</li></ul>" +
                                     "<strong>And here's the MIDI mapping:</strong><br>" +
                                     "<table style=\"font-family: courier; border-collapse: collapse; margin-top: .5em;\">" +
                                         "<tr><td class=\"midiKick\" style=\"padding: 0 1em 0 1.5em;\">C0</td><td>Kick</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">C#0</td><td>Snare Ghost Note</td></tr>" +
                                         "<tr><td class=\"midiSnare\" style=\"padding: 0 1em 0 1.5em;\">D0</td><td>Snare Main Hit</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">A0</td><td>Rack Tom 1</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">A#0</td><td>Rack Tom 2</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">B0</td><td>Floor Tom 1</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">C1</td><td>Floor Tom 2</td></tr>" +
+                                        "<tr><td class=\"tom1\" style=\"padding: 0 1em 0 1.5em;\">A0</td><td>Rack Tom 1</td></tr>" +
+                                        "<tr><td class=\"tom2\" style=\"padding: 0 1em 0 1.5em;\">A#0</td><td>Rack Tom 2</td></tr>" +
+                                        "<tr><td class=\"tom3\" style=\"padding: 0 1em 0 1.5em;\">B0</td><td>Floor Tom 1</td></tr>" +
+                                        "<tr><td class=\"tom4\" style=\"padding: 0 1em 0 1.5em;\">C1</td><td>Floor Tom 2</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">F1</td><td>Hat Tip Tight</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">F#1</td><td>Hat Edge Tight</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">G1</td><td>Hat Tip Closed</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">G#1</td><td>Hat Edge Closed</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">A1</td><td>Hat Open 1</td></tr>" +
+                                        "<tr><td class=\"midiHihat\" style=\"padding: 0 1em 0 1.5em;\">A1</td><td>Hat Open 1</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">A#1</td><td>Hat Open 2</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">B1</td><td>Hat Open 3</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">C2</td><td>Hat Pedal</td></tr>" +
@@ -1319,20 +1319,20 @@ export default class RPlayerConf {
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">G2</td><td>Crash R: Choke</td></tr>" +
                                         "<tr><td class=\"midiCrashL2\" style=\"padding: 0 1em 0 1.5em;\">G#2</td><td>Crash L 2</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">A2</td><td>Crash L 2 Choke</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">C#3</td><td>Ride Bell</td></tr>" +
+                                        "<tr><td class=\"ride\" style=\"padding: 0 1em 0 1.5em;\">C#3</td><td>Ride Bell</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">D3</td><td>Ride Bow</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">F3</td><td>China</td></tr>" +
+                                        "<tr><td class=\"china\" style=\"padding: 0 1em 0 1.5em;\">F3</td><td>China</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">F#3</td><td>China: Choke</td></tr>" +
                                         "<tr><td class=\"midiSplashL\" style=\"padding: 0 1em 0 1.5em;\">C#3</td><td>Splash L</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">D4</td><td>Splash L Choke</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">D#4</td><td>Splash R</td></tr>" +
                                         "<tr><td class=\"midiSplashR\" style=\"padding: 0 1em 0 1.5em;\">E4</td><td>Splash R Choke</td></tr>" +
                                         "<tr><td class=\"midiMiniHat\" style=\"padding: 0 1em 0 1.5em;\">F4</td><td>Mini Hat</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">F#4</td><td>Stack</td></tr>" +
+                                        "<tr><td class=\"midiStack\" style=\"padding: 0 1em 0 1.5em;\">F#4</td><td>Stack</td></tr>" +
                                     "</table>",
                                 },
                                 2: {
-                                    id: "Bass",
+                                    id: "<div class=\"bassHeader\" style=\"width: min-content;\">Bass</div>",
                                     html:
                                     "<p>" +
                                     "All the bass is programmed and you can find the bass MIDI files in the /MIDI folder. " +
@@ -1341,7 +1341,7 @@ export default class RPlayerConf {
                                     "</p>",
                                 },
                                 3: {
-                                    id: "Guitars",
+                                    id: "<div class=\"guitarsHeader\" style=\"width: min-content;\">Guitars</div>",
                                     html:
                                     "<p>All of the guitars track on the album (rhytms, leads, drones, cleans) were recorded in my home studio (fancy way of saying \"a table and an audio interface in my living room\").</p>" +
                                     "<strong>Gear used for guitar tracking:</strong><br>" +
@@ -1381,7 +1381,7 @@ export default class RPlayerConf {
                                     "</table>"
                                 },
                                 4: {
-                                    id: "Synths",
+                                    id: "<div class=\"synthsHeader\" style=\"width: min-content;\">Synths</div>",
                                     html: 
                                     "<p>" +
                                         "All the extra instruments and synths on the album are programmed. Here's a list of some of the kontakt libraries used:" +
@@ -1447,24 +1447,24 @@ export default class RPlayerConf {
                                     "<ul><li>GGD OKW Modern Fusion - the main kick</li><li>GGD Modern & Massive - 26x14 Yamaha kick</li><li>custom one shot kick sample</li></ul>" +
                                     "<div class=\"snareBlendedHeader\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Snare (blended):</div>" +
                                     "<ul><li>Nolly's Secret Sauce snare (a freebie Nolly gave out in 2019)</li><li>GGD P4 - The VK snare</li><li>GGD OKW Metal - the main snare (only the room mics)</li></ul>" +
-                                    "<strong>Toms:</strong><br>" +
+                                    "<div class=\"tom1 tom2 tom3 tom4\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Toms:</div>" +
                                     "<ul><li>GGD P4 toms</li></ul>" +
-                                    "<strong>Cymbals:</strong><br>" +
+                                    "<div class=\"midiCrashL1 midiCrashR midiCrashL2 midiSplashL midiSplashR china ride\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Cymbals:</div>" +
                                     "<ul><li>GGD P4 toms</li></ul>" +
                                     "<strong>And here's the MIDI mapping:</strong><br>" +
                                     "<table style=\"font-family: courier; border-collapse: collapse; margin-top: .5em;\">" +
                                         "<tr><td class=\"midiKick\" style=\"padding: 0 1em 0 1.5em;\">C0</td><td>Kick</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">C#0</td><td>Snare Ghost Note</td></tr>" +
                                         "<tr><td class=\"midiSnare\" style=\"padding: 0 1em 0 1.5em;\">D0</td><td>Snare Main Hit</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">A0</td><td>Rack Tom 1</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">A#0</td><td>Rack Tom 2</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">B0</td><td>Floor Tom 1</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">C1</td><td>Floor Tom 2</td></tr>" +
+                                        "<tr><td class=\"tom1\" style=\"padding: 0 1em 0 1.5em;\">A0</td><td>Rack Tom 1</td></tr>" +
+                                        "<tr><td class=\"tom2\" style=\"padding: 0 1em 0 1.5em;\">A#0</td><td>Rack Tom 2</td></tr>" +
+                                        "<tr><td class=\"tom3\" style=\"padding: 0 1em 0 1.5em;\">B0</td><td>Floor Tom 1</td></tr>" +
+                                        "<tr><td class=\"tom4\" style=\"padding: 0 1em 0 1.5em;\">C1</td><td>Floor Tom 2</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">F1</td><td>Hat Tip Tight</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">F#1</td><td>Hat Edge Tight</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">G1</td><td>Hat Tip Closed</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">G#1</td><td>Hat Edge Closed</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">A1</td><td>Hat Open 1</td></tr>" +
+                                        "<tr><td class=\"midiHihat\" style=\"padding: 0 1em 0 1.5em;\">A1</td><td>Hat Open 1</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">A#1</td><td>Hat Open 2</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">B1</td><td>Hat Open 3</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">C2</td><td>Hat Pedal</td></tr>" +
@@ -1475,20 +1475,20 @@ export default class RPlayerConf {
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">G2</td><td>Crash R: Choke</td></tr>" +
                                         "<tr><td class=\"midiCrashL2\" style=\"padding: 0 1em 0 1.5em;\">G#2</td><td>Crash L 2</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">A2</td><td>Crash L 2 Choke</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">C#3</td><td>Ride Bell</td></tr>" +
+                                        "<tr><td class=\"ride\" style=\"padding: 0 1em 0 1.5em;\">C#3</td><td>Ride Bell</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">D3</td><td>Ride Bow</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">F3</td><td>China</td></tr>" +
+                                        "<tr><td class=\"china\" style=\"padding: 0 1em 0 1.5em;\">F3</td><td>China</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">F#3</td><td>China: Choke</td></tr>" +
                                         "<tr><td class=\"midiSplashL\" style=\"padding: 0 1em 0 1.5em;\">C#3</td><td>Splash L</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">D4</td><td>Splash L Choke</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">D#4</td><td>Splash R</td></tr>" +
                                         "<tr><td class=\"midiSplashR\" style=\"padding: 0 1em 0 1.5em;\">E4</td><td>Splash R Choke</td></tr>" +
                                         "<tr><td class=\"midiMiniHat\" style=\"padding: 0 1em 0 1.5em;\">F4</td><td>Mini Hat</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">F#4</td><td>Stack</td></tr>" +
+                                        "<tr><td class=\"midiStack\" style=\"padding: 0 1em 0 1.5em;\">F#4</td><td>Stack</td></tr>" +
                                     "</table>",
                                 },
                                 2: {
-                                    id: "Bass",
+                                    id: "<div class=\"bassHeader\" style=\"width: min-content;\">Bass</div>",
                                     html:
                                     "<p>" +
                                     "All the bass is programmed and you can find the bass MIDI files in the /MIDI folder. " +
@@ -1497,7 +1497,7 @@ export default class RPlayerConf {
                                     "</p>",
                                 },
                                 3: {
-                                    id: "Guitars",
+                                    id: "<div class=\"guitarsHeader\" style=\"width: min-content;\">Guitars</div>",
                                     html:
                                     "<p>All of the guitars track on the album (rhytms, leads, drones, cleans) were recorded in my home studio (fancy way of saying \"a table and an audio interface in my living room\").</p>" +
                                     "<strong>Gear used for guitar tracking:</strong><br>" +
@@ -1537,7 +1537,7 @@ export default class RPlayerConf {
                                     "</table>"
                                 },
                                 4: {
-                                    id: "Synths",
+                                    id: "<div class=\"synthsHeader\" style=\"width: min-content;\">Synths</div>",
                                     html: 
                                     "<p>" +
                                         "All the extra instruments and synths on the album are programmed. Here's a list of some of the kontakt libraries used:" +
@@ -1603,24 +1603,24 @@ export default class RPlayerConf {
                                     "<ul><li>GGD OKW Modern Fusion - the main kick</li><li>GGD Modern & Massive - 26x14 Yamaha kick</li><li>custom one shot kick sample</li></ul>" +
                                     "<div class=\"snareBlendedHeader\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Snare (blended):</div>" +
                                     "<ul><li>Nolly's Secret Sauce snare (a freebie Nolly gave out in 2019)</li><li>GGD P4 - The VK snare</li><li>GGD OKW Metal - the main snare (only the room mics)</li></ul>" +
-                                    "<strong>Toms:</strong><br>" +
+                                    "<div class=\"tom1 tom2 tom3 tom4\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Toms:</div>" +
                                     "<ul><li>GGD P4 toms</li></ul>" +
-                                    "<strong>Cymbals:</strong><br>" +
+                                    "<div class=\"midiCrashL1 midiCrashR midiCrashL2 midiSplashL midiSplashR china ride\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Cymbals:</div>" +
                                     "<ul><li>GGD P4 toms</li></ul>" +
                                     "<strong>And here's the MIDI mapping:</strong><br>" +
                                     "<table style=\"font-family: courier; border-collapse: collapse; margin-top: .5em;\">" +
                                         "<tr><td class=\"midiKick\" style=\"padding: 0 1em 0 1.5em;\">C0</td><td>Kick</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">C#0</td><td>Snare Ghost Note</td></tr>" +
                                         "<tr><td class=\"midiSnare\" style=\"padding: 0 1em 0 1.5em;\">D0</td><td>Snare Main Hit</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">A0</td><td>Rack Tom 1</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">A#0</td><td>Rack Tom 2</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">B0</td><td>Floor Tom 1</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">C1</td><td>Floor Tom 2</td></tr>" +
+                                        "<tr><td class=\"tom1\" style=\"padding: 0 1em 0 1.5em;\">A0</td><td>Rack Tom 1</td></tr>" +
+                                        "<tr><td class=\"tom2\" style=\"padding: 0 1em 0 1.5em;\">A#0</td><td>Rack Tom 2</td></tr>" +
+                                        "<tr><td class=\"tom3\" style=\"padding: 0 1em 0 1.5em;\">B0</td><td>Floor Tom 1</td></tr>" +
+                                        "<tr><td class=\"tom4\" style=\"padding: 0 1em 0 1.5em;\">C1</td><td>Floor Tom 2</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">F1</td><td>Hat Tip Tight</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">F#1</td><td>Hat Edge Tight</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">G1</td><td>Hat Tip Closed</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">G#1</td><td>Hat Edge Closed</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">A1</td><td>Hat Open 1</td></tr>" +
+                                        "<tr><td class=\"midiHihat\" style=\"padding: 0 1em 0 1.5em;\">A1</td><td>Hat Open 1</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">A#1</td><td>Hat Open 2</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">B1</td><td>Hat Open 3</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">C2</td><td>Hat Pedal</td></tr>" +
@@ -1631,20 +1631,20 @@ export default class RPlayerConf {
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">G2</td><td>Crash R: Choke</td></tr>" +
                                         "<tr><td class=\"midiCrashL2\" style=\"padding: 0 1em 0 1.5em;\">G#2</td><td>Crash L 2</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">A2</td><td>Crash L 2 Choke</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">C#3</td><td>Ride Bell</td></tr>" +
+                                        "<tr><td class=\"ride\" style=\"padding: 0 1em 0 1.5em;\">C#3</td><td>Ride Bell</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">D3</td><td>Ride Bow</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">F3</td><td>China</td></tr>" +
+                                        "<tr><td class=\"china\" style=\"padding: 0 1em 0 1.5em;\">F3</td><td>China</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">F#3</td><td>China: Choke</td></tr>" +
                                         "<tr><td class=\"midiSplashL\" style=\"padding: 0 1em 0 1.5em;\">C#3</td><td>Splash L</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">D4</td><td>Splash L Choke</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">D#4</td><td>Splash R</td></tr>" +
                                         "<tr><td class=\"midiSplashR\" style=\"padding: 0 1em 0 1.5em;\">E4</td><td>Splash R Choke</td></tr>" +
                                         "<tr><td class=\"midiMiniHat\" style=\"padding: 0 1em 0 1.5em;\">F4</td><td>Mini Hat</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">F#4</td><td>Stack</td></tr>" +
+                                        "<tr><td class=\"midiStack\" style=\"padding: 0 1em 0 1.5em;\">F#4</td><td>Stack</td></tr>" +
                                     "</table>",
                                 },
                                 2: {
-                                    id: "Bass",
+                                    id: "<div class=\"bassHeader\" style=\"width: min-content;\">Bass</div>",
                                     html:
                                     "<p>" +
                                     "All the bass is programmed and you can find the bass MIDI files in the /MIDI folder. " +
@@ -1653,7 +1653,7 @@ export default class RPlayerConf {
                                     "</p>",
                                 },
                                 3: {
-                                    id: "Guitars",
+                                    id: "<div class=\"guitarsHeader\" style=\"width: min-content;\">Guitars</div>",
                                     html:
                                     "<p>All of the guitars track on the album (rhytms, leads, drones, cleans) were recorded in my home studio (fancy way of saying \"a table and an audio interface in my living room\").</p>" +
                                     "<strong>Gear used for guitar tracking:</strong><br>" +
@@ -1693,7 +1693,7 @@ export default class RPlayerConf {
                                     "</table>"
                                 },
                                 4: {
-                                    id: "Synths",
+                                    id: "<div class=\"synthsHeader\" style=\"width: min-content;\">Synths</div>",
                                     html: 
                                     "<p>" +
                                         "All the extra instruments and synths on the album are programmed. Here's a list of some of the kontakt libraries used:" +
@@ -1759,24 +1759,24 @@ export default class RPlayerConf {
                                     "<ul><li>GGD OKW Modern Fusion - the main kick</li><li>GGD Modern & Massive - 26x14 Yamaha kick</li><li>custom one shot kick sample</li></ul>" +
                                     "<div class=\"snareBlendedHeader\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Snare (blended):</div>" +
                                     "<ul><li>Nolly's Secret Sauce snare (a freebie Nolly gave out in 2019)</li><li>GGD P4 - The VK snare</li><li>GGD OKW Metal - the main snare (only the room mics)</li></ul>" +
-                                    "<strong>Toms:</strong><br>" +
+                                    "<div class=\"tom1 tom2 tom3 tom4\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Toms:</div>" +
                                     "<ul><li>GGD P4 toms</li></ul>" +
-                                    "<strong>Cymbals:</strong><br>" +
+                                    "<div class=\"midiCrashL1 midiCrashR midiCrashL2 midiSplashL midiSplashR china ride\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Cymbals:</div>" +
                                     "<ul><li>GGD P4 toms</li></ul>" +
                                     "<strong>And here's the MIDI mapping:</strong><br>" +
                                     "<table style=\"font-family: courier; border-collapse: collapse; margin-top: .5em;\">" +
                                         "<tr><td class=\"midiKick\" style=\"padding: 0 1em 0 1.5em;\">C0</td><td>Kick</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">C#0</td><td>Snare Ghost Note</td></tr>" +
                                         "<tr><td class=\"midiSnare\" style=\"padding: 0 1em 0 1.5em;\">D0</td><td>Snare Main Hit</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">A0</td><td>Rack Tom 1</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">A#0</td><td>Rack Tom 2</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">B0</td><td>Floor Tom 1</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">C1</td><td>Floor Tom 2</td></tr>" +
+                                        "<tr><td class=\"tom1\" style=\"padding: 0 1em 0 1.5em;\">A0</td><td>Rack Tom 1</td></tr>" +
+                                        "<tr><td class=\"tom2\" style=\"padding: 0 1em 0 1.5em;\">A#0</td><td>Rack Tom 2</td></tr>" +
+                                        "<tr><td class=\"tom3\" style=\"padding: 0 1em 0 1.5em;\">B0</td><td>Floor Tom 1</td></tr>" +
+                                        "<tr><td class=\"tom4\" style=\"padding: 0 1em 0 1.5em;\">C1</td><td>Floor Tom 2</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">F1</td><td>Hat Tip Tight</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">F#1</td><td>Hat Edge Tight</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">G1</td><td>Hat Tip Closed</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">G#1</td><td>Hat Edge Closed</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">A1</td><td>Hat Open 1</td></tr>" +
+                                        "<tr><td class=\"midiHihat\" style=\"padding: 0 1em 0 1.5em;\">A1</td><td>Hat Open 1</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">A#1</td><td>Hat Open 2</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">B1</td><td>Hat Open 3</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">C2</td><td>Hat Pedal</td></tr>" +
@@ -1787,20 +1787,20 @@ export default class RPlayerConf {
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">G2</td><td>Crash R: Choke</td></tr>" +
                                         "<tr><td class=\"midiCrashL2\" style=\"padding: 0 1em 0 1.5em;\">G#2</td><td>Crash L 2</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">A2</td><td>Crash L 2 Choke</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">C#3</td><td>Ride Bell</td></tr>" +
+                                        "<tr><td class=\"ride\" style=\"padding: 0 1em 0 1.5em;\">C#3</td><td>Ride Bell</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">D3</td><td>Ride Bow</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">F3</td><td>China</td></tr>" +
+                                        "<tr><td class=\"china\" style=\"padding: 0 1em 0 1.5em;\">F3</td><td>China</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">F#3</td><td>China: Choke</td></tr>" +
                                         "<tr><td class=\"midiSplashL\" style=\"padding: 0 1em 0 1.5em;\">C#3</td><td>Splash L</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">D4</td><td>Splash L Choke</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">D#4</td><td>Splash R</td></tr>" +
                                         "<tr><td class=\"midiSplashR\" style=\"padding: 0 1em 0 1.5em;\">E4</td><td>Splash R Choke</td></tr>" +
                                         "<tr><td class=\"midiMiniHat\" style=\"padding: 0 1em 0 1.5em;\">F4</td><td>Mini Hat</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">F#4</td><td>Stack</td></tr>" +
+                                        "<tr><td class=\"midiStack\" style=\"padding: 0 1em 0 1.5em;\">F#4</td><td>Stack</td></tr>" +
                                     "</table>",
                                 },
                                 2: {
-                                    id: "Bass",
+                                    id: "<div class=\"bassHeader\" style=\"width: min-content;\">Bass</div>",
                                     html:
                                     "<p>" +
                                     "All the bass is programmed and you can find the bass MIDI files in the /MIDI folder. " +
@@ -1809,7 +1809,7 @@ export default class RPlayerConf {
                                     "</p>",
                                 },
                                 3: {
-                                    id: "Guitars",
+                                    id: "<div class=\"guitarsHeader\" style=\"width: min-content;\">Guitars</div>",
                                     html:
                                     "<p>All of the guitars track on the album (rhytms, leads, drones, cleans) were recorded in my home studio (fancy way of saying \"a table and an audio interface in my living room\").</p>" +
                                     "<strong>Gear used for guitar tracking:</strong><br>" +
@@ -1849,7 +1849,7 @@ export default class RPlayerConf {
                                     "</table>"
                                 },
                                 4: {
-                                    id: "Synths",
+                                    id: "<div class=\"synthsHeader\" style=\"width: min-content;\">Synths</div>",
                                     html: 
                                     "<p>" +
                                         "All the extra instruments and synths on the album are programmed. Here's a list of some of the kontakt libraries used:" +
