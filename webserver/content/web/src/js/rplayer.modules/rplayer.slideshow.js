@@ -68,7 +68,6 @@ export default class RPlayer {
         try {
             var images = this.rplayerCfg.slideShow.pictures;
             for (const [key, value] of Object.entries(images)) {
-                console.log(key, value);
                 $("#rplayerSlideshow").append("<img src='" + value.src + "' data-time='" + key + "'>");
             }
             $("#rplayerSlideshow").append("<div></div>");

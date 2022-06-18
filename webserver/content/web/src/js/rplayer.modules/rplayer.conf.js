@@ -69,6 +69,9 @@ export default class RPlayerConf {
                         backgroundImage: "url('./media/images/dreamer_album.jpg')",
                         favicon: "./favicon.ico",
                     },
+                    messagesOnTime: {
+                        messagesToConsole: false,
+                    }
                 },
                 localization: {
                     lang: "en",

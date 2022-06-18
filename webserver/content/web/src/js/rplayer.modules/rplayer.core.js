@@ -243,7 +243,6 @@ export default class RPlayer {
             target: "slideShow", // anything for worker
             commands: commands
         };
-        console.log(branch);
         this.slideshowMessagesBranch = branch;
         return Promise.resolve(branch);
     }
@@ -270,7 +269,6 @@ export default class RPlayer {
             target: "lyrics", // anything for worker
             commands: commands
         };
-        console.log(branch);
         this.lyricsMessagesBranch = branch;
         return Promise.resolve(branch);
     }
@@ -285,7 +283,6 @@ export default class RPlayer {
 
     startMessages(messageBranch) {
         var messageBranch;
-        console.log(messageBranch);
         var worker = new Worker("./../src/js/rplayer.workers/rplayer.messageOnTime.worker.js");
         var that = this;
 
@@ -332,7 +329,11 @@ export default class RPlayer {
                 mediaName: data.command.mediaName,
                 src: data.command.src
             }
-            console.log(data);
+        }
+
+        // Messages to console
+        if (this.cfg.app.preferences.messagesOnTime.messagesToConsole) {
+            console.log("[RPlayer::messagesOnTime]",data);
         }
     }
     
