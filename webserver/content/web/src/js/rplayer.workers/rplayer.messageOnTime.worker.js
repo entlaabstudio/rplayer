@@ -1,3 +1,4 @@
+wasInit = false;
 onmessage = function(e) {
     if (e.data.branch !== undefined) {
         target = e.data.branch.target;
@@ -6,6 +7,7 @@ onmessage = function(e) {
     if (e.data.currentTime !== undefined) {
         currentTime = e.data.currentTime * 1000;
     }
+    run();
 }
 
 initInterval = setInterval(function() {
@@ -24,13 +26,13 @@ initInterval = setInterval(function() {
             keyOffset: -1,
             timeOffset: null
         };
-        run();
+        wasInit = true;
         clearInterval(initInterval);
     }
 }, 100);
 
 function run() {
-    setInterval(function() {
+    if (wasInit) {
         if (
             lastKeyOffset1.keyOffset < 0 ||
             currentTime > lastKeyOffset2.timeOffset ||
@@ -45,10 +47,9 @@ function run() {
                 currentTime > lastKeyOffset1.timeOffset
             ) {
                 next();
-                returnMessage();
             }
         }
-    }, 1);
+    }
 }
 
 function returnMessage() {
@@ -78,6 +79,7 @@ function next() {
         keyOffset: ((lastKeyOffset2.keyOffset + 1 > commands.length - 1) ? Infinity : lastKeyOffset2.keyOffset + 1),
         timeOffset: ((lastKeyOffset2.keyOffset + 1 > commands.length - 1) ? Infinity : commands[lastKeyOffset2.keyOffset + 1].time)
     }
+    returnMessage();
 }
 
 function getKeyNow() {
