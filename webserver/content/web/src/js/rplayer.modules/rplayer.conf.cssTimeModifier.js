@@ -39641,6 +39641,11 @@ export default class RPlayerConfCssTimeModifier {
                         "cssKey": "midiColor",
                         "length": 50
                     },
+                    "992975": {
+                        "selectorsKey": "marcel",
+                        "cssKey": "border",
+                        "length": 16114
+                    },
                     "993316": {
                         "selectorsKey": "midiCrashR",
                         "cssKey": "midiColor",
@@ -40201,6 +40206,11 @@ export default class RPlayerConfCssTimeModifier {
                         "cssKey": "midiColor",
                         "length": 50
                     },
+                    "1009431": {
+                        "selectorsKey": "marcel",
+                        "cssKey": "border",
+                        "length": 4457
+                    },
                     "1009773": {
                         "selectorsKey": "midiHihatOpen3",
                         "cssKey": "midiColor",
@@ -40446,6 +40456,11 @@ export default class RPlayerConfCssTimeModifier {
                         "cssKey": "midiColor",
                         "length": 50
                     },
+                    "1014918": {
+                        "selectorsKey": "marcel",
+                        "cssKey": "border",
+                        "length": 2057
+                    },
                     "1015087": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiColor",
@@ -40575,6 +40590,11 @@ export default class RPlayerConfCssTimeModifier {
                         "selectorsKey": "midiChina",
                         "cssKey": "midiColor",
                         "length": 50
+                    },
+                    "1017661": {
+                        "selectorsKey": "marcel",
+                        "cssKey": "border",
+                        "length": 4628
                     },
                     "1017830": {
                         "selectorsKey": "midiKick",
@@ -40835,6 +40855,11 @@ export default class RPlayerConfCssTimeModifier {
                         "selectorsKey": "midiChina",
                         "cssKey": "midiColor",
                         "length": 50
+                    },
+                    "1022972": {
+                        "selectorsKey": "marcel",
+                        "cssKey": "border",
+                        "length": 2572
                     },
                     "1022973": {
                         "selectorsKey": "midiCrashL2",
@@ -41611,6 +41636,11 @@ export default class RPlayerConfCssTimeModifier {
                         "cssKey": "midiColor",
                         "length": 50
                     },
+                    "1037115": {
+                        "selectorsKey": "marcel",
+                        "cssKey": "border",
+                        "length": 10200
+                    },
                     "1037202": {
                         "selectorsKey": "midiCrashR",
                         "cssKey": "midiColor",
@@ -42261,6 +42291,11 @@ export default class RPlayerConfCssTimeModifier {
                         "cssKey": "midiColor",
                         "length": 50
                     },
+                    "1048092": {
+                        "selectorsKey": "marcel",
+                        "cssKey": "border",
+                        "length": 4881
+                    },
                     "1048173": {
                         "selectorsKey": "midiCrashR",
                         "cssKey": "midiColor",
@@ -42616,6 +42651,11 @@ export default class RPlayerConfCssTimeModifier {
                         "cssKey": "midiColor",
                         "length": 50
                     },
+                    "1053662": {
+                        "selectorsKey": "marcel",
+                        "cssKey": "border",
+                        "length": 7114
+                    },
                     "1053830": {
                         "selectorsKey": "midiHihatPedal",
                         "cssKey": "midiColor",
@@ -42955,6 +42995,11 @@ export default class RPlayerConfCssTimeModifier {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiColor",
                         "length": 50
+                    },
+                    "1061458": {
+                        "selectorsKey": "marcel",
+                        "cssKey": "border",
+                        "length": 13372
                     },
                     "1061544": {
                         "selectorsKey": "midiHihatOpen3",
@@ -43465,6 +43510,11 @@ export default class RPlayerConfCssTimeModifier {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiColor",
                         "length": 50
+                    },
+                    "1075173": {
+                        "selectorsKey": "marcel",
+                        "cssKey": "border",
+                        "length": 13371
                     },
                     "1075259": {
                         "selectorsKey": "midiKick",
@@ -44011,6 +44061,11 @@ export default class RPlayerConfCssTimeModifier {
                         "cssKey": "midiColor",
                         "length": 50
                     },
+                    "1089059": {
+                        "selectorsKey": "marcel",
+                        "cssKey": "border",
+                        "length": 5142
+                    },
                     "1089144": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiColor",
@@ -44220,6 +44275,11 @@ export default class RPlayerConfCssTimeModifier {
                         "selectorsKey": "midiSnareGhost",
                         "cssKey": "midiColor",
                         "length": 50
+                    },
+                    "1094716": {
+                        "selectorsKey": "marcel",
+                        "cssKey": "border",
+                        "length": 5057
                     },
                     "1094802": {
                         "selectorsKey": "midiChina",
@@ -44450,6 +44510,11 @@ export default class RPlayerConfCssTimeModifier {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiColor",
                         "length": 50
+                    },
+                    "1100202": {
+                        "selectorsKey": "marcel",
+                        "cssKey": "border",
+                        "length": 31457
                     },
                     "1100287": {
                         "selectorsKey": "midiChina",
@@ -44746,6 +44811,11 @@ export default class RPlayerConfCssTimeModifier {
                         "cssKey": "midiColor",
                         "length": 50
                     },
+                    "1133115": {
+                        "selectorsKey": "marcel",
+                        "cssKey": "border",
+                        "length": 6257
+                    },
                     "1133202": {
                         "selectorsKey": "midiChina",
                         "cssKey": "midiColor",
@@ -44885,6 +44955,11 @@ export default class RPlayerConfCssTimeModifier {
                         "selectorsKey": "midiChina",
                         "cssKey": "midiColor",
                         "length": 50
+                    },
+                    "1141344": {
+                        "selectorsKey": "marcel",
+                        "cssKey": "border",
+                        "length": 5914
                     },
                     "1141430": {
                         "selectorsKey": "midiKick",
@@ -45086,6 +45161,11 @@ export default class RPlayerConfCssTimeModifier {
                         "cssKey": "midiColor",
                         "length": 50
                     },
+                    "1149660": {
+                        "selectorsKey": "marcel",
+                        "cssKey": "border",
+                        "length": 6171
+                    },
                     "1149830": {
                         "selectorsKey": "midiRide",
                         "cssKey": "midiColor",
@@ -45200,6 +45280,11 @@ export default class RPlayerConfCssTimeModifier {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiColor",
                         "length": 50
+                    },
+                    "1157716": {
+                        "selectorsKey": "marcel",
+                        "cssKey": "border",
+                        "length": 9771
                     },
                     "1162687": {
                         "selectorsKey": "midiKick",
@@ -45490,6 +45575,11 @@ export default class RPlayerConfCssTimeModifier {
                         "selectorsKey": "midiSnare",
                         "cssKey": "midiColor",
                         "length": 50
+                    },
+                    "1169031": {
+                        "selectorsKey": "marcel",
+                        "cssKey": "border",
+                        "length": 5914
                     },
                     "1169202": {
                         "selectorsKey": "midiKick",
@@ -45995,6 +46085,11 @@ export default class RPlayerConfCssTimeModifier {
                         "selectorsKey": "midiHihatPedal",
                         "cssKey": "midiColor",
                         "length": 50
+                    },
+                    "1179660": {
+                        "selectorsKey": "marcel",
+                        "cssKey": "border",
+                        "length": 10371
                     },
                     "1179830": {
                         "selectorsKey": "midiCrashR",
@@ -46711,6 +46806,11 @@ export default class RPlayerConfCssTimeModifier {
                         "cssKey": "midiColor",
                         "length": 50
                     },
+                    "1190716": {
+                        "selectorsKey": "marcel",
+                        "cssKey": "border",
+                        "length": 5057
+                    },
                     "1190802": {
                         "selectorsKey": "midiCrashR",
                         "cssKey": "midiColor",
@@ -47076,6 +47176,11 @@ export default class RPlayerConfCssTimeModifier {
                         "cssKey": "midiColor",
                         "length": 50
                     },
+                    "1196290": {
+                        "selectorsKey": "marcel",
+                        "cssKey": "border",
+                        "length": 4714
+                    },
                     "1196459": {
                         "selectorsKey": "midiHihatPedal",
                         "cssKey": "midiColor",
@@ -47401,6 +47506,11 @@ export default class RPlayerConfCssTimeModifier {
                         "cssKey": "midiColor",
                         "length": 50
                     },
+                    "1201687": {
+                        "selectorsKey": "marcel",
+                        "cssKey": "border",
+                        "length": 4114
+                    },
                     "1201773": {
                         "selectorsKey": "midiKick",
                         "cssKey": "midiColor",
@@ -47540,6 +47650,11 @@ export default class RPlayerConfCssTimeModifier {
                         "selectorsKey": "midiChina",
                         "cssKey": "midiColor",
                         "length": 50
+                    },
+                    "1207173": {
+                        "selectorsKey": "marcel",
+                        "cssKey": "border",
+                        "length": 5228
                     },
                     "1207259": {
                         "selectorsKey": "midiKick",
