@@ -47780,6 +47780,8091 @@ export default class RPlayerConfCssTimeModifier {
                         "selectorsKey": "midiTom4",
                         "cssKey": "midiColor",
                         "length": 50
+                    },
+                    "1215764": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1215765": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1215766": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1215767": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1215987": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1216209": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1216210": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1216211": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1216431": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1216432": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1216653": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1216654": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1216655": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1216875": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1216876": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1217098": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1217099": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1217320": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1217321": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1217542": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1217543": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1217764": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1217765": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1217987": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1217988": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1217989": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1218209": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1218430": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1218431": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1218432": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1218653": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1218875": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1218876": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1218877": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1219098": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1219320": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1219321": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1219322": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1219542": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1219543": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1219764": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1219765": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1219987": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1219988": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1220209": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1220210": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1220211": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1220431": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1220432": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1220653": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1220654": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1220875": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1220876": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1221098": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1221099": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1221100": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1221320": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1221542": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1221543": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1221544": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1221764": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1221765": {
+                        "selectorsKey": "midiTom3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1221820": {
+                        "selectorsKey": "midiTom3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1221875": {
+                        "selectorsKey": "midiTom4",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1221931": {
+                        "selectorsKey": "midiTom4",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1221987": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1221988": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1221989": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1221990": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1222209": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1222431": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1222432": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1222433": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1222653": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1222654": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1222875": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1222876": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1222877": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1223098": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1223099": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1223320": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1223321": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1223542": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1223543": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1223764": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1223765": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1223987": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1223988": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1224209": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1224210": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1224211": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1224431": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1224653": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1224654": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1224655": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1224875": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1225098": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1225099": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1225100": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1225320": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1225542": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1225543": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1225544": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1225764": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1225765": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1225987": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1225988": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1226209": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1226210": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1226431": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1226432": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1226433": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1226653": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1226654": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1226875": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1226876": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1226877": {
+                        "selectorsKey": "midiTom1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1227098": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1227099": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1227320": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1227321": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1227322": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1227542": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1227543": {
+                        "selectorsKey": "midiTom2",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1227653": {
+                        "selectorsKey": "midiTom2",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1227764": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1227765": {
+                        "selectorsKey": "midiCrashL2",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1227875": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1227987": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1228098": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1228209": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1228210": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1228211": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1228212": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1228431": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1228653": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1228654": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1228655": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1228875": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1228876": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1229098": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1229099": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1229100": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1229320": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1229321": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1229542": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1229543": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1229764": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1229765": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1229987": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1229988": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1230209": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1230210": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1230431": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1230432": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1230433": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1230653": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1230875": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1230876": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1230877": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1231098": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1231320": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1231321": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1231322": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1231542": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1231764": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1231765": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1231766": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1231987": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1231988": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1232209": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1232210": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1232431": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1232432": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1232653": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1232654": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1232655": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1232875": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1232876": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1233098": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1233099": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1233320": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1233321": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1233542": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1233543": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1233544": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1233764": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1233987": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1233988": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1233989": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1234209": {
+                        "selectorsKey": "midiHihatOpen",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1234431": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1234432": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1234433": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1234434": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1234653": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1234875": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1234876": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1234877": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1235098": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1235099": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1235320": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1235321": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1235322": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1235542": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1235543": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1235764": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1235765": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1235987": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1235988": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1236209": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1236210": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1236431": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1236432": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1236653": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1236654": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1236655": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1236875": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1237098": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1237099": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1237100": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1237320": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1237542": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1237543": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1237544": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1237764": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1237987": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1237988": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1237989": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1238209": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1238210": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1238431": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1238432": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1238433": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1238653": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1238654": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1238727": {
+                        "selectorsKey": "midiTom1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1238801": {
+                        "selectorsKey": "midiTom2",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1238874": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1238875": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1238876": {
+                        "selectorsKey": "midiCrashL2",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1239319": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1239320": {
+                        "selectorsKey": "midiHihatOpen3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1239541": {
+                        "selectorsKey": "midiHihatOpen3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1239652": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1239763": {
+                        "selectorsKey": "midiHihatOpen3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1239764": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1239986": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1239987": {
+                        "selectorsKey": "midiHihatOpen3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1240208": {
+                        "selectorsKey": "midiHihatOpen3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1240430": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1240431": {
+                        "selectorsKey": "midiHihatOpen3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1240652": {
+                        "selectorsKey": "midiHihatOpen3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1240874": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1240875": {
+                        "selectorsKey": "midiHihatOpen3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1241097": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1241098": {
+                        "selectorsKey": "midiHihatOpen3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1241319": {
+                        "selectorsKey": "midiHihatOpen3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1241430": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1241541": {
+                        "selectorsKey": "midiHihatOpen3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1241542": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1241763": {
+                        "selectorsKey": "midiHihatOpen3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1241986": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1241987": {
+                        "selectorsKey": "midiHihatOpen3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1242208": {
+                        "selectorsKey": "midiHihatOpen3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1242319": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1242430": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1242431": {
+                        "selectorsKey": "midiHihatOpen3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1242652": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1242653": {
+                        "selectorsKey": "midiHihatOpen3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1242874": {
+                        "selectorsKey": "midiHihatOpen3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1243097": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1243098": {
+                        "selectorsKey": "midiHihatOpen3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1243319": {
+                        "selectorsKey": "midiHihatOpen3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1243320": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1243541": {
+                        "selectorsKey": "midiHihatOpen3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1243763": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1243764": {
+                        "selectorsKey": "midiHihatOpen3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1243986": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1243987": {
+                        "selectorsKey": "midiHihatOpen3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1244208": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1244209": {
+                        "selectorsKey": "midiHihatOpen3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1244431": {
+                        "selectorsKey": "midiHihatOpen3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1244653": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1244654": {
+                        "selectorsKey": "midiHihatOpen3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1244875": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1244876": {
+                        "selectorsKey": "midiHihatOpen3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1245098": {
+                        "selectorsKey": "midiHihatOpen3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1245099": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1245320": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1245321": {
+                        "selectorsKey": "midiHihatOpen3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1245542": {
+                        "selectorsKey": "midiHihatOpen3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1245764": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1245765": {
+                        "selectorsKey": "midiHihatOpen3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1245987": {
+                        "selectorsKey": "midiHihatOpen3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1246209": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1246210": {
+                        "selectorsKey": "midiHihatOpen3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1246431": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1246432": {
+                        "selectorsKey": "midiHihatOpen3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1246653": {
+                        "selectorsKey": "midiHihatOpen3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1246764": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1246875": {
+                        "selectorsKey": "midiHihatOpen3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1246876": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1247098": {
+                        "selectorsKey": "midiHihatOpen3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1247320": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1247321": {
+                        "selectorsKey": "midiHihatOpen3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1247542": {
+                        "selectorsKey": "midiHihatOpen3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1247764": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1247765": {
+                        "selectorsKey": "midiHihatOpen3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1247987": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1247988": {
+                        "selectorsKey": "midiHihatOpen3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1248209": {
+                        "selectorsKey": "midiHihatOpen3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1248431": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1248432": {
+                        "selectorsKey": "midiHihatOpen3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1248653": {
+                        "selectorsKey": "midiCrashL2",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1248654": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1248875": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1248987": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1249098": {
+                        "selectorsKey": "midiHihatOpen3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1249099": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1249320": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1249321": {
+                        "selectorsKey": "midiCrashL2",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1249542": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1249543": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1249544": {
+                        "selectorsKey": "midiCrashL2",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1249764": {
+                        "selectorsKey": "midiStack",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1249987": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1249988": {
+                        "selectorsKey": "midiRide",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1250209": {
+                        "selectorsKey": "midiStack",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1250320": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1250431": {
+                        "selectorsKey": "midiHihatOpen2",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1250432": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1250653": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1250654": {
+                        "selectorsKey": "midiStack",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1250875": {
+                        "selectorsKey": "midiRide",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1251098": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1251099": {
+                        "selectorsKey": "midiStack",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1251320": {
+                        "selectorsKey": "midiHihatOpen2",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1251542": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1251543": {
+                        "selectorsKey": "midiStack",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1251764": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1251765": {
+                        "selectorsKey": "midiRide",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1251987": {
+                        "selectorsKey": "midiStack",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1252098": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1252209": {
+                        "selectorsKey": "midiHihatOpen2",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1252210": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1252431": {
+                        "selectorsKey": "midiStack",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1252653": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1252654": {
+                        "selectorsKey": "midiRide",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1252875": {
+                        "selectorsKey": "midiStack",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1252986": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1253098": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1253099": {
+                        "selectorsKey": "midiHihatOpen2",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1253320": {
+                        "selectorsKey": "midiStack",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1253542": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1253543": {
+                        "selectorsKey": "midiRide",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1253764": {
+                        "selectorsKey": "midiStack",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1253875": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1253986": {
+                        "selectorsKey": "midiHihatOpen2",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1253987": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1254209": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1254210": {
+                        "selectorsKey": "midiStack",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1254431": {
+                        "selectorsKey": "midiRide",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1254432": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1254653": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1254654": {
+                        "selectorsKey": "midiStack",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1254875": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1254876": {
+                        "selectorsKey": "midiHihatOpen2",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1255098": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1255099": {
+                        "selectorsKey": "midiStack",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1255320": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1255321": {
+                        "selectorsKey": "midiRide",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1255542": {
+                        "selectorsKey": "midiStack",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1255653": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1255764": {
+                        "selectorsKey": "midiHihatOpen2",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1255765": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1255986": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1255987": {
+                        "selectorsKey": "midiStack",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1256209": {
+                        "selectorsKey": "midiRide",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1256431": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1256432": {
+                        "selectorsKey": "midiStack",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1256653": {
+                        "selectorsKey": "midiHihatOpen2",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1256875": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1256876": {
+                        "selectorsKey": "midiStack",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1257098": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1257099": {
+                        "selectorsKey": "midiRide",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1257320": {
+                        "selectorsKey": "midiStack",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1257431": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1257542": {
+                        "selectorsKey": "midiHihatOpen2",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1257543": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1257764": {
+                        "selectorsKey": "midiStack",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1257986": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1257987": {
+                        "selectorsKey": "midiRide",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1258209": {
+                        "selectorsKey": "midiStack",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1258320": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1258431": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1258432": {
+                        "selectorsKey": "midiHihatOpen2",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1258653": {
+                        "selectorsKey": "midiStack",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1258875": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1258876": {
+                        "selectorsKey": "midiRide",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1259098": {
+                        "selectorsKey": "midiStack",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1259209": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1259320": {
+                        "selectorsKey": "midiCrashL2",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1259321": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1259431": {
+                        "selectorsKey": "midiTom2",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1259542": {
+                        "selectorsKey": "midiTom3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1259653": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1259764": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1259792": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1260209": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1260210": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1260211": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1260653": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1260654": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1260875": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1260876": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1261098": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1261099": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1261542": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1261543": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1261544": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1261986": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1262209": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1262210": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1262431": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1262432": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1262875": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1262876": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1262877": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1263320": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1263321": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1263542": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1263543": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1263764": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1264209": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1264210": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1264211": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1264653": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1264654": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1264875": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1264876": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1265098": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1265099": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1265542": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1265543": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1265544": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1265764": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1265986": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1266209": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1266431": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1266432": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1266875": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1266876": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1266877": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1267320": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1267542": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1267543": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1267764": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1267765": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1268209": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1268210": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1268211": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1268431": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1268653": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1268654": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1268875": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1268876": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1269098": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1269542": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1269543": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1269544": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1269986": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1269987": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1270209": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1270210": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1270431": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1270432": {
+                        "selectorsKey": "midiTom4",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1270653": {
+                        "selectorsKey": "midiCrashL2",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1270654": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1270875": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1270876": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1270877": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1271320": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1271321": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1271542": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1271543": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1271764": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1271765": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1272209": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1272210": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1272211": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1272653": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1272875": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1272876": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1273098": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1273099": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1273542": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1273543": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1273544": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1273986": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1273987": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1274209": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1274210": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1274431": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1274875": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1274876": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1274877": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1275320": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1275321": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1275542": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1275543": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1275764": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1275765": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1276209": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1276210": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1276211": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1276431": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1276653": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1276875": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1277098": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1277099": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1277542": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1277543": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1277544": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1277986": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1278209": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1278210": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1278431": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1278432": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1278875": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1278876": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1278877": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1279098": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1279320": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1279321": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1279542": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1279543": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1279764": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1280209": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1280210": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1280211": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1280653": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1280654": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1280875": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1280876": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1281098": {
+                        "selectorsKey": "midiTom4",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1281320": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1281321": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1281541": {
+                        "selectorsKey": "midiTom2",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1281652": {
+                        "selectorsKey": "midiTom2",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1281763": {
+                        "selectorsKey": "midiTom3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1281874": {
+                        "selectorsKey": "midiTom4",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1281986": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1282097": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1282208": {
+                        "selectorsKey": "midiTom4",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1282319": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1282430": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1282431": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1282432": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1282652": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1282874": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1282875": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1283319": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1283320": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1283541": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1283763": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1283764": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1284208": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1284209": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1284430": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1284652": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1284653": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1284874": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1285097": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1285098": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1285541": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1285542": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1285986": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1285987": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1286208": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1286430": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1286431": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1286874": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1286875": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1287097": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1287319": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1287320": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1287541": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1287763": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1287764": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1287986": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1288208": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1288209": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1288652": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1288653": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1288874": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1289097": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1289098": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1289541": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1289542": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1289763": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1289986": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1289987": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1290208": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1290430": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1290431": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1290652": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1290874": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1290875": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1291097": {
+                        "selectorsKey": "midiTom3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1291208": {
+                        "selectorsKey": "midiTom4",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1291319": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1291320": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1291541": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1291548": {
+                        "selectorsKey": "midiTom4",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1291763": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1291837": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1291911": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1291986": {
+                        "selectorsKey": "midiTom3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1292060": {
+                        "selectorsKey": "midiTom3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1292134": {
+                        "selectorsKey": "midiTom4",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1292208": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1292209": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1292210": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1292430": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1292652": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1292653": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1292874": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1292875": {
+                        "selectorsKey": "midiSplashL",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1293097": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1293098": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1293541": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1293542": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1293543": {
+                        "selectorsKey": "midiSplashL",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1293986": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1293987": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1294208": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1294209": {
+                        "selectorsKey": "midiSplashL",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1294430": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1294431": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1294874": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1294875": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1294876": {
+                        "selectorsKey": "midiSplashL",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1295097": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1295319": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1295320": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1295541": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1295542": {
+                        "selectorsKey": "midiSplashL",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1295763": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1295764": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1296208": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1296209": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1296210": {
+                        "selectorsKey": "midiSplashL",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1296652": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1296653": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1296874": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1296875": {
+                        "selectorsKey": "midiSplashL",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1297097": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1297098": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1297319": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1297541": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1297542": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1297543": {
+                        "selectorsKey": "midiSplashL",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1297763": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1297986": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1297987": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1298208": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1298209": {
+                        "selectorsKey": "midiSplashL",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1298430": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1298431": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1298652": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1298874": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1298875": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1298876": {
+                        "selectorsKey": "midiSplashL",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1299319": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1299320": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1299541": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1299542": {
+                        "selectorsKey": "midiSplashL",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1299763": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1299764": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1300208": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1300209": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1300210": {
+                        "selectorsKey": "midiSplashL",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1300430": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1300652": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1300653": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1300874": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1300875": {
+                        "selectorsKey": "midiSplashL",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1301097": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1301098": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1301319": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1301430": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1301541": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1301542": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1301543": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1301544": {
+                        "selectorsKey": "midiSplashL",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1301653": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1301763": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1301875": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1301986": {
+                        "selectorsKey": "midiTom3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1302098": {
+                        "selectorsKey": "midiTom3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1302208": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1302320": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1302431": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1302505": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1302579": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1302653": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1302727": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1302801": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1302874": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1302875": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1302876": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1302986": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1303097": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1303098": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1303208": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1303319": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1303320": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1303541": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1303542": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1303652": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1303763": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1303764": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1303874": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1303986": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1303987": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1304208": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1304209": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1304319": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1304430": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1304431": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1304541": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1304652": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1304653": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1304874": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1304875": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1304986": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1305097": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1305098": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1305208": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1305319": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1305320": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1305541": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1305542": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1305615": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1305689": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1305763": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1305764": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1305986": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1305987": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1306208": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1306209": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1306319": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1306430": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1306431": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1306541": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1306652": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1306653": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1306874": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1306875": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1306986": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1307097": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1307098": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1307208": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1307319": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1307320": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1307541": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1307542": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1307652": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1307763": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1307764": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1307874": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1307986": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1307987": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1308208": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1308209": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1308319": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1308438": {
+                        "selectorsKey": "midiTom1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1308442": {
+                        "selectorsKey": "midiTom3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1308652": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1308660": {
+                        "selectorsKey": "midiTom3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1308661": {
+                        "selectorsKey": "midiTom4",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1308882": {
+                        "selectorsKey": "midiTom3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1308886": {
+                        "selectorsKey": "midiTom4",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1309097": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1309098": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1309099": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1309208": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1309319": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1309320": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1309321": {
+                        "selectorsKey": "midiRide",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1309430": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1309541": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1309542": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1309763": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1309764": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1309765": {
+                        "selectorsKey": "midiRide",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1309874": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1309986": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1309987": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1309988": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1310097": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1310208": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1310209": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1310210": {
+                        "selectorsKey": "midiRide",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1310430": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1310431": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1310541": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1310652": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1310653": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1310654": {
+                        "selectorsKey": "midiRide",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1310763": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1310874": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1310875": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1311097": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1311098": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1311099": {
+                        "selectorsKey": "midiRide",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1311208": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1311319": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1311320": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1311430": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1311541": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1311542": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1311543": {
+                        "selectorsKey": "midiRide",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1311763": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1311764": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1311837": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1311911": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1311986": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1311987": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1311988": {
+                        "selectorsKey": "midiRide",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1312208": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1312209": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1312430": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1312431": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1312432": {
+                        "selectorsKey": "midiRide",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1312541": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1312652": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1312653": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1312763": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1312874": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1312875": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1312876": {
+                        "selectorsKey": "midiRide",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1313097": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1313098": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1313208": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1313319": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1313320": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1313321": {
+                        "selectorsKey": "midiRide",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1313430": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1313541": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1313542": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1313763": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1313764": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1313765": {
+                        "selectorsKey": "midiRide",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1313874": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1313986": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1313987": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1314097": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1314208": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1314209": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1314210": {
+                        "selectorsKey": "midiRide",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1314430": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1314431": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1314504": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1314578": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1314652": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1314661": {
+                        "selectorsKey": "midiTom1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1314664": {
+                        "selectorsKey": "midiTom3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1314874": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1314882": {
+                        "selectorsKey": "midiTom3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1314883": {
+                        "selectorsKey": "midiTom4",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1315104": {
+                        "selectorsKey": "midiTom3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1315109": {
+                        "selectorsKey": "midiTom4",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1315319": {
+                        "selectorsKey": "midiTom3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1315323": {
+                        "selectorsKey": "midiTom4",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1315541": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1315552": {
+                        "selectorsKey": "midiTom4",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1315763": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1315791": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1315986": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1316208": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1316209": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1316210": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1316211": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1316430": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1316652": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1316653": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1316654": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1316874": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1316875": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1317097": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1317098": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1317099": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1317319": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1317320": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1317541": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1317542": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1317763": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1317764": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1317986": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1317987": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1318208": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1318209": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1318430": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1318431": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1318432": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1318652": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1318874": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1318875": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1318876": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1319097": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1319319": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1319320": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1319321": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1319541": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1319763": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1319764": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1319765": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1319986": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1319987": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1320208": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1320209": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1320430": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1320431": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1320652": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1320653": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1320654": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1320874": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1320875": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1321097": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1321098": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1321319": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1321320": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1321541": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1321542": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1321543": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1321763": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1321986": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1321987": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1321988": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1322208": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1322209": {
+                        "selectorsKey": "midiTom3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1322263": {
+                        "selectorsKey": "midiTom3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1322319": {
+                        "selectorsKey": "midiTom4",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1322374": {
+                        "selectorsKey": "midiTom4",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1322430": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1322431": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1322432": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1322433": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1322652": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1322874": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1322875": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1322876": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1323097": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1323098": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1323319": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1323320": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1323321": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1323541": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1323542": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1323763": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1323764": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1323986": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1323987": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1324208": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1324209": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1324430": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1324431": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1324652": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1324653": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1324654": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1324874": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1325097": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1325098": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1325099": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1325319": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1325541": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1325542": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1325543": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1325763": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1325986": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1325987": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1325988": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1326208": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1326209": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1326430": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1326431": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1326652": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1326653": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1326874": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1326875": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1326876": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1327097": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1327098": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1327319": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1327320": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1327541": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1327542": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1327763": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1327764": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1327765": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1327985": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1328208": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1328209": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1328210": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1328430": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1328431": {
+                        "selectorsKey": "midiTom3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1328485": {
+                        "selectorsKey": "midiTom3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1328541": {
+                        "selectorsKey": "midiTom4",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1328597": {
+                        "selectorsKey": "midiTom4",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1328652": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1328653": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1328654": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1328655": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1328874": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1328875": {
+                        "selectorsKey": "midiRide",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1329097": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1329098": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1329099": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1329319": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1329320": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1329321": {
+                        "selectorsKey": "midiRide",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1329541": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1329542": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1329543": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1329762": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1329763": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1329764": {
+                        "selectorsKey": "midiRide",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1329985": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1329986": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1330207": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1330208": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1330209": {
+                        "selectorsKey": "midiRide",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1330429": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1330430": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1330651": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1330652": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1330653": {
+                        "selectorsKey": "midiRide",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1330873": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1330874": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1330875": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1331096": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1331097": {
+                        "selectorsKey": "midiRide",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1331318": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1331319": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1331320": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1331540": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1331541": {
+                        "selectorsKey": "midiRide",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1331762": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1331763": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1331764": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1331985": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1331986": {
+                        "selectorsKey": "midiRide",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1332207": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1332208": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1332209": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1332429": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1332430": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1332431": {
+                        "selectorsKey": "midiRide",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1332651": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1332652": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1332873": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1332874": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1332875": {
+                        "selectorsKey": "midiRide",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1333096": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1333097": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1333098": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1333318": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1333319": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1333320": {
+                        "selectorsKey": "midiRide",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1333540": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1333541": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1333762": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1333763": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1333764": {
+                        "selectorsKey": "midiRide",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1333985": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1333986": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1333987": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1334207": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1334208": {
+                        "selectorsKey": "midiRide",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1334429": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1334430": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1334431": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1334651": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1334652": {
+                        "selectorsKey": "midiRide",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1334653": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1334873": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1334874": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1334875": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1334876": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1335096": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1335097": {
+                        "selectorsKey": "midiRide",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1335098": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1335318": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1335319": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1335320": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1335321": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1335540": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1335541": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1335542": {
+                        "selectorsKey": "midiRide",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1335762": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1335763": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1335764": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1335985": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1335986": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1335987": {
+                        "selectorsKey": "midiRide",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1336207": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1336208": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1336209": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1336429": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1336430": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1336431": {
+                        "selectorsKey": "midiRide",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1336432": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1336651": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1336652": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1336873": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1336874": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1336875": {
+                        "selectorsKey": "midiRide",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1337096": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1337097": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1337098": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1337319": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1337320": {
+                        "selectorsKey": "midiRide",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1337541": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1337542": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1337543": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1337763": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1337764": {
+                        "selectorsKey": "midiRide",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1337985": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1337986": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1337987": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1338208": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1338209": {
+                        "selectorsKey": "midiRide",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1338430": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1338431": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1338432": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1338652": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1338653": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1338654": {
+                        "selectorsKey": "midiRide",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1338874": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1338875": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1339097": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1339098": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1339099": {
+                        "selectorsKey": "midiRide",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1339319": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1339320": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1339321": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1339763": {
+                        "selectorsKey": "midiHihatOpen",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1340097": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1340208": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1340209": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1340652": {
+                        "selectorsKey": "midiHihatOpen",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1340874": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1340875": {
+                        "selectorsKey": "midiCrashL2",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1341097": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1341098": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1341541": {
+                        "selectorsKey": "midiHihatOpen",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1341985": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1341986": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1342430": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1342431": {
+                        "selectorsKey": "midiHihatOpen",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1342763": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1342874": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1342875": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1343319": {
+                        "selectorsKey": "midiHihatOpen",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1343763": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1343764": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1343985": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1343986": {
+                        "selectorsKey": "midiCrashL2",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1344208": {
+                        "selectorsKey": "midiHihatOpen",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1344430": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1344652": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1344653": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1345097": {
+                        "selectorsKey": "midiHihatOpen",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1345319": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1345541": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1345542": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1345985": {
+                        "selectorsKey": "midiHihatOpen",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1346208": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1346209": {
+                        "selectorsKey": "midiCrashL2",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1346430": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1346431": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1346874": {
+                        "selectorsKey": "midiHihatOpen",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1347208": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1347319": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1347320": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1347763": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1347764": {
+                        "selectorsKey": "midiHihatOpen",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1348097": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1348208": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1348209": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1348430": {
+                        "selectorsKey": "midiTom3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1348541": {
+                        "selectorsKey": "midiTom4",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1348652": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1348653": {
+                        "selectorsKey": "midiCrashL2",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1349097": {
+                        "selectorsKey": "midiHihatOpen",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1349319": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1349541": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1349542": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1349763": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1349874": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1349985": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1349986": {
+                        "selectorsKey": "midiHihatOpen",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1350652": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1350653": {
+                        "selectorsKey": "midiCrashL2",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1350874": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1350875": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1351208": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1351319": {
+                        "selectorsKey": "midiHihatOpen",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1351320": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1351763": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1351764": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1351985": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1351986": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1352208": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1352209": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1352210": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1352430": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1352652": {
+                        "selectorsKey": "midiHihatOpen",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1352874": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1352985": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1353097": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1353098": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1353319": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1353541": {
+                        "selectorsKey": "midiHihatOpen",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1353763": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1353764": {
+                        "selectorsKey": "midiCrashL2",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1353765": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1353985": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1353986": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1354208": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1354430": {
+                        "selectorsKey": "midiHihatOpen",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1354652": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1354874": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1354875": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1355097": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1355319": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1355320": {
+                        "selectorsKey": "midiHihatOpen",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1355541": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1355652": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1355763": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1355764": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1355985": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1356208": {
+                        "selectorsKey": "midiHihatOpen",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1356430": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1356652": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1356653": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1356874": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1356875": {
+                        "selectorsKey": "midiCrashL2",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1356876": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1357097": {
+                        "selectorsKey": "midiHihatOpen",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1357319": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1357320": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1357541": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1357542": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1357763": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1357985": {
+                        "selectorsKey": "midiHihatOpen",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1358208": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1358209": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1358430": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1358431": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1358652": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1358874": {
+                        "selectorsKey": "midiHihatOpen",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1359097": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1359098": {
+                        "selectorsKey": "midiCrashL2",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1359099": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1359319": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1359320": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1359541": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1359763": {
+                        "selectorsKey": "midiHihatOpen",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1359985": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1360097": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1360208": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1360209": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1360430": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1360652": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1360653": {
+                        "selectorsKey": "midiHihatOpen",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1360874": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1360985": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1361097": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1361098": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1361319": {
+                        "selectorsKey": "midiTom3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1361430": {
+                        "selectorsKey": "midiTom4",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1361541": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1361542": {
+                        "selectorsKey": "midiCrashL2",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1361763": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1361985": {
+                        "selectorsKey": "midiHihatOpen",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1362208": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1362209": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1362430": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1362431": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1362652": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1362653": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1362763": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1362874": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1362875": {
+                        "selectorsKey": "midiHihatOpen",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1363097": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1363541": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1363542": {
+                        "selectorsKey": "midiCrashL2",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1363763": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1363764": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1363985": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1364097": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1364208": {
+                        "selectorsKey": "midiHihatOpen",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1364209": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1364430": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1364652": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1364653": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1364874": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1364875": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1365097": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1365098": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1365099": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1384652": {
+                        "selectorsKey": "midiTom4",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1384874": {
+                        "selectorsKey": "midiTom4",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1385097": {
+                        "selectorsKey": "midiTom4",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1385319": {
+                        "selectorsKey": "midiTom4",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1385541": {
+                        "selectorsKey": "midiTom4",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1385763": {
+                        "selectorsKey": "midiTom4",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1385985": {
+                        "selectorsKey": "midiTom4",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1386208": {
+                        "selectorsKey": "midiTom4",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1386431": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1386432": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1386433": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1386875": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1386876": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1387097": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1387098": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1387320": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1387321": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1387764": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1387765": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1387766": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1388209": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1388431": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1388432": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1388653": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1388654": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1389097": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1389098": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1389099": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1389542": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1389543": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1389764": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1389765": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1389986": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1390431": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1390432": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1390433": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1390875": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1390876": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1391097": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1391098": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1391320": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1391321": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1391764": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1391765": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1391766": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1391986": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1392209": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1392431": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1392653": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1392654": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1393097": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1393098": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1393099": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1393542": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1393764": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1393765": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1393986": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1393987": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1394431": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1394432": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1394433": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1394653": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1394875": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1394876": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1395097": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1395098": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1395320": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1395764": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1395765": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1395766": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1396209": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1396210": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1396431": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1396432": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1396653": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1396654": {
+                        "selectorsKey": "midiTom4",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1396875": {
+                        "selectorsKey": "midiCrashL2",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1396876": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1397097": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1397098": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1397099": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1397542": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1397543": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1397764": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1397765": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1397986": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1397987": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1398431": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1398432": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1398433": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1398875": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1399097": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1399098": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1399320": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1399321": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1399764": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1399765": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1399766": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1400209": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1400210": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1400431": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1400432": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1400653": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1401097": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1401098": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1401099": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1401542": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1401543": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1401764": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1401765": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1401986": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1401987": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1402431": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1402432": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1402433": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1402653": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1402875": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1403097": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1403320": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1403321": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1403764": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1403765": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1403766": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1404209": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1404431": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1404432": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1404653": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1404654": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1405097": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1405098": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1405099": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1405320": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1405542": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1405543": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1405764": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1405765": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1405986": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1406431": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1406432": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1406433": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1406875": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1406876": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1407097": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1407098": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1407320": {
+                        "selectorsKey": "midiTom4",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1407542": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1407543": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1407763": {
+                        "selectorsKey": "midiTom2",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1407874": {
+                        "selectorsKey": "midiTom2",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1407985": {
+                        "selectorsKey": "midiTom3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1408097": {
+                        "selectorsKey": "midiTom4",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1408208": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1408319": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1408430": {
+                        "selectorsKey": "midiTom4",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1408541": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1408652": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1408653": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1408654": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1408874": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1409097": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1409098": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1409541": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1409542": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1409763": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1409985": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1409986": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1410430": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1410431": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1410652": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1410874": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1410875": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1411097": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1411319": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1411320": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1411763": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1411764": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1412208": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1412209": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1412430": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1412652": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1412653": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1413097": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1413098": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1413319": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1413541": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1413542": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1413763": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1413985": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1413986": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1414208": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1414430": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1414431": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1414874": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1414875": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1415097": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1415319": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1415320": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1415763": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1415764": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1415985": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1416208": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1416209": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1416430": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1416652": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1416653": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1416874": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1417097": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1417098": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1417319": {
+                        "selectorsKey": "midiTom3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1417430": {
+                        "selectorsKey": "midiTom4",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1417541": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1417542": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1417763": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1417771": {
+                        "selectorsKey": "midiTom4",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1417985": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1418059": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1418134": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1418208": {
+                        "selectorsKey": "midiTom3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1418282": {
+                        "selectorsKey": "midiTom3",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1418356": {
+                        "selectorsKey": "midiTom4",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1418430": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1418431": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1418432": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1418652": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1418874": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1418875": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1419097": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1419098": {
+                        "selectorsKey": "midiSplashL",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1419319": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1419320": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1419763": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1419764": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1419765": {
+                        "selectorsKey": "midiSplashL",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1420208": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1420209": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1420430": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1420431": {
+                        "selectorsKey": "midiSplashL",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1420652": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1420653": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1421097": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1421098": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1421099": {
+                        "selectorsKey": "midiSplashL",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1421319": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1421541": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1421542": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1421763": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1421764": {
+                        "selectorsKey": "midiSplashL",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1421985": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1421986": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1422430": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1422431": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1422432": {
+                        "selectorsKey": "midiSplashL",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1422874": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1422875": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1423097": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1423098": {
+                        "selectorsKey": "midiSplashL",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1423319": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1423320": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1423541": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1423763": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1423764": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1423765": {
+                        "selectorsKey": "midiSplashL",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1423985": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1424208": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1424209": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1424430": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1424431": {
+                        "selectorsKey": "midiSplashL",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1424652": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1424653": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1424874": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1425097": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1425098": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1425099": {
+                        "selectorsKey": "midiSplashL",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1425541": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1425542": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1425763": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1425764": {
+                        "selectorsKey": "midiSplashL",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1425985": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1425986": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1426430": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1426431": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1426432": {
+                        "selectorsKey": "midiSplashL",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1426652": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1426874": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1426875": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1427097": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1427098": {
+                        "selectorsKey": "midiSplashL",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1427319": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1427320": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1427541": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1427652": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1427763": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1427764": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1427765": {
+                        "selectorsKey": "midiSplashL",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1427985": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1428208": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1428217": {
+                        "selectorsKey": "midiTom4",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1428430": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1428439": {
+                        "selectorsKey": "midiTom4",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1428652": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1428661": {
+                        "selectorsKey": "midiTom4",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1428874": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 50
+                    },
+                    "1428884": {
+                        "selectorsKey": "midiTom4",
+                        "cssKey": "midiColor",
+                        "length": 50
                     }
                 }
             }
