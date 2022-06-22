@@ -241,6 +241,31 @@ export default class RPlayerConfCssTimeModifier {
                         "cssKey": "midiColor",
                         "length": 0
                     },
+                    "28": {
+                        "selectorsKey": "nolan",
+                        "cssKey": "border",
+                        "length": 0
+                    },
+                    "29": {
+                        "selectorsKey": "jurta",
+                        "cssKey": "border",
+                        "length": 0
+                    },
+                    "30": {
+                        "selectorsKey": "midiHiHatEdgeClosed",
+                        "cssKey": "midiColor",
+                        "length": 0
+                    },
+                    "31": {
+                        "selectorsKey": "midiHiHatEdgeTight",
+                        "cssKey": "midiColor",
+                        "length": 0
+                    },
+                    "32": {
+                        "selectorsKey": "midiHihatTipClosed",
+                        "cssKey": "midiColor",
+                        "length": 0
+                    },
                     "18055": {
                         "selectorsKey": "midiHihatTipTight",
                         "cssKey": "midiColor",
