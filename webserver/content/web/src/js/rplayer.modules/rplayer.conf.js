@@ -397,7 +397,7 @@ export default class RPlayerConf {
                                     "<ul><li>Nolly's Secret Sauce snare (a freebie Nolly gave out in 2019)</li><li>GGD P4 - The VK snare</li><li>GGD OKW Metal - the main snare (only the room mics)</li></ul>" +
                                     "<div class=\"midiTom1 midiTom2 midiTom3 midiTom4\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Toms:</div>" +
                                     "<ul><li>GGD P4 toms</li></ul>" +
-                                    "<div class=\"midiCrashL1 midiCrashR midiCrashL2 midiSplashL midiSplashR china ride\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Cymbals:</div>" +
+                                    "<div class=\"midiCrashL1 midiCrashR midiCrashL2 midiSplashL midiSplashR midiChina midiRide midiHihatOpen midiHihatOpen2 midiHihatOpen3 midiHihatPedal midiHihatTipTight midiMiniHat\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Cymbals:</div>" +
                                     "<ul><li>GGD P4 toms</li></ul>" +
                                     "<strong>And here's the MIDI mapping:</strong><br>" +
                                     "<table style=\"font-family: courier; border-collapse: collapse; margin-top: .5em;\">" +
@@ -414,7 +414,7 @@ export default class RPlayerConf {
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">G#1</td><td>Hat Edge Closed</td></tr>" +
                                         "<tr><td class=\"midiHihatOpen\" style=\"padding: 0 1em 0 1.5em;\">A1</td><td>Hat Open 1</td></tr>" +
                                         "<tr><td class=\"midiHihatOpen2\" style=\"padding: 0 1em 0 1.5em;\">A#1</td><td>Hat Open 2</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">B1</td><td>Hat Open 3</td></tr>" +
+                                        "<tr><td class=\"midiHihatOpen3\" style=\"padding: 0 1em 0 1.5em;\">B1</td><td>Hat Open 3</td></tr>" +
                                         "<tr><td class=\"midiHihatPedal\" style=\"padding: 0 1em 0 1.5em;\">C2</td><td>Hat Pedal</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">C#2</td><td>Hat Pedal Ching</td></tr>" +
                                         "<tr><td class=\"midiCrashL1\" style=\"padding: 0 1em 0 1.5em;\">E2</td><td>Crash L 1</td></tr>" +
@@ -553,7 +553,7 @@ export default class RPlayerConf {
                                     "<ul><li>Nolly's Secret Sauce snare (a freebie Nolly gave out in 2019)</li><li>GGD P4 - The VK snare</li><li>GGD OKW Metal - the main snare (only the room mics)</li></ul>" +
                                     "<div class=\"midiTom1 midiTom2 midiTom3 midiTom4\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Toms:</div>" +
                                     "<ul><li>GGD P4 toms</li></ul>" +
-                                    "<div class=\"midiCrashL1 midiCrashR midiCrashL2 midiSplashL midiSplashR china ride\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Cymbals:</div>" +
+                                    "<div class=\"midiCrashL1 midiCrashR midiCrashL2 midiSplashL midiSplashR midiChina midiRide midiHihatOpen midiHihatOpen2 midiHihatOpen3 midiHihatPedal midiHihatTipTight midiMiniHat\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Cymbals:</div>" +
                                     "<ul><li>GGD P4 toms</li></ul>" +
                                     "<strong>And here's the MIDI mapping:</strong><br>" +
                                     "<table style=\"font-family: courier; border-collapse: collapse; margin-top: .5em;\">" +
@@ -570,7 +570,7 @@ export default class RPlayerConf {
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">G#1</td><td>Hat Edge Closed</td></tr>" +
                                         "<tr><td class=\"midiHihatOpen\" style=\"padding: 0 1em 0 1.5em;\">A1</td><td>Hat Open 1</td></tr>" +
                                         "<tr><td class=\"midiHihatOpen2\" style=\"padding: 0 1em 0 1.5em;\">A#1</td><td>Hat Open 2</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">B1</td><td>Hat Open 3</td></tr>" +
+                                        "<tr><td class=\"midiHihatOpen3\" style=\"padding: 0 1em 0 1.5em;\">B1</td><td>Hat Open 3</td></tr>" +
                                         "<tr><td class=\"midiHihatPedal\" style=\"padding: 0 1em 0 1.5em;\">C2</td><td>Hat Pedal</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">C#2</td><td>Hat Pedal Ching</td></tr>" +
                                         "<tr><td class=\"midiCrashL1\" style=\"padding: 0 1em 0 1.5em;\">E2</td><td>Crash L 1</td></tr>" +
@@ -719,7 +719,7 @@ export default class RPlayerConf {
                                     "<ul><li>Nolly's Secret Sauce snare (a freebie Nolly gave out in 2019)</li><li>GGD P4 - The VK snare</li><li>GGD OKW Metal - the main snare (only the room mics)</li></ul>" +
                                     "<div class=\"midiTom1 midiTom2 midiTom3 midiTom4\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Toms:</div>" +
                                     "<ul><li>GGD P4 toms</li></ul>" +
-                                    "<div class=\"midiCrashL1 midiCrashR midiCrashL2 midiSplashL midiSplashR china ride\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Cymbals:</div>" +
+                                    "<div class=\"midiCrashL1 midiCrashR midiCrashL2 midiSplashL midiSplashR midiChina midiRide midiHihatOpen midiHihatOpen2 midiHihatOpen3 midiHihatPedal midiHihatTipTight midiMiniHat\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Cymbals:</div>" +
                                     "<ul><li>GGD P4 toms</li></ul>" +
                                     "<strong>And here's the MIDI mapping:</strong><br>" +
                                     "<table style=\"font-family: courier; border-collapse: collapse; margin-top: .5em;\">" +
@@ -736,7 +736,7 @@ export default class RPlayerConf {
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">G#1</td><td>Hat Edge Closed</td></tr>" +
                                         "<tr><td class=\"midiHihatOpen\" style=\"padding: 0 1em 0 1.5em;\">A1</td><td>Hat Open 1</td></tr>" +
                                         "<tr><td class=\"midiHihatOpen2\" style=\"padding: 0 1em 0 1.5em;\">A#1</td><td>Hat Open 2</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">B1</td><td>Hat Open 3</td></tr>" +
+                                        "<tr><td class=\"midiHihatOpen3\" style=\"padding: 0 1em 0 1.5em;\">B1</td><td>Hat Open 3</td></tr>" +
                                         "<tr><td class=\"midiHihatPedal\" style=\"padding: 0 1em 0 1.5em;\">C2</td><td>Hat Pedal</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">C#2</td><td>Hat Pedal Ching</td></tr>" +
                                         "<tr><td class=\"midiCrashL1\" style=\"padding: 0 1em 0 1.5em;\">E2</td><td>Crash L 1</td></tr>" +
@@ -919,7 +919,7 @@ export default class RPlayerConf {
                                     "<ul><li>Nolly's Secret Sauce snare (a freebie Nolly gave out in 2019)</li><li>GGD P4 - The VK snare</li><li>GGD OKW Metal - the main snare (only the room mics)</li></ul>" +
                                     "<div class=\"midiTom1 midiTom2 midiTom3 midiTom4\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Toms:</div>" +
                                     "<ul><li>GGD P4 toms</li></ul>" +
-                                    "<div class=\"midiCrashL1 midiCrashR midiCrashL2 midiSplashL midiSplashR china ride\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Cymbals:</div>" +
+                                    "<div class=\"midiCrashL1 midiCrashR midiCrashL2 midiSplashL midiSplashR midiChina midiRide midiHihatOpen midiHihatOpen2 midiHihatOpen3 midiHihatPedal midiHihatTipTight midiMiniHat\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Cymbals:</div>" +
                                     "<ul><li>GGD P4 toms</li></ul>" +
                                     "<strong>And here's the MIDI mapping:</strong><br>" +
                                     "<table style=\"font-family: courier; border-collapse: collapse; margin-top: .5em;\">" +
@@ -936,7 +936,7 @@ export default class RPlayerConf {
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">G#1</td><td>Hat Edge Closed</td></tr>" +
                                         "<tr><td class=\"midiHihatOpen\" style=\"padding: 0 1em 0 1.5em;\">A1</td><td>Hat Open 1</td></tr>" +
                                         "<tr><td class=\"midiHihatOpen2\" style=\"padding: 0 1em 0 1.5em;\">A#1</td><td>Hat Open 2</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">B1</td><td>Hat Open 3</td></tr>" +
+                                        "<tr><td class=\"midiHihatOpen3\" style=\"padding: 0 1em 0 1.5em;\">B1</td><td>Hat Open 3</td></tr>" +
                                         "<tr><td class=\"midiHihatPedal\" style=\"padding: 0 1em 0 1.5em;\">C2</td><td>Hat Pedal</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">C#2</td><td>Hat Pedal Ching</td></tr>" +
                                         "<tr><td class=\"midiCrashL1\" style=\"padding: 0 1em 0 1.5em;\">E2</td><td>Crash L 1</td></tr>" +
@@ -1097,7 +1097,7 @@ export default class RPlayerConf {
                                     "<ul><li>Nolly's Secret Sauce snare (a freebie Nolly gave out in 2019)</li><li>GGD P4 - The VK snare</li><li>GGD OKW Metal - the main snare (only the room mics)</li></ul>" +
                                     "<div class=\"midiTom1 midiTom2 midiTom3 midiTom4\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Toms:</div>" +
                                     "<ul><li>GGD P4 toms</li></ul>" +
-                                    "<div class=\"midiCrashL1 midiCrashR midiCrashL2 midiSplashL midiSplashR china ride\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Cymbals:</div>" +
+                                    "<div class=\"midiCrashL1 midiCrashR midiCrashL2 midiSplashL midiSplashR midiChina midiRide midiHihatOpen midiHihatOpen2 midiHihatOpen3 midiHihatPedal midiHihatTipTight midiMiniHat\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Cymbals:</div>" +
                                     "<ul><li>GGD P4 toms</li></ul>" +
                                     "<strong>And here's the MIDI mapping:</strong><br>" +
                                     "<table style=\"font-family: courier; border-collapse: collapse; margin-top: .5em;\">" +
@@ -1114,7 +1114,7 @@ export default class RPlayerConf {
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">G#1</td><td>Hat Edge Closed</td></tr>" +
                                         "<tr><td class=\"midiHihatOpen\" style=\"padding: 0 1em 0 1.5em;\">A1</td><td>Hat Open 1</td></tr>" +
                                         "<tr><td class=\"midiHihatOpen2\" style=\"padding: 0 1em 0 1.5em;\">A#1</td><td>Hat Open 2</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">B1</td><td>Hat Open 3</td></tr>" +
+                                        "<tr><td class=\"midiHihatOpen3\" style=\"padding: 0 1em 0 1.5em;\">B1</td><td>Hat Open 3</td></tr>" +
                                         "<tr><td class=\"midiHihatPedal\" style=\"padding: 0 1em 0 1.5em;\">C2</td><td>Hat Pedal</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">C#2</td><td>Hat Pedal Ching</td></tr>" +
                                         "<tr><td class=\"midiCrashL1\" style=\"padding: 0 1em 0 1.5em;\">E2</td><td>Crash L 1</td></tr>" +
@@ -1296,7 +1296,7 @@ export default class RPlayerConf {
                                     "<ul><li>Nolly's Secret Sauce snare (a freebie Nolly gave out in 2019)</li><li>GGD P4 - The VK snare</li><li>GGD OKW Metal - the main snare (only the room mics)</li></ul>" +
                                     "<div class=\"midiTom1 midiTom2 midiTom3 midiTom4\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Toms:</div>" +
                                     "<ul><li>GGD P4 toms</li></ul>" +
-                                    "<div class=\"midiCrashL1 midiCrashR midiCrashL2 midiSplashL midiSplashR china ride\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Cymbals:</div>" +
+                                    "<div class=\"midiCrashL1 midiCrashR midiCrashL2 midiSplashL midiSplashR midiChina midiRide midiHihatOpen midiHihatOpen2 midiHihatOpen3 midiHihatPedal midiHihatTipTight midiMiniHat\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Cymbals:</div>" +
                                     "<ul><li>GGD P4 toms</li></ul>" +
                                     "<strong>And here's the MIDI mapping:</strong><br>" +
                                     "<table style=\"font-family: courier; border-collapse: collapse; margin-top: .5em;\">" +
@@ -1313,7 +1313,7 @@ export default class RPlayerConf {
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">G#1</td><td>Hat Edge Closed</td></tr>" +
                                         "<tr><td class=\"midiHihatOpen\" style=\"padding: 0 1em 0 1.5em;\">A1</td><td>Hat Open 1</td></tr>" +
                                         "<tr><td class=\"midiHihatOpen2\" style=\"padding: 0 1em 0 1.5em;\">A#1</td><td>Hat Open 2</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">B1</td><td>Hat Open 3</td></tr>" +
+                                        "<tr><td class=\"midiHihatOpen3\" style=\"padding: 0 1em 0 1.5em;\">B1</td><td>Hat Open 3</td></tr>" +
                                         "<tr><td class=\"midiHihatPedal\" style=\"padding: 0 1em 0 1.5em;\">C2</td><td>Hat Pedal</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">C#2</td><td>Hat Pedal Ching</td></tr>" +
                                         "<tr><td class=\"midiCrashL1\" style=\"padding: 0 1em 0 1.5em;\">E2</td><td>Crash L 1</td></tr>" +
@@ -1452,7 +1452,7 @@ export default class RPlayerConf {
                                     "<ul><li>Nolly's Secret Sauce snare (a freebie Nolly gave out in 2019)</li><li>GGD P4 - The VK snare</li><li>GGD OKW Metal - the main snare (only the room mics)</li></ul>" +
                                     "<div class=\"midiTom1 midiTom2 midiTom3 midiTom4\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Toms:</div>" +
                                     "<ul><li>GGD P4 toms</li></ul>" +
-                                    "<div class=\"midiCrashL1 midiCrashR midiCrashL2 midiSplashL midiSplashR china ride\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Cymbals:</div>" +
+                                    "<div class=\"midiCrashL1 midiCrashR midiCrashL2 midiSplashL midiSplashR midiChina midiRide midiHihatOpen midiHihatOpen2 midiHihatOpen3 midiHihatPedal midiHihatTipTight midiMiniHat\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Cymbals:</div>" +
                                     "<ul><li>GGD P4 toms</li></ul>" +
                                     "<strong>And here's the MIDI mapping:</strong><br>" +
                                     "<table style=\"font-family: courier; border-collapse: collapse; margin-top: .5em;\">" +
@@ -1469,7 +1469,7 @@ export default class RPlayerConf {
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">G#1</td><td>Hat Edge Closed</td></tr>" +
                                         "<tr><td class=\"midiHihatOpen\" style=\"padding: 0 1em 0 1.5em;\">A1</td><td>Hat Open 1</td></tr>" +
                                         "<tr><td class=\"midiHihatOpen2\" style=\"padding: 0 1em 0 1.5em;\">A#1</td><td>Hat Open 2</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">B1</td><td>Hat Open 3</td></tr>" +
+                                        "<tr><td class=\"midiHihatOpen3\" style=\"padding: 0 1em 0 1.5em;\">B1</td><td>Hat Open 3</td></tr>" +
                                         "<tr><td class=\"midiHihatPedal\" style=\"padding: 0 1em 0 1.5em;\">C2</td><td>Hat Pedal</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">C#2</td><td>Hat Pedal Ching</td></tr>" +
                                         "<tr><td class=\"midiCrashL1\" style=\"padding: 0 1em 0 1.5em;\">E2</td><td>Crash L 1</td></tr>" +
@@ -1608,7 +1608,7 @@ export default class RPlayerConf {
                                     "<ul><li>Nolly's Secret Sauce snare (a freebie Nolly gave out in 2019)</li><li>GGD P4 - The VK snare</li><li>GGD OKW Metal - the main snare (only the room mics)</li></ul>" +
                                     "<div class=\"midiTom1 midiTom2 midiTom3 midiTom4\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Toms:</div>" +
                                     "<ul><li>GGD P4 toms</li></ul>" +
-                                    "<div class=\"midiCrashL1 midiCrashR midiCrashL2 midiSplashL midiSplashR china ride\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Cymbals:</div>" +
+                                    "<div class=\"midiCrashL1 midiCrashR midiCrashL2 midiSplashL midiSplashR midiChina midiRide midiHihatOpen midiHihatOpen2 midiHihatOpen3 midiHihatPedal midiHihatTipTight midiMiniHat\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Cymbals:</div>" +
                                     "<ul><li>GGD P4 toms</li></ul>" +
                                     "<strong>And here's the MIDI mapping:</strong><br>" +
                                     "<table style=\"font-family: courier; border-collapse: collapse; margin-top: .5em;\">" +
@@ -1625,7 +1625,7 @@ export default class RPlayerConf {
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">G#1</td><td>Hat Edge Closed</td></tr>" +
                                         "<tr><td class=\"midiHihatOpen\" style=\"padding: 0 1em 0 1.5em;\">A1</td><td>Hat Open 1</td></tr>" +
                                         "<tr><td class=\"midiHihatOpen2\" style=\"padding: 0 1em 0 1.5em;\">A#1</td><td>Hat Open 2</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">B1</td><td>Hat Open 3</td></tr>" +
+                                        "<tr><td class=\"midiHihatOpen3\" style=\"padding: 0 1em 0 1.5em;\">B1</td><td>Hat Open 3</td></tr>" +
                                         "<tr><td class=\"midiHihatPedal\" style=\"padding: 0 1em 0 1.5em;\">C2</td><td>Hat Pedal</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">C#2</td><td>Hat Pedal Ching</td></tr>" +
                                         "<tr><td class=\"midiCrashL1\" style=\"padding: 0 1em 0 1.5em;\">E2</td><td>Crash L 1</td></tr>" +
@@ -1764,7 +1764,7 @@ export default class RPlayerConf {
                                     "<ul><li>Nolly's Secret Sauce snare (a freebie Nolly gave out in 2019)</li><li>GGD P4 - The VK snare</li><li>GGD OKW Metal - the main snare (only the room mics)</li></ul>" +
                                     "<div class=\"midiTom1 midiTom2 midiTom3 midiTom4\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Toms:</div>" +
                                     "<ul><li>GGD P4 toms</li></ul>" +
-                                    "<div class=\"midiCrashL1 midiCrashR midiCrashL2 midiSplashL midiSplashR china ride\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Cymbals:</div>" +
+                                    "<div class=\"midiCrashL1 midiCrashR midiCrashL2 midiSplashL midiSplashR midiChina midiRide midiHihatOpen midiHihatOpen2 midiHihatOpen3 midiHihatPedal midiHihatTipTight midiMiniHat\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Cymbals:</div>" +
                                     "<ul><li>GGD P4 toms</li></ul>" +
                                     "<strong>And here's the MIDI mapping:</strong><br>" +
                                     "<table style=\"font-family: courier; border-collapse: collapse; margin-top: .5em;\">" +
@@ -1781,7 +1781,7 @@ export default class RPlayerConf {
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">G#1</td><td>Hat Edge Closed</td></tr>" +
                                         "<tr><td class=\"midiHihatOpen\" style=\"padding: 0 1em 0 1.5em;\">A1</td><td>Hat Open 1</td></tr>" +
                                         "<tr><td class=\"midiHihatOpen2\" style=\"padding: 0 1em 0 1.5em;\">A#1</td><td>Hat Open 2</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">B1</td><td>Hat Open 3</td></tr>" +
+                                        "<tr><td class=\"midiHihatOpen3\" style=\"padding: 0 1em 0 1.5em;\">B1</td><td>Hat Open 3</td></tr>" +
                                         "<tr><td class=\"midiHihatPedal\" style=\"padding: 0 1em 0 1.5em;\">C2</td><td>Hat Pedal</td></tr>" +
                                         "<tr><td style=\"padding: 0 1em 0 1.5em;\">C#2</td><td>Hat Pedal Ching</td></tr>" +
                                         "<tr><td class=\"midiCrashL1\" style=\"padding: 0 1em 0 1.5em;\">E2</td><td>Crash L 1</td></tr>" +
