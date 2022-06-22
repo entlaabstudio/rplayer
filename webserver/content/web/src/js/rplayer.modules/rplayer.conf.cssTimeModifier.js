@@ -233,6 +233,11 @@ export default class RPlayerConfCssTimeModifier {
                         "cssKey": "border",
                         "length": 0
                     },
+                    "27": {
+                        "selectorsKey": "midiHihatOpen3",
+                        "cssKey": "midiColor",
+                        "length": 0
+                    },
                     "18055": {
                         "selectorsKey": "midiHihatTipTight",
                         "cssKey": "midiColor",
