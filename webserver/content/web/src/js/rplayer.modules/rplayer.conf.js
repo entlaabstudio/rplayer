@@ -397,7 +397,7 @@ export default class RPlayerConf {
                                     "<ul><li>Nolly's Secret Sauce snare (a freebie Nolly gave out in 2019)</li><li>GGD P4 - The VK snare</li><li>GGD OKW Metal - the main snare (only the room mics)</li></ul>" +
                                     "<div class=\"midiTom1 midiTom2 midiTom3 midiTom4\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Toms:</div>" +
                                     "<ul><li>GGD P4 toms</li></ul>" +
-                                    "<div class=\"midiCrashL1 midiCrashR midiCrashL2 midiSplashL midiSplashR midiChina midiRide midiHihatOpen midiHihatOpen2 midiHihatOpen3 midiHihatPedal midiHihatTipTight midiMiniHat\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Cymbals:</div>" +
+                                    "<div class=\"midiCrashL1 midiCrashR midiCrashL2 midiSplashL midiSplashR midiChina midiRide midiHihatOpen midiHihatOpen2 midiHihatOpen3 midiHihatPedal midiHihatTipTight midiMiniHat midiHiHatEdgeClosed midiHiHatEdgeTight midiHihatTipClosed\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Cymbals:</div>" +
                                     "<ul><li>GGD P4 toms</li></ul>" +
                                     "<strong>And here's the MIDI mapping:</strong><br>" +
                                     "<table style=\"font-family: courier; border-collapse: collapse; margin-top: .5em;\">" +
@@ -409,9 +409,9 @@ export default class RPlayerConf {
                                         "<tr><td class=\"midiTom3\" style=\"padding: 0 1em 0 1.5em;\">B0</td><td>Floor Tom 1</td></tr>" +
                                         "<tr><td class=\"midiTom4\" style=\"padding: 0 1em 0 1.5em;\">C1</td><td>Floor Tom 2</td></tr>" +
                                         "<tr><td class=\"midiHihatTipTight\" style=\"padding: 0 1em 0 1.5em;\">F1</td><td>Hat Tip Tight</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">F#1</td><td>Hat Edge Tight</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">G1</td><td>Hat Tip Closed</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">G#1</td><td>Hat Edge Closed</td></tr>" +
+                                        "<tr><td class=\"midiHiHatEdgeTight\" style=\"padding: 0 1em 0 1.5em;\">F#1</td><td>Hat Edge Tight</td></tr>" +
+                                        "<tr><td class=\"midiHihatTipClosed\" style=\"padding: 0 1em 0 1.5em;\">G1</td><td>Hat Tip Closed</td></tr>" +
+                                        "<tr><td class=\"midiHiHatEdgeClosed\" style=\"padding: 0 1em 0 1.5em;\">G#1</td><td>Hat Edge Closed</td></tr>" +
                                         "<tr><td class=\"midiHihatOpen\" style=\"padding: 0 1em 0 1.5em;\">A1</td><td>Hat Open 1</td></tr>" +
                                         "<tr><td class=\"midiHihatOpen2\" style=\"padding: 0 1em 0 1.5em;\">A#1</td><td>Hat Open 2</td></tr>" +
                                         "<tr><td class=\"midiHihatOpen3\" style=\"padding: 0 1em 0 1.5em;\">B1</td><td>Hat Open 3</td></tr>" +
@@ -553,7 +553,7 @@ export default class RPlayerConf {
                                     "<ul><li>Nolly's Secret Sauce snare (a freebie Nolly gave out in 2019)</li><li>GGD P4 - The VK snare</li><li>GGD OKW Metal - the main snare (only the room mics)</li></ul>" +
                                     "<div class=\"midiTom1 midiTom2 midiTom3 midiTom4\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Toms:</div>" +
                                     "<ul><li>GGD P4 toms</li></ul>" +
-                                    "<div class=\"midiCrashL1 midiCrashR midiCrashL2 midiSplashL midiSplashR midiChina midiRide midiHihatOpen midiHihatOpen2 midiHihatOpen3 midiHihatPedal midiHihatTipTight midiMiniHat\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Cymbals:</div>" +
+                                    "<div class=\"midiCrashL1 midiCrashR midiCrashL2 midiSplashL midiSplashR midiChina midiRide midiHihatOpen midiHihatOpen2 midiHihatOpen3 midiHihatPedal midiHihatTipTight midiMiniHat midiHiHatEdgeClosed midiHiHatEdgeTight midiHihatTipClosed\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Cymbals:</div>" +
                                     "<ul><li>GGD P4 toms</li></ul>" +
                                     "<strong>And here's the MIDI mapping:</strong><br>" +
                                     "<table style=\"font-family: courier; border-collapse: collapse; margin-top: .5em;\">" +
@@ -565,9 +565,9 @@ export default class RPlayerConf {
                                         "<tr><td class=\"midiTom3\" style=\"padding: 0 1em 0 1.5em;\">B0</td><td>Floor Tom 1</td></tr>" +
                                         "<tr><td class=\"midiTom4\" style=\"padding: 0 1em 0 1.5em;\">C1</td><td>Floor Tom 2</td></tr>" +
                                         "<tr><td class=\"midiHihatTipTight\" style=\"padding: 0 1em 0 1.5em;\">F1</td><td>Hat Tip Tight</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">F#1</td><td>Hat Edge Tight</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">G1</td><td>Hat Tip Closed</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">G#1</td><td>Hat Edge Closed</td></tr>" +
+                                        "<tr><td class=\"midiHiHatEdgeTight\" style=\"padding: 0 1em 0 1.5em;\">F#1</td><td>Hat Edge Tight</td></tr>" +
+                                        "<tr><td class=\"midiHihatTipClosed\" style=\"padding: 0 1em 0 1.5em;\">G1</td><td>Hat Tip Closed</td></tr>" +
+                                        "<tr><td class=\"midiHiHatEdgeClosed\" style=\"padding: 0 1em 0 1.5em;\">G#1</td><td>Hat Edge Closed</td></tr>" +
                                         "<tr><td class=\"midiHihatOpen\" style=\"padding: 0 1em 0 1.5em;\">A1</td><td>Hat Open 1</td></tr>" +
                                         "<tr><td class=\"midiHihatOpen2\" style=\"padding: 0 1em 0 1.5em;\">A#1</td><td>Hat Open 2</td></tr>" +
                                         "<tr><td class=\"midiHihatOpen3\" style=\"padding: 0 1em 0 1.5em;\">B1</td><td>Hat Open 3</td></tr>" +
@@ -719,7 +719,7 @@ export default class RPlayerConf {
                                     "<ul><li>Nolly's Secret Sauce snare (a freebie Nolly gave out in 2019)</li><li>GGD P4 - The VK snare</li><li>GGD OKW Metal - the main snare (only the room mics)</li></ul>" +
                                     "<div class=\"midiTom1 midiTom2 midiTom3 midiTom4\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Toms:</div>" +
                                     "<ul><li>GGD P4 toms</li></ul>" +
-                                    "<div class=\"midiCrashL1 midiCrashR midiCrashL2 midiSplashL midiSplashR midiChina midiRide midiHihatOpen midiHihatOpen2 midiHihatOpen3 midiHihatPedal midiHihatTipTight midiMiniHat\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Cymbals:</div>" +
+                                    "<div class=\"midiCrashL1 midiCrashR midiCrashL2 midiSplashL midiSplashR midiChina midiRide midiHihatOpen midiHihatOpen2 midiHihatOpen3 midiHihatPedal midiHihatTipTight midiMiniHat midiHiHatEdgeClosed midiHiHatEdgeTight midiHihatTipClosed\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Cymbals:</div>" +
                                     "<ul><li>GGD P4 toms</li></ul>" +
                                     "<strong>And here's the MIDI mapping:</strong><br>" +
                                     "<table style=\"font-family: courier; border-collapse: collapse; margin-top: .5em;\">" +
@@ -731,9 +731,9 @@ export default class RPlayerConf {
                                         "<tr><td class=\"midiTom3\" style=\"padding: 0 1em 0 1.5em;\">B0</td><td>Floor Tom 1</td></tr>" +
                                         "<tr><td class=\"midiTom4\" style=\"padding: 0 1em 0 1.5em;\">C1</td><td>Floor Tom 2</td></tr>" +
                                         "<tr><td class=\"midiHihatTipTight\" style=\"padding: 0 1em 0 1.5em;\">F1</td><td>Hat Tip Tight</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">F#1</td><td>Hat Edge Tight</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">G1</td><td>Hat Tip Closed</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">G#1</td><td>Hat Edge Closed</td></tr>" +
+                                        "<tr><td class=\"midiHiHatEdgeTight\" style=\"padding: 0 1em 0 1.5em;\">F#1</td><td>Hat Edge Tight</td></tr>" +
+                                        "<tr><td class=\"midiHihatTipClosed\" style=\"padding: 0 1em 0 1.5em;\">G1</td><td>Hat Tip Closed</td></tr>" +
+                                        "<tr><td class=\"midiHiHatEdgeClosed\" style=\"padding: 0 1em 0 1.5em;\">G#1</td><td>Hat Edge Closed</td></tr>" +
                                         "<tr><td class=\"midiHihatOpen\" style=\"padding: 0 1em 0 1.5em;\">A1</td><td>Hat Open 1</td></tr>" +
                                         "<tr><td class=\"midiHihatOpen2\" style=\"padding: 0 1em 0 1.5em;\">A#1</td><td>Hat Open 2</td></tr>" +
                                         "<tr><td class=\"midiHihatOpen3\" style=\"padding: 0 1em 0 1.5em;\">B1</td><td>Hat Open 3</td></tr>" +
@@ -919,7 +919,7 @@ export default class RPlayerConf {
                                     "<ul><li>Nolly's Secret Sauce snare (a freebie Nolly gave out in 2019)</li><li>GGD P4 - The VK snare</li><li>GGD OKW Metal - the main snare (only the room mics)</li></ul>" +
                                     "<div class=\"midiTom1 midiTom2 midiTom3 midiTom4\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Toms:</div>" +
                                     "<ul><li>GGD P4 toms</li></ul>" +
-                                    "<div class=\"midiCrashL1 midiCrashR midiCrashL2 midiSplashL midiSplashR midiChina midiRide midiHihatOpen midiHihatOpen2 midiHihatOpen3 midiHihatPedal midiHihatTipTight midiMiniHat\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Cymbals:</div>" +
+                                    "<div class=\"midiCrashL1 midiCrashR midiCrashL2 midiSplashL midiSplashR midiChina midiRide midiHihatOpen midiHihatOpen2 midiHihatOpen3 midiHihatPedal midiHihatTipTight midiMiniHat midiHiHatEdgeClosed midiHiHatEdgeTight midiHihatTipClosed\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Cymbals:</div>" +
                                     "<ul><li>GGD P4 toms</li></ul>" +
                                     "<strong>And here's the MIDI mapping:</strong><br>" +
                                     "<table style=\"font-family: courier; border-collapse: collapse; margin-top: .5em;\">" +
@@ -931,9 +931,9 @@ export default class RPlayerConf {
                                         "<tr><td class=\"midiTom3\" style=\"padding: 0 1em 0 1.5em;\">B0</td><td>Floor Tom 1</td></tr>" +
                                         "<tr><td class=\"midiTom4\" style=\"padding: 0 1em 0 1.5em;\">C1</td><td>Floor Tom 2</td></tr>" +
                                         "<tr><td class=\"midiHihatTipTight\" style=\"padding: 0 1em 0 1.5em;\">F1</td><td>Hat Tip Tight</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">F#1</td><td>Hat Edge Tight</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">G1</td><td>Hat Tip Closed</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">G#1</td><td>Hat Edge Closed</td></tr>" +
+                                        "<tr><td class=\"midiHiHatEdgeTight\" style=\"padding: 0 1em 0 1.5em;\">F#1</td><td>Hat Edge Tight</td></tr>" +
+                                        "<tr><td class=\"midiHihatTipClosed\" style=\"padding: 0 1em 0 1.5em;\">G1</td><td>Hat Tip Closed</td></tr>" +
+                                        "<tr><td class=\"midiHiHatEdgeClosed\" style=\"padding: 0 1em 0 1.5em;\">G#1</td><td>Hat Edge Closed</td></tr>" +
                                         "<tr><td class=\"midiHihatOpen\" style=\"padding: 0 1em 0 1.5em;\">A1</td><td>Hat Open 1</td></tr>" +
                                         "<tr><td class=\"midiHihatOpen2\" style=\"padding: 0 1em 0 1.5em;\">A#1</td><td>Hat Open 2</td></tr>" +
                                         "<tr><td class=\"midiHihatOpen3\" style=\"padding: 0 1em 0 1.5em;\">B1</td><td>Hat Open 3</td></tr>" +
@@ -1097,7 +1097,7 @@ export default class RPlayerConf {
                                     "<ul><li>Nolly's Secret Sauce snare (a freebie Nolly gave out in 2019)</li><li>GGD P4 - The VK snare</li><li>GGD OKW Metal - the main snare (only the room mics)</li></ul>" +
                                     "<div class=\"midiTom1 midiTom2 midiTom3 midiTom4\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Toms:</div>" +
                                     "<ul><li>GGD P4 toms</li></ul>" +
-                                    "<div class=\"midiCrashL1 midiCrashR midiCrashL2 midiSplashL midiSplashR midiChina midiRide midiHihatOpen midiHihatOpen2 midiHihatOpen3 midiHihatPedal midiHihatTipTight midiMiniHat\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Cymbals:</div>" +
+                                    "<div class=\"midiCrashL1 midiCrashR midiCrashL2 midiSplashL midiSplashR midiChina midiRide midiHihatOpen midiHihatOpen2 midiHihatOpen3 midiHihatPedal midiHihatTipTight midiMiniHat midiHiHatEdgeClosed midiHiHatEdgeTight midiHihatTipClosed\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Cymbals:</div>" +
                                     "<ul><li>GGD P4 toms</li></ul>" +
                                     "<strong>And here's the MIDI mapping:</strong><br>" +
                                     "<table style=\"font-family: courier; border-collapse: collapse; margin-top: .5em;\">" +
@@ -1109,9 +1109,9 @@ export default class RPlayerConf {
                                         "<tr><td class=\"midiTom3\" style=\"padding: 0 1em 0 1.5em;\">B0</td><td>Floor Tom 1</td></tr>" +
                                         "<tr><td class=\"midiTom4\" style=\"padding: 0 1em 0 1.5em;\">C1</td><td>Floor Tom 2</td></tr>" +
                                         "<tr><td class=\"midiHihatTipTight\" style=\"padding: 0 1em 0 1.5em;\">F1</td><td>Hat Tip Tight</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">F#1</td><td>Hat Edge Tight</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">G1</td><td>Hat Tip Closed</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">G#1</td><td>Hat Edge Closed</td></tr>" +
+                                        "<tr><td class=\"midiHiHatEdgeTight\" style=\"padding: 0 1em 0 1.5em;\">F#1</td><td>Hat Edge Tight</td></tr>" +
+                                        "<tr><td class=\"midiHihatTipClosed\" style=\"padding: 0 1em 0 1.5em;\">G1</td><td>Hat Tip Closed</td></tr>" +
+                                        "<tr><td class=\"midiHiHatEdgeClosed\" style=\"padding: 0 1em 0 1.5em;\">G#1</td><td>Hat Edge Closed</td></tr>" +
                                         "<tr><td class=\"midiHihatOpen\" style=\"padding: 0 1em 0 1.5em;\">A1</td><td>Hat Open 1</td></tr>" +
                                         "<tr><td class=\"midiHihatOpen2\" style=\"padding: 0 1em 0 1.5em;\">A#1</td><td>Hat Open 2</td></tr>" +
                                         "<tr><td class=\"midiHihatOpen3\" style=\"padding: 0 1em 0 1.5em;\">B1</td><td>Hat Open 3</td></tr>" +
@@ -1296,7 +1296,7 @@ export default class RPlayerConf {
                                     "<ul><li>Nolly's Secret Sauce snare (a freebie Nolly gave out in 2019)</li><li>GGD P4 - The VK snare</li><li>GGD OKW Metal - the main snare (only the room mics)</li></ul>" +
                                     "<div class=\"midiTom1 midiTom2 midiTom3 midiTom4\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Toms:</div>" +
                                     "<ul><li>GGD P4 toms</li></ul>" +
-                                    "<div class=\"midiCrashL1 midiCrashR midiCrashL2 midiSplashL midiSplashR midiChina midiRide midiHihatOpen midiHihatOpen2 midiHihatOpen3 midiHihatPedal midiHihatTipTight midiMiniHat\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Cymbals:</div>" +
+                                    "<div class=\"midiCrashL1 midiCrashR midiCrashL2 midiSplashL midiSplashR midiChina midiRide midiHihatOpen midiHihatOpen2 midiHihatOpen3 midiHihatPedal midiHihatTipTight midiMiniHat midiHiHatEdgeClosed midiHiHatEdgeTight midiHihatTipClosed\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Cymbals:</div>" +
                                     "<ul><li>GGD P4 toms</li></ul>" +
                                     "<strong>And here's the MIDI mapping:</strong><br>" +
                                     "<table style=\"font-family: courier; border-collapse: collapse; margin-top: .5em;\">" +
@@ -1308,9 +1308,9 @@ export default class RPlayerConf {
                                         "<tr><td class=\"midiTom3\" style=\"padding: 0 1em 0 1.5em;\">B0</td><td>Floor Tom 1</td></tr>" +
                                         "<tr><td class=\"midiTom4\" style=\"padding: 0 1em 0 1.5em;\">C1</td><td>Floor Tom 2</td></tr>" +
                                         "<tr><td class=\"midiHihatTipTight\" style=\"padding: 0 1em 0 1.5em;\">F1</td><td>Hat Tip Tight</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">F#1</td><td>Hat Edge Tight</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">G1</td><td>Hat Tip Closed</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">G#1</td><td>Hat Edge Closed</td></tr>" +
+                                        "<tr><td class=\"midiHiHatEdgeTight\" style=\"padding: 0 1em 0 1.5em;\">F#1</td><td>Hat Edge Tight</td></tr>" +
+                                        "<tr><td class=\"midiHihatTipClosed\" style=\"padding: 0 1em 0 1.5em;\">G1</td><td>Hat Tip Closed</td></tr>" +
+                                        "<tr><td class=\"midiHiHatEdgeClosed\" style=\"padding: 0 1em 0 1.5em;\">G#1</td><td>Hat Edge Closed</td></tr>" +
                                         "<tr><td class=\"midiHihatOpen\" style=\"padding: 0 1em 0 1.5em;\">A1</td><td>Hat Open 1</td></tr>" +
                                         "<tr><td class=\"midiHihatOpen2\" style=\"padding: 0 1em 0 1.5em;\">A#1</td><td>Hat Open 2</td></tr>" +
                                         "<tr><td class=\"midiHihatOpen3\" style=\"padding: 0 1em 0 1.5em;\">B1</td><td>Hat Open 3</td></tr>" +
@@ -1452,7 +1452,7 @@ export default class RPlayerConf {
                                     "<ul><li>Nolly's Secret Sauce snare (a freebie Nolly gave out in 2019)</li><li>GGD P4 - The VK snare</li><li>GGD OKW Metal - the main snare (only the room mics)</li></ul>" +
                                     "<div class=\"midiTom1 midiTom2 midiTom3 midiTom4\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Toms:</div>" +
                                     "<ul><li>GGD P4 toms</li></ul>" +
-                                    "<div class=\"midiCrashL1 midiCrashR midiCrashL2 midiSplashL midiSplashR midiChina midiRide midiHihatOpen midiHihatOpen2 midiHihatOpen3 midiHihatPedal midiHihatTipTight midiMiniHat\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Cymbals:</div>" +
+                                    "<div class=\"midiCrashL1 midiCrashR midiCrashL2 midiSplashL midiSplashR midiChina midiRide midiHihatOpen midiHihatOpen2 midiHihatOpen3 midiHihatPedal midiHihatTipTight midiMiniHat midiHiHatEdgeClosed midiHiHatEdgeTight midiHihatTipClosed\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Cymbals:</div>" +
                                     "<ul><li>GGD P4 toms</li></ul>" +
                                     "<strong>And here's the MIDI mapping:</strong><br>" +
                                     "<table style=\"font-family: courier; border-collapse: collapse; margin-top: .5em;\">" +
@@ -1464,9 +1464,9 @@ export default class RPlayerConf {
                                         "<tr><td class=\"midiTom3\" style=\"padding: 0 1em 0 1.5em;\">B0</td><td>Floor Tom 1</td></tr>" +
                                         "<tr><td class=\"midiTom4\" style=\"padding: 0 1em 0 1.5em;\">C1</td><td>Floor Tom 2</td></tr>" +
                                         "<tr><td class=\"midiHihatTipTight\" style=\"padding: 0 1em 0 1.5em;\">F1</td><td>Hat Tip Tight</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">F#1</td><td>Hat Edge Tight</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">G1</td><td>Hat Tip Closed</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">G#1</td><td>Hat Edge Closed</td></tr>" +
+                                        "<tr><td class=\"midiHiHatEdgeTight\" style=\"padding: 0 1em 0 1.5em;\">F#1</td><td>Hat Edge Tight</td></tr>" +
+                                        "<tr><td class=\"midiHihatTipClosed\" style=\"padding: 0 1em 0 1.5em;\">G1</td><td>Hat Tip Closed</td></tr>" +
+                                        "<tr><td class=\"midiHiHatEdgeClosed\" style=\"padding: 0 1em 0 1.5em;\">G#1</td><td>Hat Edge Closed</td></tr>" +
                                         "<tr><td class=\"midiHihatOpen\" style=\"padding: 0 1em 0 1.5em;\">A1</td><td>Hat Open 1</td></tr>" +
                                         "<tr><td class=\"midiHihatOpen2\" style=\"padding: 0 1em 0 1.5em;\">A#1</td><td>Hat Open 2</td></tr>" +
                                         "<tr><td class=\"midiHihatOpen3\" style=\"padding: 0 1em 0 1.5em;\">B1</td><td>Hat Open 3</td></tr>" +
@@ -1608,7 +1608,7 @@ export default class RPlayerConf {
                                     "<ul><li>Nolly's Secret Sauce snare (a freebie Nolly gave out in 2019)</li><li>GGD P4 - The VK snare</li><li>GGD OKW Metal - the main snare (only the room mics)</li></ul>" +
                                     "<div class=\"midiTom1 midiTom2 midiTom3 midiTom4\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Toms:</div>" +
                                     "<ul><li>GGD P4 toms</li></ul>" +
-                                    "<div class=\"midiCrashL1 midiCrashR midiCrashL2 midiSplashL midiSplashR midiChina midiRide midiHihatOpen midiHihatOpen2 midiHihatOpen3 midiHihatPedal midiHihatTipTight midiMiniHat\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Cymbals:</div>" +
+                                    "<div class=\"midiCrashL1 midiCrashR midiCrashL2 midiSplashL midiSplashR midiChina midiRide midiHihatOpen midiHihatOpen2 midiHihatOpen3 midiHihatPedal midiHihatTipTight midiMiniHat midiHiHatEdgeClosed midiHiHatEdgeTight midiHihatTipClosed\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Cymbals:</div>" +
                                     "<ul><li>GGD P4 toms</li></ul>" +
                                     "<strong>And here's the MIDI mapping:</strong><br>" +
                                     "<table style=\"font-family: courier; border-collapse: collapse; margin-top: .5em;\">" +
@@ -1620,9 +1620,9 @@ export default class RPlayerConf {
                                         "<tr><td class=\"midiTom3\" style=\"padding: 0 1em 0 1.5em;\">B0</td><td>Floor Tom 1</td></tr>" +
                                         "<tr><td class=\"midiTom4\" style=\"padding: 0 1em 0 1.5em;\">C1</td><td>Floor Tom 2</td></tr>" +
                                         "<tr><td class=\"midiHihatTipTight\" style=\"padding: 0 1em 0 1.5em;\">F1</td><td>Hat Tip Tight</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">F#1</td><td>Hat Edge Tight</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">G1</td><td>Hat Tip Closed</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">G#1</td><td>Hat Edge Closed</td></tr>" +
+                                        "<tr><td class=\"midiHiHatEdgeTight\" style=\"padding: 0 1em 0 1.5em;\">F#1</td><td>Hat Edge Tight</td></tr>" +
+                                        "<tr><td class=\"midiHihatTipClosed\" style=\"padding: 0 1em 0 1.5em;\">G1</td><td>Hat Tip Closed</td></tr>" +
+                                        "<tr><td class=\"midiHiHatEdgeClosed\" style=\"padding: 0 1em 0 1.5em;\">G#1</td><td>Hat Edge Closed</td></tr>" +
                                         "<tr><td class=\"midiHihatOpen\" style=\"padding: 0 1em 0 1.5em;\">A1</td><td>Hat Open 1</td></tr>" +
                                         "<tr><td class=\"midiHihatOpen2\" style=\"padding: 0 1em 0 1.5em;\">A#1</td><td>Hat Open 2</td></tr>" +
                                         "<tr><td class=\"midiHihatOpen3\" style=\"padding: 0 1em 0 1.5em;\">B1</td><td>Hat Open 3</td></tr>" +
@@ -1764,7 +1764,7 @@ export default class RPlayerConf {
                                     "<ul><li>Nolly's Secret Sauce snare (a freebie Nolly gave out in 2019)</li><li>GGD P4 - The VK snare</li><li>GGD OKW Metal - the main snare (only the room mics)</li></ul>" +
                                     "<div class=\"midiTom1 midiTom2 midiTom3 midiTom4\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Toms:</div>" +
                                     "<ul><li>GGD P4 toms</li></ul>" +
-                                    "<div class=\"midiCrashL1 midiCrashR midiCrashL2 midiSplashL midiSplashR midiChina midiRide midiHihatOpen midiHihatOpen2 midiHihatOpen3 midiHihatPedal midiHihatTipTight midiMiniHat\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Cymbals:</div>" +
+                                    "<div class=\"midiCrashL1 midiCrashR midiCrashL2 midiSplashL midiSplashR midiChina midiRide midiHihatOpen midiHihatOpen2 midiHihatOpen3 midiHihatPedal midiHihatTipTight midiMiniHat midiHiHatEdgeClosed midiHiHatEdgeTight midiHihatTipClosed\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Cymbals:</div>" +
                                     "<ul><li>GGD P4 toms</li></ul>" +
                                     "<strong>And here's the MIDI mapping:</strong><br>" +
                                     "<table style=\"font-family: courier; border-collapse: collapse; margin-top: .5em;\">" +
@@ -1776,9 +1776,9 @@ export default class RPlayerConf {
                                         "<tr><td class=\"midiTom3\" style=\"padding: 0 1em 0 1.5em;\">B0</td><td>Floor Tom 1</td></tr>" +
                                         "<tr><td class=\"midiTom4\" style=\"padding: 0 1em 0 1.5em;\">C1</td><td>Floor Tom 2</td></tr>" +
                                         "<tr><td class=\"midiHihatTipTight\" style=\"padding: 0 1em 0 1.5em;\">F1</td><td>Hat Tip Tight</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">F#1</td><td>Hat Edge Tight</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">G1</td><td>Hat Tip Closed</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">G#1</td><td>Hat Edge Closed</td></tr>" +
+                                        "<tr><td class=\"midiHiHatEdgeTight\" style=\"padding: 0 1em 0 1.5em;\">F#1</td><td>Hat Edge Tight</td></tr>" +
+                                        "<tr><td class=\"midiHihatTipClosed\" style=\"padding: 0 1em 0 1.5em;\">G1</td><td>Hat Tip Closed</td></tr>" +
+                                        "<tr><td class=\"midiHiHatEdgeClosed\" style=\"padding: 0 1em 0 1.5em;\">G#1</td><td>Hat Edge Closed</td></tr>" +
                                         "<tr><td class=\"midiHihatOpen\" style=\"padding: 0 1em 0 1.5em;\">A1</td><td>Hat Open 1</td></tr>" +
                                         "<tr><td class=\"midiHihatOpen2\" style=\"padding: 0 1em 0 1.5em;\">A#1</td><td>Hat Open 2</td></tr>" +
                                         "<tr><td class=\"midiHihatOpen3\" style=\"padding: 0 1em 0 1.5em;\">B1</td><td>Hat Open 3</td></tr>" +
