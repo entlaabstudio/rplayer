@@ -102,6 +102,136 @@ export default class RPlayerConfCssTimeModifier {
                     }
                 },
                 "commandsInTime": {
+                    "1": {
+                        "selectorsKey": "midiSnare",
+                        "cssKey": "midiColor",
+                        "length": 0
+                    },
+                    "2": {
+                        "selectorsKey": "midiSnareGhost",
+                        "cssKey": "midiColor",
+                        "length": 0
+                    },
+                    "3": {
+                        "selectorsKey": "midiKick",
+                        "cssKey": "midiColor",
+                        "length": 0
+                    },
+                    "4": {
+                        "selectorsKey": "midiCrashL1",
+                        "cssKey": "midiColor",
+                        "length": 0
+                    },
+                    "5": {
+                        "selectorsKey": "midiCrashL2",
+                        "cssKey": "midiColor",
+                        "length": 0
+                    },
+                    "6": {
+                        "selectorsKey": "midiSplashL",
+                        "cssKey": "midiColor",
+                        "length": 0
+                    },
+                    "7": {
+                        "selectorsKey": "midiCrashR",
+                        "cssKey": "midiColor",
+                        "length": 0
+                    },
+                    "8": {
+                        "selectorsKey": "midiSplashR",
+                        "cssKey": "midiColor",
+                        "length": 0
+                    },
+                    "9": {
+                        "selectorsKey": "midiHihatOpen",
+                        "cssKey": "midiColor",
+                        "length": 0
+                    },
+                    "10": {
+                        "selectorsKey": "midiHihatOpen2",
+                        "cssKey": "midiColor",
+                        "length": 0
+                    },
+                    "11": {
+                        "selectorsKey": "midiHihatPedal",
+                        "cssKey": "midiColor",
+                        "length": 0
+                    },
+                    "12": {
+                        "selectorsKey": "midiHihatTipTight",
+                        "cssKey": "midiColor",
+                        "length": 0
+                    },
+                    "13": {
+                        "selectorsKey": "midiMiniHat",
+                        "cssKey": "midiColor",
+                        "length": 0
+                    },
+                    "14": {
+                        "selectorsKey": "midiTom1",
+                        "cssKey": "midiColor",
+                        "length": 0
+                    },
+                    "15": {
+                        "selectorsKey": "midiTom2",
+                        "cssKey": "midiColor",
+                        "length": 0
+                    },
+                    "16": {
+                        "selectorsKey": "midiTom3",
+                        "cssKey": "midiColor",
+                        "length": 0
+                    },
+                    "17": {
+                        "selectorsKey": "midiTom4",
+                        "cssKey": "midiColor",
+                        "length": 0
+                    },
+                    "18": {
+                        "selectorsKey": "midiChina",
+                        "cssKey": "midiColor",
+                        "length": 0
+                    },
+                    "19": {
+                        "selectorsKey": "midiRide",
+                        "cssKey": "midiColor",
+                        "length": 0
+                    },
+                    "20": {
+                        "selectorsKey": "midiStack",
+                        "cssKey": "midiColor",
+                        "length": 0
+                    },
+                    "21": {
+                        "selectorsKey": "midiBass",
+                        "cssKey": "midiColor",
+                        "length": 0
+                    },
+                    "22": {
+                        "selectorsKey": "guitarsHeader",
+                        "cssKey": "midiColor",
+                        "length": 0
+                    },
+                    "23": {
+                        "selectorsKey": "synthsHeader",
+                        "cssKey": "midiColor",
+                        "length": 0
+                    },
+                    "24": {
+                        "selectorsKey": "nolan",
+                        "cssKey": "border",
+                        "length": 0
+                    },
+                    "25": {
+                        "selectorsKey": "jurta",
+                        "cssKey": "border",
+                        "length": 0
+                    },
+                    "26": {
+                        "selectorsKey": "marcel",
+                        "cssKey": "border",
+                        "length": 0
+                    },
                     "18055": {
                         "selectorsKey": "midiHihatTipTight",
                         "cssKey": "midiColor",
