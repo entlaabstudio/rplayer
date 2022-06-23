@@ -274,10 +274,79 @@ export default class RPlayer {
     }
 
     cssTimeModifier() {
+        var that = this;
+
         if (this.cfg.cssTimeModifier !== undefined) {
             this.prepareCssMessageData().then(
-                this.startCssMessages()
+                function(resolve) {
+                    console.log(resolve);
+                    that.startCssMessages(resolve);
+                }
+                // console.log((this.cssMesages.jurta.commands)),
+
+                // this.idbStoreSaveMessages(),
+                
+                // this.startCssMessages()
             );
+        }
+    }
+
+    idbShowMessages() {
+        // console.log(this);
+        return this.idbCssMesages;
+    }
+
+    async idbGetMessages(id) {
+        return new Promise((resolve, reject) => {
+            const request = indexedDB.open("RPlayerDB", 4);
+    
+            request.onsuccess = async function(event) {
+                var db = request.result;
+                try {
+                    const tx = db.transaction("rplayerCssTimeModifyer", "readonly");
+                    const objectStore = tx.objectStore('rplayerCssTimeModifyer');
+                    
+                    var messages = objectStore.get(id);
+                    
+                    messages.onsuccess = function(event) {
+                    try {
+                            resolve(messages.result.value);   
+                        } catch (error) {
+                            resolve(false);
+                        }
+                    };                    
+                } catch (error) {
+                    resolve(false);
+                }
+            }
+        });
+    }
+
+    idbStoreSaveMessages() {
+        var that = this;
+
+        console.log("ahoj",this.cssMesages);
+        console.log("aoijfoaiejfoaijfoaiefj");
+        const request = indexedDB.open("RPlayerDB");
+        let db;
+
+        request.onupgradeneeded = function() {
+            const db = request.result;
+            const store = db.createObjectStore("rplayerCssTimeModifyer", {keyPath: "id"/*, autoIncrement: true*/});
+            // store.createIndex("by_selector", "selector");
+            // store.createIndex("by_commands", "commands");
+        };
+
+        request.onsuccess = function() {
+            db = request.result;
+
+            const tx = db.transaction("rplayerCssTimeModifyer", "readwrite");
+            const store = tx.objectStore("rplayerCssTimeModifyer");
+
+            store.put({
+                id: "cssMessages",
+                value: that.cssMesages
+            });
         }
     }
 
@@ -337,10 +406,11 @@ export default class RPlayer {
         }
     }
     
-    startCssMessages() {
+    startCssMessages(cssMessages) {
         var that = this;
+        var cssMessages;
         
-        for (const [key, value] of Object.entries(this.cssMesages)) {
+        for (const [key, value] of Object.entries(cssMessages)) {
             this.startMessages(value);
         }
 
@@ -354,48 +424,66 @@ export default class RPlayer {
     }
     
     async prepareCssMessageData() {
-        var selectors = [];
-        
-        for (const [key, value] of Object.entries(this.cfg.cssTimeModifier.commandsInTime)) {
-            if (selectors[value.selectorsKey] === undefined) {
-                selectors[value.selectorsKey] = [];
-                selectors[value.selectorsKey]["target"] = this.cfg.cssTimeModifier.selectors[value.selectorsKey];
-                selectors[value.selectorsKey]["commands"] = [];
-            }
+        return new Promise((resolve, reject) => {
 
-            // entrance
-            selectors[value.selectorsKey]["commands"][key] = [];
-            selectors[value.selectorsKey]["commands"][key]["time"] = parseInt(key);
-            if (this.cfg.cssTimeModifier.css[value.cssKey]) {
-                selectors[value.selectorsKey]["commands"][key]["css"] = this.cfg.cssTimeModifier.css[value.cssKey].entrance;
-            } else {
-                selectors[value.selectorsKey]["commands"][key]["css"] = this.cfg.cssTimeModifier.css[this.cfg.cssTimeModifier.default.cssKey].entrance
-            }
+            var that = this;
+    
+            this.idbGetMessages("cssMessages").then(
+                function(result) {
+                    console.log(result);
+                    if (result !== false) {
+                        // that.cssMesages = result;
+                        resolve(Promise.resolve(result));
+                    } else {
+                        // debugger;
+                        var selectors = [];
+                        
+                        for (const [key, value] of Object.entries(that.cfg.cssTimeModifier.commandsInTime)) {
+                            if (selectors[value.selectorsKey] === undefined) {
+                                selectors[value.selectorsKey] = [];
+                                selectors[value.selectorsKey]["target"] = that.cfg.cssTimeModifier.selectors[value.selectorsKey];
+                                selectors[value.selectorsKey]["commands"] = [];
+                            }
+                
+                            // entrance
+                            selectors[value.selectorsKey]["commands"][key] = [];
+                            selectors[value.selectorsKey]["commands"][key]["time"] = parseInt(key);
+                            if (that.cfg.cssTimeModifier.css[value.cssKey]) {
+                                selectors[value.selectorsKey]["commands"][key]["css"] = that.cfg.cssTimeModifier.css[value.cssKey].entrance;
+                            } else {
+                                selectors[value.selectorsKey]["commands"][key]["css"] = that.cfg.cssTimeModifier.css[that.cfg.cssTimeModifier.default.cssKey].entrance
+                            }
+                
+                            // outgoing
+                            selectors[value.selectorsKey]["commands"][parseInt(key) + value.length] = [];
+                            if (value.length !== undefined) {
+                                selectors[value.selectorsKey]["commands"][parseInt(key) + value.length]["time"] = parseInt(parseInt(key) + value.length);
+                            } else {
+                                selectors[value.selectorsKey]["commands"][parseInt(key) + value.length]["time"] = parseInt(parseInt(key) + that.cfg.cssTimeModifier.default.length);
+                            }
+                            if (that.cfg.cssTimeModifier.css[value.cssKey]) {
+                                selectors[value.selectorsKey]["commands"][parseInt(key) + value.length]["css"] = that.cfg.cssTimeModifier.css[value.cssKey].outgoing;
+                            } else {
+                                selectors[value.selectorsKey]["commands"][parseInt(key) + value.length]["css"] = that.cfg.cssTimeModifier.css[that.cfg.cssTimeModifier.default.cssKey].outgoing;
+                            }
+                
+                            // fix array keys
+                            var fixedKeysArray = [];
+                            var i = 0;
+                            for (const [key2, value2] of Object.entries(selectors[value.selectorsKey].commands)) {
+                                fixedKeysArray[i] = value2;
+                                i += 1;
+                            }
+                            selectors[value.selectorsKey].commands = fixedKeysArray;
+                        }
+                        that.cssMesages = selectors;
+                        // that.idbStoreSaveMessages();
+                        resolve(selectors);
+                    }
+                }
+            );
+        });
 
-            // outgoing
-            selectors[value.selectorsKey]["commands"][parseInt(key) + value.length] = [];
-            if (value.length !== undefined) {
-                selectors[value.selectorsKey]["commands"][parseInt(key) + value.length]["time"] = parseInt(parseInt(key) + value.length);
-            } else {
-                selectors[value.selectorsKey]["commands"][parseInt(key) + value.length]["time"] = parseInt(parseInt(key) + this.cfg.cssTimeModifier.default.length);
-            }
-            if (this.cfg.cssTimeModifier.css[value.cssKey]) {
-                selectors[value.selectorsKey]["commands"][parseInt(key) + value.length]["css"] = this.cfg.cssTimeModifier.css[value.cssKey].outgoing;
-            } else {
-                selectors[value.selectorsKey]["commands"][parseInt(key) + value.length]["css"] = this.cfg.cssTimeModifier.css[this.cfg.cssTimeModifier.default.cssKey].outgoing;
-            }
-
-            // fix array keys
-            var fixedKeysArray = [];
-            var i = 0;
-            for (const [key2, value2] of Object.entries(selectors[value.selectorsKey].commands)) {
-                fixedKeysArray[i] = value2;
-                i += 1;
-            }
-            selectors[value.selectorsKey].commands = fixedKeysArray;
-        }
-        this.cssMesages = selectors;
-        return Promise.resolve(selectors);
     }
 
     refreshPlayerOnInitTimeout() {
