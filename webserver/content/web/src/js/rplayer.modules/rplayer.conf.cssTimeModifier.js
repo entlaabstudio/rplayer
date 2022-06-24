@@ -99,7 +99,7 @@ export default class RPlayerConfCssTimeModifier {
                 },
                 "default": {
                     "cssKey": "border",
-                    "length": 150,
+                    "length": 74,
                 },
                 "commandsInTime": {
                     "1": {

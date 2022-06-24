@@ -401,38 +401,38 @@ export default class RPlayerConf {
                                     "<ul><li>GGD P4 toms</li></ul>" +
                                     "<strong>And here's the MIDI mapping:</strong><br>" +
                                     "<table style=\"font-family: courier; border-collapse: collapse; margin-top: .5em;\">" +
-                                        "<tr><td class=\"midiKick\" style=\"padding: 0 1em 0 1.5em;\">C0</td><td>Kick</td></tr>" +
-                                        "<tr><td class=\"midiSnareGhost\" style=\"padding: 0 1em 0 1.5em;\">C#0</td><td>Snare Ghost Note</td></tr>" +
-                                        "<tr><td class=\"midiSnare\" style=\"padding: 0 1em 0 1.5em;\">D0</td><td>Snare Main Hit</td></tr>" +
-                                        "<tr><td class=\"midiTom1\" style=\"padding: 0 1em 0 1.5em;\">A0</td><td>Rack Tom 1</td></tr>" +
-                                        "<tr><td class=\"midiTom2\" style=\"padding: 0 1em 0 1.5em;\">A#0</td><td>Rack Tom 2</td></tr>" +
-                                        "<tr><td class=\"midiTom3\" style=\"padding: 0 1em 0 1.5em;\">B0</td><td>Floor Tom 1</td></tr>" +
-                                        "<tr><td class=\"midiTom4\" style=\"padding: 0 1em 0 1.5em;\">C1</td><td>Floor Tom 2</td></tr>" +
-                                        "<tr><td class=\"midiHihatTipTight\" style=\"padding: 0 1em 0 1.5em;\">F1</td><td>Hat Tip Tight</td></tr>" +
-                                        "<tr><td class=\"midiHiHatEdgeTight\" style=\"padding: 0 1em 0 1.5em;\">F#1</td><td>Hat Edge Tight</td></tr>" +
-                                        "<tr><td class=\"midiHihatTipClosed\" style=\"padding: 0 1em 0 1.5em;\">G1</td><td>Hat Tip Closed</td></tr>" +
-                                        "<tr><td class=\"midiHiHatEdgeClosed\" style=\"padding: 0 1em 0 1.5em;\">G#1</td><td>Hat Edge Closed</td></tr>" +
-                                        "<tr><td class=\"midiHihatOpen\" style=\"padding: 0 1em 0 1.5em;\">A1</td><td>Hat Open 1</td></tr>" +
-                                        "<tr><td class=\"midiHihatOpen2\" style=\"padding: 0 1em 0 1.5em;\">A#1</td><td>Hat Open 2</td></tr>" +
-                                        "<tr><td class=\"midiHihatOpen3\" style=\"padding: 0 1em 0 1.5em;\">B1</td><td>Hat Open 3</td></tr>" +
-                                        "<tr><td class=\"midiHihatPedal\" style=\"padding: 0 1em 0 1.5em;\">C2</td><td>Hat Pedal</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">C#2</td><td>Hat Pedal Ching</td></tr>" +
-                                        "<tr><td class=\"midiCrashL1\" style=\"padding: 0 1em 0 1.5em;\">E2</td><td>Crash L 1</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">F2</td><td>Crash L 1 Choke</td></tr>" +
-                                        "<tr><td class=\"midiCrashR\" style=\"padding: 0 1em 0 1.5em;\">F#2</td><td>Crash R</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">G2</td><td>Crash R: Choke</td></tr>" +
-                                        "<tr><td class=\"midiCrashL2\" style=\"padding: 0 1em 0 1.5em;\">G#2</td><td>Crash L 2</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">A2</td><td>Crash L 2 Choke</td></tr>" +
-                                        "<tr><td class=\"midiRide\" style=\"padding: 0 1em 0 1.5em;\">C#3</td><td>Ride Bell</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">D3</td><td>Ride Bow</td></tr>" +
-                                        "<tr><td class=\"midiChina\" style=\"padding: 0 1em 0 1.5em;\">F3</td><td>China</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">F#3</td><td>China: Choke</td></tr>" +
-                                        "<tr><td class=\"midiSplashL\" style=\"padding: 0 1em 0 1.5em;\">C#3</td><td>Splash L</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">D4</td><td>Splash L Choke</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">D#4</td><td>Splash R</td></tr>" +
-                                        "<tr><td class=\"midiSplashR\" style=\"padding: 0 1em 0 1.5em;\">E4</td><td>Splash R Choke</td></tr>" +
-                                        "<tr><td class=\"midiMiniHat\" style=\"padding: 0 1em 0 1.5em;\">F4</td><td>Mini Hat</td></tr>" +
-                                        "<tr><td class=\"midiStack\" style=\"padding: 0 1em 0 1.5em;\">F#4</td><td>Stack</td></tr>" +
+                                        "<tr><td class=\"midiKick\" style=\"padding: 0 1em 0 1.5em; color: white;\">C0</td><td>Kick</td></tr>" +
+                                        "<tr><td class=\"midiSnareGhost\" style=\"padding: 0 1em 0 1.5em; color: white;\">C#0</td><td>Snare Ghost Note</td></tr>" +
+                                        "<tr><td class=\"midiSnare\" style=\"padding: 0 1em 0 1.5em; color: white;\">D0</td><td>Snare Main Hit</td></tr>" +
+                                        "<tr><td class=\"midiTom1\" style=\"padding: 0 1em 0 1.5em; color: white;\">A0</td><td>Rack Tom 1</td></tr>" +
+                                        "<tr><td class=\"midiTom2\" style=\"padding: 0 1em 0 1.5em; color: white;\">A#0</td><td>Rack Tom 2</td></tr>" +
+                                        "<tr><td class=\"midiTom3\" style=\"padding: 0 1em 0 1.5em; color: white;\">B0</td><td>Floor Tom 1</td></tr>" +
+                                        "<tr><td class=\"midiTom4\" style=\"padding: 0 1em 0 1.5em; color: white;\">C1</td><td>Floor Tom 2</td></tr>" +
+                                        "<tr><td class=\"midiHihatTipTight\" style=\"padding: 0 1em 0 1.5em; color: white;\">F1</td><td>Hat Tip Tight</td></tr>" +
+                                        "<tr><td class=\"midiHiHatEdgeTight\" style=\"padding: 0 1em 0 1.5em; color: white;\">F#1</td><td>Hat Edge Tight</td></tr>" +
+                                        "<tr><td class=\"midiHihatTipClosed\" style=\"padding: 0 1em 0 1.5em; color: white;\">G1</td><td>Hat Tip Closed</td></tr>" +
+                                        "<tr><td class=\"midiHiHatEdgeClosed\" style=\"padding: 0 1em 0 1.5em; color: white;\">G#1</td><td>Hat Edge Closed</td></tr>" +
+                                        "<tr><td class=\"midiHihatOpen\" style=\"padding: 0 1em 0 1.5em; color: white;\">A1</td><td>Hat Open 1</td></tr>" +
+                                        "<tr><td class=\"midiHihatOpen2\" style=\"padding: 0 1em 0 1.5em; color: white;\">A#1</td><td>Hat Open 2</td></tr>" +
+                                        "<tr><td class=\"midiHihatOpen3\" style=\"padding: 0 1em 0 1.5em; color: white;\">B1</td><td>Hat Open 3</td></tr>" +
+                                        "<tr><td class=\"midiHihatPedal\" style=\"padding: 0 1em 0 1.5em; color: white;\">C2</td><td>Hat Pedal</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">C#2</td><td>Hat Pedal Ching</td></tr>" +
+                                        "<tr><td class=\"midiCrashL1\" style=\"padding: 0 1em 0 1.5em; color: white;\">E2</td><td>Crash L 1</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">F2</td><td>Crash L 1 Choke</td></tr>" +
+                                        "<tr><td class=\"midiCrashR\" style=\"padding: 0 1em 0 1.5em; color: white;\">F#2</td><td>Crash R</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">G2</td><td>Crash R: Choke</td></tr>" +
+                                        "<tr><td class=\"midiCrashL2\" style=\"padding: 0 1em 0 1.5em; color: white;\">G#2</td><td>Crash L 2</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">A2</td><td>Crash L 2 Choke</td></tr>" +
+                                        "<tr><td class=\"midiRide\" style=\"padding: 0 1em 0 1.5em; color: white;\">C#3</td><td>Ride Bell</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">D3</td><td>Ride Bow</td></tr>" +
+                                        "<tr><td class=\"midiChina\" style=\"padding: 0 1em 0 1.5em; color: white;\">F3</td><td>China</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">F#3</td><td>China: Choke</td></tr>" +
+                                        "<tr><td class=\"midiSplashL\" style=\"padding: 0 1em 0 1.5em; color: white;\">C#3</td><td>Splash L</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">D4</td><td>Splash L Choke</td></tr>" +
+                                        "<tr><td class=\"midiSplashR\" style=\"padding: 0 1em 0 1.5em; color: white;\">D#4</td><td>Splash R</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">E4</td><td>Splash R Choke</td></tr>" +
+                                        "<tr><td class=\"midiMiniHat\" style=\"padding: 0 1em 0 1.5em; color: white;\">F4</td><td>Mini Hat</td></tr>" +
+                                        "<tr><td class=\"midiStack\" style=\"padding: 0 1em 0 1.5em; color: white;\">F#4</td><td>Stack</td></tr>" +
                                     "</table>",
                                 },
                                 2: {
@@ -557,38 +557,38 @@ export default class RPlayerConf {
                                     "<ul><li>GGD P4 toms</li></ul>" +
                                     "<strong>And here's the MIDI mapping:</strong><br>" +
                                     "<table style=\"font-family: courier; border-collapse: collapse; margin-top: .5em;\">" +
-                                        "<tr><td class=\"midiKick\" style=\"padding: 0 1em 0 1.5em;\">C0</td><td>Kick</td></tr>" +
-                                        "<tr><td class=\"midiSnareGhost\" style=\"padding: 0 1em 0 1.5em;\">C#0</td><td>Snare Ghost Note</td></tr>" +
-                                        "<tr><td class=\"midiSnare\" style=\"padding: 0 1em 0 1.5em;\">D0</td><td>Snare Main Hit</td></tr>" +
-                                        "<tr><td class=\"midiTom1\" style=\"padding: 0 1em 0 1.5em;\">A0</td><td>Rack Tom 1</td></tr>" +
-                                        "<tr><td class=\"midiTom2\" style=\"padding: 0 1em 0 1.5em;\">A#0</td><td>Rack Tom 2</td></tr>" +
-                                        "<tr><td class=\"midiTom3\" style=\"padding: 0 1em 0 1.5em;\">B0</td><td>Floor Tom 1</td></tr>" +
-                                        "<tr><td class=\"midiTom4\" style=\"padding: 0 1em 0 1.5em;\">C1</td><td>Floor Tom 2</td></tr>" +
-                                        "<tr><td class=\"midiHihatTipTight\" style=\"padding: 0 1em 0 1.5em;\">F1</td><td>Hat Tip Tight</td></tr>" +
-                                        "<tr><td class=\"midiHiHatEdgeTight\" style=\"padding: 0 1em 0 1.5em;\">F#1</td><td>Hat Edge Tight</td></tr>" +
-                                        "<tr><td class=\"midiHihatTipClosed\" style=\"padding: 0 1em 0 1.5em;\">G1</td><td>Hat Tip Closed</td></tr>" +
-                                        "<tr><td class=\"midiHiHatEdgeClosed\" style=\"padding: 0 1em 0 1.5em;\">G#1</td><td>Hat Edge Closed</td></tr>" +
-                                        "<tr><td class=\"midiHihatOpen\" style=\"padding: 0 1em 0 1.5em;\">A1</td><td>Hat Open 1</td></tr>" +
-                                        "<tr><td class=\"midiHihatOpen2\" style=\"padding: 0 1em 0 1.5em;\">A#1</td><td>Hat Open 2</td></tr>" +
-                                        "<tr><td class=\"midiHihatOpen3\" style=\"padding: 0 1em 0 1.5em;\">B1</td><td>Hat Open 3</td></tr>" +
-                                        "<tr><td class=\"midiHihatPedal\" style=\"padding: 0 1em 0 1.5em;\">C2</td><td>Hat Pedal</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">C#2</td><td>Hat Pedal Ching</td></tr>" +
-                                        "<tr><td class=\"midiCrashL1\" style=\"padding: 0 1em 0 1.5em;\">E2</td><td>Crash L 1</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">F2</td><td>Crash L 1 Choke</td></tr>" +
-                                        "<tr><td class=\"midiCrashR\" style=\"padding: 0 1em 0 1.5em;\">F#2</td><td>Crash R</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">G2</td><td>Crash R: Choke</td></tr>" +
-                                        "<tr><td class=\"midiCrashL2\" style=\"padding: 0 1em 0 1.5em;\">G#2</td><td>Crash L 2</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">A2</td><td>Crash L 2 Choke</td></tr>" +
-                                        "<tr><td class=\"midiRide\" style=\"padding: 0 1em 0 1.5em;\">C#3</td><td>Ride Bell</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">D3</td><td>Ride Bow</td></tr>" +
-                                        "<tr><td class=\"midiChina\" style=\"padding: 0 1em 0 1.5em;\">F3</td><td>China</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">F#3</td><td>China: Choke</td></tr>" +
-                                        "<tr><td class=\"midiSplashL\" style=\"padding: 0 1em 0 1.5em;\">C#3</td><td>Splash L</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">D4</td><td>Splash L Choke</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">D#4</td><td>Splash R</td></tr>" +
-                                        "<tr><td class=\"midiSplashR\" style=\"padding: 0 1em 0 1.5em;\">E4</td><td>Splash R Choke</td></tr>" +
-                                        "<tr><td class=\"midiMiniHat\" style=\"padding: 0 1em 0 1.5em;\">F4</td><td>Mini Hat</td></tr>" +
-                                        "<tr><td class=\"midiStack\" style=\"padding: 0 1em 0 1.5em;\">F#4</td><td>Stack</td></tr>" +
+                                        "<tr><td class=\"midiKick\" style=\"padding: 0 1em 0 1.5em; color: white;\">C0</td><td>Kick</td></tr>" +
+                                        "<tr><td class=\"midiSnareGhost\" style=\"padding: 0 1em 0 1.5em; color: white;\">C#0</td><td>Snare Ghost Note</td></tr>" +
+                                        "<tr><td class=\"midiSnare\" style=\"padding: 0 1em 0 1.5em; color: white;\">D0</td><td>Snare Main Hit</td></tr>" +
+                                        "<tr><td class=\"midiTom1\" style=\"padding: 0 1em 0 1.5em; color: white;\">A0</td><td>Rack Tom 1</td></tr>" +
+                                        "<tr><td class=\"midiTom2\" style=\"padding: 0 1em 0 1.5em; color: white;\">A#0</td><td>Rack Tom 2</td></tr>" +
+                                        "<tr><td class=\"midiTom3\" style=\"padding: 0 1em 0 1.5em; color: white;\">B0</td><td>Floor Tom 1</td></tr>" +
+                                        "<tr><td class=\"midiTom4\" style=\"padding: 0 1em 0 1.5em; color: white;\">C1</td><td>Floor Tom 2</td></tr>" +
+                                        "<tr><td class=\"midiHihatTipTight\" style=\"padding: 0 1em 0 1.5em; color: white;\">F1</td><td>Hat Tip Tight</td></tr>" +
+                                        "<tr><td class=\"midiHiHatEdgeTight\" style=\"padding: 0 1em 0 1.5em; color: white;\">F#1</td><td>Hat Edge Tight</td></tr>" +
+                                        "<tr><td class=\"midiHihatTipClosed\" style=\"padding: 0 1em 0 1.5em; color: white;\">G1</td><td>Hat Tip Closed</td></tr>" +
+                                        "<tr><td class=\"midiHiHatEdgeClosed\" style=\"padding: 0 1em 0 1.5em; color: white;\">G#1</td><td>Hat Edge Closed</td></tr>" +
+                                        "<tr><td class=\"midiHihatOpen\" style=\"padding: 0 1em 0 1.5em; color: white;\">A1</td><td>Hat Open 1</td></tr>" +
+                                        "<tr><td class=\"midiHihatOpen2\" style=\"padding: 0 1em 0 1.5em; color: white;\">A#1</td><td>Hat Open 2</td></tr>" +
+                                        "<tr><td class=\"midiHihatOpen3\" style=\"padding: 0 1em 0 1.5em; color: white;\">B1</td><td>Hat Open 3</td></tr>" +
+                                        "<tr><td class=\"midiHihatPedal\" style=\"padding: 0 1em 0 1.5em; color: white;\">C2</td><td>Hat Pedal</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">C#2</td><td>Hat Pedal Ching</td></tr>" +
+                                        "<tr><td class=\"midiCrashL1\" style=\"padding: 0 1em 0 1.5em; color: white;\">E2</td><td>Crash L 1</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">F2</td><td>Crash L 1 Choke</td></tr>" +
+                                        "<tr><td class=\"midiCrashR\" style=\"padding: 0 1em 0 1.5em; color: white;\">F#2</td><td>Crash R</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">G2</td><td>Crash R: Choke</td></tr>" +
+                                        "<tr><td class=\"midiCrashL2\" style=\"padding: 0 1em 0 1.5em; color: white;\">G#2</td><td>Crash L 2</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">A2</td><td>Crash L 2 Choke</td></tr>" +
+                                        "<tr><td class=\"midiRide\" style=\"padding: 0 1em 0 1.5em; color: white;\">C#3</td><td>Ride Bell</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">D3</td><td>Ride Bow</td></tr>" +
+                                        "<tr><td class=\"midiChina\" style=\"padding: 0 1em 0 1.5em; color: white;\">F3</td><td>China</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">F#3</td><td>China: Choke</td></tr>" +
+                                        "<tr><td class=\"midiSplashL\" style=\"padding: 0 1em 0 1.5em; color: white;\">C#3</td><td>Splash L</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">D4</td><td>Splash L Choke</td></tr>" +
+                                        "<tr><td class=\"midiSplashR\" style=\"padding: 0 1em 0 1.5em; color: white;\">D#4</td><td>Splash R</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">E4</td><td>Splash R Choke</td></tr>" +
+                                        "<tr><td class=\"midiMiniHat\" style=\"padding: 0 1em 0 1.5em; color: white;\">F4</td><td>Mini Hat</td></tr>" +
+                                        "<tr><td class=\"midiStack\" style=\"padding: 0 1em 0 1.5em; color: white;\">F#4</td><td>Stack</td></tr>" +
                                     "</table>",
                                 },
                                 2: {
@@ -723,38 +723,38 @@ export default class RPlayerConf {
                                     "<ul><li>GGD P4 toms</li></ul>" +
                                     "<strong>And here's the MIDI mapping:</strong><br>" +
                                     "<table style=\"font-family: courier; border-collapse: collapse; margin-top: .5em;\">" +
-                                        "<tr><td class=\"midiKick\" style=\"padding: 0 1em 0 1.5em;\">C0</td><td>Kick</td></tr>" +
-                                        "<tr><td class=\"midiSnareGhost\" style=\"padding: 0 1em 0 1.5em;\">C#0</td><td>Snare Ghost Note</td></tr>" +
-                                        "<tr><td class=\"midiSnare\" style=\"padding: 0 1em 0 1.5em;\">D0</td><td>Snare Main Hit</td></tr>" +
-                                        "<tr><td class=\"midiTom1\" style=\"padding: 0 1em 0 1.5em;\">A0</td><td>Rack Tom 1</td></tr>" +
-                                        "<tr><td class=\"midiTom2\" style=\"padding: 0 1em 0 1.5em;\">A#0</td><td>Rack Tom 2</td></tr>" +
-                                        "<tr><td class=\"midiTom3\" style=\"padding: 0 1em 0 1.5em;\">B0</td><td>Floor Tom 1</td></tr>" +
-                                        "<tr><td class=\"midiTom4\" style=\"padding: 0 1em 0 1.5em;\">C1</td><td>Floor Tom 2</td></tr>" +
-                                        "<tr><td class=\"midiHihatTipTight\" style=\"padding: 0 1em 0 1.5em;\">F1</td><td>Hat Tip Tight</td></tr>" +
-                                        "<tr><td class=\"midiHiHatEdgeTight\" style=\"padding: 0 1em 0 1.5em;\">F#1</td><td>Hat Edge Tight</td></tr>" +
-                                        "<tr><td class=\"midiHihatTipClosed\" style=\"padding: 0 1em 0 1.5em;\">G1</td><td>Hat Tip Closed</td></tr>" +
-                                        "<tr><td class=\"midiHiHatEdgeClosed\" style=\"padding: 0 1em 0 1.5em;\">G#1</td><td>Hat Edge Closed</td></tr>" +
-                                        "<tr><td class=\"midiHihatOpen\" style=\"padding: 0 1em 0 1.5em;\">A1</td><td>Hat Open 1</td></tr>" +
-                                        "<tr><td class=\"midiHihatOpen2\" style=\"padding: 0 1em 0 1.5em;\">A#1</td><td>Hat Open 2</td></tr>" +
-                                        "<tr><td class=\"midiHihatOpen3\" style=\"padding: 0 1em 0 1.5em;\">B1</td><td>Hat Open 3</td></tr>" +
-                                        "<tr><td class=\"midiHihatPedal\" style=\"padding: 0 1em 0 1.5em;\">C2</td><td>Hat Pedal</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">C#2</td><td>Hat Pedal Ching</td></tr>" +
-                                        "<tr><td class=\"midiCrashL1\" style=\"padding: 0 1em 0 1.5em;\">E2</td><td>Crash L 1</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">F2</td><td>Crash L 1 Choke</td></tr>" +
-                                        "<tr><td class=\"midiCrashR\" style=\"padding: 0 1em 0 1.5em;\">F#2</td><td>Crash R</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">G2</td><td>Crash R: Choke</td></tr>" +
-                                        "<tr><td class=\"midiCrashL2\" style=\"padding: 0 1em 0 1.5em;\">G#2</td><td>Crash L 2</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">A2</td><td>Crash L 2 Choke</td></tr>" +
-                                        "<tr><td class=\"midiRide\" style=\"padding: 0 1em 0 1.5em;\">C#3</td><td>Ride Bell</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">D3</td><td>Ride Bow</td></tr>" +
-                                        "<tr><td class=\"midiChina\" style=\"padding: 0 1em 0 1.5em;\">F3</td><td>China</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">F#3</td><td>China: Choke</td></tr>" +
-                                        "<tr><td class=\"midiSplashL\" style=\"padding: 0 1em 0 1.5em;\">C#3</td><td>Splash L</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">D4</td><td>Splash L Choke</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">D#4</td><td>Splash R</td></tr>" +
-                                        "<tr><td class=\"midiSplashR\" style=\"padding: 0 1em 0 1.5em;\">E4</td><td>Splash R Choke</td></tr>" +
-                                        "<tr><td class=\"midiMiniHat\" style=\"padding: 0 1em 0 1.5em;\">F4</td><td>Mini Hat</td></tr>" +
-                                        "<tr><td class=\"midiStack\" style=\"padding: 0 1em 0 1.5em;\">F#4</td><td>Stack</td></tr>" +
+                                        "<tr><td class=\"midiKick\" style=\"padding: 0 1em 0 1.5em; color: white;\">C0</td><td>Kick</td></tr>" +
+                                        "<tr><td class=\"midiSnareGhost\" style=\"padding: 0 1em 0 1.5em; color: white;\">C#0</td><td>Snare Ghost Note</td></tr>" +
+                                        "<tr><td class=\"midiSnare\" style=\"padding: 0 1em 0 1.5em; color: white;\">D0</td><td>Snare Main Hit</td></tr>" +
+                                        "<tr><td class=\"midiTom1\" style=\"padding: 0 1em 0 1.5em; color: white;\">A0</td><td>Rack Tom 1</td></tr>" +
+                                        "<tr><td class=\"midiTom2\" style=\"padding: 0 1em 0 1.5em; color: white;\">A#0</td><td>Rack Tom 2</td></tr>" +
+                                        "<tr><td class=\"midiTom3\" style=\"padding: 0 1em 0 1.5em; color: white;\">B0</td><td>Floor Tom 1</td></tr>" +
+                                        "<tr><td class=\"midiTom4\" style=\"padding: 0 1em 0 1.5em; color: white;\">C1</td><td>Floor Tom 2</td></tr>" +
+                                        "<tr><td class=\"midiHihatTipTight\" style=\"padding: 0 1em 0 1.5em; color: white;\">F1</td><td>Hat Tip Tight</td></tr>" +
+                                        "<tr><td class=\"midiHiHatEdgeTight\" style=\"padding: 0 1em 0 1.5em; color: white;\">F#1</td><td>Hat Edge Tight</td></tr>" +
+                                        "<tr><td class=\"midiHihatTipClosed\" style=\"padding: 0 1em 0 1.5em; color: white;\">G1</td><td>Hat Tip Closed</td></tr>" +
+                                        "<tr><td class=\"midiHiHatEdgeClosed\" style=\"padding: 0 1em 0 1.5em; color: white;\">G#1</td><td>Hat Edge Closed</td></tr>" +
+                                        "<tr><td class=\"midiHihatOpen\" style=\"padding: 0 1em 0 1.5em; color: white;\">A1</td><td>Hat Open 1</td></tr>" +
+                                        "<tr><td class=\"midiHihatOpen2\" style=\"padding: 0 1em 0 1.5em; color: white;\">A#1</td><td>Hat Open 2</td></tr>" +
+                                        "<tr><td class=\"midiHihatOpen3\" style=\"padding: 0 1em 0 1.5em; color: white;\">B1</td><td>Hat Open 3</td></tr>" +
+                                        "<tr><td class=\"midiHihatPedal\" style=\"padding: 0 1em 0 1.5em; color: white;\">C2</td><td>Hat Pedal</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">C#2</td><td>Hat Pedal Ching</td></tr>" +
+                                        "<tr><td class=\"midiCrashL1\" style=\"padding: 0 1em 0 1.5em; color: white;\">E2</td><td>Crash L 1</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">F2</td><td>Crash L 1 Choke</td></tr>" +
+                                        "<tr><td class=\"midiCrashR\" style=\"padding: 0 1em 0 1.5em; color: white;\">F#2</td><td>Crash R</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">G2</td><td>Crash R: Choke</td></tr>" +
+                                        "<tr><td class=\"midiCrashL2\" style=\"padding: 0 1em 0 1.5em; color: white;\">G#2</td><td>Crash L 2</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">A2</td><td>Crash L 2 Choke</td></tr>" +
+                                        "<tr><td class=\"midiRide\" style=\"padding: 0 1em 0 1.5em; color: white;\">C#3</td><td>Ride Bell</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">D3</td><td>Ride Bow</td></tr>" +
+                                        "<tr><td class=\"midiChina\" style=\"padding: 0 1em 0 1.5em; color: white;\">F3</td><td>China</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">F#3</td><td>China: Choke</td></tr>" +
+                                        "<tr><td class=\"midiSplashL\" style=\"padding: 0 1em 0 1.5em; color: white;\">C#3</td><td>Splash L</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">D4</td><td>Splash L Choke</td></tr>" +
+                                        "<tr><td class=\"midiSplashR\" style=\"padding: 0 1em 0 1.5em; color: white;\">D#4</td><td>Splash R</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">E4</td><td>Splash R Choke</td></tr>" +
+                                        "<tr><td class=\"midiMiniHat\" style=\"padding: 0 1em 0 1.5em; color: white;\">F4</td><td>Mini Hat</td></tr>" +
+                                        "<tr><td class=\"midiStack\" style=\"padding: 0 1em 0 1.5em; color: white;\">F#4</td><td>Stack</td></tr>" +
                                     "</table>",
                                 },
                                 3: {
@@ -923,38 +923,38 @@ export default class RPlayerConf {
                                     "<ul><li>GGD P4 toms</li></ul>" +
                                     "<strong>And here's the MIDI mapping:</strong><br>" +
                                     "<table style=\"font-family: courier; border-collapse: collapse; margin-top: .5em;\">" +
-                                        "<tr><td class=\"midiKick\" style=\"padding: 0 1em 0 1.5em;\">C0</td><td>Kick</td></tr>" +
-                                        "<tr><td class=\"midiSnareGhost\" style=\"padding: 0 1em 0 1.5em;\">C#0</td><td>Snare Ghost Note</td></tr>" +
-                                        "<tr><td class=\"midiSnare\" style=\"padding: 0 1em 0 1.5em;\">D0</td><td>Snare Main Hit</td></tr>" +
-                                        "<tr><td class=\"midiTom1\" style=\"padding: 0 1em 0 1.5em;\">A0</td><td>Rack Tom 1</td></tr>" +
-                                        "<tr><td class=\"midiTom2\" style=\"padding: 0 1em 0 1.5em;\">A#0</td><td>Rack Tom 2</td></tr>" +
-                                        "<tr><td class=\"midiTom3\" style=\"padding: 0 1em 0 1.5em;\">B0</td><td>Floor Tom 1</td></tr>" +
-                                        "<tr><td class=\"midiTom4\" style=\"padding: 0 1em 0 1.5em;\">C1</td><td>Floor Tom 2</td></tr>" +
-                                        "<tr><td class=\"midiHihatTipTight\" style=\"padding: 0 1em 0 1.5em;\">F1</td><td>Hat Tip Tight</td></tr>" +
-                                        "<tr><td class=\"midiHiHatEdgeTight\" style=\"padding: 0 1em 0 1.5em;\">F#1</td><td>Hat Edge Tight</td></tr>" +
-                                        "<tr><td class=\"midiHihatTipClosed\" style=\"padding: 0 1em 0 1.5em;\">G1</td><td>Hat Tip Closed</td></tr>" +
-                                        "<tr><td class=\"midiHiHatEdgeClosed\" style=\"padding: 0 1em 0 1.5em;\">G#1</td><td>Hat Edge Closed</td></tr>" +
-                                        "<tr><td class=\"midiHihatOpen\" style=\"padding: 0 1em 0 1.5em;\">A1</td><td>Hat Open 1</td></tr>" +
-                                        "<tr><td class=\"midiHihatOpen2\" style=\"padding: 0 1em 0 1.5em;\">A#1</td><td>Hat Open 2</td></tr>" +
-                                        "<tr><td class=\"midiHihatOpen3\" style=\"padding: 0 1em 0 1.5em;\">B1</td><td>Hat Open 3</td></tr>" +
-                                        "<tr><td class=\"midiHihatPedal\" style=\"padding: 0 1em 0 1.5em;\">C2</td><td>Hat Pedal</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">C#2</td><td>Hat Pedal Ching</td></tr>" +
-                                        "<tr><td class=\"midiCrashL1\" style=\"padding: 0 1em 0 1.5em;\">E2</td><td>Crash L 1</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">F2</td><td>Crash L 1 Choke</td></tr>" +
-                                        "<tr><td class=\"midiCrashR\" style=\"padding: 0 1em 0 1.5em;\">F#2</td><td>Crash R</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">G2</td><td>Crash R: Choke</td></tr>" +
-                                        "<tr><td class=\"midiCrashL2\" style=\"padding: 0 1em 0 1.5em;\">G#2</td><td>Crash L 2</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">A2</td><td>Crash L 2 Choke</td></tr>" +
-                                        "<tr><td class=\"midiRide\" style=\"padding: 0 1em 0 1.5em;\">C#3</td><td>Ride Bell</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">D3</td><td>Ride Bow</td></tr>" +
-                                        "<tr><td class=\"midiChina\" style=\"padding: 0 1em 0 1.5em;\">F3</td><td>China</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">F#3</td><td>China: Choke</td></tr>" +
-                                        "<tr><td class=\"midiSplashL\" style=\"padding: 0 1em 0 1.5em;\">C#3</td><td>Splash L</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">D4</td><td>Splash L Choke</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">D#4</td><td>Splash R</td></tr>" +
-                                        "<tr><td class=\"midiSplashR\" style=\"padding: 0 1em 0 1.5em;\">E4</td><td>Splash R Choke</td></tr>" +
-                                        "<tr><td class=\"midiMiniHat\" style=\"padding: 0 1em 0 1.5em;\">F4</td><td>Mini Hat</td></tr>" +
-                                        "<tr><td class=\"midiStack\" style=\"padding: 0 1em 0 1.5em;\">F#4</td><td>Stack</td></tr>" +
+                                        "<tr><td class=\"midiKick\" style=\"padding: 0 1em 0 1.5em; color: white;\">C0</td><td>Kick</td></tr>" +
+                                        "<tr><td class=\"midiSnareGhost\" style=\"padding: 0 1em 0 1.5em; color: white;\">C#0</td><td>Snare Ghost Note</td></tr>" +
+                                        "<tr><td class=\"midiSnare\" style=\"padding: 0 1em 0 1.5em; color: white;\">D0</td><td>Snare Main Hit</td></tr>" +
+                                        "<tr><td class=\"midiTom1\" style=\"padding: 0 1em 0 1.5em; color: white;\">A0</td><td>Rack Tom 1</td></tr>" +
+                                        "<tr><td class=\"midiTom2\" style=\"padding: 0 1em 0 1.5em; color: white;\">A#0</td><td>Rack Tom 2</td></tr>" +
+                                        "<tr><td class=\"midiTom3\" style=\"padding: 0 1em 0 1.5em; color: white;\">B0</td><td>Floor Tom 1</td></tr>" +
+                                        "<tr><td class=\"midiTom4\" style=\"padding: 0 1em 0 1.5em; color: white;\">C1</td><td>Floor Tom 2</td></tr>" +
+                                        "<tr><td class=\"midiHihatTipTight\" style=\"padding: 0 1em 0 1.5em; color: white;\">F1</td><td>Hat Tip Tight</td></tr>" +
+                                        "<tr><td class=\"midiHiHatEdgeTight\" style=\"padding: 0 1em 0 1.5em; color: white;\">F#1</td><td>Hat Edge Tight</td></tr>" +
+                                        "<tr><td class=\"midiHihatTipClosed\" style=\"padding: 0 1em 0 1.5em; color: white;\">G1</td><td>Hat Tip Closed</td></tr>" +
+                                        "<tr><td class=\"midiHiHatEdgeClosed\" style=\"padding: 0 1em 0 1.5em; color: white;\">G#1</td><td>Hat Edge Closed</td></tr>" +
+                                        "<tr><td class=\"midiHihatOpen\" style=\"padding: 0 1em 0 1.5em; color: white;\">A1</td><td>Hat Open 1</td></tr>" +
+                                        "<tr><td class=\"midiHihatOpen2\" style=\"padding: 0 1em 0 1.5em; color: white;\">A#1</td><td>Hat Open 2</td></tr>" +
+                                        "<tr><td class=\"midiHihatOpen3\" style=\"padding: 0 1em 0 1.5em; color: white;\">B1</td><td>Hat Open 3</td></tr>" +
+                                        "<tr><td class=\"midiHihatPedal\" style=\"padding: 0 1em 0 1.5em; color: white;\">C2</td><td>Hat Pedal</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">C#2</td><td>Hat Pedal Ching</td></tr>" +
+                                        "<tr><td class=\"midiCrashL1\" style=\"padding: 0 1em 0 1.5em; color: white;\">E2</td><td>Crash L 1</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">F2</td><td>Crash L 1 Choke</td></tr>" +
+                                        "<tr><td class=\"midiCrashR\" style=\"padding: 0 1em 0 1.5em; color: white;\">F#2</td><td>Crash R</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">G2</td><td>Crash R: Choke</td></tr>" +
+                                        "<tr><td class=\"midiCrashL2\" style=\"padding: 0 1em 0 1.5em; color: white;\">G#2</td><td>Crash L 2</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">A2</td><td>Crash L 2 Choke</td></tr>" +
+                                        "<tr><td class=\"midiRide\" style=\"padding: 0 1em 0 1.5em; color: white;\">C#3</td><td>Ride Bell</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">D3</td><td>Ride Bow</td></tr>" +
+                                        "<tr><td class=\"midiChina\" style=\"padding: 0 1em 0 1.5em; color: white;\">F3</td><td>China</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">F#3</td><td>China: Choke</td></tr>" +
+                                        "<tr><td class=\"midiSplashL\" style=\"padding: 0 1em 0 1.5em; color: white;\">C#3</td><td>Splash L</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">D4</td><td>Splash L Choke</td></tr>" +
+                                        "<tr><td class=\"midiSplashR\" style=\"padding: 0 1em 0 1.5em; color: white;\">D#4</td><td>Splash R</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">E4</td><td>Splash R Choke</td></tr>" +
+                                        "<tr><td class=\"midiMiniHat\" style=\"padding: 0 1em 0 1.5em; color: white;\">F4</td><td>Mini Hat</td></tr>" +
+                                        "<tr><td class=\"midiStack\" style=\"padding: 0 1em 0 1.5em; color: white;\">F#4</td><td>Stack</td></tr>" +
                                     "</table>",
                                 },
                                 2: {
@@ -1101,38 +1101,38 @@ export default class RPlayerConf {
                                     "<ul><li>GGD P4 toms</li></ul>" +
                                     "<strong>And here's the MIDI mapping:</strong><br>" +
                                     "<table style=\"font-family: courier; border-collapse: collapse; margin-top: .5em;\">" +
-                                        "<tr><td class=\"midiKick\" style=\"padding: 0 1em 0 1.5em;\">C0</td><td>Kick</td></tr>" +
-                                        "<tr><td class=\"midiSnareGhost\" style=\"padding: 0 1em 0 1.5em;\">C#0</td><td>Snare Ghost Note</td></tr>" +
-                                        "<tr><td class=\"midiSnare\" style=\"padding: 0 1em 0 1.5em;\">D0</td><td>Snare Main Hit</td></tr>" +
-                                        "<tr><td class=\"midiTom1\" style=\"padding: 0 1em 0 1.5em;\">A0</td><td>Rack Tom 1</td></tr>" +
-                                        "<tr><td class=\"midiTom2\" style=\"padding: 0 1em 0 1.5em;\">A#0</td><td>Rack Tom 2</td></tr>" +
-                                        "<tr><td class=\"midiTom3\" style=\"padding: 0 1em 0 1.5em;\">B0</td><td>Floor Tom 1</td></tr>" +
-                                        "<tr><td class=\"midiTom4\" style=\"padding: 0 1em 0 1.5em;\">C1</td><td>Floor Tom 2</td></tr>" +
-                                        "<tr><td class=\"midiHihatTipTight\" style=\"padding: 0 1em 0 1.5em;\">F1</td><td>Hat Tip Tight</td></tr>" +
-                                        "<tr><td class=\"midiHiHatEdgeTight\" style=\"padding: 0 1em 0 1.5em;\">F#1</td><td>Hat Edge Tight</td></tr>" +
-                                        "<tr><td class=\"midiHihatTipClosed\" style=\"padding: 0 1em 0 1.5em;\">G1</td><td>Hat Tip Closed</td></tr>" +
-                                        "<tr><td class=\"midiHiHatEdgeClosed\" style=\"padding: 0 1em 0 1.5em;\">G#1</td><td>Hat Edge Closed</td></tr>" +
-                                        "<tr><td class=\"midiHihatOpen\" style=\"padding: 0 1em 0 1.5em;\">A1</td><td>Hat Open 1</td></tr>" +
-                                        "<tr><td class=\"midiHihatOpen2\" style=\"padding: 0 1em 0 1.5em;\">A#1</td><td>Hat Open 2</td></tr>" +
-                                        "<tr><td class=\"midiHihatOpen3\" style=\"padding: 0 1em 0 1.5em;\">B1</td><td>Hat Open 3</td></tr>" +
-                                        "<tr><td class=\"midiHihatPedal\" style=\"padding: 0 1em 0 1.5em;\">C2</td><td>Hat Pedal</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">C#2</td><td>Hat Pedal Ching</td></tr>" +
-                                        "<tr><td class=\"midiCrashL1\" style=\"padding: 0 1em 0 1.5em;\">E2</td><td>Crash L 1</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">F2</td><td>Crash L 1 Choke</td></tr>" +
-                                        "<tr><td class=\"midiCrashR\" style=\"padding: 0 1em 0 1.5em;\">F#2</td><td>Crash R</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">G2</td><td>Crash R: Choke</td></tr>" +
-                                        "<tr><td class=\"midiCrashL2\" style=\"padding: 0 1em 0 1.5em;\">G#2</td><td>Crash L 2</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">A2</td><td>Crash L 2 Choke</td></tr>" +
-                                        "<tr><td class=\"midiRide\" style=\"padding: 0 1em 0 1.5em;\">C#3</td><td>Ride Bell</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">D3</td><td>Ride Bow</td></tr>" +
-                                        "<tr><td class=\"midiChina\" style=\"padding: 0 1em 0 1.5em;\">F3</td><td>China</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">F#3</td><td>China: Choke</td></tr>" +
-                                        "<tr><td class=\"midiSplashL\" style=\"padding: 0 1em 0 1.5em;\">C#3</td><td>Splash L</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">D4</td><td>Splash L Choke</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">D#4</td><td>Splash R</td></tr>" +
-                                        "<tr><td class=\"midiSplashR\" style=\"padding: 0 1em 0 1.5em;\">E4</td><td>Splash R Choke</td></tr>" +
-                                        "<tr><td class=\"midiMiniHat\" style=\"padding: 0 1em 0 1.5em;\">F4</td><td>Mini Hat</td></tr>" +
-                                        "<tr><td class=\"midiStack\" style=\"padding: 0 1em 0 1.5em;\">F#4</td><td>Stack</td></tr>" +
+                                        "<tr><td class=\"midiKick\" style=\"padding: 0 1em 0 1.5em; color: white;\">C0</td><td>Kick</td></tr>" +
+                                        "<tr><td class=\"midiSnareGhost\" style=\"padding: 0 1em 0 1.5em; color: white;\">C#0</td><td>Snare Ghost Note</td></tr>" +
+                                        "<tr><td class=\"midiSnare\" style=\"padding: 0 1em 0 1.5em; color: white;\">D0</td><td>Snare Main Hit</td></tr>" +
+                                        "<tr><td class=\"midiTom1\" style=\"padding: 0 1em 0 1.5em; color: white;\">A0</td><td>Rack Tom 1</td></tr>" +
+                                        "<tr><td class=\"midiTom2\" style=\"padding: 0 1em 0 1.5em; color: white;\">A#0</td><td>Rack Tom 2</td></tr>" +
+                                        "<tr><td class=\"midiTom3\" style=\"padding: 0 1em 0 1.5em; color: white;\">B0</td><td>Floor Tom 1</td></tr>" +
+                                        "<tr><td class=\"midiTom4\" style=\"padding: 0 1em 0 1.5em; color: white;\">C1</td><td>Floor Tom 2</td></tr>" +
+                                        "<tr><td class=\"midiHihatTipTight\" style=\"padding: 0 1em 0 1.5em; color: white;\">F1</td><td>Hat Tip Tight</td></tr>" +
+                                        "<tr><td class=\"midiHiHatEdgeTight\" style=\"padding: 0 1em 0 1.5em; color: white;\">F#1</td><td>Hat Edge Tight</td></tr>" +
+                                        "<tr><td class=\"midiHihatTipClosed\" style=\"padding: 0 1em 0 1.5em; color: white;\">G1</td><td>Hat Tip Closed</td></tr>" +
+                                        "<tr><td class=\"midiHiHatEdgeClosed\" style=\"padding: 0 1em 0 1.5em; color: white;\">G#1</td><td>Hat Edge Closed</td></tr>" +
+                                        "<tr><td class=\"midiHihatOpen\" style=\"padding: 0 1em 0 1.5em; color: white;\">A1</td><td>Hat Open 1</td></tr>" +
+                                        "<tr><td class=\"midiHihatOpen2\" style=\"padding: 0 1em 0 1.5em; color: white;\">A#1</td><td>Hat Open 2</td></tr>" +
+                                        "<tr><td class=\"midiHihatOpen3\" style=\"padding: 0 1em 0 1.5em; color: white;\">B1</td><td>Hat Open 3</td></tr>" +
+                                        "<tr><td class=\"midiHihatPedal\" style=\"padding: 0 1em 0 1.5em; color: white;\">C2</td><td>Hat Pedal</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">C#2</td><td>Hat Pedal Ching</td></tr>" +
+                                        "<tr><td class=\"midiCrashL1\" style=\"padding: 0 1em 0 1.5em; color: white;\">E2</td><td>Crash L 1</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">F2</td><td>Crash L 1 Choke</td></tr>" +
+                                        "<tr><td class=\"midiCrashR\" style=\"padding: 0 1em 0 1.5em; color: white;\">F#2</td><td>Crash R</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">G2</td><td>Crash R: Choke</td></tr>" +
+                                        "<tr><td class=\"midiCrashL2\" style=\"padding: 0 1em 0 1.5em; color: white;\">G#2</td><td>Crash L 2</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">A2</td><td>Crash L 2 Choke</td></tr>" +
+                                        "<tr><td class=\"midiRide\" style=\"padding: 0 1em 0 1.5em; color: white;\">C#3</td><td>Ride Bell</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">D3</td><td>Ride Bow</td></tr>" +
+                                        "<tr><td class=\"midiChina\" style=\"padding: 0 1em 0 1.5em; color: white;\">F3</td><td>China</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">F#3</td><td>China: Choke</td></tr>" +
+                                        "<tr><td class=\"midiSplashL\" style=\"padding: 0 1em 0 1.5em; color: white;\">C#3</td><td>Splash L</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">D4</td><td>Splash L Choke</td></tr>" +
+                                        "<tr><td class=\"midiSplashR\" style=\"padding: 0 1em 0 1.5em; color: white;\">D#4</td><td>Splash R</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">E4</td><td>Splash R Choke</td></tr>" +
+                                        "<tr><td class=\"midiMiniHat\" style=\"padding: 0 1em 0 1.5em; color: white;\">F4</td><td>Mini Hat</td></tr>" +
+                                        "<tr><td class=\"midiStack\" style=\"padding: 0 1em 0 1.5em; color: white;\">F#4</td><td>Stack</td></tr>" +
                                     "</table>",
                                 },
                                 4: {
@@ -1300,38 +1300,38 @@ export default class RPlayerConf {
                                     "<ul><li>GGD P4 toms</li></ul>" +
                                     "<strong>And here's the MIDI mapping:</strong><br>" +
                                     "<table style=\"font-family: courier; border-collapse: collapse; margin-top: .5em;\">" +
-                                        "<tr><td class=\"midiKick\" style=\"padding: 0 1em 0 1.5em;\">C0</td><td>Kick</td></tr>" +
-                                        "<tr><td class=\"midiSnareGhost\" style=\"padding: 0 1em 0 1.5em;\">C#0</td><td>Snare Ghost Note</td></tr>" +
-                                        "<tr><td class=\"midiSnare\" style=\"padding: 0 1em 0 1.5em;\">D0</td><td>Snare Main Hit</td></tr>" +
-                                        "<tr><td class=\"midiTom1\" style=\"padding: 0 1em 0 1.5em;\">A0</td><td>Rack Tom 1</td></tr>" +
-                                        "<tr><td class=\"midiTom2\" style=\"padding: 0 1em 0 1.5em;\">A#0</td><td>Rack Tom 2</td></tr>" +
-                                        "<tr><td class=\"midiTom3\" style=\"padding: 0 1em 0 1.5em;\">B0</td><td>Floor Tom 1</td></tr>" +
-                                        "<tr><td class=\"midiTom4\" style=\"padding: 0 1em 0 1.5em;\">C1</td><td>Floor Tom 2</td></tr>" +
-                                        "<tr><td class=\"midiHihatTipTight\" style=\"padding: 0 1em 0 1.5em;\">F1</td><td>Hat Tip Tight</td></tr>" +
-                                        "<tr><td class=\"midiHiHatEdgeTight\" style=\"padding: 0 1em 0 1.5em;\">F#1</td><td>Hat Edge Tight</td></tr>" +
-                                        "<tr><td class=\"midiHihatTipClosed\" style=\"padding: 0 1em 0 1.5em;\">G1</td><td>Hat Tip Closed</td></tr>" +
-                                        "<tr><td class=\"midiHiHatEdgeClosed\" style=\"padding: 0 1em 0 1.5em;\">G#1</td><td>Hat Edge Closed</td></tr>" +
-                                        "<tr><td class=\"midiHihatOpen\" style=\"padding: 0 1em 0 1.5em;\">A1</td><td>Hat Open 1</td></tr>" +
-                                        "<tr><td class=\"midiHihatOpen2\" style=\"padding: 0 1em 0 1.5em;\">A#1</td><td>Hat Open 2</td></tr>" +
-                                        "<tr><td class=\"midiHihatOpen3\" style=\"padding: 0 1em 0 1.5em;\">B1</td><td>Hat Open 3</td></tr>" +
-                                        "<tr><td class=\"midiHihatPedal\" style=\"padding: 0 1em 0 1.5em;\">C2</td><td>Hat Pedal</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">C#2</td><td>Hat Pedal Ching</td></tr>" +
-                                        "<tr><td class=\"midiCrashL1\" style=\"padding: 0 1em 0 1.5em;\">E2</td><td>Crash L 1</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">F2</td><td>Crash L 1 Choke</td></tr>" +
-                                        "<tr><td class=\"midiCrashR\" style=\"padding: 0 1em 0 1.5em;\">F#2</td><td>Crash R</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">G2</td><td>Crash R: Choke</td></tr>" +
-                                        "<tr><td class=\"midiCrashL2\" style=\"padding: 0 1em 0 1.5em;\">G#2</td><td>Crash L 2</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">A2</td><td>Crash L 2 Choke</td></tr>" +
-                                        "<tr><td class=\"midiRide\" style=\"padding: 0 1em 0 1.5em;\">C#3</td><td>Ride Bell</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">D3</td><td>Ride Bow</td></tr>" +
-                                        "<tr><td class=\"midiChina\" style=\"padding: 0 1em 0 1.5em;\">F3</td><td>China</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">F#3</td><td>China: Choke</td></tr>" +
-                                        "<tr><td class=\"midiSplashL\" style=\"padding: 0 1em 0 1.5em;\">C#3</td><td>Splash L</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">D4</td><td>Splash L Choke</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">D#4</td><td>Splash R</td></tr>" +
-                                        "<tr><td class=\"midiSplashR\" style=\"padding: 0 1em 0 1.5em;\">E4</td><td>Splash R Choke</td></tr>" +
-                                        "<tr><td class=\"midiMiniHat\" style=\"padding: 0 1em 0 1.5em;\">F4</td><td>Mini Hat</td></tr>" +
-                                        "<tr><td class=\"midiStack\" style=\"padding: 0 1em 0 1.5em;\">F#4</td><td>Stack</td></tr>" +
+                                        "<tr><td class=\"midiKick\" style=\"padding: 0 1em 0 1.5em; color: white;\">C0</td><td>Kick</td></tr>" +
+                                        "<tr><td class=\"midiSnareGhost\" style=\"padding: 0 1em 0 1.5em; color: white;\">C#0</td><td>Snare Ghost Note</td></tr>" +
+                                        "<tr><td class=\"midiSnare\" style=\"padding: 0 1em 0 1.5em; color: white;\">D0</td><td>Snare Main Hit</td></tr>" +
+                                        "<tr><td class=\"midiTom1\" style=\"padding: 0 1em 0 1.5em; color: white;\">A0</td><td>Rack Tom 1</td></tr>" +
+                                        "<tr><td class=\"midiTom2\" style=\"padding: 0 1em 0 1.5em; color: white;\">A#0</td><td>Rack Tom 2</td></tr>" +
+                                        "<tr><td class=\"midiTom3\" style=\"padding: 0 1em 0 1.5em; color: white;\">B0</td><td>Floor Tom 1</td></tr>" +
+                                        "<tr><td class=\"midiTom4\" style=\"padding: 0 1em 0 1.5em; color: white;\">C1</td><td>Floor Tom 2</td></tr>" +
+                                        "<tr><td class=\"midiHihatTipTight\" style=\"padding: 0 1em 0 1.5em; color: white;\">F1</td><td>Hat Tip Tight</td></tr>" +
+                                        "<tr><td class=\"midiHiHatEdgeTight\" style=\"padding: 0 1em 0 1.5em; color: white;\">F#1</td><td>Hat Edge Tight</td></tr>" +
+                                        "<tr><td class=\"midiHihatTipClosed\" style=\"padding: 0 1em 0 1.5em; color: white;\">G1</td><td>Hat Tip Closed</td></tr>" +
+                                        "<tr><td class=\"midiHiHatEdgeClosed\" style=\"padding: 0 1em 0 1.5em; color: white;\">G#1</td><td>Hat Edge Closed</td></tr>" +
+                                        "<tr><td class=\"midiHihatOpen\" style=\"padding: 0 1em 0 1.5em; color: white;\">A1</td><td>Hat Open 1</td></tr>" +
+                                        "<tr><td class=\"midiHihatOpen2\" style=\"padding: 0 1em 0 1.5em; color: white;\">A#1</td><td>Hat Open 2</td></tr>" +
+                                        "<tr><td class=\"midiHihatOpen3\" style=\"padding: 0 1em 0 1.5em; color: white;\">B1</td><td>Hat Open 3</td></tr>" +
+                                        "<tr><td class=\"midiHihatPedal\" style=\"padding: 0 1em 0 1.5em; color: white;\">C2</td><td>Hat Pedal</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">C#2</td><td>Hat Pedal Ching</td></tr>" +
+                                        "<tr><td class=\"midiCrashL1\" style=\"padding: 0 1em 0 1.5em; color: white;\">E2</td><td>Crash L 1</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">F2</td><td>Crash L 1 Choke</td></tr>" +
+                                        "<tr><td class=\"midiCrashR\" style=\"padding: 0 1em 0 1.5em; color: white;\">F#2</td><td>Crash R</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">G2</td><td>Crash R: Choke</td></tr>" +
+                                        "<tr><td class=\"midiCrashL2\" style=\"padding: 0 1em 0 1.5em; color: white;\">G#2</td><td>Crash L 2</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">A2</td><td>Crash L 2 Choke</td></tr>" +
+                                        "<tr><td class=\"midiRide\" style=\"padding: 0 1em 0 1.5em; color: white;\">C#3</td><td>Ride Bell</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">D3</td><td>Ride Bow</td></tr>" +
+                                        "<tr><td class=\"midiChina\" style=\"padding: 0 1em 0 1.5em; color: white;\">F3</td><td>China</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">F#3</td><td>China: Choke</td></tr>" +
+                                        "<tr><td class=\"midiSplashL\" style=\"padding: 0 1em 0 1.5em; color: white;\">C#3</td><td>Splash L</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">D4</td><td>Splash L Choke</td></tr>" +
+                                        "<tr><td class=\"midiSplashR\" style=\"padding: 0 1em 0 1.5em; color: white;\">D#4</td><td>Splash R</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">E4</td><td>Splash R Choke</td></tr>" +
+                                        "<tr><td class=\"midiMiniHat\" style=\"padding: 0 1em 0 1.5em; color: white;\">F4</td><td>Mini Hat</td></tr>" +
+                                        "<tr><td class=\"midiStack\" style=\"padding: 0 1em 0 1.5em; color: white;\">F#4</td><td>Stack</td></tr>" +
                                     "</table>",
                                 },
                                 2: {
@@ -1456,38 +1456,38 @@ export default class RPlayerConf {
                                     "<ul><li>GGD P4 toms</li></ul>" +
                                     "<strong>And here's the MIDI mapping:</strong><br>" +
                                     "<table style=\"font-family: courier; border-collapse: collapse; margin-top: .5em;\">" +
-                                        "<tr><td class=\"midiKick\" style=\"padding: 0 1em 0 1.5em;\">C0</td><td>Kick</td></tr>" +
-                                        "<tr><td class=\"midiSnareGhost\" style=\"padding: 0 1em 0 1.5em;\">C#0</td><td>Snare Ghost Note</td></tr>" +
-                                        "<tr><td class=\"midiSnare\" style=\"padding: 0 1em 0 1.5em;\">D0</td><td>Snare Main Hit</td></tr>" +
-                                        "<tr><td class=\"midiTom1\" style=\"padding: 0 1em 0 1.5em;\">A0</td><td>Rack Tom 1</td></tr>" +
-                                        "<tr><td class=\"midiTom2\" style=\"padding: 0 1em 0 1.5em;\">A#0</td><td>Rack Tom 2</td></tr>" +
-                                        "<tr><td class=\"midiTom3\" style=\"padding: 0 1em 0 1.5em;\">B0</td><td>Floor Tom 1</td></tr>" +
-                                        "<tr><td class=\"midiTom4\" style=\"padding: 0 1em 0 1.5em;\">C1</td><td>Floor Tom 2</td></tr>" +
-                                        "<tr><td class=\"midiHihatTipTight\" style=\"padding: 0 1em 0 1.5em;\">F1</td><td>Hat Tip Tight</td></tr>" +
-                                        "<tr><td class=\"midiHiHatEdgeTight\" style=\"padding: 0 1em 0 1.5em;\">F#1</td><td>Hat Edge Tight</td></tr>" +
-                                        "<tr><td class=\"midiHihatTipClosed\" style=\"padding: 0 1em 0 1.5em;\">G1</td><td>Hat Tip Closed</td></tr>" +
-                                        "<tr><td class=\"midiHiHatEdgeClosed\" style=\"padding: 0 1em 0 1.5em;\">G#1</td><td>Hat Edge Closed</td></tr>" +
-                                        "<tr><td class=\"midiHihatOpen\" style=\"padding: 0 1em 0 1.5em;\">A1</td><td>Hat Open 1</td></tr>" +
-                                        "<tr><td class=\"midiHihatOpen2\" style=\"padding: 0 1em 0 1.5em;\">A#1</td><td>Hat Open 2</td></tr>" +
-                                        "<tr><td class=\"midiHihatOpen3\" style=\"padding: 0 1em 0 1.5em;\">B1</td><td>Hat Open 3</td></tr>" +
-                                        "<tr><td class=\"midiHihatPedal\" style=\"padding: 0 1em 0 1.5em;\">C2</td><td>Hat Pedal</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">C#2</td><td>Hat Pedal Ching</td></tr>" +
-                                        "<tr><td class=\"midiCrashL1\" style=\"padding: 0 1em 0 1.5em;\">E2</td><td>Crash L 1</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">F2</td><td>Crash L 1 Choke</td></tr>" +
-                                        "<tr><td class=\"midiCrashR\" style=\"padding: 0 1em 0 1.5em;\">F#2</td><td>Crash R</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">G2</td><td>Crash R: Choke</td></tr>" +
-                                        "<tr><td class=\"midiCrashL2\" style=\"padding: 0 1em 0 1.5em;\">G#2</td><td>Crash L 2</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">A2</td><td>Crash L 2 Choke</td></tr>" +
-                                        "<tr><td class=\"midiRide\" style=\"padding: 0 1em 0 1.5em;\">C#3</td><td>Ride Bell</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">D3</td><td>Ride Bow</td></tr>" +
-                                        "<tr><td class=\"midiChina\" style=\"padding: 0 1em 0 1.5em;\">F3</td><td>China</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">F#3</td><td>China: Choke</td></tr>" +
-                                        "<tr><td class=\"midiSplashL\" style=\"padding: 0 1em 0 1.5em;\">C#3</td><td>Splash L</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">D4</td><td>Splash L Choke</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">D#4</td><td>Splash R</td></tr>" +
-                                        "<tr><td class=\"midiSplashR\" style=\"padding: 0 1em 0 1.5em;\">E4</td><td>Splash R Choke</td></tr>" +
-                                        "<tr><td class=\"midiMiniHat\" style=\"padding: 0 1em 0 1.5em;\">F4</td><td>Mini Hat</td></tr>" +
-                                        "<tr><td class=\"midiStack\" style=\"padding: 0 1em 0 1.5em;\">F#4</td><td>Stack</td></tr>" +
+                                        "<tr><td class=\"midiKick\" style=\"padding: 0 1em 0 1.5em; color: white;\">C0</td><td>Kick</td></tr>" +
+                                        "<tr><td class=\"midiSnareGhost\" style=\"padding: 0 1em 0 1.5em; color: white;\">C#0</td><td>Snare Ghost Note</td></tr>" +
+                                        "<tr><td class=\"midiSnare\" style=\"padding: 0 1em 0 1.5em; color: white;\">D0</td><td>Snare Main Hit</td></tr>" +
+                                        "<tr><td class=\"midiTom1\" style=\"padding: 0 1em 0 1.5em; color: white;\">A0</td><td>Rack Tom 1</td></tr>" +
+                                        "<tr><td class=\"midiTom2\" style=\"padding: 0 1em 0 1.5em; color: white;\">A#0</td><td>Rack Tom 2</td></tr>" +
+                                        "<tr><td class=\"midiTom3\" style=\"padding: 0 1em 0 1.5em; color: white;\">B0</td><td>Floor Tom 1</td></tr>" +
+                                        "<tr><td class=\"midiTom4\" style=\"padding: 0 1em 0 1.5em; color: white;\">C1</td><td>Floor Tom 2</td></tr>" +
+                                        "<tr><td class=\"midiHihatTipTight\" style=\"padding: 0 1em 0 1.5em; color: white;\">F1</td><td>Hat Tip Tight</td></tr>" +
+                                        "<tr><td class=\"midiHiHatEdgeTight\" style=\"padding: 0 1em 0 1.5em; color: white;\">F#1</td><td>Hat Edge Tight</td></tr>" +
+                                        "<tr><td class=\"midiHihatTipClosed\" style=\"padding: 0 1em 0 1.5em; color: white;\">G1</td><td>Hat Tip Closed</td></tr>" +
+                                        "<tr><td class=\"midiHiHatEdgeClosed\" style=\"padding: 0 1em 0 1.5em; color: white;\">G#1</td><td>Hat Edge Closed</td></tr>" +
+                                        "<tr><td class=\"midiHihatOpen\" style=\"padding: 0 1em 0 1.5em; color: white;\">A1</td><td>Hat Open 1</td></tr>" +
+                                        "<tr><td class=\"midiHihatOpen2\" style=\"padding: 0 1em 0 1.5em; color: white;\">A#1</td><td>Hat Open 2</td></tr>" +
+                                        "<tr><td class=\"midiHihatOpen3\" style=\"padding: 0 1em 0 1.5em; color: white;\">B1</td><td>Hat Open 3</td></tr>" +
+                                        "<tr><td class=\"midiHihatPedal\" style=\"padding: 0 1em 0 1.5em; color: white;\">C2</td><td>Hat Pedal</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">C#2</td><td>Hat Pedal Ching</td></tr>" +
+                                        "<tr><td class=\"midiCrashL1\" style=\"padding: 0 1em 0 1.5em; color: white;\">E2</td><td>Crash L 1</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">F2</td><td>Crash L 1 Choke</td></tr>" +
+                                        "<tr><td class=\"midiCrashR\" style=\"padding: 0 1em 0 1.5em; color: white;\">F#2</td><td>Crash R</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">G2</td><td>Crash R: Choke</td></tr>" +
+                                        "<tr><td class=\"midiCrashL2\" style=\"padding: 0 1em 0 1.5em; color: white;\">G#2</td><td>Crash L 2</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">A2</td><td>Crash L 2 Choke</td></tr>" +
+                                        "<tr><td class=\"midiRide\" style=\"padding: 0 1em 0 1.5em; color: white;\">C#3</td><td>Ride Bell</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">D3</td><td>Ride Bow</td></tr>" +
+                                        "<tr><td class=\"midiChina\" style=\"padding: 0 1em 0 1.5em; color: white;\">F3</td><td>China</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">F#3</td><td>China: Choke</td></tr>" +
+                                        "<tr><td class=\"midiSplashL\" style=\"padding: 0 1em 0 1.5em; color: white;\">C#3</td><td>Splash L</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">D4</td><td>Splash L Choke</td></tr>" +
+                                        "<tr><td class=\"midiSplashR\" style=\"padding: 0 1em 0 1.5em; color: white;\">D#4</td><td>Splash R</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">E4</td><td>Splash R Choke</td></tr>" +
+                                        "<tr><td class=\"midiMiniHat\" style=\"padding: 0 1em 0 1.5em; color: white;\">F4</td><td>Mini Hat</td></tr>" +
+                                        "<tr><td class=\"midiStack\" style=\"padding: 0 1em 0 1.5em; color: white;\">F#4</td><td>Stack</td></tr>" +
                                     "</table>",
                                 },
                                 2: {
@@ -1612,38 +1612,38 @@ export default class RPlayerConf {
                                     "<ul><li>GGD P4 toms</li></ul>" +
                                     "<strong>And here's the MIDI mapping:</strong><br>" +
                                     "<table style=\"font-family: courier; border-collapse: collapse; margin-top: .5em;\">" +
-                                        "<tr><td class=\"midiKick\" style=\"padding: 0 1em 0 1.5em;\">C0</td><td>Kick</td></tr>" +
-                                        "<tr><td class=\"midiSnareGhost\" style=\"padding: 0 1em 0 1.5em;\">C#0</td><td>Snare Ghost Note</td></tr>" +
-                                        "<tr><td class=\"midiSnare\" style=\"padding: 0 1em 0 1.5em;\">D0</td><td>Snare Main Hit</td></tr>" +
-                                        "<tr><td class=\"midiTom1\" style=\"padding: 0 1em 0 1.5em;\">A0</td><td>Rack Tom 1</td></tr>" +
-                                        "<tr><td class=\"midiTom2\" style=\"padding: 0 1em 0 1.5em;\">A#0</td><td>Rack Tom 2</td></tr>" +
-                                        "<tr><td class=\"midiTom3\" style=\"padding: 0 1em 0 1.5em;\">B0</td><td>Floor Tom 1</td></tr>" +
-                                        "<tr><td class=\"midiTom4\" style=\"padding: 0 1em 0 1.5em;\">C1</td><td>Floor Tom 2</td></tr>" +
-                                        "<tr><td class=\"midiHihatTipTight\" style=\"padding: 0 1em 0 1.5em;\">F1</td><td>Hat Tip Tight</td></tr>" +
-                                        "<tr><td class=\"midiHiHatEdgeTight\" style=\"padding: 0 1em 0 1.5em;\">F#1</td><td>Hat Edge Tight</td></tr>" +
-                                        "<tr><td class=\"midiHihatTipClosed\" style=\"padding: 0 1em 0 1.5em;\">G1</td><td>Hat Tip Closed</td></tr>" +
-                                        "<tr><td class=\"midiHiHatEdgeClosed\" style=\"padding: 0 1em 0 1.5em;\">G#1</td><td>Hat Edge Closed</td></tr>" +
-                                        "<tr><td class=\"midiHihatOpen\" style=\"padding: 0 1em 0 1.5em;\">A1</td><td>Hat Open 1</td></tr>" +
-                                        "<tr><td class=\"midiHihatOpen2\" style=\"padding: 0 1em 0 1.5em;\">A#1</td><td>Hat Open 2</td></tr>" +
-                                        "<tr><td class=\"midiHihatOpen3\" style=\"padding: 0 1em 0 1.5em;\">B1</td><td>Hat Open 3</td></tr>" +
-                                        "<tr><td class=\"midiHihatPedal\" style=\"padding: 0 1em 0 1.5em;\">C2</td><td>Hat Pedal</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">C#2</td><td>Hat Pedal Ching</td></tr>" +
-                                        "<tr><td class=\"midiCrashL1\" style=\"padding: 0 1em 0 1.5em;\">E2</td><td>Crash L 1</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">F2</td><td>Crash L 1 Choke</td></tr>" +
-                                        "<tr><td class=\"midiCrashR\" style=\"padding: 0 1em 0 1.5em;\">F#2</td><td>Crash R</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">G2</td><td>Crash R: Choke</td></tr>" +
-                                        "<tr><td class=\"midiCrashL2\" style=\"padding: 0 1em 0 1.5em;\">G#2</td><td>Crash L 2</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">A2</td><td>Crash L 2 Choke</td></tr>" +
-                                        "<tr><td class=\"midiRide\" style=\"padding: 0 1em 0 1.5em;\">C#3</td><td>Ride Bell</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">D3</td><td>Ride Bow</td></tr>" +
-                                        "<tr><td class=\"midiChina\" style=\"padding: 0 1em 0 1.5em;\">F3</td><td>China</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">F#3</td><td>China: Choke</td></tr>" +
-                                        "<tr><td class=\"midiSplashL\" style=\"padding: 0 1em 0 1.5em;\">C#3</td><td>Splash L</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">D4</td><td>Splash L Choke</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">D#4</td><td>Splash R</td></tr>" +
-                                        "<tr><td class=\"midiSplashR\" style=\"padding: 0 1em 0 1.5em;\">E4</td><td>Splash R Choke</td></tr>" +
-                                        "<tr><td class=\"midiMiniHat\" style=\"padding: 0 1em 0 1.5em;\">F4</td><td>Mini Hat</td></tr>" +
-                                        "<tr><td class=\"midiStack\" style=\"padding: 0 1em 0 1.5em;\">F#4</td><td>Stack</td></tr>" +
+                                        "<tr><td class=\"midiKick\" style=\"padding: 0 1em 0 1.5em; color: white;\">C0</td><td>Kick</td></tr>" +
+                                        "<tr><td class=\"midiSnareGhost\" style=\"padding: 0 1em 0 1.5em; color: white;\">C#0</td><td>Snare Ghost Note</td></tr>" +
+                                        "<tr><td class=\"midiSnare\" style=\"padding: 0 1em 0 1.5em; color: white;\">D0</td><td>Snare Main Hit</td></tr>" +
+                                        "<tr><td class=\"midiTom1\" style=\"padding: 0 1em 0 1.5em; color: white;\">A0</td><td>Rack Tom 1</td></tr>" +
+                                        "<tr><td class=\"midiTom2\" style=\"padding: 0 1em 0 1.5em; color: white;\">A#0</td><td>Rack Tom 2</td></tr>" +
+                                        "<tr><td class=\"midiTom3\" style=\"padding: 0 1em 0 1.5em; color: white;\">B0</td><td>Floor Tom 1</td></tr>" +
+                                        "<tr><td class=\"midiTom4\" style=\"padding: 0 1em 0 1.5em; color: white;\">C1</td><td>Floor Tom 2</td></tr>" +
+                                        "<tr><td class=\"midiHihatTipTight\" style=\"padding: 0 1em 0 1.5em; color: white;\">F1</td><td>Hat Tip Tight</td></tr>" +
+                                        "<tr><td class=\"midiHiHatEdgeTight\" style=\"padding: 0 1em 0 1.5em; color: white;\">F#1</td><td>Hat Edge Tight</td></tr>" +
+                                        "<tr><td class=\"midiHihatTipClosed\" style=\"padding: 0 1em 0 1.5em; color: white;\">G1</td><td>Hat Tip Closed</td></tr>" +
+                                        "<tr><td class=\"midiHiHatEdgeClosed\" style=\"padding: 0 1em 0 1.5em; color: white;\">G#1</td><td>Hat Edge Closed</td></tr>" +
+                                        "<tr><td class=\"midiHihatOpen\" style=\"padding: 0 1em 0 1.5em; color: white;\">A1</td><td>Hat Open 1</td></tr>" +
+                                        "<tr><td class=\"midiHihatOpen2\" style=\"padding: 0 1em 0 1.5em; color: white;\">A#1</td><td>Hat Open 2</td></tr>" +
+                                        "<tr><td class=\"midiHihatOpen3\" style=\"padding: 0 1em 0 1.5em; color: white;\">B1</td><td>Hat Open 3</td></tr>" +
+                                        "<tr><td class=\"midiHihatPedal\" style=\"padding: 0 1em 0 1.5em; color: white;\">C2</td><td>Hat Pedal</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">C#2</td><td>Hat Pedal Ching</td></tr>" +
+                                        "<tr><td class=\"midiCrashL1\" style=\"padding: 0 1em 0 1.5em; color: white;\">E2</td><td>Crash L 1</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">F2</td><td>Crash L 1 Choke</td></tr>" +
+                                        "<tr><td class=\"midiCrashR\" style=\"padding: 0 1em 0 1.5em; color: white;\">F#2</td><td>Crash R</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">G2</td><td>Crash R: Choke</td></tr>" +
+                                        "<tr><td class=\"midiCrashL2\" style=\"padding: 0 1em 0 1.5em; color: white;\">G#2</td><td>Crash L 2</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">A2</td><td>Crash L 2 Choke</td></tr>" +
+                                        "<tr><td class=\"midiRide\" style=\"padding: 0 1em 0 1.5em; color: white;\">C#3</td><td>Ride Bell</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">D3</td><td>Ride Bow</td></tr>" +
+                                        "<tr><td class=\"midiChina\" style=\"padding: 0 1em 0 1.5em; color: white;\">F3</td><td>China</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">F#3</td><td>China: Choke</td></tr>" +
+                                        "<tr><td class=\"midiSplashL\" style=\"padding: 0 1em 0 1.5em; color: white;\">C#3</td><td>Splash L</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">D4</td><td>Splash L Choke</td></tr>" +
+                                        "<tr><td class=\"midiSplashR\" style=\"padding: 0 1em 0 1.5em; color: white;\">D#4</td><td>Splash R</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">E4</td><td>Splash R Choke</td></tr>" +
+                                        "<tr><td class=\"midiMiniHat\" style=\"padding: 0 1em 0 1.5em; color: white;\">F4</td><td>Mini Hat</td></tr>" +
+                                        "<tr><td class=\"midiStack\" style=\"padding: 0 1em 0 1.5em; color: white;\">F#4</td><td>Stack</td></tr>" +
                                     "</table>",
                                 },
                                 2: {
@@ -1768,38 +1768,38 @@ export default class RPlayerConf {
                                     "<ul><li>GGD P4 toms</li></ul>" +
                                     "<strong>And here's the MIDI mapping:</strong><br>" +
                                     "<table style=\"font-family: courier; border-collapse: collapse; margin-top: .5em;\">" +
-                                        "<tr><td class=\"midiKick\" style=\"padding: 0 1em 0 1.5em;\">C0</td><td>Kick</td></tr>" +
-                                        "<tr><td class=\"midiSnareGhost\" style=\"padding: 0 1em 0 1.5em;\">C#0</td><td>Snare Ghost Note</td></tr>" +
-                                        "<tr><td class=\"midiSnare\" style=\"padding: 0 1em 0 1.5em;\">D0</td><td>Snare Main Hit</td></tr>" +
-                                        "<tr><td class=\"midiTom1\" style=\"padding: 0 1em 0 1.5em;\">A0</td><td>Rack Tom 1</td></tr>" +
-                                        "<tr><td class=\"midiTom2\" style=\"padding: 0 1em 0 1.5em;\">A#0</td><td>Rack Tom 2</td></tr>" +
-                                        "<tr><td class=\"midiTom3\" style=\"padding: 0 1em 0 1.5em;\">B0</td><td>Floor Tom 1</td></tr>" +
-                                        "<tr><td class=\"midiTom4\" style=\"padding: 0 1em 0 1.5em;\">C1</td><td>Floor Tom 2</td></tr>" +
-                                        "<tr><td class=\"midiHihatTipTight\" style=\"padding: 0 1em 0 1.5em;\">F1</td><td>Hat Tip Tight</td></tr>" +
-                                        "<tr><td class=\"midiHiHatEdgeTight\" style=\"padding: 0 1em 0 1.5em;\">F#1</td><td>Hat Edge Tight</td></tr>" +
-                                        "<tr><td class=\"midiHihatTipClosed\" style=\"padding: 0 1em 0 1.5em;\">G1</td><td>Hat Tip Closed</td></tr>" +
-                                        "<tr><td class=\"midiHiHatEdgeClosed\" style=\"padding: 0 1em 0 1.5em;\">G#1</td><td>Hat Edge Closed</td></tr>" +
-                                        "<tr><td class=\"midiHihatOpen\" style=\"padding: 0 1em 0 1.5em;\">A1</td><td>Hat Open 1</td></tr>" +
-                                        "<tr><td class=\"midiHihatOpen2\" style=\"padding: 0 1em 0 1.5em;\">A#1</td><td>Hat Open 2</td></tr>" +
-                                        "<tr><td class=\"midiHihatOpen3\" style=\"padding: 0 1em 0 1.5em;\">B1</td><td>Hat Open 3</td></tr>" +
-                                        "<tr><td class=\"midiHihatPedal\" style=\"padding: 0 1em 0 1.5em;\">C2</td><td>Hat Pedal</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">C#2</td><td>Hat Pedal Ching</td></tr>" +
-                                        "<tr><td class=\"midiCrashL1\" style=\"padding: 0 1em 0 1.5em;\">E2</td><td>Crash L 1</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">F2</td><td>Crash L 1 Choke</td></tr>" +
-                                        "<tr><td class=\"midiCrashR\" style=\"padding: 0 1em 0 1.5em;\">F#2</td><td>Crash R</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">G2</td><td>Crash R: Choke</td></tr>" +
-                                        "<tr><td class=\"midiCrashL2\" style=\"padding: 0 1em 0 1.5em;\">G#2</td><td>Crash L 2</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">A2</td><td>Crash L 2 Choke</td></tr>" +
-                                        "<tr><td class=\"midiRide\" style=\"padding: 0 1em 0 1.5em;\">C#3</td><td>Ride Bell</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">D3</td><td>Ride Bow</td></tr>" +
-                                        "<tr><td class=\"midiChina\" style=\"padding: 0 1em 0 1.5em;\">F3</td><td>China</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">F#3</td><td>China: Choke</td></tr>" +
-                                        "<tr><td class=\"midiSplashL\" style=\"padding: 0 1em 0 1.5em;\">C#3</td><td>Splash L</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">D4</td><td>Splash L Choke</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em;\">D#4</td><td>Splash R</td></tr>" +
-                                        "<tr><td class=\"midiSplashR\" style=\"padding: 0 1em 0 1.5em;\">E4</td><td>Splash R Choke</td></tr>" +
-                                        "<tr><td class=\"midiMiniHat\" style=\"padding: 0 1em 0 1.5em;\">F4</td><td>Mini Hat</td></tr>" +
-                                        "<tr><td class=\"midiStack\" style=\"padding: 0 1em 0 1.5em;\">F#4</td><td>Stack</td></tr>" +
+                                        "<tr><td class=\"midiKick\" style=\"padding: 0 1em 0 1.5em; color: white;\">C0</td><td>Kick</td></tr>" +
+                                        "<tr><td class=\"midiSnareGhost\" style=\"padding: 0 1em 0 1.5em; color: white;\">C#0</td><td>Snare Ghost Note</td></tr>" +
+                                        "<tr><td class=\"midiSnare\" style=\"padding: 0 1em 0 1.5em; color: white;\">D0</td><td>Snare Main Hit</td></tr>" +
+                                        "<tr><td class=\"midiTom1\" style=\"padding: 0 1em 0 1.5em; color: white;\">A0</td><td>Rack Tom 1</td></tr>" +
+                                        "<tr><td class=\"midiTom2\" style=\"padding: 0 1em 0 1.5em; color: white;\">A#0</td><td>Rack Tom 2</td></tr>" +
+                                        "<tr><td class=\"midiTom3\" style=\"padding: 0 1em 0 1.5em; color: white;\">B0</td><td>Floor Tom 1</td></tr>" +
+                                        "<tr><td class=\"midiTom4\" style=\"padding: 0 1em 0 1.5em; color: white;\">C1</td><td>Floor Tom 2</td></tr>" +
+                                        "<tr><td class=\"midiHihatTipTight\" style=\"padding: 0 1em 0 1.5em; color: white;\">F1</td><td>Hat Tip Tight</td></tr>" +
+                                        "<tr><td class=\"midiHiHatEdgeTight\" style=\"padding: 0 1em 0 1.5em; color: white;\">F#1</td><td>Hat Edge Tight</td></tr>" +
+                                        "<tr><td class=\"midiHihatTipClosed\" style=\"padding: 0 1em 0 1.5em; color: white;\">G1</td><td>Hat Tip Closed</td></tr>" +
+                                        "<tr><td class=\"midiHiHatEdgeClosed\" style=\"padding: 0 1em 0 1.5em; color: white;\">G#1</td><td>Hat Edge Closed</td></tr>" +
+                                        "<tr><td class=\"midiHihatOpen\" style=\"padding: 0 1em 0 1.5em; color: white;\">A1</td><td>Hat Open 1</td></tr>" +
+                                        "<tr><td class=\"midiHihatOpen2\" style=\"padding: 0 1em 0 1.5em; color: white;\">A#1</td><td>Hat Open 2</td></tr>" +
+                                        "<tr><td class=\"midiHihatOpen3\" style=\"padding: 0 1em 0 1.5em; color: white;\">B1</td><td>Hat Open 3</td></tr>" +
+                                        "<tr><td class=\"midiHihatPedal\" style=\"padding: 0 1em 0 1.5em; color: white;\">C2</td><td>Hat Pedal</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">C#2</td><td>Hat Pedal Ching</td></tr>" +
+                                        "<tr><td class=\"midiCrashL1\" style=\"padding: 0 1em 0 1.5em; color: white;\">E2</td><td>Crash L 1</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">F2</td><td>Crash L 1 Choke</td></tr>" +
+                                        "<tr><td class=\"midiCrashR\" style=\"padding: 0 1em 0 1.5em; color: white;\">F#2</td><td>Crash R</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">G2</td><td>Crash R: Choke</td></tr>" +
+                                        "<tr><td class=\"midiCrashL2\" style=\"padding: 0 1em 0 1.5em; color: white;\">G#2</td><td>Crash L 2</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">A2</td><td>Crash L 2 Choke</td></tr>" +
+                                        "<tr><td class=\"midiRide\" style=\"padding: 0 1em 0 1.5em; color: white;\">C#3</td><td>Ride Bell</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">D3</td><td>Ride Bow</td></tr>" +
+                                        "<tr><td class=\"midiChina\" style=\"padding: 0 1em 0 1.5em; color: white;\">F3</td><td>China</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">F#3</td><td>China: Choke</td></tr>" +
+                                        "<tr><td class=\"midiSplashL\" style=\"padding: 0 1em 0 1.5em; color: white;\">C#3</td><td>Splash L</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">D4</td><td>Splash L Choke</td></tr>" +
+                                        "<tr><td class=\"midiSplashR\" style=\"padding: 0 1em 0 1.5em; color: white;\">D#4</td><td>Splash R</td></tr>" +
+                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">E4</td><td>Splash R Choke</td></tr>" +
+                                        "<tr><td class=\"midiMiniHat\" style=\"padding: 0 1em 0 1.5em; color: white;\">F4</td><td>Mini Hat</td></tr>" +
+                                        "<tr><td class=\"midiStack\" style=\"padding: 0 1em 0 1.5em; color: white;\">F#4</td><td>Stack</td></tr>" +
                                     "</table>",
                                 },
                                 2: {
