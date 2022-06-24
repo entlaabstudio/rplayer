@@ -179,70 +179,74 @@ export default class RPlayerInfo {
         var html_1_last = false;
         var html_2_last = false;
         setInterval(function() {
-            if ($("#rplayerInfo").css("opacity") != "0") {
-                html_1  = that.htmlHeader();
-                html_1 += that.htmlMediaImage();
-                html_1 += that.htmlAlbumInfo();
-                html_1 += that.htmlMiniIcons();
-    
-                html_2     = ""
-                htmlWords  = that.htmlWords();
-    
-                if (htmlWords != "...") {
-                    html_2 += "<h3 class=\"rplayerLocalText\" data-phrase=\"infoLyrics\">Lyrics</h3>"
-                    html_2 += htmlWords;
-                }
-                html_2     += that.htmlStory();
-                html_2     += "<h3 class=\"rplayerLocalText\" data-phrase=\"infoReward\">Reward for artist</h3>"
-                html_2     += "<p style='font-weight: bold;'>" + that.rplayerObj.rplayerCfg.conf.app.donations.securityPhrase + "</p><br>"
-                html_2     += that.donations();
+            if (!document.hidden) {
 
-                html_1 = that.rplayerObj.templateReplacer(html_1);
-                html_2 = that.rplayerObj.templateReplacer(html_2);
-    
-                // HTML out
-                if (html_1 != html_1_last) {
-                    if (!that.switchingNow) {
-                        that.switchingNow = true;
-    
-                        $("#rplayerInfo #rplayerInfoTemp > div:first-child").animate({
-                            opacity: "0"
-                        },250,function() {
-                            
-                            that.tempPanel1.html(html_1);
-                            html_1_last = html_1;
-    
-                            $("#rplayerInfo #rplayerInfoTemp > div:first-child").animate({
-                                opacity: "1"
-                            },250,function() {
-                                that.switchingNow = false;
-                            });
-    
-                        });
+                if ($("#rplayerInfo").css("opacity") != "0") {
+                    html_1  = that.htmlHeader();
+                    html_1 += that.htmlMediaImage();
+                    html_1 += that.htmlAlbumInfo();
+                    html_1 += that.htmlMiniIcons();
+        
+                    html_2     = ""
+                    htmlWords  = that.htmlWords();
+        
+                    if (htmlWords != "...") {
+                        html_2 += "<h3 class=\"rplayerLocalText\" data-phrase=\"infoLyrics\">Lyrics</h3>"
+                        html_2 += htmlWords;
                     }
-                }
+                    html_2     += that.htmlStory();
+                    html_2     += "<h3 class=\"rplayerLocalText\" data-phrase=\"infoReward\">Reward for artist</h3>"
+                    html_2     += "<p style='font-weight: bold;'>" + that.rplayerObj.rplayerCfg.conf.app.donations.securityPhrase + "</p><br>"
+                    html_2     += that.donations();
     
-                if (html_2 != html_2_last) {
-                    if (!that.switchingNow) {
-                        that.switchingNow = true;
-    
-                        $("#rplayerInfo #rplayerInfoTemp > div:first-child ~ div").animate({
-                            opacity: "0"
-                        },250,function() {
-                            
-                            that.tempPanel2.html(html_2);
-                            html_2_last = html_2;
-    
-                            $("#rplayerInfo #rplayerInfoTemp > div:first-child ~ div").animate({
-                                opacity: "1"
+                    html_1 = that.rplayerObj.templateReplacer(html_1);
+                    html_2 = that.rplayerObj.templateReplacer(html_2);
+        
+                    // HTML out
+                    if (html_1 != html_1_last) {
+                        if (!that.switchingNow) {
+                            that.switchingNow = true;
+        
+                            $("#rplayerInfo #rplayerInfoTemp > div:first-child").animate({
+                                opacity: "0"
                             },250,function() {
-                                that.switchingNow = false;
+                                
+                                that.tempPanel1.html(html_1);
+                                html_1_last = html_1;
+        
+                                $("#rplayerInfo #rplayerInfoTemp > div:first-child").animate({
+                                    opacity: "1"
+                                },250,function() {
+                                    that.switchingNow = false;
+                                });
+        
                             });
-    
-                        });
+                        }
+                    }
+        
+                    if (html_2 != html_2_last) {
+                        if (!that.switchingNow) {
+                            that.switchingNow = true;
+        
+                            $("#rplayerInfo #rplayerInfoTemp > div:first-child ~ div").animate({
+                                opacity: "0"
+                            },250,function() {
+                                
+                                that.tempPanel2.html(html_2);
+                                html_2_last = html_2;
+        
+                                $("#rplayerInfo #rplayerInfoTemp > div:first-child ~ div").animate({
+                                    opacity: "1"
+                                },250,function() {
+                                    that.switchingNow = false;
+                                });
+        
+                            });
+                        }
                     }
                 }
             }
+
         },1);
     }
 
@@ -514,16 +518,22 @@ export default class RPlayerInfo {
     ticker() {
         var that = this;
         this.ticker = setInterval(function() {
-            if ($("#rplayerInfo").css("opacity") != "0") {
-                that.transportInteractiveIcons();
-                that.setInfoForSelectedTrack();
-                that.lyricsHighlight();
+            if (!document.hidden) {
+                
+                if ($("#rplayerInfo").css("opacity") != "0") {
+                    that.transportInteractiveIcons();
+                    that.setInfoForSelectedTrack();
+                    that.lyricsHighlight();
+                }
             }
-        },1);
+        },12);
         this.tickerSlow = setInterval(function() {
-            if ($("#rplayerInfo").css("opacity") != "0") {
-                that.transport();
-                that.checkH1();
+            if (!document.hidden) {
+            
+                if ($("#rplayerInfo").css("opacity") != "0") {
+                    that.transport();
+                    that.checkH1();
+                }
             }
         },468);
     }
