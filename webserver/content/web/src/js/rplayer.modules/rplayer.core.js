@@ -291,9 +291,12 @@ export default class RPlayer {
         });
 
         setInterval(function() {
-            worker.postMessage({
-                currentTime: that.audioObject.currentTime
-            });
+            if (!document.hidden) {
+
+                worker.postMessage({
+                    currentTime: that.audioObject.currentTime
+                });
+            }
         }, 33);
 
         worker.onmessage = function(e) {
@@ -432,29 +435,35 @@ export default class RPlayer {
         var that    = this;
 
         setInterval(function() {
-            var phrases      = $(".rplayerLocalText");
-            var placeholders = $("*[placeholder]");
+            if (!document.hidden) {
 
-            $("html").attr("lang",that.rplayerCfg.conf.app.localization.lang);
-            
-            for (var obj of phrases) {
-                if ($(obj).html() != that.rplayerCfg.conf.app.localization.phrases[$(obj).attr("data-phrase")] && that.rplayerCfg.conf.app.localization.phrases[$(obj).attr("data-phrase")] !== undefined) {
-                    if (!that.translated.includes($(obj).attr("data-phrase"))) {
-                        console.log("[RPlayer]","Localization phrase [" + that.rplayerCfg.conf.app.localization.lang + "]: " + $(obj).attr("data-phrase") + " => " + that.rplayerCfg.conf.app.localization.phrases[$(obj).attr("data-phrase")]);
-                        $(obj).html(that.rplayerCfg.conf.app.localization.phrases[$(obj).attr("data-phrase")]);
-                        that.translated.push($(obj).attr("data-phrase"));
-                    }
-                }
-            }
+                var phrases      = $(".rplayerLocalText");
+                var placeholders = $("*[placeholder]");
     
-            for (var obj of placeholders) {
-                if (that.rplayerCfg.conf.app.localization.phrases[$(obj).attr("placeholder")] !== undefined) {
-                    if (!that.translated.includes($(obj).attr("placeholder"))) {
-                        console.log("[RPlayer]","Localization placeholder [" + that.rplayerCfg.conf.app.localization.lang + "]: " + $(obj).attr("placeholder") + " => " + that.rplayerCfg.conf.app.localization.phrases[$(obj).attr("placeholder")]);
-                        $(obj).attr("placeholder",that.rplayerCfg.conf.app.localization.phrases[$(obj).attr("placeholder")]);
+                $("html").attr("lang",that.rplayerCfg.conf.app.localization.lang);
+                
+                for (var obj of phrases) {
+                    if ($(obj).html() != that.rplayerCfg.conf.app.localization.phrases[$(obj).attr("data-phrase")] && that.rplayerCfg.conf.app.localization.phrases[$(obj).attr("data-phrase")] !== undefined) {
+                        if (!that.translated.includes($(obj).attr("data-phrase"))) {
+                            console.log("[RPlayer]","Localization phrase [" + that.rplayerCfg.conf.app.localization.lang + "]: " + $(obj).attr("data-phrase") + " => " + that.rplayerCfg.conf.app.localization.phrases[$(obj).attr("data-phrase")]);
+                            $(obj).html(that.rplayerCfg.conf.app.localization.phrases[$(obj).attr("data-phrase")]);
+                            that.translated.push($(obj).attr("data-phrase"));
+                        }
+                    }
+                }
+        
+                for (var obj of placeholders) {
+                    if (that.rplayerCfg.conf.app.localization.phrases[$(obj).attr("placeholder")] !== undefined) {
+                        if (!that.translated.includes($(obj).attr("placeholder"))) {
+                            console.log("[RPlayer]","Localization placeholder [" + that.rplayerCfg.conf.app.localization.lang + "]: " + $(obj).attr("placeholder") + " => " + that.rplayerCfg.conf.app.localization.phrases[$(obj).attr("placeholder")]);
+                            $(obj).attr("placeholder",that.rplayerCfg.conf.app.localization.phrases[$(obj).attr("placeholder")]);
+                        }
                     }
                 }
             }
+
+
+            
         },50);
     }
     
@@ -861,52 +870,54 @@ export default class RPlayer {
         this.lastCurTrack = false;
         
         this.wordsInterval = setInterval(function () {
-            
-            if (that.wordsView) {
-                
-                if (
-                    that.rplayerCfg.conf.app.preferences.words.timeToConsole &&
-                    Math.round(that.audioObject.currentTime * 1000) != lastTime
-                ) {
-                    lastTime = Math.round(that.audioObject.currentTime * 1000);
-                    console.clear();
-                    console.log("[RPlayer] Current time",Math.round(that.audioObject.currentTime * 1000) - that.seekerStartPosition * 1000," :: ",Math.round(that.audioObject.currentTime * 1000));
-                }
-                
-                if (
-                    that.getCurrentPhrase()["offset"] !== undefined
-                    && that.getCurrentPhrase()["offset"] < that.rplayerCfg.conf.app.preferences.words.titleMaxTime
-                ) {
-                    if ($(that.rplayerCfg.conf.app.htmlSelectors.controls.wordsButton + " .align").parent().hasClass("primary")) {
-                        $(that.rplayerCfg.conf.app.htmlSelectors.mainWindow + ' .words').css({
-                            display: "block"
-                        });
-                        
-                        if (lastWord != that.removeHtml(that.getCurrentPhrase()["text"])) {
-                            lastWord = that.removeHtml(that.getCurrentPhrase()["text"]);
-                            $(that.rplayerCfg.conf.app.htmlSelectors.mainWindow + ' .words').html(lastWord);
+            if (!document.hidden) {
+
+                if (that.wordsView) {
+                    
+                    if (
+                        that.rplayerCfg.conf.app.preferences.words.timeToConsole &&
+                        Math.round(that.audioObject.currentTime * 1000) != lastTime
+                    ) {
+                        lastTime = Math.round(that.audioObject.currentTime * 1000);
+                        console.clear();
+                        console.log("[RPlayer] Current time",Math.round(that.audioObject.currentTime * 1000) - that.seekerStartPosition * 1000," :: ",Math.round(that.audioObject.currentTime * 1000));
+                    }
+                    
+                    if (
+                        that.getCurrentPhrase()["offset"] !== undefined
+                        && that.getCurrentPhrase()["offset"] < that.rplayerCfg.conf.app.preferences.words.titleMaxTime
+                    ) {
+                        if ($(that.rplayerCfg.conf.app.htmlSelectors.controls.wordsButton + " .align").parent().hasClass("primary")) {
+                            $(that.rplayerCfg.conf.app.htmlSelectors.mainWindow + ' .words').css({
+                                display: "block"
+                            });
+                            
+                            if (lastWord != that.removeHtml(that.getCurrentPhrase()["text"])) {
+                                lastWord = that.removeHtml(that.getCurrentPhrase()["text"]);
+                                $(that.rplayerCfg.conf.app.htmlSelectors.mainWindow + ' .words').html(lastWord);
+                            }
+                        } else {
+                            $(that.rplayerCfg.conf.app.htmlSelectors.mainWindow + ' .words').css({
+                                display: "none"
+                            });
                         }
                     } else {
                         $(that.rplayerCfg.conf.app.htmlSelectors.mainWindow + ' .words').css({
                             display: "none"
                         });
                     }
+    
                 } else {
                     $(that.rplayerCfg.conf.app.htmlSelectors.mainWindow + ' .words').css({
                         display: "none"
                     });
                 }
-
-            } else {
+    
                 $(that.rplayerCfg.conf.app.htmlSelectors.mainWindow + ' .words').css({
-                    display: "none"
+                    opacity: 1 - (that.getCurrentPhrase()["offset"] / 10000)
                 });
             }
-
-            $(that.rplayerCfg.conf.app.htmlSelectors.mainWindow + ' .words').css({
-                opacity: 1 - (that.getCurrentPhrase()["offset"] / 10000)
-            });
-        },1);
+        },15);
     }
 
     writeVersionDate() {
@@ -1290,40 +1301,42 @@ export default class RPlayer {
 
         this.showTimeTicker = setInterval(function() {
 
-            that.volumeFader();
-            that.seeker()
+            if (!document.hidden) {
 
-            var bufferOnePerc = that.audioObject.duration / 100;
-            var bufferedPerc = 0;
-
-            for (let index = 0; index < Math.round(that.audioObject.buffered.length); index++) {
-                bufferedPerc += (that.audioObject.buffered.end(index) - that.audioObject.buffered.start(index)) / bufferOnePerc;
+                that.volumeFader();
+                that.seeker()
+    
+                var bufferOnePerc = that.audioObject.duration / 100;
+                var bufferedPerc = 0;
+    
+                for (let index = 0; index < Math.round(that.audioObject.buffered.length); index++) {
+                    bufferedPerc += (that.audioObject.buffered.end(index) - that.audioObject.buffered.start(index)) / bufferOnePerc;
+                }
+                bufferedPerc = Math.round(bufferedPerc);
+                if (bufferedPerc != bufferLast) {
+                    $(that.rplayerCfg.conf.app.htmlSelectors.info.bufferCondition).html(bufferedPerc);
+                    bufferLast = bufferedPerc;
+                }
+                
+                if (that.secondsToTime(that.audioObject.currentTime - that.seekerStartPosition) != curTimeLast) {
+                    that.showcurtimeobject.html(
+                        that.secondsToTime(
+                            that.audioObject.currentTime - that.seekerStartPosition
+                        )
+                    );
+                    curTimeLast = that.showcurtimeobject.html();
+                }
+    
+                if (that.secondsToTime(that.seekerEndPosition - that.seekerStartPosition) != lenTimeLast) {
+                    that.showlentimeobject.html(
+                        that.secondsToTime(
+                            that.seekerEndPosition - that.seekerStartPosition
+                        )
+                    );
+                    lenTimeLast = that.showlentimeobject.html();
+                }
             }
-            bufferedPerc = Math.round(bufferedPerc);
-            if (bufferedPerc != bufferLast) {
-                $(that.rplayerCfg.conf.app.htmlSelectors.info.bufferCondition).html(bufferedPerc);
-                bufferLast = bufferedPerc;
-            }
-            
-            if (that.secondsToTime(that.audioObject.currentTime - that.seekerStartPosition) != curTimeLast) {
-                that.showcurtimeobject.html(
-                    that.secondsToTime(
-                        that.audioObject.currentTime - that.seekerStartPosition
-                    )
-                );
-                curTimeLast = that.showcurtimeobject.html();
-            }
-
-            if (that.secondsToTime(that.seekerEndPosition - that.seekerStartPosition) != lenTimeLast) {
-                that.showlentimeobject.html(
-                    that.secondsToTime(
-                        that.seekerEndPosition - that.seekerStartPosition
-                    )
-                );
-                lenTimeLast = that.showlentimeobject.html();
-            }
-
-        },1);
+        },10);
     }
 
     secondsToTime(value) {
