@@ -79,11 +79,14 @@ export default class RPlayer {
     ticker() {
         var that = this;
         setInterval(function() {
-            if ($("#rplayerSlideshow").css("display") != "none") {
-                that.getLyrics();
-                that.imageChanger();
+            if (!document.hidden) {
+
+                if ($("#rplayerSlideshow").css("display") != "none") {
+                    that.getLyrics();
+                    that.imageChanger();
+                }
             }
-        },1);
+        },14);
     }
 
     imageChanger() {
