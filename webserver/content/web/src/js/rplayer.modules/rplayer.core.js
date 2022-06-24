@@ -294,7 +294,7 @@ export default class RPlayer {
             worker.postMessage({
                 currentTime: that.audioObject.currentTime
             });
-        }, 1);
+        }, 33);
 
         worker.onmessage = function(e) {
             var message = e.data;
@@ -408,7 +408,7 @@ export default class RPlayer {
                 console.log("[RPlayer]","Refresh...");
                 window.location.href = "./" + that.rplayerCfg.conf.app.rplayerIndex;
             }
-        },30000);
+        },300000);
     }
 
     refreshAudioOnError() {
