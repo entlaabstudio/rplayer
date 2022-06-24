@@ -1301,42 +1301,39 @@ export default class RPlayer {
 
         this.showTimeTicker = setInterval(function() {
 
-            if (!document.hidden) {
+            that.volumeFader();
+            that.seeker()
 
-                that.volumeFader();
-                that.seeker()
-    
-                var bufferOnePerc = that.audioObject.duration / 100;
-                var bufferedPerc = 0;
-    
-                for (let index = 0; index < Math.round(that.audioObject.buffered.length); index++) {
-                    bufferedPerc += (that.audioObject.buffered.end(index) - that.audioObject.buffered.start(index)) / bufferOnePerc;
-                }
-                bufferedPerc = Math.round(bufferedPerc);
-                if (bufferedPerc != bufferLast) {
-                    $(that.rplayerCfg.conf.app.htmlSelectors.info.bufferCondition).html(bufferedPerc);
-                    bufferLast = bufferedPerc;
-                }
-                
-                if (that.secondsToTime(that.audioObject.currentTime - that.seekerStartPosition) != curTimeLast) {
-                    that.showcurtimeobject.html(
-                        that.secondsToTime(
-                            that.audioObject.currentTime - that.seekerStartPosition
-                        )
-                    );
-                    curTimeLast = that.showcurtimeobject.html();
-                }
-    
-                if (that.secondsToTime(that.seekerEndPosition - that.seekerStartPosition) != lenTimeLast) {
-                    that.showlentimeobject.html(
-                        that.secondsToTime(
-                            that.seekerEndPosition - that.seekerStartPosition
-                        )
-                    );
-                    lenTimeLast = that.showlentimeobject.html();
-                }
+            var bufferOnePerc = that.audioObject.duration / 100;
+            var bufferedPerc = 0;
+
+            for (let index = 0; index < Math.round(that.audioObject.buffered.length); index++) {
+                bufferedPerc += (that.audioObject.buffered.end(index) - that.audioObject.buffered.start(index)) / bufferOnePerc;
             }
-        },10);
+            bufferedPerc = Math.round(bufferedPerc);
+            if (bufferedPerc != bufferLast) {
+                $(that.rplayerCfg.conf.app.htmlSelectors.info.bufferCondition).html(bufferedPerc);
+                bufferLast = bufferedPerc;
+            }
+            
+            if (that.secondsToTime(that.audioObject.currentTime - that.seekerStartPosition) != curTimeLast) {
+                that.showcurtimeobject.html(
+                    that.secondsToTime(
+                        that.audioObject.currentTime - that.seekerStartPosition
+                    )
+                );
+                curTimeLast = that.showcurtimeobject.html();
+            }
+
+            if (that.secondsToTime(that.seekerEndPosition - that.seekerStartPosition) != lenTimeLast) {
+                that.showlentimeobject.html(
+                    that.secondsToTime(
+                        that.seekerEndPosition - that.seekerStartPosition
+                    )
+                );
+                lenTimeLast = that.showlentimeobject.html();
+            }
+        },17);
     }
 
     secondsToTime(value) {

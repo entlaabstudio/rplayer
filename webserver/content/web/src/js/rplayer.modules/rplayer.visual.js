@@ -96,12 +96,15 @@ export default class RPlayerVisual {
     transportInteractiveIcons() {
         var that = this;
         setInterval(function() {
-            if (that.rplayerObj.audioObject.paused) {
-                $(that.mainWindowSel + " button[data-command='rplayerStartPause'] i").removeClass("pause");
-                $(that.mainWindowSel + " button[data-command='rplayerStartPause'] i").addClass("play");
-            } else {
-                $(that.mainWindowSel + " button[data-command='rplayerStartPause'] i").removeClass("play");
-                $(that.mainWindowSel + " button[data-command='rplayerStartPause'] i").addClass("pause");
+            if (!document.hidden) {
+                
+                if (that.rplayerObj.audioObject.paused) {
+                    $(that.mainWindowSel + " button[data-command='rplayerStartPause'] i").removeClass("pause");
+                    $(that.mainWindowSel + " button[data-command='rplayerStartPause'] i").addClass("play");
+                } else {
+                    $(that.mainWindowSel + " button[data-command='rplayerStartPause'] i").removeClass("play");
+                    $(that.mainWindowSel + " button[data-command='rplayerStartPause'] i").addClass("pause");
+                }
             }
         },200);
     }
@@ -302,38 +305,41 @@ export default class RPlayerVisual {
     seekersInfo() {
         var lastVolume = false;
         this.infoInterval = setInterval(function() {
+            if (!document.hidden) {
 
-            var volumeTggleData = Math.round($(".rplayerVolFader").val() / 10) / 1000 + "%";
-            var pointPosition = volumeTggleData.indexOf(".");
-            
-            if (pointPosition != 0) {
-                var output = [volumeTggleData.slice(0, pointPosition), "<span style=\"font-size: .7em; opacity: .7\">", volumeTggleData.slice(pointPosition)].join('');
-                var percPosition  = output.indexOf("%");
-                var output = [output.slice(0, percPosition), "</span> ", output.slice(percPosition)].join('');
-            } else {
-                var output = volumeTggleData;
+                var volumeTggleData = Math.round($(".rplayerVolFader").val() / 10) / 1000 + "%";
+                var pointPosition = volumeTggleData.indexOf(".");
+                
+                if (pointPosition != 0) {
+                    var output = [volumeTggleData.slice(0, pointPosition), "<span style=\"font-size: .7em; opacity: .7\">", volumeTggleData.slice(pointPosition)].join('');
+                    var percPosition  = output.indexOf("%");
+                    var output = [output.slice(0, percPosition), "</span> ", output.slice(percPosition)].join('');
+                } else {
+                    var output = volumeTggleData;
+                }
+                
+                if ($(".rplayerVolFader").val() != lastVolume) {
+                    $(".volumeInfo").html(output);
+                    lastVolume = $(".rplayerVolFader").val();
+                }
+    
+                var seekerPosition = Math.ceil($(".rplayerSeeker").val() - $(".rplayerSeeker").attr("min"));
+    
+                var sMin = Math.floor(seekerPosition / 60);
+                var sSec = seekerPosition - (sMin * 60);
+    
+                if (sSec < 10) {
+                    sSec = 0 + sSec.toString()
+                }
+                
+                var seekerInfoOutput = sMin + ":" + sSec;
+    
+                if ($(".rplayerSeeker").attr("data-content") != seekerInfoOutput) {
+                    $(".rplayerSeeker").attr("data-content",seekerInfoOutput);
+                    $(".popup").html(seekerInfoOutput);
+                }
             }
-            
-            if ($(".rplayerVolFader").val() != lastVolume) {
-                $(".volumeInfo").html(output);
-                lastVolume = $(".rplayerVolFader").val();
-            }
 
-            var seekerPosition = Math.ceil($(".rplayerSeeker").val() - $(".rplayerSeeker").attr("min"));
-
-            var sMin = Math.floor(seekerPosition / 60);
-            var sSec = seekerPosition - (sMin * 60);
-
-            if (sSec < 10) {
-                sSec = 0 + sSec.toString()
-            }
-            
-            var seekerInfoOutput = sMin + ":" + sSec;
-
-            if ($(".rplayerSeeker").attr("data-content") != seekerInfoOutput) {
-                $(".rplayerSeeker").attr("data-content",seekerInfoOutput);
-                $(".popup").html(seekerInfoOutput);
-            }
         },30);
     }
 
