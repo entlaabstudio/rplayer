@@ -430,7 +430,7 @@ export default class RPlayer {
                 console.log("[RPlayer]","Refresh...");
                 window.location.href = "./" + that.rplayerCfg.conf.app.rplayerIndex;
             }
-        },300000);
+        },30000);
     }
 
     refreshAudioOnError() {
