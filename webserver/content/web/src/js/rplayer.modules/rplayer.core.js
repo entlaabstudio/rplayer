@@ -275,9 +275,28 @@ export default class RPlayer {
 
     cssTimeModifier() {
         if (this.cfg.cssTimeModifier !== undefined) {
-            this.prepareCssMessageData().then(
-                this.startCssMessages()
-            );
+            if (!this.cfg.app.preferences.cssTimeModifier.useJSON) {
+                this.prepareCssMessageData().then(
+                    this.startCssMessages(),
+                    this.consoleGetCssTimeModifierJSON()
+                );
+            } else {
+                fetch('./src/json/prlayer.conf.cssTimeModifierData.json')
+                .then(response => response.json())
+                .then(
+                    data => {
+                        this.cssMesages = data;
+                        this.startCssMessages();
+                        this.consoleGetCssTimeModifierJSON()
+                    }
+                );
+            }
+        }
+    }
+
+    consoleGetCssTimeModifierJSON() {
+        if (this.cfg.app.preferences.cssTimeModifier.getJSON) {
+            console.log(JSON.stringify(this.cssMesages));
         }
     }
 
@@ -357,17 +376,17 @@ export default class RPlayer {
     }
     
     async prepareCssMessageData() {
-        var selectors = [];
+        var selectors = {};
         
         for (const [key, value] of Object.entries(this.cfg.cssTimeModifier.commandsInTime)) {
             if (selectors[value.selectorsKey] === undefined) {
-                selectors[value.selectorsKey] = [];
+                selectors[value.selectorsKey] = {};
                 selectors[value.selectorsKey]["target"] = this.cfg.cssTimeModifier.selectors[value.selectorsKey];
-                selectors[value.selectorsKey]["commands"] = [];
+                selectors[value.selectorsKey]["commands"] = {};
             }
 
             // entrance
-            selectors[value.selectorsKey]["commands"][key] = [];
+            selectors[value.selectorsKey]["commands"][key] = {};
             selectors[value.selectorsKey]["commands"][key]["time"] = parseInt(key);
             if (this.cfg.cssTimeModifier.css[value.cssKey]) {
                 selectors[value.selectorsKey]["commands"][key]["css"] = this.cfg.cssTimeModifier.css[value.cssKey].entrance;
@@ -376,7 +395,7 @@ export default class RPlayer {
             }
 
             // outgoing
-            selectors[value.selectorsKey]["commands"][parseInt(key) + value.length] = [];
+            selectors[value.selectorsKey]["commands"][parseInt(key) + value.length] = {};
             if (value.length !== undefined) {
                 selectors[value.selectorsKey]["commands"][parseInt(key) + value.length]["time"] = parseInt(parseInt(key) + value.length);
             } else {
@@ -389,7 +408,7 @@ export default class RPlayer {
             }
 
             // fix array keys
-            var fixedKeysArray = [];
+            var fixedKeysArray = {};
             var i = 0;
             for (const [key2, value2] of Object.entries(selectors[value.selectorsKey].commands)) {
                 fixedKeysArray[i] = value2;

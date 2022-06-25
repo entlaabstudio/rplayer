@@ -53,7 +53,7 @@ export default class RPlayerConf {
             description: "Yatsu v1 MIDI experimental v1",
             app: {
                 name: "RPlayer",
-                version: "1.42.71", // <some platform updates>.<visible or control updates>.<unvisible updates>
+                version: "1.42.72", // <some platform updates>.<visible or control updates>.<unvisible updates>
                 date: "2022",
                 web3Protocol: "ipfs://",
                 rplayerIndex: "rplayer.htm",
@@ -71,7 +71,11 @@ export default class RPlayerConf {
                     },
                     messagesOnTime: {
                         messagesToConsole: false,
-                    }
+                    },
+                    cssTimeModifier: {
+                        getJSON: false,
+                        useJSON: true,
+                    },
                 },
                 localization: {
                     lang: "en",

@@ -72,29 +72,28 @@ function next() {
         timeNow: lastKeyOffset1.timeOffset,
     };
     lastKeyOffset1 = {
-        keyOffset: ((lastKeyOffset1.keyOffset + 1 > commands.length - 1) ? Infinity : lastKeyOffset1.keyOffset + 1),
-        timeOffset: ((lastKeyOffset1.keyOffset + 1 > commands.length - 1) ? Infinity : commands[lastKeyOffset1.keyOffset + 1].time)
+        keyOffset: ((lastKeyOffset1.keyOffset + 1 > Object.keys(commands).length - 1) ? Infinity : lastKeyOffset1.keyOffset + 1),
+        timeOffset: ((lastKeyOffset1.keyOffset + 1 > Object.keys(commands).length - 1) ? Infinity : commands[lastKeyOffset1.keyOffset + 1].time)
     }
     lastKeyOffset2 = {
-        keyOffset: ((lastKeyOffset2.keyOffset + 1 > commands.length - 1) ? Infinity : lastKeyOffset2.keyOffset + 1),
-        timeOffset: ((lastKeyOffset2.keyOffset + 1 > commands.length - 1) ? Infinity : commands[lastKeyOffset2.keyOffset + 1].time)
+        keyOffset: ((lastKeyOffset2.keyOffset + 1 > Object.keys(commands).length - 1) ? Infinity : lastKeyOffset2.keyOffset + 1),
+        timeOffset: ((lastKeyOffset2.keyOffset + 1 > Object.keys(commands).length - 1) ? Infinity : commands[lastKeyOffset2.keyOffset + 1].time)
     }
     returnMessage();
 }
 
 function getKeyNow() {
     var keyNow = -1;
-    var arrayLength = commands.length;
-    for (var i = 0; i < arrayLength; i++) {
-        if (commands[i].time <= currentTime) {
-            keyNow = i;
+    for (const [key, value] of Object.entries(commands)) {
+        if (value.time <= currentTime) {
+            keyNow = key;
         } else {
             break;
         }
     }
     return {
-        keyNow: keyNow,
-        timeNow: ((keyNow > -1) ? commands[keyNow].time : null)
+        keyNow: parseInt(keyNow),
+        timeNow: ((parseInt(keyNow) > -1) ? parseInt(commands[keyNow].time) : null)
     };
 }
 
