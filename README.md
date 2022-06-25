@@ -18,6 +18,7 @@ The main goal of this project is to free the distribution of music from large co
 * support for translating the entire environment into another language
 * the ability to start in full screen mode and prevent the operating system from going to sleep if the user does not do so (must be supported by a web browser)
 * slideshow, regardless of which song is currently playing, which allows you to create a presentation of graphic materials while playing a single song
+* Maximum battery saving when the player is running in the background. By background I mean running on an inactive tab or with the display off or in a minimized window, etc.
 
 **When creating a fork, keep the following in mind:** IPFS and Web3 are generally a network on which resources are shared across applications. Keeping the files (including third-party components) in their original forms will ensure a connection to a wider network of ready-made players. This is also the reason why I also share the "vendor" directory here. By the way, I apologize for using Composer and Docker. I know that in a pure JS application there is no general justification, but I usually write PHP and I just use this orchestration tools and run environment. Ideally, I recommend creating a working player only by modifying the rplayer.config.js file. This file contains (should contain) everything you need. The fewer files change, the better the player will behave in a decentralized network.
 
