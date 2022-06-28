@@ -281,15 +281,21 @@ export default class RPlayer {
                     this.consoleGetCssTimeModifierJSON()
                 );
             } else {
-                fetch('./src/json/prlayer.conf.cssTimeModifierData.json')
-                .then(response => response.json())
-                .then(
-                    data => {
-                        this.cssMesages = data;
-                        this.startCssMessages();
-                        this.consoleGetCssTimeModifierJSON()
+                var zip = new JSZip();
+                var that = this;
+                JSZipUtils.getBinaryContent('./src/json/prlayer.conf.cssTimeModifierData.json.zip', function(err, data) {
+                    if(err) {
+                        throw err; // or handle err
                     }
-                );
+                
+                    zip.loadAsync(data).then(function () {
+                        return zip.file("prlayer.conf.cssTimeModifierData.json").async("string"); // a promise of "Hello World\n"
+                    }).then(function(data) {
+                        that.cssMesages = JSON.parse(data);
+                        that.startCssMessages();
+                        that.consoleGetCssTimeModifierJSON()
+                    });
+                });
             }
         }
     }

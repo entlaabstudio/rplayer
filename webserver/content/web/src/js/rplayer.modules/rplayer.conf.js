@@ -34,10 +34,10 @@
  * Insert images into HTML as base64.
  */
 
-import RPlayerConfCssTimeModifier from "./rplayer.conf.cssTimeModifier.js";
+// import RPlayerConfCssTimeModifier from "./rplayer.conf.cssTimeModifier.js";
 import RPlayerConfSlideshow       from "./rplayer.conf.slideShow.js";
 
-var ConfCssTimeModifier = new RPlayerConfCssTimeModifier();
+// var ConfCssTimeModifier = new RPlayerConfCssTimeModifier();
 var ConfSlideshow       = new RPlayerConfSlideshow();
 
 // console.log(ConfSlideshow.conf.slideShow);
@@ -53,7 +53,7 @@ export default class RPlayerConf {
             description: "Yatsu v1 MIDI experimental v1",
             app: {
                 name: "RPlayer",
-                version: "1.42.72", // <some platform updates>.<visible or control updates>.<unvisible updates>
+                version: "1.42.73", // <some platform updates>.<visible or control updates>.<unvisible updates>
                 date: "2022",
                 web3Protocol: "ipfs://",
                 rplayerIndex: "rplayer.htm",
@@ -1888,7 +1888,8 @@ export default class RPlayerConf {
                 }
             },
             slideShow: ConfSlideshow.conf.slideShow,
-            cssTimeModifier: ConfCssTimeModifier.conf.cssTimeModifier
+            cssTimeModifier: {},
+            // cssTimeModifier: ConfCssTimeModifier.conf.cssTimeModifier
         };
         
         console.log("[RPlayer] Config: ",this.conf);
