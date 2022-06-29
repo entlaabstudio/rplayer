@@ -79,9 +79,11 @@ export default class RPlayerConf {
                     powerManager: {
                         switches: {
                             cssTimeModifier: { // switch name
-                                varMustBeAnd: {
-                                    variable: "$(\"#rplayerInfo\").css(\"display\")",
-                                    value: "block"
+                                cssMustBeAnd: {
+                                    0: {
+                                        cssSelector: "#rplayerInfo",
+                                        value: "block"
+                                    },
                                 }
                             }
                         }
