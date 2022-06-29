@@ -76,6 +76,16 @@ export default class RPlayerConf {
                         getJSON: false,
                         useJSON: true,
                     },
+                    powerManager: {
+                        switches: {
+                            cssTimeModifier: { // switch name
+                                varMustBeAnd: {
+                                    variable: "$(\"#rplayerInfo\").css(\"display\")",
+                                    value: "block"
+                                }
+                            }
+                        }
+                    }
                 },
                 localization: {
                     lang: "en",
