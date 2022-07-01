@@ -518,22 +518,16 @@ export default class RPlayerInfo {
     ticker() {
         var that = this;
         this.ticker = setInterval(function() {
-            if (!that.rplayerObj.power.off()) {
-                
-                if ($("#rplayerInfo").css("opacity") != "0") {
-                    that.transportInteractiveIcons();
-                    that.setInfoForSelectedTrack();
-                    that.lyricsHighlight();
-                }
+            if (!that.rplayerObj.power.off("infoWindowTicker")) {
+                that.transportInteractiveIcons();
+                that.setInfoForSelectedTrack();
+                that.lyricsHighlight();
             }
-        },12);
+        },33);
         this.tickerSlow = setInterval(function() {
-            if (!that.rplayerObj.power.off()) {
-            
-                if ($("#rplayerInfo").css("opacity") != "0") {
-                    that.transport();
-                    that.checkH1();
-                }
+            if (!that.rplayerObj.power.off("rplayerInfo")) {
+                that.transport();
+                that.checkH1();
             }
         },468);
     }

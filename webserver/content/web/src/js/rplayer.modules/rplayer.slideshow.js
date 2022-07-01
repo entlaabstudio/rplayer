@@ -79,12 +79,9 @@ export default class RPlayer {
     ticker() {
         var that = this;
         setInterval(function() {
-            if (!that.rplayerObj.power.off()) {
-
-                if ($("#rplayerSlideshow").css("display") != "none") {
-                    that.getLyrics();
-                    that.imageChanger();
-                }
+            if (!that.rplayerObj.power.off("slideShow")) {
+                that.getLyrics();
+                that.imageChanger();
             }
         },14);
     }

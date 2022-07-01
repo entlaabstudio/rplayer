@@ -89,7 +89,19 @@ export default class RPlayerConf {
                                     0: "#rplayerInfo"
                                 },
                                 pauseSensitive: false,
-                            }
+                            },
+                            infoWindowTicker: {
+                                cssMustBeVisible: {
+                                    0: "#rplayerInfo"
+                                },
+                                pauseSensitive: false,
+                            },
+                            slideShow: {
+                                cssMustBeVisible: {
+                                    0: "#rplayerSlideshow"
+                                },
+                                pauseSensitive: false,
+                            },
                         }
                     }
                 },
