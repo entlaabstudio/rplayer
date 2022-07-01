@@ -78,7 +78,13 @@ export default class RPlayerConf {
                     },
                     powerManager: {
                         switches: {
-                            rplayerInfo: { // switch name
+                            rplayerInfo: {
+                                cssMustBeVisible: {
+                                    0: "#rplayerInfo"
+                                },
+                                pauseSensitive: false,
+                            },
+                            cssTimeModifier: {
                                 cssMustBeVisible: {
                                     0: "#rplayerInfo"
                                 },

@@ -213,7 +213,7 @@ export default class RPlayer {
 
     lyrics() {
         this.prepareLyricsMessageData().then(
-            this.startMessages(this.lyricsMessagesBranch, "lyricsWorker"),
+            this.startMessages(this.lyricsMessagesBranch, "lyrics"),
             this.lyricsPlay()
         );
     }
@@ -405,7 +405,7 @@ export default class RPlayer {
         var that = this;
         
         for (const [key, value] of Object.entries(this.cssMesages)) {
-            this.startMessages(value);
+            this.startMessages(value, "cssTimeModifier");
         }
 
         $("body").on("click", function() {
@@ -496,7 +496,7 @@ export default class RPlayer {
         var that    = this;
 
         setInterval(function() {
-            if (!document.hidden) {
+            if (!that.power.off("localization")) {
 
                 var phrases      = $(".rplayerLocalText");
                 var placeholders = $("*[placeholder]");
@@ -525,7 +525,7 @@ export default class RPlayer {
 
 
             
-        },50);
+        },100);
     }
     
     htmlToHeader() {
@@ -931,7 +931,7 @@ export default class RPlayer {
         this.lastCurTrack = false;
         
         this.wordsInterval = setInterval(function () {
-            if (!document.hidden) {
+            if (!that.power.off("lyricsPlay")) {
 
                 if (that.wordsView) {
                     

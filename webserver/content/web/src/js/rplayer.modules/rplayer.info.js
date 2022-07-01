@@ -179,7 +179,6 @@ export default class RPlayerInfo {
         var html_1_last = false;
         var html_2_last = false;
         setInterval(function() {
-            console.log($("#rplayerInfo").is(":hidden"),that.rplayerObj.power.off("rplayerInfo"));
             if (!that.rplayerObj.power.off("rplayerInfo")) {
                 
                 if ($("#rplayerInfo").css("opacity") != "0") {
