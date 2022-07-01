@@ -53,7 +53,7 @@ export default class RPlayerConf {
             description: "Yatsu v1 MIDI experimental v1",
             app: {
                 name: "RPlayer",
-                version: "1.42.73", // <some platform updates>.<visible or control updates>.<unvisible updates>
+                version: "1.42.74", // <some platform updates>.<visible or control updates>.<unvisible updates>
                 date: "2022",
                 web3Protocol: "ipfs://",
                 rplayerIndex: "rplayer.htm",
@@ -79,7 +79,7 @@ export default class RPlayerConf {
                     powerManager: {
                         switches: {
                             rplayerInfo: { // switch name
-                                cssMustBeVisibleOR: {
+                                cssMustBeVisible: {
                                     0: "#rplayerInfo"
                                 },
                                 pauseSensitive: false,

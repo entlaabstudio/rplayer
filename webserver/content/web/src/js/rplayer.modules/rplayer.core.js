@@ -335,106 +335,29 @@ export default class RPlayer {
         lastCurrentTime: {},
         off(instance = "any") {
             var ret = false;
-            // if (
-            //     document.hidden
-            //     ||
-            //     (
-            //         this.lastCurrentTime[instance] == this.that.audioObject.currentTime &&
-            //         this.that.audioObject.paused == true
-            //     )
-            // ) {
-                // console.log(this.that.cfg.app.preferences.powerManager.switches[instance], instance);
-                // debugger;
 
-
-
-
-
-
-                
             if (!document.hidden) {
                 if (this.that.cfg.app.preferences.powerManager.switches[instance] !== undefined) {
-                    for (const [key, value] of Object.entries(this.that.cfg.app.preferences.powerManager.switches[instance])) {
-                        // console.log(key, value);
-                    //     // debugger;
-    
-                        if (key == "cssMustBeVisibleOR") {
-                            // console.log(value);
-                                // if (
-                                //     (
-                                //         this.lastCurrentTime[instance] == this.that.audioObject.currentTime &&
-                                //         this.that.audioObject.paused == true
-                                //     )
-                                // ) {
-                                //     ret = true;
-                                // } else {
-                                    for (const [key2, value2] of Object.entries(value)) {
-                                        if ($(value2).is(":hidden")) {
-                                            // console.log("Jsem skrytý?", $(value2).is(":hidden"));
-                                            ret = true;
-                                        }/* else {
-                                            // console.log("Jsem v pohodě.");
-                                        }*/
-                                    }
-                                // }
+                    if (this.that.cfg.app.preferences.powerManager.switches[instance].pauseSensitive) {
+                        
+                        if (
+                            (
+                                this.lastCurrentTime[instance] == this.that.audioObject.currentTime &&
+                                this.that.audioObject.paused == true
+                            )
+                        ) {
+                            ret = true;
                         }
-                    
-                        switch(key) {
-                            case "cssMustBeVisibleOR":
-                                // console.log(value);
-                                // if (
-                                //     (
-                                //         this.lastCurrentTime[instance] == this.that.audioObject.currentTime &&
-                                //         this.that.audioObject.paused == true
-                                //     )
-                                // ) {
-                                //     ret = true;
-                                // } else {
-                                    for (const [key2, value2] of Object.entries(value)) {
-                                        if ($(value2).is(":hidden")) {
-                                            // console.log("Jsem skrytý?", $(value2).is(":hidden"));
-                                            ret = true;
-                                        } else {
-                                            // console.log("Jsem v pohodě.");
-                                        }
-                                    }
-                                // }
-    
-                            break;
-                            case "pauseSensitive":
-                                    // console.log(key,value,"AHOJ");
-                                    if (
-                                        value == true &&
-                                        (
-                                            this.lastCurrentTime[instance] == this.that.audioObject.currentTime &&
-                                            this.that.audioObject.paused == true
-                                        )
-                                    ) {
-                                        ret = true;
-                                    }
-                            break;
-                            default:
-                                // code block
-                                // console.log("nazdar");
-                            }
+                        
+                    }        
+
+                    for (const [key2, value2] of Object.entries(this.that.cfg.app.preferences.powerManager.switches[instance].cssMustBeVisible)) {
+                        if ($(value2).is(":hidden")) {
+                            ret = true;
+                        }
                     }
+                }
             } else {
-                return true;
-            }
-
-
-
-
-
-
-                // }
-                // debugger;
-
-
-
-
-
-
                 ret = true;
             }
             
