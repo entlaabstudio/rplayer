@@ -89,7 +89,7 @@ export default class RPlayer {
     imageChanger() {
         if (this.lastImage !== this.rplayerObj.getCurrentSlideshowImage()["time"]) {
             $("#rplayerSlideshow img:not([data-time='" + this.rplayerObj.getCurrentSlideshowImage()["time"] + "'])").css({
-                transform: "perspective(50em) rotate3d(0, 0, 1, -180deg) translate3d(0em, 0, 0em)",
+                transform: "perspective(50em) rotate3d(0, 0, 1, -180deg) translate3d(30em, 0em, 0em)",
                 opacity: "0"
             },1000);
             $("#rplayerSlideshow img[data-time='" + this.rplayerObj.getCurrentSlideshowImage()["time"] + "']").css({
