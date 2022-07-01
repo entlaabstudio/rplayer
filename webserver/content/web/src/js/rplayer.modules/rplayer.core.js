@@ -1270,7 +1270,7 @@ export default class RPlayer {
 
             if (!this.seekingNow) {
 
-                if (this.seekerStartPosition != this.seekerObject.attr("min")) {
+                if (this.seekerStartPosition + .001 != this.seekerObject.attr("min")) {
                     this.seekerObject.attr("min",this.seekerStartPosition + .001);
 
                     if (
