@@ -68,6 +68,7 @@ export default class RPlayerConf {
                     design: {
                         backgroundImage: "url('./media/images/dreamer_album.jpg')",
                         favicon: "./favicon.ico",
+                        motion3d: false,
                     },
                     messagesOnTime: {
                         messagesToConsole: false,

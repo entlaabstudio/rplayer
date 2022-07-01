@@ -55,7 +55,9 @@ export default class RPlayerVisual {
         this.lastCssModyfiers = [];
         this.wasClick = false;
 
-        // this.motion3d();
+        if (this.cfg.app.preferences.design.motion3d) {
+            this.motion3d();
+        }
 
         this.ticker["checkFirstLoading"] = setInterval(function() {
             that.dimmerFullscreen();

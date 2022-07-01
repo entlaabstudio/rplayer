@@ -978,7 +978,7 @@ export default class RPlayer {
                     opacity: 1 - (that.getCurrentPhrase()["offset"] / 10000)
                 });
             }
-        },15);
+        },33);
     }
 
     writeVersionDate() {
@@ -1394,7 +1394,7 @@ export default class RPlayer {
                 );
                 lenTimeLast = that.showlentimeobject.html();
             }
-        },17);
+        },30);
     }
 
     secondsToTime(value) {
