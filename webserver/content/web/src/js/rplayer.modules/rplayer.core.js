@@ -213,7 +213,7 @@ export default class RPlayer {
 
     lyrics() {
         this.prepareLyricsMessageData().then(
-            this.startMessages(this.lyricsMessagesBranch),
+            this.startMessages(this.lyricsMessagesBranch, "lyricsWorker"),
             this.lyricsPlay()
         );
     }
@@ -306,7 +306,7 @@ export default class RPlayer {
         }
     }
 
-    startMessages(messageBranch) {
+    startMessages(messageBranch, instance = "any") {
         var messageBranch;
         var worker = new Worker("./src/js/rplayer.workers/rplayer.messageOnTime.worker.js");
         var that = this;
@@ -316,7 +316,7 @@ export default class RPlayer {
         });
 
         setInterval(function() {
-            if (!document.hidden) {
+            if (!that.power.off(instance)) {
 
                 worker.postMessage({
                     currentTime: that.audioObject.currentTime
@@ -330,6 +330,26 @@ export default class RPlayer {
         }
     }
 
+    power = {
+        that: this,
+        lastCurrentTime: {},
+        off(instance = "any") {
+            var ret = false;
+            if (
+                document.hidden ||
+                (
+                    this.lastCurrentTime[instance] == this.that.audioObject.currentTime &&
+                    this.that.audioObject.paused == true
+                )
+            ) {
+                ret = true;
+            }
+            
+            this.lastCurrentTime[instance] = this.that.audioObject.currentTime;
+            return ret;
+        }
+    }
+    
     timeMessageExecute(data) {
         var data;
         

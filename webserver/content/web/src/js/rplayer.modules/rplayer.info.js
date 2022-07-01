@@ -179,8 +179,9 @@ export default class RPlayerInfo {
         var html_1_last = false;
         var html_2_last = false;
         setInterval(function() {
-            if (!document.hidden) {
-
+            if (!that.rplayerObj.power.off("rplayerInfo")) {
+                console.log($("#rplayerInfo").is(":hidden"),that.rplayerObj.power.off("rplayerInfo"));
+                
                 if ($("#rplayerInfo").css("opacity") != "0") {
                     html_1  = that.htmlHeader();
                     html_1 += that.htmlMediaImage();
@@ -247,7 +248,7 @@ export default class RPlayerInfo {
                 }
             }
 
-        },1);
+        },100);
     }
 
     htmlMiniIcons() {
@@ -518,7 +519,7 @@ export default class RPlayerInfo {
     ticker() {
         var that = this;
         this.ticker = setInterval(function() {
-            if (!document.hidden) {
+            if (!that.rplayerObj.power.off()) {
                 
                 if ($("#rplayerInfo").css("opacity") != "0") {
                     that.transportInteractiveIcons();
@@ -528,7 +529,7 @@ export default class RPlayerInfo {
             }
         },12);
         this.tickerSlow = setInterval(function() {
-            if (!document.hidden) {
+            if (!that.rplayerObj.power.off()) {
             
                 if ($("#rplayerInfo").css("opacity") != "0") {
                     that.transport();

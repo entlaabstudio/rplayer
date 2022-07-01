@@ -79,7 +79,7 @@ export default class RPlayer {
     ticker() {
         var that = this;
         setInterval(function() {
-            if (!document.hidden) {
+            if (!that.rplayerObj.power.off()) {
 
                 if ($("#rplayerSlideshow").css("display") != "none") {
                     that.getLyrics();
