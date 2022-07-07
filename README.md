@@ -20,7 +20,7 @@ The main goal of this project is to free the distribution of music from large co
 * **maximum power saving** when the player is running in the background (inactive tab or display off or a minimized window, etc.)
 * **multi-threaded solution** if the player is running in focus
 * **download manager**, providing the option of compiling an archive for download exactly according to the user's wishes
-* **user choice whether to include graphic information (in full quality) in mp3 files during download** and provide them with icons, thereby user affects files size and their compatibility
+* **user choice whether to include graphic information (in full quality) in mp3 files during download and provide them with icons**, thereby user affects files size and their compatibility
 * **ID3 tags of all kinds are added to mp3 files (intended for download) by the player**
 * the player can map and **dynamically change its design via CSS commands** depending on the time of the album, being very performance oriented and running a separate thread for each CSS selector
 
