@@ -153,6 +153,11 @@ export default class RPlayer {
         });
     }
     
+    /**
+     * Starting the mechanism of checking or reloading the headers of the necessary files in the Web3 environment.
+     *
+     * @memberof RPlayer
+     */
     checkAdditionalSrcs() {
         var that = this;
         
@@ -161,6 +166,12 @@ export default class RPlayer {
         });
     }
 
+    /**
+     * Checking or reloading the header of the required file in the Web3 environment.
+     *
+     * @param {string} source
+     * @memberof RPlayer
+     */
     checkAdditionalSrc(source) {
         var source;
         var that = this;
@@ -181,6 +192,11 @@ export default class RPlayer {
         });
     }
 
+    /**
+     * Player initialization.
+     *
+     * @memberof RPlayer
+     */
     init() {
         this.wasInit = true;
         if (device.os == "ios") {
@@ -211,6 +227,11 @@ export default class RPlayer {
         this.keyboard();
     }
 
+    /**
+     * Initialize functions for displaying song lyrics.
+     *
+     * @memberof RPlayer
+     */
     lyrics() {
         this.prepareLyricsMessageData().then(
             this.startMessages(this.lyricsMessagesBranch, "lyrics"),
@@ -218,12 +239,23 @@ export default class RPlayer {
         );
     }
 
+    /**
+     * Initializing slideshow functions.
+     *
+     * @memberof RPlayer
+     */
     slideShow() {
         this.prepareSlideshowMessageData().then(
             this.startMessages(this.slideshowMessagesBranch)
         );
     }
 
+    /**
+     * Preparation of image presentation data.
+     *
+     * @return {object} 
+     * @memberof RPlayer
+     */
     async prepareSlideshowMessageData() {
         var commands = [];
         var i = 0;
@@ -247,6 +279,12 @@ export default class RPlayer {
         return Promise.resolve(branch);
     }
     
+    /**
+     * Preparing data for displaying song lyrics.
+     *
+     * @return {object} 
+     * @memberof RPlayer
+     */
     async prepareLyricsMessageData() {
         var commands = [];
         var timeStart;
@@ -273,6 +311,11 @@ export default class RPlayer {
         return Promise.resolve(branch);
     }
 
+    /**
+     * Initialization of functionality for dynamic CSS changes while playing songs.
+     *
+     * @memberof RPlayer
+     */
     cssTimeModifier() {
         if (this.cfg.cssTimeModifier !== undefined) {
             if (!this.cfg.app.preferences.cssTimeModifier.useJSON) {
@@ -300,12 +343,25 @@ export default class RPlayer {
         }
     }
 
+    /**
+     * A function that spits out JSON data for dynamic CSS changes during a songs playback.
+     *
+     * @memberof RPlayer
+     */
     consoleGetCssTimeModifierJSON() {
         if (this.cfg.app.preferences.cssTimeModifier.getJSON) {
             console.log(JSON.stringify(this.cssMesages));
         }
     }
 
+    /**
+     * Here, separate threads are started for the messages that the player receives while playing.
+     * These are usually changes to the slideshow images, displaying song lyrics, or dynamic CSS changes.
+     *
+     * @param {object} messageBranch
+     * @param {string} [instance="any"]
+     * @memberof RPlayer
+     */
     startMessages(messageBranch, instance = "any") {
         var messageBranch;
         var worker = new Worker("./src/js/rplayer.workers/rplayer.messageOnTime.worker.js");
@@ -330,6 +386,11 @@ export default class RPlayer {
         }
     }
 
+    /**
+     * Power management.
+     *
+     * @memberof RPlayer
+     */
     power = {
         that: this,
         lastCurrentTime: {},
@@ -366,6 +427,12 @@ export default class RPlayer {
         }
     }
     
+    /**
+     * This function distinguishes message types from parallel threads and determines what to do when they are caught.
+     *
+     * @param {object} data
+     * @memberof RPlayer
+     */
     timeMessageExecute(data) {
         var data;
         
@@ -401,6 +468,11 @@ export default class RPlayer {
         }
     }
     
+    /**
+     * Run dynamic CSS modifications during playback.
+     *
+     * @memberof RPlayer
+     */
     startCssMessages() {
         var that = this;
         
@@ -417,6 +489,12 @@ export default class RPlayer {
         });
     }
     
+    /**
+     * Data preparation for Workers of dynamic CSS modifications during playback if JSON.ZIP file is not used.
+     *
+     * @return {object} 
+     * @memberof RPlayer
+     */
     async prepareCssMessageData() {
         var selectors = {};
         
@@ -462,6 +540,11 @@ export default class RPlayer {
         return Promise.resolve(selectors);
     }
 
+    /**
+     * This method will reload the player application if for some reason the initialization does not occur within the specified time.
+     *
+     * @memberof RPlayer
+     */
     refreshPlayerOnInitTimeout() {
         var that = this;
         setInterval(function() {
@@ -475,6 +558,11 @@ export default class RPlayer {
         },30000);
     }
 
+    /**
+     * If an error occurs in an audio element, it will be reloaded.
+     *
+     * @memberof RPlayer
+     */
     refreshAudioOnError() {
         var that = this;
 
@@ -492,6 +580,11 @@ export default class RPlayer {
         this.audioObject.onerror = onerrorFunction;
     }
 
+    /**
+     * Inserts localization phrases.
+     *
+     * @memberof RPlayer
+     */
     putLocalization() {
         var that    = this;
 
@@ -528,16 +621,34 @@ export default class RPlayer {
         },100);
     }
     
+    /**
+     * Inserts the user's HTML into the header and footer of the player's HTML document.
+     *
+     * @memberof RPlayer
+     */
     htmlToHeader() {
         $("head").append(this.rplayerCfg.conf.app.htmlToHeader);
         $("body").append(this.rplayerCfg.conf.app.htmlToBody);
     }
 
+    /**
+     * Replaces line bytes with html tags.
+     *
+     * @param {string} str
+     * @param {boolean} is_xhtml
+     * @return {string} 
+     * @memberof RPlayer
+     */
     nl2br(str, is_xhtml) {   
         var breakTag = (is_xhtml || typeof is_xhtml === 'undefined') ? '<br />' : '<br>';    
         return (str + '').replace(/([^>\r\n]?)(\r\n|\n\r|\r|\n)/g, '$1'+ breakTag +'$2');
     }
     
+    /**
+     * Loads the license from the root directory.
+     *
+     * @memberof RPlayer
+     */
     getLicense() {
         var that = this;
         $.get('./LICENSE', function(data) {
@@ -546,6 +657,11 @@ export default class RPlayer {
         });
     }
 
+    /**
+     * Prevents the operating system from automatically going into power saving mode if the browser and operating system support this functionality.
+     *
+     * @memberof RPlayer
+     */
     noScreenSleep() {
         try {
             navigator.wakeLock.request('screen');
@@ -556,6 +672,11 @@ export default class RPlayer {
         }          
     }
 
+    /**
+     * Pre-loading images.
+     *
+     * @memberof RPlayer
+     */
     preloadAllImages() {
         var cfg = this.rplayerCfg.conf;
         var key = 0;
@@ -586,6 +707,11 @@ export default class RPlayer {
         });
     }
 
+    /**
+     * Insert site title.
+     *
+     * @memberof RPlayer
+     */
     putWebTitle() {
         var cfg = this.rplayerCfg.conf;
         $("title").html(
@@ -598,6 +724,11 @@ export default class RPlayer {
         );
     }
     
+    /**
+     * Enter basic album information.
+     *
+     * @memberof RPlayer
+     */
     putAlbumInfo() {
         var cfg = this.rplayerCfg.conf;
         $(cfg.app.htmlSelectors.info.albumComposer).html(cfg.album.info.composer);
@@ -605,6 +736,11 @@ export default class RPlayer {
         $(cfg.app.htmlSelectors.info.albumYear).html(cfg.album.info.year);
     }
     
+    /**
+     * Help.
+     *
+     * @memberof RPlayer
+     */
     help() {
         var htmlSelector = this.rplayerCfg.conf.app.windows.showInfo.htmlSelector;
 
@@ -730,6 +866,12 @@ export default class RPlayer {
         },125);
     }
 
+    /**
+     * Generates QR codes and HTML code for player author rewards.
+     *
+     * @return {string} 
+     * @memberof RPlayer
+     */
     donations() {
         var html = "<div class='ui centered grid' style=\"margin: 0; padding: 0;\"><div class='doubling three column row'>";
         var lat  = false;
@@ -754,6 +896,13 @@ export default class RPlayer {
         return html;
     }
     
+    /**
+     * Returns the current URL.
+     *
+     * @param {boolean} [onlyBase=false]
+     * @return {string} 
+     * @memberof RPlayer
+     */
     getURLAddress(onlyBase = false) {
         var link;
         
@@ -785,6 +934,13 @@ export default class RPlayer {
         }
     }
 
+    /**
+     * Overrides template keywords.
+     *
+     * @param {string} string
+     * @return {string} 
+     * @memberof RPlayer
+     */
     templateReplacer(string) {
         var string;
 
@@ -793,6 +949,11 @@ export default class RPlayer {
         return string;
     }
 
+    /**
+     * Allows control of the player using the keyboard.
+     *
+     * @memberof RPlayer
+     */
     keyboard() {
         var that = this;
         window.addEventListener("keydown", function (event) {
@@ -889,6 +1050,12 @@ export default class RPlayer {
         // then dispatches event to window
     }
     
+    /**
+     * Returns the current presentation image in the correct format.
+     *
+     * @return {object} 
+     * @memberof RPlayer
+     */
     getCurrentSlideshowImage() {
         try {
             var offset = (this.audioObject.currentTime * 1000) - this.slideshowActualImage.time; 
@@ -907,6 +1074,12 @@ export default class RPlayer {
         }
     }
 
+    /**
+     * Returns the current lyric phrase in the song in the correct format.
+     *
+     * @return {object} 
+     * @memberof RPlayer
+     */
     getCurrentPhrase() {
         try {
             var offset = (this.audioObject.currentTime * 1000) - this.lyricsActualPhrase.time; 
@@ -924,6 +1097,11 @@ export default class RPlayer {
         }
     }
     
+    /**
+     * Displays the lyrics of the song during playback.
+     *
+     * @memberof RPlayer
+     */
     lyricsPlay() {
         var that          = this;
         var lastWord      = false; // fix for online translation
@@ -981,11 +1159,21 @@ export default class RPlayer {
         },33);
     }
 
+    /**
+     * Inserts the version and date of the application into predefined HTML tags.
+     *
+     * @memberof RPlayer
+     */
     writeVersionDate() {
         $(this.rplayerCfg.conf.app.htmlSelectors.info.appVersion).html(this.rplayerCfg.conf.app.version);
         $(this.rplayerCfg.conf.app.htmlSelectors.info.appDate).html(this.rplayerCfg.conf.app.date);
     }
 
+    /**
+     * Renders the current information to the drop-down menu and the operating system lock screen, if supported.
+     *
+     * @memberof RPlayer
+     */
     lockScreenInfo() {
 
         if ("mediaSession" in navigator) {
@@ -1041,6 +1229,11 @@ export default class RPlayer {
         }
     }
 
+    /**
+     * Ensures album playback in a loop.
+     *
+     * @memberof RPlayer
+     */
     looper() {
         var that = this;
         this.audioObject.onended = function() {
@@ -1052,6 +1245,12 @@ export default class RPlayer {
         }
     }
 
+    /**
+     * It provides track switching, insertion of the current track information into the drop-down menu
+     * and lock screen of the operating system,and everything related to the track list.
+     *
+     * @memberof RPlayer
+     */
     currentTrack() {
         var that = this;
         var curTrackLast;
@@ -1095,10 +1294,24 @@ export default class RPlayer {
         },100);
     }
     
+    /**
+     * Converts an object to a simple array.
+     *
+     * @param {*} obj
+     * @return {*} 
+     * @memberof RPlayer
+     */
     obj2array(obj) {
         return Object.keys(obj).map((key) => [Number(key), obj[key]]);
     }
     
+    /**
+     * Removes HTML tags.
+     *
+     * @param {*} str
+     * @return {*} 
+     * @memberof RPlayer
+     */
     removeHtml(str) {
         if ((str===null) || (str===''))
             return false;
@@ -1107,6 +1320,11 @@ export default class RPlayer {
         return str.replace( /(<([^>]+)>)/ig, '');
     }
     
+    /**
+     * Renders the tracklist.
+     *
+     * @memberof RPlayer
+     */
     tracklist() {
         this.splits = new Array;
 
@@ -1205,6 +1423,11 @@ export default class RPlayer {
         $(that.rplayerCfg.conf.app.htmlSelectors.info.albumDuration).html(this.secondsToTime(this.audioObject.duration));
     }
 
+    /**
+     * Centers the currently playing song in the tracklist.
+     *
+     * @memberof RPlayer
+     */
     tracklistScroll() {
         var track          = $(this.rplayerCfg.conf.app.htmlSelectors.mainWindow + " .rplayerActiveTrack");
         var trackMiddlePos = 
@@ -1220,6 +1443,11 @@ export default class RPlayer {
         },250);
     }
 
+    /**
+     * It takes care of everything regarding seeker behavior. It also takes care of catching the "stop after track" option.
+     *
+     * @memberof RPlayer
+     */
     seeker() {
         var that = this;
 
@@ -1318,10 +1546,20 @@ export default class RPlayer {
         }
     }
     
+    /**
+     * Adjusts the volume of the audio element.
+     *
+     * @memberof RPlayer
+     */
     volumeFader() {
         this.audioObject.volume = ($(this.volumefaderobject).val() / 1000000);
     }
     
+    /**
+     * When loading data, it renders "loading..." if the audio element cannot play sound.
+     *
+     * @memberof RPlayer
+     */
     showLoading() {
         var that = this;
 
@@ -1354,6 +1592,11 @@ export default class RPlayer {
         });
     }
     
+    /**
+     * Displays the current time in the song.
+     *
+     * @memberof RPlayer
+     */
     showTime() {
         var that = this;
         var curTimeLast;
@@ -1397,6 +1640,13 @@ export default class RPlayer {
         },30);
     }
 
+    /**
+     * Converts time in seconds to <HH:SS> format.
+     *
+     * @param {*} value
+     * @return {*} 
+     * @memberof RPlayer
+     */
     secondsToTime(value) {
         var sec_num = parseInt(value, 10);
         var hours   = Math.floor(sec_num / 3600);
@@ -1409,6 +1659,11 @@ export default class RPlayer {
         return ((hours != "00") ? hours + ':' : "") + minutes + ":" + seconds;
     }
 
+    /**
+     * Controlling the application buttons.
+     *
+     * @memberof RPlayer
+     */
     buttons() {
         var htmlSelectors =  this
                             .rplayerCfg
@@ -1446,12 +1701,22 @@ export default class RPlayer {
 
     }
     
+    /**
+     * Stops all running video elements.
+     *
+     * @memberof RPlayer
+     */
     stopAllVideos() {
         $('video').each(function() {
             $(this).get(0).pause();
         });
     }
     
+    /**
+     * Execution of transport commands.
+     *
+     * @memberof RPlayer
+     */
     transport() {
 
         if (this.transportLastAction == "rplayerStartPause") {
@@ -1524,6 +1789,14 @@ export default class RPlayer {
 
     }
 
+    /**
+     * Returns the object key for the given value.
+     *
+     * @param {object} object
+     * @param {string} value
+     * @return {string} 
+     * @memberof RPlayer
+     */
     getKeyByValue(object, value) {
         return Object.keys(object).find(key => object[key] === value);
     }
