@@ -20,7 +20,10 @@ The main goal of this project is to free the distribution of music from large co
 * slideshow, regardless of which song is currently playing, which allows you to create a presentation of graphic materials while playing a single song
 * maximum power saving when the player is running in the background (inactive tab or display off or a minimized window, etc.)
 * multi-threaded solution if the player is running in focus
-* download manager, providing the possibility of compiling an archive for download and the mp3 files themselves exactly according to the user's wishes.
+* download manager, providing the option of compiling an archive for download exactly according to the user's wishes
+* user choice whether to include graphic information (in full quality) in mp3 files during download and provide them with icons, thereby user affects files size and their compatibility
+* ID3 tags of all kinds are added to mp3 files (intended for download) by the player
+* the player can map and dynamically change its design via CSS commands depending on the time of the album, being very performance oriented and running a separate thread for each selector
 
 **When creating a fork, keep the following in mind:** IPFS and Web3 are generally a network on which resources are shared across applications. Keeping the files (including third-party components) in their original forms will ensure a connection to a wider network of ready-made players. This is also the reason why I also share the "vendor" directory here. By the way, I apologize for using Composer and Docker. I know that in a pure JS application there is no general justification, but I usually write PHP and I just use this orchestration tools and run environment. Ideally, I recommend creating a working player only by modifying the rplayer.config.js file. This file contains (should contain) everything you need. The fewer files change, the better the player will behave in a decentralized network.
 
