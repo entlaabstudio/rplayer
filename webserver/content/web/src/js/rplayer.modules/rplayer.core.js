@@ -283,13 +283,13 @@ export default class RPlayer {
             } else {
                 var zip = new JSZip();
                 var that = this;
-                JSZipUtils.getBinaryContent('./src/json/prlayer.conf.cssTimeModifierData.json.zip', function(err, data) {
+                JSZipUtils.getBinaryContent('./src/json/rplayer.conf.cssTimeModifierData.json.zip', function(err, data) {
                     if(err) {
                         throw err; // or handle err
                     }
                 
                     zip.loadAsync(data).then(function () {
-                        return zip.file("prlayer.conf.cssTimeModifierData.json").async("string"); // a promise of "Hello World\n"
+                        return zip.file("rplayer.conf.cssTimeModifierData.json").async("string"); // a promise of "Hello World\n"
                     }).then(function(data) {
                         that.cssMesages = JSON.parse(data);
                         that.startCssMessages();
