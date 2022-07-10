@@ -43,7 +43,7 @@ export default class RPlayer {
 
         this.cfg                   = rplayerCfg.conf;
         this.seekingNow            = false;
-        this.seekerInit            = true;
+        this.seekerInit            = false;
         this.rewindToThisTrackTime = 2;
         this.rplayerCfg            = rplayerCfg;
         this.wordsView             = true;
@@ -1223,15 +1223,19 @@ export default class RPlayer {
     seeker() {
         var that = this;
 
-        if (this.seekerInit == true) {
+        if (!this.seekerInit) {
 
             this.seekerObject.attr("max",this.audioObject.duration);
             this.seekerObject.val(0);
             
             this.audioObject.currentTime = this.seekerObject.val();
+            
+            this.seekerObject.on("change",function() {
+                that.audioObject.currentTime = that.seekerObject.val();
+            });
 
             console.log("[RPlayer]","Seeker init success.");
-            this.seekerInit = false;
+            this.seekerInit = true;
         } else {            
             var condition = false;
             var tempElementMax = 0;
@@ -1310,10 +1314,6 @@ export default class RPlayer {
                 }
                 this.seekerObject.attr("value",this.audioObject.currentTime);
                 this.seekerObject.val(this.audioObject.currentTime);
-            } else {
-                this.seekerObject.on("change",function() {
-                    that.audioObject.currentTime = that.seekerObject.val();
-                });
             }
         }
     }
