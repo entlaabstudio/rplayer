@@ -358,8 +358,7 @@ export default class RPlayerConf {
                     },
                     anyHtml: 
                     "<p style='margin-top: 1em;'>" +
-                        "Thank you for purchasing <a href=\"https://yatsuband.bandcamp.com/album/dreamer-producer-pack\" target=\"_blank\"><i class=\"bandcamp icon\" style=\"display: inline-block; padding: 0 !important\"></i>the \"Dreamer\" Producer Pack</a>, you are an awesome human being! " +
-                        "Here's some useful information about the album and what gear was used to make it." +
+                        "The album group stem files, drum MIDI files, bass MIDI files and information about the gear used for the album 'Dreamer' are available in the <a href=\"https://yatsuband.bandcamp.com/album/dreamer-producer-pack\" target=\"_blank\"><i class=\"bandcamp icon\" style=\"display: inline-block; padding: 0 !important\"></i>'Dreamer' Producer Pack</a>." +
                     "</p>" +
                     "<h3>Album vocalists</h3>" +
                     "<div style=\"text-align: center;\"><div style=\"display: inline-block; text-align: center; margin: .5em;\"><a href=\"https://instagram.com/justinarteu/\" target=\"_blank\">Jurta<i class=\"instagram icon\" style=\"display: inline-block; padding: 0 !important;\"></i><br>" +
