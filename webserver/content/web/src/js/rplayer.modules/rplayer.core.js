@@ -83,6 +83,11 @@ export default class RPlayer {
         
         this.additionalSrcsChecked[prepareFilesKey] = this.rplayerCfg.conf.album.info.image;
         prepareFilesKey += 1;
+
+        if (this.cfg.app.preferences.cssTimeModifier.useJSON) {
+            this.additionalSrcsChecked[prepareFilesKey] = "./src/json/rplayer.conf.cssTimeModifierData.json.zip";
+            prepareFilesKey += 1;
+        }
         
         if (rplayerCfg.conf.album.srcsForCheck !== undefined) {
             for (const [key, value] of Object.entries(rplayerCfg.conf.album.srcsForCheck)) {
