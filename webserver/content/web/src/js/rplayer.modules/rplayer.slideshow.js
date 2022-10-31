@@ -64,6 +64,23 @@ export default class RPlayer {
         },372);
     }
 
+    hideElements() {
+        var that = this;
+        setTimeout(function() {
+            try {
+                var images = that.rplayerCfg.slideShow.pictures;
+                for (const [key, value] of Object.entries(images)) {
+                    $("#rplayerSlideshow img[data-time='" + key + "']").css({
+                        display: "none",
+                        opacity: "0"
+                    });
+                }
+            } catch (error) {
+                return false;
+            }
+        },3000);
+    }
+    
     makeImages() {
         try {
             var images = this.rplayerCfg.slideShow.pictures;
@@ -87,17 +104,44 @@ export default class RPlayer {
     }
 
     imageChanger() {
+        var that = this;
+        
         if (this.lastImage !== this.rplayerObj.getCurrentSlideshowImage()["time"]) {
-            $("#rplayerSlideshow img:not([data-time='" + this.rplayerObj.getCurrentSlideshowImage()["time"] + "'])").css({
-                transform: "perspective(50em) rotate3d(0, 0, 1, -180deg) translate3d(30em, 0em, 0em)",
-                opacity: "0"
-            },1000);
+            $("#rplayerSlideshow img[data-time='" + this.lastImage + "']").css({
+                transform: "perspective(50em) rotate3d(0, 0, 1, -30deg) scale(2)",
+                opacity: "0",
+                transition: "transform 1s ease, opacity 1s ease"
+            });
+
+            this.displayNone("#rplayerSlideshow img[data-time='" + this.lastImage + "']",1500);
+
             $("#rplayerSlideshow img[data-time='" + this.rplayerObj.getCurrentSlideshowImage()["time"] + "']").css({
-                transform: "perspective(50em) rotate3d(0, 0, 0, 0) translate3d(0, 0, 0)",
-                opacity: "1"
-            },1000);
+                transform: "perspective(50em) rotate3d(0, 0, 1, -30deg) scale(2)",
+                display: "block"
+            });
+            setTimeout(function() {
+                $("#rplayerSlideshow img[data-time='" + that.rplayerObj.getCurrentSlideshowImage()["time"] + "']").css({
+                    transform: "perspective(50em) rotate3d(0, 0, 0, 0)",
+                    opacity: "1",
+                    transition: "transform 1s ease, opacity 1s ease"
+                });
+            },15);
+            
             this.lastImage = this.rplayerObj.getCurrentSlideshowImage()["time"];
         }
+    }
+
+    displayNone(element,delay) {
+        var element;
+        var delay;
+
+        setTimeout(function() {
+            if ($(element).css("opacity") == 0) {
+                $(element).css({
+                    display: "none"
+                });
+            }
+        },delay);
     }
 
     getLyrics() {
