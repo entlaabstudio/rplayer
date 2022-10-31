@@ -254,7 +254,7 @@ export default class RPlayer {
         });
 
         $("#rplayerDownloads form:first-child").on("change",function(e) {
-            var elementId = e.originalEvent.path[0].id;
+            var elementId = e.originalEvent.composedPath()[0].id;
 
             // set slideshow images
             for (const [key, value] of Object.entries(that.download.slideshowImages)) {
@@ -1177,7 +1177,7 @@ export default class RPlayer {
         
         var COMM = song.comment;
         var TIT2 = song.mediaName
-        var TPE1 = [this.rplayerCfg.album.info.composer]
+        var TPE1 = [song.composer]
         var TALB = this.rplayerCfg.album.info.name
         var TPE2 = this.rplayerCfg.album.info.composer
         var TCON = song.genres
