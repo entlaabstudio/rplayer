@@ -1,4 +1,4 @@
-# RPlayer
+# RPlayer by Robert Rajs
 
 A player that supports full decentralization. Ready for use on Web3 networks such as IPFS. It arose from the desire for a player that will respect the listening to music albums, not just individual songs, to which buffering is subject.
 
