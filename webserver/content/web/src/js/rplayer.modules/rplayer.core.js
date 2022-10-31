@@ -375,28 +375,30 @@ export default class RPlayer {
         var data;
         
         // css Modifier
-        if (data.command.css !== undefined) {
-            $(data.target).css(data.command.css);
-            this.cssModifierActualCss[data.target] = {
-                time: data.command.time,
-                css: data.command.css
+        if (data.command !== undefined) {
+            if (data.command.css !== undefined) {
+                $(data.target).css(data.command.css);
+                this.cssModifierActualCss[data.target] = {
+                    time: data.command.time,
+                    css: data.command.css
+                }
             }
-        }
-
-        // Lyrics
-        if (data.command.lyrics !== undefined) {
-            this.lyricsActualPhrase = {
-                time: data.command.time,
-                text: data.command.lyrics
+    
+            // Lyrics
+            if (data.command.lyrics !== undefined) {
+                this.lyricsActualPhrase = {
+                    time: data.command.time,
+                    text: data.command.lyrics
+                }
             }
-        }
-
-        // SlideShow
-        if (data.command.mediaName !== undefined) {
-            this.slideshowActualImage = {
-                time: data.command.time,
-                mediaName: data.command.mediaName,
-                src: data.command.src
+    
+            // SlideShow
+            if (data.command.mediaName !== undefined) {
+                this.slideshowActualImage = {
+                    time: data.command.time,
+                    mediaName: data.command.mediaName,
+                    src: data.command.src
+                }
             }
         }
 
@@ -527,10 +529,7 @@ export default class RPlayer {
                     }
                 }
             }
-
-
-            
-        },100);
+        },1000);
     }
     
     htmlToHeader() {
@@ -553,12 +552,17 @@ export default class RPlayer {
 
     noScreenSleep() {
         try {
-            navigator.wakeLock.request('screen');
+            var screenLock = navigator.wakeLock.request('screen');
             console.log("[RPlayer]","The screen will not fall asleep now.");
-        } catch (err) {
-            // the wake lock request fails - usually system related, such being low on battery
-            // console.log("[RPlayer] noScreenSleep()",`${err.name}, ${err.message}`);
-        }          
+            document.addEventListener('visibilitychange', async () => {
+                if (screenLock !== null && document.visibilityState === 'visible') {
+                    screenLock = navigator.wakeLock.request('screen');
+                    console.log("[RPlayer]","The screen will not fall asleep now.");
+                }
+            });   
+        } catch (error) {
+            console.log("[RPlayer]","Screen Wake Lock API not supported. Error: " + error);
+        }
     }
 
     preloadAllImages() {
@@ -662,6 +666,22 @@ export default class RPlayer {
                                 "</td>" +
                                 "<td>" +
                                     "<span class='rplayerLocalText' data-phrase='helpForward'>Forward</span>" +
+                                "</td>" +
+                            "</tr>" +
+                            "<tr style='border-bottom: 1px solid rgba(0,0,0,.1)'>" +
+                                "<td>" +
+                                    "<span class='rplayerLocalText' data-phrase='helpKeyPlus'>[+]</span>" +
+                                "</td>" +
+                                "<td>" +
+                                    "<span class='rplayerLocalText' data-phrase='helpVolumeUp'>Volume up</span>" +
+                                "</td>" +
+                            "</tr>" +
+                            "<tr style='border-bottom: 1px solid rgba(0,0,0,.1)'>" +
+                                "<td>" +
+                                    "<span class='rplayerLocalText' data-phrase='helpKeyMinus'>[-]</span>" +
+                                "</td>" +
+                                "<td>" +
+                                    "<span class='rplayerLocalText' data-phrase='helpVolumeDown'>Volume down</span>" +
                                 "</td>" +
                             "</tr>" +
                             "<tr style='border-bottom: 1px solid rgba(0,0,0,.1)'>" +
