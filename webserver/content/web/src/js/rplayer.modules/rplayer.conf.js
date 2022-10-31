@@ -53,7 +53,7 @@ export default class RPlayerConf {
             description: "Yatsu v1 MIDI experimental v1",
             app: {
                 name: "RPlayer",
-                version: "2.43.77", // <some platform updates>.<visible or control updates>.<unvisible updates>
+                version: "2.44.78", // <some platform updates>.<visible or control updates>.<unvisible updates>
                 date: "2022",
                 web3Protocol: "ipfs://",
                 rplayerIndex: "rplayer.htm",
@@ -411,7 +411,7 @@ export default class RPlayerConf {
                         info: {
                             image: "media/images/mirrors.jpg",
                             icon: "media/icons/mirrors.png",
-                            composer: "Michal Diviš",
+                            composer: "YATSU",
                             lang: "eng", // ISO 639-2
                             year: 2021,
                             genres: {
@@ -567,7 +567,7 @@ export default class RPlayerConf {
                         info: {
                             image: "media/images/dreamer_album.jpg",
                             icon: "media/icons/dreamer_album.png",
-                            composer: "Michal Diviš",
+                            composer: "YATSU",
                             lang: "eng", // ISO 639-2
                             year: 2021,
                             genres: {
@@ -723,7 +723,7 @@ export default class RPlayerConf {
                         info: {
                             image: "media/images/ornaments_w_vocals.jpg",
                             icon: "media/icons/ornaments_w_vocals.png",
-                            composer: "Michal Diviš",
+                            composer: "YATSU",
                             lang: "eng", // ISO 639-2
                             year: 2021,
                             genres: {
@@ -933,7 +933,7 @@ export default class RPlayerConf {
                         info: {
                             image: "media/images/labyrinth.jpg",
                             icon: "media/icons/labyrinth.png",
-                            composer: "Michal Diviš",
+                            composer: "YATSU",
                             lang: "eng", // ISO 639-2
                             year: 2021,
                             genres: {
@@ -1096,7 +1096,7 @@ export default class RPlayerConf {
                         info: {
                             image: "media/images/spectre.jpg",
                             icon: "media/icons/spectre.png",
-                            composer: "Michal Diviš",
+                            composer: "YATSU",
                             lang: "eng", // ISO 639-2
                             year: 2021,
                             genres: {
@@ -1310,7 +1310,7 @@ export default class RPlayerConf {
                         info: {
                             image: "media/images/dreamer_album.jpg",
                             icon: "media/icons/dreamer_album.png",
-                            composer: "Michal Diviš",
+                            composer: "YATSU",
                             lang: "eng", // ISO 639-2
                             year: 2021,
                             genres: {
@@ -1466,7 +1466,7 @@ export default class RPlayerConf {
                         info: {
                             image: "media/images/dreamer_album.jpg",
                             icon: "media/icons/dreamer_album.png",
-                            composer: "Michal Diviš",
+                            composer: "YATSU",
                             lang: "eng", // ISO 639-2
                             year: 2021,
                             genres: {
@@ -1622,7 +1622,7 @@ export default class RPlayerConf {
                         info: {
                             image: "media/images/dreamer_album.jpg",
                             icon: "media/icons/dreamer_album.png",
-                            composer: "Michal Diviš",
+                            composer: "YATSU",
                             lang: "eng", // ISO 639-2
                             year: 2021,
                             genres: {
@@ -1778,7 +1778,7 @@ export default class RPlayerConf {
                         info: {
                             image: "media/images/dreamer_album.jpg",
                             icon: "media/icons/dreamer_album.png",
-                            composer: "Michal Diviš",
+                            composer: "YATSU",
                             lang: "eng", // ISO 639-2
                             year: 2021,
                             genres: {
