@@ -76,7 +76,14 @@
         </div>
 
         <!-- Module: rplayer.downloads.js -->
-        <div id="rplayerDownloads">
+        
+
+        <div class="ui teal progress" id="rplayerDownloadsProgress">
+            <div class="bar"></div>
+        </div>    
+
+
+        <div id="rplayerDownloads">        
             <div>
                 <div>
                     <h2 class="rplayerLocalText" data-phrase="downloadsHeader">RPlayer download manager</h2>
@@ -94,14 +101,19 @@
                                     </fieldset>
                                 </div>
                             </div>
-                            <div class="rplayerLocalText" data-phrase="downloadsInfoText" class="infoText">
-                                After clicking the download button, you can close the download manager and continue using RPlayer. The download will start automatically.
-                            </div><br>
-                            <div class="ui buttons">
-                                <button data-phrase="downloadsButtonDownload" class="ui primary button rplayerDownloadSubmit rplayerLocalText">Download</button>
-                                <button data-phrase="downloadsButtonClose" class="ui button rplayerDownloadsClose rplayerLocalText">Close</button>
+                            <div class="downloadsButtons">
+                                <div class="ui buttons">
+                                    <button data-phrase="downloadsButtonDownload" class="ui primary button rplayerDownloadSubmit rplayerLocalText">Download</button>
+                                    <button data-phrase="downloadsButtonInvert" class="ui grey button rplayerDownloadInvert rplayerLocalText">Invert</button>
+                                    <button data-phrase="downloadsButtonReset" class="ui grey button rplayerDownloadReset rplayerLocalText">Reset</button>
+                                    <button data-phrase="downloadsButtonClose" class="ui button rplayerDownloadsClose rplayerLocalText">Close</button>
+                                </div>
                             </div>
                         </form>
+                    </div>
+                    
+                    <div class="rplayerLocalText" data-phrase="downloadsInfoText" class="infoText">
+                        After clicking the download button, you can close the download manager and continue using RPlayer. The download will start automatically.
                     </div>
                 </div>
             </div>

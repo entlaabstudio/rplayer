@@ -71,6 +71,8 @@
 }
 
 #rplayerDownloads h2 {
+    position: fixed;
+    top: 1em;
     font-weight: normal;
     width: 100%;
     padding-bottom: .5em;
@@ -83,4 +85,35 @@
     color: var(--currentTime);
     margin-bottom: 2em;
     max-width: 35em;
+}
+
+#rplayerDownloads .downloadsButtons {
+    position: fixed;
+    display: flex;
+    z-index: 250;
+    margin-top: 2em;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+}
+
+#rplayerDownloads .ui.inverted.form {
+    padding-bottom: 0 !important;
+    padding-top: 2em !important;
+}
+
+.ui.teal.progress {
+    opacity: 0;
+    position: fixed;
+    left: 0;
+    top: -1em;
+    right: 0;
+    height: .5em;
+    z-index: 500;
+}
+
+.ui.teal.progress .bar {
+    height: .5em;
+    background-color: var(--currentTime) !important;
+    border-radius: 0;
 }

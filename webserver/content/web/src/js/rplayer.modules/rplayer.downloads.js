@@ -68,9 +68,14 @@ export default class RPlayer {
                 that.bundleOptions();
                 that.otherFiles();
                 that.unsortedFiles();
+                that.progressBar();
                 clearInterval(int);
             }
         },362);
+    }
+
+    progressBar() {
+        $('#rplayerDownloadsProgress').progress();
     }
     
     slideshowImages() {
@@ -226,10 +231,10 @@ export default class RPlayer {
                 "<input type=\"checkbox\" checked=\"checked\" id=\"rplayerCheckboxDownloadBundleOptions_IconsToMp3\"><label class=\"rplayerLocalText\" data-phrase=\"downloadsIconsToMp3\" for=\"rplayerCheckboxDownloadBundleOptions_IconsToMp3\">Include icons to mp3 files</label>" +
             "</div>" +
             "<div class=\"ui toggle checkbox\">" +
-                "<input type=\"checkbox\" checked=\"checked\" id=\"rplayerCheckboxDownloadBundleOptions_LyricsFile\"><label class=\"rplayerLocalText\" data-phrase=\"downloadsLyricsFiles\" for=\"rplayerCheckboxDownloadBundleOptions_LyricsFile\">Songs lyrics files</label>" +
+            "<input type=\"checkbox\" checked=\"checked\" id=\"rplayerCheckboxDownloadBundleOptions_LyricsFile\"><label class=\"rplayerLocalText\" data-phrase=\"downloadsLyricsFiles\" for=\"rplayerCheckboxDownloadBundleOptions_LyricsFile\">Songs lyrics files</label>" +
             "</div>" +
             "<div class=\"ui toggle checkbox\">" +
-                "<input type=\"checkbox\" checked=\"checked\" id=\"rplayerCheckboxDownloadBundleOptions_InfoFile\"><label class=\"rplayerLocalText\" data-phrase=\"downloadsInfoFiles\" for=\"rplayerCheckboxDownloadBundleOptions_InfoFile\">Songs informations files</label>" +
+            "<input type=\"checkbox\" checked=\"checked\" id=\"rplayerCheckboxDownloadBundleOptions_InfoFile\"><label class=\"rplayerLocalText\" data-phrase=\"downloadsInfoFiles\" for=\"rplayerCheckboxDownloadBundleOptions_InfoFile\">Songs informations files</label>" +
             "</div>" +
             "<div class=\"ui toggle checkbox\">" +
                 "<input type=\"checkbox\" checked=\"checked\" id=\"rplayerCheckboxDownloadBundleOptions_AlbumInfoFile\"><label class=\"rplayerLocalText\" data-phrase=\"downloadsInfoWebsite\" for=\"rplayerCheckboxDownloadBundleOptions_AlbumInfoFile\">Album informations website</label>" +
@@ -650,6 +655,37 @@ export default class RPlayer {
         $("#rplayerDownloads .button.rplayerDownloadSubmit").on("click",function() {
             that.downloadAction();
         });
+
+        $("#rplayerDownloads .button.rplayerDownloadInvert").on("click",function() {
+            that.checkboxesManipulator("invert");
+        });
+
+        $("#rplayerDownloads .button.rplayerDownloadReset").on("click",function() {
+            that.checkboxesManipulator("reset");
+        });
+    }
+
+    checkboxesManipulator(manipulationStyle) {
+
+        var manipulationStyle;
+        var checkboxes = $("#rplayerDownloads input[type='checkbox']");
+
+        for (const [key, value] of Object.entries(checkboxes)) {
+            try {
+                if (manipulationStyle == "invert") {
+                    setTimeout(function() {
+                        $(value).click();
+                    }, key * 24);
+                }
+
+                if (manipulationStyle == "reset") {
+
+                    if (!$(value).contents().prevObject[0].checked) {
+                        $(value).click();
+                    }
+                }
+            } catch (error) {}
+        }
     }
 
     downloadAction() {
@@ -781,9 +817,33 @@ export default class RPlayer {
                 }
             }
 
+            $('#rplayerDownloadsProgress').css("opacity","1");
             if (parseInt(countOfDownloadedFiles) != parseInt(countOfFiles)) {
-                that.checkDataAndContinue();
+                that.checkDataAndContinue();                
+                
+                $('#rplayerDownloadsProgress').progress({
+                    percent: parseInt(countOfDownloadedFiles) / parseInt(countOfFiles) * 100
+                });
+            
+            
             } else {
+
+                setTimeout(function() {
+                    $('#rplayerDownloadsProgress').progress({
+                        percent: 100
+                    });
+                },7000);
+                setTimeout(function() {
+                    $('#rplayerDownloadsProgress').css({
+                        opacity: "0",
+                    });
+                    $('#rplayerDownloadsProgress .bar').css({
+                        backgroundColor: "var(--currentTime)"
+                    });
+                    $('#rplayerDownloadsProgress').progress({
+                        value: 1
+                    });
+                },14000);
                 that.zipData();
             }
         },6000);
