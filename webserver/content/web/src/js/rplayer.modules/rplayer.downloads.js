@@ -705,8 +705,14 @@ export default class RPlayer {
     }
 
     getslideshowImages() {
+        var i = 0;
+        var that = this;
+
         for (const [key, value] of Object.entries(this.download.slideshowImages)) {
-            this.getFileData(value);
+            i++;
+            setTimeout(function() {
+                that.getFileData(value);
+            }, i * that.rplayerCfg.app.preferences.downloadManager.speed);
         }
     }
 
@@ -723,22 +729,40 @@ export default class RPlayer {
     }
     
     getOtherFiles() {
+        var i = 0;
+        var that = this;
+        
         for (const [key, value] of Object.entries(this.download.others)) {
             for (const [key2, value2] of Object.entries(value.files)) {
-                this.getFileData(value2);
+                i++;
+                setTimeout(function() {
+                    that.getFileData(value2);
+                }, i * that.rplayerCfg.app.preferences.downloadManager.speed * 0.9);
             }
         }
     }
 
     getUnsortedFiles() {
+        var i = 0;
+        var that = this;
+
         for (const [key, value] of Object.entries(this.download.unsorted)) {
-            this.getFileData(value);
+            i++;
+            setTimeout(function() {
+                that.getFileData(value);
+            }, i * that.rplayerCfg.app.preferences.downloadManager.speed * 0.7);
         }
     }
     
     getMp3Files() {
+        var i = 0;
+        var that = this;
+
         for (const [key, value] of Object.entries(this.download.mp3)) {
-            this.getFileData(value);
+            i++;
+            setTimeout(function() {
+                that.getFileData(value);
+            }, i * that.rplayerCfg.app.preferences.downloadManager.speed * 1.3);
         }
     }
 

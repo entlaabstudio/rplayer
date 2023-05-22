@@ -84,8 +84,12 @@ export default class RPlayer {
     makeImages() {
         try {
             var images = this.rplayerCfg.slideShow.pictures;
+            var i = 0;
             for (const [key, value] of Object.entries(images)) {
-                $("#rplayerSlideshow").append("<img src='" + value.src + "' data-time='" + key + "'>");
+                i++;
+                setTimeout(function() {
+                    $("#rplayerSlideshow").append("<img src='" + value.src + "' data-time='" + key + "'>");
+                }, i * this.rplayerCfg.slideShow.loadingSpeed);
             }
             $("#rplayerSlideshow").append("<div></div>");
         } catch (error) {
@@ -115,6 +119,8 @@ export default class RPlayer {
 
             this.displayNone("#rplayerSlideshow img[data-time='" + this.lastImage + "']",1500);
 
+            this.reloadImg("#rplayerSlideshow img[data-time='" + this.rplayerObj.getCurrentSlideshowImage()["time"] + "']");
+            
             $("#rplayerSlideshow img[data-time='" + this.rplayerObj.getCurrentSlideshowImage()["time"] + "']").css({
                 transform: "perspective(50em) rotate3d(0, 0, 1, -30deg) scale(2)",
                 display: "block"
@@ -129,6 +135,11 @@ export default class RPlayer {
             
             this.lastImage = this.rplayerObj.getCurrentSlideshowImage()["time"];
         }
+    }
+
+    reloadImg(imgSelector) {
+        var fileSrc = $(imgSelector).attr("src");
+        $(imgSelector).attr("src", fileSrc);
     }
 
     displayNone(element,delay) {

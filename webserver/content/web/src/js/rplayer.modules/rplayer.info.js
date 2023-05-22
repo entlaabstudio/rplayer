@@ -534,6 +534,7 @@ export default class RPlayerInfo {
 
     lyricsHighlight() {
         var currentWordTimekey = this.rplayerObj.getCurrentPhrase()["time"];
+        var lat = (this.rplayerObj.audioObject.currentTime * 1000) - currentWordTimekey;
         if (this.lastWordTimekey != currentWordTimekey) {
             $("#rplayerInfo .rplayerInfoWord").removeClass("highlightedWord");
             if (this.rplayerObj.getCurrentPhrase()["text"] !== undefined) {
@@ -541,7 +542,11 @@ export default class RPlayerInfo {
             }
             this.lastWordTimekey = currentWordTimekey;
         }
-        $("#rplayerInfo .rplayerInfoWord[data-timekey='" + currentWordTimekey + "']").addClass("highlightedWord");
+        if (lat > this.rplayerObj.rplayerCfg.conf.app.preferences.words.titleMaxTime) {
+            $("#rplayerInfo .rplayerInfoWord").removeClass("highlightedWord");
+        } else {
+            $("#rplayerInfo .rplayerInfoWord[data-timekey='" + currentWordTimekey + "']").addClass("highlightedWord");
+        }
     }
 
     setInfoForSelectedTrack() {

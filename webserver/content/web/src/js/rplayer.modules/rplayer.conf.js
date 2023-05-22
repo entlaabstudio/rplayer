@@ -53,11 +53,21 @@ export default class RPlayerConf {
             description: "Yatsu v1 MIDI experimental v1",
             app: {
                 name: "RPlayer",
-                version: "2.45.78", // <some platform updates>.<visible or control updates>.<unvisible updates>
-                date: "2022",
+                version: "2.45.81", // <some platform updates>.<visible or control updates>.<unvisible updates>
+                date: "2023",
                 web3Protocol: "ipfs://",
+                web3FileChck: true,
                 rplayerIndex: "rplayer.htm",
                 preferences: {
+                    loading: {
+                        speed: {
+                            additionalSrcs: 500,
+                            preloadAllImages: 280
+                        }
+                    },
+                    downloadManager: {
+                        speed: 333,
+                    },
                     transport: {
                         stepTime: .5 // [s]
                     },
@@ -66,7 +76,7 @@ export default class RPlayerConf {
                         titleMaxTime:  7000 // [ms]
                     },
                     design: {
-                        backgroundImage: "url('./media/images/dreamer_album.jpg')",
+                        backgroundImage: "url('./media/images/bg.jpg')",
                         favicon: "./favicon.ico",
                         motion3d: false,
                     },
@@ -120,6 +130,17 @@ export default class RPlayerConf {
                 },
                 localization: {
                     lang: "en",
+                    translatorSpeed: 1000,
+                    resetPhrases: {
+                        0: {
+                            "on"      : "click",
+                            "selector": "#rplayerInfo .transport",
+                        },
+                        1: {
+                            "on"      : "keyup",
+                            "selector": document,
+                        }
+                    },
                     phrases: {
                         // modules.visual
                         "author"                      : "Author",
@@ -137,6 +158,8 @@ export default class RPlayerConf {
                         "helpKeyDown"                 : "[DOWN]",
                         "helpKeyLeft"                 : "[LEFT]",
                         "helpKeyRight"                : "[RIGHT]",
+                        "helpKeyPlus"                 : "[+]",
+                        "helpKeyMinus"                : "[-]",
                         "helpKeyCtrl"                 : "[CTRL]",
                         "helpKeyEnter"                : "[ENTER]",
                         "helpKeyS"                    : "[S]",
@@ -148,6 +171,8 @@ export default class RPlayerConf {
                         "helpRewind"                  : "Rewind",
                         "helpForward"                 : "Forward",
                         "helpSlideshow"               : "Slideshow mode",
+                        "helpVolumeUp"                : "Volume up",
+                        "helpVolumeDown"              : "Volume down",
                         "helpFullscreen"              : "Fullscreen mode",
                         "helpStopAfterTrack"          : "Stop after track",
                         "helpLoopAll"                 : "Loop all",
@@ -168,6 +193,8 @@ export default class RPlayerConf {
                         "downloadsBundleOptions"      : "Bundle options",
                         "downloadsInfoText"           : "After clicking the download button, you can close the download manager and continue using RPlayer. The download will start automatically.",
                         "downloadsButtonDownload"     : "Download",
+                        "downloadsButtonInvert"       : "Invert",
+                        "downloadsButtonReset"        : "Reset",
                         "downloadsButtonClose"        : "Close",
                         "downloadsAttachmentsFor"     : "Attachments for",
                         "downloadsAttachmentsUnsorted": "Unsorted attachments",
@@ -442,7 +469,7 @@ export default class RPlayerConf {
                                     "<div class=\"midiTom1 midiTom2 midiTom3 midiTom4\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Toms:</div>" +
                                     "<ul><li>GGD P4 toms</li></ul>" +
                                     "<div class=\"midiCrashL1 midiCrashR midiCrashL2 midiSplashL midiSplashR midiChina midiRide midiHihatOpen midiHihatOpen2 midiHihatOpen3 midiHihatPedal midiHihatTipTight midiMiniHat midiHiHatEdgeClosed midiHiHatEdgeTight midiHihatTipClosed\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Cymbals:</div>" +
-                                    "<ul><li>GGD P4 toms</li></ul>" +
+                                    "<ul><li>GGD P4 cymbals</li></ul>" +
                                     "<strong>And here's the MIDI mapping:</strong><br>" +
                                     "<table style=\"font-family: courier; border-collapse: collapse; margin-top: .5em;\">" +
                                         "<tr><td class=\"midiKick\" style=\"padding: 0 1em 0 1.5em; color: white;\">C0</td><td>Kick</td></tr>" +
@@ -598,7 +625,7 @@ export default class RPlayerConf {
                                     "<div class=\"midiTom1 midiTom2 midiTom3 midiTom4\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Toms:</div>" +
                                     "<ul><li>GGD P4 toms</li></ul>" +
                                     "<div class=\"midiCrashL1 midiCrashR midiCrashL2 midiSplashL midiSplashR midiChina midiRide midiHihatOpen midiHihatOpen2 midiHihatOpen3 midiHihatPedal midiHihatTipTight midiMiniHat midiHiHatEdgeClosed midiHiHatEdgeTight midiHihatTipClosed\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Cymbals:</div>" +
-                                    "<ul><li>GGD P4 toms</li></ul>" +
+                                    "<ul><li>GGD P4 cymbals</li></ul>" +
                                     "<strong>And here's the MIDI mapping:</strong><br>" +
                                     "<table style=\"font-family: courier; border-collapse: collapse; margin-top: .5em;\">" +
                                         "<tr><td class=\"midiKick\" style=\"padding: 0 1em 0 1.5em; color: white;\">C0</td><td>Kick</td></tr>" +
@@ -764,7 +791,7 @@ export default class RPlayerConf {
                                     "<div class=\"midiTom1 midiTom2 midiTom3 midiTom4\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Toms:</div>" +
                                     "<ul><li>GGD P4 toms</li></ul>" +
                                     "<div class=\"midiCrashL1 midiCrashR midiCrashL2 midiSplashL midiSplashR midiChina midiRide midiHihatOpen midiHihatOpen2 midiHihatOpen3 midiHihatPedal midiHihatTipTight midiMiniHat midiHiHatEdgeClosed midiHiHatEdgeTight midiHihatTipClosed\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Cymbals:</div>" +
-                                    "<ul><li>GGD P4 toms</li></ul>" +
+                                    "<ul><li>GGD P4 cymbals</li></ul>" +
                                     "<strong>And here's the MIDI mapping:</strong><br>" +
                                     "<table style=\"font-family: courier; border-collapse: collapse; margin-top: .5em;\">" +
                                         "<tr><td class=\"midiKick\" style=\"padding: 0 1em 0 1.5em; color: white;\">C0</td><td>Kick</td></tr>" +
@@ -964,7 +991,7 @@ export default class RPlayerConf {
                                     "<div class=\"midiTom1 midiTom2 midiTom3 midiTom4\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Toms:</div>" +
                                     "<ul><li>GGD P4 toms</li></ul>" +
                                     "<div class=\"midiCrashL1 midiCrashR midiCrashL2 midiSplashL midiSplashR midiChina midiRide midiHihatOpen midiHihatOpen2 midiHihatOpen3 midiHihatPedal midiHihatTipTight midiMiniHat midiHiHatEdgeClosed midiHiHatEdgeTight midiHihatTipClosed\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Cymbals:</div>" +
-                                    "<ul><li>GGD P4 toms</li></ul>" +
+                                    "<ul><li>GGD P4 cymbals</li></ul>" +
                                     "<strong>And here's the MIDI mapping:</strong><br>" +
                                     "<table style=\"font-family: courier; border-collapse: collapse; margin-top: .5em;\">" +
                                         "<tr><td class=\"midiKick\" style=\"padding: 0 1em 0 1.5em; color: white;\">C0</td><td>Kick</td></tr>" +
@@ -1142,7 +1169,7 @@ export default class RPlayerConf {
                                     "<div class=\"midiTom1 midiTom2 midiTom3 midiTom4\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Toms:</div>" +
                                     "<ul><li>GGD P4 toms</li></ul>" +
                                     "<div class=\"midiCrashL1 midiCrashR midiCrashL2 midiSplashL midiSplashR midiChina midiRide midiHihatOpen midiHihatOpen2 midiHihatOpen3 midiHihatPedal midiHihatTipTight midiMiniHat midiHiHatEdgeClosed midiHiHatEdgeTight midiHihatTipClosed\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Cymbals:</div>" +
-                                    "<ul><li>GGD P4 toms</li></ul>" +
+                                    "<ul><li>GGD P4 cymbals</li></ul>" +
                                     "<strong>And here's the MIDI mapping:</strong><br>" +
                                     "<table style=\"font-family: courier; border-collapse: collapse; margin-top: .5em;\">" +
                                         "<tr><td class=\"midiKick\" style=\"padding: 0 1em 0 1.5em; color: white;\">C0</td><td>Kick</td></tr>" +
@@ -1341,7 +1368,7 @@ export default class RPlayerConf {
                                     "<div class=\"midiTom1 midiTom2 midiTom3 midiTom4\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Toms:</div>" +
                                     "<ul><li>GGD P4 toms</li></ul>" +
                                     "<div class=\"midiCrashL1 midiCrashR midiCrashL2 midiSplashL midiSplashR midiChina midiRide midiHihatOpen midiHihatOpen2 midiHihatOpen3 midiHihatPedal midiHihatTipTight midiMiniHat midiHiHatEdgeClosed midiHiHatEdgeTight midiHihatTipClosed\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Cymbals:</div>" +
-                                    "<ul><li>GGD P4 toms</li></ul>" +
+                                    "<ul><li>GGD P4 cymbals</li></ul>" +
                                     "<strong>And here's the MIDI mapping:</strong><br>" +
                                     "<table style=\"font-family: courier; border-collapse: collapse; margin-top: .5em;\">" +
                                         "<tr><td class=\"midiKick\" style=\"padding: 0 1em 0 1.5em; color: white;\">C0</td><td>Kick</td></tr>" +
@@ -1497,7 +1524,7 @@ export default class RPlayerConf {
                                     "<div class=\"midiTom1 midiTom2 midiTom3 midiTom4\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Toms:</div>" +
                                     "<ul><li>GGD P4 toms</li></ul>" +
                                     "<div class=\"midiCrashL1 midiCrashR midiCrashL2 midiSplashL midiSplashR midiChina midiRide midiHihatOpen midiHihatOpen2 midiHihatOpen3 midiHihatPedal midiHihatTipTight midiMiniHat midiHiHatEdgeClosed midiHiHatEdgeTight midiHihatTipClosed\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Cymbals:</div>" +
-                                    "<ul><li>GGD P4 toms</li></ul>" +
+                                    "<ul><li>GGD P4 cymbals</li></ul>" +
                                     "<strong>And here's the MIDI mapping:</strong><br>" +
                                     "<table style=\"font-family: courier; border-collapse: collapse; margin-top: .5em;\">" +
                                         "<tr><td class=\"midiKick\" style=\"padding: 0 1em 0 1.5em; color: white;\">C0</td><td>Kick</td></tr>" +
@@ -1653,7 +1680,7 @@ export default class RPlayerConf {
                                     "<div class=\"midiTom1 midiTom2 midiTom3 midiTom4\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Toms:</div>" +
                                     "<ul><li>GGD P4 toms</li></ul>" +
                                     "<div class=\"midiCrashL1 midiCrashR midiCrashL2 midiSplashL midiSplashR midiChina midiRide midiHihatOpen midiHihatOpen2 midiHihatOpen3 midiHihatPedal midiHihatTipTight midiMiniHat midiHiHatEdgeClosed midiHiHatEdgeTight midiHihatTipClosed\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Cymbals:</div>" +
-                                    "<ul><li>GGD P4 toms</li></ul>" +
+                                    "<ul><li>GGD P4 cymbals</li></ul>" +
                                     "<strong>And here's the MIDI mapping:</strong><br>" +
                                     "<table style=\"font-family: courier; border-collapse: collapse; margin-top: .5em;\">" +
                                         "<tr><td class=\"midiKick\" style=\"padding: 0 1em 0 1.5em; color: white;\">C0</td><td>Kick</td></tr>" +
@@ -1809,7 +1836,7 @@ export default class RPlayerConf {
                                     "<div class=\"midiTom1 midiTom2 midiTom3 midiTom4\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Toms:</div>" +
                                     "<ul><li>GGD P4 toms</li></ul>" +
                                     "<div class=\"midiCrashL1 midiCrashR midiCrashL2 midiSplashL midiSplashR midiChina midiRide midiHihatOpen midiHihatOpen2 midiHihatOpen3 midiHihatPedal midiHihatTipTight midiMiniHat midiHiHatEdgeClosed midiHiHatEdgeTight midiHihatTipClosed\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Cymbals:</div>" +
-                                    "<ul><li>GGD P4 toms</li></ul>" +
+                                    "<ul><li>GGD P4 cymbals</li></ul>" +
                                     "<strong>And here's the MIDI mapping:</strong><br>" +
                                     "<table style=\"font-family: courier; border-collapse: collapse; margin-top: .5em;\">" +
                                         "<tr><td class=\"midiKick\" style=\"padding: 0 1em 0 1.5em; color: white;\">C0</td><td>Kick</td></tr>" +

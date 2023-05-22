@@ -1,6 +1,6 @@
 /**
  * @file Core file of RPlayer web application
- * @copyright Robert Rajs 2022
+ * @copyright Robert Rajs 2022, 2023
  * @author Robert Rajs
  * @see {@link https://rajs.info|Home}
  * @see {@link https://zesilovac.cz|Zesilovač}
@@ -9,7 +9,7 @@
  * @see {@link https://github.com/entlaabstudio/rplayer|GitHub}
  * @see {@link https://cs-cz.facebook.com/robert.rajs.9|Facebook}
  * @license
- * Copyright (c) 2022 Robert Rajs
+ * Copyright (c) 2022, 2023 Robert Rajs
  * 
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -132,7 +132,9 @@ export default class RPlayer {
         });
 
         this.additionalSrcsChecked = uniquePathsAddSrcs;
-        this.checkAdditionalSrcs();
+        if (this.rplayerCfg.conf.app.web3FileChck) {
+            this.checkAdditionalSrcs();
+        }
         // --- Prepare media for check
                 
         var that = this;
@@ -160,9 +162,13 @@ export default class RPlayer {
     
     checkAdditionalSrcs() {
         var that = this;
+        var i = 0;
         
         this.additionalSrcsChecked.forEach(element => {
-            that.checkAdditionalSrc(element);
+            i++;
+            setTimeout(function() {
+                that.checkAdditionalSrc(element);
+            }, i * this.cfg.app.preferences.loading.speed.additionalSrcs);
         });
     }
 
@@ -197,7 +203,9 @@ export default class RPlayer {
         this.htmlToHeader();
         this.getLicense();
         this.noScreenSleep();
-        this.preloadAllImages();
+        if (this.rplayerCfg.conf.app.web3FileChck) {
+            this.preloadAllImages();
+        }
         this.tracklist();
         this.buttons();
         this.putAlbumInfo();
@@ -502,6 +510,14 @@ export default class RPlayer {
     putLocalization() {
         var that    = this;
 
+        if (that.rplayerCfg.conf.app.localization.resetPhrases !== undefined) {
+            for (const [key, value] of Object.entries(that.rplayerCfg.conf.app.localization.resetPhrases)) {
+                $(document).on(value.on,value.selector,function() {
+                    that.translated = [];
+                });
+            }
+        }
+
         setInterval(function() {
             if (!that.power.off("localization")) {
 
@@ -529,7 +545,7 @@ export default class RPlayer {
                     }
                 }
             }
-        },1000);
+        },that.rplayerCfg.conf.app.localization.translatorSpeed);
     }
     
     htmlToHeader() {
@@ -571,10 +587,14 @@ export default class RPlayer {
         var image = new Array;
 
         // tracks
+        var i = 0;
         this.obj2array(cfg.album.tracks).forEach(element => {
 
-            image[key] = new Image();
-            image[key].src = element[1].info.image;
+            i++;
+            setTimeout(function() {
+                image[key] = new Image();
+                image[key].src = element[1].info.image;
+            }, (i * cfg.app.preferences.loading.speed.preloadAllImages) + Math.round(cfg.app.preferences.loading.speed.preloadAllImages / 3));
 
             key++;
         });
@@ -586,10 +606,14 @@ export default class RPlayer {
         key++;
 
         // slideshow
+        var i = 0;
         this.obj2array(cfg.slideShow.pictures).forEach(element => {
 
-            image[key] = new Image();
-            image[key].src = element[1].src;
+            i++;
+            setTimeout(function() {
+                image[key] = new Image();
+                image[key].src = element[1].src;
+            }, i * cfg.app.preferences.loading.speed.preloadAllImages);
 
             key++;
         });
