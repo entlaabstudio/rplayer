@@ -16,8 +16,8 @@ services:
     image: ghcr.io/linuxserver/openssh-server
     environment:
       - PASSWORD_ACCESS=true
-      - USER_PASSWORD=ssh
-      - USER_NAME=ssh
+      - USER_PASSWORD=password
+      - USER_NAME=dev
       - PUID=1000
       - PGID=33
     ports:
