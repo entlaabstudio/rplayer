@@ -7,13 +7,13 @@ libjpeg62-turbo-dev \
 libpng-dev \
 libzip-dev \
 mc \
-&& pecl install xdebug \
+#&& pecl install xdebug \
 && a2enmod rewrite \
 && a2enmod headers
 
 #RUN docker-php-ext-configure gd --with-freetype --with-jpeg
 RUN docker-php-ext-install opcache gd pdo_mysql zip
-RUN docker-php-ext-enable opcache gd xdebug zip
+#RUN docker-php-ext-enable opcache gd xdebug zip
 
 RUN docker-php-ext-install mysqli
 RUN docker-php-ext-enable mysqli
