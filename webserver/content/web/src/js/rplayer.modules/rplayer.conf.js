@@ -54,7 +54,7 @@ export default class RPlayerConf {
             app: {
                 name: "RPlayer",
                 version: "2.45.82", // <some platform updates>.<visible or control updates>.<unvisible updates>
-                date: "2023",
+                date: "2023, 2025",
                 web3Protocol: "ipfs://",
                 web3FileChck: true,
                 rplayerIndex: "rplayer.htm",
@@ -178,7 +178,7 @@ export default class RPlayerConf {
                         "helpLoopAll"                 : "Loop all",
                         "helpLyrics"                  : "Show / hide lyrics",
                         "helpBluetooth"               : "All standard bluetooth commands",
-                        "byRobertRajs"                : "by Robert Rajs",
+                        "byRobertRajs"                : "by Technotramp",
                         // modules.info
                         "infoAlbumName"               : "Album name",
                         "infoAlbumYear"               : "Album year",
