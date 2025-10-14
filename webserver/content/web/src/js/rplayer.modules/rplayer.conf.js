@@ -35,13 +35,14 @@
  */
 
 // import RPlayerConfCssTimeModifier from "./rplayer.conf.cssTimeModifier.js";
+import RPlayerConfDrumsSvg        from "./rplayer.conf.drumsSvg.js";
 import RPlayerConfSlideshow       from "./rplayer.conf.slideShow.js";
+import RPlayerConfTrackHtml       from "./rplayer.conf.trackHtml.js";
 
 // var ConfCssTimeModifier = new RPlayerConfCssTimeModifier();
+var ConfDrumsSvg        = new RPlayerConfDrumsSvg();
 var ConfSlideshow       = new RPlayerConfSlideshow();
-
-// console.log(ConfSlideshow.conf.slideShow);
-// debugger;
+var ConfTrackHtml       = new RPlayerConfTrackHtml();
 
 export default class RPlayerConf {
     constructor() {
@@ -50,7 +51,7 @@ export default class RPlayerConf {
 
         this.conf = {
             configVersion: 3,
-            description: "Yatsu v1 MIDI experimental v1",
+            description: "Michal Diviš rebrand v1",
             app: {
                 name: "RPlayer",
                 version: "2.45.82", // <some platform updates>.<visible or control updates>.<unvisible updates>
@@ -76,7 +77,7 @@ export default class RPlayerConf {
                         titleMaxTime:  7000 // [ms]
                     },
                     design: {
-                        backgroundImage: "url('./media/images/bg.jpg')",
+                        backgroundImage: "url('./media/images/rebrand/bg.jpg')",
                         favicon: "./favicon.ico",
                         motion3d: false,
                     },
@@ -273,32 +274,40 @@ export default class RPlayerConf {
                         },
                     },
                 },
-                // htmlToHeader:
-                // "<style tyle=\"text/css\">" +
-                //     ":root {" +
-                //         "--currentTime: rgba(255,131,196,1);" +
-                //         "--color1: rgba(255,131,196,1);" +
-                //     "}" +
-                //     "a {" +
-                //         "color: rgba(255,131,196,1);" +
-                //     "}" +
-                //     ".primary {" +
-                //         "background-color: rgba(255,131,196,1) !important;" +
-                //     "}" +
-                // "</style>",
-                // htmlToBody:
-                // "<style tyle=\"text/css\">" +
-                //     ":root {" +
-                //         "--currentTime: rgba(255,131,196,1);" +
-                //         "--color1: rgba(255,131,196,1);" +
-                //     "}" +
-                //     "a {" +
-                //         "color: rgba(255,131,196,1);" +
-                //     "}" +
-                //     ".primary {" +
-                //         "background-color: rgba(255,131,196,1) !important;" +
-                //     "}" +
-                // "</style>",
+                htmlToHeader:
+                "<style tyle=\"text/css\"> \
+                    #rplayerInfoTemp h3 {\
+                        margin-top: 2.6em; \
+                    } \
+                    #rplayer { \
+                        box-shadow: none; \
+                    } \
+                    .rplayerUic, \
+                    .column.rplayerCard, \
+                    .FullscreenDimmer, \
+                    .ui.teal.progress.active { \
+                        filter: invert(1) \
+                    } \
+                    .rplayerShowInfo, .words { \
+                        box-shadow: none; \
+                    } \
+                    #rplayerDownloads, \
+                    #rplayerInfo, \
+                    .mediaImage, \
+                    .column.rplayerInfoCard { \
+                        filter: hue-rotate(180deg); \
+                    } \
+                    #rplayerInfo img[src^='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAYAAAA8AXHiAAAgAElEQVR4Xoy9d5Cs53Xmd7p'], \
+                    #rplayerInfo img[src^='data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAi'], \
+                    #rplayerInfo img[src^='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJgAAACYCAYAAAAYwiAhAAAKN2lDQ1BzUkdCIElFQzYxOTY'], \
+                    #rplayerInfo svg.drums, \
+                    #rplayerInfo video {\
+                        filter: hue-rotate(180deg); \
+                    }\
+                    input.rplayerCrAdresses { \
+                        color: #fff; \
+                    } \
+                </style>",
                 htmlSelectors: {
                     mainWindow: "#rplayer",           // recommended ID
                     dimmer:     ".FullscreenDimmer",
@@ -340,7 +349,7 @@ export default class RPlayerConf {
             album: {
                 mediaSrc: "media/sounds/YATSU-2021-Mirrors-202202110022.m4a",
                 srcsForCheck: {
-                    0: "media/images/dreamer_album.jpg",
+                    0: "media/images/rebrand/Album_cover.jpg",
                 },
                 // downloads: {
                 //     0: {
@@ -355,7 +364,7 @@ export default class RPlayerConf {
                 //     },
                 // },
                 info: {
-                    image: "media/images/dreamer_album.jpg",
+                    image: "media/images/rebrand/Album_cover.jpg",
                     name: "Dreamer",
                     year: "2021",
                     genres: {
@@ -366,26 +375,26 @@ export default class RPlayerConf {
                     label: "",
                     copyright: "",
                     lang: "en",
-                    composer: "YATSU",
+                    composer: "Michal Diviš",
                     miniIcons: {
                         0: {
-                            url: "https://facebook.com/yatsuband",
-                            icon: "<i class=\"facebook icon\"></i>",
-                            target: "_blank",
-                            name: "Facebook",
-                            onFront: true,
-                        },
-                        1: {
-                            url: "https://www.instagram.com/yatsuband/",
+                            url: "https://instagram.com/michaldivismusic",
                             icon: "<i class=\"instagram icon\"></i>",
                             target: "_blank",
                             name: "Instagram",
                             onFront: true,
                         },
+                        1: {
+                            url: "https://mastodon.social/@michaldivismusic/",
+                            icon: "<i class=\"icon\" style=\"padding: 0 !important; margin-left: .2em;\"><svg style=\"position: relative; top: .2em; margin-right: .2em\" fill=\"#4183C4\" width=\"1.2em\" height=\"1.2em\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\" xml:space=\"preserve\"><path d=\"M21.327 8.566c0-4.339-2.843-5.61-2.843-5.61-1.433-.658-3.894-.935-6.451-.956h-.063c-2.557.021-5.016.298-6.45.956 0 0-2.843 1.272-2.843 5.61 0 .993-.019 2.181.012 3.441.103 4.243.778 8.425 4.701 9.463 1.809.479 3.362.579 4.612.51 2.268-.126 3.541-.809 3.541-.809l-.075-1.646s-1.621.511-3.441.449c-1.804-.062-3.707-.194-3.999-2.409a4.523 4.523 0 0 1-.04-.621s1.77.433 4.014.536c1.372.063 2.658-.08 3.965-.236 2.506-.299 4.688-1.843 4.962-3.254.434-2.223.398-5.424.398-5.424zm-3.353 5.59h-2.081V9.057c0-1.075-.452-1.62-1.357-1.62-1 0-1.501.647-1.501 1.927v2.791h-2.069V9.364c0-1.28-.501-1.927-1.502-1.927-.905 0-1.357.546-1.357 1.62v5.099H6.026V8.903c0-1.074.273-1.927.823-2.558.566-.631 1.307-.955 2.228-.955 1.065 0 1.872.409 2.405 1.228l.518.869.519-.869c.533-.819 1.34-1.228 2.405-1.228.92 0 1.662.324 2.228.955.549.631.822 1.484.822 2.558v5.253z\"/></svg></i>",
+                            target: "_blank",
+                            name: "Mastodon",
+                            onFront: true,
+                        },
                     },
                     anyHtml: 
                     "<p style='margin-top: 1em;'>" +
-                        "The album group stem files, drum MIDI files, bass MIDI files and information about the gear used for the album 'Dreamer' are available in the <a href=\"https://yatsuband.bandcamp.com/album/dreamer-producer-pack\" target=\"_blank\"><i class=\"bandcamp icon\" style=\"display: inline-block; padding: 0 !important\"></i>'Dreamer' Producer Pack</a>." +
+                        "The album group stem files, drum MIDI files, bass MIDI files and information about the gear used for the album 'Dreamer' are available in the <a href=\"https://michaldivismusic.gumroad.com/l/dreamer-producer-pack\" target=\"_blank\"><i class=\"bandcamp icon\" style=\"display: inline-block; padding: 0 !important\"></i>'Dreamer' Producer Pack</a>." +
                     "</p>" +
                     "<h3>Album vocalists</h3>" +
                     "<div style=\"text-align: center;\"><div style=\"display: inline-block; text-align: center; margin: .5em;\"><a href=\"https://instagram.com/justinarteu/\" target=\"_blank\">Jurta<i class=\"instagram icon\" style=\"display: inline-block; padding: 0 !important;\"></i><br>" +
@@ -436,9 +445,9 @@ export default class RPlayerConf {
                             mp3: "media/sounds/mp3/1.mp3",
                         },
                         info: {
-                            image: "media/images/mirrors.jpg",
-                            icon: "media/icons/mirrors.png",
-                            composer: "YATSU",
+                            image: "media/images/rebrand/Single_cover_Mirrors.jpg",
+                            icon: "media/icons/rebrand/Single_cover_Mirrors.png",
+                            composer: "Michal Diviš",
                             lang: "eng", // ISO 639-2
                             year: 2021,
                             genres: {
@@ -457,131 +466,20 @@ export default class RPlayerConf {
                                 },
                                 1: {
                                     id: "<div class=\"drumsHeader\" style=\"width: min-content;\">Drums</div>",
-                                    html: 
-                                    "<p>" +
-                                        "All drums are programmed and you can find the drum MIDI files in the /MIDI folder. " + 
-                                        "Here's a list of all the sample libraries / samples used for different kit pieces:.<br>" + 
-                                    "</p>" +
-                                    "<div class=\"kickBlendedHeader\" style=\"font-weight: bold; width: min-content; white-space: nowrap;\">Kick (blended):</div>" +
-                                    "<ul><li>GGD OKW Modern Fusion - the main kick</li><li>GGD Modern & Massive - 26x14 Yamaha kick</li><li>custom one shot kick sample</li></ul>" +
-                                    "<div class=\"snareBlendedHeader\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Snare (blended):</div>" +
-                                    "<ul><li>Nolly's Secret Sauce snare (a freebie Nolly gave out in 2019)</li><li>GGD P4 - The VK snare</li><li>GGD OKW Metal - the main snare (only the room mics)</li></ul>" +
-                                    "<div class=\"midiTom1 midiTom2 midiTom3 midiTom4\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Toms:</div>" +
-                                    "<ul><li>GGD P4 toms</li></ul>" +
-                                    "<div class=\"midiCrashL1 midiCrashR midiCrashL2 midiSplashL midiSplashR midiChina midiRide midiHihatOpen midiHihatOpen2 midiHihatOpen3 midiHihatPedal midiHihatTipTight midiMiniHat midiHiHatEdgeClosed midiHiHatEdgeTight midiHihatTipClosed\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Cymbals:</div>" +
-                                    "<ul><li>GGD P4 cymbals</li></ul>" +
-                                    "<strong>And here's the MIDI mapping:</strong><br>" +
-                                    "<table style=\"font-family: courier; border-collapse: collapse; margin-top: .5em;\">" +
-                                        "<tr><td class=\"midiKick\" style=\"padding: 0 1em 0 1.5em; color: white;\">C0</td><td>Kick</td></tr>" +
-                                        "<tr><td class=\"midiSnareGhost\" style=\"padding: 0 1em 0 1.5em; color: white;\">C#0</td><td>Snare Ghost Note</td></tr>" +
-                                        "<tr><td class=\"midiSnare\" style=\"padding: 0 1em 0 1.5em; color: white;\">D0</td><td>Snare Main Hit</td></tr>" +
-                                        "<tr><td class=\"midiTom1\" style=\"padding: 0 1em 0 1.5em; color: white;\">A0</td><td>Rack Tom 1</td></tr>" +
-                                        "<tr><td class=\"midiTom2\" style=\"padding: 0 1em 0 1.5em; color: white;\">A#0</td><td>Rack Tom 2</td></tr>" +
-                                        "<tr><td class=\"midiTom3\" style=\"padding: 0 1em 0 1.5em; color: white;\">B0</td><td>Floor Tom 1</td></tr>" +
-                                        "<tr><td class=\"midiTom4\" style=\"padding: 0 1em 0 1.5em; color: white;\">C1</td><td>Floor Tom 2</td></tr>" +
-                                        "<tr><td class=\"midiHihatTipTight\" style=\"padding: 0 1em 0 1.5em; color: white;\">F1</td><td>Hat Tip Tight</td></tr>" +
-                                        "<tr><td class=\"midiHiHatEdgeTight\" style=\"padding: 0 1em 0 1.5em; color: white;\">F#1</td><td>Hat Edge Tight</td></tr>" +
-                                        "<tr><td class=\"midiHihatTipClosed\" style=\"padding: 0 1em 0 1.5em; color: white;\">G1</td><td>Hat Tip Closed</td></tr>" +
-                                        "<tr><td class=\"midiHiHatEdgeClosed\" style=\"padding: 0 1em 0 1.5em; color: white;\">G#1</td><td>Hat Edge Closed</td></tr>" +
-                                        "<tr><td class=\"midiHihatOpen\" style=\"padding: 0 1em 0 1.5em; color: white;\">A1</td><td>Hat Open 1</td></tr>" +
-                                        "<tr><td class=\"midiHihatOpen2\" style=\"padding: 0 1em 0 1.5em; color: white;\">A#1</td><td>Hat Open 2</td></tr>" +
-                                        "<tr><td class=\"midiHihatOpen3\" style=\"padding: 0 1em 0 1.5em; color: white;\">B1</td><td>Hat Open 3</td></tr>" +
-                                        "<tr><td class=\"midiHihatPedal\" style=\"padding: 0 1em 0 1.5em; color: white;\">C2</td><td>Hat Pedal</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">C#2</td><td>Hat Pedal Ching</td></tr>" +
-                                        "<tr><td class=\"midiCrashL1\" style=\"padding: 0 1em 0 1.5em; color: white;\">E2</td><td>Crash L 1</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">F2</td><td>Crash L 1 Choke</td></tr>" +
-                                        "<tr><td class=\"midiCrashR\" style=\"padding: 0 1em 0 1.5em; color: white;\">F#2</td><td>Crash R</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">G2</td><td>Crash R: Choke</td></tr>" +
-                                        "<tr><td class=\"midiCrashL2\" style=\"padding: 0 1em 0 1.5em; color: white;\">G#2</td><td>Crash L 2</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">A2</td><td>Crash L 2 Choke</td></tr>" +
-                                        "<tr><td class=\"midiRide\" style=\"padding: 0 1em 0 1.5em; color: white;\">C#3</td><td>Ride Bell</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">D3</td><td>Ride Bow</td></tr>" +
-                                        "<tr><td class=\"midiChina\" style=\"padding: 0 1em 0 1.5em; color: white;\">F3</td><td>China</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">F#3</td><td>China: Choke</td></tr>" +
-                                        "<tr><td class=\"midiSplashL\" style=\"padding: 0 1em 0 1.5em; color: white;\">C#3</td><td>Splash L</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">D4</td><td>Splash L Choke</td></tr>" +
-                                        "<tr><td class=\"midiSplashR\" style=\"padding: 0 1em 0 1.5em; color: white;\">D#4</td><td>Splash R</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">E4</td><td>Splash R Choke</td></tr>" +
-                                        "<tr><td class=\"midiMiniHat\" style=\"padding: 0 1em 0 1.5em; color: white;\">F4</td><td>Mini Hat</td></tr>" +
-                                        "<tr><td class=\"midiStack\" style=\"padding: 0 1em 0 1.5em; color: white;\">F#4</td><td>Stack</td></tr>" +
-                                    "</table>",
+                                    html: ConfDrumsSvg.conf.drumsSvg + ConfTrackHtml.conf[0]
                                 },
                                 2: {
                                     id: "<div class=\"bassHeader\" style=\"width: min-content;\">Bass</div>",
-                                    html:
-                                    "<p>" +
-                                    "All the bass is programmed and you can find the bass MIDI files in the /MIDI folder. " +
-                                    "All of the bass tracks on the album were done with Sumbission Audio's DjinnBass sample library. " +
-                                    "Most of the bass tones on the album we're processed using the NeuralDSP's Parallax plugin.<br>" +
-                                    "</p>",
+                                    html: ConfTrackHtml.conf[1]
                                 },
                                 3: {
                                     id: "<div class=\"guitarsHeader\" style=\"width: min-content;\">Guitars</div>",
-                                    html:
-                                    "<p>All of the guitars track on the album (rhytms, leads, drones, cleans) were recorded in my home studio (fancy way of saying \"a table and an audio interface in my living room\").</p>" +
-                                    "<strong>Gear used for guitar tracking:</strong><br>" +
-                                    "<ul>" +
-                                        "<li>Solar A1.6D 27 Baritone guitar (with the stock pickups)</li>" +
-                                        "<li>Focusrite Scarlett Solo Gen 3 audio interface</li>" +
-                                        "<li>Radial PRO48 active DI box</li>" +
-                                        "<li>Daddario EXL157 strings</li>" +
-                                        "<li>StringJoy custom strings, gauges: .074 .052 .044 .028w .022 .016 (used for the drop F tuning in \"Spectre\")</li>" +
-                                        "<li>Janicek Picks Jazz B 0.88mm guitar picks</li>" +
-                                    "</ul>" +
-                                    "<strong>Tones:</strong><br><br>" +
-                                    "<table style=\"border-collapse: collapse;\">" +
-                                        "<tr>" +
-                                            "<td>" +
-                                                "<strong>Rhytms: </strong>" +
-                                            "</td>" +
-                                            "<td>" +
-                                                "NeuralDSP Archetype Nolly (using an IR that comes with the plugin, no external IR)" +
-                                            "</td>" +
-                                        "</tr>" +
-                                        "<tr>" +
-                                            "<td>" +
-                                                "<strong>Leads: </strong>" +
-                                            "</td>" +
-                                            "<td>" +
-                                                "NeuralDSP Archetype Abasi (using an IR that comes with the plugin, no external IR)" +
-                                            "</td>" +
-                                        "</tr>" +
-                                            "<td>" +
-                                                "<strong>Cleans: </strong>" +
-                                            "</td>" +
-                                            "<td>" +
-                                                "NeuralDSP Archetype Plini (cab sim turned off)" +
-                                            "</td>" +
-                                        "</tr>" +
-                                    "</table>"
+                                    html: ConfTrackHtml.conf[2]
                                 },
                                 4: {
                                     id: "<div class=\"synthsHeader\" style=\"width: min-content;\">Synths</div>",
-                                    html: 
-                                    "<p>" +
-                                        "All the extra instruments and synths on the album are programmed. Here's a list of some of the kontakt libraries used:" +
-                                    "</p>" +
-                                    "<ul>" +
-                                        "<li>" +
-                                            "Fracture Sounds' Woodchester Piano (kontakt library)" +
-                                        "</li>" +
-                                        "<li>" +
-                                            "u-he Diva (synth plugin)" +
-                                        "</li>" +
-                                        "<li>" +
-                                            "Best Service's Emotional Cello (kontakt library)" +
-                                        "</li>" +
-                                        "<li>" +
-                                            "Heavyocity's Gravity (kontakt library)" +
-                                        "</li>" +
-                                        "<li>" +
-                                            "Heavyocity's Mosaic Tape (kontakt library)" +
-                                        "</li>" +
-                                        "<li>" +
-                                            "Finishing Move's Posthuman (kontakt library)" +
-                                        "</li>" +
-                                    "</ul>"
-                                }
+                                    html: ConfTrackHtml.conf[3]
+                                },
                             },
                         },
                     },
@@ -592,9 +490,9 @@ export default class RPlayerConf {
                             mp3: "media/sounds/mp3/2.mp3",
                         },
                         info: {
-                            image: "media/images/dreamer_album.jpg",
-                            icon: "media/icons/dreamer_album.png",
-                            composer: "YATSU",
+                            image: "media/images/rebrand/Album_cover.jpg",
+                            icon: "media/icons/rebrand/Album_cover.png",
+                            composer: "Michal Diviš",
                             lang: "eng", // ISO 639-2
                             year: 2021,
                             genres: {
@@ -613,130 +511,19 @@ export default class RPlayerConf {
                                 },
                                 1: {
                                     id: "<div class=\"drumsHeader\" style=\"width: min-content;\">Drums</div>",
-                                    html: 
-                                    "<p>" +
-                                        "All drums are programmed and you can find the drum MIDI files in the /MIDI folder. " + 
-                                        "Here's a list of all the sample libraries / samples used for different kit pieces:.<br>" + 
-                                    "</p>" +
-                                    "<div class=\"kickBlendedHeader\" style=\"font-weight: bold; width: min-content; white-space: nowrap;\">Kick (blended):</div>" +
-                                    "<ul><li>GGD OKW Modern Fusion - the main kick</li><li>GGD Modern & Massive - 26x14 Yamaha kick</li><li>custom one shot kick sample</li></ul>" +
-                                    "<div class=\"snareBlendedHeader\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Snare (blended):</div>" +
-                                    "<ul><li>Nolly's Secret Sauce snare (a freebie Nolly gave out in 2019)</li><li>GGD P4 - The VK snare</li><li>GGD OKW Metal - the main snare (only the room mics)</li></ul>" +
-                                    "<div class=\"midiTom1 midiTom2 midiTom3 midiTom4\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Toms:</div>" +
-                                    "<ul><li>GGD P4 toms</li></ul>" +
-                                    "<div class=\"midiCrashL1 midiCrashR midiCrashL2 midiSplashL midiSplashR midiChina midiRide midiHihatOpen midiHihatOpen2 midiHihatOpen3 midiHihatPedal midiHihatTipTight midiMiniHat midiHiHatEdgeClosed midiHiHatEdgeTight midiHihatTipClosed\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Cymbals:</div>" +
-                                    "<ul><li>GGD P4 cymbals</li></ul>" +
-                                    "<strong>And here's the MIDI mapping:</strong><br>" +
-                                    "<table style=\"font-family: courier; border-collapse: collapse; margin-top: .5em;\">" +
-                                        "<tr><td class=\"midiKick\" style=\"padding: 0 1em 0 1.5em; color: white;\">C0</td><td>Kick</td></tr>" +
-                                        "<tr><td class=\"midiSnareGhost\" style=\"padding: 0 1em 0 1.5em; color: white;\">C#0</td><td>Snare Ghost Note</td></tr>" +
-                                        "<tr><td class=\"midiSnare\" style=\"padding: 0 1em 0 1.5em; color: white;\">D0</td><td>Snare Main Hit</td></tr>" +
-                                        "<tr><td class=\"midiTom1\" style=\"padding: 0 1em 0 1.5em; color: white;\">A0</td><td>Rack Tom 1</td></tr>" +
-                                        "<tr><td class=\"midiTom2\" style=\"padding: 0 1em 0 1.5em; color: white;\">A#0</td><td>Rack Tom 2</td></tr>" +
-                                        "<tr><td class=\"midiTom3\" style=\"padding: 0 1em 0 1.5em; color: white;\">B0</td><td>Floor Tom 1</td></tr>" +
-                                        "<tr><td class=\"midiTom4\" style=\"padding: 0 1em 0 1.5em; color: white;\">C1</td><td>Floor Tom 2</td></tr>" +
-                                        "<tr><td class=\"midiHihatTipTight\" style=\"padding: 0 1em 0 1.5em; color: white;\">F1</td><td>Hat Tip Tight</td></tr>" +
-                                        "<tr><td class=\"midiHiHatEdgeTight\" style=\"padding: 0 1em 0 1.5em; color: white;\">F#1</td><td>Hat Edge Tight</td></tr>" +
-                                        "<tr><td class=\"midiHihatTipClosed\" style=\"padding: 0 1em 0 1.5em; color: white;\">G1</td><td>Hat Tip Closed</td></tr>" +
-                                        "<tr><td class=\"midiHiHatEdgeClosed\" style=\"padding: 0 1em 0 1.5em; color: white;\">G#1</td><td>Hat Edge Closed</td></tr>" +
-                                        "<tr><td class=\"midiHihatOpen\" style=\"padding: 0 1em 0 1.5em; color: white;\">A1</td><td>Hat Open 1</td></tr>" +
-                                        "<tr><td class=\"midiHihatOpen2\" style=\"padding: 0 1em 0 1.5em; color: white;\">A#1</td><td>Hat Open 2</td></tr>" +
-                                        "<tr><td class=\"midiHihatOpen3\" style=\"padding: 0 1em 0 1.5em; color: white;\">B1</td><td>Hat Open 3</td></tr>" +
-                                        "<tr><td class=\"midiHihatPedal\" style=\"padding: 0 1em 0 1.5em; color: white;\">C2</td><td>Hat Pedal</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">C#2</td><td>Hat Pedal Ching</td></tr>" +
-                                        "<tr><td class=\"midiCrashL1\" style=\"padding: 0 1em 0 1.5em; color: white;\">E2</td><td>Crash L 1</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">F2</td><td>Crash L 1 Choke</td></tr>" +
-                                        "<tr><td class=\"midiCrashR\" style=\"padding: 0 1em 0 1.5em; color: white;\">F#2</td><td>Crash R</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">G2</td><td>Crash R: Choke</td></tr>" +
-                                        "<tr><td class=\"midiCrashL2\" style=\"padding: 0 1em 0 1.5em; color: white;\">G#2</td><td>Crash L 2</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">A2</td><td>Crash L 2 Choke</td></tr>" +
-                                        "<tr><td class=\"midiRide\" style=\"padding: 0 1em 0 1.5em; color: white;\">C#3</td><td>Ride Bell</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">D3</td><td>Ride Bow</td></tr>" +
-                                        "<tr><td class=\"midiChina\" style=\"padding: 0 1em 0 1.5em; color: white;\">F3</td><td>China</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">F#3</td><td>China: Choke</td></tr>" +
-                                        "<tr><td class=\"midiSplashL\" style=\"padding: 0 1em 0 1.5em; color: white;\">C#3</td><td>Splash L</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">D4</td><td>Splash L Choke</td></tr>" +
-                                        "<tr><td class=\"midiSplashR\" style=\"padding: 0 1em 0 1.5em; color: white;\">D#4</td><td>Splash R</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">E4</td><td>Splash R Choke</td></tr>" +
-                                        "<tr><td class=\"midiMiniHat\" style=\"padding: 0 1em 0 1.5em; color: white;\">F4</td><td>Mini Hat</td></tr>" +
-                                        "<tr><td class=\"midiStack\" style=\"padding: 0 1em 0 1.5em; color: white;\">F#4</td><td>Stack</td></tr>" +
-                                    "</table>",
+                                    html: ConfDrumsSvg.conf.drumsSvg + ConfTrackHtml.conf[0]
                                 },
                                 2: {
                                     id: "<div class=\"bassHeader\" style=\"width: min-content;\">Bass</div>",
-                                    html:
-                                    "<p>" +
-                                    "All the bass is programmed and you can find the bass MIDI files in the /MIDI folder. " +
-                                    "All of the bass tracks on the album were done with Sumbission Audio's DjinnBass sample library. " +
-                                    "Most of the bass tones on the album we're processed using the NeuralDSP's Parallax plugin.<br>" +
-                                    "</p>",
+                                    html: ConfTrackHtml.conf[1]
                                 },
                                 3: {
                                     id: "<div class=\"guitarsHeader\" style=\"width: min-content;\">Guitars</div>",
-                                    html:
-                                    "<p>All of the guitars track on the album (rhytms, leads, drones, cleans) were recorded in my home studio (fancy way of saying \"a table and an audio interface in my living room\").</p>" +
-                                    "<strong>Gear used for guitar tracking:</strong><br>" +
-                                    "<ul>" +
-                                        "<li>Solar A1.6D 27 Baritone guitar (with the stock pickups)</li>" +
-                                        "<li>Focusrite Scarlett Solo Gen 3 audio interface</li>" +
-                                        "<li>Radial PRO48 active DI box</li>" +
-                                        "<li>Daddario EXL157 strings</li>" +
-                                        "<li>StringJoy custom strings, gauges: .074 .052 .044 .028w .022 .016 (used for the drop F tuning in \"Spectre\")</li>" +
-                                        "<li>Janicek Picks Jazz B 0.88mm guitar picks</li>" +
-                                    "</ul>" +
-                                    "<strong>Tones:</strong><br><br>" +
-                                    "<table style=\"border-collapse: collapse;\">" +
-                                        "<tr>" +
-                                            "<td>" +
-                                                "<strong>Rhytms: </strong>" +
-                                            "</td>" +
-                                            "<td>" +
-                                                "NeuralDSP Archetype Nolly (using an IR that comes with the plugin, no external IR)" +
-                                            "</td>" +
-                                        "</tr>" +
-                                        "<tr>" +
-                                            "<td>" +
-                                                "<strong>Leads: </strong>" +
-                                            "</td>" +
-                                            "<td>" +
-                                                "NeuralDSP Archetype Abasi (using an IR that comes with the plugin, no external IR)" +
-                                            "</td>" +
-                                        "</tr>" +
-                                            "<td>" +
-                                                "<strong>Cleans: </strong>" +
-                                            "</td>" +
-                                            "<td>" +
-                                                "NeuralDSP Archetype Plini (cab sim turned off)" +
-                                            "</td>" +
-                                        "</tr>" +
-                                    "</table>"
+                                    html: ConfTrackHtml.conf[2]
                                 },
                                 4: {
                                     id: "<div class=\"synthsHeader\" style=\"width: min-content;\">Synths</div>",
-                                    html: 
-                                    "<p>" +
-                                        "All the extra instruments and synths on the album are programmed. Here's a list of some of the kontakt libraries used:" +
-                                    "</p>" +
-                                    "<ul>" +
-                                        "<li>" +
-                                            "Fracture Sounds' Woodchester Piano (kontakt library)" +
-                                        "</li>" +
-                                        "<li>" +
-                                            "u-he Diva (synth plugin)" +
-                                        "</li>" +
-                                        "<li>" +
-                                            "Best Service's Emotional Cello (kontakt library)" +
-                                        "</li>" +
-                                        "<li>" +
-                                            "Heavyocity's Gravity (kontakt library)" +
-                                        "</li>" +
-                                        "<li>" +
-                                            "Heavyocity's Mosaic Tape (kontakt library)" +
-                                        "</li>" +
-                                        "<li>" +
-                                            "Finishing Move's Posthuman (kontakt library)" +
-                                        "</li>" +
-                                    "</ul>"
+                                    html: ConfTrackHtml.conf[3]
                                 }
                             },
                         }
@@ -748,9 +535,9 @@ export default class RPlayerConf {
                             mp3: "media/sounds/mp3/3.mp3",
                         },
                         info: {
-                            image: "media/images/ornaments_w_vocals.jpg",
-                            icon: "media/icons/ornaments_w_vocals.png",
-                            composer: "YATSU",
+                            image: "media/images/rebrand/Single_cover_Ornaments.jpg",
+                            icon: "media/icons/rebrand/Single_cover_Ornaments.png",
+                            composer: "Michal Diviš",
                             lang: "eng", // ISO 639-2
                             year: 2021,
                             genres: {
@@ -779,130 +566,19 @@ export default class RPlayerConf {
                                 },
                                 2: {
                                     id: "<div class=\"drumsHeader\" style=\"width: min-content;\">Drums</div>",
-                                    html: 
-                                    "<p>" +
-                                        "All drums are programmed and you can find the drum MIDI files in the /MIDI folder. " + 
-                                        "Here's a list of all the sample libraries / samples used for different kit pieces:.<br>" + 
-                                    "</p>" +
-                                    "<div class=\"kickBlendedHeader\" style=\"font-weight: bold; width: min-content; white-space: nowrap;\">Kick (blended):</div>" +
-                                    "<ul><li>GGD OKW Modern Fusion - the main kick</li><li>GGD Modern & Massive - 26x14 Yamaha kick</li><li>custom one shot kick sample</li></ul>" +
-                                    "<div class=\"snareBlendedHeader\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Snare (blended):</div>" +
-                                    "<ul><li>Nolly's Secret Sauce snare (a freebie Nolly gave out in 2019)</li><li>GGD P4 - The VK snare</li><li>GGD OKW Metal - the main snare (only the room mics)</li></ul>" +
-                                    "<div class=\"midiTom1 midiTom2 midiTom3 midiTom4\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Toms:</div>" +
-                                    "<ul><li>GGD P4 toms</li></ul>" +
-                                    "<div class=\"midiCrashL1 midiCrashR midiCrashL2 midiSplashL midiSplashR midiChina midiRide midiHihatOpen midiHihatOpen2 midiHihatOpen3 midiHihatPedal midiHihatTipTight midiMiniHat midiHiHatEdgeClosed midiHiHatEdgeTight midiHihatTipClosed\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Cymbals:</div>" +
-                                    "<ul><li>GGD P4 cymbals</li></ul>" +
-                                    "<strong>And here's the MIDI mapping:</strong><br>" +
-                                    "<table style=\"font-family: courier; border-collapse: collapse; margin-top: .5em;\">" +
-                                        "<tr><td class=\"midiKick\" style=\"padding: 0 1em 0 1.5em; color: white;\">C0</td><td>Kick</td></tr>" +
-                                        "<tr><td class=\"midiSnareGhost\" style=\"padding: 0 1em 0 1.5em; color: white;\">C#0</td><td>Snare Ghost Note</td></tr>" +
-                                        "<tr><td class=\"midiSnare\" style=\"padding: 0 1em 0 1.5em; color: white;\">D0</td><td>Snare Main Hit</td></tr>" +
-                                        "<tr><td class=\"midiTom1\" style=\"padding: 0 1em 0 1.5em; color: white;\">A0</td><td>Rack Tom 1</td></tr>" +
-                                        "<tr><td class=\"midiTom2\" style=\"padding: 0 1em 0 1.5em; color: white;\">A#0</td><td>Rack Tom 2</td></tr>" +
-                                        "<tr><td class=\"midiTom3\" style=\"padding: 0 1em 0 1.5em; color: white;\">B0</td><td>Floor Tom 1</td></tr>" +
-                                        "<tr><td class=\"midiTom4\" style=\"padding: 0 1em 0 1.5em; color: white;\">C1</td><td>Floor Tom 2</td></tr>" +
-                                        "<tr><td class=\"midiHihatTipTight\" style=\"padding: 0 1em 0 1.5em; color: white;\">F1</td><td>Hat Tip Tight</td></tr>" +
-                                        "<tr><td class=\"midiHiHatEdgeTight\" style=\"padding: 0 1em 0 1.5em; color: white;\">F#1</td><td>Hat Edge Tight</td></tr>" +
-                                        "<tr><td class=\"midiHihatTipClosed\" style=\"padding: 0 1em 0 1.5em; color: white;\">G1</td><td>Hat Tip Closed</td></tr>" +
-                                        "<tr><td class=\"midiHiHatEdgeClosed\" style=\"padding: 0 1em 0 1.5em; color: white;\">G#1</td><td>Hat Edge Closed</td></tr>" +
-                                        "<tr><td class=\"midiHihatOpen\" style=\"padding: 0 1em 0 1.5em; color: white;\">A1</td><td>Hat Open 1</td></tr>" +
-                                        "<tr><td class=\"midiHihatOpen2\" style=\"padding: 0 1em 0 1.5em; color: white;\">A#1</td><td>Hat Open 2</td></tr>" +
-                                        "<tr><td class=\"midiHihatOpen3\" style=\"padding: 0 1em 0 1.5em; color: white;\">B1</td><td>Hat Open 3</td></tr>" +
-                                        "<tr><td class=\"midiHihatPedal\" style=\"padding: 0 1em 0 1.5em; color: white;\">C2</td><td>Hat Pedal</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">C#2</td><td>Hat Pedal Ching</td></tr>" +
-                                        "<tr><td class=\"midiCrashL1\" style=\"padding: 0 1em 0 1.5em; color: white;\">E2</td><td>Crash L 1</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">F2</td><td>Crash L 1 Choke</td></tr>" +
-                                        "<tr><td class=\"midiCrashR\" style=\"padding: 0 1em 0 1.5em; color: white;\">F#2</td><td>Crash R</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">G2</td><td>Crash R: Choke</td></tr>" +
-                                        "<tr><td class=\"midiCrashL2\" style=\"padding: 0 1em 0 1.5em; color: white;\">G#2</td><td>Crash L 2</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">A2</td><td>Crash L 2 Choke</td></tr>" +
-                                        "<tr><td class=\"midiRide\" style=\"padding: 0 1em 0 1.5em; color: white;\">C#3</td><td>Ride Bell</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">D3</td><td>Ride Bow</td></tr>" +
-                                        "<tr><td class=\"midiChina\" style=\"padding: 0 1em 0 1.5em; color: white;\">F3</td><td>China</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">F#3</td><td>China: Choke</td></tr>" +
-                                        "<tr><td class=\"midiSplashL\" style=\"padding: 0 1em 0 1.5em; color: white;\">C#3</td><td>Splash L</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">D4</td><td>Splash L Choke</td></tr>" +
-                                        "<tr><td class=\"midiSplashR\" style=\"padding: 0 1em 0 1.5em; color: white;\">D#4</td><td>Splash R</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">E4</td><td>Splash R Choke</td></tr>" +
-                                        "<tr><td class=\"midiMiniHat\" style=\"padding: 0 1em 0 1.5em; color: white;\">F4</td><td>Mini Hat</td></tr>" +
-                                        "<tr><td class=\"midiStack\" style=\"padding: 0 1em 0 1.5em; color: white;\">F#4</td><td>Stack</td></tr>" +
-                                    "</table>",
+                                    html: ConfDrumsSvg.conf.drumsSvg + ConfTrackHtml.conf[0]
                                 },
                                 3: {
                                     id: "<div class=\"bassHeader\" style=\"width: min-content;\">Bass</div>",
-                                    html:
-                                    "<p>" +
-                                    "All the bass is programmed and you can find the bass MIDI files in the /MIDI folder. " +
-                                    "All of the bass tracks on the album were done with Sumbission Audio's DjinnBass sample library. " +
-                                    "Most of the bass tones on the album we're processed using the NeuralDSP's Parallax plugin.<br>" +
-                                    "</p>",
+                                    html: ConfTrackHtml.conf[1]
                                 },
                                 4: {
                                     id: "<div class=\"guitarsHeader\" style=\"width: min-content;\">Guitars</div>",
-                                    html:
-                                    "<p>All of the guitars track on the album (rhytms, leads, drones, cleans) were recorded in my home studio (fancy way of saying \"a table and an audio interface in my living room\").</p>" +
-                                    "<strong>Gear used for guitar tracking:</strong><br>" +
-                                    "<ul>" +
-                                        "<li>Solar A1.6D 27 Baritone guitar (with the stock pickups)</li>" +
-                                        "<li>Focusrite Scarlett Solo Gen 3 audio interface</li>" +
-                                        "<li>Radial PRO48 active DI box</li>" +
-                                        "<li>Daddario EXL157 strings</li>" +
-                                        "<li>StringJoy custom strings, gauges: .074 .052 .044 .028w .022 .016 (used for the drop F tuning in \"Spectre\")</li>" +
-                                        "<li>Janicek Picks Jazz B 0.88mm guitar picks</li>" +
-                                    "</ul>" +
-                                    "<strong>Tones:</strong><br><br>" +
-                                    "<table style=\"border-collapse: collapse;\">" +
-                                        "<tr>" +
-                                            "<td>" +
-                                                "<strong>Rhytms: </strong>" +
-                                            "</td>" +
-                                            "<td>" +
-                                                "NeuralDSP Archetype Nolly (using an IR that comes with the plugin, no external IR)" +
-                                            "</td>" +
-                                        "</tr>" +
-                                        "<tr>" +
-                                            "<td>" +
-                                                "<strong>Leads: </strong>" +
-                                            "</td>" +
-                                            "<td>" +
-                                                "NeuralDSP Archetype Abasi (using an IR that comes with the plugin, no external IR)" +
-                                            "</td>" +
-                                        "</tr>" +
-                                            "<td>" +
-                                                "<strong>Cleans: </strong>" +
-                                            "</td>" +
-                                            "<td>" +
-                                                "NeuralDSP Archetype Plini (cab sim turned off)" +
-                                            "</td>" +
-                                        "</tr>" +
-                                    "</table>"
+                                    html: ConfTrackHtml.conf[2]
                                 },
                                 5: {
                                     id: "<div class=\"synthsHeader\" style=\"width: min-content;\">Synths</div>",
-                                    html: 
-                                    "<p>" +
-                                        "All the extra instruments and synths on the album are programmed. Here's a list of some of the kontakt libraries used:" +
-                                    "</p>" +
-                                    "<ul>" +
-                                        "<li>" +
-                                            "Fracture Sounds' Woodchester Piano (kontakt library)" +
-                                        "</li>" +
-                                        "<li>" +
-                                            "u-he Diva (synth plugin)" +
-                                        "</li>" +
-                                        "<li>" +
-                                            "Best Service's Emotional Cello (kontakt library)" +
-                                        "</li>" +
-                                        "<li>" +
-                                            "Heavyocity's Gravity (kontakt library)" +
-                                        "</li>" +
-                                        "<li>" +
-                                            "Heavyocity's Mosaic Tape (kontakt library)" +
-                                        "</li>" +
-                                        "<li>" +
-                                            "Finishing Move's Posthuman (kontakt library)" +
-                                        "</li>" +
-                                    "</ul>"
+                                    html: ConfTrackHtml.conf[3]
                                 }
                             },
                         },
@@ -958,9 +634,9 @@ export default class RPlayerConf {
                             mp3: "media/sounds/mp3/4.mp3",
                         },
                         info: {
-                            image: "media/images/labyrinth.jpg",
-                            icon: "media/icons/labyrinth.png",
-                            composer: "YATSU",
+                            image: "media/images/rebrand/Single_cover_Labyrinth.jpg",
+                            icon: "media/icons/rebrand/Single_cover_Labyrinth.png",
+                            composer: "Michal Diviš",
                             lang: "eng", // ISO 639-2
                             year: 2021,
                             genres: {
@@ -979,130 +655,19 @@ export default class RPlayerConf {
                                 },
                                 1: {
                                     id: "<div class=\"drumsHeader\" style=\"width: min-content;\">Drums</div>",
-                                    html: 
-                                    "<p>" +
-                                        "All drums are programmed and you can find the drum MIDI files in the /MIDI folder. " + 
-                                        "Here's a list of all the sample libraries / samples used for different kit pieces:.<br>" + 
-                                    "</p>" +
-                                    "<div class=\"kickBlendedHeader\" style=\"font-weight: bold; width: min-content; white-space: nowrap;\">Kick (blended):</div>" +
-                                    "<ul><li>GGD OKW Modern Fusion - the main kick</li><li>GGD Modern & Massive - 26x14 Yamaha kick</li><li>custom one shot kick sample</li></ul>" +
-                                    "<div class=\"snareBlendedHeader\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Snare (blended):</div>" +
-                                    "<ul><li>Nolly's Secret Sauce snare (a freebie Nolly gave out in 2019)</li><li>GGD P4 - The VK snare</li><li>GGD OKW Metal - the main snare (only the room mics)</li></ul>" +
-                                    "<div class=\"midiTom1 midiTom2 midiTom3 midiTom4\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Toms:</div>" +
-                                    "<ul><li>GGD P4 toms</li></ul>" +
-                                    "<div class=\"midiCrashL1 midiCrashR midiCrashL2 midiSplashL midiSplashR midiChina midiRide midiHihatOpen midiHihatOpen2 midiHihatOpen3 midiHihatPedal midiHihatTipTight midiMiniHat midiHiHatEdgeClosed midiHiHatEdgeTight midiHihatTipClosed\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Cymbals:</div>" +
-                                    "<ul><li>GGD P4 cymbals</li></ul>" +
-                                    "<strong>And here's the MIDI mapping:</strong><br>" +
-                                    "<table style=\"font-family: courier; border-collapse: collapse; margin-top: .5em;\">" +
-                                        "<tr><td class=\"midiKick\" style=\"padding: 0 1em 0 1.5em; color: white;\">C0</td><td>Kick</td></tr>" +
-                                        "<tr><td class=\"midiSnareGhost\" style=\"padding: 0 1em 0 1.5em; color: white;\">C#0</td><td>Snare Ghost Note</td></tr>" +
-                                        "<tr><td class=\"midiSnare\" style=\"padding: 0 1em 0 1.5em; color: white;\">D0</td><td>Snare Main Hit</td></tr>" +
-                                        "<tr><td class=\"midiTom1\" style=\"padding: 0 1em 0 1.5em; color: white;\">A0</td><td>Rack Tom 1</td></tr>" +
-                                        "<tr><td class=\"midiTom2\" style=\"padding: 0 1em 0 1.5em; color: white;\">A#0</td><td>Rack Tom 2</td></tr>" +
-                                        "<tr><td class=\"midiTom3\" style=\"padding: 0 1em 0 1.5em; color: white;\">B0</td><td>Floor Tom 1</td></tr>" +
-                                        "<tr><td class=\"midiTom4\" style=\"padding: 0 1em 0 1.5em; color: white;\">C1</td><td>Floor Tom 2</td></tr>" +
-                                        "<tr><td class=\"midiHihatTipTight\" style=\"padding: 0 1em 0 1.5em; color: white;\">F1</td><td>Hat Tip Tight</td></tr>" +
-                                        "<tr><td class=\"midiHiHatEdgeTight\" style=\"padding: 0 1em 0 1.5em; color: white;\">F#1</td><td>Hat Edge Tight</td></tr>" +
-                                        "<tr><td class=\"midiHihatTipClosed\" style=\"padding: 0 1em 0 1.5em; color: white;\">G1</td><td>Hat Tip Closed</td></tr>" +
-                                        "<tr><td class=\"midiHiHatEdgeClosed\" style=\"padding: 0 1em 0 1.5em; color: white;\">G#1</td><td>Hat Edge Closed</td></tr>" +
-                                        "<tr><td class=\"midiHihatOpen\" style=\"padding: 0 1em 0 1.5em; color: white;\">A1</td><td>Hat Open 1</td></tr>" +
-                                        "<tr><td class=\"midiHihatOpen2\" style=\"padding: 0 1em 0 1.5em; color: white;\">A#1</td><td>Hat Open 2</td></tr>" +
-                                        "<tr><td class=\"midiHihatOpen3\" style=\"padding: 0 1em 0 1.5em; color: white;\">B1</td><td>Hat Open 3</td></tr>" +
-                                        "<tr><td class=\"midiHihatPedal\" style=\"padding: 0 1em 0 1.5em; color: white;\">C2</td><td>Hat Pedal</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">C#2</td><td>Hat Pedal Ching</td></tr>" +
-                                        "<tr><td class=\"midiCrashL1\" style=\"padding: 0 1em 0 1.5em; color: white;\">E2</td><td>Crash L 1</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">F2</td><td>Crash L 1 Choke</td></tr>" +
-                                        "<tr><td class=\"midiCrashR\" style=\"padding: 0 1em 0 1.5em; color: white;\">F#2</td><td>Crash R</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">G2</td><td>Crash R: Choke</td></tr>" +
-                                        "<tr><td class=\"midiCrashL2\" style=\"padding: 0 1em 0 1.5em; color: white;\">G#2</td><td>Crash L 2</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">A2</td><td>Crash L 2 Choke</td></tr>" +
-                                        "<tr><td class=\"midiRide\" style=\"padding: 0 1em 0 1.5em; color: white;\">C#3</td><td>Ride Bell</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">D3</td><td>Ride Bow</td></tr>" +
-                                        "<tr><td class=\"midiChina\" style=\"padding: 0 1em 0 1.5em; color: white;\">F3</td><td>China</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">F#3</td><td>China: Choke</td></tr>" +
-                                        "<tr><td class=\"midiSplashL\" style=\"padding: 0 1em 0 1.5em; color: white;\">C#3</td><td>Splash L</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">D4</td><td>Splash L Choke</td></tr>" +
-                                        "<tr><td class=\"midiSplashR\" style=\"padding: 0 1em 0 1.5em; color: white;\">D#4</td><td>Splash R</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">E4</td><td>Splash R Choke</td></tr>" +
-                                        "<tr><td class=\"midiMiniHat\" style=\"padding: 0 1em 0 1.5em; color: white;\">F4</td><td>Mini Hat</td></tr>" +
-                                        "<tr><td class=\"midiStack\" style=\"padding: 0 1em 0 1.5em; color: white;\">F#4</td><td>Stack</td></tr>" +
-                                    "</table>",
+                                    html: ConfDrumsSvg.conf.drumsSvg + ConfTrackHtml.conf[0]
                                 },
                                 2: {
                                     id: "<div class=\"bassHeader\" style=\"width: min-content;\">Bass</div>",
-                                    html:
-                                    "<p>" +
-                                    "All the bass is programmed and you can find the bass MIDI files in the /MIDI folder. " +
-                                    "All of the bass tracks on the album were done with Sumbission Audio's DjinnBass sample library. " +
-                                    "Most of the bass tones on the album we're processed using the NeuralDSP's Parallax plugin.<br>" +
-                                    "</p>",
+                                    html: ConfTrackHtml.conf[1]
                                 },
                                 3: {
                                     id: "<div class=\"guitarsHeader\" style=\"width: min-content;\">Guitars</div>",
-                                    html:
-                                    "<p>All of the guitars track on the album (rhytms, leads, drones, cleans) were recorded in my home studio (fancy way of saying \"a table and an audio interface in my living room\").</p>" +
-                                    "<strong>Gear used for guitar tracking:</strong><br>" +
-                                    "<ul>" +
-                                        "<li>Solar A1.6D 27 Baritone guitar (with the stock pickups)</li>" +
-                                        "<li>Focusrite Scarlett Solo Gen 3 audio interface</li>" +
-                                        "<li>Radial PRO48 active DI box</li>" +
-                                        "<li>Daddario EXL157 strings</li>" +
-                                        "<li>StringJoy custom strings, gauges: .074 .052 .044 .028w .022 .016 (used for the drop F tuning in \"Spectre\")</li>" +
-                                        "<li>Janicek Picks Jazz B 0.88mm guitar picks</li>" +
-                                    "</ul>" +
-                                    "<strong>Tones:</strong><br><br>" +
-                                    "<table style=\"border-collapse: collapse;\">" +
-                                        "<tr>" +
-                                            "<td>" +
-                                                "<strong>Rhytms: </strong>" +
-                                            "</td>" +
-                                            "<td>" +
-                                                "NeuralDSP Archetype Nolly (using an IR that comes with the plugin, no external IR)" +
-                                            "</td>" +
-                                        "</tr>" +
-                                        "<tr>" +
-                                            "<td>" +
-                                                "<strong>Leads: </strong>" +
-                                            "</td>" +
-                                            "<td>" +
-                                                "NeuralDSP Archetype Abasi (using an IR that comes with the plugin, no external IR)" +
-                                            "</td>" +
-                                        "</tr>" +
-                                            "<td>" +
-                                                "<strong>Cleans: </strong>" +
-                                            "</td>" +
-                                            "<td>" +
-                                                "NeuralDSP Archetype Plini (cab sim turned off)" +
-                                            "</td>" +
-                                        "</tr>" +
-                                    "</table>"
+                                    html: ConfTrackHtml.conf[2]
                                 },
                                 4: {
                                     id: "<div class=\"synthsHeader\" style=\"width: min-content;\">Synths</div>",
-                                    html: 
-                                    "<p>" +
-                                        "All the extra instruments and synths on the album are programmed. Here's a list of some of the kontakt libraries used:" +
-                                    "</p>" +
-                                    "<ul>" +
-                                        "<li>" +
-                                            "Fracture Sounds' Woodchester Piano (kontakt library)" +
-                                        "</li>" +
-                                        "<li>" +
-                                            "u-he Diva (synth plugin)" +
-                                        "</li>" +
-                                        "<li>" +
-                                            "Best Service's Emotional Cello (kontakt library)" +
-                                        "</li>" +
-                                        "<li>" +
-                                            "Heavyocity's Gravity (kontakt library)" +
-                                        "</li>" +
-                                        "<li>" +
-                                            "Heavyocity's Mosaic Tape (kontakt library)" +
-                                        "</li>" +
-                                        "<li>" +
-                                            "Finishing Move's Posthuman (kontakt library)" +
-                                        "</li>" +
-                                    "</ul>"
+                                    html: ConfTrackHtml.conf[3]
                                 }
                             },
                         }
@@ -1121,9 +686,9 @@ export default class RPlayerConf {
                             },
                         },
                         info: {
-                            image: "media/images/spectre.jpg",
-                            icon: "media/icons/spectre.png",
-                            composer: "YATSU",
+                            image: "media/images/rebrand/Single_cover_Spectre.jpg",
+                            icon: "media/icons/rebrand/Single_cover_Spectre.png",
+                            composer: "Michal Diviš",
                             lang: "eng", // ISO 639-2
                             year: 2021,
                             genres: {
@@ -1157,130 +722,19 @@ export default class RPlayerConf {
                                 },
                                 3: {
                                     id: "<div class=\"drumsHeader\" style=\"width: min-content;\">Drums</div>",
-                                    html: 
-                                    "<p>" +
-                                        "All drums are programmed and you can find the drum MIDI files in the /MIDI folder. " + 
-                                        "Here's a list of all the sample libraries / samples used for different kit pieces:.<br>" + 
-                                    "</p>" +
-                                    "<div class=\"kickBlendedHeader\" style=\"font-weight: bold; width: min-content; white-space: nowrap;\">Kick (blended):</div>" +
-                                    "<ul><li>GGD OKW Modern Fusion - the main kick</li><li>GGD Modern & Massive - 26x14 Yamaha kick</li><li>custom one shot kick sample</li></ul>" +
-                                    "<div class=\"snareBlendedHeader\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Snare (blended):</div>" +
-                                    "<ul><li>Nolly's Secret Sauce snare (a freebie Nolly gave out in 2019)</li><li>GGD P4 - The VK snare</li><li>GGD OKW Metal - the main snare (only the room mics)</li></ul>" +
-                                    "<div class=\"midiTom1 midiTom2 midiTom3 midiTom4\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Toms:</div>" +
-                                    "<ul><li>GGD P4 toms</li></ul>" +
-                                    "<div class=\"midiCrashL1 midiCrashR midiCrashL2 midiSplashL midiSplashR midiChina midiRide midiHihatOpen midiHihatOpen2 midiHihatOpen3 midiHihatPedal midiHihatTipTight midiMiniHat midiHiHatEdgeClosed midiHiHatEdgeTight midiHihatTipClosed\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Cymbals:</div>" +
-                                    "<ul><li>GGD P4 cymbals</li></ul>" +
-                                    "<strong>And here's the MIDI mapping:</strong><br>" +
-                                    "<table style=\"font-family: courier; border-collapse: collapse; margin-top: .5em;\">" +
-                                        "<tr><td class=\"midiKick\" style=\"padding: 0 1em 0 1.5em; color: white;\">C0</td><td>Kick</td></tr>" +
-                                        "<tr><td class=\"midiSnareGhost\" style=\"padding: 0 1em 0 1.5em; color: white;\">C#0</td><td>Snare Ghost Note</td></tr>" +
-                                        "<tr><td class=\"midiSnare\" style=\"padding: 0 1em 0 1.5em; color: white;\">D0</td><td>Snare Main Hit</td></tr>" +
-                                        "<tr><td class=\"midiTom1\" style=\"padding: 0 1em 0 1.5em; color: white;\">A0</td><td>Rack Tom 1</td></tr>" +
-                                        "<tr><td class=\"midiTom2\" style=\"padding: 0 1em 0 1.5em; color: white;\">A#0</td><td>Rack Tom 2</td></tr>" +
-                                        "<tr><td class=\"midiTom3\" style=\"padding: 0 1em 0 1.5em; color: white;\">B0</td><td>Floor Tom 1</td></tr>" +
-                                        "<tr><td class=\"midiTom4\" style=\"padding: 0 1em 0 1.5em; color: white;\">C1</td><td>Floor Tom 2</td></tr>" +
-                                        "<tr><td class=\"midiHihatTipTight\" style=\"padding: 0 1em 0 1.5em; color: white;\">F1</td><td>Hat Tip Tight</td></tr>" +
-                                        "<tr><td class=\"midiHiHatEdgeTight\" style=\"padding: 0 1em 0 1.5em; color: white;\">F#1</td><td>Hat Edge Tight</td></tr>" +
-                                        "<tr><td class=\"midiHihatTipClosed\" style=\"padding: 0 1em 0 1.5em; color: white;\">G1</td><td>Hat Tip Closed</td></tr>" +
-                                        "<tr><td class=\"midiHiHatEdgeClosed\" style=\"padding: 0 1em 0 1.5em; color: white;\">G#1</td><td>Hat Edge Closed</td></tr>" +
-                                        "<tr><td class=\"midiHihatOpen\" style=\"padding: 0 1em 0 1.5em; color: white;\">A1</td><td>Hat Open 1</td></tr>" +
-                                        "<tr><td class=\"midiHihatOpen2\" style=\"padding: 0 1em 0 1.5em; color: white;\">A#1</td><td>Hat Open 2</td></tr>" +
-                                        "<tr><td class=\"midiHihatOpen3\" style=\"padding: 0 1em 0 1.5em; color: white;\">B1</td><td>Hat Open 3</td></tr>" +
-                                        "<tr><td class=\"midiHihatPedal\" style=\"padding: 0 1em 0 1.5em; color: white;\">C2</td><td>Hat Pedal</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">C#2</td><td>Hat Pedal Ching</td></tr>" +
-                                        "<tr><td class=\"midiCrashL1\" style=\"padding: 0 1em 0 1.5em; color: white;\">E2</td><td>Crash L 1</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">F2</td><td>Crash L 1 Choke</td></tr>" +
-                                        "<tr><td class=\"midiCrashR\" style=\"padding: 0 1em 0 1.5em; color: white;\">F#2</td><td>Crash R</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">G2</td><td>Crash R: Choke</td></tr>" +
-                                        "<tr><td class=\"midiCrashL2\" style=\"padding: 0 1em 0 1.5em; color: white;\">G#2</td><td>Crash L 2</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">A2</td><td>Crash L 2 Choke</td></tr>" +
-                                        "<tr><td class=\"midiRide\" style=\"padding: 0 1em 0 1.5em; color: white;\">C#3</td><td>Ride Bell</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">D3</td><td>Ride Bow</td></tr>" +
-                                        "<tr><td class=\"midiChina\" style=\"padding: 0 1em 0 1.5em; color: white;\">F3</td><td>China</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">F#3</td><td>China: Choke</td></tr>" +
-                                        "<tr><td class=\"midiSplashL\" style=\"padding: 0 1em 0 1.5em; color: white;\">C#3</td><td>Splash L</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">D4</td><td>Splash L Choke</td></tr>" +
-                                        "<tr><td class=\"midiSplashR\" style=\"padding: 0 1em 0 1.5em; color: white;\">D#4</td><td>Splash R</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">E4</td><td>Splash R Choke</td></tr>" +
-                                        "<tr><td class=\"midiMiniHat\" style=\"padding: 0 1em 0 1.5em; color: white;\">F4</td><td>Mini Hat</td></tr>" +
-                                        "<tr><td class=\"midiStack\" style=\"padding: 0 1em 0 1.5em; color: white;\">F#4</td><td>Stack</td></tr>" +
-                                    "</table>",
+                                    html: ConfDrumsSvg.conf.drumsSvg + ConfTrackHtml.conf[0]
                                 },
                                 4: {
                                     id: "<div class=\"bassHeader\" style=\"width: min-content;\">Bass</div>",
-                                    html:
-                                    "<p>" +
-                                    "All the bass is programmed and you can find the bass MIDI files in the /MIDI folder. " +
-                                    "All of the bass tracks on the album were done with Sumbission Audio's DjinnBass sample library. " +
-                                    "Most of the bass tones on the album we're processed using the NeuralDSP's Parallax plugin.<br>" +
-                                    "</p>",
+                                    html: ConfTrackHtml.conf[1]
                                 },
                                 5: {
                                     id: "<div class=\"guitarsHeader\" style=\"width: min-content;\">Guitars</div>",
-                                    html:
-                                    "<p>All of the guitars track on the album (rhytms, leads, drones, cleans) were recorded in my home studio (fancy way of saying \"a table and an audio interface in my living room\").</p>" +
-                                    "<strong>Gear used for guitar tracking:</strong><br>" +
-                                    "<ul>" +
-                                        "<li>Solar A1.6D 27 Baritone guitar (with the stock pickups)</li>" +
-                                        "<li>Focusrite Scarlett Solo Gen 3 audio interface</li>" +
-                                        "<li>Radial PRO48 active DI box</li>" +
-                                        "<li>Daddario EXL157 strings</li>" +
-                                        "<li>StringJoy custom strings, gauges: .074 .052 .044 .028w .022 .016 (used for the drop F tuning in \"Spectre\")</li>" +
-                                        "<li>Janicek Picks Jazz B 0.88mm guitar picks</li>" +
-                                    "</ul>" +
-                                    "<strong>Tones:</strong><br><br>" +
-                                    "<table style=\"border-collapse: collapse;\">" +
-                                        "<tr>" +
-                                            "<td>" +
-                                                "<strong>Rhytms: </strong>" +
-                                            "</td>" +
-                                            "<td>" +
-                                                "NeuralDSP Archetype Nolly (using an IR that comes with the plugin, no external IR)" +
-                                            "</td>" +
-                                        "</tr>" +
-                                        "<tr>" +
-                                            "<td>" +
-                                                "<strong>Leads: </strong>" +
-                                            "</td>" +
-                                            "<td>" +
-                                                "NeuralDSP Archetype Abasi (using an IR that comes with the plugin, no external IR)" +
-                                            "</td>" +
-                                        "</tr>" +
-                                            "<td>" +
-                                                "<strong>Cleans: </strong>" +
-                                            "</td>" +
-                                            "<td>" +
-                                                "NeuralDSP Archetype Plini (cab sim turned off)" +
-                                            "</td>" +
-                                        "</tr>" +
-                                    "</table>"
+                                    html: ConfTrackHtml.conf[2]
                                 },
                                 6: {
                                     id: "<div class=\"synthsHeader\" style=\"width: min-content;\">Synths</div>",
-                                    html: 
-                                    "<p>" +
-                                        "All the extra instruments and synths on the album are programmed. Here's a list of some of the kontakt libraries used:" +
-                                    "</p>" +
-                                    "<ul>" +
-                                        "<li>" +
-                                            "Fracture Sounds' Woodchester Piano (kontakt library)" +
-                                        "</li>" +
-                                        "<li>" +
-                                            "u-he Diva (synth plugin)" +
-                                        "</li>" +
-                                        "<li>" +
-                                            "Best Service's Emotional Cello (kontakt library)" +
-                                        "</li>" +
-                                        "<li>" +
-                                            "Heavyocity's Gravity (kontakt library)" +
-                                        "</li>" +
-                                        "<li>" +
-                                            "Heavyocity's Mosaic Tape (kontakt library)" +
-                                        "</li>" +
-                                        "<li>" +
-                                            "Finishing Move's Posthuman (kontakt library)" +
-                                        "</li>" +
-                                    "</ul>"
+                                    html: ConfTrackHtml.conf[3]
                                 }
                             },
                         },
@@ -1335,9 +789,9 @@ export default class RPlayerConf {
                             mp3: "media/sounds/mp3/6.mp3",
                         },
                         info: {
-                            image: "media/images/dreamer_album.jpg",
-                            icon: "media/icons/dreamer_album.png",
-                            composer: "YATSU",
+                            image: "media/images/rebrand/Album_cover.jpg",
+                            icon: "media/icons/rebrand/Album_cover.png",
+                            composer: "Michal Diviš",
                             lang: "eng", // ISO 639-2
                             year: 2021,
                             genres: {
@@ -1356,130 +810,19 @@ export default class RPlayerConf {
                                 },
                                 1: {
                                     id: "<div class=\"drumsHeader\" style=\"width: min-content;\">Drums</div>",
-                                    html: 
-                                    "<p>" +
-                                        "All drums are programmed and you can find the drum MIDI files in the /MIDI folder. " + 
-                                        "Here's a list of all the sample libraries / samples used for different kit pieces:.<br>" + 
-                                    "</p>" +
-                                    "<div class=\"kickBlendedHeader\" style=\"font-weight: bold; width: min-content; white-space: nowrap;\">Kick (blended):</div>" +
-                                    "<ul><li>GGD OKW Modern Fusion - the main kick</li><li>GGD Modern & Massive - 26x14 Yamaha kick</li><li>custom one shot kick sample</li></ul>" +
-                                    "<div class=\"snareBlendedHeader\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Snare (blended):</div>" +
-                                    "<ul><li>Nolly's Secret Sauce snare (a freebie Nolly gave out in 2019)</li><li>GGD P4 - The VK snare</li><li>GGD OKW Metal - the main snare (only the room mics)</li></ul>" +
-                                    "<div class=\"midiTom1 midiTom2 midiTom3 midiTom4\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Toms:</div>" +
-                                    "<ul><li>GGD P4 toms</li></ul>" +
-                                    "<div class=\"midiCrashL1 midiCrashR midiCrashL2 midiSplashL midiSplashR midiChina midiRide midiHihatOpen midiHihatOpen2 midiHihatOpen3 midiHihatPedal midiHihatTipTight midiMiniHat midiHiHatEdgeClosed midiHiHatEdgeTight midiHihatTipClosed\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Cymbals:</div>" +
-                                    "<ul><li>GGD P4 cymbals</li></ul>" +
-                                    "<strong>And here's the MIDI mapping:</strong><br>" +
-                                    "<table style=\"font-family: courier; border-collapse: collapse; margin-top: .5em;\">" +
-                                        "<tr><td class=\"midiKick\" style=\"padding: 0 1em 0 1.5em; color: white;\">C0</td><td>Kick</td></tr>" +
-                                        "<tr><td class=\"midiSnareGhost\" style=\"padding: 0 1em 0 1.5em; color: white;\">C#0</td><td>Snare Ghost Note</td></tr>" +
-                                        "<tr><td class=\"midiSnare\" style=\"padding: 0 1em 0 1.5em; color: white;\">D0</td><td>Snare Main Hit</td></tr>" +
-                                        "<tr><td class=\"midiTom1\" style=\"padding: 0 1em 0 1.5em; color: white;\">A0</td><td>Rack Tom 1</td></tr>" +
-                                        "<tr><td class=\"midiTom2\" style=\"padding: 0 1em 0 1.5em; color: white;\">A#0</td><td>Rack Tom 2</td></tr>" +
-                                        "<tr><td class=\"midiTom3\" style=\"padding: 0 1em 0 1.5em; color: white;\">B0</td><td>Floor Tom 1</td></tr>" +
-                                        "<tr><td class=\"midiTom4\" style=\"padding: 0 1em 0 1.5em; color: white;\">C1</td><td>Floor Tom 2</td></tr>" +
-                                        "<tr><td class=\"midiHihatTipTight\" style=\"padding: 0 1em 0 1.5em; color: white;\">F1</td><td>Hat Tip Tight</td></tr>" +
-                                        "<tr><td class=\"midiHiHatEdgeTight\" style=\"padding: 0 1em 0 1.5em; color: white;\">F#1</td><td>Hat Edge Tight</td></tr>" +
-                                        "<tr><td class=\"midiHihatTipClosed\" style=\"padding: 0 1em 0 1.5em; color: white;\">G1</td><td>Hat Tip Closed</td></tr>" +
-                                        "<tr><td class=\"midiHiHatEdgeClosed\" style=\"padding: 0 1em 0 1.5em; color: white;\">G#1</td><td>Hat Edge Closed</td></tr>" +
-                                        "<tr><td class=\"midiHihatOpen\" style=\"padding: 0 1em 0 1.5em; color: white;\">A1</td><td>Hat Open 1</td></tr>" +
-                                        "<tr><td class=\"midiHihatOpen2\" style=\"padding: 0 1em 0 1.5em; color: white;\">A#1</td><td>Hat Open 2</td></tr>" +
-                                        "<tr><td class=\"midiHihatOpen3\" style=\"padding: 0 1em 0 1.5em; color: white;\">B1</td><td>Hat Open 3</td></tr>" +
-                                        "<tr><td class=\"midiHihatPedal\" style=\"padding: 0 1em 0 1.5em; color: white;\">C2</td><td>Hat Pedal</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">C#2</td><td>Hat Pedal Ching</td></tr>" +
-                                        "<tr><td class=\"midiCrashL1\" style=\"padding: 0 1em 0 1.5em; color: white;\">E2</td><td>Crash L 1</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">F2</td><td>Crash L 1 Choke</td></tr>" +
-                                        "<tr><td class=\"midiCrashR\" style=\"padding: 0 1em 0 1.5em; color: white;\">F#2</td><td>Crash R</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">G2</td><td>Crash R: Choke</td></tr>" +
-                                        "<tr><td class=\"midiCrashL2\" style=\"padding: 0 1em 0 1.5em; color: white;\">G#2</td><td>Crash L 2</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">A2</td><td>Crash L 2 Choke</td></tr>" +
-                                        "<tr><td class=\"midiRide\" style=\"padding: 0 1em 0 1.5em; color: white;\">C#3</td><td>Ride Bell</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">D3</td><td>Ride Bow</td></tr>" +
-                                        "<tr><td class=\"midiChina\" style=\"padding: 0 1em 0 1.5em; color: white;\">F3</td><td>China</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">F#3</td><td>China: Choke</td></tr>" +
-                                        "<tr><td class=\"midiSplashL\" style=\"padding: 0 1em 0 1.5em; color: white;\">C#3</td><td>Splash L</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">D4</td><td>Splash L Choke</td></tr>" +
-                                        "<tr><td class=\"midiSplashR\" style=\"padding: 0 1em 0 1.5em; color: white;\">D#4</td><td>Splash R</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">E4</td><td>Splash R Choke</td></tr>" +
-                                        "<tr><td class=\"midiMiniHat\" style=\"padding: 0 1em 0 1.5em; color: white;\">F4</td><td>Mini Hat</td></tr>" +
-                                        "<tr><td class=\"midiStack\" style=\"padding: 0 1em 0 1.5em; color: white;\">F#4</td><td>Stack</td></tr>" +
-                                    "</table>",
+                                    html: ConfDrumsSvg.conf.drumsSvg + ConfTrackHtml.conf[0]
                                 },
                                 2: {
                                     id: "<div class=\"bassHeader\" style=\"width: min-content;\">Bass</div>",
-                                    html:
-                                    "<p>" +
-                                    "All the bass is programmed and you can find the bass MIDI files in the /MIDI folder. " +
-                                    "All of the bass tracks on the album were done with Sumbission Audio's DjinnBass sample library. " +
-                                    "Most of the bass tones on the album we're processed using the NeuralDSP's Parallax plugin.<br>" +
-                                    "</p>",
+                                    html: ConfTrackHtml.conf[1]
                                 },
                                 3: {
                                     id: "<div class=\"guitarsHeader\" style=\"width: min-content;\">Guitars</div>",
-                                    html:
-                                    "<p>All of the guitars track on the album (rhytms, leads, drones, cleans) were recorded in my home studio (fancy way of saying \"a table and an audio interface in my living room\").</p>" +
-                                    "<strong>Gear used for guitar tracking:</strong><br>" +
-                                    "<ul>" +
-                                        "<li>Solar A1.6D 27 Baritone guitar (with the stock pickups)</li>" +
-                                        "<li>Focusrite Scarlett Solo Gen 3 audio interface</li>" +
-                                        "<li>Radial PRO48 active DI box</li>" +
-                                        "<li>Daddario EXL157 strings</li>" +
-                                        "<li>StringJoy custom strings, gauges: .074 .052 .044 .028w .022 .016 (used for the drop F tuning in \"Spectre\")</li>" +
-                                        "<li>Janicek Picks Jazz B 0.88mm guitar picks</li>" +
-                                    "</ul>" +
-                                    "<strong>Tones:</strong><br><br>" +
-                                    "<table style=\"border-collapse: collapse;\">" +
-                                        "<tr>" +
-                                            "<td>" +
-                                                "<strong>Rhytms: </strong>" +
-                                            "</td>" +
-                                            "<td>" +
-                                                "NeuralDSP Archetype Nolly (using an IR that comes with the plugin, no external IR)" +
-                                            "</td>" +
-                                        "</tr>" +
-                                        "<tr>" +
-                                            "<td>" +
-                                                "<strong>Leads: </strong>" +
-                                            "</td>" +
-                                            "<td>" +
-                                                "NeuralDSP Archetype Abasi (using an IR that comes with the plugin, no external IR)" +
-                                            "</td>" +
-                                        "</tr>" +
-                                            "<td>" +
-                                                "<strong>Cleans: </strong>" +
-                                            "</td>" +
-                                            "<td>" +
-                                                "NeuralDSP Archetype Plini (cab sim turned off)" +
-                                            "</td>" +
-                                        "</tr>" +
-                                    "</table>"
+                                    html: ConfTrackHtml.conf[2]
                                 },
                                 4: {
                                     id: "<div class=\"synthsHeader\" style=\"width: min-content;\">Synths</div>",
-                                    html: 
-                                    "<p>" +
-                                        "All the extra instruments and synths on the album are programmed. Here's a list of some of the kontakt libraries used:" +
-                                    "</p>" +
-                                    "<ul>" +
-                                        "<li>" +
-                                            "Fracture Sounds' Woodchester Piano (kontakt library)" +
-                                        "</li>" +
-                                        "<li>" +
-                                            "u-he Diva (synth plugin)" +
-                                        "</li>" +
-                                        "<li>" +
-                                            "Best Service's Emotional Cello (kontakt library)" +
-                                        "</li>" +
-                                        "<li>" +
-                                            "Heavyocity's Gravity (kontakt library)" +
-                                        "</li>" +
-                                        "<li>" +
-                                            "Heavyocity's Mosaic Tape (kontakt library)" +
-                                        "</li>" +
-                                        "<li>" +
-                                            "Finishing Move's Posthuman (kontakt library)" +
-                                        "</li>" +
-                                    "</ul>"
+                                    html: ConfTrackHtml.conf[3]
                                 }
                             },
                         }
@@ -1491,9 +834,9 @@ export default class RPlayerConf {
                             mp3: "media/sounds/mp3/7.mp3",
                         },
                         info: {
-                            image: "media/images/dreamer_album.jpg",
-                            icon: "media/icons/dreamer_album.png",
-                            composer: "YATSU",
+                            image: "media/images/rebrand/Album_cover.jpg",
+                            icon: "media/icons/rebrand/Album_cover.png",
+                            composer: "Michal Diviš",
                             lang: "eng", // ISO 639-2
                             year: 2021,
                             genres: {
@@ -1512,130 +855,19 @@ export default class RPlayerConf {
                                 },
                                 1: {
                                     id: "<div class=\"drumsHeader\" style=\"width: min-content;\">Drums</div>",
-                                    html: 
-                                    "<p>" +
-                                        "All drums are programmed and you can find the drum MIDI files in the /MIDI folder. " + 
-                                        "Here's a list of all the sample libraries / samples used for different kit pieces:.<br>" + 
-                                    "</p>" +
-                                    "<div class=\"kickBlendedHeader\" style=\"font-weight: bold; width: min-content; white-space: nowrap;\">Kick (blended):</div>" +
-                                    "<ul><li>GGD OKW Modern Fusion - the main kick</li><li>GGD Modern & Massive - 26x14 Yamaha kick</li><li>custom one shot kick sample</li></ul>" +
-                                    "<div class=\"snareBlendedHeader\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Snare (blended):</div>" +
-                                    "<ul><li>Nolly's Secret Sauce snare (a freebie Nolly gave out in 2019)</li><li>GGD P4 - The VK snare</li><li>GGD OKW Metal - the main snare (only the room mics)</li></ul>" +
-                                    "<div class=\"midiTom1 midiTom2 midiTom3 midiTom4\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Toms:</div>" +
-                                    "<ul><li>GGD P4 toms</li></ul>" +
-                                    "<div class=\"midiCrashL1 midiCrashR midiCrashL2 midiSplashL midiSplashR midiChina midiRide midiHihatOpen midiHihatOpen2 midiHihatOpen3 midiHihatPedal midiHihatTipTight midiMiniHat midiHiHatEdgeClosed midiHiHatEdgeTight midiHihatTipClosed\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Cymbals:</div>" +
-                                    "<ul><li>GGD P4 cymbals</li></ul>" +
-                                    "<strong>And here's the MIDI mapping:</strong><br>" +
-                                    "<table style=\"font-family: courier; border-collapse: collapse; margin-top: .5em;\">" +
-                                        "<tr><td class=\"midiKick\" style=\"padding: 0 1em 0 1.5em; color: white;\">C0</td><td>Kick</td></tr>" +
-                                        "<tr><td class=\"midiSnareGhost\" style=\"padding: 0 1em 0 1.5em; color: white;\">C#0</td><td>Snare Ghost Note</td></tr>" +
-                                        "<tr><td class=\"midiSnare\" style=\"padding: 0 1em 0 1.5em; color: white;\">D0</td><td>Snare Main Hit</td></tr>" +
-                                        "<tr><td class=\"midiTom1\" style=\"padding: 0 1em 0 1.5em; color: white;\">A0</td><td>Rack Tom 1</td></tr>" +
-                                        "<tr><td class=\"midiTom2\" style=\"padding: 0 1em 0 1.5em; color: white;\">A#0</td><td>Rack Tom 2</td></tr>" +
-                                        "<tr><td class=\"midiTom3\" style=\"padding: 0 1em 0 1.5em; color: white;\">B0</td><td>Floor Tom 1</td></tr>" +
-                                        "<tr><td class=\"midiTom4\" style=\"padding: 0 1em 0 1.5em; color: white;\">C1</td><td>Floor Tom 2</td></tr>" +
-                                        "<tr><td class=\"midiHihatTipTight\" style=\"padding: 0 1em 0 1.5em; color: white;\">F1</td><td>Hat Tip Tight</td></tr>" +
-                                        "<tr><td class=\"midiHiHatEdgeTight\" style=\"padding: 0 1em 0 1.5em; color: white;\">F#1</td><td>Hat Edge Tight</td></tr>" +
-                                        "<tr><td class=\"midiHihatTipClosed\" style=\"padding: 0 1em 0 1.5em; color: white;\">G1</td><td>Hat Tip Closed</td></tr>" +
-                                        "<tr><td class=\"midiHiHatEdgeClosed\" style=\"padding: 0 1em 0 1.5em; color: white;\">G#1</td><td>Hat Edge Closed</td></tr>" +
-                                        "<tr><td class=\"midiHihatOpen\" style=\"padding: 0 1em 0 1.5em; color: white;\">A1</td><td>Hat Open 1</td></tr>" +
-                                        "<tr><td class=\"midiHihatOpen2\" style=\"padding: 0 1em 0 1.5em; color: white;\">A#1</td><td>Hat Open 2</td></tr>" +
-                                        "<tr><td class=\"midiHihatOpen3\" style=\"padding: 0 1em 0 1.5em; color: white;\">B1</td><td>Hat Open 3</td></tr>" +
-                                        "<tr><td class=\"midiHihatPedal\" style=\"padding: 0 1em 0 1.5em; color: white;\">C2</td><td>Hat Pedal</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">C#2</td><td>Hat Pedal Ching</td></tr>" +
-                                        "<tr><td class=\"midiCrashL1\" style=\"padding: 0 1em 0 1.5em; color: white;\">E2</td><td>Crash L 1</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">F2</td><td>Crash L 1 Choke</td></tr>" +
-                                        "<tr><td class=\"midiCrashR\" style=\"padding: 0 1em 0 1.5em; color: white;\">F#2</td><td>Crash R</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">G2</td><td>Crash R: Choke</td></tr>" +
-                                        "<tr><td class=\"midiCrashL2\" style=\"padding: 0 1em 0 1.5em; color: white;\">G#2</td><td>Crash L 2</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">A2</td><td>Crash L 2 Choke</td></tr>" +
-                                        "<tr><td class=\"midiRide\" style=\"padding: 0 1em 0 1.5em; color: white;\">C#3</td><td>Ride Bell</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">D3</td><td>Ride Bow</td></tr>" +
-                                        "<tr><td class=\"midiChina\" style=\"padding: 0 1em 0 1.5em; color: white;\">F3</td><td>China</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">F#3</td><td>China: Choke</td></tr>" +
-                                        "<tr><td class=\"midiSplashL\" style=\"padding: 0 1em 0 1.5em; color: white;\">C#3</td><td>Splash L</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">D4</td><td>Splash L Choke</td></tr>" +
-                                        "<tr><td class=\"midiSplashR\" style=\"padding: 0 1em 0 1.5em; color: white;\">D#4</td><td>Splash R</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">E4</td><td>Splash R Choke</td></tr>" +
-                                        "<tr><td class=\"midiMiniHat\" style=\"padding: 0 1em 0 1.5em; color: white;\">F4</td><td>Mini Hat</td></tr>" +
-                                        "<tr><td class=\"midiStack\" style=\"padding: 0 1em 0 1.5em; color: white;\">F#4</td><td>Stack</td></tr>" +
-                                    "</table>",
+                                    html: ConfDrumsSvg.conf.drumsSvg + ConfTrackHtml.conf[0]
                                 },
                                 2: {
                                     id: "<div class=\"bassHeader\" style=\"width: min-content;\">Bass</div>",
-                                    html:
-                                    "<p>" +
-                                    "All the bass is programmed and you can find the bass MIDI files in the /MIDI folder. " +
-                                    "All of the bass tracks on the album were done with Sumbission Audio's DjinnBass sample library. " +
-                                    "Most of the bass tones on the album we're processed using the NeuralDSP's Parallax plugin.<br>" +
-                                    "</p>",
+                                    html: ConfTrackHtml.conf[1]
                                 },
                                 3: {
                                     id: "<div class=\"guitarsHeader\" style=\"width: min-content;\">Guitars</div>",
-                                    html:
-                                    "<p>All of the guitars track on the album (rhytms, leads, drones, cleans) were recorded in my home studio (fancy way of saying \"a table and an audio interface in my living room\").</p>" +
-                                    "<strong>Gear used for guitar tracking:</strong><br>" +
-                                    "<ul>" +
-                                        "<li>Solar A1.6D 27 Baritone guitar (with the stock pickups)</li>" +
-                                        "<li>Focusrite Scarlett Solo Gen 3 audio interface</li>" +
-                                        "<li>Radial PRO48 active DI box</li>" +
-                                        "<li>Daddario EXL157 strings</li>" +
-                                        "<li>StringJoy custom strings, gauges: .074 .052 .044 .028w .022 .016 (used for the drop F tuning in \"Spectre\")</li>" +
-                                        "<li>Janicek Picks Jazz B 0.88mm guitar picks</li>" +
-                                    "</ul>" +
-                                    "<strong>Tones:</strong><br><br>" +
-                                    "<table style=\"border-collapse: collapse;\">" +
-                                        "<tr>" +
-                                            "<td>" +
-                                                "<strong>Rhytms: </strong>" +
-                                            "</td>" +
-                                            "<td>" +
-                                                "NeuralDSP Archetype Nolly (using an IR that comes with the plugin, no external IR)" +
-                                            "</td>" +
-                                        "</tr>" +
-                                        "<tr>" +
-                                            "<td>" +
-                                                "<strong>Leads: </strong>" +
-                                            "</td>" +
-                                            "<td>" +
-                                                "NeuralDSP Archetype Abasi (using an IR that comes with the plugin, no external IR)" +
-                                            "</td>" +
-                                        "</tr>" +
-                                            "<td>" +
-                                                "<strong>Cleans: </strong>" +
-                                            "</td>" +
-                                            "<td>" +
-                                                "NeuralDSP Archetype Plini (cab sim turned off)" +
-                                            "</td>" +
-                                        "</tr>" +
-                                    "</table>"
+                                    html: ConfTrackHtml.conf[2]
                                 },
                                 4: {
                                     id: "<div class=\"synthsHeader\" style=\"width: min-content;\">Synths</div>",
-                                    html: 
-                                    "<p>" +
-                                        "All the extra instruments and synths on the album are programmed. Here's a list of some of the kontakt libraries used:" +
-                                    "</p>" +
-                                    "<ul>" +
-                                        "<li>" +
-                                            "Fracture Sounds' Woodchester Piano (kontakt library)" +
-                                        "</li>" +
-                                        "<li>" +
-                                            "u-he Diva (synth plugin)" +
-                                        "</li>" +
-                                        "<li>" +
-                                            "Best Service's Emotional Cello (kontakt library)" +
-                                        "</li>" +
-                                        "<li>" +
-                                            "Heavyocity's Gravity (kontakt library)" +
-                                        "</li>" +
-                                        "<li>" +
-                                            "Heavyocity's Mosaic Tape (kontakt library)" +
-                                        "</li>" +
-                                        "<li>" +
-                                            "Finishing Move's Posthuman (kontakt library)" +
-                                        "</li>" +
-                                    "</ul>"
+                                    html: ConfTrackHtml.conf[3]
                                 }
                             },
                         }
@@ -1647,9 +879,9 @@ export default class RPlayerConf {
                             mp3: "media/sounds/mp3/8.mp3",
                         },
                         info: {
-                            image: "media/images/dreamer_album.jpg",
-                            icon: "media/icons/dreamer_album.png",
-                            composer: "YATSU",
+                            image: "media/images/rebrand/Album_cover.jpg",
+                            icon: "media/icons/rebrand/Album_cover.png",
+                            composer: "Michal Diviš",
                             lang: "eng", // ISO 639-2
                             year: 2021,
                             genres: {
@@ -1668,130 +900,19 @@ export default class RPlayerConf {
                                 },
                                 1: {
                                     id: "<div class=\"drumsHeader\" style=\"width: min-content;\">Drums</div>",
-                                    html: 
-                                    "<p>" +
-                                        "All drums are programmed and you can find the drum MIDI files in the /MIDI folder. " + 
-                                        "Here's a list of all the sample libraries / samples used for different kit pieces:.<br>" + 
-                                    "</p>" +
-                                    "<div class=\"kickBlendedHeader\" style=\"font-weight: bold; width: min-content; white-space: nowrap;\">Kick (blended):</div>" +
-                                    "<ul><li>GGD OKW Modern Fusion - the main kick</li><li>GGD Modern & Massive - 26x14 Yamaha kick</li><li>custom one shot kick sample</li></ul>" +
-                                    "<div class=\"snareBlendedHeader\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Snare (blended):</div>" +
-                                    "<ul><li>Nolly's Secret Sauce snare (a freebie Nolly gave out in 2019)</li><li>GGD P4 - The VK snare</li><li>GGD OKW Metal - the main snare (only the room mics)</li></ul>" +
-                                    "<div class=\"midiTom1 midiTom2 midiTom3 midiTom4\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Toms:</div>" +
-                                    "<ul><li>GGD P4 toms</li></ul>" +
-                                    "<div class=\"midiCrashL1 midiCrashR midiCrashL2 midiSplashL midiSplashR midiChina midiRide midiHihatOpen midiHihatOpen2 midiHihatOpen3 midiHihatPedal midiHihatTipTight midiMiniHat midiHiHatEdgeClosed midiHiHatEdgeTight midiHihatTipClosed\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Cymbals:</div>" +
-                                    "<ul><li>GGD P4 cymbals</li></ul>" +
-                                    "<strong>And here's the MIDI mapping:</strong><br>" +
-                                    "<table style=\"font-family: courier; border-collapse: collapse; margin-top: .5em;\">" +
-                                        "<tr><td class=\"midiKick\" style=\"padding: 0 1em 0 1.5em; color: white;\">C0</td><td>Kick</td></tr>" +
-                                        "<tr><td class=\"midiSnareGhost\" style=\"padding: 0 1em 0 1.5em; color: white;\">C#0</td><td>Snare Ghost Note</td></tr>" +
-                                        "<tr><td class=\"midiSnare\" style=\"padding: 0 1em 0 1.5em; color: white;\">D0</td><td>Snare Main Hit</td></tr>" +
-                                        "<tr><td class=\"midiTom1\" style=\"padding: 0 1em 0 1.5em; color: white;\">A0</td><td>Rack Tom 1</td></tr>" +
-                                        "<tr><td class=\"midiTom2\" style=\"padding: 0 1em 0 1.5em; color: white;\">A#0</td><td>Rack Tom 2</td></tr>" +
-                                        "<tr><td class=\"midiTom3\" style=\"padding: 0 1em 0 1.5em; color: white;\">B0</td><td>Floor Tom 1</td></tr>" +
-                                        "<tr><td class=\"midiTom4\" style=\"padding: 0 1em 0 1.5em; color: white;\">C1</td><td>Floor Tom 2</td></tr>" +
-                                        "<tr><td class=\"midiHihatTipTight\" style=\"padding: 0 1em 0 1.5em; color: white;\">F1</td><td>Hat Tip Tight</td></tr>" +
-                                        "<tr><td class=\"midiHiHatEdgeTight\" style=\"padding: 0 1em 0 1.5em; color: white;\">F#1</td><td>Hat Edge Tight</td></tr>" +
-                                        "<tr><td class=\"midiHihatTipClosed\" style=\"padding: 0 1em 0 1.5em; color: white;\">G1</td><td>Hat Tip Closed</td></tr>" +
-                                        "<tr><td class=\"midiHiHatEdgeClosed\" style=\"padding: 0 1em 0 1.5em; color: white;\">G#1</td><td>Hat Edge Closed</td></tr>" +
-                                        "<tr><td class=\"midiHihatOpen\" style=\"padding: 0 1em 0 1.5em; color: white;\">A1</td><td>Hat Open 1</td></tr>" +
-                                        "<tr><td class=\"midiHihatOpen2\" style=\"padding: 0 1em 0 1.5em; color: white;\">A#1</td><td>Hat Open 2</td></tr>" +
-                                        "<tr><td class=\"midiHihatOpen3\" style=\"padding: 0 1em 0 1.5em; color: white;\">B1</td><td>Hat Open 3</td></tr>" +
-                                        "<tr><td class=\"midiHihatPedal\" style=\"padding: 0 1em 0 1.5em; color: white;\">C2</td><td>Hat Pedal</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">C#2</td><td>Hat Pedal Ching</td></tr>" +
-                                        "<tr><td class=\"midiCrashL1\" style=\"padding: 0 1em 0 1.5em; color: white;\">E2</td><td>Crash L 1</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">F2</td><td>Crash L 1 Choke</td></tr>" +
-                                        "<tr><td class=\"midiCrashR\" style=\"padding: 0 1em 0 1.5em; color: white;\">F#2</td><td>Crash R</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">G2</td><td>Crash R: Choke</td></tr>" +
-                                        "<tr><td class=\"midiCrashL2\" style=\"padding: 0 1em 0 1.5em; color: white;\">G#2</td><td>Crash L 2</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">A2</td><td>Crash L 2 Choke</td></tr>" +
-                                        "<tr><td class=\"midiRide\" style=\"padding: 0 1em 0 1.5em; color: white;\">C#3</td><td>Ride Bell</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">D3</td><td>Ride Bow</td></tr>" +
-                                        "<tr><td class=\"midiChina\" style=\"padding: 0 1em 0 1.5em; color: white;\">F3</td><td>China</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">F#3</td><td>China: Choke</td></tr>" +
-                                        "<tr><td class=\"midiSplashL\" style=\"padding: 0 1em 0 1.5em; color: white;\">C#3</td><td>Splash L</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">D4</td><td>Splash L Choke</td></tr>" +
-                                        "<tr><td class=\"midiSplashR\" style=\"padding: 0 1em 0 1.5em; color: white;\">D#4</td><td>Splash R</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">E4</td><td>Splash R Choke</td></tr>" +
-                                        "<tr><td class=\"midiMiniHat\" style=\"padding: 0 1em 0 1.5em; color: white;\">F4</td><td>Mini Hat</td></tr>" +
-                                        "<tr><td class=\"midiStack\" style=\"padding: 0 1em 0 1.5em; color: white;\">F#4</td><td>Stack</td></tr>" +
-                                    "</table>",
+                                    html: ConfDrumsSvg.conf.drumsSvg + ConfTrackHtml.conf[0]
                                 },
                                 2: {
                                     id: "<div class=\"bassHeader\" style=\"width: min-content;\">Bass</div>",
-                                    html:
-                                    "<p>" +
-                                    "All the bass is programmed and you can find the bass MIDI files in the /MIDI folder. " +
-                                    "All of the bass tracks on the album were done with Sumbission Audio's DjinnBass sample library. " +
-                                    "Most of the bass tones on the album we're processed using the NeuralDSP's Parallax plugin.<br>" +
-                                    "</p>",
+                                    html: ConfTrackHtml.conf[1]
                                 },
                                 3: {
                                     id: "<div class=\"guitarsHeader\" style=\"width: min-content;\">Guitars</div>",
-                                    html:
-                                    "<p>All of the guitars track on the album (rhytms, leads, drones, cleans) were recorded in my home studio (fancy way of saying \"a table and an audio interface in my living room\").</p>" +
-                                    "<strong>Gear used for guitar tracking:</strong><br>" +
-                                    "<ul>" +
-                                        "<li>Solar A1.6D 27 Baritone guitar (with the stock pickups)</li>" +
-                                        "<li>Focusrite Scarlett Solo Gen 3 audio interface</li>" +
-                                        "<li>Radial PRO48 active DI box</li>" +
-                                        "<li>Daddario EXL157 strings</li>" +
-                                        "<li>StringJoy custom strings, gauges: .074 .052 .044 .028w .022 .016 (used for the drop F tuning in \"Spectre\")</li>" +
-                                        "<li>Janicek Picks Jazz B 0.88mm guitar picks</li>" +
-                                    "</ul>" +
-                                    "<strong>Tones:</strong><br><br>" +
-                                    "<table style=\"border-collapse: collapse;\">" +
-                                        "<tr>" +
-                                            "<td>" +
-                                                "<strong>Rhytms: </strong>" +
-                                            "</td>" +
-                                            "<td>" +
-                                                "NeuralDSP Archetype Nolly (using an IR that comes with the plugin, no external IR)" +
-                                            "</td>" +
-                                        "</tr>" +
-                                        "<tr>" +
-                                            "<td>" +
-                                                "<strong>Leads: </strong>" +
-                                            "</td>" +
-                                            "<td>" +
-                                                "NeuralDSP Archetype Abasi (using an IR that comes with the plugin, no external IR)" +
-                                            "</td>" +
-                                        "</tr>" +
-                                            "<td>" +
-                                                "<strong>Cleans: </strong>" +
-                                            "</td>" +
-                                            "<td>" +
-                                                "NeuralDSP Archetype Plini (cab sim turned off)" +
-                                            "</td>" +
-                                        "</tr>" +
-                                    "</table>"
+                                    html: ConfTrackHtml.conf[2]
                                 },
                                 4: {
                                     id: "<div class=\"synthsHeader\" style=\"width: min-content;\">Synths</div>",
-                                    html: 
-                                    "<p>" +
-                                        "All the extra instruments and synths on the album are programmed. Here's a list of some of the kontakt libraries used:" +
-                                    "</p>" +
-                                    "<ul>" +
-                                        "<li>" +
-                                            "Fracture Sounds' Woodchester Piano (kontakt library)" +
-                                        "</li>" +
-                                        "<li>" +
-                                            "u-he Diva (synth plugin)" +
-                                        "</li>" +
-                                        "<li>" +
-                                            "Best Service's Emotional Cello (kontakt library)" +
-                                        "</li>" +
-                                        "<li>" +
-                                            "Heavyocity's Gravity (kontakt library)" +
-                                        "</li>" +
-                                        "<li>" +
-                                            "Heavyocity's Mosaic Tape (kontakt library)" +
-                                        "</li>" +
-                                        "<li>" +
-                                            "Finishing Move's Posthuman (kontakt library)" +
-                                        "</li>" +
-                                    "</ul>"
+                                    html: ConfTrackHtml.conf[3]
                                 }
                             },
                         }
@@ -1803,9 +924,9 @@ export default class RPlayerConf {
                             mp3: "media/sounds/mp3/9.mp3",
                         },
                         info: {
-                            image: "media/images/dreamer_album.jpg",
-                            icon: "media/icons/dreamer_album.png",
-                            composer: "YATSU",
+                            image: "media/images/rebrand/Album_cover.jpg",
+                            icon: "media/icons/rebrand/Album_cover.png",
+                            composer: "Michal Diviš",
                             lang: "eng", // ISO 639-2
                             year: 2021,
                             genres: {
@@ -1824,130 +945,19 @@ export default class RPlayerConf {
                                 },
                                 1: {
                                     id: "<div class=\"drumsHeader\" style=\"width: min-content;\">Drums</div>",
-                                    html: 
-                                    "<p>" +
-                                        "All drums are programmed and you can find the drum MIDI files in the /MIDI folder. " + 
-                                        "Here's a list of all the sample libraries / samples used for different kit pieces:.<br>" + 
-                                    "</p>" +
-                                    "<div class=\"kickBlendedHeader\" style=\"font-weight: bold; width: min-content; white-space: nowrap;\">Kick (blended):</div>" +
-                                    "<ul><li>GGD OKW Modern Fusion - the main kick</li><li>GGD Modern & Massive - 26x14 Yamaha kick</li><li>custom one shot kick sample</li></ul>" +
-                                    "<div class=\"snareBlendedHeader\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Snare (blended):</div>" +
-                                    "<ul><li>Nolly's Secret Sauce snare (a freebie Nolly gave out in 2019)</li><li>GGD P4 - The VK snare</li><li>GGD OKW Metal - the main snare (only the room mics)</li></ul>" +
-                                    "<div class=\"midiTom1 midiTom2 midiTom3 midiTom4\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Toms:</div>" +
-                                    "<ul><li>GGD P4 toms</li></ul>" +
-                                    "<div class=\"midiCrashL1 midiCrashR midiCrashL2 midiSplashL midiSplashR midiChina midiRide midiHihatOpen midiHihatOpen2 midiHihatOpen3 midiHihatPedal midiHihatTipTight midiMiniHat midiHiHatEdgeClosed midiHiHatEdgeTight midiHihatTipClosed\" style=\"width: min-content; white-space: nowrap; font-weight: bold;\">Cymbals:</div>" +
-                                    "<ul><li>GGD P4 cymbals</li></ul>" +
-                                    "<strong>And here's the MIDI mapping:</strong><br>" +
-                                    "<table style=\"font-family: courier; border-collapse: collapse; margin-top: .5em;\">" +
-                                        "<tr><td class=\"midiKick\" style=\"padding: 0 1em 0 1.5em; color: white;\">C0</td><td>Kick</td></tr>" +
-                                        "<tr><td class=\"midiSnareGhost\" style=\"padding: 0 1em 0 1.5em; color: white;\">C#0</td><td>Snare Ghost Note</td></tr>" +
-                                        "<tr><td class=\"midiSnare\" style=\"padding: 0 1em 0 1.5em; color: white;\">D0</td><td>Snare Main Hit</td></tr>" +
-                                        "<tr><td class=\"midiTom1\" style=\"padding: 0 1em 0 1.5em; color: white;\">A0</td><td>Rack Tom 1</td></tr>" +
-                                        "<tr><td class=\"midiTom2\" style=\"padding: 0 1em 0 1.5em; color: white;\">A#0</td><td>Rack Tom 2</td></tr>" +
-                                        "<tr><td class=\"midiTom3\" style=\"padding: 0 1em 0 1.5em; color: white;\">B0</td><td>Floor Tom 1</td></tr>" +
-                                        "<tr><td class=\"midiTom4\" style=\"padding: 0 1em 0 1.5em; color: white;\">C1</td><td>Floor Tom 2</td></tr>" +
-                                        "<tr><td class=\"midiHihatTipTight\" style=\"padding: 0 1em 0 1.5em; color: white;\">F1</td><td>Hat Tip Tight</td></tr>" +
-                                        "<tr><td class=\"midiHiHatEdgeTight\" style=\"padding: 0 1em 0 1.5em; color: white;\">F#1</td><td>Hat Edge Tight</td></tr>" +
-                                        "<tr><td class=\"midiHihatTipClosed\" style=\"padding: 0 1em 0 1.5em; color: white;\">G1</td><td>Hat Tip Closed</td></tr>" +
-                                        "<tr><td class=\"midiHiHatEdgeClosed\" style=\"padding: 0 1em 0 1.5em; color: white;\">G#1</td><td>Hat Edge Closed</td></tr>" +
-                                        "<tr><td class=\"midiHihatOpen\" style=\"padding: 0 1em 0 1.5em; color: white;\">A1</td><td>Hat Open 1</td></tr>" +
-                                        "<tr><td class=\"midiHihatOpen2\" style=\"padding: 0 1em 0 1.5em; color: white;\">A#1</td><td>Hat Open 2</td></tr>" +
-                                        "<tr><td class=\"midiHihatOpen3\" style=\"padding: 0 1em 0 1.5em; color: white;\">B1</td><td>Hat Open 3</td></tr>" +
-                                        "<tr><td class=\"midiHihatPedal\" style=\"padding: 0 1em 0 1.5em; color: white;\">C2</td><td>Hat Pedal</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">C#2</td><td>Hat Pedal Ching</td></tr>" +
-                                        "<tr><td class=\"midiCrashL1\" style=\"padding: 0 1em 0 1.5em; color: white;\">E2</td><td>Crash L 1</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">F2</td><td>Crash L 1 Choke</td></tr>" +
-                                        "<tr><td class=\"midiCrashR\" style=\"padding: 0 1em 0 1.5em; color: white;\">F#2</td><td>Crash R</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">G2</td><td>Crash R: Choke</td></tr>" +
-                                        "<tr><td class=\"midiCrashL2\" style=\"padding: 0 1em 0 1.5em; color: white;\">G#2</td><td>Crash L 2</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">A2</td><td>Crash L 2 Choke</td></tr>" +
-                                        "<tr><td class=\"midiRide\" style=\"padding: 0 1em 0 1.5em; color: white;\">C#3</td><td>Ride Bell</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">D3</td><td>Ride Bow</td></tr>" +
-                                        "<tr><td class=\"midiChina\" style=\"padding: 0 1em 0 1.5em; color: white;\">F3</td><td>China</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">F#3</td><td>China: Choke</td></tr>" +
-                                        "<tr><td class=\"midiSplashL\" style=\"padding: 0 1em 0 1.5em; color: white;\">C#3</td><td>Splash L</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">D4</td><td>Splash L Choke</td></tr>" +
-                                        "<tr><td class=\"midiSplashR\" style=\"padding: 0 1em 0 1.5em; color: white;\">D#4</td><td>Splash R</td></tr>" +
-                                        "<tr><td style=\"padding: 0 1em 0 1.5em; color: white;\">E4</td><td>Splash R Choke</td></tr>" +
-                                        "<tr><td class=\"midiMiniHat\" style=\"padding: 0 1em 0 1.5em; color: white;\">F4</td><td>Mini Hat</td></tr>" +
-                                        "<tr><td class=\"midiStack\" style=\"padding: 0 1em 0 1.5em; color: white;\">F#4</td><td>Stack</td></tr>" +
-                                    "</table>",
+                                    html: ConfDrumsSvg.conf.drumsSvg + ConfTrackHtml.conf[0]
                                 },
                                 2: {
                                     id: "<div class=\"bassHeader\" style=\"width: min-content;\">Bass</div>",
-                                    html:
-                                    "<p>" +
-                                    "All the bass is programmed and you can find the bass MIDI files in the /MIDI folder. " +
-                                    "All of the bass tracks on the album were done with Sumbission Audio's DjinnBass sample library. " +
-                                    "Most of the bass tones on the album we're processed using the NeuralDSP's Parallax plugin.<br>" +
-                                    "</p>",
+                                    html: ConfTrackHtml.conf[1]
                                 },
                                 3: {
                                     id: "<div class=\"guitarsHeader\" style=\"width: min-content;\">Guitars</div>",
-                                    html:
-                                    "<p>All of the guitars track on the album (rhytms, leads, drones, cleans) were recorded in my home studio (fancy way of saying \"a table and an audio interface in my living room\").</p>" +
-                                    "<strong>Gear used for guitar tracking:</strong><br>" +
-                                    "<ul>" +
-                                        "<li>Solar A1.6D 27 Baritone guitar (with the stock pickups)</li>" +
-                                        "<li>Focusrite Scarlett Solo Gen 3 audio interface</li>" +
-                                        "<li>Radial PRO48 active DI box</li>" +
-                                        "<li>Daddario EXL157 strings</li>" +
-                                        "<li>StringJoy custom strings, gauges: .074 .052 .044 .028w .022 .016 (used for the drop F tuning in \"Spectre\")</li>" +
-                                        "<li>Janicek Picks Jazz B 0.88mm guitar picks</li>" +
-                                    "</ul>" +
-                                    "<strong>Tones:</strong><br><br>" +
-                                    "<table style=\"border-collapse: collapse;\">" +
-                                        "<tr>" +
-                                            "<td>" +
-                                                "<strong>Rhytms: </strong>" +
-                                            "</td>" +
-                                            "<td>" +
-                                                "NeuralDSP Archetype Nolly (using an IR that comes with the plugin, no external IR)" +
-                                            "</td>" +
-                                        "</tr>" +
-                                        "<tr>" +
-                                            "<td>" +
-                                                "<strong>Leads: </strong>" +
-                                            "</td>" +
-                                            "<td>" +
-                                                "NeuralDSP Archetype Abasi (using an IR that comes with the plugin, no external IR)" +
-                                            "</td>" +
-                                        "</tr>" +
-                                            "<td>" +
-                                                "<strong>Cleans: </strong>" +
-                                            "</td>" +
-                                            "<td>" +
-                                                "NeuralDSP Archetype Plini (cab sim turned off)" +
-                                            "</td>" +
-                                        "</tr>" +
-                                    "</table>"
+                                    html: ConfTrackHtml.conf[2]
                                 },
                                 4: {
                                     id: "<div class=\"synthsHeader\" style=\"width: min-content;\">Synths</div>",
-                                    html: 
-                                    "<p>" +
-                                        "All the extra instruments and synths on the album are programmed. Here's a list of some of the kontakt libraries used:" +
-                                    "</p>" +
-                                    "<ul>" +
-                                        "<li>" +
-                                            "Fracture Sounds' Woodchester Piano (kontakt library)" +
-                                        "</li>" +
-                                        "<li>" +
-                                            "u-he Diva (synth plugin)" +
-                                        "</li>" +
-                                        "<li>" +
-                                            "Best Service's Emotional Cello (kontakt library)" +
-                                        "</li>" +
-                                        "<li>" +
-                                            "Heavyocity's Gravity (kontakt library)" +
-                                        "</li>" +
-                                        "<li>" +
-                                            "Heavyocity's Mosaic Tape (kontakt library)" +
-                                        "</li>" +
-                                        "<li>" +
-                                            "Finishing Move's Posthuman (kontakt library)" +
-                                        "</li>" +
-                                    "</ul>"
+                                    html: ConfTrackHtml.conf[3]
                                 }
                             },
                         }

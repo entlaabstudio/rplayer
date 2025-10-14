@@ -45,30 +45,30 @@ export default class RPlayerConfCssTimeModifier {
                     "nolan": "img[src^=\"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUG\"]",
                     "jurta": "img[src^=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAY\"]",
                     "marcel": "img[src^=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJgAAACYCAY\"]",
-                    "midiSnare": ".midiSnare, .snareBlendedHeader, .drumsHeader",
-                    "midiSnareGhost": ".midiSnareGhost, .snareBlendedHeader, .drumsHeader",
-                    "midiKick": ".midiKick, .kickBlendedHeader, .drumsHeader",
-                    "midiCrashL1": ".midiCrashL1, .drumsHeader",
-                    "midiCrashL2": ".midiCrashL2, .drumsHeader",
-                    "midiCrashR": ".midiCrashR, .drumsHeader",
-                    "midiSplashL": ".midiSplashL, .drumsHeader",
-                    "midiSplashR": ".midiSplashR, .drumsHeader",
-                    "midiHihatOpen": ".midiHihatOpen, .drumsHeader",
-                    "midiHihatOpen2": ".midiHihatOpen2, .drumsHeader",
-                    "midiHihatOpen3": ".midiHihatOpen3, .drumsHeader",
-                    "midiHihatPedal": ".midiHihatPedal, .drumsHeader",
-                    "midiHihatTipTight": ".midiHihatTipTight, .drumsHeader",
-                    "midiHihatTipClosed": ".midiHihatTipClosed, .drumsHeader",
-                    "midiHiHatEdgeClosed": ".midiHiHatEdgeClosed, .drumsHeader",
-                    "midiHiHatEdgeTight": ".midiHiHatEdgeTight, .drumsHeader",
-                    "midiMiniHat": ".midiMiniHat, .drumsHeader",
-                    "midiTom1": ".midiTom1, .drumsHeader",
-                    "midiTom2": ".midiTom2, .drumsHeader",
-                    "midiTom3": ".midiTom3, .drumsHeader",
-                    "midiTom4": ".midiTom4, .drumsHeader",
-                    "midiChina": ".midiChina, .drumsHeader",
-                    "midiRide": ".midiRide, .drumsHeader",
-                    "midiStack": ".midiStack, .drumsHeader",
+                    "midiSnare": ".midiSnare, svg #Snare",
+                    "midiSnareGhost": ".midiSnareGhost, svg #Snare",
+                    "midiKick": ".midiKick, svg #Kick",
+                    "midiCrashL1": ".midiCrashL1, svg #CrashL1",
+                    "midiCrashL2": ".midiCrashL2, svg #CrashL2",
+                    "midiCrashR": ".midiCrashR, svg #CrashR",
+                    "midiSplashL": ".midiSplashL, svg #SplashL",
+                    "midiSplashR": ".midiSplashR, svg #SplashR",
+                    "midiHihatOpen": ".midiHihatOpen, svg #Hat",
+                    "midiHihatOpen2": ".midiHihatOpen2, svg #Hat",
+                    "midiHihatOpen3": ".midiHihatOpen3, svg #Hat",
+                    "midiHihatPedal": ".midiHihatPedal, svg #HatPedal, svg #Hihat",
+                    "midiHihatTipTight": ".midiHihatTipTight, svg #Hat",
+                    "midiHihatTipClosed": ".midiHihatTipClosed, svg #Hat",
+                    "midiHiHatEdgeClosed": ".midiHiHatEdgeClosed, svg #Hat",
+                    "midiHiHatEdgeTight": ".midiHiHatEdgeTight, svg #Hat",
+                    "midiMiniHat": ".midiMiniHat, svg #Hat",
+                    "midiTom1": ".midiTom1, svg #Tom1",
+                    "midiTom2": ".midiTom2, svg #Tom2",
+                    "midiTom3": ".midiTom3, svg #Tom3",
+                    "midiTom4": ".midiTom4, svg #Tom4",
+                    "midiChina": ".midiChina, svg #China",
+                    "midiRide": ".midiRide, svg #Ride",
+                    "midiStack": ".midiStack, svg #Stack",
                     "midiBass": ".bassHeader",
                     "guitarsHeader": ".guitarsHeader",
                     "synthsHeader": ".synthsHeader"
@@ -76,24 +76,27 @@ export default class RPlayerConfCssTimeModifier {
                 "css": {
                     "border": {
                         "entrance": {
-                            "borderColor": "var(--currentTime)",
+                            "borderColor": "rgb(190,124,59)",
+                            "transform": "skewY(0deg) skewX(0deg) rotate(-10deg) scale(.8)",
                             "transition": "all 0.3s ease-out"
                         },
                         "outgoing": {
                             "borderColor": "transparent",
-                            "transition": "all 0.3s ease-out"
+                            "transform": "skewY(0deg) skewX(0deg) rotate(0deg) scale(1)",
+                            "transition": "all 2.3s ease-out"
                         }
                     },
                     "midiColor": {
                         "entrance": {
-                            "color": "var(--currentTime)",
-                            "scale": 1.1,
+                            "filter": "hue-rotate(180deg)",
+                            "transform-origin": "center center",
+                            "transform": "scale(1.01)",
                             "transition": "none"
                         },
                         "outgoing": {
-                            "color": "rgba(255,255,255,1)",
-                            "scale": 1,
-                            "transition": "all 0.3s ease-out"
+                            "filter": "hue-rotate(0deg)",
+                            "transform": "scale(1)",
+                            "transition": "all .25s ease-out"
                         }
                     }
                 },

@@ -46,39 +46,39 @@ export default class RPlayerConfSlideshow {
                     // Mirrors
                     0: {
                         mediaName: "Mirrors",
-                        src: "media/images/mirrors.jpg"
+                        src: "media/images/rebrand/Single_cover_Mirrors.jpg"
                     },
                     // Dreamer
                     270000: {
                         mediaName: "Dreamer",
-                        src: "media/images/dreamer_album.jpg"
+                        src: "media/images/rebrand/Album_cover.jpg"
                     },
                     // Ornaments
                     538500: {
                         mediaName: "Ornaments_w_vocals",
-                        src: "media/images/ornaments_w_vocals.jpg"
+                        src: "media/images/rebrand/Single_cover_Ornaments.jpg"
                     },
                     // Labyrinth
                     786600: {
                         mediaName: "Labyrinth",
-                        src: "media/images/labyrinth.jpg"
+                        src: "media/images/rebrand/Single_cover_Labyrinth.jpg"
                     },
                     // Spectre
                     959500: {
                         mediaName: "Spectre",
-                        src: "media/images/spectre.jpg"
+                        src: "media/images/rebrand/Single_cover_Spectre.jpg"
                     },
                     964400: {
                         mediaName: "Mirrors",
-                        src: "media/images/mirrors.jpg"
+                        src: "media/images/rebrand/Single_cover_Mirrors.jpg"
                     },
                     992650: {
                         mediaName: "DJinn",
-                        src: "media/images/djinn.png"
+                        src: "media/images/rebrand/Wideview.jpg"
                     },
                     1025276: {
                         mediaName: "Ornaments",
-                        src: "media/images/ornaments.jpg"
+                        src: "media/images/rebrand/Single_cover_Ornaments.jpg"
                     },
                     1035846: {
                         mediaName: "Kraken",
@@ -86,23 +86,23 @@ export default class RPlayerConfSlideshow {
                     },
                     1047635: {
                         mediaName: "Labyrinth",
-                        src: "media/images/labyrinth.jpg"
+                        src: "media/images/rebrand/Single_cover_Labyrinth.jpg"
                     },
                     1060993: {
                         mediaName: "DJinn",
-                        src: "media/images/djinn.png"
+                        src: "media/images/rebrand/Wideview.jpg"
                     },
                     1104890: {
                         mediaName: "Spectre",
-                        src: "media/images/spectre.jpg"
+                        src: "media/images/rebrand/Single_cover_Spectre.jpg"
                     },
                     1129367: {
                         mediaName: "Ornaments_w_vocals",
-                        src: "media/images/ornaments_w_vocals.jpg"
+                        src: "media/images/rebrand/Single_cover_Ornaments.jpg"
                     },
                     1140658: {
                         mediaName: "DJinn",
-                        src: "media/images/djinn.png"
+                        src: "media/images/rebrand/Wideview.jpg"
                     },
                     1162594: {
                         mediaName: "Kraken",
@@ -110,31 +110,31 @@ export default class RPlayerConfSlideshow {
                     },
                     1179314: {
                         mediaName: "Mirrors",
-                        src: "media/images/mirrors.jpg"
+                        src: "media/images/rebrand/Single_cover_Mirrors.jpg"
                     },
                     1201160: {
                         mediaName: "Spectre",
-                        src: "media/images/spectre.jpg"
+                        src: "media/images/rebrand/Single_cover_Spectre.jpg"
                     },
                     // Bloom
                     1215000: {
                         mediaName: "Dreamer",
-                        src: "media/images/dreamer_album.jpg"
+                        src: "media/images/rebrand/Album_cover.jpg"
                     },
                     // Ruin
                     1435400: {
                         mediaName: "Dreamer",
-                        src: "media/images/dreamer_album.jpg"
+                        src: "media/images/rebrand/Album_cover.jpg"
                     },
                     // World Eater
                     1543500: {
                         mediaName: "Dreamer",
-                        src: "media/images/dreamer_album.jpg"
+                        src: "media/images/rebrand/Album_cover.jpg"
                     },
                     // Collapse
                     1870000: {
                         mediaName: "Dreamer",
-                        src: "media/images/dreamer_album.jpg"
+                        src: "media/images/rebrand/Album_cover.jpg"
                     },
                 }
             }
