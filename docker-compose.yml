@@ -25,14 +25,14 @@ services:
     volumes:
       - code:/var/www/html
 
-  database:
-    image: mariadb:10.3.31
-    container_name: rplayer_mariadb
-    ports:
-      - 3306:3306
-    environment:
-      - MYSQL_USER=blbec
-      - MYSQL_PASSWORD=entlaabstudio
-      - MYSQL_ROOT_PASSWORD=entlaabstudio2
-    volumes:
-      - dbdata:/var/lib/mysql
+  # database:
+  #   image: mariadb:10.3.31
+  #   container_name: rplayer_mariadb
+  #   ports:
+  #     - 3306:3306
+  #   environment:
+  #     - MYSQL_USER=blbec
+  #     - MYSQL_PASSWORD=entlaabstudio
+  #     - MYSQL_ROOT_PASSWORD=entlaabstudio2
+  #   volumes:
+  #     - dbdata:/var/lib/mysql
